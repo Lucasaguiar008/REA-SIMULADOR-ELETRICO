@@ -1,10 +1,15 @@
 /* ==========================================================================
-   TechRib Simulator — Tema de Fundo Branco (White Theme Override)
-   Mantém 100% de fidelidade estrutural, ícones e SVGs de componentes,
-   convertendo todas as superfícies da interface e da folha para fundo branco.
+   LucasAguiar Simulador — Tema Claro (Light) & Tema Escuro (Dark) + Controle de Grade
+   Muda cores de fundo, fontes, ícones e prancha com estética de alto contraste,
+   e permite ocultar completamente o GRID da folha e do canvas.
    ========================================================================== */
 
-:root {
+/* --------------------------------------------------------------------------
+   1. VARIÁVEIS DO TEMA CLARO (Padrão)
+   -------------------------------------------------------------------------- */
+:root,
+html:not([data-ui-theme="dark"]),
+html:not([data-ui-theme="dark"]) body {
   color-scheme: light !important;
   --bg-page: #ffffff !important;
   --bg-surface: #ffffff !important;
@@ -26,513 +31,391 @@
   --tr-muted: #475569 !important;
 }
 
-html,
-body,
-html body .workbench {
+/* --------------------------------------------------------------------------
+   2. VARIÁVEIS DO TEMA ESCURO (CAD Noturno Estético)
+   -------------------------------------------------------------------------- */
+html[data-ui-theme="dark"],
+html[data-ui-theme="dark"] body {
+  color-scheme: dark !important;
+  --bg-page: #07111c !important;
+  --bg-surface: #0b1826 !important;
+  --bg-panel: #0f2032 !important;
+  --bg-muted: #142a40 !important;
+  --line-soft: #243e56 !important;
+  --line-strong: #38bdf8 !important;
+  --text-main: #f8fafc !important;
+  --text-soft: #94a3b8 !important;
+  --accent-blue: #38bdf8 !important;
+  --accent-orange: #fb923c !important;
+  --sheet-border: #38bdf8 !important;
+  --tr-bg: #07111c !important;
+  --tr-panel: #0b1826 !important;
+  --tr-panel-2: #102235 !important;
+  --tr-panel-3: #162e47 !important;
+  --tr-line: #243e56 !important;
+  --tr-text: #f8fafc !important;
+  --tr-muted: #94a3b8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. REMOÇÃO TOTAL DO GRID DA FOLHA E DO CANVAS (Funciona em Claro e Escuro)
+   -------------------------------------------------------------------------- */
+html body .schematic-sheet.grid-hidden,
+html body .schematic-sheet[data-sheet-theme="light"].grid-hidden,
+html body .schematic-sheet[data-sheet-theme="dark"].grid-hidden {
+  background-image: none !important;
+}
+
+html body .canvas-viewport.techrib-canvas-grid-hidden,
+html body .canvas-viewport[data-sheet-theme="light"].techrib-canvas-grid-hidden,
+html body .canvas-viewport[data-sheet-theme="dark"].techrib-canvas-grid-hidden {
+  background-image: none !important;
+}
+
+/* ==========================================================================
+   4. TEMA CLARO (Fundo Branco, Fontes Escuras, Ícones Azul/Laranja Nítidos)
+   ========================================================================== */
+html:not([data-ui-theme="dark"]),
+html:not([data-ui-theme="dark"]) body,
+html:not([data-ui-theme="dark"]) body .workbench {
   background: #ffffff !important;
   color: #0f172a !important;
 }
 
-/* --- Topbar --- */
-html body .workbench-topbar {
+/* --- Topbar (Claro) --- */
+html:not([data-ui-theme="dark"]) body .workbench-topbar {
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
   border-bottom: 1px solid #cbd5e1 !important;
   color: #0f172a !important;
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05) !important;
 }
 
-html body .topbar-brand {
+html:not([data-ui-theme="dark"]) body .topbar-brand {
   border-right: 1px solid #e2e8f0 !important;
 }
 
-html body .brand-title,
-html body .brand-name,
-html body .workbench .brand span {
+html:not([data-ui-theme="dark"]) body .brand-title,
+html:not([data-ui-theme="dark"]) body .brand-name,
+html:not([data-ui-theme="dark"]) body .workbench .brand span {
   color: #0f172a !important;
 }
 
-html body .brand-subtitle,
-html body .brand-tag,
-html body .workbench .brand small {
+html:not([data-ui-theme="dark"]) body .workbench .brand span b {
   color: #0284c7 !important;
 }
 
-html body .brand-badge {
-  background: linear-gradient(145deg, #f57c00, #d96b00) !important;
-  color: #ffffff !important;
+html:not([data-ui-theme="dark"]) body .brand-subtitle,
+html:not([data-ui-theme="dark"]) body .brand-tag,
+html:not([data-ui-theme="dark"]) body .workbench .brand small {
+  color: #0284c7 !important;
 }
 
-html body .project-title {
+html:not([data-ui-theme="dark"]) body .sidebar-toggle,
+html:not([data-ui-theme="dark"]) body .icon-button {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0284c7 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .project-title {
   background: #f8fafc !important;
   border: 1px solid #cbd5e1 !important;
   color: #0f172a !important;
 }
 
-html body .project-title > span {
+html:not([data-ui-theme="dark"]) body .project-title > span {
   color: #0284c7 !important;
 }
 
-html body .project-title button,
-html body .project-title strong,
-html body .project-title input {
+html:not([data-ui-theme="dark"]) body .project-title button,
+html:not([data-ui-theme="dark"]) body .project-title strong,
+html:not([data-ui-theme="dark"]) body .project-title input {
   color: #0f172a !important;
 }
 
-html body .project-title small {
-  color: #64748b !important;
+html:not([data-ui-theme="dark"]) body .project-title small {
+  color: #0284c7 !important;
 }
 
-html body .top-action,
-html body .user-button,
-html body .techrib-plan-chip {
+html:not([data-ui-theme="dark"]) body .top-action {
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   color: #1e293b !important;
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04) !important;
 }
 
-html body .top-action:hover,
-html body .user-button:hover {
-  background: #f1f5f9 !important;
+/* Ícones e Fontes da Topbar no Tema Claro */
+html:not([data-ui-theme="dark"]) body .top-action > span {
+  color: #0284c7 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .top-action > b {
+  color: #0f172a !important;
+}
+
+html:not([data-ui-theme="dark"]) body .top-action.theme-toggle-btn > span {
+  color: #ea580c !important;
+}
+
+html:not([data-ui-theme="dark"]) body .top-action.grid-toggle-btn.active {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+  color: #0369a1 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .top-action:hover {
+  background: #f0f9ff !important;
   border-color: #0284c7 !important;
   color: #0f172a !important;
 }
 
-html body .top-action.simulate {
+html:not([data-ui-theme="dark"]) body .top-action.simulate {
   background: linear-gradient(180deg, #f59b23, #ff7a00) !important;
   border-color: #d96b00 !important;
   color: #ffffff !important;
 }
-
-html body .top-action.accent {
-  background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%) !important;
-  border-color: #0284c7 !important;
+html:not([data-ui-theme="dark"]) body .top-action.simulate > span,
+html:not([data-ui-theme="dark"]) body .top-action.simulate > b {
   color: #ffffff !important;
 }
 
-html body .simulation-mode-badge {
-  background: #f0f9ff !important;
-  border: 1px solid #bae6fd !important;
-  color: #0369a1 !important;
-}
-
-html body .user-avatar {
-  background: #e0f2fe !important;
-  color: #0369a1 !important;
-}
-
-/* --- CAD Ribbon & Menus --- */
-html body .cad-ribbon {
+/* --- CAD Ribbon & Ferramentas (Claro) --- */
+html:not([data-ui-theme="dark"]) body .cad-ribbon {
   background: #ffffff !important;
   border-bottom: 1px solid #cbd5e1 !important;
   box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
 }
 
-html body .cad-menu {
+html:not([data-ui-theme="dark"]) body .cad-menu {
   background: #f8fafc !important;
   border-bottom: 1px solid #e2e8f0 !important;
 }
 
-html body .cad-menu-item,
-html body .cad-menu button {
+html:not([data-ui-theme="dark"]) body .cad-menu button {
   background: transparent !important;
-  color: #334155 !important;
+  color: #1e293b !important;
+  font-weight: 600 !important;
 }
 
-html body .cad-menu-item:hover,
-html body .cad-menu-item.active,
-html body .cad-menu button:hover,
-html body .cad-menu button.active {
+html:not([data-ui-theme="dark"]) body .cad-menu button:hover,
+html:not([data-ui-theme="dark"]) body .cad-menu button.active {
   background: #e0f2fe !important;
   border-color: #bae6fd !important;
   color: #0369a1 !important;
 }
 
-html body .cad-tools {
+html:not([data-ui-theme="dark"]) body .cad-tools {
   background: #ffffff !important;
 }
 
-html body .tool-group {
+html:not([data-ui-theme="dark"]) body .tool-group {
   background: #f8fafc !important;
   border-right-color: #cbd5e1 !important;
 }
 
-html body .tool-group-title {
-  color: #475569 !important;
-  border-bottom-color: #e2e8f0 !important;
-}
-
-html body .tool-button,
-html body .ribbon-btn,
-html body .cad-tools button,
-html body .tool-group button {
+html:not([data-ui-theme="dark"]) body .cad-tools button,
+html:not([data-ui-theme="dark"]) body .tool-group button {
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
+  color: #0284c7 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .cad-tools button small,
+html:not([data-ui-theme="dark"]) body .tool-group button small {
   color: #1e293b !important;
 }
 
-html body .tool-button:hover,
-html body .ribbon-btn:hover,
-html body .cad-tools button:hover,
-html body .tool-group button:hover {
-  background: #f0f9ff !important;
-  border-color: #0284c7 !important;
-  color: #0f172a !important;
+html:not([data-ui-theme="dark"]) body .cad-tools button svg,
+html:not([data-ui-theme="dark"]) body .tool-group button svg {
+  color: #0284c7 !important;
+  stroke: #0284c7 !important;
 }
 
-html body .tool-button.is-active,
-html body .tool-button.active,
-html body .cad-tools button.is-active,
-html body .cad-tools button.active,
-html body .tool-group button.active {
+html:not([data-ui-theme="dark"]) body .cad-tools button:hover,
+html:not([data-ui-theme="dark"]) body .tool-group button:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+  color: #0369a1 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .cad-tools button.active,
+html:not([data-ui-theme="dark"]) body .tool-group button.active {
   background: #e0f2fe !important;
   border-color: #0284c7 !important;
   color: #0369a1 !important;
   box-shadow: inset 0 0 0 1px rgba(2, 132, 199, 0.25) !important;
 }
 
-html body .simulation-group button:first-child {
+html:not([data-ui-theme="dark"]) body .simulation-group button:first-child {
   color: #15803d !important;
 }
-
-html body .simulation-group button:last-child {
+html:not([data-ui-theme="dark"]) body .simulation-group button:last-child {
   color: #dc2626 !important;
 }
 
-html body .tool-group select,
-html body .tool-group input,
-html body .sheet-controls select,
-html body .sheet-controls input {
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
-}
-
-html body .wire-workflow-group {
-  background: #f8fafc !important;
-  border-color: #cbd5e1 !important;
-}
-
-html body .wire-palette-dropdown,
-html body .cad-menu-popover,
-html body .library-component-menu {
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12) !important;
-}
-
-html body .wire-palette-option,
-html body .cad-menu-popover button,
-html body .library-component-menu button {
-  background: #ffffff !important;
-  color: #1e293b !important;
-  border-color: #e2e8f0 !important;
-}
-
-html body .wire-palette-option:hover,
-html body .cad-menu-popover button:hover,
-html body .library-component-menu button:hover {
-  background: #f0f9ff !important;
-  color: #0284c7 !important;
-}
-
-/* --- Left Component Sidebar & Library --- */
-html body .component-sidebar {
+/* --- Biblioteca Lateral (Claro) --- */
+html:not([data-ui-theme="dark"]) body .component-sidebar {
   background: #ffffff !important;
   border-right: 1px solid #cbd5e1 !important;
   color: #0f172a !important;
   box-shadow: 4px 0 16px rgba(15, 23, 42, 0.04) !important;
 }
 
-html body .sidebar-heading {
+html:not([data-ui-theme="dark"]) body .sidebar-heading {
   background: #f8fafc !important;
   border-bottom: 1px solid #e2e8f0 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .sidebar-heading h2 {
   color: #0f172a !important;
 }
 
-html body .sidebar-heading h2 {
-  color: #0f172a !important;
-}
-
-html body .sidebar-heading p,
-html body .sidebar-heading span {
+html:not([data-ui-theme="dark"]) body .sidebar-heading span {
   color: #0284c7 !important;
 }
 
-html body .component-search {
+html:not([data-ui-theme="dark"]) body .component-search {
   background: #f8fafc !important;
   border: 1px solid #cbd5e1 !important;
 }
 
-html body .component-search span {
-  color: #64748b !important;
+html:not([data-ui-theme="dark"]) body .component-search span {
+  color: #0284c7 !important;
 }
 
-html body .component-search input {
+html:not([data-ui-theme="dark"]) body .component-search input {
   background: transparent !important;
-  border: 0 !important;
   color: #0f172a !important;
 }
 
-html body .component-search input::placeholder {
-  color: #64748b !important;
-}
-
-html body .library-tabs {
+html:not([data-ui-theme="dark"]) body .library-tabs {
   background: #f8fafc !important;
   border-bottom: 1px solid #cbd5e1 !important;
 }
 
-html body .library-tabs button,
-html body .library-tab {
+html:not([data-ui-theme="dark"]) body .library-tabs button {
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   color: #334155 !important;
 }
 
-html body .library-tabs button:hover,
-html body .library-tab:hover {
-  background: #f0f9ff !important;
-  border-color: #0284c7 !important;
-  color: #0f172a !important;
-}
-
-html body .library-tabs .active,
-html body .library-tab.is-active,
-html body .library-tab.active {
+html:not([data-ui-theme="dark"]) body .library-tabs .active {
   background: #0284c7 !important;
   border-color: #0284c7 !important;
   color: #ffffff !important;
 }
 
-html body .library-scroll {
+html:not([data-ui-theme="dark"]) body .library-scroll {
   background: #ffffff !important;
   scrollbar-color: #cbd5e1 #f8fafc !important;
 }
 
-html body .library-group,
-html body .library-domain {
+html:not([data-ui-theme="dark"]) body .library-group,
+html:not([data-ui-theme="dark"]) body .library-domain {
   background: #ffffff !important;
   border-color: #e2e8f0 !important;
 }
 
-html body .group-title,
-html body .techrib-registry-group > .group-title,
-html body .library-domain-title,
-html body .library-group-header {
+html:not([data-ui-theme="dark"]) body .group-title,
+html:not([data-ui-theme="dark"]) body .library-domain-title {
   background: #f8fafc !important;
   border: 1px solid #cbd5e1 !important;
   color: #0f172a !important;
 }
 
-html body .group-title:hover,
-html body .techrib-registry-group > .group-title:hover,
-html body .library-domain-title:hover,
-html body .library-group-header:hover {
-  background: #f0f9ff !important;
-  border-color: #0284c7 !important;
+html:not([data-ui-theme="dark"]) body .group-title > span,
+html:not([data-ui-theme="dark"]) body .library-domain-title > span {
+  color: #0284c7 !important;
 }
 
-html body .group-title b,
-html body .techrib-registry-group > .group-title b,
-html body .library-domain-name,
-html body .library-domain-title strong {
+html:not([data-ui-theme="dark"]) body .group-title b,
+html:not([data-ui-theme="dark"]) body .library-domain-title b,
+html:not([data-ui-theme="dark"]) body [data-library-domain="premium"] > .library-domain-title b {
   color: #0f172a !important;
 }
 
-html body .library-domain-meta,
-html body .library-domain-count {
-  background: #e2e8f0 !important;
-  color: #334155 !important;
+html:not([data-ui-theme="dark"]) body [data-library-domain="premium"] > .library-domain-title > span {
+  color: #d97706 !important;
 }
 
-html body .library-families {
-  background: #ffffff !important;
-  border-left-color: #cbd5e1 !important;
+html:not([data-ui-theme="dark"]) body .library-families {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
 }
 
-html body .library-family {
+html:not([data-ui-theme="dark"]) body .library-family {
   background: #f8fafc !important;
   border: 1px solid #e2e8f0 !important;
 }
 
-html body .library-family-title {
+html:not([data-ui-theme="dark"]) body .library-family-title {
   background: #f1f5f9 !important;
   color: #1e293b !important;
   border-bottom: 1px solid #e2e8f0 !important;
 }
 
-html body .library-family-title:hover {
-  background: #e0f2fe !important;
-  color: #0369a1 !important;
+html:not([data-ui-theme="dark"]) body .library-family-title b {
+  color: #0f172a !important;
 }
 
-html body .component-grid,
-html body .library-items {
+html:not([data-ui-theme="dark"]) body .library-family-title small {
+  color: #0284c7 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .component-grid {
   background: #ffffff !important;
 }
 
-html body .component-item {
+html:not([data-ui-theme="dark"]) body .component-item {
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   color: #0f172a !important;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04) !important;
 }
 
-html body .component-item:hover {
-  background: #f0f9ff !important;
-  border-color: #0284c7 !important;
-  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.12) !important;
-}
-
-html body .component-item.is-selected,
-html body .component-item.active {
-  background: #e0f2fe !important;
-  border-color: #0284c7 !important;
-}
-
-html body .component-item.logic-thumb:after {
-  background: #e0f2fe !important;
-  color: #0369a1 !important;
-}
-
-html body .component-thumb,
-html body .component-preview,
-html body .component-icon {
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
-}
-
-html body .component-name,
-html body .component-item strong,
-html body .component-item span {
+html:not([data-ui-theme="dark"]) body .component-item span {
   color: #0f172a !important;
 }
 
-html body .component-meta,
-html body .component-item small {
-  color: #475569 !important;
+html:not([data-ui-theme="dark"]) body .component-item:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
 }
 
-html body .sidebar-footer {
+html:not([data-ui-theme="dark"]) body .sidebar-footer {
   background: #f8fafc !important;
   border-top: 1px solid #cbd5e1 !important;
   color: #475569 !important;
 }
 
-html body .sidebar-footer button {
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #1e293b !important;
-}
-
-/* --- Examples Sidebar & Cards --- */
-html body .examples-group {
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
-}
-
-html body .examples-group-header h3 {
-  color: #0f172a !important;
-}
-
-html body .examples-group-header p {
-  color: #475569 !important;
-}
-
-html body .example-tools input,
-html body .example-tools select,
-html body .example-filter-row button {
-  background: #f8fafc !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #1e293b !important;
-}
-
-html body .example-filter-row button.is-active {
-  background: #0284c7 !important;
-  border-color: #0284c7 !important;
-  color: #ffffff !important;
-}
-
-html body .example-category {
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
-}
-
-html body .example-category-toggle {
+/* --- Área de Desenho, Folha e Rodapé (Claro) --- */
+html:not([data-ui-theme="dark"]) body .drawing-area {
   background: #f1f5f9 !important;
-  color: #0f172a !important;
 }
 
-html body .example-card,
-html body .managed-standard-card,
-html body .user-example-card {
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05) !important;
-}
-
-html body .example-card:hover {
-  background: #f0f9ff !important;
-  border-color: #0284c7 !important;
-}
-
-html body .example-card strong,
-html body .example-card h4 {
-  color: #0f172a !important;
-}
-
-html body .example-card span,
-html body .example-card p,
-html body .example-card small {
-  color: #475569 !important;
-}
-
-/* --- Main Drawing Area, Canvas Viewport & Schematic Sheet (FUNDO BRANCO) --- */
-html body .drawing-area {
-  background: #f8fafc !important;
-}
-
-html body .drawing-toolbar {
+html:not([data-ui-theme="dark"]) body .drawing-toolbar {
   background: rgba(255, 255, 255, 0.96) !important;
   border: 1px solid #cbd5e1 !important;
   color: #1e293b !important;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08) !important;
 }
 
-html body .drawing-toolbar button,
-html body .drawing-toolbar select,
-html body .drawing-toolbar .toolbar-chip {
+html:not([data-ui-theme="dark"]) body .drawing-toolbar button {
   background: #f8fafc !important;
   border: 1px solid #cbd5e1 !important;
-  color: #1e293b !important;
+  color: #0284c7 !important;
 }
 
-html body .drawing-toolbar button:hover,
-html body .drawing-toolbar .active {
-  background: #e0f2fe !important;
-  border-color: #0284c7 !important;
-  color: #0369a1 !important;
-}
-
-/* Força fundo branco tanto em data-sheet-theme="light" quanto "dark" */
-html body .canvas-viewport,
-html body .canvas-viewport[data-sheet-theme="light"],
-html body .canvas-viewport[data-sheet-theme="dark"] {
-  background-color: #f1f5f9 !important;
+html:not([data-ui-theme="dark"]) body .canvas-viewport,
+html:not([data-ui-theme="dark"]) body .canvas-viewport[data-sheet-theme="light"] {
+  background-color: #e2e8f0 !important;
   background-image:
     linear-gradient(to right, rgba(148, 163, 184, 0.20) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(148, 163, 184, 0.20) 1px, transparent 1px),
-    linear-gradient(to right, rgba(100, 116, 139, 0.30) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(100, 116, 139, 0.30) 1px, transparent 1px) !important;
+    linear-gradient(to right, rgba(100, 116, 139, 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(100, 116, 139, 0.28) 1px, transparent 1px) !important;
 }
 
-html body .schematic-sheet,
-html body .schematic-sheet[data-sheet-theme="light"],
-html body .schematic-sheet[data-sheet-theme="dark"] {
+html:not([data-ui-theme="dark"]) body .schematic-sheet,
+html:not([data-ui-theme="dark"]) body .schematic-sheet[data-sheet-theme="light"] {
   background-color: #ffffff !important;
   background-image:
     linear-gradient(to right, rgba(148, 163, 184, 0.18) 1px, transparent 1px),
@@ -544,276 +427,513 @@ html body .schematic-sheet[data-sheet-theme="dark"] {
   color: #0f172a !important;
 }
 
-html body .schematic-sheet::before {
-  border-color: rgba(2, 132, 199, 0.45) !important;
-}
-
-html body .sheet-frame,
-html body .sheet-grid {
-  background: transparent !important;
-}
-
-html body .title-block,
-html body .schematic-sheet[data-sheet-theme="dark"] .title-block {
+html:not([data-ui-theme="dark"]) body .title-block {
   background: rgba(255, 255, 255, 0.96) !important;
   border-color: #0284c7 !important;
   color: #0f172a !important;
 }
 
-html body .title-brand b {
-  font-size: 16px !important;
-  letter-spacing: -0.5px !important;
-  white-space: nowrap !important;
-  color: #0284c7 !important;
-}
-
-html body .title-brand b i {
-  color: #f57c00 !important;
-}
-
-/* Oculta qualquer elemento residual de login, conta ou paywall */
-html body .techrib-plan-chip,
-html body .user-button,
-html body .saas-upgrade-modal,
-html body .saas-clone-example {
-  display: none !important;
-}
-
-html body .title-block div,
-html body .title-block span,
-html body .title-block strong,
-html body .title-block input {
+html:not([data-ui-theme="dark"]) body .title-block div,
+html:not([data-ui-theme="dark"]) body .title-block span,
+html:not([data-ui-theme="dark"]) body .title-block strong,
+html:not([data-ui-theme="dark"]) body .title-block input {
   border-color: rgba(2, 132, 199, 0.35) !important;
   color: #0f172a !important;
 }
 
-html body .sheet-empty,
-html body .schematic-sheet[data-sheet-theme="dark"] .sheet-empty {
+html:not([data-ui-theme="dark"]) body .sheet-empty {
   background: rgba(248, 250, 252, 0.92) !important;
   border: 1px dashed #94a3b8 !important;
   color: #334155 !important;
 }
 
-html body .sheet-empty h3,
-html body .sheet-empty strong {
+html:not([data-ui-theme="dark"]) body .placed-component > header strong,
+html:not([data-ui-theme="dark"]) body .placed-component > small {
   color: #0f172a !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95) !important;
 }
 
-html body .sheet-empty p,
-html body .sheet-empty span {
-  color: #475569 !important;
-}
-
-/* Labels de componentes posicionados na folha */
-html body .placed-component .component-label,
-html body .placed-component .component-tag,
-html body .schematic-node-label {
+html:not([data-ui-theme="dark"]) body .placed-component[data-type="text-block-object"] [data-text-block-content] {
   color: #0f172a !important;
-  background: rgba(255, 255, 255, 0.88) !important;
-  border-color: #cbd5e1 !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-color: rgba(2, 132, 199, 0.4) !important;
 }
 
-/* --- Statusbar --- */
-html body .canvas-statusbar {
+html:not([data-ui-theme="dark"]) body .placed-component[data-type="text-object"] text {
+  fill: #0f172a !important;
+}
+
+html:not([data-ui-theme="dark"]) body .canvas-statusbar {
   background: #ffffff !important;
   border-top: 1px solid #cbd5e1 !important;
   color: #334155 !important;
 }
 
-html body .canvas-statusbar span,
-html body .canvas-statusbar strong,
-html body .status-ready,
-html body .zoom-control output,
-html body .zoom-control button {
+html:not([data-ui-theme="dark"]) body .canvas-statusbar span,
+html:not([data-ui-theme="dark"]) body .canvas-statusbar strong,
+html:not([data-ui-theme="dark"]) body .status-ready,
+html:not([data-ui-theme="dark"]) body .zoom-control output,
+html:not([data-ui-theme="dark"]) body .zoom-control button {
   color: #0f172a !important;
 }
 
-html body .sheet-format-label select {
+html:not([data-ui-theme="dark"]) body .sheet-format-label select {
   background: #ffffff !important;
   color: #0f172a !important;
   border: 1px solid #cbd5e1 !important;
 }
 
-/* --- Modals: Primeiro Acesso (First Access) --- */
-html body .techrib-first-access {
-  background: rgba(15, 23, 42, 0.35) !important;
+
+/* ==========================================================================
+   5. TEMA ESCURO (Fundo Deep Navy, Fontes Claras, Ícones Ciano/Âmbar Brilhantes)
+   ========================================================================== */
+html[data-ui-theme="dark"],
+html[data-ui-theme="dark"] body,
+html[data-ui-theme="dark"] body .workbench {
+  background: #07111c !important;
+  color: #f8fafc !important;
 }
 
-html body .techrib-first-access-card {
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16) !important;
+/* --- Topbar (Escuro) --- */
+html[data-ui-theme="dark"] body .workbench-topbar {
+  background: linear-gradient(180deg, #0c1b2c 0%, #081320 100%) !important;
+  border-bottom: 1px solid #1e3a5f !important;
+  color: #f8fafc !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.55) !important;
 }
 
-html body .techrib-first-access-brand {
-  color: #0284c7 !important;
+html[data-ui-theme="dark"] body .topbar-brand {
+  border-right: 1px solid #1e3a5f !important;
 }
 
-html body .techrib-first-access-kicker {
-  color: #0284c7 !important;
+html[data-ui-theme="dark"] body .brand-title,
+html[data-ui-theme="dark"] body .brand-name,
+html[data-ui-theme="dark"] body .workbench .brand span {
+  color: #f8fafc !important;
 }
 
-html body .techrib-first-access h1,
-html body .techrib-first-access h2,
-html body .techrib-first-access-card h1,
-html body .techrib-first-access-card h2,
-html body .techrib-first-access-card h3,
-html body .techrib-first-access-card strong,
-html body .techrib-first-access-options b {
-  color: #0f172a !important;
+html[data-ui-theme="dark"] body .workbench .brand span b {
+  color: #38bdf8 !important;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.35) !important;
 }
 
-html body .techrib-first-access-lead,
-html body .techrib-first-access-card p,
-html body .techrib-first-access-options small {
-  color: #475569 !important;
+html[data-ui-theme="dark"] body .brand-subtitle,
+html[data-ui-theme="dark"] body .brand-tag,
+html[data-ui-theme="dark"] body .workbench .brand small {
+  color: #7dd3fc !important;
 }
 
-html body .techrib-first-access-options button {
-  background: #f8fafc !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
+html[data-ui-theme="dark"] body .sidebar-toggle,
+html[data-ui-theme="dark"] body .icon-button {
+  background: #12263c !important;
+  border: 1px solid #284b6e !important;
+  color: #38bdf8 !important;
 }
 
-html body .techrib-first-access-options button:hover {
-  background: #f0f9ff !important;
-  border-color: #0284c7 !important;
+html[data-ui-theme="dark"] body .project-title {
+  background: #0f2135 !important;
+  border: 1px solid #234262 !important;
+  color: #f8fafc !important;
 }
 
-html body .techrib-first-access-options .choice-icon {
-  background: #e0f2fe !important;
-  color: #0284c7 !important;
-  border: 1px solid #bae6fd !important;
+html[data-ui-theme="dark"] body .project-title > span {
+  color: #38bdf8 !important;
 }
 
-html body .techrib-first-access-options i {
-  color: #0284c7 !important;
+html[data-ui-theme="dark"] body .project-title button,
+html[data-ui-theme="dark"] body .project-title strong,
+html[data-ui-theme="dark"] body .project-title input {
+  color: #f8fafc !important;
 }
 
-html body .techrib-first-access-explore,
-html body .techrib-first-access-back {
-  background: #f8fafc !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0284c7 !important;
+html[data-ui-theme="dark"] body .project-title small {
+  color: #fbbf24 !important;
 }
 
-html body .techrib-first-access-explore:hover,
-html body .techrib-first-access-back:hover {
-  background: #e0f2fe !important;
-  border-color: #0284c7 !important;
+html[data-ui-theme="dark"] body .top-action {
+  background: #112438 !important;
+  border: 1px solid #26486b !important;
+  color: #f1f5f9 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
 }
 
-html body .techrib-first-access-close {
-  background: #f1f5f9 !important;
-  color: #334155 !important;
+/* Ícones e Fontes da Topbar no Tema Escuro */
+html[data-ui-theme="dark"] body .top-action > span {
+  color: #38bdf8 !important;
+  filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.45));
 }
 
-html body .techrib-first-access-close:hover {
-  background: #e2e8f0 !important;
-  color: #0f172a !important;
+html[data-ui-theme="dark"] body .top-action > b {
+  color: #f8fafc !important;
 }
 
-html body .techrib-first-access-skip {
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
-  color: #475569 !important;
+html[data-ui-theme="dark"] body .top-action.theme-toggle-btn {
+  background: rgba(251, 191, 36, 0.14) !important;
+  border-color: #fbbf24 !important;
 }
 
-/* --- Central de Exemplos (Examples Center) --- */
-html body .techrib-examples-center-overlay {
-  background: rgba(15, 23, 42, 0.35) !important;
+html[data-ui-theme="dark"] body .top-action.theme-toggle-btn > span {
+  color: #fbbf24 !important;
+  filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.65));
 }
 
-html body .techrib-examples-center-shell {
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
-  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.18) !important;
+html[data-ui-theme="dark"] body .top-action.theme-toggle-btn > b {
+  color: #fde68a !important;
 }
 
-html body .techrib-examples-center-top {
-  background: #f8fafc !important;
-  border-bottom: 1px solid #cbd5e1 !important;
+html[data-ui-theme="dark"] body .top-action.grid-toggle-btn.active {
+  background: rgba(56, 189, 248, 0.18) !important;
+  border-color: #38bdf8 !important;
+  color: #7dd3fc !important;
 }
 
-html body .techrib-examples-center-title strong {
-  color: #0f172a !important;
+html[data-ui-theme="dark"] body .top-action:hover {
+  background: #1a3654 !important;
+  border-color: #38bdf8 !important;
+  color: #ffffff !important;
 }
 
-html body .techrib-examples-center-title span {
-  color: #475569 !important;
+html[data-ui-theme="dark"] body .top-action.simulate {
+  background: linear-gradient(180deg, #f97316, #ea580c) !important;
+  border-color: #fb923c !important;
+  color: #ffffff !important;
+}
+html[data-ui-theme="dark"] body .top-action.simulate > span,
+html[data-ui-theme="dark"] body .top-action.simulate > b {
+  color: #ffffff !important;
 }
 
-html body .techrib-examples-center-side {
-  background: #f8fafc !important;
-  border-right: 1px solid #cbd5e1 !important;
+/* --- CAD Ribbon & Ferramentas (Escuro) --- */
+html[data-ui-theme="dark"] body .cad-ribbon {
+  background: #0b1826 !important;
+  border-bottom: 1px solid #1e3a5f !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45) !important;
 }
 
-html body .techrib-examples-center-main {
-  background: #ffffff !important;
+html[data-ui-theme="dark"] body .cad-menu {
+  background: #08131f !important;
+  border-bottom: 1px solid #1a324c !important;
 }
 
-html body .techrib-examples-center-hero,
-html body .techrib-examples-center-card,
-html body .techrib-examples-center-stat,
-html body .techrib-examples-center-cat,
-html body .techrib-examples-center-filter,
-html body .techrib-examples-center-search input,
-html body .techrib-examples-center-search select {
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
+html[data-ui-theme="dark"] body .cad-menu button {
+  background: transparent !important;
+  color: #cbd5e1 !important;
+  font-weight: 600 !important;
 }
 
-html body .techrib-examples-center-card:hover,
-html body .techrib-examples-center-cat:hover {
-  background: #f0f9ff !important;
-  border-color: #0284c7 !important;
+html[data-ui-theme="dark"] body .cad-menu button:hover,
+html[data-ui-theme="dark"] body .cad-menu button.active {
+  background: #16304b !important;
+  border-color: #38bdf8 !important;
+  color: #38bdf8 !important;
 }
 
-html body .techrib-examples-center-card h4,
-html body .techrib-examples-center-hero h3 {
-  color: #0f172a !important;
+html[data-ui-theme="dark"] body .cad-tools {
+  background: #0d1d2e !important;
 }
 
-html body .techrib-examples-center-card p,
-html body .techrib-examples-center-hero p {
-  color: #475569 !important;
+html[data-ui-theme="dark"] body .tool-group {
+  background: #0a1726 !important;
+  border-right-color: #1e3a5f !important;
 }
 
-/* --- Painéis de Diagnóstico, Codegen e Diálogos --- */
-html body #techrib-diagnostic-panel,
-html body .codegen-dialog,
-html body .component-import-dialog,
-html body .server-project-dialog,
-html body .svg-editor-dialog,
-html body .techrib-learn-coach {
-  background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
-  color: #0f172a !important;
-  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.15) !important;
+html[data-ui-theme="dark"] body .cad-tools button,
+html[data-ui-theme="dark"] body .tool-group button {
+  background: #12263c !important;
+  border: 1px solid #244466 !important;
+  color: #38bdf8 !important;
 }
 
-html body #techrib-diagnostic-panel header,
-html body .component-import-dialog > header,
-html body .component-import-dialog > footer,
-html body .techrib-learn-head {
-  background: #f8fafc !important;
-  border-color: #cbd5e1 !important;
-  color: #0f172a !important;
+html[data-ui-theme="dark"] body .cad-tools button small,
+html[data-ui-theme="dark"] body .tool-group button small {
+  color: #e2e8f0 !important;
 }
 
-html body #techrib-diagnostic-panel header strong,
-html body .techrib-learn-title b,
-html body .techrib-learn-question {
-  color: #0f172a !important;
+html[data-ui-theme="dark"] body .cad-tools button svg,
+html[data-ui-theme="dark"] body .tool-group button svg {
+  color: #38bdf8 !important;
+  stroke: #38bdf8 !important;
 }
 
-html body .diag-card,
-html body .diag-actions button,
-html body .techrib-learn-actions button {
-  background: #f8fafc !important;
-  border-color: #cbd5e1 !important;
-  color: #0f172a !important;
+html[data-ui-theme="dark"] body .cad-tools button:hover,
+html[data-ui-theme="dark"] body .tool-group button:hover {
+  background: #1b3958 !important;
+  border-color: #38bdf8 !important;
+  color: #7dd3fc !important;
+}
+
+html[data-ui-theme="dark"] body .cad-tools button.active,
+html[data-ui-theme="dark"] body .tool-group button.active {
+  background: rgba(56, 189, 248, 0.22) !important;
+  border-color: #38bdf8 !important;
+  color: #7dd3fc !important;
+  box-shadow: inset 0 0 10px rgba(56, 189, 248, 0.25) !important;
+}
+
+html[data-ui-theme="dark"] body .cad-tools button.active small,
+html[data-ui-theme="dark"] body .tool-group button.active small {
+  color: #ffffff !important;
+}
+
+html[data-ui-theme="dark"] body .simulation-group button:first-child {
+  color: #4ade80 !important;
+}
+html[data-ui-theme="dark"] body .simulation-group button:last-child {
+  color: #fb7185 !important;
+}
+
+/* --- Biblioteca Lateral (Escuro) --- */
+html[data-ui-theme="dark"] body .component-sidebar {
+  background: #0a1624 !important;
+  border-right: 1px solid #1e3a5f !important;
+  color: #f8fafc !important;
+  box-shadow: 8px 0 24px rgba(0, 0, 0, 0.45) !important;
+}
+
+html[data-ui-theme="dark"] body .sidebar-heading {
+  background: #0e1f32 !important;
+  border-bottom: 1px solid #1e3a5f !important;
+}
+
+html[data-ui-theme="dark"] body .sidebar-heading h2 {
+  color: #f8fafc !important;
+}
+
+html[data-ui-theme="dark"] body .sidebar-heading span {
+  color: #38bdf8 !important;
+}
+
+html[data-ui-theme="dark"] body .component-search {
+  background: #0d1e30 !important;
+  border: 1px solid #26486b !important;
+}
+
+html[data-ui-theme="dark"] body .component-search span {
+  color: #38bdf8 !important;
+}
+
+html[data-ui-theme="dark"] body .component-search input {
+  background: transparent !important;
+  color: #f8fafc !important;
+}
+
+html[data-ui-theme="dark"] body .component-search input::placeholder {
+  color: #64748b !important;
+}
+
+html[data-ui-theme="dark"] body .library-tabs {
+  background: #0d1d2e !important;
+  border-bottom: 1px solid #1e3a5f !important;
+}
+
+html[data-ui-theme="dark"] body .library-tabs button {
+  background: #12263c !important;
+  border: 1px solid #244466 !important;
+  color: #cbd5e1 !important;
+}
+
+html[data-ui-theme="dark"] body .library-tabs .active {
+  background: linear-gradient(135deg, #0284c7, #0ea5e9) !important;
+  border-color: #38bdf8 !important;
+  color: #ffffff !important;
+}
+
+html[data-ui-theme="dark"] body .library-scroll {
+  background: #0a1624 !important;
+  scrollbar-color: #26486b #0a1624 !important;
+}
+
+html[data-ui-theme="dark"] body .library-group,
+html[data-ui-theme="dark"] body .library-domain {
+  background: #0a1624 !important;
+  border-color: #1a324c !important;
+}
+
+html[data-ui-theme="dark"] body .group-title,
+html[data-ui-theme="dark"] body .library-domain-title {
+  background: #102338 !important;
+  border: 1px solid #234262 !important;
+  color: #f8fafc !important;
+}
+
+html[data-ui-theme="dark"] body .group-title > span,
+html[data-ui-theme="dark"] body .library-domain-title > span {
+  color: #fbbf24 !important;
+  filter: drop-shadow(0 0 4px rgba(251, 191, 36, 0.4));
+}
+
+html[data-ui-theme="dark"] body .group-title b,
+html[data-ui-theme="dark"] body .library-domain-title b {
+  color: #f8fafc !important;
+}
+
+html[data-ui-theme="dark"] body .group-title small,
+html[data-ui-theme="dark"] body .library-domain-title small {
+  color: #38bdf8 !important;
+}
+
+html[data-ui-theme="dark"] body .library-family {
+  background: #0d1d2f !important;
+  border: 1px solid #1e3a5f !important;
+}
+
+html[data-ui-theme="dark"] body .library-family-title {
+  background: #132942 !important;
+  color: #e2e8f0 !important;
+  border-bottom: 1px solid #1e3a5f !important;
+}
+
+html[data-ui-theme="dark"] body .library-family-title b {
+  color: #f1f5f9 !important;
+}
+
+html[data-ui-theme="dark"] body .library-family-title small {
+  color: #38bdf8 !important;
+}
+
+html[data-ui-theme="dark"] body .component-grid {
+  background: #0b1826 !important;
+}
+
+html[data-ui-theme="dark"] body .component-item {
+  background: #13273e !important;
+  border: 1px solid #26486b !important;
+  color: #f1f5f9 !important;
+}
+
+html[data-ui-theme="dark"] body .component-item span {
+  color: #f1f5f9 !important;
+}
+
+html[data-ui-theme="dark"] body .component-item:hover {
+  background: #1c3a5c !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2) !important;
+}
+
+html[data-ui-theme="dark"] body .sidebar-footer {
+  background: #09131f !important;
+  border-top: 1px solid #1e3a5f !important;
+  color: #94a3b8 !important;
+}
+
+/* --- Área de Desenho, Folha e Rodapé (Escuro) --- */
+html[data-ui-theme="dark"] body .drawing-area {
+  background: #050c14 !important;
+}
+
+html[data-ui-theme="dark"] body .drawing-toolbar {
+  background: rgba(12, 25, 40, 0.96) !important;
+  border: 1px solid #26486b !important;
+  color: #f1f5f9 !important;
+}
+
+html[data-ui-theme="dark"] body .drawing-toolbar button {
+  background: #13273e !important;
+  border: 1px solid #26486b !important;
+  color: #38bdf8 !important;
+}
+
+html[data-ui-theme="dark"] body .canvas-viewport,
+html[data-ui-theme="dark"] body .canvas-viewport[data-sheet-theme="dark"],
+html[data-ui-theme="dark"] body .canvas-viewport[data-sheet-theme="light"] {
+  background-color: #06101b !important;
+  background-image:
+    linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(to right, rgba(56, 189, 248, 0.11) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.11) 1px, transparent 1px) !important;
+}
+
+html[data-ui-theme="dark"] body .schematic-sheet,
+html[data-ui-theme="dark"] body .schematic-sheet[data-sheet-theme="dark"],
+html[data-ui-theme="dark"] body .schematic-sheet[data-sheet-theme="light"] {
+  background-color: #0a1929 !important;
+  background-image:
+    linear-gradient(to right, rgba(125, 211, 252, 0.065) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(125, 211, 252, 0.065) 1px, transparent 1px),
+    linear-gradient(to right, rgba(56, 189, 248, 0.14) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.14) 1px, transparent 1px) !important;
+  border: 2px solid #38bdf8 !important;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.65) !important;
+  color: #f8fafc !important;
+}
+
+html[data-ui-theme="dark"] body .title-block {
+  background: rgba(11, 25, 41, 0.96) !important;
+  border-color: #38bdf8 !important;
+  color: #f8fafc !important;
+}
+
+html[data-ui-theme="dark"] body .title-block div,
+html[data-ui-theme="dark"] body .title-block span,
+html[data-ui-theme="dark"] body .title-block strong,
+html[data-ui-theme="dark"] body .title-block input {
+  border-color: rgba(56, 189, 248, 0.35) !important;
+  color: #f8fafc !important;
+}
+
+html[data-ui-theme="dark"] body .sheet-empty {
+  background: rgba(13, 29, 47, 0.92) !important;
+  border: 1px dashed #38bdf8 !important;
+  color: #e2e8f0 !important;
+}
+
+html[data-ui-theme="dark"] body .placed-component > header strong,
+html[data-ui-theme="dark"] body .placed-component > small {
+  color: #f8fafc !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95) !important;
+}
+
+html[data-ui-theme="dark"] body .placed-component[data-type="text-block-object"] [data-text-block-content] {
+  color: #f8fafc !important;
+  background: rgba(15, 31, 49, 0.92) !important;
+  border-color: rgba(56, 189, 248, 0.45) !important;
+}
+
+html[data-ui-theme="dark"] body .placed-component[data-type="text-object"] text {
+  fill: #f8fafc !important;
+}
+
+html[data-ui-theme="dark"] body .canvas-statusbar {
+  background: #09131f !important;
+  border-top: 1px solid #1e3a5f !important;
+  color: #cbd5e1 !important;
+}
+
+html[data-ui-theme="dark"] body .canvas-statusbar span,
+html[data-ui-theme="dark"] body .canvas-statusbar strong,
+html[data-ui-theme="dark"] body .status-ready,
+html[data-ui-theme="dark"] body .zoom-control output,
+html[data-ui-theme="dark"] body .zoom-control button {
+  color: #f8fafc !important;
+}
+
+html[data-ui-theme="dark"] body .sheet-format-label select {
+  background: #12263c !important;
+  color: #f8fafc !important;
+  border: 1px solid #26486b !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. OVERRIDE FINAL DE REMOÇÃO DO GRID (Máxima Especificidade em Claro e Escuro)
+   -------------------------------------------------------------------------- */
+html body .schematic-sheet.grid-hidden,
+html:not([data-ui-theme="dark"]) body .schematic-sheet.grid-hidden,
+html:not([data-ui-theme="dark"]) body .schematic-sheet[data-sheet-theme="light"].grid-hidden,
+html:not([data-ui-theme="dark"]) body .schematic-sheet[data-sheet-theme="dark"].grid-hidden,
+html[data-ui-theme="dark"] body .schematic-sheet.grid-hidden,
+html[data-ui-theme="dark"] body .schematic-sheet[data-sheet-theme="light"].grid-hidden,
+html[data-ui-theme="dark"] body .schematic-sheet[data-sheet-theme="dark"].grid-hidden {
+  background-image: none !important;
+}
+
+html body .canvas-viewport.techrib-canvas-grid-hidden,
+html:not([data-ui-theme="dark"]) body .canvas-viewport.techrib-canvas-grid-hidden,
+html:not([data-ui-theme="dark"]) body .canvas-viewport[data-sheet-theme="light"].techrib-canvas-grid-hidden,
+html:not([data-ui-theme="dark"]) body .canvas-viewport[data-sheet-theme="dark"].techrib-canvas-grid-hidden,
+html[data-ui-theme="dark"] body .canvas-viewport.techrib-canvas-grid-hidden,
+html[data-ui-theme="dark"] body .canvas-viewport[data-sheet-theme="light"].techrib-canvas-grid-hidden,
+html[data-ui-theme="dark"] body .canvas-viewport[data-sheet-theme="dark"].techrib-canvas-grid-hidden {
+  background-image: none !important;
 }

@@ -38,7 +38,7 @@
         <button class="top-action" type="button" data-action="new" title="Novo projeto"><span>＋</span><b>Novo</b></button>
         <button class="top-action" type="button" data-action="rename" title="Editar nome do projeto"><span>✎</span><b>Renomear</b></button>
         <button class="top-action" type="button" data-action="save" title="Salvar projeto"><span>▣</span><b>Salvar</b></button>
-        <button class="top-action sound" type="button" data-action="sound" title="Ativar ou desativar sons"><span data-sound-icon>🔊</span><b>Som</b></button><button class="top-action simulate" type="button" data-action="wiring-steps" title="Gerar passo a passo automático da ligação"><span>☷</span><b>Passo a passo</b></button>
+        <button class="top-action grid-toggle-btn active" type="button" data-action="toggle-grid" title="Mostrar ou ocultar o GRID da folha"><span data-grid-icon>⊞</span><b data-grid-label>Grade: ON</b></button><button class="top-action theme-toggle-btn" type="button" data-action="toggle-ui-theme" title="Alternar entre Tema Claro e Tema Escuro"><span data-theme-icon>☀️</span><b data-theme-label>Tema Claro</b></button><button class="top-action sound" type="button" data-action="sound" title="Ativar ou desativar sons"><span data-sound-icon>🔊</span><b>Som</b></button><button class="top-action simulate" type="button" data-action="wiring-steps" title="Gerar passo a passo automático da ligação"><span>☷</span><b>Passo a passo</b></button>
         <button class="icon-button mobile-more" type="button" data-action="mobile-more" title="Mais opções">•••</button>
                         </nav>
     </header>
@@ -701,7 +701,7 @@
                       </div>
         </section>
                                 <section class="library-group premium-registry-source">
-          <button class="group-title" type="button"><span>◆</span><b>PREMIUM</b><small>⌃</small></button>
+          <button class="group-title" type="button"><span>◆</span><b>EXTRAS</b><small>⌃</small></button>
           <div class="component-grid">
                         <button class="component-item premium-component premium-thumb premium-elevator-thumb" draggable="true" data-component="elevador-4-andares" data-registry-id="elevador-4-andares" data-premium="true" data-library-group="Elevadores" data-label="Elevador 4 Andares" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Elevador 4 Andares" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/premium/elevador-4-andares/visual.svg?v=1787776808" data-techrib-preview-url="/assets/component-registry/premium/elevador-4-andares/visual.svg?v=1787776808"><span>Elevador 4 Andares</span></button>
                         <button class="component-item premium-component premium-thumb premium-parking-thumb" draggable="true" data-component="estacionamento-inteligente-esp32" data-registry-id="estacionamento-inteligente-esp32" data-premium="true" data-library-group="Robótica e Movimento" data-label="Estacionamento Inteligente • ESP32" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Estacionamento Inteligente • ESP32" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/premium/estacionamento-inteligente-esp32/visual.svg?v=1788639979" data-techrib-preview-url="/assets/component-registry/premium/estacionamento-inteligente-esp32/visual.svg?v=1788639979"><span>Estacionamento Inteligente • ESP32</span></button>
@@ -709,6 +709,20 @@
                         <button class="component-item premium-component premium-thumb premium-conveyor-system-thumb" draggable="true" data-component="sistema-esteiras-transportadoras" data-registry-id="sistema-esteiras-transportadoras" data-premium="true" data-library-group="Esteiras transportadoras" data-label="Sistema de Esteiras Transportadoras" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Sistema de Esteiras Transportadoras" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/premium/sistema-esteiras-transportadoras/visual.svg?v=1787776974" data-techrib-preview-url="/assets/component-registry/premium/sistema-esteiras-transportadoras/visual.svg?v=1787776974"><span>Sistema de Esteiras Transportadoras</span></button>
                         <button class="component-item premium-component premium-thumb premium-crane-system-thumb" draggable="true" data-component="sistema-pontes-rolantes" data-registry-id="sistema-pontes-rolantes" data-premium="true" data-library-group="Pontes rolantes" data-label="Sistema de Pontes Rolantes" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Sistema de Pontes Rolantes" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/premium/sistema-pontes-rolantes/visual.svg?v=1787778699" data-techrib-preview-url="/assets/component-registry/premium/sistema-pontes-rolantes/visual.svg?v=1787778699"><span>Sistema de Pontes Rolantes</span></button>
                         <button class="component-item premium-component premium-thumb premium-gate-system-thumb" draggable="true" data-component="sistema-portoes-automaticos" data-registry-id="sistema-portoes-automaticos" data-premium="true" data-library-group="Portões automáticos" data-label="Sistema de Portões e Portas Automáticas" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Sistema de Portões e Portas Automáticas" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/premium/sistema-portoes-automaticos/visual.svg?v=1787775687" data-techrib-preview-url="/assets/component-registry/premium/sistema-portoes-automaticos/visual.svg?v=1787775687"><span>Sistema de Portões e Portas Automáticas</span></button>
+                      
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="industrial-esteira-separadora" data-registry-id="industrial-esteira-separadora" data-behavior-type="industrial-process" data-premium="true" data-library-group="Motores e cargas" data-label="Esteira Industrial de Separação" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Esteira Industrial de Separação" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/industrial-esteira-separadora/visual.svg?v=1787792792" data-techrib-preview-url="/assets/component-registry/industrial/industrial-esteira-separadora/visual.svg?v=1787792792"><span>Esteira Industrial de Separação</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="industrial-compressor-reservatorio" data-registry-id="industrial-compressor-reservatorio" data-behavior-type="industrial-process" data-premium="true" data-library-group="Motores e cargas" data-label="Compressor Industrial com Reservatório" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Compressor Industrial com Reservatório" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/industrial-compressor-reservatorio/visual.svg?v=1787792792" data-techrib-preview-url="/assets/component-registry/industrial/industrial-compressor-reservatorio/visual.svg?v=1787792792"><span>Compressor Industrial com Reservatório</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="processo-camara-fria" data-registry-id="processo-camara-fria" data-behavior-type="visual-module" data-premium="true" data-library-group="Processos Industriais" data-label="Câmara Fria • Processo Térmico" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Câmara Fria • Processo Térmico" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/processo-camara-fria/visual.svg?v=1788697049" data-techrib-preview-url="/assets/component-registry/industrial/processo-camara-fria/visual.svg?v=1788697049"><span>Câmara Fria • Processo Térmico</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="industrial-exaustor-centrifugo" data-registry-id="industrial-exaustor-centrifugo" data-behavior-type="industrial-process" data-premium="true" data-library-group="Motores e cargas" data-label="Exaustor Industrial Centrífugo" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Exaustor Industrial Centrífugo" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/industrial-exaustor-centrifugo/visual.svg?v=1787792792" data-techrib-preview-url="/assets/component-registry/industrial/industrial-exaustor-centrifugo/visual.svg?v=1787792792"><span>Exaustor Industrial Centrífugo</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="processo-envasadora" data-registry-id="processo-envasadora" data-behavior-type="visual-module" data-premium="true" data-library-group="Processos Industriais" data-label="Envasadora Automática" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Envasadora Automática" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/processo-envasadora/visual.svg?v=1788135416" data-techrib-preview-url="/assets/component-registry/industrial/processo-envasadora/visual.svg?v=1788135416"><span>Envasadora Automática</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="industrial-tanque-agitador" data-registry-id="industrial-tanque-agitador" data-behavior-type="industrial-process" data-premium="true" data-library-group="Motores e cargas" data-label="Tanque Industrial com Agitador" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Tanque Industrial com Agitador" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/industrial-tanque-agitador/visual.svg?v=1787792792" data-techrib-preview-url="/assets/component-registry/industrial/industrial-tanque-agitador/visual.svg?v=1787792792"><span>Tanque Industrial com Agitador</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="estacao-pesagem-industrial" data-registry-id="estacao-pesagem-industrial" data-behavior-type="visual-module" data-premium="true" data-library-group="Processos Industriais" data-label="Estação de Pesagem em Esteira" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Estação de Pesagem em Esteira" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/estacao-pesagem-industrial/visual.svg?v=1788135416" data-techrib-preview-url="/assets/component-registry/industrial/estacao-pesagem-industrial/visual.svg?v=1788135416"><span>Estação de Pesagem em Esteira</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="modulo-pesagem-industrial" data-registry-id="modulo-pesagem-industrial" data-behavior-type="visual-module" data-premium="true" data-library-group="Controle de Processo" data-label="Módulo de Pesagem" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Módulo de Pesagem" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/modulo-pesagem-industrial/visual.svg?v=1788135416" data-techrib-preview-url="/assets/component-registry/industrial/modulo-pesagem-industrial/visual.svg?v=1788135416"><span>Módulo de Pesagem</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="braco-robotico-scara-esp32" data-registry-id="braco-robotico-scara-esp32" data-behavior-type="visual-module" data-premium="true" data-library-group="Robótica e Movimento" data-label="Braço Robótico SCARA • ESP32" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Braço Robótico SCARA • ESP32" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/premium/braco-robotico-scara-esp32/visual.svg?v=1788646015" data-techrib-preview-url="/assets/component-registry/premium/braco-robotico-scara-esp32/visual.svg?v=1788646015"><span>Braço Robótico SCARA • ESP32</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="mini-cnc-eixo-linear-esp32" data-registry-id="mini-cnc-eixo-linear-esp32" data-behavior-type="visual-module" data-premium="true" data-library-group="Robótica e Movimento" data-label="Mini CNC • Eixo Linear ESP32" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Mini CNC • Eixo Linear ESP32" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/premium/mini-cnc-eixo-linear-esp32/visual.svg?v=1788657182" data-techrib-preview-url="/assets/component-registry/premium/mini-cnc-eixo-linear-esp32/visual.svg?v=1788657182"><span>Mini CNC • Eixo Linear ESP32</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="controlador-irrigacao-2zonas" data-registry-id="controlador-irrigacao-2zonas" data-behavior-type="visual-module" data-premium="true" data-library-group="Controle de Processo" data-label="Controlador de Irrigação • 2 Zonas" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Controlador de Irrigação • 2 Zonas" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/controlador-irrigacao-2zonas/visual.svg?v=1788128304" data-techrib-preview-url="/assets/component-registry/industrial/controlador-irrigacao-2zonas/visual.svg?v=1788128304"><span>Controlador de Irrigação • 2 Zonas</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="valvula-envase-industrial" data-registry-id="valvula-envase-industrial" data-behavior-type="visual-module" data-premium="true" data-library-group="Atuadores Industriais" data-label="Válvula de Envase" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Válvula de Envase" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/valvula-envase-industrial/visual.svg?v=1788135416" data-techrib-preview-url="/assets/component-registry/industrial/valvula-envase-industrial/visual.svg?v=1788135416"><span>Válvula de Envase</span></button>
+                        <button class="component-item premium-component premium-thumb" draggable="true" data-component="valvula-solenoide-irrigacao" data-registry-id="valvula-solenoide-irrigacao" data-behavior-type="visual-module" data-premium="true" data-library-group="Atuadores Industriais" data-label="Válvula Solenoide de Irrigação" type="button"><img class="library-svg-preview techrib-lazy-preview" alt="Válvula Solenoide de Irrigação" draggable="false" loading="lazy" decoding="async" src="assets/component-registry/industrial/valvula-solenoide-irrigacao/visual.svg?v=1788128304" data-techrib-preview-url="/assets/component-registry/industrial/valvula-solenoide-irrigacao/visual.svg?v=1788128304"><span>Válvula Solenoide de Irrigação</span></button>
                       </div>
         </section>
                 <section class="library-group residential-source-items">
@@ -5653,7 +5667,7 @@
         <header><div><small>BIBLIOTECA LUCASAGUIAR</small><h3>Salvar componente como...</h3></div><button type="button" data-ce-saveas-close aria-label="Fechar">×</button></header>
         <div class="ce-saveas-body">
           <label>Operação<select data-ce-saveas-mode><option value="new">Criar novo componente</option><option value="replace">Substituir componente existente</option></select></label>
-          <label>Biblioteca<select data-ce-saveas-library><option value="electrical">Elétrica</option><option value="automation">Automação</option><option value="electronics">Eletrônica</option><option value="premium">Premium</option></select></label>
+          <label>Biblioteca<select data-ce-saveas-library><option value="electrical">Elétrica</option><option value="automation">Automação</option><option value="electronics">Eletrônica</option><option value="premium">Extras</option></select></label>
           <div data-ce-saveas-new>
             <div class="ce-saveas-grid"><label>Nome<input data-ce-saveas-name maxlength="90"></label><label>ID interno<input data-ce-saveas-id maxlength="72"></label></div>
             <label>Subcategoria<input data-ce-saveas-group list="ce-saveas-groups" placeholder="Ex.: Comando"></label><datalist id="ce-saveas-groups"></datalist>
@@ -5791,25 +5805,122 @@ window.TECHRIB_PERSONAL_COMPONENTS=[];
 <script src="assets/codegen-v66.js?v=1792535122"></script>
 <script src="assets/runtime/techrib-iot-cloud-mapping-v1.js?v=1792514438"></script>
 <script src="assets/runtime/techrib-iot-cloud-codegen-v4.js?v=1792591974"></script>
-<script src="assets/runtime/techrib-cloud-ir-v2.js?v=1792591973"></script><script src="assets/component-import-v53.js?v=1787669296"></script><script src="assets/print-fit-v2.js?v=1788825448"></script>  <script>
-    (function enforceWhiteTheme() {
-      function applyLightAttributes() {
-        document.querySelectorAll('.schematic-sheet, .canvas-viewport').forEach(el => {
-          if (el.getAttribute('data-sheet-theme') !== 'light') {
-            el.setAttribute('data-sheet-theme', 'light');
-          }
-        });
-        document.querySelectorAll('select[data-sheet-theme]').forEach(sel => {
-          if (sel.value !== 'light') sel.value = 'light';
-        });
+<script src="assets/runtime/techrib-cloud-ir-v2.js?v=1792591973"></script><script src="assets/component-import-v53.js?v=1787669296"></script><script src="assets/print-fit-v2.js?v=1788825448"></script>      <script>
+    (function initLucasAguiarThemeAndGrid() {
+      const THEME_KEY = 'lucasaguiar_ui_theme_v1';
+      let currentTheme = localStorage.getItem(THEME_KEY);
+      if (currentTheme !== 'dark' && currentTheme !== 'light') {
+        currentTheme = 'light';
+      }
+
+      function ensureStylesheetLast() {
         const link = document.getElementById('techrib-white-theme-link');
         if (link && document.head.lastElementChild !== link) {
           document.head.appendChild(link);
         }
       }
-      applyLightAttributes();
-      const obs = new MutationObserver(() => applyLightAttributes());
-      obs.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['data-sheet-theme'] });
+
+      function syncThemeUI(theme) {
+        currentTheme = theme === 'dark' ? 'dark' : 'light';
+        localStorage.setItem(THEME_KEY, currentTheme);
+        if (document.documentElement.getAttribute('data-ui-theme') !== currentTheme) {
+          document.documentElement.setAttribute('data-ui-theme', currentTheme);
+        }
+
+        document.querySelectorAll('.schematic-sheet, .canvas-viewport').forEach(el => {
+          if (el.getAttribute('data-sheet-theme') !== currentTheme) {
+            el.setAttribute('data-sheet-theme', currentTheme);
+          }
+        });
+        document.querySelectorAll('select[data-sheet-theme]').forEach(sel => {
+          if (sel.value !== currentTheme) sel.value = currentTheme;
+        });
+
+        document.querySelectorAll('[data-action="toggle-ui-theme"]').forEach(btn => {
+          const icon = btn.querySelector('[data-theme-icon]');
+          const label = btn.querySelector('[data-theme-label]');
+          const isDark = currentTheme === 'dark';
+          if (btn.classList.contains('active') !== isDark) {
+            btn.classList.toggle('active', isDark);
+          }
+          if (btn.getAttribute('aria-pressed') !== String(isDark)) {
+            btn.setAttribute('aria-pressed', String(isDark));
+          }
+          const nextIcon = isDark ? '🌙' : '☀️';
+          const nextLabel = isDark ? 'Tema Escuro' : 'Tema Claro';
+          if (icon && icon.textContent !== nextIcon) icon.textContent = nextIcon;
+          if (label && label.textContent !== nextLabel) label.textContent = nextLabel;
+        });
+
+        ensureStylesheetLast();
+      }
+
+      function syncGridUI() {
+        const sheet = document.querySelector('.schematic-sheet');
+        const viewport = document.querySelector('.canvas-viewport');
+        if (!sheet) return;
+        const hidden = sheet.classList.contains('grid-hidden');
+        if (viewport && viewport.classList.contains('techrib-canvas-grid-hidden') !== hidden) {
+          viewport.classList.toggle('techrib-canvas-grid-hidden', hidden);
+        }
+        document.querySelectorAll('.top-action[data-action="toggle-grid"]').forEach(btn => {
+          const icon = btn.querySelector('[data-grid-icon]');
+          const label = btn.querySelector('[data-grid-label]');
+          const isOn = !hidden;
+          if (btn.classList.contains('active') !== isOn) {
+            btn.classList.toggle('active', isOn);
+          }
+          if (btn.getAttribute('aria-pressed') !== String(isOn)) {
+            btn.setAttribute('aria-pressed', String(isOn));
+          }
+          const nextIcon = hidden ? '⊟' : '⊞';
+          const nextLabel = hidden ? 'Sem Grade' : 'Grade: ON';
+          if (icon && icon.textContent !== nextIcon) icon.textContent = nextIcon;
+          if (label && label.textContent !== nextLabel) label.textContent = nextLabel;
+        });
+      }
+
+      syncThemeUI(currentTheme);
+      syncGridUI();
+
+      document.addEventListener('click', (e) => {
+        const themeBtn = e.target.closest('[data-action="toggle-ui-theme"]');
+        if (themeBtn) {
+          e.preventDefault();
+          const next = currentTheme === 'dark' ? 'light' : 'dark';
+          syncThemeUI(next);
+          return;
+        }
+        const gridBtn = e.target.closest('[data-action="toggle-grid"]');
+        if (gridBtn) {
+          setTimeout(syncGridUI, 15);
+        }
+      }, true);
+
+      document.addEventListener('change', (e) => {
+        const sel = e.target.closest('select[data-sheet-theme]');
+        if (sel) {
+          syncThemeUI(sel.value === 'dark' ? 'dark' : 'light');
+        }
+      }, true);
+
+      const sheetEl = document.querySelector('.schematic-sheet');
+      if (sheetEl) {
+        const obs = new MutationObserver(() => {
+          if (sheetEl.getAttribute('data-sheet-theme') !== currentTheme) {
+            sheetEl.setAttribute('data-sheet-theme', currentTheme);
+          }
+          const viewport = document.querySelector('.canvas-viewport');
+          if (viewport && viewport.getAttribute('data-sheet-theme') !== currentTheme) {
+            viewport.setAttribute('data-sheet-theme', currentTheme);
+          }
+          syncGridUI();
+        });
+        obs.observe(sheetEl, {
+          attributes: true,
+          attributeFilter: ['class', 'data-sheet-theme']
+        });
+      }
     })();
   </script>
 </body>
