@@ -1,0 +1,14 @@
+<svg viewBox="0 0 300 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Transformador de comando 220 para 24 VCA">
+<defs><linearGradient id="trBody24" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient><linearGradient id="trCore24" x2="0" y2="1"><stop stop-color="#334155"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+<rect x="35" y="42" width="230" height="305" rx="22" fill="url(#trBody24)" stroke="#64748b" stroke-width="6"/>
+<rect x="64" y="92" width="172" height="162" rx="18" fill="url(#trCore24)" stroke="#0f172a" stroke-width="5"/>
+<rect x="88" y="112" width="52" height="122" rx="8" fill="#b45309" stroke="#78350f" stroke-width="3"/><path d="M98 122v102M108 122v102M118 122v102M128 122v102" stroke="#f59e0b" stroke-width="5"/>
+<rect x="160" y="112" width="52" height="122" rx="8" fill="#1d4ed8" stroke="#1e3a8a" stroke-width="3"/><path d="M170 122v102M180 122v102M190 122v102M200 122v102" stroke="#60a5fa" stroke-width="5"/>
+<text x="150" y="277" text-anchor="middle" font-family="Arial" font-weight="900" font-size="24" fill="#0f172a">TR COMANDO</text>
+<text x="150" y="307" text-anchor="middle" font-family="Arial" font-weight="800" font-size="19" fill="#334155">220 VCA → 24 VCA</text>
+<rect x="73" y="315" width="154" height="25" rx="8" fill="#ffd400" stroke="#8a6500" stroke-width="2"/><text x="150" y="333" text-anchor="middle" font-family="Arial" font-weight="900" font-size="13" fill="#111827">EXTRABAIXA TENSÃO</text>
+<g data-terminal="H1"><circle data-wire-anchor="H1" cx="90" cy="42" r="25" fill="#000" fill-opacity=".001" pointer-events="all"/><circle cx="90" cy="42" r="11" fill="#b7791f" stroke="#5b3a10" stroke-width="3"/><text x="90" y="27" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900">H1</text></g>
+<g data-terminal="H2"><circle data-wire-anchor="H2" cx="210" cy="42" r="25" fill="#000" fill-opacity=".001" pointer-events="all"/><circle cx="210" cy="42" r="11" fill="#b7791f" stroke="#5b3a10" stroke-width="3"/><text x="210" y="27" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900">H2</text></g>
+<g data-terminal="X1"><circle data-wire-anchor="X1" cx="90" cy="347" r="25" fill="#000" fill-opacity=".001" pointer-events="all"/><circle cx="90" cy="347" r="11" fill="#b7791f" stroke="#5b3a10" stroke-width="3"/><text x="90" y="378" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900">X1</text></g>
+<g data-terminal="X2"><circle data-wire-anchor="X2" cx="210" cy="347" r="25" fill="#000" fill-opacity=".001" pointer-events="all"/><circle cx="210" cy="347" r="11" fill="#b7791f" stroke="#5b3a10" stroke-width="3"/><text x="210" y="378" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900">X2</text></g>
+</svg>

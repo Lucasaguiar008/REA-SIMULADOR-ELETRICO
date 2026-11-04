@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.564 13.388" role="img" aria-label="DS18B20 Temperature Sensor" data-techrib-board-package="true" data-board-source="ds18b20"><g data-wire-obstacle="true"><svg xmlns="http://www.w3.org/2000/svg" width="8.564" height="13.388" version="1.1" viewBox="0 0 8.564 13.388" x="0" y="0" preserveAspectRatio="none" data-techrib-source-svg="true">
+ <g transform="translate(-71.965 -103.44)">
+  <rect x="71.965" y="103.44" width="8.564" height="8.2188" rx="1"/>
+  <g fill="#b3b3b3">
+   <rect x="72.988" y="111.64" width="1.1049" height="5.187"/>
+   <rect x="78.068" y="111.64" width="1.1049" height="5.1781"/>
+   <rect x="75.528" y="111.64" width="1.1049" height="5.1683"/>
+  </g>
+  <text x="76.150513" y="107.08003" fill="#ffffff" font-family="sans-serif" font-size="2.4716px" stroke-width=".06179" text-anchor="middle" style="line-height:1.25" xml:space="preserve"><tspan x="76.150513" y="107.08003" text-align="center">DS</tspan><tspan x="76.150513" y="110.16953" text-align="center">18B20</tspan></text>
+ </g>
+</svg></g><g data-techrib-board-terminals="true"><g data-terminal="GND" data-terminal-id="board-ds18b20:GND" data-terminal-name="GND" data-terminal-role="ground" class="wire-terminal"><title>GND</title><circle cx="1.46" cy="13" r="0.55" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="DQ" data-terminal-id="board-ds18b20:DQ" data-terminal-name="DQ" data-terminal-role="signal-io" class="wire-terminal"><title>DQ</title><circle cx="4" cy="13" r="0.55" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="VCC" data-terminal-id="board-ds18b20:VCC" data-terminal-name="VCC" data-terminal-role="power-input" class="wire-terminal"><title>VCC</title><circle cx="6.54" cy="13" r="0.55" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g></g></svg>

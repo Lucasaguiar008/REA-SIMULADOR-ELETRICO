@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 760" role="img" aria-label="Multímetro digital TechRib">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#30363b" />
+      <stop offset="0.45" stop-color="#171b1f" />
+      <stop offset="1" stop-color="#0b0d0f" />
+    </linearGradient>
+    <linearGradient id="bezelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4b5258" />
+      <stop offset="1" stop-color="#1a1e22" />
+    </linearGradient>
+    <linearGradient id="dialGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2c3237" />
+      <stop offset="1" stop-color="#0d0f11" />
+    </linearGradient>
+    <radialGradient id="knobGrad">
+      <stop offset="0" stop-color="#525960" />
+      <stop offset="0.55" stop-color="#2a3035" />
+      <stop offset="1" stop-color="#0c0e10" />
+    </radialGradient>
+    <radialGradient id="jackRed">
+      <stop offset="0" stop-color="#e9e9e9" />
+      <stop offset="0.34" stop-color="#747474" />
+      <stop offset="0.36" stop-color="#300" />
+      <stop offset="0.60" stop-color="#a60000" />
+      <stop offset="1" stop-color="#4c0000" />
+    </radialGradient>
+    <radialGradient id="jackBlack">
+      <stop offset="0" stop-color="#e4e4e4" />
+      <stop offset="0.34" stop-color="#777" />
+      <stop offset="0.36" stop-color="#080808" />
+      <stop offset="0.60" stop-color="#202020" />
+      <stop offset="1" stop-color="#000" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-opacity=".35" />
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".35" />
+    </filter>
+  </defs>
+
+  
+  <g filter="url(#shadow)">
+    <path d="M76 18h268c23 0 42 19 42 42v640c0 23-19 42-42 42H76c-23 0-42-19-42-42V60c0-23 19-42 42-42z" fill="url(#bodyGrad)" stroke="#08090a" stroke-width="8" />
+    <path d="M70 26h280c17 0 30 13 30 30v648c0 17-13 30-30 30H70c-17 0-30-13-30-30V56c0-17 13-30 30-30z" fill="none" stroke="#656d72" stroke-width="2" opacity=".55" />
+  </g>
+
+  
+  <path d="M64 49h292a14 14 0 0 1 14 14v42H50V63a14 14 0 0 1 14-14z" fill="#f0f2f3" />
+  <text x="72" y="84" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24" fill="#24292d">LucasAguiar</text>
+  <text x="300" y="82" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="19" fill="#cc1010">TR-6000</text>
+  <text x="300" y="100" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#444">TRUE RMS</text>
+
+  
+  <g filter="url(#smallShadow)">
+    <rect x="72" y="122" width="276" height="116" rx="10" fill="url(#bezelGrad)" stroke="#0c0f11" stroke-width="4" />
+    <rect x="87" y="138" width="246" height="84" rx="6" fill="#b9c7a0" stroke="#6c7860" stroke-width="3" />
+  </g>
+  <text x="103" y="198" font-family="monospace" font-size="55" font-weight="700" fill="#1f2a19">0.000</text>
+  <text x="293" y="158" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#263020">AUTO</text>
+  <text x="294" y="213" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#263020">V</text>
+
+  
+  <g font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" text-anchor="middle">
+    <rect x="86" y="255" width="70" height="31" rx="7" fill="#3e4449" stroke="#737b81" />
+    <rect x="175" y="255" width="70" height="31" rx="7" fill="#3e4449" stroke="#737b81" />
+    <rect x="264" y="255" width="70" height="31" rx="7" fill="#3e4449" stroke="#737b81" />
+    <text x="121" y="276" fill="#f2f2f2">HOLD</text>
+    <text x="210" y="276" fill="#f2f2f2">RANGE</text>
+    <text x="299" y="276" fill="#f2f2f2">SELECT</text>
+  </g>
+
+  
+  <circle cx="210" cy="430" r="126" fill="#0f1214" stroke="#565d63" stroke-width="3" />
+
+  
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#e9e9e9" font-weight="700">
+    <text x="210" y="319" font-size="16" fill="#ffcf2d">OFF</text>
+    <text x="285" y="340" font-size="15">V~</text>
+    <text x="319" y="389" font-size="15">V⎓</text>
+    <text x="321" y="450" font-size="14">mV</text>
+    <text x="293" y="507" font-size="16">Ω</text>
+    <text x="238" y="538" font-size="19">)))</text>
+    <text x="174" y="538" font-size="14">►|</text>
+    <text x="122" y="507" font-size="15">Hz</text>
+    <text x="96" y="450" font-size="15">µA</text>
+    <text x="100" y="389" font-size="15">mA</text>
+    <text x="133" y="342" font-size="15">A</text>
+  </g>
+
+  
+  <g stroke="#dfe3e6" stroke-width="3" stroke-linecap="round">
+    <path d="M210 302v13" />
+    <path d="M273 319l-7 12" />
+    <path d="M318 365l-12 7" />
+    <path d="M335 430h-14" />
+    <path d="M318 495l-12-7" />
+    <path d="M273 541l-7-12" />
+    <path d="M210 558v-14" />
+    <path d="M147 541l7-12" />
+    <path d="M102 495l12-7" />
+    <path d="M85 430h14" />
+    <path d="M102 365l12 7" />
+    <path d="M147 319l7 12" />
+  </g>
+
+  
+  <g filter="url(#smallShadow)">
+    <circle cx="210" cy="430" r="78" fill="url(#knobGrad)" stroke="#686f74" stroke-width="4" />
+    <circle cx="210" cy="430" r="57" fill="#171b1e" stroke="#0b0d0f" stroke-width="4" />
+    <path d="M210 366l-18 41h36z" fill="#e31e24" stroke="#8c0b0e" stroke-width="2" />
+    <circle cx="210" cy="430" r="31" fill="#252b2f" stroke="#656d72" stroke-width="3" />
+  </g>
+
+  
+  <text x="210" y="583" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#f3cf38">CAT III 600V</text>
+  <text x="210" y="601" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#c9ced1">FUSED • DIGITAL MULTIMETER</text>
+
+  
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    
+    <circle cx="88" cy="662" r="28" fill="#1a1d1f" stroke="#70777c" stroke-width="3" />
+    <circle cx="88" cy="662" r="20" fill="url(#jackRed)" />
+    <circle cx="88" cy="662" r="7" fill="#141414" />
+    <text x="88" y="706" font-size="13" fill="#ed3030">10A</text>
+    <text x="88" y="722" font-size="9" fill="#d6d6d6">MAX 10A</text>
+
+    
+    <circle cx="169" cy="662" r="28" fill="#1a1d1f" stroke="#70777c" stroke-width="3" />
+    <circle cx="169" cy="662" r="20" fill="url(#jackRed)" />
+    <circle cx="169" cy="662" r="7" fill="#141414" />
+    <text x="169" y="706" font-size="12" fill="#ed3030">mA / µA</text>
+    <text x="169" y="722" font-size="9" fill="#d6d6d6">FUSED</text>
+
+    
+    <circle cx="250" cy="662" r="28" fill="#1a1d1f" stroke="#70777c" stroke-width="3" />
+    <circle cx="250" cy="662" r="20" fill="url(#jackBlack)" />
+    <circle cx="250" cy="662" r="7" fill="#141414" />
+    <text x="250" y="706" font-size="13" fill="#ededed">COM</text>
+
+    
+    <circle cx="331" cy="662" r="28" fill="#1a1d1f" stroke="#70777c" stroke-width="3" />
+    <circle cx="331" cy="662" r="20" fill="url(#jackRed)" />
+    <circle cx="331" cy="662" r="7" fill="#141414" />
+    <text x="331" y="706" font-size="12" fill="#ed3030">V Ω Hz</text>
+    <text x="331" y="722" font-size="9" fill="#d6d6d6">MAX 600V</text>
+  </g>
+
+  
+  <g id="wire-anchors" fill="transparent" stroke="transparent" pointer-events="all">
+    <circle id="anchor-10a" data-wire-anchor="10A" data-terminal="10A" cx="88" cy="662" r="22" />
+    <circle id="anchor-ma" data-wire-anchor="mA_uA" data-terminal="mA_uA" cx="169" cy="662" r="22" />
+    <circle id="anchor-com" data-wire-anchor="COM" data-terminal="COM" cx="250" cy="662" r="22" />
+    <circle id="anchor-vohm" data-wire-anchor="V_OHM_HZ" data-terminal="V_OHM_HZ" cx="331" cy="662" r="22" />
+  </g>
+
+  
+  <metadata>
+    {
+      "component": "multimeter-digital",
+      "brand": "TechRib",
+      "terminals": ["10A","mA_uA","COM","V_OHM_HZ"],
+      "defaultMode": "OFF",
+      "supportedModes": ["OFF","VAC","VDC","mV","OHM","CONTINUITY","DIODE","Hz","uA","mA","A"]
+    }
+  </metadata>
+</svg>

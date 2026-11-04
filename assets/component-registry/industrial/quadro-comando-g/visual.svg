@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1850 1320" role="img" aria-label="Quadro de comando vazio" data-command-cabinet-visual="true" data-techrib-preserve-text-style="true">
+<defs>
+ <linearGradient id="panel-shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8fafc"/><stop offset=".48" stop-color="#d9e0e4"/><stop offset="1" stop-color="#9aa7ae"/></linearGradient>
+ <linearGradient id="panel-plate" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eef2f3"/><stop offset="1" stop-color="#cbd3d7"/></linearGradient>
+ <linearGradient id="panel-door" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fbfcfd"/><stop offset="1" stop-color="#d6dde1"/></linearGradient>
+ <pattern id="plate-grid" width="72" height="72" patternUnits="userSpaceOnUse"><circle cx="36" cy="36" r="2.6" fill="#89959b" opacity=".48"/></pattern>
+ <style>.pt{font-family:Arial,Helvetica,sans-serif;fill:#334155;font-weight:700}.muted{fill:#64748b;font-size:14px}.title{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:900;fill:#17313e}</style>
+</defs>
+<text data-cabinet-title="true" x="470" y="38" text-anchor="middle" class="title">QUADRO DE COMANDO • 300×300×200 mm</text>
+<g>
+ <rect data-panel-body="true" x="20" y="20" width="1286" height="1294" rx="24" fill="url(#panel-shell)" stroke="#65727a" stroke-width="5"/>
+ <rect data-panel-inner="true" x="42" y="42" width="1242" height="1250" rx="16" fill="#30383d" stroke="#12181b" stroke-width="4"/>
+ <rect data-panel-mount-area="true" x="36" y="64" width="1214" height="1168" rx="10" fill="url(#panel-plate)" stroke="#86939a" stroke-width="4"/>
+ <rect data-panel-grid="true" x="36" y="64" width="1214" height="1168" rx="10" fill="url(#plate-grid)" opacity=".55"/>
+ <g fill="#647178" stroke="#f8fafc" stroke-width="3"> <circle cx="80" cy="88" r="8"/><circle cx="1226" cy="88" r="8"/><circle cx="80" cy="1208" r="8"/><circle cx="1226" cy="1208" r="8"/></g>
+ <text data-panel-plate-label="true" x="643" y="56" text-anchor="middle" class="pt muted">PLACA DE MONTAGEM • 300×300×200 mm</text>
+ <text data-panel-rail-hint="true" x="643" y="1260" text-anchor="middle" class="pt muted">Infraestrutura independente: arraste trilhos DIN, canaletas e dispositivos para dentro do quadro</text>
+</g>
+<g data-panel-door-group="true">
+ <rect data-door-outer="true" x="1362" y="54" width="450" height="1240" rx="18" fill="url(#panel-door)" stroke="#374047" stroke-width="9"/>
+ <rect data-door-surface="true" x="1380" y="74" width="414" height="1200" rx="12" fill="#eef2f4" stroke="#a0abb1" stroke-width="3"/>
+ <rect x="1395" y="96" width="384" height="1162" rx="9" fill="none" stroke="#bdc6cb" stroke-width="2" stroke-dasharray="12 10"/>
+ <g fill="#747e84" stroke="#32393d" stroke-width="3"><rect data-door-hinge-top="true" x="1352" y="154" width="14" height="94" rx="5"/><rect data-door-hinge-bottom="true" x="1352" y="970" width="14" height="94" rx="5"/></g>
+ <g><rect data-door-handle-base="true" x="1760" y="570" width="14" height="76" rx="7" fill="#343b40"/><circle data-door-handle-grip="true" cx="1780" cy="616" r="16" fill="#59636a" stroke="#242a2e" stroke-width="4"/></g>
+</g>
+<circle data-door-cable-entry="true" cx="1320" cy="1160" r="14" fill="#000" fill-opacity="0" stroke="none"/>
+<path data-door-cable-line-a="true" d="M 1320 1172 L 1380 1206" fill="none" stroke="#20272b" stroke-width="10" stroke-linecap="round" opacity=".82"/>
+<path data-door-cable-line-b="true" d="M 1334 1148 L 1396 1188" fill="none" stroke="#59636a" stroke-width="4" stroke-linecap="round" opacity=".92"/>
+<text data-cabinet-footnote="true" x="1587" y="1306" text-anchor="middle" class="pt muted">Porta com área para sinaleiros, botoeiras e instrumentos</text>
+</svg>

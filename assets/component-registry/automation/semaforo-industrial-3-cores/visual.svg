@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 420" role="img" aria-label="Semáforo industrial 3 cores" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="tlBody" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#31414c"/><stop offset=".5" stop-color="#111b22"/><stop offset="1" stop-color="#05090c"/></linearGradient>
+    <radialGradient id="tlRedOff"><stop stop-color="#6d1818"/><stop offset="1" stop-color="#210606"/></radialGradient>
+    <radialGradient id="tlYellowOff"><stop stop-color="#6b5814"/><stop offset="1" stop-color="#211a04"/></radialGradient>
+    <radialGradient id="tlGreenOff"><stop stop-color="#175d2d"/><stop offset="1" stop-color="#041b0c"/></radialGradient>
+    <radialGradient id="tlRedOn"><stop stop-color="#fff2f2"/><stop offset=".18" stop-color="#ffb3b3"/><stop offset=".48" stop-color="#ff3131"/><stop offset="1" stop-color="#8b0000"/></radialGradient>
+    <radialGradient id="tlYellowOn"><stop stop-color="#fffbd5"/><stop offset=".18" stop-color="#fff18a"/><stop offset=".5" stop-color="#ffd21f"/><stop offset="1" stop-color="#9a6a00"/></radialGradient>
+    <radialGradient id="tlGreenOn"><stop stop-color="#edfff2"/><stop offset=".18" stop-color="#a9ffc0"/><stop offset=".5" stop-color="#30e65f"/><stop offset="1" stop-color="#08782c"/></radialGradient>
+    <filter id="tlShadow"><feDropShadow dx="3" dy="5" stdDeviation="5" flood-opacity=".45"/></filter>
+    <filter id="tlGlowR" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="11" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="tlGlowY" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="tlGlowG" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g id="tlTerminal"><circle r="11" fill="#13222c" stroke="#e4bd54" stroke-width="3"/><circle r="5" fill="#dfe9ee"/><path d="M-4 0h8M0-4v8" stroke="#586872" stroke-width="2"/></g>
+  </defs>
+  <g filter="url(#tlShadow)">
+    <rect x="34" y="18" width="152" height="316" rx="30" fill="url(#tlBody)" stroke="#657782" stroke-width="3"/>
+    <rect x="48" y="34" width="124" height="286" rx="24" fill="#080d11" stroke="#23323b" stroke-width="2"/>
+    <path d="M53 50h114l-12 18H65z" fill="#263740"/>
+    <path d="M53 140h114l-12 18H65z" fill="#263740"/>
+    <path d="M53 230h114l-12 18H65z" fill="#263740"/>
+    <circle cx="110" cy="97" r="40" fill="#020506" stroke="#46545d" stroke-width="4"/>
+    <circle data-tl-red="true" cx="110" cy="97" r="31" fill="url(#tlRedOff)"/>
+    <circle cx="110" cy="187" r="40" fill="#020506" stroke="#46545d" stroke-width="4"/>
+    <circle data-tl-yellow="true" cx="110" cy="187" r="31" fill="url(#tlYellowOff)"/>
+    <circle cx="110" cy="277" r="40" fill="#020506" stroke="#46545d" stroke-width="4"/>
+    <circle data-tl-green="true" cx="110" cy="277" r="31" fill="url(#tlGreenOff)"/>
+    <rect x="92" y="332" width="36" height="38" rx="5" fill="#2b3b44" stroke="#82939c"/>
+    <rect x="72" y="366" width="76" height="12" rx="6" fill="#5a6971"/>
+  </g>
+  <text x="110" y="400" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="800" fill="#dcebf3">SEMÁFORO 5 V</text>
+  <g data-terminal="R" transform="translate(28 356)"><use href="#tlTerminal"/><circle data-wire-anchor="R" r="16" fill="#000" fill-opacity=".001"/><text x="0" y="-18" text-anchor="middle" font-family="Arial" font-size="10" font-weight="800" fill="#ff7777">R</text></g>
+  <g data-terminal="Y" transform="translate(82 356)"><use href="#tlTerminal"/><circle data-wire-anchor="Y" r="16" fill="#000" fill-opacity=".001"/><text x="0" y="-18" text-anchor="middle" font-family="Arial" font-size="10" font-weight="800" fill="#ffe36c">Y</text></g>
+  <g data-terminal="G" transform="translate(138 356)"><use href="#tlTerminal"/><circle data-wire-anchor="G" r="16" fill="#000" fill-opacity=".001"/><text x="0" y="-18" text-anchor="middle" font-family="Arial" font-size="10" font-weight="800" fill="#79ef9e">G</text></g>
+  <g data-terminal="GND" transform="translate(192 356)"><use href="#tlTerminal"/><circle data-wire-anchor="GND" r="16" fill="#000" fill-opacity=".001"/><text x="0" y="-18" text-anchor="middle" font-family="Arial" font-size="9" font-weight="800" fill="#dcebf3">GND</text></g>
+</svg>

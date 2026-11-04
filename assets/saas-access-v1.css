@@ -1,0 +1,25 @@
+.saas-upgrade-modal{position:fixed;inset:0;z-index:100000;background:#03111dcc;display:grid;place-items:center;padding:20px;backdrop-filter:blur(5px)}.saas-upgrade-modal[hidden]{display:none}.saas-upgrade-dialog{width:min(540px,100%);background:#fff;color:#102a43;border-radius:19px;padding:32px;position:relative;box-shadow:0 30px 90px #0008}.saas-upgrade-dialog .close{position:absolute;right:14px;top:12px;border:0;background:transparent;font-size:28px;color:#698092;cursor:pointer}.saas-upgrade-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:#fff1d6;color:#c26b00;font-size:24px}.saas-upgrade-dialog .kicker{color:#b46000;font-size:10px;font-weight:900;letter-spacing:1.2px;margin:17px 0 7px}.saas-upgrade-dialog h2{font-size:26px;margin:0}.saas-upgrade-dialog>p:not(.kicker){color:#5c7183;line-height:1.55}.saas-upgrade-dialog ul{padding:0;list-style:none;line-height:1.9}.saas-upgrade-dialog li:before{content:'✓';color:#16855b;font-weight:900;margin-right:9px}.saas-upgrade-dialog>div{display:flex;gap:10px;margin-top:22px}.saas-upgrade-dialog a,.saas-upgrade-dialog>div button{border:0;border-radius:9px;padding:11px 17px;font-weight:800;text-decoration:none;cursor:pointer}.saas-upgrade-dialog a{background:#f59e0b;color:#fff}.saas-upgrade-dialog>div button{background:#eaf0f4;color:#29495d}.saas-clone-example{position:fixed;z-index:9000;right:26px;bottom:62px;border:0;border-radius:11px;padding:12px 17px;background:linear-gradient(135deg,#f59e0b,#f97316);color:#fff;box-shadow:0 12px 30px #7c3c0080;display:flex;align-items:center;gap:9px;cursor:pointer}.saas-clone-example[hidden]{display:none}.saas-clone-example b{font:800 13px Inter,Arial,sans-serif}.saas-clone-example.attention{animation:techribUseExampleAttention .55s ease-in-out 3}@keyframes techribUseExampleAttention{0%,100%{transform:translateY(0);box-shadow:0 12px 30px #7c3c0080}50%{transform:translateY(-5px) scale(1.025);box-shadow:0 16px 38px #f59e0baa}}.techrib-read-only [data-tool="wire"],.techrib-read-only [data-tool="conduit"],.techrib-read-only [data-tool="junction"]{opacity:.48}.techrib-plan-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #315365;border-radius:999px;padding:5px 9px;color:#b9d7e4;font-size:10px;font-weight:800;text-decoration:none}.techrib-plan-chip.upgrade{border-color:#925b17;color:#ffd58a}@media(max-width:700px){.saas-clone-example{right:12px;bottom:55px}.saas-upgrade-dialog{padding:25px}.saas-upgrade-dialog>div{flex-direction:column}}
+
+
+/* Conversão direta — laboratório gratuito → assinatura */
+.saas-subscription-conversion{width:min(620px,100%)}
+.saas-subscription-conversion .saas-upgrade-feature{display:flex;align-items:center;gap:9px;margin:16px 0 4px;padding:11px 13px;border:1px solid #d9e5ed;border-radius:10px;background:#f6fafc;color:#536a7b;font-size:12px}
+.saas-subscription-conversion .saas-upgrade-feature b{color:#14364d;font-size:13px}
+.saas-upgrade-dialog .saas-upgrade-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.saas-upgrade-dialog .saas-upgrade-actions>a,.saas-upgrade-dialog .saas-upgrade-actions>button{display:flex;align-items:center;justify-content:center;min-height:44px;text-align:center;border-radius:9px;padding:11px 14px;font-weight:850;text-decoration:none;cursor:pointer}
+.saas-upgrade-dialog .saas-upgrade-actions>a{background:#183f58;color:#fff}
+.saas-upgrade-dialog .saas-upgrade-actions .saas-upgrade-continue{background:#eaf0f4;color:#29495d;border:0}
+.saas-free-centers{margin:14px 0 0!important;text-align:center;color:#718796!important;font-size:11px!important}.saas-free-centers b{color:#46677d}
+@media(max-width:700px){.saas-upgrade-dialog .saas-upgrade-actions{grid-template-columns:1fr}.saas-subscription-conversion{max-height:92vh;overflow:auto}}
+
+body.techrib-free-lab [data-autosave-status]{color:#f59e0b!important;font-weight:800}
+
+/* TechRib V25 — paywall de assinatura mais claro */
+.saas-paywall-columns{display:grid!important;grid-template-columns:1fr 1fr;gap:12px!important;margin:17px 0 0!important}
+.saas-paywall-columns>div{display:block!important;margin:0!important;padding:14px 15px;border:1px solid #dbe7ec;border-radius:12px;background:#f8fbfc}
+.saas-paywall-columns>div:last-child{border-color:#c9e6e1;background:#f0faf8}
+.saas-paywall-columns small{display:block;margin-bottom:8px;color:#607986;font-size:10px;font-weight:900;letter-spacing:.08em}
+.saas-paywall-columns ul{margin:0;padding:0;list-style:none;line-height:1.55}
+.saas-paywall-columns li{margin:6px 0;color:#365565;font-size:12px}
+.saas-paywall-columns li:before{content:'✓';color:#16855b;font-weight:900;margin-right:7px}
+@media(max-width:700px){.saas-paywall-columns{grid-template-columns:1fr}}

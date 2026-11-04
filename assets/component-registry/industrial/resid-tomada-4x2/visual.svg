@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" role="img" aria-label="Tomada residencial 2P+T em placa 4x2" data-powered="false">
+  <defs>
+    <linearGradient id="o-frame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#d9e0e6"/></linearGradient>
+    <radialGradient id="o-hole"><stop stop-color="#101820"/><stop offset=".7" stop-color="#283843"/><stop offset="1" stop-color="#61727c"/></radialGradient>
+    <style>
+      .lbl{font:800 12px Arial,sans-serif;fill:#20323d}.tiny{font:700 9px Arial,sans-serif;fill:#60727c}.term{fill:#b7791f;stroke:#6f4815;stroke-width:2}.hit{fill:transparent;stroke:transparent;pointer-events:all}
+      [data-powered="true"] [data-outlet-led]{fill:#22c55e;filter:drop-shadow(0 0 5px #22c55e)}
+      [data-powered="true"] [data-outlet-state]{fill:#15803d}
+    </style>
+  </defs>
+  <rect x="18" y="10" width="204" height="250" rx="24" fill="url(#o-frame)" stroke="#8799a4" stroke-width="4"/>
+  <rect x="48" y="36" width="144" height="180" rx="20" fill="#f8fafc" stroke="#a9b5bd" stroke-width="3"/>
+  <circle cx="120" cy="119" r="56" fill="#eef3f6" stroke="#9baab3" stroke-width="3"/>
+  <circle cx="96" cy="111" r="13" fill="url(#o-hole)"/><circle cx="144" cy="111" r="13" fill="url(#o-hole)"/>
+  <path d="M120 130c-13 0-22 8-22 19 0 12 9 21 22 21s22-9 22-21c0-11-9-19-22-19Z" fill="url(#o-hole)"/>
+  <text x="120" y="193" text-anchor="middle" class="lbl">2P+T • 10 A</text>
+  <text x="120" y="211" text-anchor="middle" class="tiny">PLACA 4×2</text>
+  <circle cx="190" cy="32" r="7" fill="#64748b" data-outlet-led="true"/>
+  <text x="120" y="241" text-anchor="middle" class="tiny" data-outlet-state="true">SEM TENSÃO</text>
+  <g data-terminal="L" data-terminal-domain="power" data-terminal-function="power-input" data-terminal-voltage-class="127vac" data-terminal-direction="input" data-wire-side="bottom"><circle class="hit" data-wire-anchor="L" cx="64" cy="286" r="18"/><circle class="term" cx="64" cy="286" r="9"/><text x="64" y="312" text-anchor="middle" class="lbl">L</text></g>
+  <g data-terminal="N" data-terminal-domain="power" data-terminal-function="neutral" data-terminal-voltage-class="127vac" data-terminal-direction="input" data-wire-side="bottom"><circle class="hit" data-wire-anchor="N" cx="120" cy="286" r="18"/><circle class="term" cx="120" cy="286" r="9"/><text x="120" y="312" text-anchor="middle" class="lbl">N</text></g>
+  <g data-terminal="PE" data-terminal-domain="protective-earth" data-terminal-function="protective-earth" data-terminal-direction="passive" data-wire-side="bottom"><circle class="hit" data-wire-anchor="PE" cx="176" cy="286" r="18"/><circle class="term" cx="176" cy="286" r="9"/><text x="176" y="312" text-anchor="middle" class="lbl">PE</text></g>
+</svg>

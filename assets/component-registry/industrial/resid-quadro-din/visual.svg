@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 2200" role="img" aria-label="Quadro de distribuição residencial com trilhos DIN" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="qb-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f9fa"/><stop offset="1" stop-color="#cbd5da"/></linearGradient>
+    <linearGradient id="qb-rail" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e7edef"/><stop offset=".5" stop-color="#8fa0a8"/><stop offset="1" stop-color="#d8e1e5"/></linearGradient>
+    <style>.title{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:900;fill:#17313e}.muted{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;fill:#60717b}</style>
+  </defs>
+  <rect x="18" y="18" width="1524" height="2164" rx="34" fill="#263842" stroke="#0f1d24" stroke-width="8"/>
+  <rect x="38" y="38" width="1484" height="2124" rx="26" fill="url(#qb-bg)" stroke="#83949e" stroke-width="4"/>
+  <rect x="72" y="96" width="1416" height="1950" rx="18" fill="#eef2f4" stroke="#a0aeb6" stroke-width="3"/>
+  <path data-resid-guide="true" d="M 90 138h1380 M 90 1960h1380" stroke="#b5c0c6" stroke-width="3" stroke-dasharray="10 9"/>
+  <rect data-resid-rail="true" x="100" y="250" width="1360" height="34" rx="8" fill="url(#qb-rail)" stroke="#667983" stroke-width="2"/>
+  <rect data-resid-rail="true" x="100" y="930" width="1360" height="34" rx="8" fill="url(#qb-rail)" stroke="#667983" stroke-width="2"/>
+  <rect data-resid-rail="true" x="100" y="1610" width="1360" height="34" rx="8" fill="url(#qb-rail)" stroke="#667983" stroke-width="2" style="display:none"/>
+  <text data-resid-title="true" x="780" y="74" text-anchor="middle" class="title">QDC • 450×360×110 mm • 2 fileiras DIN</text>
+  <text data-resid-footnote="true" x="780" y="2135" text-anchor="middle" class="muted">Altura e largura configuráveis • trilhos internos se ajustam automaticamente</text>
+</svg>

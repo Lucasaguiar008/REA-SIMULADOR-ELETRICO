@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" role="img" aria-label="Atuador de persiana 24 Vcc">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#94a3b8"/><stop offset="1" stop-color="#475569"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-opacity=".30"/></filter>
+    <style>
+      .title{font:900 25px Arial,sans-serif;fill:#e6f7ff}.sub{font:800 14px Arial,sans-serif;fill:#9bd8e8}.tiny{font:800 11px Arial,sans-serif;fill:#b8d6df}.state{font:900 19px Arial,sans-serif;fill:#e0f2fe}.pos{font:900 28px Consolas,monospace;fill:#7dd3fc}.term{font:900 13px Arial,sans-serif;fill:#14252e}.wire-anchor-hitbox{fill:transparent;stroke:transparent;stroke-width:1}.tport{fill:#f8fafc;stroke:#475569;stroke-width:3}.screw{fill:#d8e0e5;stroke:#566671;stroke-width:2}.ledOff{fill:#253341;stroke:#94a3b8;stroke-width:2}.btn{fill:#153342;stroke:#6b93a5;stroke-width:2;cursor:pointer}.btnText{font:900 13px Arial,sans-serif;fill:#e5f7ff;pointer-events:none}
+    </style>
+  </defs>
+  <rect x="35" y="28" width="690" height="558" rx="30" fill="url(#body)" stroke="#536772" stroke-width="5" filter="url(#shadow)"/>
+  <rect x="70" y="72" width="620" height="458" rx="22" fill="#0b1f2a" stroke="#56798a" stroke-width="3"/>
+  <text x="95" y="110" class="title">TechRib • ATUADOR DE PERSIANA</text>
+  <text x="95" y="136" class="sub">24 Vcc • SUBIR / DESCER • INTERTRAVADO</text>
+
+  <rect x="105" y="168" width="350" height="260" rx="14" fill="#e2e8f0" stroke="#64748b" stroke-width="3"/>
+  <rect x="125" y="188" width="310" height="220" rx="5" fill="#f8fafc" stroke="#94a3b8"/>
+  <rect x="125" y="188" width="310" height="120" fill="url(#shade)" data-shutter-curtain="true"/>
+  <g opacity=".58" data-shutter-slats="true">
+    <path d="M125 210H435M125 234H435M125 258H435M125 282H435M125 306H435M125 330H435M125 354H435M125 378H435M125 402H435" stroke="#dbeafe" stroke-width="4"/>
+  </g>
+  <rect x="115" y="178" width="330" height="22" rx="11" fill="#334155"/><circle cx="420" cy="189" r="8" fill="#94a3b8"/>
+
+  <g transform="translate(490 178)">
+    <text x="0" y="0" class="sub">ESTADO</text>
+    <text x="0" y="34" class="state" data-shutter-state="true">PARADA</text>
+    <text x="0" y="78" class="sub">POSIÇÃO</text>
+    <text x="0" y="116" class="pos" data-shutter-position="true">50%</text>
+    <g transform="translate(0 154)"><circle cx="12" cy="0" r="11" class="ledOff" data-shutter-power-led="true"/><text x="34" y="5" class="tiny">PWR</text></g>
+    <g transform="translate(0 190)"><circle cx="12" cy="0" r="11" class="ledOff" data-shutter-up-led="true"/><text x="34" y="5" class="tiny">SUBINDO</text></g>
+    <g transform="translate(0 226)"><circle cx="12" cy="0" r="11" class="ledOff" data-shutter-down-led="true"/><text x="34" y="5" class="tiny">DESCENDO</text></g>
+    <g transform="translate(0 262)"><circle cx="12" cy="0" r="11" class="ledOff" data-shutter-fault-led="true"/><text x="34" y="5" class="tiny">ERR</text></g>
+  </g>
+
+  <g transform="translate(120 460)" data-shutter-command="up"><rect width="145" height="46" rx="10" class="btn"/><text x="72.5" y="29" text-anchor="middle" class="btnText">▲ SUBIR</text></g>
+  <g transform="translate(307 460)" data-shutter-command="stop"><rect width="145" height="46" rx="10" class="btn"/><text x="72.5" y="29" text-anchor="middle" class="btnText">■ PARAR</text></g>
+  <g transform="translate(494 460)" data-shutter-command="down"><rect width="145" height="46" rx="10" class="btn"/><text x="72.5" y="29" text-anchor="middle" class="btnText">▼ DESCER</text></g>
+
+  <g data-terminal="+24V" data-wire-side="top" transform="translate(175 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="+24V" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">+24V</text></g>
+  <g data-terminal="0V" data-wire-side="top" transform="translate(585 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="0V" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">0V</text></g>
+  <g data-terminal="UP" data-wire-side="bottom" transform="translate(255 575)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="UP" data-wire-side="bottom"/><text x="0" y="-28" text-anchor="middle" class="term">UP</text></g>
+  <g data-terminal="DOWN" data-wire-side="bottom" transform="translate(505 575)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="DOWN" data-wire-side="bottom"/><text x="0" y="-28" text-anchor="middle" class="term">DOWN</text></g>
+</svg>

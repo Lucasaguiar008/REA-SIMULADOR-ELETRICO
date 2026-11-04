@@ -1,0 +1,24 @@
+(function(root){
+  'use strict';
+  const base=root.TechRibPresenceSensorRuntimeV1;
+  if(!base?.create)throw new Error('TechRibGasCoSensorRuntimeV1: PresenceSensorRuntime base ausente');
+  const baseCreate=base.create.bind(base);
+  const create=options=>{
+    const delegated=baseCreate(options);
+    const {sheet,registryDefinition,boardPowerState,scheduleElectricalRecalc}=options||{};
+    if(!sheet?.querySelectorAll)throw new Error('TechRibGasCoSensorRuntimeV1: sheet ausente');
+    for(const [name,fn] of Object.entries({registryDefinition,boardPowerState,scheduleElectricalRecalc}))if(typeof fn!=='function')throw new Error(`TechRibGasCoSensorRuntimeV1: ${name} ausente`);
+    const setLed=(component,selector,on,color,off='#253341')=>{const n=component.querySelector?.(selector);if(!n)return;n.setAttribute('fill',on?color:off);if(on){n.style.filter=`drop-shadow(0 0 9px ${color}) drop-shadow(0 0 16px ${color})`;n.style.stroke=color;n.style.strokeWidth='2.1'}else{n.style.removeProperty?.('filter');n.style.removeProperty?.('stroke');n.style.removeProperty?.('stroke-width')}};
+    const snapshot=c=>['gasSensorPowered','gasSensorAlarm','gasSensorSupplyVoltage','gasSensorSource','gasDetected'].map(k=>c.dataset[k]||'').join('|');
+    const setDetected=(component,on)=>{component.dataset.gasDetected=String(Boolean(on));scheduleElectricalRecalc();return true};
+    const bindControls=component=>{if(component.__techribGasCoBound)return;component.__techribGasCoBound=true;component.querySelectorAll?.('[data-gas-test]')?.forEach(node=>node.addEventListener?.('click',event=>{event.preventDefault?.();event.stopPropagation?.();setDetected(component,true)}));component.querySelectorAll?.('[data-gas-clear]')?.forEach(node=>node.addEventListener?.('click',event=>{event.preventDefault?.();event.stopPropagation?.();setDetected(component,false)}))};
+    const render=node=>{const c=node.component,b=node.behavior,ind=b.indicators||{},powered=c.dataset.gasSensorPowered==='true',alarm=c.dataset.gasSensorAlarm==='true',activeLow=String(b.active||'low').toLowerCase()==='low',doHigh=powered&&(activeLow?!alarm:alarm),labels=b.stateLabels||{};setLed(c,'[data-gas-power-led]',powered,ind.powerActiveColor||'#22c55e');setLed(c,'[data-gas-alarm-led]',alarm,ind.alarmActiveColor||'#ef4444');setLed(c,'[data-gas-output-led]',doHigh,ind.outputHighColor||'#f59e0b');const text=c.querySelector?.('[data-gas-state]');if(text)text.textContent=!powered?'SEM ALIMENTAÇÃO':alarm?(labels.alarm||'GÁS/CO DETECTADO'):(labels.clear||'AR NORMAL');c.classList.toggle('peripheral-powered',powered);c.classList.toggle('peripheral-active',alarm);c.title=!powered?`${node.definition.name} • sem alimentação`:alarm?`${node.definition.name} • ALARME • DO ${activeLow?'LOW':'HIGH'}`:`${node.definition.name} • ar normal • DO ${activeLow?'HIGH':'LOW'}`};
+    const evaluateGas=states=>{const nodes=[...sheet.querySelectorAll('.placed-component[data-registry-id]')].filter(c=>registryDefinition(c)?.behavior?.type==='gas-sensor-digital').map(component=>{const definition=registryDefinition(component),behavior=definition.behavior||{},power=boardPowerState(component,states,behavior),before=snapshot(component);bindControls(component);return{component,definition,behavior,power,before}});if(!nodes.length)return false;nodes.forEach(node=>{const c=node.component,powered=Boolean(node.power.powered),alarm=powered&&c.dataset.gasDetected==='true';c.dataset.gasSensorPowered=String(powered);c.dataset.gasSensorAlarm=String(alarm);c.dataset.gasSensorSupplyVoltage=String(Math.round(Number(node.power.voltage||0)*100)/100);c.dataset.gasSensorSource=node.power.source||'';render(node)});return nodes.some(n=>n.before!==snapshot(n.component))};
+    const resetGas=()=>{[...sheet.querySelectorAll('.placed-component[data-registry-id]')].forEach(c=>{if(registryDefinition(c)?.behavior?.type!=='gas-sensor-digital')return;['gasSensorPowered','gasSensorAlarm','gasSensorSupplyVoltage','gasSensorSource','gasDetected'].forEach(k=>delete c.dataset[k]);c.classList.remove('peripheral-powered','peripheral-active');setLed(c,'[data-gas-power-led]',false,'#22c55e');setLed(c,'[data-gas-alarm-led]',false,'#ef4444');setLed(c,'[data-gas-output-led]',false,'#f59e0b');const text=c.querySelector?.('[data-gas-state]');if(text)text.textContent=registryDefinition(c)?.behavior?.stateLabels?.clear||'AR NORMAL'})};
+    const evaluate=states=>{const baseChanged=Boolean(delegated.evaluate?.(states));const gasChanged=Boolean(evaluateGas(states));return baseChanged||gasChanged};
+    const reset=()=>{delegated.reset?.();resetGas()};
+    return Object.freeze({...delegated,evaluate,reset,setGasDetected:setDetected,evaluateGas,resetGas});
+  };
+  root.TechRibGasCoSensorRuntimeV1=Object.freeze({create});
+  root.TechRibPresenceSensorRuntimeV1=Object.freeze({create});
+})(typeof window!=='undefined'?window:globalThis);

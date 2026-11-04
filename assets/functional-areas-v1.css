@@ -1,0 +1,64 @@
+/* TechRib Functional Areas V1 — non-electrical board annotations. */
+.functional-area-tool{position:relative}
+.functional-area-trigger{display:flex!important;align-items:center;justify-content:center;gap:2px}
+.functional-area-trigger>span{font-size:8px}
+.functional-area-dropdown{position:absolute;z-index:15020;top:38px;left:0;display:grid;gap:3px;width:218px;padding:7px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;box-shadow:0 14px 36px #0f172a38}
+.functional-area-dropdown[hidden]{display:none!important}
+.functional-area-dropdown button{display:grid!important;grid-template-columns:20px 1fr!important;align-items:center!important;gap:9px!important;width:100%!important;height:34px!important;padding:0 9px!important;color:#173b55!important;text-align:left!important;font:700 10px Inter,Arial,sans-serif!important}
+.functional-area-dropdown button:hover{background:#eef6fb!important}
+.functional-area-dropdown i{width:15px;height:15px;border:1px solid color-mix(in srgb,var(--fa-color) 70%,#fff);border-radius:4px;background:color-mix(in srgb,var(--fa-color) 16%,transparent)}
+
+.placed-component[data-type="functional-area-object"]{display:block!important;width:520px;min-height:0!important;height:280px;padding:0!important;border:0!important;border-radius:9px!important;background:transparent!important;box-shadow:none!important;outline:none!important;cursor:default;pointer-events:none;overflow:visible!important;isolation:auto}
+.placed-component[data-type="functional-area-object"]>svg{display:block;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;overflow:visible!important;pointer-events:none}
+.placed-component[data-type="functional-area-object"]>span,.placed-component[data-type="functional-area-object"]>small{display:none!important}
+.placed-component[data-type="functional-area-object"] [data-component-selection-hitbox]{display:none!important;pointer-events:none!important}
+.placed-component[data-type="functional-area-object"] [data-functional-area-face]{pointer-events:none;fill-opacity:var(--fa-fill-opacity,.10)}
+.placed-component[data-type="functional-area-object"] [data-functional-area-border]{pointer-events:stroke;cursor:move;stroke-opacity:var(--fa-border-opacity,.56)}
+.placed-component[data-type="functional-area-object"] [data-functional-area-title-box]{pointer-events:none;fill-opacity:.16;stroke-opacity:var(--fa-border-opacity,.56)}
+.placed-component[data-type="functional-area-object"] [data-functional-area-title-hit]{pointer-events:all;cursor:move}
+.placed-component[data-type="functional-area-object"] [data-functional-area-title]{pointer-events:none;font-family:Inter,Arial,sans-serif;font-weight:800;letter-spacing:.6px;fill:var(--fa-title-light,#253746);paint-order:stroke;stroke:rgba(255,255,255,.72);stroke-width:2px}
+.schematic-sheet[data-sheet-theme="dark"] .placed-component[data-type="functional-area-object"] [data-functional-area-face]{fill-opacity:min(.26,calc(var(--fa-fill-opacity,.10) + .035))}
+.schematic-sheet[data-sheet-theme="dark"] .placed-component[data-type="functional-area-object"] [data-functional-area-title]{fill:var(--fa-title-dark,#d6e5ee);stroke:rgba(4,18,29,.76)}
+.placed-component[data-type="functional-area-object"].selected [data-functional-area-border],.placed-component[data-type="functional-area-object"].multi-selected [data-functional-area-border]{stroke-opacity:1;filter:drop-shadow(0 0 3px rgba(14,165,233,.38))}
+.placed-component[data-type="functional-area-object"][data-functional-area-locked="true"] [data-functional-area-border],.placed-component[data-type="functional-area-object"][data-functional-area-locked="true"] [data-functional-area-title-hit]{cursor:default}
+.placed-component[data-type="functional-area-object"] [data-functional-area-resize-handle]{display:none;pointer-events:all;cursor:nwse-resize;fill:#1689b2;stroke:#fff;stroke-width:3;filter:drop-shadow(0 1px 3px #0f172a88)}
+.placed-component[data-type="functional-area-object"].selected:not([data-functional-area-locked="true"]) [data-functional-area-resize-handle],.placed-component[data-type="functional-area-object"].multi-selected:not([data-functional-area-locked="true"]) [data-functional-area-resize-handle]{display:block}
+
+.component-context-menu [data-functional-area-action]{display:none;color:#173b55}
+.component-context-menu.functional-area-menu [data-functional-area-action]{display:block}
+.component-context-menu.functional-area-menu [data-functional-area-action]:hover{background:#eff6ff}
+
+.functional-area-modal{position:fixed;inset:0;z-index:21000;display:grid;place-items:center;padding:18px;background:rgba(3,16,27,.64);backdrop-filter:blur(3px)}
+.functional-area-modal[hidden]{display:none!important}
+.functional-area-dialog{width:min(620px,calc(100vw - 28px));max-height:calc(100vh - 28px);overflow:auto;border:1px solid #bdd0dd;border-radius:15px;background:#fff;color:#173b55;box-shadow:0 24px 70px #0007}
+.functional-area-dialog header{display:flex;align-items:center;justify-content:space-between;padding:15px 18px;border-bottom:1px solid #dbe5ec;background:#f6fafc}
+.functional-area-dialog h2{margin:0;font-size:17px}
+.functional-area-dialog header button{width:32px;height:32px;border:0;border-radius:7px;background:transparent;color:#546b7c;font-size:22px;cursor:pointer}
+.functional-area-fields{display:grid;grid-template-columns:1.5fr 1fr;gap:13px;padding:18px}
+.functional-area-fields label{display:grid;gap:5px;color:#486173;font:700 10px Inter,Arial,sans-serif}
+.functional-area-fields label:first-child{grid-column:1/-1}
+.functional-area-fields input,.functional-area-fields select{width:100%;height:38px;border:1px solid #cbd8e2;border-radius:8px;padding:0 10px;background:#fff;color:#173b55;font:600 12px Inter,Arial,sans-serif}
+.functional-area-fields input[type="color"]{padding:4px}
+.functional-area-range{display:grid;grid-template-columns:1fr 72px;gap:7px}
+.functional-area-range input[type="range"]{padding:0}
+.functional-area-check{display:flex!important;align-items:center;gap:9px;padding-top:17px}
+.functional-area-check input{width:17px;height:17px}
+.functional-area-dialog footer{display:flex;flex-wrap:wrap;align-items:center;gap:7px;padding:13px 18px;border-top:1px solid #dbe5ec;background:#f8fafc}
+.functional-area-dialog footer button{min-height:36px;border:1px solid #c9d6df;border-radius:8px;padding:0 12px;background:#fff;color:#27475e;font:700 10px Inter,Arial,sans-serif;cursor:pointer}
+.functional-area-dialog footer button:hover{background:#edf6fb}
+.functional-area-dialog footer [data-functional-area-apply]{margin-left:auto;border-color:#f57c00;background:#f57c00;color:#fff}
+.functional-area-dialog footer [data-functional-area-delete]{border-color:#fecaca;color:#b91c1c}
+.functional-area-dialog.is-new [data-functional-area-existing]{display:none}
+
+@media(max-width:640px){.functional-area-fields{grid-template-columns:1fr}.functional-area-fields label:first-child{grid-column:auto}.functional-area-dialog footer [data-functional-area-apply]{margin-left:0}.functional-area-dropdown{left:auto;right:0}}
+@media print{[data-functional-area-resize-handle],.functional-area-modal,.functional-area-dropdown{display:none!important}.placed-component[data-type="functional-area-object"].selected [data-functional-area-border],.placed-component[data-type="functional-area-object"].multi-selected [data-functional-area-border]{filter:none!important;stroke-opacity:var(--fa-border-opacity,.56)!important}}
+
+/* TECHRIB FUNCTIONAL AREA LAYERING V1 */
+/* Ordem intencional da prancha:
+   0 = área funcional enviada para trás
+   4 = camada de fios
+   5 = componentes elétricos normais
+   8 = área funcional trazida explicitamente para frente */
+.schematic-sheet>.placed-component[data-type="functional-area-object"][data-functional-area-layer="back"]{z-index:0!important}
+.schematic-sheet>.wire-layer{z-index:4!important}
+.schematic-sheet>.placed-component[data-type="functional-area-object"][data-functional-area-layer="front"]{z-index:8!important}

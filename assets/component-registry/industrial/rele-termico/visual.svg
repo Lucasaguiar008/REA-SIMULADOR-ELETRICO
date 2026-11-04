@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" role="img" aria-label="Relé térmico de sobrecarga" data-component-type="thermal-overload-relay">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#263341"/>
+      <stop offset="0.5" stop-color="#1c2732"/>
+      <stop offset="1" stop-color="#0f171f"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3845"/>
+      <stop offset="1" stop-color="#1b2631"/>
+    </linearGradient>
+    <radialGradient id="screw">
+      <stop offset="0" stop-color="#fafafa"/>
+      <stop offset="0.35" stop-color="#b9c1c7"/>
+      <stop offset="0.65" stop-color="#6e777e"/>
+      <stop offset="1" stop-color="#252c31"/>
+    </radialGradient>
+    <radialGradient id="knob">
+      <stop offset="0" stop-color="#31363b"/>
+      <stop offset="0.75" stop-color="#171b1f"/>
+      <stop offset="1" stop-color="#07090b"/>
+    </radialGradient>
+    <linearGradient id="blueBtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26539a"/>
+      <stop offset="1" stop-color="#17325f"/>
+    </linearGradient>
+    <linearGradient id="whiteBtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f8f8"/>
+      <stop offset="1" stop-color="#d4d4d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity=".28"/>
+    </filter>
+  </defs>
+    <g filter="url(#shadow)">
+    <path d="M 116.491 98.089 L 716.491 98.089 L 744.491 123.089 L 744.491 353.089 L 766.491 373.089 L 766.491 938.089 L 744.491 958.089 L 744.491 1048.09 L 636.491 1048.09 L 636.491 1118.09 L 196.491 1118.09 L 196.491 1048.09 L 88.491 1048.09 L 88.491 958.089 L 66.491 938.089 L 66.491 373.089 L 88.491 353.089 L 88.491 123.089 L 116.491 98.089 Z" fill="url(#body)" stroke="#0d141a" stroke-width="8"/>
+    <g fill="#2a3744" stroke="#111820" stroke-width="5">
+      <rect x="120" y="55" width="170" height="250" rx="12"/>
+      <rect x="315" y="55" width="170" height="250" rx="12"/>
+      <rect x="510" y="55" width="170" height="250" rx="12"/>
+    </g>
+    <g font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="33" text-anchor="middle" fill="#f5f5f5" transform="matrix(1, 0, 0, 1, 16.491753, 59.370312)">
+      <g>
+        <rect x="165" y="104" width="80" height="52" fill="none" stroke="#d8dce0" stroke-width="3"/>
+        <text x="205" y="140" style="white-space: pre;">T1</text>
+      </g>
+      <g>
+        <rect x="360" y="104" width="80" height="52" fill="none" stroke="#d8dce0" stroke-width="3"/>
+        <text x="400" y="140" style="white-space: pre;">T2</text>
+      </g>
+      <g>
+        <rect x="555" y="104" width="80" height="52" fill="none" stroke="#d8dce0" stroke-width="3"/>
+        <text x="595" y="140" style="white-space: pre;">T3</text>
+      </g>
+    </g>
+    <g stroke="#0c1116" stroke-width="7" transform="matrix(1, 0, 0, 1, 11.54425, -115.442276)">
+      <g transform="translate(205 220)" data-terminal="T1" pointer-events="all">
+        <circle r="49" fill="#10171d" data-wire-anchor="T1"/>
+        <circle r="40" fill="url(#screw)" stroke="#c9d0d5" stroke-width="3"/>
+        <path d="M-26 -8h18v-18h16v18h18v16H8v18H-8V8h-18z" fill="#30363b" stroke="#111"/>
+      </g>
+      <g transform="translate(400 220)" data-terminal="T2" pointer-events="all">
+        <circle r="49" fill="#10171d" data-wire-anchor="T2"/>
+        <circle r="40" fill="url(#screw)" stroke="#c9d0d5" stroke-width="3"/>
+        <path d="M-26 -8h18v-18h16v18h18v16H8v18H-8V8h-18z" fill="#30363b" stroke="#111"/>
+      </g>
+      <g transform="translate(595 220)" data-terminal="T3" pointer-events="all">
+        <circle r="49" fill="#10171d" data-wire-anchor="T3"/>
+        <circle r="40" fill="url(#screw)" stroke="#c9d0d5" stroke-width="3"/>
+        <path d="M-26 -8h18v-18h16v18h18v16H8v18H-8V8h-18z" fill="#30363b" stroke="#111"/>
+      </g>
+    </g>
+    <rect x="82.268" y="299.487" width="602.771" height="441.848" rx="18" fill="url(#panel)" stroke="#0b1117" stroke-width="6" style="" transform="matrix(1, 0.000998, 0, 1.000001, -10.864642, 21.70451)"/>
+    <text x="120" y="375" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#dfe4e8" style="white-space: pre;" transform="matrix(0.867089, 0, 0, 0.809524, 15.949329, 66.088387)">THERMAL OVERLOAD RELAY</text>
+    <line x1="120" y1="388" x2="360" y2="388" stroke="#c8cdd1" stroke-width="3"/>
+    <text x="126" y="430" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#e3e6e8" style="white-space: pre;">CURRENT</text>
+    <text x="126" y="462" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#e3e6e8" style="white-space: pre;">SETTING</text>
+    <g transform="translate(250 565)">
+      <circle r="79" fill="url(#knob)" stroke="#050709" stroke-width="6"/>
+      <circle r="66" fill="none" stroke="#3a4147" stroke-width="3"/>
+      <path d="M0-52L7-6h-14z" fill="#050607"/>
+      <path d="M-18-6h12v-12h12v12h12v12H6v12H-6V6h-12z" fill="#020304"/>
+    </g>
+    <g stroke="#e2e5e8" stroke-width="4">
+      <line x1="175" y1="505" x2="157" y2="494"/>
+      <line x1="195" y1="480" x2="184" y2="462"/>
+      <line x1="225" y1="466" x2="222" y2="445"/>
+      <line x1="276" y1="466" x2="281" y2="445"/>
+      <line x1="306" y1="482" x2="319" y2="464"/>
+      <line x1="326" y1="508" x2="346" y2="499"/>
+      <line x1="334" y1="540" x2="356" y2="540"/>
+      <line x1="326" y1="575" x2="346" y2="584"/>
+      <line x1="308" y1="604" x2="321" y2="622"/>
+      <line x1="190" y1="605" x2="177" y2="623"/>
+    </g>
+    <g font-family="Arial" font-size="20" font-weight="700" fill="#e9ecef">
+      <text x="116" y="535" style="white-space: pre;">4.5</text>
+      <text x="145" y="633" style="white-space: pre;">4</text>
+      <text x="244" y="444" style="white-space: pre;">5</text>
+      <text x="337" y="537" style="white-space: pre;">5.5</text>
+      <text x="341" y="633" style="white-space: pre;">6</text>
+    </g>
+    <text x="205" y="682" font-family="Arial" font-size="34" font-weight="700" fill="#e6e8eb" style="white-space: pre;">4-6A</text>
+    <rect x="405" y="452" width="72" height="88" rx="7" fill="#11161b" stroke="#0a0e12" stroke-width="5"/>
+    <rect x="416" y="463" width="50" height="64" rx="4" fill="#c11f1c"/>
+    <g stroke="#f25a55" stroke-width="2" opacity=".7">
+      <line x1="420" y1="470" x2="462" y2="470"/>
+      <line x1="420" y1="478" x2="462" y2="478"/>
+      <line x1="420" y1="486" x2="462" y2="486"/>
+      <line x1="420" y1="494" x2="462" y2="494"/>
+      <line x1="420" y1="502" x2="462" y2="502"/>
+      <line x1="420" y1="510" x2="462" y2="510"/>
+    </g>
+    <text x="410.052" y="563.754" font-family="Arial" font-size="28" font-weight="700" fill="#e7e8ea" style="white-space: pre; font-size: 28px;">TRIP</text>
+    <text x="498.928" y="399.754" font-family="Arial" font-size="29" font-weight="700" fill="#f0f1f2" style="white-space: pre; font-size: 29px; cursor: pointer;" transform="matrix(0.582448, 0, 0, 0.748392, 205.029846, 128.617188)" data-thermal-reset="true">RESET</text>
+    <rect x="303.202" y="260.811" width="53.302" height="51.738" rx="8" fill="url(#blueBtn)" stroke="#0b0d10" stroke-width="6" transform="matrix(0.999998, -0.002087, 0.002087, 0.999998, 197.407873, 188.889854)" style="transform-box: fill-box; transform-origin: 50% 50%; cursor: pointer;" data-thermal-reset="true" data-thermal-reset-button="true" pointer-events="all"/>
+    <rect x="480" y="414" width="105" height="105" rx="14" fill="transparent" stroke="none" data-thermal-reset="true" data-thermal-reset-hitbox="true" pointer-events="all" style="cursor:pointer"/>
+    <text x="502.981" y="559.649" font-family="Arial" font-size="29" font-weight="700" fill="#f0f1f2" style="white-space: pre; font-size: 29px;" transform="matrix(0.588655, 0, 0, 1, 206.898544, 0)">TEST</text>
+    <rect x="493.981" y="586.544" width="55.016" height="60.561" rx="8" fill="url(#whiteBtn)" stroke="#0b0d10" stroke-width="6" style=""/>
+    <rect x="391.535" y="578.793" width="82.105" height="157.823" rx="12" fill="none" stroke="#d7dbdf" stroke-width="3" style=""/>
+    <g font-family="Arial" font-size="19" font-weight="700" fill="#e7e9eb" text-anchor="middle" transform="matrix(0.803435, 0, 0, 0.704124, -137.739014, 264.675537)" style="">
+      <text x="708" y="493" style="white-space: pre;">RESET</text>
+      <text x="708" y="519" style="white-space: pre;">MODE</text>
+      <text x="708" y="563" style="white-space: pre;">AUTO</text>
+      <text x="708" y="646" style="white-space: pre;">MANUAL</text>
+    </g>
+    <rect x="423.185" y="672.95" width="14.21" height="12.069" rx="3" fill="#050709" stroke="#111" stroke-width="2" style=""/>
+    <rect x="63.666" y="761.806" width="610" height="185" rx="10" fill="#202c37" stroke="#0c131a" stroke-width="6"/>
+    <g font-family="Arial" font-size="31" font-weight="700" fill="#f4f4f4" text-anchor="middle" style="transform-origin: 419px 812.5px;" transform="matrix(0, -1, 1, 0, 214.392807, -174.812576)">
+      <g>
+        <rect x="160" y="790" width="68" height="45" fill="none" stroke="#d3d8dd" stroke-width="3"/>
+        <text x="194" y="822" style="white-space: pre;">95</text>
+      </g>
+      <g>
+        <rect x="315" y="790" width="68" height="45" fill="none" stroke="#d3d8dd" stroke-width="3"/>
+        <text x="349" y="822" style="white-space: pre;">96</text>
+      </g>
+      <g>
+        <rect x="470" y="790" width="68" height="45" fill="none" stroke="#d3d8dd" stroke-width="3"/>
+        <text x="504" y="822" style="white-space: pre;">97</text>
+      </g>
+      <g>
+        <rect x="610" y="790" width="68" height="45" fill="none" stroke="#d3d8dd" stroke-width="3"/>
+        <text x="644" y="822" style="white-space: pre;">98</text>
+      </g>
+    </g>
+    <g transform="matrix(0, -1, 1, 0, 308.395752, -235.832031)" style="transform-origin: 419px 886px;">
+      <g transform="translate(194 886)" data-terminal="95" pointer-events="all">
+        <circle r="42" fill="#0c1217" data-wire-anchor="95"/>
+        <circle r="34" fill="url(#screw)" stroke="#d1d6da" stroke-width="3"/>
+        <path d="M-21-7h14v-14H7v14h14V7H7v14H-7V7h-14z" fill="#30363b"/>
+      </g>
+      <g transform="translate(349 886)" data-terminal="96" pointer-events="all">
+        <circle r="42" fill="#0c1217" data-wire-anchor="96"/>
+        <circle r="34" fill="url(#screw)" stroke="#d1d6da" stroke-width="3"/>
+        <path d="M-21-7h14v-14H7v14h14V7H7v14H-7V7h-14z" fill="#30363b"/>
+      </g>
+      <g transform="translate(504 886)" data-terminal="97" pointer-events="all">
+        <circle r="42" fill="#0c1217" data-wire-anchor="97"/>
+        <circle r="34" fill="url(#screw)" stroke="#d1d6da" stroke-width="3"/>
+        <path d="M-21-7h14v-14H7v14h14V7H7v14H-7V7h-14z" fill="#30363b"/>
+      </g>
+      <g transform="translate(644 886)" data-terminal="98" pointer-events="all">
+        <circle r="42" fill="#0c1217" data-wire-anchor="98"/>
+        <circle r="34" fill="url(#screw)" stroke="#d1d6da" stroke-width="3"/>
+        <path d="M-21-7h14v-14H7v14h14V7H7v14H-7V7h-14z" fill="#30363b"/>
+      </g>
+    </g>
+    <g font-family="Arial" font-size="23" font-weight="700" fill="#e0e4e7" style="transform-origin: 425.734px 940.754px;" transform="matrix(0, -1, 1, 0, 263.868103, -295.202423)">
+      <text x="248" y="949" style="white-space: pre;">N.C.</text>
+      <text x="556" y="949" style="white-space: pre;">N.O.</text>
+    </g>
+    <g stroke="#d8dde0" stroke-width="3" fill="none" transform="matrix(0, -1, 1, 0, 263.868073, -277.061462)" style="transform-origin: 419px 936.5px;">
+      <path d="M194 930v13h70"/>
+      <path d="M349 930v13h-45"/>
+      <path d="M504 930v13h60"/>
+      <path d="M644 930v13h-45"/>
+    </g>
+    <g fill="#202c37" stroke="#0c131a" stroke-width="6">
+      <rect x="135" y="955" width="170" height="135" rx="10"/>
+      <rect x="315" y="955" width="170" height="135" rx="10"/>
+      <rect x="495" y="955" width="170" height="135" rx="10"/>
+    </g>
+    <g font-family="Arial" font-size="33" font-weight="700" fill="#f1f2f3" text-anchor="middle" transform="matrix(1, 0, 0, 1, 3.298351, 41.229385)">
+      <g>
+        <rect x="185" y="970" width="70" height="44" fill="none" stroke="#d3d8dd" stroke-width="3"/>
+        <text x="220" y="1003" style="white-space: pre;">2</text>
+      </g>
+      <g>
+        <rect x="365" y="970" width="70" height="44" fill="none" stroke="#d3d8dd" stroke-width="3"/>
+        <text x="400" y="1003" style="white-space: pre;">4</text>
+      </g>
+      <g>
+        <rect x="545" y="970" width="70" height="44" fill="none" stroke="#d3d8dd" stroke-width="3"/>
+        <text x="580" y="1003" style="white-space: pre;">6</text>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 8.245877, 41.229385)">
+      <g transform="translate(220 1055)" data-terminal="2" pointer-events="all">
+        <circle r="42" fill="#0c1217" data-wire-anchor="2"/>
+        <circle r="34" fill="url(#screw)" stroke="#d1d6da" stroke-width="3"/>
+        <path d="M-21-7h14v-14H7v14h14V7H7v14H-7V7h-14z" fill="#30363b"/>
+      </g>
+      <g transform="translate(400 1055)" data-terminal="4" pointer-events="all">
+        <circle r="42" fill="#0c1217" data-wire-anchor="4"/>
+        <circle r="34" fill="url(#screw)" stroke="#d1d6da" stroke-width="3"/>
+        <path d="M-21-7h14v-14H7v14h14V7H7v14H-7V7h-14z" fill="#30363b"/>
+      </g>
+      <g transform="translate(580 1055)" data-terminal="6" pointer-events="all">
+        <circle r="42" fill="#0c1217" data-wire-anchor="6"/>
+        <circle r="34" fill="url(#screw)" stroke="#d1d6da" stroke-width="3"/>
+        <path d="M-21-7h14v-14H7v14h14V7H7v14H-7V7h-14z" fill="#30363b"/>
+      </g>
+    </g>
+    <text x="260" y="174" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="900" fill="#56d6f1" style="white-space: pre;" transform="matrix(1.962686, 0, 0, 2.142857, -172.230362, 477.681732)">TechRib Automação</text>
+  </g>
+</svg>

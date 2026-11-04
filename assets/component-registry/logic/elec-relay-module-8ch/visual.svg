@@ -1,0 +1,407 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1484 364" role="img" aria-label="Módulo relé azul 8 canalis 5 V TechRib" data-techrib-preserve-text-style="true">
+<defs>
+  <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1175b7"/><stop offset=".48" stop-color="#0862a0"/><stop offset="1" stop-color="#034777"/></linearGradient>
+  <linearGradient id="pcbEdge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#073a62"/><stop offset="1" stop-color="#032a49"/></linearGradient>
+  <linearGradient id="relayCase" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2c91e8"/><stop offset=".16" stop-color="#187bd4"/><stop offset=".72" stop-color="#0a5cab"/><stop offset="1" stop-color="#06458a"/></linearGradient>
+  <linearGradient id="termBlue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1b8fd9"/><stop offset=".5" stop-color="#0a68ad"/><stop offset="1" stop-color="#034775"/></linearGradient>
+  <linearGradient id="black" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#394147"/><stop offset=".35" stop-color="#1b2226"/><stop offset="1" stop-color="#080b0d"/></linearGradient>
+  <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset=".28" stop-color="#d6dee3"/><stop offset=".68" stop-color="#8e9ba2"/><stop offset="1" stop-color="#536168"/></linearGradient>
+  <radialGradient id="screw"><stop offset="0" stop-color="#ffffff"/><stop offset=".46" stop-color="#dfe5e8"/><stop offset=".8" stop-color="#89969d"/><stop offset="1" stop-color="#4b5960"/></radialGradient>
+  <radialGradient id="mount"><stop offset="0" stop-color="#07131a"/><stop offset=".5" stop-color="#07131a"/><stop offset=".58" stop-color="#dfc264"/><stop offset=".78" stop-color="#947a38"/><stop offset="1" stop-color="#173c5b"/></radialGradient>
+  <filter id="ledGlow" x="-350%" y="-350%" width="800%" height="800%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>.silk{font-family:Arial,sans-serif;fill:#f6fbff}.tiny{font-size:8px;font-weight:800}.small{font-size:10px;font-weight:800}.label{font-size:11px;font-weight:900}.terminal-hit{fill:#000;fill-opacity:.001;pointer-events:all}</style>
+</defs>
+<path d="M22 10H1462L1474 22V342L1462 354H22L10 342V22Z" fill="url(#pcbEdge)"/>
+<path d="M24 14H1460L1470 24V340L1460 350H24L14 340V24Z" fill="url(#pcb)" stroke="#42a2dc" stroke-width="1.5"/>
+<path d="M78.0 90v12M174.0 90v12M126.0 92v10M84.0 230v24H106.0M146.0 230v24H168.0" fill="none" stroke="#8dc7e5" stroke-opacity=".24" stroke-width="2"/>
+<path d="M254.0 90v12M350.0 90v12M302.0 92v10M260.0 230v24H282.0M322.0 230v24H344.0" fill="none" stroke="#8dc7e5" stroke-opacity=".24" stroke-width="2"/>
+<path d="M430.0 90v12M526.0 90v12M478.0 92v10M436.0 230v24H458.0M498.0 230v24H520.0" fill="none" stroke="#8dc7e5" stroke-opacity=".24" stroke-width="2"/>
+<path d="M606.0 90v12M702.0 90v12M654.0 92v10M612.0 230v24H634.0M674.0 230v24H696.0" fill="none" stroke="#8dc7e5" stroke-opacity=".24" stroke-width="2"/>
+<path d="M782.0 90v12M878.0 90v12M830.0 92v10M788.0 230v24H810.0M850.0 230v24H872.0" fill="none" stroke="#8dc7e5" stroke-opacity=".24" stroke-width="2"/>
+<path d="M958.0 90v12M1054.0 90v12M1006.0 92v10M964.0 230v24H986.0M1026.0 230v24H1048.0" fill="none" stroke="#8dc7e5" stroke-opacity=".24" stroke-width="2"/>
+<path d="M1134.0 90v12M1230.0 90v12M1182.0 92v10M1140.0 230v24H1162.0M1202.0 230v24H1224.0" fill="none" stroke="#8dc7e5" stroke-opacity=".24" stroke-width="2"/>
+<path d="M1310.0 90v12M1406.0 90v12M1358.0 92v10M1316.0 230v24H1338.0M1378.0 230v24H1400.0" fill="none" stroke="#8dc7e5" stroke-opacity=".24" stroke-width="2"/>
+<circle cx="28" cy="28" r="10" fill="url(#mount)"/><circle cx="28" cy="28" r="4.4" fill="#06131a"/>
+<circle cx="1456" cy="28" r="10" fill="url(#mount)"/><circle cx="1456" cy="28" r="4.4" fill="#06131a"/>
+<circle cx="28" cy="336" r="10" fill="url(#mount)"/><circle cx="28" cy="336" r="4.4" fill="#06131a"/>
+<circle cx="1456" cy="336" r="10" fill="url(#mount)"/><circle cx="1456" cy="336" r="4.4" fill="#06131a"/>
+<text x="742.0" y="32" text-anchor="middle" class="silk" font-size="13" font-weight="900">TechRib • MÓDULO RELÉ 8 CANALES • 5VDC</text>
+<g><rect x="59.0" y="45" width="134" height="55" rx="5" fill="url(#termBlue)" stroke="#02395f" stroke-width="1.6"/><path d="M103.7 48v49M148.3 48v49" stroke="#034a7b" stroke-width="1.6"/></g>
+<g data-terminal="NC1" data-wire-side="top">
+  <circle data-wire-anchor="NC1" data-wire-side="top" class="terminal-hit" cx="81.4" cy="68" r="21"/>
+  <circle cx="81.4" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M74.4 68h14M81.4 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="81.4" y="95" text-anchor="middle" class="silk label">NC</text>
+</g>
+<g data-terminal="COM1" data-wire-side="top">
+  <circle data-wire-anchor="COM1" data-wire-side="top" class="terminal-hit" cx="126.0" cy="68" r="21"/>
+  <circle cx="126.0" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M119.0 68h14M126.0 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="126.0" y="95" text-anchor="middle" class="silk label">COM</text>
+</g>
+<g data-terminal="NO1" data-wire-side="top">
+  <circle data-wire-anchor="NO1" data-wire-side="top" class="terminal-hit" cx="170.6" cy="68" r="21"/>
+  <circle cx="170.6" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M163.6 68h14M170.6 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="170.6" y="95" text-anchor="middle" class="silk label">NO</text>
+</g>
+<g data-relay-channel="1">
+  <rect x="58.0" y="112" width="136" height="122" rx="7" fill="url(#relayCase)" stroke="#82c9f8" stroke-width="1.7"/>
+  <path d="M65.0 121H186.0" stroke="#a8daf9" stroke-opacity=".58" stroke-width="2"/>
+  <path d="M66.0 224H186.0" stroke="#033e7a" stroke-opacity=".65" stroke-width="2"/>
+  <text x="126.0" y="143" text-anchor="middle" class="silk" font-size="13" font-weight="900" font-style="italic">SONGLE</text>
+  <text x="126.0" y="169" text-anchor="middle" class="silk" font-size="9.5" font-weight="800">SRD-05VDC-SL-C</text>
+  <text x="126.0" y="191" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 250VAC</text>
+  <text x="126.0" y="208" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 30VDC</text>
+  <text x="126.0" y="226" text-anchor="middle" class="silk" font-size="8" font-weight="900">5VDC COIL</text>
+</g>
+<g>
+  <rect x="78.0" y="249" width="28" height="24" rx="3" fill="url(#black)" stroke="#737f85"/>
+  <path d="M83.0 249v-5M99.0 249v-5M83.0 273v5M99.0 273v5" stroke="#cad2d6" stroke-width="1.2"/>
+  <rect x="114.0" y="253" width="19" height="16" rx="3" fill="#161b1e" stroke="#6a747a"/>
+  <circle cx="152.0" cy="261" r="8.5" fill="#4a1717" stroke="#250d0d" stroke-width="1.5"/>
+  <circle data-relay-led="1" cx="152.0" cy="261" r="5.4" fill="#284b39"/>
+  <text x="152.0" y="244" text-anchor="middle" class="silk tiny">CH1</text>
+  <rect x="168.0" y="256" width="17" height="10" rx="2" fill="#d8c18e" stroke="#8d7548"/><text x="176.5" y="264" text-anchor="middle" font-family="Arial" font-size="5.2" font-weight="700" fill="#493720">103</text>
+</g>
+<g><rect x="235.0" y="45" width="134" height="55" rx="5" fill="url(#termBlue)" stroke="#02395f" stroke-width="1.6"/><path d="M279.7 48v49M324.3 48v49" stroke="#034a7b" stroke-width="1.6"/></g>
+<g data-terminal="NC2" data-wire-side="top">
+  <circle data-wire-anchor="NC2" data-wire-side="top" class="terminal-hit" cx="257.4" cy="68" r="21"/>
+  <circle cx="257.4" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M250.39999999999998 68h14M257.4 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="257.4" y="95" text-anchor="middle" class="silk label">NC</text>
+</g>
+<g data-terminal="COM2" data-wire-side="top">
+  <circle data-wire-anchor="COM2" data-wire-side="top" class="terminal-hit" cx="302.0" cy="68" r="21"/>
+  <circle cx="302.0" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M295.0 68h14M302.0 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="302.0" y="95" text-anchor="middle" class="silk label">COM</text>
+</g>
+<g data-terminal="NO2" data-wire-side="top">
+  <circle data-wire-anchor="NO2" data-wire-side="top" class="terminal-hit" cx="346.6" cy="68" r="21"/>
+  <circle cx="346.6" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M339.6 68h14M346.6 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="346.6" y="95" text-anchor="middle" class="silk label">NO</text>
+</g>
+<g data-relay-channel="2">
+  <rect x="234.0" y="112" width="136" height="122" rx="7" fill="url(#relayCase)" stroke="#82c9f8" stroke-width="1.7"/>
+  <path d="M241.0 121H362.0" stroke="#a8daf9" stroke-opacity=".58" stroke-width="2"/>
+  <path d="M242.0 224H362.0" stroke="#033e7a" stroke-opacity=".65" stroke-width="2"/>
+  <text x="302.0" y="143" text-anchor="middle" class="silk" font-size="13" font-weight="900" font-style="italic">SONGLE</text>
+  <text x="302.0" y="169" text-anchor="middle" class="silk" font-size="9.5" font-weight="800">SRD-05VDC-SL-C</text>
+  <text x="302.0" y="191" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 250VAC</text>
+  <text x="302.0" y="208" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 30VDC</text>
+  <text x="302.0" y="226" text-anchor="middle" class="silk" font-size="8" font-weight="900">5VDC COIL</text>
+</g>
+<g>
+  <rect x="254.0" y="249" width="28" height="24" rx="3" fill="url(#black)" stroke="#737f85"/>
+  <path d="M259.0 249v-5M275.0 249v-5M259.0 273v5M275.0 273v5" stroke="#cad2d6" stroke-width="1.2"/>
+  <rect x="290.0" y="253" width="19" height="16" rx="3" fill="#161b1e" stroke="#6a747a"/>
+  <circle cx="328.0" cy="261" r="8.5" fill="#4a1717" stroke="#250d0d" stroke-width="1.5"/>
+  <circle data-relay-led="2" cx="328.0" cy="261" r="5.4" fill="#284b39"/>
+  <text x="328.0" y="244" text-anchor="middle" class="silk tiny">CH2</text>
+  <rect x="344.0" y="256" width="17" height="10" rx="2" fill="#d8c18e" stroke="#8d7548"/><text x="352.5" y="264" text-anchor="middle" font-family="Arial" font-size="5.2" font-weight="700" fill="#493720">103</text>
+</g>
+<g><rect x="411.0" y="45" width="134" height="55" rx="5" fill="url(#termBlue)" stroke="#02395f" stroke-width="1.6"/><path d="M455.7 48v49M500.3 48v49" stroke="#034a7b" stroke-width="1.6"/></g>
+<g data-terminal="NC3" data-wire-side="top">
+  <circle data-wire-anchor="NC3" data-wire-side="top" class="terminal-hit" cx="433.4" cy="68" r="21"/>
+  <circle cx="433.4" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M426.4 68h14M433.4 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="433.4" y="95" text-anchor="middle" class="silk label">NC</text>
+</g>
+<g data-terminal="COM3" data-wire-side="top">
+  <circle data-wire-anchor="COM3" data-wire-side="top" class="terminal-hit" cx="478.0" cy="68" r="21"/>
+  <circle cx="478.0" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M471.0 68h14M478.0 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="478.0" y="95" text-anchor="middle" class="silk label">COM</text>
+</g>
+<g data-terminal="NO3" data-wire-side="top">
+  <circle data-wire-anchor="NO3" data-wire-side="top" class="terminal-hit" cx="522.6" cy="68" r="21"/>
+  <circle cx="522.6" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M515.6 68h14M522.6 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="522.6" y="95" text-anchor="middle" class="silk label">NO</text>
+</g>
+<g data-relay-channel="3">
+  <rect x="410.0" y="112" width="136" height="122" rx="7" fill="url(#relayCase)" stroke="#82c9f8" stroke-width="1.7"/>
+  <path d="M417.0 121H538.0" stroke="#a8daf9" stroke-opacity=".58" stroke-width="2"/>
+  <path d="M418.0 224H538.0" stroke="#033e7a" stroke-opacity=".65" stroke-width="2"/>
+  <text x="478.0" y="143" text-anchor="middle" class="silk" font-size="13" font-weight="900" font-style="italic">SONGLE</text>
+  <text x="478.0" y="169" text-anchor="middle" class="silk" font-size="9.5" font-weight="800">SRD-05VDC-SL-C</text>
+  <text x="478.0" y="191" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 250VAC</text>
+  <text x="478.0" y="208" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 30VDC</text>
+  <text x="478.0" y="226" text-anchor="middle" class="silk" font-size="8" font-weight="900">5VDC COIL</text>
+</g>
+<g>
+  <rect x="430.0" y="249" width="28" height="24" rx="3" fill="url(#black)" stroke="#737f85"/>
+  <path d="M435.0 249v-5M451.0 249v-5M435.0 273v5M451.0 273v5" stroke="#cad2d6" stroke-width="1.2"/>
+  <rect x="466.0" y="253" width="19" height="16" rx="3" fill="#161b1e" stroke="#6a747a"/>
+  <circle cx="504.0" cy="261" r="8.5" fill="#4a1717" stroke="#250d0d" stroke-width="1.5"/>
+  <circle data-relay-led="3" cx="504.0" cy="261" r="5.4" fill="#284b39"/>
+  <text x="504.0" y="244" text-anchor="middle" class="silk tiny">CH3</text>
+  <rect x="520.0" y="256" width="17" height="10" rx="2" fill="#d8c18e" stroke="#8d7548"/><text x="528.5" y="264" text-anchor="middle" font-family="Arial" font-size="5.2" font-weight="700" fill="#493720">103</text>
+</g>
+<g><rect x="587.0" y="45" width="134" height="55" rx="5" fill="url(#termBlue)" stroke="#02395f" stroke-width="1.6"/><path d="M631.7 48v49M676.3 48v49" stroke="#034a7b" stroke-width="1.6"/></g>
+<g data-terminal="NC4" data-wire-side="top">
+  <circle data-wire-anchor="NC4" data-wire-side="top" class="terminal-hit" cx="609.4" cy="68" r="21"/>
+  <circle cx="609.4" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M602.4 68h14M609.4 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="609.4" y="95" text-anchor="middle" class="silk label">NC</text>
+</g>
+<g data-terminal="COM4" data-wire-side="top">
+  <circle data-wire-anchor="COM4" data-wire-side="top" class="terminal-hit" cx="654.0" cy="68" r="21"/>
+  <circle cx="654.0" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M647.0 68h14M654.0 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="654.0" y="95" text-anchor="middle" class="silk label">COM</text>
+</g>
+<g data-terminal="NO4" data-wire-side="top">
+  <circle data-wire-anchor="NO4" data-wire-side="top" class="terminal-hit" cx="698.6" cy="68" r="21"/>
+  <circle cx="698.6" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M691.6 68h14M698.6 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="698.6" y="95" text-anchor="middle" class="silk label">NO</text>
+</g>
+<g data-relay-channel="4">
+  <rect x="586.0" y="112" width="136" height="122" rx="7" fill="url(#relayCase)" stroke="#82c9f8" stroke-width="1.7"/>
+  <path d="M593.0 121H714.0" stroke="#a8daf9" stroke-opacity=".58" stroke-width="2"/>
+  <path d="M594.0 224H714.0" stroke="#033e7a" stroke-opacity=".65" stroke-width="2"/>
+  <text x="654.0" y="143" text-anchor="middle" class="silk" font-size="13" font-weight="900" font-style="italic">SONGLE</text>
+  <text x="654.0" y="169" text-anchor="middle" class="silk" font-size="9.5" font-weight="800">SRD-05VDC-SL-C</text>
+  <text x="654.0" y="191" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 250VAC</text>
+  <text x="654.0" y="208" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 30VDC</text>
+  <text x="654.0" y="226" text-anchor="middle" class="silk" font-size="8" font-weight="900">5VDC COIL</text>
+</g>
+<g>
+  <rect x="606.0" y="249" width="28" height="24" rx="3" fill="url(#black)" stroke="#737f85"/>
+  <path d="M611.0 249v-5M627.0 249v-5M611.0 273v5M627.0 273v5" stroke="#cad2d6" stroke-width="1.2"/>
+  <rect x="642.0" y="253" width="19" height="16" rx="3" fill="#161b1e" stroke="#6a747a"/>
+  <circle cx="680.0" cy="261" r="8.5" fill="#4a1717" stroke="#250d0d" stroke-width="1.5"/>
+  <circle data-relay-led="4" cx="680.0" cy="261" r="5.4" fill="#284b39"/>
+  <text x="680.0" y="244" text-anchor="middle" class="silk tiny">CH4</text>
+  <rect x="696.0" y="256" width="17" height="10" rx="2" fill="#d8c18e" stroke="#8d7548"/><text x="704.5" y="264" text-anchor="middle" font-family="Arial" font-size="5.2" font-weight="700" fill="#493720">103</text>
+</g>
+<g><rect x="763.0" y="45" width="134" height="55" rx="5" fill="url(#termBlue)" stroke="#02395f" stroke-width="1.6"/><path d="M807.7 48v49M852.3 48v49" stroke="#034a7b" stroke-width="1.6"/></g>
+<g data-terminal="NC5" data-wire-side="top">
+  <circle data-wire-anchor="NC5" data-wire-side="top" class="terminal-hit" cx="785.4" cy="68" r="21"/>
+  <circle cx="785.4" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M778.4 68h14M785.4 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="785.4" y="95" text-anchor="middle" class="silk label">NC</text>
+</g>
+<g data-terminal="COM5" data-wire-side="top">
+  <circle data-wire-anchor="COM5" data-wire-side="top" class="terminal-hit" cx="830.0" cy="68" r="21"/>
+  <circle cx="830.0" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M823.0 68h14M830.0 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="830.0" y="95" text-anchor="middle" class="silk label">COM</text>
+</g>
+<g data-terminal="NO5" data-wire-side="top">
+  <circle data-wire-anchor="NO5" data-wire-side="top" class="terminal-hit" cx="874.6" cy="68" r="21"/>
+  <circle cx="874.6" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M867.6 68h14M874.6 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="874.6" y="95" text-anchor="middle" class="silk label">NO</text>
+</g>
+<g data-relay-channel="5">
+  <rect x="762.0" y="112" width="136" height="122" rx="7" fill="url(#relayCase)" stroke="#82c9f8" stroke-width="1.7"/>
+  <path d="M769.0 121H890.0" stroke="#a8daf9" stroke-opacity=".58" stroke-width="2"/>
+  <path d="M770.0 224H890.0" stroke="#033e7a" stroke-opacity=".65" stroke-width="2"/>
+  <text x="830.0" y="143" text-anchor="middle" class="silk" font-size="13" font-weight="900" font-style="italic">SONGLE</text>
+  <text x="830.0" y="169" text-anchor="middle" class="silk" font-size="9.5" font-weight="800">SRD-05VDC-SL-C</text>
+  <text x="830.0" y="191" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 250VAC</text>
+  <text x="830.0" y="208" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 30VDC</text>
+  <text x="830.0" y="226" text-anchor="middle" class="silk" font-size="8" font-weight="900">5VDC COIL</text>
+</g>
+<g>
+  <rect x="782.0" y="249" width="28" height="24" rx="3" fill="url(#black)" stroke="#737f85"/>
+  <path d="M787.0 249v-5M803.0 249v-5M787.0 273v5M803.0 273v5" stroke="#cad2d6" stroke-width="1.2"/>
+  <rect x="818.0" y="253" width="19" height="16" rx="3" fill="#161b1e" stroke="#6a747a"/>
+  <circle cx="856.0" cy="261" r="8.5" fill="#4a1717" stroke="#250d0d" stroke-width="1.5"/>
+  <circle data-relay-led="5" cx="856.0" cy="261" r="5.4" fill="#284b39"/>
+  <text x="856.0" y="244" text-anchor="middle" class="silk tiny">CH5</text>
+  <rect x="872.0" y="256" width="17" height="10" rx="2" fill="#d8c18e" stroke="#8d7548"/><text x="880.5" y="264" text-anchor="middle" font-family="Arial" font-size="5.2" font-weight="700" fill="#493720">103</text>
+</g>
+<g><rect x="939.0" y="45" width="134" height="55" rx="5" fill="url(#termBlue)" stroke="#02395f" stroke-width="1.6"/><path d="M983.7 48v49M1028.3 48v49" stroke="#034a7b" stroke-width="1.6"/></g>
+<g data-terminal="NC6" data-wire-side="top">
+  <circle data-wire-anchor="NC6" data-wire-side="top" class="terminal-hit" cx="961.4" cy="68" r="21"/>
+  <circle cx="961.4" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M954.4 68h14M961.4 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="961.4" y="95" text-anchor="middle" class="silk label">NC</text>
+</g>
+<g data-terminal="COM6" data-wire-side="top">
+  <circle data-wire-anchor="COM6" data-wire-side="top" class="terminal-hit" cx="1006.0" cy="68" r="21"/>
+  <circle cx="1006.0" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M999.0 68h14M1006.0 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="1006.0" y="95" text-anchor="middle" class="silk label">COM</text>
+</g>
+<g data-terminal="NO6" data-wire-side="top">
+  <circle data-wire-anchor="NO6" data-wire-side="top" class="terminal-hit" cx="1050.6" cy="68" r="21"/>
+  <circle cx="1050.6" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M1043.6 68h14M1050.6 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="1050.6" y="95" text-anchor="middle" class="silk label">NO</text>
+</g>
+<g data-relay-channel="6">
+  <rect x="938.0" y="112" width="136" height="122" rx="7" fill="url(#relayCase)" stroke="#82c9f8" stroke-width="1.7"/>
+  <path d="M945.0 121H1066.0" stroke="#a8daf9" stroke-opacity=".58" stroke-width="2"/>
+  <path d="M946.0 224H1066.0" stroke="#033e7a" stroke-opacity=".65" stroke-width="2"/>
+  <text x="1006.0" y="143" text-anchor="middle" class="silk" font-size="13" font-weight="900" font-style="italic">SONGLE</text>
+  <text x="1006.0" y="169" text-anchor="middle" class="silk" font-size="9.5" font-weight="800">SRD-05VDC-SL-C</text>
+  <text x="1006.0" y="191" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 250VAC</text>
+  <text x="1006.0" y="208" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 30VDC</text>
+  <text x="1006.0" y="226" text-anchor="middle" class="silk" font-size="8" font-weight="900">5VDC COIL</text>
+</g>
+<g>
+  <rect x="958.0" y="249" width="28" height="24" rx="3" fill="url(#black)" stroke="#737f85"/>
+  <path d="M963.0 249v-5M979.0 249v-5M963.0 273v5M979.0 273v5" stroke="#cad2d6" stroke-width="1.2"/>
+  <rect x="994.0" y="253" width="19" height="16" rx="3" fill="#161b1e" stroke="#6a747a"/>
+  <circle cx="1032.0" cy="261" r="8.5" fill="#4a1717" stroke="#250d0d" stroke-width="1.5"/>
+  <circle data-relay-led="6" cx="1032.0" cy="261" r="5.4" fill="#284b39"/>
+  <text x="1032.0" y="244" text-anchor="middle" class="silk tiny">CH6</text>
+  <rect x="1048.0" y="256" width="17" height="10" rx="2" fill="#d8c18e" stroke="#8d7548"/><text x="1056.5" y="264" text-anchor="middle" font-family="Arial" font-size="5.2" font-weight="700" fill="#493720">103</text>
+</g>
+<g><rect x="1115.0" y="45" width="134" height="55" rx="5" fill="url(#termBlue)" stroke="#02395f" stroke-width="1.6"/><path d="M1159.7 48v49M1204.3 48v49" stroke="#034a7b" stroke-width="1.6"/></g>
+<g data-terminal="NC7" data-wire-side="top">
+  <circle data-wire-anchor="NC7" data-wire-side="top" class="terminal-hit" cx="1137.4" cy="68" r="21"/>
+  <circle cx="1137.4" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M1130.4 68h14M1137.4 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="1137.4" y="95" text-anchor="middle" class="silk label">NC</text>
+</g>
+<g data-terminal="COM7" data-wire-side="top">
+  <circle data-wire-anchor="COM7" data-wire-side="top" class="terminal-hit" cx="1182.0" cy="68" r="21"/>
+  <circle cx="1182.0" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M1175.0 68h14M1182.0 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="1182.0" y="95" text-anchor="middle" class="silk label">COM</text>
+</g>
+<g data-terminal="NO7" data-wire-side="top">
+  <circle data-wire-anchor="NO7" data-wire-side="top" class="terminal-hit" cx="1226.6" cy="68" r="21"/>
+  <circle cx="1226.6" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M1219.6 68h14M1226.6 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="1226.6" y="95" text-anchor="middle" class="silk label">NO</text>
+</g>
+<g data-relay-channel="7">
+  <rect x="1114.0" y="112" width="136" height="122" rx="7" fill="url(#relayCase)" stroke="#82c9f8" stroke-width="1.7"/>
+  <path d="M1121.0 121H1242.0" stroke="#a8daf9" stroke-opacity=".58" stroke-width="2"/>
+  <path d="M1122.0 224H1242.0" stroke="#033e7a" stroke-opacity=".65" stroke-width="2"/>
+  <text x="1182.0" y="143" text-anchor="middle" class="silk" font-size="13" font-weight="900" font-style="italic">SONGLE</text>
+  <text x="1182.0" y="169" text-anchor="middle" class="silk" font-size="9.5" font-weight="800">SRD-05VDC-SL-C</text>
+  <text x="1182.0" y="191" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 250VAC</text>
+  <text x="1182.0" y="208" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 30VDC</text>
+  <text x="1182.0" y="226" text-anchor="middle" class="silk" font-size="8" font-weight="900">5VDC COIL</text>
+</g>
+<g>
+  <rect x="1134.0" y="249" width="28" height="24" rx="3" fill="url(#black)" stroke="#737f85"/>
+  <path d="M1139.0 249v-5M1155.0 249v-5M1139.0 273v5M1155.0 273v5" stroke="#cad2d6" stroke-width="1.2"/>
+  <rect x="1170.0" y="253" width="19" height="16" rx="3" fill="#161b1e" stroke="#6a747a"/>
+  <circle cx="1208.0" cy="261" r="8.5" fill="#4a1717" stroke="#250d0d" stroke-width="1.5"/>
+  <circle data-relay-led="7" cx="1208.0" cy="261" r="5.4" fill="#284b39"/>
+  <text x="1208.0" y="244" text-anchor="middle" class="silk tiny">CH7</text>
+  <rect x="1224.0" y="256" width="17" height="10" rx="2" fill="#d8c18e" stroke="#8d7548"/><text x="1232.5" y="264" text-anchor="middle" font-family="Arial" font-size="5.2" font-weight="700" fill="#493720">103</text>
+</g>
+<g><rect x="1291.0" y="45" width="134" height="55" rx="5" fill="url(#termBlue)" stroke="#02395f" stroke-width="1.6"/><path d="M1335.7 48v49M1380.3 48v49" stroke="#034a7b" stroke-width="1.6"/></g>
+<g data-terminal="NC8" data-wire-side="top">
+  <circle data-wire-anchor="NC8" data-wire-side="top" class="terminal-hit" cx="1313.4" cy="68" r="21"/>
+  <circle cx="1313.4" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M1306.4 68h14M1313.4 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="1313.4" y="95" text-anchor="middle" class="silk label">NC</text>
+</g>
+<g data-terminal="COM8" data-wire-side="top">
+  <circle data-wire-anchor="COM8" data-wire-side="top" class="terminal-hit" cx="1358.0" cy="68" r="21"/>
+  <circle cx="1358.0" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M1351.0 68h14M1358.0 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="1358.0" y="95" text-anchor="middle" class="silk label">COM</text>
+</g>
+<g data-terminal="NO8" data-wire-side="top">
+  <circle data-wire-anchor="NO8" data-wire-side="top" class="terminal-hit" cx="1402.6" cy="68" r="21"/>
+  <circle cx="1402.6" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M1395.6 68h14M1402.6 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="1402.6" y="95" text-anchor="middle" class="silk label">NO</text>
+</g>
+<g data-relay-channel="8">
+  <rect x="1290.0" y="112" width="136" height="122" rx="7" fill="url(#relayCase)" stroke="#82c9f8" stroke-width="1.7"/>
+  <path d="M1297.0 121H1418.0" stroke="#a8daf9" stroke-opacity=".58" stroke-width="2"/>
+  <path d="M1298.0 224H1418.0" stroke="#033e7a" stroke-opacity=".65" stroke-width="2"/>
+  <text x="1358.0" y="143" text-anchor="middle" class="silk" font-size="13" font-weight="900" font-style="italic">SONGLE</text>
+  <text x="1358.0" y="169" text-anchor="middle" class="silk" font-size="9.5" font-weight="800">SRD-05VDC-SL-C</text>
+  <text x="1358.0" y="191" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 250VAC</text>
+  <text x="1358.0" y="208" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 30VDC</text>
+  <text x="1358.0" y="226" text-anchor="middle" class="silk" font-size="8" font-weight="900">5VDC COIL</text>
+</g>
+<g>
+  <rect x="1310.0" y="249" width="28" height="24" rx="3" fill="url(#black)" stroke="#737f85"/>
+  <path d="M1315.0 249v-5M1331.0 249v-5M1315.0 273v5M1331.0 273v5" stroke="#cad2d6" stroke-width="1.2"/>
+  <rect x="1346.0" y="253" width="19" height="16" rx="3" fill="#161b1e" stroke="#6a747a"/>
+  <circle cx="1384.0" cy="261" r="8.5" fill="#4a1717" stroke="#250d0d" stroke-width="1.5"/>
+  <circle data-relay-led="8" cx="1384.0" cy="261" r="5.4" fill="#284b39"/>
+  <text x="1384.0" y="244" text-anchor="middle" class="silk tiny">CH8</text>
+  <rect x="1400.0" y="256" width="17" height="10" rx="2" fill="#d8c18e" stroke="#8d7548"/><text x="1408.5" y="264" text-anchor="middle" font-family="Arial" font-size="5.2" font-weight="700" fill="#493720">103</text>
+</g>
+<circle cx="42" cy="294" r="8" fill="#173121"/><circle cx="42" cy="294" r="5.2" fill="#61ff6b" filter="url(#ledGlow)"/><text x="55" y="298" class="silk tiny">PWR</text>
+
+<rect x="552.0" y="315" width="380" height="31" rx="5" fill="#0e1417" stroke="#4d5a61" stroke-width="1.5"/>
+<g data-terminal="VCC" data-wire-side="bottom">
+  <circle data-wire-anchor="VCC" data-wire-side="bottom" class="terminal-hit" cx="571.0" cy="330" r="17"/>
+  <rect x="559.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="571.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="571.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="571.0" y="307" text-anchor="middle" class="silk small">VCC</text>
+</g>
+<g data-terminal="GND" data-wire-side="bottom">
+  <circle data-wire-anchor="GND" data-wire-side="bottom" class="terminal-hit" cx="609.0" cy="330" r="17"/>
+  <rect x="597.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="609.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="609.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="609.0" y="307" text-anchor="middle" class="silk small">GND</text>
+</g>
+<g data-terminal="IN1" data-wire-side="bottom">
+  <circle data-wire-anchor="IN1" data-wire-side="bottom" class="terminal-hit" cx="647.0" cy="330" r="17"/>
+  <rect x="635.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="647.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="647.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="647.0" y="307" text-anchor="middle" class="silk small">IN1</text>
+</g>
+<g data-terminal="IN2" data-wire-side="bottom">
+  <circle data-wire-anchor="IN2" data-wire-side="bottom" class="terminal-hit" cx="685.0" cy="330" r="17"/>
+  <rect x="673.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="685.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="685.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="685.0" y="307" text-anchor="middle" class="silk small">IN2</text>
+</g>
+<g data-terminal="IN3" data-wire-side="bottom">
+  <circle data-wire-anchor="IN3" data-wire-side="bottom" class="terminal-hit" cx="723.0" cy="330" r="17"/>
+  <rect x="711.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="723.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="723.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="723.0" y="307" text-anchor="middle" class="silk small">IN3</text>
+</g>
+<g data-terminal="IN4" data-wire-side="bottom">
+  <circle data-wire-anchor="IN4" data-wire-side="bottom" class="terminal-hit" cx="761.0" cy="330" r="17"/>
+  <rect x="749.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="761.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="761.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="761.0" y="307" text-anchor="middle" class="silk small">IN4</text>
+</g>
+<g data-terminal="IN5" data-wire-side="bottom">
+  <circle data-wire-anchor="IN5" data-wire-side="bottom" class="terminal-hit" cx="799.0" cy="330" r="17"/>
+  <rect x="787.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="799.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="799.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="799.0" y="307" text-anchor="middle" class="silk small">IN5</text>
+</g>
+<g data-terminal="IN6" data-wire-side="bottom">
+  <circle data-wire-anchor="IN6" data-wire-side="bottom" class="terminal-hit" cx="837.0" cy="330" r="17"/>
+  <rect x="825.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="837.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="837.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="837.0" y="307" text-anchor="middle" class="silk small">IN6</text>
+</g>
+<g data-terminal="IN7" data-wire-side="bottom">
+  <circle data-wire-anchor="IN7" data-wire-side="bottom" class="terminal-hit" cx="875.0" cy="330" r="17"/>
+  <rect x="863.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="875.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="875.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="875.0" y="307" text-anchor="middle" class="silk small">IN7</text>
+</g>
+<g data-terminal="IN8" data-wire-side="bottom">
+  <circle data-wire-anchor="IN8" data-wire-side="bottom" class="terminal-hit" cx="913.0" cy="330" r="17"/>
+  <rect x="901.0" y="318" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="913.0" cy="330" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="913.0" cy="330" r="2" fill="#5d4718"/>
+  <text x="913.0" y="307" text-anchor="middle" class="silk small">IN8</text>
+</g>
+<text x="742.0" y="360" text-anchor="middle" class="silk tiny">OPTO ISOLADO • CONTATOS SPDT • LED INDIVIDUAL POR CANAL</text>
+</svg>

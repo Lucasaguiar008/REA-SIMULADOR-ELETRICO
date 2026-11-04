@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360" role="img" aria-label="Chuveiro elétrico residencial 220 volts" data-powered="false">
+  <defs>
+    <linearGradient id="s-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset=".58" stop-color="#dfe7ec"/><stop offset="1" stop-color="#a9bac4"/></linearGradient>
+    <linearGradient id="s-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8fdcff"/><stop offset="1" stop-color="#1d9bf0"/></linearGradient>
+    <style>
+      .lbl{font:800 12px Arial,sans-serif;fill:#243742}.tiny{font:700 10px Arial,sans-serif;fill:#657984}.term{fill:#b7791f;stroke:#6f4815;stroke-width:2}.hit{fill:transparent;stroke:transparent;pointer-events:all}
+      [data-powered="false"] [data-water]{opacity:.12}[data-powered="true"] [data-water]{opacity:.95;filter:drop-shadow(0 0 3px #38bdf8)}[data-powered="true"] [data-shower-led]{fill:#ef4444;filter:drop-shadow(0 0 5px #ef4444)}[data-powered="true"] [data-shower-state]{fill:#b91c1c}
+    </style>
+  </defs>
+  <path d="M52 34h196l17 22v128l-17 22H52l-17-22V56z" fill="url(#s-body)" stroke="#7b8f9a" stroke-width="4"/>
+  <ellipse cx="150" cy="199" rx="108" ry="38" fill="#cbd7dd" stroke="#778b96" stroke-width="4"/>
+  <ellipse cx="150" cy="199" rx="84" ry="24" fill="#f8fafc" stroke="#9aabb4" stroke-width="3"/>
+  <g fill="#5b6c75"><circle cx="100" cy="197" r="3"/><circle cx="125" cy="190" r="3"/><circle cx="150" cy="187" r="3"/><circle cx="175" cy="190" r="3"/><circle cx="200" cy="197" r="3"/><circle cx="113" cy="205" r="3"/><circle cx="150" cy="207" r="3"/><circle cx="187" cy="205" r="3"/></g>
+  <text x="150" y="82" text-anchor="middle" class="lbl">CHUVEIRO ELÉTRICO</text><text x="150" y="104" text-anchor="middle" class="tiny">220 V • 5.500 W</text>
+  <rect x="88" y="126" width="124" height="34" rx="12" fill="#263d48"/><text x="150" y="148" text-anchor="middle" font-family="Arial" font-size="12" font-weight="900" fill="#fff">LucasAguiar</text>
+  <circle cx="231" cy="72" r="8" fill="#64748b" data-shower-led="true"/><text x="150" y="177" text-anchor="middle" class="tiny" data-shower-state="true">DESLIGADO</text>
+  <g data-water="true" stroke="url(#s-water)" stroke-width="4" stroke-linecap="round" opacity=".12"><path d="M94 223l-12 54"/><path d="M116 224l-7 61"/><path d="M139 224l-2 68"/><path d="M161 224l2 68"/><path d="M184 224l7 61"/><path d="M206 223l12 54"/></g>
+  <g data-terminal="L1" data-terminal-domain="power" data-terminal-function="power-input" data-terminal-voltage-class="220vac" data-terminal-direction="input" data-wire-side="bottom"><circle class="hit" data-wire-anchor="L1" cx="86" cy="326" r="18"/><circle class="term" cx="86" cy="326" r="9"/><text x="86" y="352" text-anchor="middle" class="lbl">L1</text></g>
+  <g data-terminal="L2" data-terminal-domain="power" data-terminal-function="power-input" data-terminal-voltage-class="220vac" data-terminal-direction="input" data-wire-side="bottom"><circle class="hit" data-wire-anchor="L2" cx="150" cy="326" r="18"/><circle class="term" cx="150" cy="326" r="9"/><text x="150" y="352" text-anchor="middle" class="lbl">L2</text></g>
+  <g data-terminal="PE" data-terminal-domain="protective-earth" data-terminal-function="protective-earth" data-terminal-direction="passive" data-wire-side="bottom"><circle class="hit" data-wire-anchor="PE" cx="214" cy="326" r="18"/><circle class="term" cx="214" cy="326" r="9"/><text x="214" y="352" text-anchor="middle" class="lbl">PE</text></g>
+</svg>

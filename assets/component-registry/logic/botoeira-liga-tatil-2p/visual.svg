@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 170" role="img" aria-label="Push button chave tátil 2 pinos 13 14" data-techrib-editor-managed="true" data-techrib-studio-import="true" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="pb-body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4e5458"/>
+      <stop offset="0.45" stop-color="#1d2125"/>
+      <stop offset="1" stop-color="#090b0d"/>
+    </linearGradient>
+    <linearGradient id="pb-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f5f7"/>
+      <stop offset="0.18" stop-color="#bcc5cc"/>
+      <stop offset="0.45" stop-color="#f8fafb"/>
+      <stop offset="0.72" stop-color="#8b969f"/>
+      <stop offset="1" stop-color="#dee4e8"/>
+    </linearGradient>
+    <radialGradient id="pb-plunger" cx="38%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#727a82"/>
+      <stop offset="0.22" stop-color="#3d444a"/>
+      <stop offset="0.65" stop-color="#171b1f"/>
+      <stop offset="1" stop-color="#050607"/>
+    </radialGradient>
+    <linearGradient id="pb-pin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5e3ae"/>
+      <stop offset="0.2" stop-color="#cfb36a"/>
+      <stop offset="0.55" stop-color="#f6e7bc"/>
+      <stop offset="0.8" stop-color="#aa8544"/>
+      <stop offset="1" stop-color="#e9d292"/>
+    </linearGradient>
+    <filter id="pb-shadow" x="-20%" y="-20%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#pb-shadow)">
+    <g data-terminal="13" data-wire-side="left" data-terminal-domain="control" data-terminal-function="dry-contact" data-terminal-direction="bidirectional">
+      <circle data-wire-anchor="13" cx="43" cy="149" r="17" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+      <path d="M48 108v24c0 7-5 12-12 12h-6" fill="none" stroke="url(#pb-pin)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30 144h13" fill="none" stroke="#f8efcb" stroke-width="2" stroke-linecap="round" opacity="0.95"/>
+      <text x="43" y="164" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#434b50">13</text>
+    </g>
+
+    <g data-terminal="14" data-wire-side="right" data-terminal-domain="control" data-terminal-function="dry-contact" data-terminal-direction="bidirectional">
+      <circle data-wire-anchor="14" cx="117" cy="149" r="17" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+      <path d="M112 108v24c0 7 5 12 12 12h6" fill="none" stroke="url(#pb-pin)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M117 144h13" fill="none" stroke="#f8efcb" stroke-width="2" stroke-linecap="round" opacity="0.95"/>
+      <text x="117" y="164" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#434b50">14</text>
+    </g>
+
+    <rect data-wire-obstacle="true" x="28" y="34" width="104" height="78" rx="14" fill="url(#pb-body)" stroke="#07090b" stroke-width="3"/>
+    <rect x="35" y="41" width="90" height="63" rx="10" fill="#161a1d" stroke="#3f464c" stroke-width="2"/>
+
+    <path d="M49 23h62l10 10v20H39V33z" fill="url(#pb-top)" stroke="#abb4bb" stroke-width="2.5"/>
+    <path d="M56 28h48l8 8v10H48V36z" fill="#d7dde1" opacity="0.65"/>
+
+    <g data-push-cap="true" style="cursor:pointer">
+      <circle cx="80" cy="67" r="31" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+      <circle cx="80" cy="67" r="27" fill="url(#pb-plunger)" stroke="#c2c9ce" stroke-width="3.5"/>
+      <circle cx="80" cy="63" r="22" fill="#1b2024" stroke="#434b52" stroke-width="2"/>
+      <ellipse cx="71" cy="54" rx="8" ry="4" fill="#fff" opacity="0.18"/>
+    </g>
+
+    <rect x="58" y="84" width="44" height="10" rx="5" fill="#0d0f11" opacity="0.55"/>
+    <text x="80" y="13" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="800" fill="#e3e9ee" font-style="normal" style="font-size: 9.5px; fill: rgb(227, 233, 238); font-family: Arial, sans-serif; font-weight: 800; font-style: normal; text-anchor: middle;">PUSH BUTTON • TÁTIL • NA</text>
+  </g>
+</svg>

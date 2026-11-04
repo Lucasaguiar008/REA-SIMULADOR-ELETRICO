@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 340" role="img" aria-label="Lâmpada residencial realista" data-techrib-preserve-text-style="true">
+  <defs>
+    <radialGradient id="lampGlass" cx="42%" cy="30%" r="72%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".96"/>
+      <stop offset=".42" stop-color="#edf6fb" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#cbd9e2" stop-opacity=".56"/>
+      <stop offset="1" stop-color="#9aaeb9" stop-opacity=".42"/>
+    </radialGradient>
+    <radialGradient id="lampOn" cx="46%" cy="34%" r="70%">
+      <stop offset="0" stop-color="#fffef4"/>
+      <stop offset=".34" stop-color="#fff7bf"/>
+      <stop offset=".68" stop-color="#ffd45d"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </radialGradient>
+    <radialGradient id="lampHalo" cx="50%" cy="45%" r="56%">
+      <stop offset="0" stop-color="#fff7b0" stop-opacity=".74"/>
+      <stop offset=".55" stop-color="#facc15" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lampBase" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eef2f4"/>
+      <stop offset=".28" stop-color="#aebdc5"/>
+      <stop offset=".55" stop-color="#f6f8f9"/>
+      <stop offset=".82" stop-color="#7d8f99"/>
+      <stop offset="1" stop-color="#d8e0e4"/>
+    </linearGradient>
+    <linearGradient id="lampCeramic" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d9e2e8"/></linearGradient>
+    <filter id="lampSoftShadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#081018" flood-opacity=".28"/></filter>
+    <filter id="lampGlowFilter" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="11"/></filter>
+    <filter id="lampFilamentGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3.5"/></filter>
+  </defs>
+
+  <ellipse data-lamp-halo="true" cx="120" cy="118" rx="103" ry="101" fill="url(#lampHalo)" opacity="0" filter="url(#lampGlowFilter)" pointer-events="none"/>
+  <g data-lamp-rays="true" opacity="0" stroke="#facc15" stroke-width="5" stroke-linecap="round" pointer-events="none">
+    <path d="M120 8v24M120 205v24M28 118H5M235 118h-23M51 49 34 32M189 49l17-17M51 187l-17 17M189 187l17 17"/>
+  </g>
+
+  <g>
+    <path data-lamp-glow="true" data-lamp-bulb="true" d="M120 31c-50 0-89 38-89 86 0 31 15 55 38 73 15 12 23 27 25 45h52c2-18 10-33 25-45 23-18 38-42 38-73 0-48-39-86-89-86z" fill="url(#lampGlass)" stroke="#7f939f" stroke-width="4"/>
+    <path d="M64 87c10-25 31-39 55-42" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".78"/>
+    <path d="M76 111c4-11 11-21 21-28" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+
+    <g data-lamp-filament="true">
+      <path d="M94 169 106 133h28l12 36" fill="none" stroke="#636f76" stroke-width="4"/>
+      <path data-lamp-filament-glow="true" d="M106 133c7 8 13 8 20 0 7 8 13 8 20 0" fill="none" stroke="#8b5e1a" stroke-width="4" stroke-linecap="round"/>
+      <path d="M94 169h52" stroke="#78878f" stroke-width="4"/>
+    </g>
+
+    <path d="M89 213h62v68c0 8-6 14-14 14h-34c-8 0-14-6-14-14z" fill="url(#lampBase)" stroke="#61727c" stroke-width="4"/>
+    <path d="M91 226h58M91 239h58M91 252h58M91 265h58M94 278h52" stroke="#6d7f88" stroke-width="4"/>
+    <path d="M104 295h32l-4 15h-24z" fill="#565f64" stroke="#30383c" stroke-width="3"/>
+    <ellipse cx="120" cy="312" rx="13" ry="7" fill="#424a4e"/>
+
+    <rect x="72" y="300" width="96" height="31" rx="10" fill="url(#lampCeramic)" stroke="#7f9099" stroke-width="3"/>
+    <text x="120" y="319" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#40515b">LÂMPADA</text>
+  </g>
+
+  <g data-terminal="1" data-terminal-name="1" data-domain="power" data-function="load-input" data-voltage-class="127vac" data-direction="input">
+    <circle data-wire-anchor="1" cx="78" cy="328" r="18" fill="#000" fill-opacity=".001" pointer-events="all"/>
+    <circle cx="78" cy="328" r="9" fill="#b7791f" stroke="#6b470f" stroke-width="2"/>
+    <path d="M74 328h8M78 324v8" stroke="#f7e7c2" stroke-width="1.8"/>
+    <text x="78" y="316" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="900" fill="#374151">1</text>
+  </g>
+  <g data-terminal="2" data-terminal-name="2" data-domain="power" data-function="load-return" data-voltage-class="127vac" data-direction="input">
+    <circle data-wire-anchor="2" cx="162" cy="328" r="18" fill="#000" fill-opacity=".001" pointer-events="all"/>
+    <circle cx="162" cy="328" r="9" fill="#b7791f" stroke="#6b470f" stroke-width="2"/>
+    <path d="M158 328h8M162 324v8" stroke="#f7e7c2" stroke-width="1.8"/>
+    <text x="162" y="316" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="900" fill="#374151">2</text>
+  </g>
+</svg>

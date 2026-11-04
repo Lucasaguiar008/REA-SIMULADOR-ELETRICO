@@ -1,0 +1,301 @@
+/* TechRib Component Editor V59 — editor especializado de componentes elétricos. */
+.svg-editor[hidden]{display:none!important}.svg-editor{position:fixed;inset:0;z-index:21000;background:#071827e8;display:flex;padding:10px}.svg-editor-dialog{width:100%;height:100%;display:flex;flex-direction:column;background:#0d171e;border:1px solid #29434f;border-radius:12px;overflow:hidden;box-shadow:0 24px 80px #0009;color:#e6eef2}.svg-editor header{height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;background:#071e2d;border-bottom:1px solid #29434f}.svg-editor header h2{margin:0;font-size:16px}.svg-editor header small{display:block;color:#6fcbe5;font-size:8px;letter-spacing:.12em}.svg-editor header button{border:0;background:transparent;color:#fff;font-size:25px;cursor:pointer}.ce-topbar{display:flex;align-items:end;gap:8px;padding:8px 10px;background:#0e1c24;border-bottom:1px solid #29434f;overflow-x:auto}.ce-topbar label{display:grid;gap:3px;min-width:140px;font:700 9px Inter}.ce-topbar input,.ce-topbar select,.ce-props input,.ce-props select,.ce-props textarea{background:#10242e;color:#eaf4f8;border:1px solid #31505e;border-radius:6px;padding:6px 8px;font:600 10px Inter;outline:none}.ce-topbar input,.ce-topbar select{height:32px}.ce-btn{height:32px;border:1px solid #355665;border-radius:6px;background:#142a35;color:#dcebf1;padding:0 10px;font:700 9px Inter;cursor:pointer;white-space:nowrap}.ce-btn:hover{background:#1b3a49}.ce-btn.primary{background:#f57c00;border-color:#f57c00;color:#fff}.ce-btn.danger{color:#fecaca;border-color:#7f1d1d;background:#351414}.ce-main{min-height:0;flex:1;display:grid;grid-template-columns:58px minmax(360px,1fr) 340px;background:#0b141a}.ce-tools{border-right:1px solid #29434f;background:#0c1a22;padding:6px;display:flex;flex-direction:column;gap:5px}.ce-tool{height:43px;border:1px solid transparent;border-radius:7px;background:transparent;color:#9fb8c4;font:700 8px Inter;display:grid;place-items:center;cursor:pointer}.ce-tool b{font-size:16px}.ce-tool.active,.ce-tool:hover{background:#17303d;border-color:#315362;color:#fff}.ce-center{min-width:0;min-height:0;display:grid;grid-template-rows:auto 1fr 180px}.ce-canvasbar{height:42px;display:flex;align-items:center;gap:6px;padding:5px 9px;background:#0e1c24;border-bottom:1px solid #29434f}.ce-canvasbar .spacer{flex:1}.ce-canvaswrap{position:relative;overflow:auto;background:#cfd8de}.ce-canvas{position:relative;min-width:700px;min-height:520px;display:flex;align-items:center;justify-content:center;background-image:linear-gradient(#b8c3ca 1px,transparent 1px),linear-gradient(90deg,#b8c3ca 1px,transparent 1px);background-size:20px 20px;transform-origin:top left}.ce-canvas.no-grid{background-image:none}.ce-stage{position:relative;display:inline-block;padding:70px}.ce-stage>svg{display:block;max-width:none;max-height:none;overflow:visible;filter:none;background:#fff0}.ce-stage [data-terminal]{cursor:pointer}.ce-stage.mode-terminals [data-terminal]{filter:drop-shadow(0 0 3px #f57c00)}.ce-stage.mode-terminals [data-wire-anchor],.ce-stage.mode-debug [data-wire-anchor]{opacity:1!important;visibility:visible!important;pointer-events:all!important}.ce-stage .ce-selected{filter:drop-shadow(0 0 4px #0ea5e9)!important;outline:none}.ce-stage .ce-anchor-test{fill:#22c55e!important;stroke:#052e16!important;stroke-width:2!important;opacity:1!important}.ce-stage.mode-debug [id]:not(svg){outline:1px dashed #0ea5e9}.ce-overlay-label{position:absolute;z-index:5;pointer-events:none;padding:2px 4px;border-radius:4px;background:#061923dd;color:#fff;font:700 8px Inter}.ce-bottom{min-height:0;background:#0d1b23;border-top:1px solid #29434f;display:grid;grid-template-columns:1.15fr .85fr}.ce-bottom section{min-width:0;overflow:auto;padding:7px}.ce-bottom h4{margin:0 0 6px;color:#80cee9;font-size:9px;letter-spacing:.1em}.ce-terminal-table{width:100%;border-collapse:collapse;font-size:8px}.ce-terminal-table th,.ce-terminal-table td{padding:5px;border-bottom:1px solid #213743;text-align:left}.ce-terminal-table tr{cursor:pointer}.ce-terminal-table tr:hover,.ce-terminal-table tr.active{background:#16303c}.ce-status-ok{color:#86efac}.ce-status-warn{color:#fde047}.ce-status-error{color:#fca5a5}.ce-validation{display:grid;gap:4px}.ce-validation div{padding:5px 7px;border-radius:5px;background:#101f28;font-size:8px}.ce-right{min-width:0;min-height:0;border-left:1px solid #29434f;background:#0d171e;display:flex;flex-direction:column}.ce-tabs{display:flex;overflow-x:auto;border-bottom:1px solid #29434f}.ce-tabs button{height:38px;min-width:max-content;border:0;border-bottom:2px solid transparent;background:#0e1c24;color:#86a1ae;padding:0 9px;font:700 8px Inter;cursor:pointer}.ce-tabs button.active{color:#fff;border-color:#f57c00;background:#142731}.ce-props{min-height:0;flex:1;overflow:auto;padding:10px}.ce-pane{display:none}.ce-pane.active{display:block}.ce-props h3{margin:0 0 8px;font-size:11px;color:#eaf4f8}.ce-props h4{margin:14px 0 7px;color:#72c9e6;font-size:9px}.ce-grid2{display:grid;grid-template-columns:1fr 1fr;gap:7px}.ce-props label{display:grid;gap:3px;margin-bottom:7px;color:#9cb1bb;font:700 8px Inter}.ce-props textarea{min-height:76px;resize:vertical;font-family:Consolas,monospace}.ce-row{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}.ce-list{display:grid;gap:5px}.ce-card{border:1px solid #29434f;border-radius:6px;background:#10212a;padding:7px;font-size:8px}.ce-card header{height:auto!important;padding:0!important;background:none!important;border:0!important}.ce-card button{float:right}.ce-badge{display:inline-block;padding:2px 5px;border-radius:999px;background:#17364b;color:#8bd5f7;font-size:7px}.ce-summary{display:flex;gap:8px;align-items:center;padding:6px 10px;border-top:1px solid #29434f;background:#09151c;color:#9ab0ba;font-size:8px}.ce-summary strong{color:#fff}.ce-code{font:9px/1.4 Consolas,monospace}.ce-hidden{display:none!important}.ce-test-box{border:1px dashed #3c5f6e;border-radius:7px;padding:8px;background:#0f222b}.ce-test-result{min-height:34px;margin-top:7px;padding:7px;border-radius:5px;background:#08171e;font-size:9px}.ce-file{display:none}.ce-suggestion{display:flex;align-items:center;justify-content:space-between;gap:8px}.ce-suggestion button{height:25px}.ce-resize-handle{pointer-events:none;fill:#0ea5e9;stroke:#fff;stroke-width:1}.ce-version{color:#fbbf24}.ce-footer-actions{display:flex;gap:6px;margin-left:auto}@media(max-width:1050px){.ce-main{grid-template-columns:52px 1fr 290px}.ce-right{font-size:90%}}@media(max-width:780px){.svg-editor{padding:0}.svg-editor-dialog{border-radius:0}.ce-main{grid-template-columns:46px 1fr}.ce-right{position:absolute;z-index:20;right:0;top:102px;bottom:0;width:min(88vw,340px);transform:translateX(100%);transition:.2s}.svg-editor.props-open .ce-right{transform:none}.ce-center{grid-column:2}.ce-bottom{grid-template-columns:1fr}.ce-bottom section:last-child{display:none}.ce-topbar label{min-width:120px}}
+
+/* V87 — edição real de textos existentes no SVG */
+.ce-stage text{cursor:pointer}.ce-stage[data-ce-mode="select"] text:hover{filter:drop-shadow(0 0 3px #0ea5e9)}.ce-stage[data-ce-mode="select"] text.ce-selected,.ce-stage[data-ce-mode="move"] text.ce-selected{cursor:move}.ce-text-color-row{display:grid;grid-template-columns:42px 1fr;gap:6px;align-items:center}.ce-text-color-row input[type="color"]{width:42px;height:31px;padding:2px;border-radius:6px;cursor:pointer}.ce-text-help{margin:9px 0 0;padding:8px;border:1px dashed #355665;border-radius:6px;background:#0f222b;color:#a9bdc6;font:600 8px/1.45 Inter}.ce-pane[data-ce-pane="text"] textarea{min-height:62px;font-family:Inter,Arial,sans-serif}.ce-pane[data-ce-pane="text"] .ce-card{margin-bottom:8px}
+
+/* V89 — impedir seleção nativa e capturar text/tspan como objeto editável */
+.ce-stage text,.ce-stage tspan{-webkit-user-select:none;user-select:none}.ce-stage text *{-webkit-user-select:none;user-select:none}
+
+/* V91 — editor de código SVG */
+.svg-editor.code-open .ce-main{grid-template-columns:58px minmax(360px,1fr) minmax(520px,46vw)}
+.ce-code-pane{height:100%;min-height:0}
+.ce-code-pane.active{display:flex;flex-direction:column}
+.ce-code-help{margin:0 0 8px;padding:8px;border:1px dashed #355665;border-radius:6px;background:#0f222b;color:#a9bdc6;font:600 8px/1.45 Inter}
+.ce-code-toolbar,.ce-code-search{display:flex;gap:6px;align-items:center;margin-bottom:7px}
+.ce-code-search input{min-width:0;flex:1;height:32px}
+.ce-svg-code{box-sizing:border-box;width:100%;min-height:360px;flex:1;resize:none!important;background:#07131a!important;color:#d9f5ff!important;border:1px solid #31505e!important;border-radius:7px!important;padding:10px!important;font:10px/1.5 Consolas,'Courier New',monospace!important;tab-size:2;white-space:pre;overflow:auto}
+.ce-code-status{margin:5px 0 0;color:#8fb2c1;font:600 8px/1.4 Inter}
+.ce-code-status.error{color:#fca5a5}.ce-code-status.ok{color:#86efac}
+@media(max-width:1050px){.svg-editor.code-open .ce-main{grid-template-columns:52px 1fr minmax(430px,48vw)}}
+@media(max-width:780px){.svg-editor.code-open .ce-main{grid-template-columns:46px 1fr}.ce-svg-code{min-height:50vh}}
+
+
+/* Component Studio V1 — escopo, camadas, peças e biblioteca pessoal */
+.ce-scope-badge{align-self:center;padding:6px 9px;border:1px solid #355665;border-radius:999px;background:#102a36;color:#a8d9eb;font:800 8px Inter;white-space:nowrap}.ce-scope-badge[data-scope="official"]{border-color:#176b87;color:#67e8f9}.ce-scope-badge[data-scope="personal"]{border-color:#7c5d18;color:#fde68a}.svg-editor.is-readonly .ce-stage>svg{opacity:.88}.svg-editor.is-readonly .ce-props input,.svg-editor.is-readonly .ce-props textarea{border-style:dashed}.ce-btn:disabled{opacity:.42;cursor:not-allowed}.ce-check{display:flex!important;grid-template-columns:auto 1fr!important;align-items:center}.ce-check input{width:auto}.ce-layer-tree{display:grid;gap:3px}.ce-layer-row{display:grid;grid-template-columns:1fr 30px 30px;gap:3px;padding-left:calc(var(--depth,0)*10px)}.ce-layer-row button{border:1px solid #29434f;border-radius:5px;background:#0d2029;color:#bfd2da;min-height:29px;font:700 8px Inter;cursor:pointer}.ce-layer-row>button:first-child{text-align:left}.ce-layer-row.active>button:first-child{border-color:#0ea5e9;background:#123747}.ce-layer-row small{color:#6fa7bb}.ce-part-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.ce-part-grid button{min-height:66px;border:1px solid #31505e;border-radius:8px;background:#10242e;color:#eaf4f8;font-size:24px;cursor:grab}.ce-part-grid button:hover{border-color:#f57c00;background:#193440}.ce-part-grid span{display:block;margin-top:5px;font:700 8px Inter}.ce-preview-controls{display:flex;gap:5px;margin:7px 0}.ce-preview-controls button,.ce-preview-controls select{height:28px;border:1px solid #31505e;border-radius:5px;background:#10242e;color:#fff}.ce-stage [data-wire-obstacle="true"]{filter:drop-shadow(0 0 2px #a855f7)}.ce-stage .ce-selected{stroke-dasharray:3 2}.personal-library-empty{grid-column:1/-1;color:#76909c;font-size:11px;padding:12px}.personal-component-group{display:none}.workbench.personal-view .library-group:not(.personal-component-group){display:none!important}.workbench.personal-view .personal-component-group{display:block!important}.workbench.examples-view .personal-component-group{display:none!important}.personal-component-group .component-item{position:relative}.personal-component-group .component-item:after{content:'MINHA';position:absolute;right:4px;top:4px;padding:2px 4px;border-radius:4px;background:#7c5d18;color:#fff;font:800 6px Inter}
+
+/* V92 — Salvar como... na biblioteca */
+.ce-saveas-modal[hidden]{display:none!important}.ce-saveas-modal{position:fixed;inset:0;z-index:12000;background:rgba(2,12,22,.72);display:grid;place-items:center;padding:24px}.ce-saveas-dialog{width:min(720px,94vw);max-height:90vh;overflow:auto;background:#071923;border:1px solid #35566a;border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.55);color:#e8f3f8}.ce-saveas-dialog>header{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid #274456;background:#0a2230}.ce-saveas-dialog>header small{display:block;color:#47d7f2;font-size:10px;font-weight:900;letter-spacing:.12em}.ce-saveas-dialog>header h3{margin:4px 0 0;font-size:19px}.ce-saveas-dialog>header button{border:0;background:transparent;color:#dceaf1;font-size:26px;cursor:pointer}.ce-saveas-body{padding:18px;display:grid;gap:14px}.ce-saveas-body label{display:grid;gap:6px;font-size:12px;font-weight:800;color:#c8dbe5}.ce-saveas-body input,.ce-saveas-body select{width:100%;box-sizing:border-box;background:#0d2a39;border:1px solid #35566a;border-radius:8px;color:#fff;padding:10px 11px;outline:none}.ce-saveas-body input:focus,.ce-saveas-body select:focus{border-color:#55d8ef;box-shadow:0 0 0 2px rgba(85,216,239,.14)}.ce-saveas-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:12px}.ce-saveas-note,.ce-saveas-warning,.ce-saveas-target-info{margin:10px 0 0;padding:11px 12px;border-radius:9px;background:#0b2634;border:1px solid #294b5e;color:#bcd2dd;font-size:12px;line-height:1.45}.ce-saveas-warning{border-color:#7c5d18;background:#2c260f;color:#f3df9b}.ce-saveas-danger-check{grid-template-columns:auto 1fr!important;align-items:center!important;background:#2b1616;border:1px solid #7a3333;border-radius:9px;padding:10px 12px;color:#ffc1c1!important}.ce-saveas-danger-check input{width:auto!important;margin:0}.ce-saveas-match{color:#72e59b;font-weight:900}.ce-saveas-mismatch{color:#ffd166;font-weight:900}.ce-saveas-dialog>footer{display:flex;justify-content:flex-end;gap:9px;padding:14px 18px;border-top:1px solid #274456;background:#081e2a}@media(max-width:650px){.ce-saveas-grid{grid-template-columns:1fr}}
+
+/* ========================================================================== */
+/* TechRib Component Studio V2 — UX, camadas globais e biblioteca de peças   */
+/* ========================================================================== */
+.svg-editor{padding:6px;background:#06131dcc;backdrop-filter:blur(3px)}
+.svg-editor-dialog{border-radius:10px;background:#0b151c;border-color:#284654}
+.svg-editor header{height:46px;padding:0 16px;background:#0b202c}
+.svg-editor header h2{font-size:17px;letter-spacing:.01em}.svg-editor header small{font-size:9px;color:#74d4ee}
+.ce-topbar{min-height:58px;align-items:center;gap:7px;padding:7px 10px;background:#10212a;overflow-x:auto}
+.ce-topbar label{min-width:150px;font-size:10px;color:#a7bdc8}.ce-topbar label:first-child{min-width:210px}.ce-topbar input,.ce-topbar select{height:34px;font-size:11px}
+.ce-btn{height:34px;font-size:10px;border-radius:7px;padding:0 11px}.ce-btn.active{border-color:#f59e0b;background:#3b2a10;color:#fde68a}
+.ce-main{grid-template-columns:286px minmax(440px,1fr) 360px;background:#0b141a}
+
+/* painel esquerdo */
+.ce-left{min-width:0;min-height:0;display:flex;flex-direction:column;border-right:1px solid #29434f;background:#0e1b23}
+.ce-left-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:7px;border-bottom:1px solid #29434f;background:#0b171e}
+.ce-left-tabs button{height:34px;border:1px solid #29434f;border-radius:7px;background:#10242e;color:#93abb7;font:800 10px Inter;cursor:pointer}
+.ce-left-tabs button.active{background:#173949;border-color:#4e8399;color:#fff;box-shadow:inset 0 -2px #f59e0b}
+.ce-left-pane{display:none;min-height:0;flex:1;overflow:auto;padding:8px}.ce-left-pane.active{display:block}
+.ce-tools{border:0;background:transparent;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:7px}
+.ce-tool{height:62px;border:1px solid #294653;border-radius:9px;background:#10242e;color:#a9bec8;font-size:10px;gap:3px}
+.ce-tool b{font-size:20px;line-height:1}.ce-tool span{font-size:9px}.ce-tool.active,.ce-tool:hover{background:#193b4a;border-color:#5a8ca1;color:#fff;box-shadow:inset 3px 0 #f59e0b}
+.ce-left-help{margin-top:10px;padding:9px;border:1px solid #29434f;border-radius:8px;background:#0b171e;color:#94aeb9;font-size:10px;line-height:1.45}.ce-left-help b{display:block;color:#fbbf24;margin-bottom:3px}
+.ce-left-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}.ce-left-heading b{font-size:12px;color:#e9f4f8}.ce-left-heading small{display:block;margin-top:2px;color:#7896a3;font-size:9px}
+.ce-parts-search{box-sizing:border-box;width:100%;height:34px;margin-bottom:8px;padding:0 10px;border:1px solid #355665;border-radius:8px;background:#0a171e;color:#fff;font:600 10px Inter;outline:none}.ce-parts-search:focus{border-color:#0ea5e9}
+.ce-parts-library{display:grid;gap:8px}.ce-part-category{border:1px solid #29434f;border-radius:9px;background:#0b171e;overflow:hidden}.ce-part-category>summary{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;cursor:pointer;color:#d8e8ee;font-size:10px}.ce-part-category>summary span{padding:2px 6px;border-radius:999px;background:#173949;color:#9bdcf1;font-size:8px}.ce-part-category[open]>summary{border-bottom:1px solid #233b47}
+.ce-part-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:7px}.ce-part-grid button{min-height:108px;padding:6px;border:1px solid #31505e;border-radius:8px;background:#10242e;color:#eaf4f8;cursor:grab;text-align:center}.ce-part-grid button:hover{border-color:#f59e0b;background:#193440;transform:translateY(-1px)}
+.ce-part-preview{display:grid;place-items:center;height:60px;border-radius:6px;background:#dce5ea;background-image:linear-gradient(#cbd5dc 1px,transparent 1px),linear-gradient(90deg,#cbd5dc 1px,transparent 1px);background-size:10px 10px}.ce-part-preview svg{width:72px;height:54px;overflow:visible}.ce-part-name{display:block;margin-top:6px;font:800 9px Inter}.ce-part-grid small{display:block;margin-top:2px;color:#7896a3;font:600 8px Inter;line-height:1.25}
+.ce-empty{padding:12px;color:#7896a3;font-size:10px;text-align:center}
+
+/* canvas */
+.ce-center{grid-template-rows:46px minmax(0,1fr) auto}.ce-canvasbar{height:46px;padding:6px 9px;gap:5px;background:#0f2029}.ce-zoom-readout{min-width:44px;text-align:center;color:#c9dbe3;font:800 10px Inter}
+.ce-canvaswrap{background:#aebbc3;isolation:isolate}.ce-canvas{min-width:760px;min-height:600px;background-color:#dfe6ea;background-image:linear-gradient(#c5d0d6 1px,transparent 1px),linear-gradient(90deg,#c5d0d6 1px,transparent 1px);background-size:20px 20px;transform:none}
+.ce-stage{padding:80px}.ce-stage>svg{filter:drop-shadow(0 5px 14px #18232b28)}
+.ce-stage .ce-selected{filter:drop-shadow(0 0 5px #0ea5e9)!important}
+.ce-selection-box{position:absolute;z-index:30;pointer-events:none;border:1.5px solid #0284c7;box-shadow:0 0 0 1px #fff8;border-radius:2px}.ce-selection-box>span{position:absolute;left:-1px;top:-23px;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:3px 7px;border-radius:5px 5px 5px 0;background:#075985;color:#fff;font:800 9px Inter;box-shadow:0 2px 8px #0003}.ce-selection-box>i{position:absolute;width:8px;height:8px;border:1px solid #fff;background:#0284c7;border-radius:2px}.ce-selection-box>i:nth-of-type(1){left:-5px;top:-5px}.ce-selection-box>i:nth-of-type(2){right:-5px;top:-5px}.ce-selection-box>i:nth-of-type(3){left:-5px;bottom:-5px}.ce-selection-box>i:nth-of-type(4){right:-5px;bottom:-5px}
+/* Modo técnico é somente visual: não altera fill/stroke/opacity do SVG serializado. */
+.ce-stage.mode-terminals [data-wire-anchor],.ce-stage.mode-debug [data-wire-anchor]{opacity:.88!important;visibility:visible!important;pointer-events:all!important;fill:#f59e0b!important;fill-opacity:.72!important;stroke:#fff!important;stroke-width:2px!important}
+.ce-stage.mode-visual [data-wire-anchor]{/* respeita o estilo original do componente */}
+.ce-stage.mode-terminals [data-terminal-visual-for],.ce-stage.mode-debug [data-terminal-visual-for]{filter:drop-shadow(0 0 4px #22d3ee)!important}
+.ce-stage .ce-anchor-test{fill:#22c55e!important;fill-opacity:.85!important;stroke:#052e16!important;stroke-width:2!important;opacity:1!important;visibility:visible!important}
+
+/* painel técnico inferior */
+.ce-bottom{max-height:190px;grid-template-columns:1.2fr .8fr;transition:max-height .18s ease,opacity .18s ease}.ce-bottom.collapsed{display:none}.ce-bottom h4{font-size:10px}.ce-terminal-table{font-size:9px}.ce-terminal-table th,.ce-terminal-table td{padding:6px}.ce-validation div{font-size:9px;padding:6px 8px}
+
+/* painel direito */
+.ce-right{background:#0d181f}.ce-tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:6px;border-bottom:1px solid #29434f;background:#0b171e;overflow:visible}.ce-tabs button{height:34px;min-width:0;padding:0 5px;border:1px solid #29434f;border-radius:6px;background:#10242e;color:#8fa9b4;font:800 9px Inter}.ce-tabs button.active{border-color:#4d8197;background:#173949;color:#fff;box-shadow:inset 0 -2px #f59e0b}.ce-props{padding:12px}.ce-props h3{font-size:14px;margin-bottom:10px}.ce-props h4{font-size:10px;margin:15px 0 8px;color:#7dd3fc}.ce-props label{font-size:9px;gap:4px;margin-bottom:8px}.ce-props input,.ce-props select,.ce-props textarea{font-size:11px;padding:7px 8px}.ce-card{font-size:9px;padding:8px}.ce-badge{font-size:8px}.ce-row{gap:6px}.ce-summary{font-size:9px;min-height:35px}.ce-terminal-link{margin:10px 0;padding:9px;border:1px solid #365767;border-radius:8px;background:#0b2029}.ce-terminal-link>b{display:block;margin-bottom:4px;color:#7dd3fc;font-size:9px}.ce-terminal-link>span{display:block;color:#a6bdc8;font-size:9px;line-height:1.35}
+
+/* árvore de camadas */
+.ce-layer-tree{gap:4px}.ce-layer-row{grid-template-columns:18px minmax(0,1fr) 27px 27px 27px 27px 27px;gap:3px;padding-left:calc(var(--depth,0)*12px);align-items:center}.ce-layer-grip{color:#567481;font-size:11px;cursor:grab;text-align:center}.ce-layer-row button{min-height:30px;padding:0 4px;font-size:9px}.ce-layer-main{display:flex!important;flex-direction:column;align-items:flex-start;justify-content:center;min-width:0;padding:4px 7px!important}.ce-layer-main b{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9px}.ce-layer-main small{font-size:7px}.ce-layer-row.active .ce-layer-main{border-color:#0ea5e9!important;background:#123747!important}.ce-layer-row[draggable="true"]:active{opacity:.65}
+
+/* barra superior em telas menores */
+@media(max-width:1250px){.ce-main{grid-template-columns:248px minmax(380px,1fr) 330px}.ce-topbar label{min-width:130px}.ce-left-tabs button,.ce-tabs button{font-size:8px}}
+@media(max-width:950px){.ce-main{grid-template-columns:220px 1fr}.ce-right{position:absolute;z-index:50;right:6px;top:112px;bottom:6px;width:min(90vw,360px);box-shadow:-10px 0 35px #0008}.ce-left{grid-column:1}.ce-center{grid-column:2}.ce-part-grid{grid-template-columns:1fr}}
+
+
+/* TECHRIB COMPONENT STUDIO V2.2 — seleção por área */
+.ce-stage[data-ce-mode="marquee"]{cursor:crosshair!important}
+.ce-stage[data-ce-mode="marquee"] *{cursor:crosshair!important}
+.ce-marquee-box{position:absolute;z-index:40;pointer-events:none;border:1.5px dashed #0284c7;background:#38bdf826;box-shadow:0 0 0 1px #ffffff80 inset}
+.ce-marquee-box[data-direction="touch"]{border-color:#f59e0b;background:#f59e0b20}
+.ce-marquee-box>span{position:absolute;left:0;top:-22px;padding:3px 6px;border-radius:5px;background:#075985;color:#fff;font:800 9px Inter;white-space:nowrap;box-shadow:0 2px 8px #0003}
+.ce-marquee-box[data-direction="touch"]>span{background:#92400e}
+.ce-tool[data-ce-tool="marquee"] b{font-size:22px}
+
+/* ========================================================================== */
+/* TechRib 2026-09-05 — correção de limites da área de edição                 */
+/* Impede barra central e abas do painel direito de invadirem colunas vizinhas. */
+/* ========================================================================== */
+.ce-main{
+  min-width:0;
+  overflow:hidden;
+}
+.ce-center{
+  min-width:0;
+  max-width:100%;
+  overflow:hidden;
+}
+.ce-center > *{
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+}
+.ce-canvasbar{
+  min-width:0;
+  max-width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scrollbar-width:thin;
+  overscroll-behavior-x:contain;
+}
+.ce-canvasbar .spacer{
+  min-width:8px;
+}
+.ce-canvaswrap{
+  min-width:0;
+  min-height:0;
+  width:100%;
+  max-width:100%;
+  overflow:auto;
+  box-sizing:border-box;
+  contain:layout paint;
+}
+.ce-bottom{
+  min-width:0;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+  box-sizing:border-box;
+}
+.ce-right{
+  min-width:0;
+  max-width:100%;
+  overflow:hidden;
+  position:relative;
+  z-index:2;
+  box-sizing:border-box;
+}
+.ce-tabs{
+  box-sizing:border-box;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  overflow:hidden;
+}
+.ce-tabs button{
+  box-sizing:border-box;
+  width:100%;
+  max-width:100%;
+  min-width:0!important;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding-left:3px;
+  padding-right:3px;
+}
+.ce-props{
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+}
+@media(max-width:1250px){
+  .ce-tabs button{font-size:7.5px;padding-left:2px;padding-right:2px}
+}
+
+/* TechRib Component Studio v3 — resize visual + troca segura de borne */
+.ce-selection-box{pointer-events:none}
+.ce-selection-box>[data-ce-resize-handle]{pointer-events:auto!important;width:12px!important;height:12px!important;border:2px solid #fff!important;background:#0284c7!important;border-radius:3px!important;box-shadow:0 1px 5px #0005;touch-action:none;z-index:3}
+.ce-selection-box>[data-ce-resize-handle="nw"]{left:-7px!important;top:-7px!important;cursor:nwse-resize}
+.ce-selection-box>[data-ce-resize-handle="ne"]{right:-7px!important;top:-7px!important;cursor:nesw-resize}
+.ce-selection-box>[data-ce-resize-handle="sw"]{left:-7px!important;bottom:-7px!important;cursor:nesw-resize}
+.ce-selection-box>[data-ce-resize-handle="se"]{right:-7px!important;bottom:-7px!important;cursor:nwse-resize}
+.ce-selection-box.is-resizing{border-color:#f59e0b;box-shadow:0 0 0 1px #fff8,0 0 0 4px #f59e0b22}
+.ce-selection-box.is-resizing>[data-ce-resize-handle]{background:#f59e0b!important}
+.ce-selection-size{position:absolute;right:-1px;bottom:-25px;min-width:92px;padding:3px 7px;border-radius:0 0 5px 5px;background:#0f172aee;color:#e0f2fe;text-align:center;font:800 9px/1.25 Inter;letter-spacing:.02em;box-shadow:0 2px 8px #0003;white-space:nowrap}
+.ce-selection-size strong{color:#7dd3fc}
+.ce-terminal-template-box{display:grid;grid-template-columns:1fr auto;gap:6px;align-items:end;margin:8px 0;padding:8px;border:1px solid #31505e;border-radius:7px;background:#0b1d26}
+.ce-terminal-template-box label{margin:0!important}
+.ce-terminal-template-box small{grid-column:1/-1;color:#8fb2c0;font:600 8px/1.4 Inter}
+.ce-terminal-template-box .ce-btn{height:31px}
+
+
+/* v59.4 — tamanho visível ao abrir + seleção inteira temporária + seletor visual de borne */
+.ce-component-size{display:inline-flex;align-items:center;gap:3px;height:29px;padding:0 9px;border:1px solid #31505e;border-radius:6px;background:#091a22;color:#a8cad7;font:800 9px Inter;white-space:nowrap}
+.ce-component-size strong{color:#7dd3fc;font-size:10px}
+[data-ce-select-component].active,[data-ce-select-component][aria-pressed="true"]{background:#075985!important;border-color:#38bdf8!important;color:#e0f2fe!important;box-shadow:0 0 0 2px #38bdf822 inset}
+.ce-terminal-template-box{display:block!important}
+.ce-terminal-template-box>b{display:block;color:#d9edf5;font:900 9px/1.3 Inter;letter-spacing:.05em;margin-bottom:3px}
+.ce-terminal-template-box>small{display:block!important;margin-bottom:7px}
+.ce-terminal-visual-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:6px 0 8px}
+.ce-terminal-visual-picker>button{min-width:0;height:58px;padding:4px 3px;border:1px solid #31505e;border-radius:6px;background:#102833;color:#cce3ec;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font:700 8px Inter}
+.ce-terminal-visual-picker>button:hover{border-color:#38bdf8;background:#143543}.ce-terminal-visual-picker>button.active{border-color:#38bdf8;background:#075985;box-shadow:0 0 0 1px #7dd3fc inset;color:#fff}
+.ce-tv-original{width:25px;height:25px;border:1px dashed #7896a3;border-radius:50%;display:grid;place-items:center;color:#9bb8c4;font:900 6px Inter}
+.ce-tv-screw{position:relative;width:27px;height:27px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#f5f7f8 0 24%,#b8c4cb 58%,#667984 76%,#263746 78% 100%);box-shadow:inset 0 0 0 1px #657681}
+.ce-tv-screw.slot:after,.ce-tv-screw.phillips:before,.ce-tv-screw.phillips:after{content:"";position:absolute;left:6px;right:6px;top:12px;height:3px;border-radius:2px;background:#334155}.ce-tv-screw.phillips:after{left:12px;right:auto;top:6px;width:3px;height:15px}.ce-tv-screw.allen:after{content:"";position:absolute;inset:8px;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);background:#334155}
+.ce-tv-block{position:relative;width:31px;height:25px;border-radius:4px;border:2px solid #1f4050;box-shadow:inset 5px 0 0 #ffffff20,inset -5px 0 0 #0002}.ce-tv-block:after{content:"";position:absolute;width:12px;height:12px;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,#eef2f4 0 35%,#aab7bf 37% 65%,#52636e 67%)}.ce-tv-block.blue{background:#2f75bd}.ce-tv-block.green{background:#50ad64}.ce-tv-block.gray{background:#a6b1b9}.ce-tv-block.orange{background:#e9913f}.ce-tv-block.black{background:#343c43}
+.ce-terminal-visual-advanced{margin-top:5px!important}
+
+/* V5 — preview ao vivo + biblioteca de peças capturadas */
+.ce-part-save{border-color:#0f766e!important;background:#0b3a39!important;color:#ccfbf1!important;font-weight:800!important}
+.ce-part-save:hover{border-color:#2dd4bf!important;background:#115e59!important}
+.ce-custom-parts{border-color:#0f766e;box-shadow:inset 0 0 0 1px #0f766e33}
+.ce-custom-parts>summary{background:#0c2c2d;color:#ccfbf1}
+.ce-part-grid button em{display:inline-block;margin-top:5px;padding:2px 5px;border-radius:999px;background:#115e59;color:#99f6e4;font:800 7px Inter,sans-serif;font-style:normal;letter-spacing:.03em}
+
+
+/* V6 — perfil de bornes em lote inspirado em borne modular industrial */
+.ce-terminal-profile-box{margin:0 0 10px;padding:9px;border:1px solid #2c5363;border-radius:8px;background:linear-gradient(180deg,#0d2631,#091b23);box-shadow:inset 0 1px 0 #ffffff08}
+.ce-terminal-profile-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:3px}.ce-terminal-profile-head>b{font:900 9px/1.25 Inter;letter-spacing:.045em;color:#dcf3fb}.ce-terminal-profile-head>span{font:700 8px Inter;color:#8fb8c7;text-align:right}
+.ce-terminal-profile-box>small{display:block;color:#8fb2c0;font:600 8px/1.4 Inter;margin-bottom:7px}.ce-terminal-profile-box code{color:#bae6fd;font-size:8px}
+.ce-terminal-profile-picker{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.ce-terminal-profile-picker>button{height:64px;min-width:0;padding:4px 2px;border:1px solid #31505e;border-radius:6px;background:#102833;color:#cce3ec;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font:800 8px Inter}.ce-terminal-profile-picker>button:hover{border-color:#38bdf8;background:#143543;transform:translateY(-1px)}
+.ce-tp-original{width:31px;height:36px;border:1px dashed #7896a3;border-radius:4px;display:grid;place-items:center;color:#9bb8c4;font:900 6px Inter}
+.ce-tp-block{position:relative;width:31px;height:38px;border-radius:3px;border:2px solid #163343;box-shadow:inset 5px 0 0 #0002,inset -5px 0 0 #fff2}.ce-tp-block:before,.ce-tp-block:after{content:"";position:absolute;top:3px;bottom:3px;width:1px;background:#ffffff45}.ce-tp-block:before{left:5px}.ce-tp-block:after{right:5px}.ce-tp-block>i{position:absolute;left:50%;top:50%;width:17px;height:17px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#eef2f4 0 29%,#aeb9c0 31% 56%,#52616a 58% 66%,#17232b 68%);box-shadow:0 0 0 3px #0003}.ce-tp-block>i:before,.ce-tp-block>i:after{content:"";position:absolute;background:#3b4650;border-radius:2px;left:4px;right:4px;top:7px;height:2px}.ce-tp-block>i:after{left:7px;right:auto;top:4px;width:2px;height:9px}.ce-tp-block.green{background:#49a65d}.ce-tp-block.black{background:#353d43}.ce-tp-block.blue{background:#3479b8}.ce-tp-block.gray{background:#929da4}
+.ce-terminal-profile-picker>button.active{border-color:#38bdf8;background:#075985;box-shadow:0 0 0 1px #7dd3fc inset;color:#fff}
+
+/* V7 — preview de borne realmente instantâneo + tamanhos Pequeno/Médio/Grande */
+.ce-terminal-size-box{margin-top:8px;padding-top:8px;border-top:1px solid #294b59}
+.ce-terminal-size-title{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:6px}
+.ce-terminal-size-title>b{font:900 8px/1.2 Inter;letter-spacing:.045em;color:#d8eef6}
+.ce-terminal-size-title>small{max-width:190px;color:#789eac;font:600 7.5px/1.35 Inter;text-align:right}
+.ce-terminal-size-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.ce-terminal-size-picker>button{height:48px;border:1px solid #31505e;border-radius:6px;background:#102833;color:#cce3ec;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;padding:4px;font:800 8px Inter}
+.ce-terminal-size-picker>button:hover{border-color:#38bdf8;background:#143543}
+.ce-terminal-size-picker>button.active{border-color:#38bdf8;background:#075985;box-shadow:0 0 0 1px #7dd3fc inset;color:#fff}
+.ce-terminal-size-picker>button>span{display:grid;place-items:center;border:1px solid #567785;border-radius:5px;background:#0a1d25;color:#bae6fd;font:900 9px Inter}
+.ce-terminal-size-picker>button[data-ce-terminal-size="small"]>span{width:20px;height:20px}
+.ce-terminal-size-picker>button[data-ce-terminal-size="medium"]>span{width:25px;height:25px}
+.ce-terminal-size-picker>button[data-ce-terminal-size="large"]>span{width:30px;height:30px}
+.ce-stage [data-ce-terminal-visual-layer="true"]{pointer-events:none!important}
+.ce-stage.ce-terminal-live-paint>svg{will-change:transform,filter}
+
+/* v5 — bornes de pressão retangulares */
+.ce-tv-pressure,.ce-tp-pressure{position:relative;display:inline-block;border-radius:4px;border:2px solid #14212a;box-shadow:inset 4px 0 0 #ffffff18,inset -4px 0 0 #0003}
+.ce-tv-pressure{width:31px;height:27px}.ce-tp-pressure{width:31px;height:38px}
+.ce-tv-pressure.red,.ce-tp-pressure.red{background:linear-gradient(#dc2626,#991b1b)}.ce-tv-pressure.black,.ce-tp-pressure.black{background:linear-gradient(#3a4248,#171b1f)}
+.ce-tv-pressure:before,.ce-tp-pressure:before{content:"";position:absolute;left:5px;right:5px;top:4px;height:10px;border-radius:2px;border:1px solid #0008;background:#ffffff20;box-shadow:inset 0 2px 0 #ffffff25}
+.ce-tv-pressure:after,.ce-tp-pressure:after{content:"";position:absolute;left:7px;right:7px;bottom:4px;height:5px;border-radius:2px;background:#05080a;box-shadow:inset 0 0 0 1px #ffffff10}
+.ce-tp-pressure>i{position:absolute;left:8px;right:8px;top:18px;height:5px;border-radius:2px;background:#080b0d;box-shadow:0 0 0 1px #0009}
+
+
+/* V6 — Aparência / cores e gradientes das peças */
+.ce-paint-box{margin:10px 0;padding:9px;border:1px solid #294754;border-radius:8px;background:#0a2029;box-shadow:inset 0 1px 0 #ffffff08}
+.ce-paint-head>b{display:block;color:#e3f4fb;font:900 9px/1.25 Inter;letter-spacing:.055em}.ce-paint-head>small{display:block;margin-top:3px;color:#88a9b5;font:500 8px/1.35 Inter}
+.ce-paint-mode-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:8px 0}.ce-paint-mode-picker>button{height:56px;min-width:0;border:1px solid #31505e;border-radius:6px;background:#102833;color:#cce3ec;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:4px;font:800 8px Inter}.ce-paint-mode-picker>button:hover{border-color:#38bdf8;background:#143543}.ce-paint-mode-picker>button.active{border-color:#38bdf8;background:#075985;box-shadow:0 0 0 1px #7dd3fc inset;color:#fff}
+.ce-paint-preview{display:block;width:42px;height:21px;border-radius:4px;border:1px solid #90a4ae66;box-shadow:inset 0 0 0 1px #ffffff18}.ce-paint-preview.solid{background:#3b82f6}.ce-paint-preview.linear{background:linear-gradient(135deg,#60a5fa,#1e3a8a)}.ce-paint-preview.radial{background:radial-gradient(circle at 35% 30%,#dbeafe 0,#3b82f6 48%,#1e3a8a 100%)}.ce-paint-preview.bevel{background:linear-gradient(135deg,#dbeafe 0 12%,#60a5fa 18%,#2563eb 38%,#172554 50%,#2563eb 63%,#93c5fd 88%,#1e3a8a 100%)}.ce-paint-preview.metallic{background:linear-gradient(135deg,#1e293b,#e2e8f0 18%,#64748b 34%,#fff 49%,#475569 58%,#cbd5e1 78%,#1e293b)}.ce-paint-preview.gloss{background:linear-gradient(135deg,#eff6ff 0,#93c5fd 35%,#3b82f6 48%,#1e40af 52%,#172554 100%)}
+.ce-paint-colors input[type=color]{width:100%;height:35px;padding:2px;border-radius:5px;cursor:pointer}.ce-paint-palette{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;margin:7px 0 9px}.ce-paint-palette>button{aspect-ratio:1;border:1px solid #ffffff55;border-radius:4px;cursor:pointer;box-shadow:inset 0 0 0 1px #0003}.ce-paint-palette>button:hover{transform:scale(1.12);outline:1px solid #7dd3fc;outline-offset:1px}.ce-paint-palette>button[data-ce-paint-color="#ffffff"]{background:#fff}.ce-paint-palette>button[data-ce-paint-color="#d1d5db"]{background:#d1d5db}.ce-paint-palette>button[data-ce-paint-color="#94a3b8"]{background:#94a3b8}.ce-paint-palette>button[data-ce-paint-color="#111827"]{background:#111827}.ce-paint-palette>button[data-ce-paint-color="#ef4444"]{background:#ef4444}.ce-paint-palette>button[data-ce-paint-color="#991b1b"]{background:#991b1b}.ce-paint-palette>button[data-ce-paint-color="#f97316"]{background:#f97316}.ce-paint-palette>button[data-ce-paint-color="#eab308"]{background:#eab308}.ce-paint-palette>button[data-ce-paint-color="#22c55e"]{background:#22c55e}.ce-paint-palette>button[data-ce-paint-color="#166534"]{background:#166534}.ce-paint-palette>button[data-ce-paint-color="#06b6d4"]{background:#06b6d4}.ce-paint-palette>button[data-ce-paint-color="#3b82f6"]{background:#3b82f6}.ce-paint-palette>button[data-ce-paint-color="#1e3a8a"]{background:#1e3a8a}.ce-paint-palette>button[data-ce-paint-color="#8b5cf6"]{background:#8b5cf6}.ce-paint-palette>button[data-ce-paint-color="#ec4899"]{background:#ec4899}.ce-paint-palette>button[data-ce-paint-color="#8b5e3c"]{background:#8b5e3c}
+.ce-paint-status{margin-top:6px;padding:5px 7px;border-radius:5px;background:#071820;color:#8eb2c0;font:600 8px/1.3 Inter}
+
+
+/* TechRib Editor SVG v8 — LED / sinalizador */
+.ce-led-detected{margin:7px 0;padding:7px 9px;border:1px solid #285263;border-radius:7px;background:#0f2732;color:#d8eef6;font:700 10px Inter,Arial,sans-serif}
+.ce-led-box{margin-top:8px;padding:8px;border:1px solid #274b5a;border-radius:8px;background:#0c2029}
+.ce-led-head{display:flex;flex-direction:column;gap:2px;margin-bottom:7px}.ce-led-head>b{font-size:10px;color:#e1f3fa}.ce-led-head>small{font-size:9px;line-height:1.35;color:#8eafbd}
+.ce-led-model-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:6px 0 10px}
+.ce-led-model-picker>button{height:64px;min-width:0;padding:4px 2px;border:1px solid #31505e;border-radius:6px;background:#102833;color:#cce3ec;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font:800 8px Inter,Arial,sans-serif}
+.ce-led-model-picker>button:hover{border-color:#38bdf8;background:#143543}.ce-led-model-picker>button.active{border-color:#38bdf8;background:#075985;box-shadow:0 0 0 1px #7dd3fc inset;color:#fff}
+.ce-led-model-icon{position:relative;display:block;width:31px;height:31px;box-sizing:border-box}
+.ce-led-model-icon.original{display:grid;place-items:center;border:1px dashed #527180;border-radius:5px;color:#9fc8d8;font:800 7px Inter}
+.ce-led-model-icon.round:before,.ce-led-model-icon.flat:before,.ce-led-model-icon.dome:before{content:"";position:absolute;inset:3px;border-radius:50%;border:4px solid #8c9aa3;box-shadow:inset 0 0 0 2px #26353d}
+.ce-led-model-icon.round:after,.ce-led-model-icon.flat:after,.ce-led-model-icon.dome:after{content:"";position:absolute;inset:9px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#dfffe8 0 12%,#36cf6c 25%,#168a42 72%,#0c4f28 100%)}
+.ce-led-model-icon.flat:before{border-width:2px}.ce-led-model-icon.flat:after{inset:8px;background:#29b85b}
+.ce-led-model-icon.dome:before{border-color:#36454f;box-shadow:0 2px 2px #0008}.ce-led-model-icon.dome:after{box-shadow:inset -4px -5px 5px #0005,inset 4px 4px 4px #fff6}
+.ce-led-model-icon.industrial:before{content:"";position:absolute;inset:1px;border:5px solid #1c252b;border-radius:6px;box-shadow:inset 0 0 0 2px #697780}.ce-led-model-icon.industrial:after{content:"";position:absolute;inset:9px;border-radius:50%;background:#24bd5b;box-shadow:0 0 0 3px #9aa6ad}
+.ce-led-model-icon.square:before{content:"";position:absolute;inset:3px;border:4px solid #1f2b31;border-radius:3px;box-shadow:inset 0 0 0 2px #64727b}.ce-led-model-icon.square:after{content:"";position:absolute;inset:9px;border-radius:3px;background:#28c15d}
+.ce-led-model-icon.pilot:before{content:"";position:absolute;left:0;right:0;top:4px;bottom:4px;border:5px solid #1a2328;border-radius:7px;box-shadow:inset 0 0 0 2px #5f6c74}.ce-led-model-icon.pilot:after{content:"";position:absolute;inset:9px;border-radius:50%;background:#28c15d;box-shadow:0 0 0 2px #9aa6ad}
+.ce-led-color-picker{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:5px 0 8px}
+.ce-led-color-picker>button{height:52px;min-width:0;border:1px solid #31505e;border-radius:6px;background:#102833;color:#cce3ec;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:3px;font:700 7.5px Inter,Arial,sans-serif}
+.ce-led-color-picker>button:hover,.ce-led-color-picker>button.active{border-color:#38bdf8;background:#075985}
+.ce-led-color-picker>button>span{width:21px;height:21px;border-radius:50%;background:var(--led);border:2px solid #a6b4bc;box-shadow:inset 4px 4px 5px #fff5,inset -4px -4px 5px #0005,0 0 0 2px #0a151b}
+.ce-led-sync{margin-top:8px}.ce-led-preserve-status{margin-top:7px;padding:7px;border-radius:6px;border:1px solid #225466;background:#0a2733;color:#a9d8e8;font-size:9px;line-height:1.4}
+/* TechRib Component Studio — dimensoes editaveis persistentes */
+.ce-component-size-editor{height:34px!important;padding:2px 6px!important;gap:5px!important;overflow:visible!important}
+.ce-component-size-editor>b{color:#dcebf1;font-size:8px;letter-spacing:.04em}
+.ce-component-size-editor>label{display:inline-flex!important;align-items:center!important;gap:3px!important;min-width:0!important;margin:0!important;color:#9fc2d0!important;font:800 8px Inter!important}
+.ce-component-size-editor input[type="number"]{box-sizing:border-box;width:72px;height:26px!important;padding:3px 5px!important;border:1px solid #31505e;border-radius:5px;background:#10242e;color:#eaf4f8;font:800 9px Inter;outline:none}
+.ce-component-size-editor input[type="number"]:focus{border-color:#38bdf8;box-shadow:0 0 0 1px #38bdf855}
+.ce-component-size-editor>.ce-size-lock{gap:4px!important;color:#86a7b5!important;font-size:7px!important}
+.ce-component-size-editor>.ce-size-lock input{width:13px;height:13px;margin:0;accent-color:#0ea5e9}
+.ce-component-size-editor>.ce-btn{height:26px;padding:0 8px;background:#0f4c66;border-color:#26769a;color:#fff}
+.ce-component-size-editor>.ce-btn:hover{background:#146584}
+@media(max-width:1050px){.ce-component-size-editor>.ce-size-lock{display:none!important}.ce-component-size-editor input[type="number"]{width:62px}}
+
+/* TECHRIB V64 — âncoras em lote acima do visual do borne */
+.ce-anchor-front-box{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 9px;align-items:center;margin:10px 0;padding:9px;border:1px solid #3a5968;border-radius:8px;background:#0a1b23}.ce-anchor-front-box>div{min-width:0}.ce-anchor-front-box>div>b{display:block;color:#7dd3fc;font-size:9px;letter-spacing:.04em}.ce-anchor-front-box>div>small{display:block;margin-top:3px;color:#9fb7c2;font:600 8px/1.35 Inter}.ce-anchor-front-box>button{align-self:center}.ce-anchor-front-box>button.active{border-color:#22c55e;background:#123827;color:#bbf7d0}.ce-anchor-front-box>button:disabled{opacity:.45;cursor:not-allowed}.ce-anchor-front-box>p{grid-column:1/-1;margin:0;color:#8faab6;font:600 8px/1.45 Inter}.ce-anchor-front-box>p strong{color:#fbbf24}.ce-stage.mode-terminals [data-wire-anchor],.ce-stage.mode-debug [data-wire-anchor]{cursor:crosshair!important}
+@media(max-width:1180px){.ce-anchor-front-box{grid-template-columns:1fr}.ce-anchor-front-box>button{width:100%}}
+
+/* V65 — marcadores de anchor em camada HTML exclusiva do Editor SVG.
+   Nunca são serializados no SVG nem aparecem na prancha. */
+.ce-anchor-visibility-overlay{position:absolute;z-index:80;transform:translate(-50%,-50%);margin:0;padding:0;min-width:16px;min-height:16px;border:2px solid #fff;border-radius:50%;background:#f59e0bcc;box-shadow:0 0 0 2px #0ea5e9,0 0 10px #0284c7aa,inset 0 0 0 3px #f59e0b55;cursor:crosshair;pointer-events:auto;appearance:none}
+.ce-anchor-visibility-overlay::after{content:"";position:absolute;inset:50% auto auto 50%;width:4px;height:4px;border-radius:50%;background:#082f49;transform:translate(-50%,-50%);box-shadow:0 0 0 1px #fff}
+.ce-anchor-visibility-overlay:hover,.ce-anchor-visibility-overlay:focus-visible{outline:none;box-shadow:0 0 0 3px #22d3ee,0 0 16px #0891b2,inset 0 0 0 3px #fbbf2455}
+.ce-stage.mode-visual~.ce-anchor-visibility-overlay{display:none!important}

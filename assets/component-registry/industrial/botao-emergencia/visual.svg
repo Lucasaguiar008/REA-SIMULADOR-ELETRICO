@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 320" role="img" aria-label="Botão cogumelo de emergência">
+ <defs>
+  <linearGradient id="eb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#454b50" /><stop offset=".48" stop-color="#171b1f" /><stop offset="1" stop-color="#30363b" /></linearGradient>
+  <linearGradient id="em" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" /><stop offset=".45" stop-color="#89969f" /><stop offset=".7" stop-color="#eef2f4" /><stop offset="1" stop-color="#59656d" /></linearGradient>
+  <radialGradient id="er" cx="34%" cy="25%" r="72%"><stop stop-color="#ff7168" /><stop offset=".38" stop-color="#e4271d" /><stop offset="1" stop-color="#7d0b07" /></radialGradient>
+  <filter id="ef" x="-30%" y="-20%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".45" /></filter>
+ </defs>
+ <g filter="url(#ef)">
+  <path d="M35 5h150l13 12 8 55-9 17v58l-15 15v139l-16 15H54l-16-15V162l-15-15V89l-9-17 8-55z" fill="url(#eb)" stroke="#090b0d" stroke-width="4" />
+  <path d="M20 76h180v70H20z" fill="#111416" stroke="#050607" stroke-width="3" />
+  <rect x="25" y="43" width="70" height="72" rx="6" fill="#f3f4f3" stroke="#aaa" stroke-width="2" /><rect x="125" y="43" width="70" height="72" rx="6" fill="#f3f4f3" stroke="#aaa" stroke-width="2" /><rect x="95" y="44" width="30" height="69" fill="#1b1e21" />
+  <text x="60" y="63" text-anchor="middle" font-family="Arial" font-size="18" font-weight="900">21</text><text x="160" y="63" text-anchor="middle" font-family="Arial" font-size="18" font-weight="900">22</text>
+  <g data-terminal="21"><circle cx="60" cy="87" r="18" fill="#b67a18" data-wire-anchor="21" pointer-events="all" /><circle cx="60" cy="87" r="14" fill="url(#em)" /><path d="M50 87h20M60 77v20" stroke="#fff" stroke-width="4" /></g><g data-terminal="22"><circle cx="160" cy="87" r="18" fill="#b67a18" data-wire-anchor="22" pointer-events="all" /><circle cx="160" cy="87" r="14" fill="url(#em)" /><path d="M150 87h20M160 77v20" stroke="#fff" stroke-width="4" /></g>
+  <g fill="none" stroke="#fff" stroke-width="3"><path d="M103 62v39M117 62v39M103 76h14" /></g><text x="110" y="130" text-anchor="middle" font-family="Arial" font-size="11" font-weight="900" fill="#fff">CONTATO NF • 21–22</text>
+  <path d="M50 141h120l14 19v31H36v-31z" fill="#30353a" stroke="#0a0d0f" stroke-width="4" /><path d="M57 149h106l11 15v20H46v-20z" fill="#f3c928" stroke="#fff19b" stroke-width="3" />
+  <g data-emergency-cap="true">
+   <ellipse cx="110" cy="254" rx="78" ry="45" fill="#080a0c" stroke="#343a40" stroke-width="7" />
+   <path d="M42 223c4-37 32-57 68-57s64 20 68 57v29c-8 22-34 34-68 34s-60-12-68-34z" fill="#690906" stroke="#310403" stroke-width="5" />
+   <ellipse cx="110" cy="219" rx="69" ry="48" fill="url(#er)" stroke="#ff4c42" stroke-width="4" />
+   <ellipse cx="89" cy="195" rx="24" ry="12" fill="#fff" opacity=".25" />
+   <path d="M76 218h68" stroke="#8e0e09" stroke-width="3" opacity=".55" />
+  </g>
+ </g>
+</svg>

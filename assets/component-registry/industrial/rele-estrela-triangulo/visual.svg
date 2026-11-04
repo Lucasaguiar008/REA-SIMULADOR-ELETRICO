@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 560" role="img" aria-label="Relé estrela-triângulo TechRib"><defs>
+  <linearGradient id="rl2-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".34" stop-color="#edf1f3"/><stop offset=".72" stop-color="#d5dce0"/><stop offset="1" stop-color="#aeb8be"/></linearGradient>
+  <linearGradient id="rl2-face" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".56" stop-color="#edf1f3"/><stop offset="1" stop-color="#c8d0d5"/></linearGradient>
+  <linearGradient id="rl2-edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#141b20"/><stop offset=".52" stop-color="#53616a"/><stop offset="1" stop-color="#0c1115"/></linearGradient>
+  <linearGradient id="rl2-blue" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#082f50"/><stop offset=".48" stop-color="#087abe"/><stop offset="1" stop-color="#00acd0"/></linearGradient>
+  <linearGradient id="rl2-red" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ff554b"/><stop offset=".5" stop-color="#df2020"/><stop offset="1" stop-color="#8d1111"/></linearGradient>
+  <linearGradient id="rl2-copper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7b3b12"/><stop offset=".28" stop-color="#ef9a42"/><stop offset=".55" stop-color="#ffd38d"/><stop offset="1" stop-color="#71320d"/></linearGradient>
+  <radialGradient id="rl2-screw" cx="32%" cy="27%" r="76%"><stop stop-color="#f7fafb"/><stop offset=".2" stop-color="#cbd3d8"/><stop offset=".52" stop-color="#737e84"/><stop offset=".78" stop-color="#303a40"/><stop offset="1" stop-color="#10161a"/></radialGradient>
+  <filter id="rl2-shadow" x="-15%" y="-12%" width="135%" height="140%"><feDropShadow dx="3" dy="6" stdDeviation="5" flood-color="#071018" flood-opacity=".38"/></filter>
+  <filter id="rl2-inner" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0b1115" flood-opacity=".42"/></filter>
+  <style>
+    .anchor{fill:transparent;stroke:none}.brand{font:800 24px Arial;fill:#0878bd}.title{font:800 14px Arial;fill:#202d35;text-anchor:middle}.tiny{font:700 10px Arial;fill:#52616a;text-anchor:middle}.micro{font:700 8px Arial;fill:#64727a;text-anchor:middle}.term{font:800 14px Arial;fill:#16242d;text-anchor:middle}.state{font:800 11px Arial;fill:#28414f;text-anchor:middle}.seam{fill:none;stroke:#98a5ac;stroke-width:2}.shine{fill:none;stroke:#fff;stroke-width:3;opacity:.58}
+  </style>
+</defs><g filter="url(#rl2-shadow)"><rect data-component-body="true" x="12" y="12" width="276" height="536" rx="16" fill="url(#rl2-body)" stroke="#56646c" stroke-width="3"/><path d="M21 30v498M276 30v498" class="shine"/><path d="M271 20h9v520h-9z" fill="url(#rl2-edge)" opacity=".82"/>
+  <path d="M31 27h238v91H31zM31 442h238v91H31z" fill="#d0d8dc" stroke="#7f8d94" stroke-width="2"/><path d="M45 37h210M45 517h210" class="shine"/>
+  <rect x="39" y="119" width="222" height="324" rx="12" fill="url(#rl2-face)" stroke="#8d9aa2" stroke-width="3"/><rect x="52" y="134" width="196" height="34" rx="6" fill="url(#rl2-blue)"/><text x="66" y="158" fill="#fff" font-family="Arial" font-size="20" font-weight="800">LucasAguiar</text><text class="title" x="150" y="191">RELÉ ESTRELA-TRIÂNGULO</text><text class="micro" x="150" y="209">BOBINA 220 V AC • DIN</text><rect x="60" y="224" width="180" height="158" rx="13" fill="#f7f9fa" stroke="#aab6bc" stroke-width="2"/><g filter="url(#rl2-inner)"><rect x="83" y="251" width="134" height="95" rx="13" fill="#202a30" stroke="#6f7e86" stroke-width="5"/><path d="M103 302h28l18-25 20 47 18-24h16" fill="none" stroke="#20a7dc" stroke-width="6"/><circle cx="111" cy="273" r="7" fill="#ef4444"/><circle cx="189" cy="273" r="7" fill="#fbbf24"/></g><text class="tiny" x="150" y="365">SEQUÊNCIA AUTOMÁTICA Y → Δ</text><rect x="83" y="393" width="134" height="28" rx="14" fill="#d9e8ef" stroke="#86a0ad" stroke-width="2"/><text data-device-state="" class="state" x="150" y="412">REPOUSO</text>
+  <g data-terminal="A1" data-terminal-name="A1">
+    <circle data-wire-anchor="A1" class="anchor" cx="86" cy="54" r="24"/>
+    <rect x="52" y="21" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M61 14h50v12h-50z" fill="url(#rl2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="86" cy="54" r="21" fill="#182127"/><circle cx="86" cy="54" r="16" fill="url(#rl2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="82" cy="49" r="3.52" fill="#fff" opacity=".36"/><path d="M77.2 54h17.6M86 45.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="86" y="94">A1</text>
+  </g><g data-terminal="A2" data-terminal-name="A2">
+    <circle data-wire-anchor="A2" class="anchor" cx="214" cy="54" r="24"/>
+    <rect x="180" y="21" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M189 14h50v12h-50z" fill="url(#rl2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="214" cy="54" r="21" fill="#182127"/><circle cx="214" cy="54" r="16" fill="url(#rl2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="210" cy="49" r="3.52" fill="#fff" opacity=".36"/><path d="M205.2 54h17.6M214 45.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="214" y="94">A2</text>
+  </g><g data-terminal="15" data-terminal-name="15">
+    <circle data-wire-anchor="15" class="anchor" cx="53" cy="506" r="24"/>
+    <rect x="19" y="497" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M28 533h50v12h-50z" fill="url(#rl2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="53" cy="506" r="21" fill="#182127"/><circle cx="53" cy="506" r="16" fill="url(#rl2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="49" cy="501" r="3.52" fill="#fff" opacity=".36"/><path d="M44.2 506h17.6M53 497.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="53" y="487">15</text>
+  </g><g data-terminal="18" data-terminal-name="18">
+    <circle data-wire-anchor="18" class="anchor" cx="118" cy="506" r="24"/>
+    <rect x="84" y="497" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M93 533h50v12h-50z" fill="url(#rl2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="118" cy="506" r="21" fill="#182127"/><circle cx="118" cy="506" r="16" fill="url(#rl2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="114" cy="501" r="3.52" fill="#fff" opacity=".36"/><path d="M109.2 506h17.6M118 497.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="118" y="487">18</text>
+  </g><g data-terminal="25" data-terminal-name="25">
+    <circle data-wire-anchor="25" class="anchor" cx="182" cy="506" r="24"/>
+    <rect x="148" y="497" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M157 533h50v12h-50z" fill="url(#rl2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="182" cy="506" r="21" fill="#182127"/><circle cx="182" cy="506" r="16" fill="url(#rl2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="178" cy="501" r="3.52" fill="#fff" opacity=".36"/><path d="M173.2 506h17.6M182 497.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="182" y="487">25</text>
+  </g><g data-terminal="28" data-terminal-name="28">
+    <circle data-wire-anchor="28" class="anchor" cx="247" cy="506" r="24"/>
+    <rect x="213" y="497" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M222 533h50v12h-50z" fill="url(#rl2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="247" cy="506" r="21" fill="#182127"/><circle cx="247" cy="506" r="16" fill="url(#rl2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="243" cy="501" r="3.52" fill="#fff" opacity=".36"/><path d="M238.2 506h17.6M247 497.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="247" y="487">28</text>
+  </g></g></svg>

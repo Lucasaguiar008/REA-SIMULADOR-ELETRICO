@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-label="Chave estrela-triângulo manual TechRib">
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fafcfb"/><stop offset=".42" stop-color="#dde3e5"/><stop offset=".78" stop-color="#bdc6ca"/><stop offset="1" stop-color="#8d999f"/></linearGradient>
+  <linearGradient id="front" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fbfcfc"/><stop offset=".48" stop-color="#e8ecee"/><stop offset="1" stop-color="#c4ccd0"/></linearGradient>
+  <linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0c1114"/><stop offset=".48" stop-color="#4f5b61"/><stop offset="1" stop-color="#080b0d"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#064f82"/><stop offset=".55" stop-color="#0783bd"/><stop offset="1" stop-color="#00a5c7"/></linearGradient>
+  <linearGradient id="knob" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#434c51"/><stop offset=".42" stop-color="#171d20"/><stop offset="1" stop-color="#030506"/></linearGradient>
+  <linearGradient id="terminalPlate" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8fafb"/><stop offset=".54" stop-color="#dce2e5"/><stop offset="1" stop-color="#aeb9be"/></linearGradient>
+  <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72300b"/><stop offset=".24" stop-color="#e88835"/><stop offset=".5" stop-color="#ffd092"/><stop offset=".74" stop-color="#b86120"/><stop offset="1" stop-color="#5f2607"/></linearGradient>
+  <radialGradient id="screw" cx="32%" cy="27%" r="75%"><stop stop-color="#ffffff"/><stop offset=".25" stop-color="#d4dade"/><stop offset=".56" stop-color="#7b878d"/><stop offset=".84" stop-color="#333e43"/><stop offset="1" stop-color="#11171a"/></radialGradient>
+  <radialGradient id="bezel" cx="37%" cy="31%" r="72%"><stop stop-color="#b5c0c5"/><stop offset=".42" stop-color="#5a666c"/><stop offset=".72" stop-color="#20282c"/><stop offset="1" stop-color="#06090a"/></radialGradient>
+  <filter id="shadow" x="-16%" y="-12%" width="138%" height="145%"><feDropShadow dx="4" dy="8" stdDeviation="7" flood-color="#061018" flood-opacity=".4"/></filter>
+  <filter id="inner" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#05090b" flood-opacity=".48"/></filter>
+  <style>.anchor{fill:#000;fill-opacity:.001;stroke:none;pointer-events:all}.term{font:900 17px Arial;fill:#142027;text-anchor:middle}.brand{font:900 25px Arial;fill:#fff}.micro{font:800 11px Arial;fill:#526169;text-anchor:middle}.pos{font:900 23px Arial;fill:#162229;text-anchor:middle}.state{font:900 13px Arial;fill:#24404e;text-anchor:middle}</style>
+</defs>
+<g filter="url(#shadow)">
+  <path data-component-body="true" d="M28 9h584l18 22v658l-18 22H28L10 689V31z" fill="url(#side)" stroke="#05090b" stroke-width="4"/>
+  <rect x="31" y="26" width="578" height="670" rx="19" fill="url(#body)" stroke="#718087" stroke-width="4"/>
+  <path d="M42 43v633M596 43v633" stroke="#fff" stroke-width="4" opacity=".52"/>
+  <rect x="51" y="127" width="538" height="429" rx="16" fill="url(#front)" stroke="#8b989f" stroke-width="3"/>
+  <rect x="70" y="162" width="500" height="54" rx="8" fill="url(#blue)"/>
+  <text class="brand" x="91" y="197">LucasAguiar</text>
+  <text x="548" y="188" text-anchor="end" font-family="Arial" font-size="13" font-weight="900" fill="#e6faff">CHAVE Y / Δ</text>
+  <text x="548" y="204" text-anchor="end" font-family="Arial" font-size="9" font-weight="800" fill="#c3efff">MANUAL • 3P • AC-23A</text>
+  <rect x="94" y="233" width="452" height="270" rx="25" fill="#c7d0d4" stroke="#748188" stroke-width="4" filter="url(#inner)"/>
+  <rect x="112" y="251" width="416" height="234" rx="20" fill="#eef1f2" stroke="#a3adb2" stroke-width="3"/>
+  <path d="M140 276h360M140 459h360" stroke="#fff" stroke-width="4" opacity=".72"/>
+  <text class="pos" x="215" y="309">0</text><text class="pos" x="320" y="267">Y</text><text class="pos" x="425" y="309">Δ</text>
+  <path d="M215 323l21 22M320 274v24M425 323l-21 22" stroke="#4c5960" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="320" cy="371" r="102" fill="url(#bezel)" stroke="#0a0e10" stroke-width="7"/>
+  <circle cx="320" cy="371" r="80" fill="#101619" stroke="#77858c" stroke-width="4"/>
+  <circle cx="320" cy="371" r="62" fill="url(#knob)" stroke="#030506" stroke-width="5"/>
+  <g transform="translate(190 270)"><g data-generic-actuator="true" data-rotary-knob="true"><path d="M130 101L89 60" stroke="#f3f5f6" stroke-width="18" stroke-linecap="round"/><path d="M130 99L93 62" stroke="#ffcc27" stroke-width="8" stroke-linecap="round"/></g></g>
+  <circle cx="320" cy="371" r="16" fill="#6e7b82" stroke="#11181c" stroke-width="4"/>
+  <rect x="207" y="439" width="226" height="31" rx="15" fill="#dae8ee" stroke="#8ba0aa" stroke-width="2"/>
+  <text data-device-state="true" class="state" x="320" y="460">POSIÇÃO 0</text>
+  <text class="micro" x="320" y="527">PARTIDA MANUAL ESTRELA → TRIÂNGULO</text>
+  <path d="M64 115h512M64 570h512" stroke="#8b989f" stroke-width="2"/>
+  <g data-terminal="L1" data-terminal-name="L1" data-wire-side="top">
+    <rect x="108" y="22" width="84" height="91" rx="10" fill="url(#terminalPlate)" stroke="#6d7880" stroke-width="2.5"/>
+    <path d="M121 21h58v13h-58z" fill="url(#copper)" stroke="#6d3510" stroke-width="2"/>
+    <circle cx="150" cy="70" r="26" fill="#11191e" stroke="#020405" stroke-width="3"/>
+    <circle cx="150" cy="70" r="19" fill="url(#screw)" stroke="#6f7a80" stroke-width="2"/>
+    <path d="M139 70h22M150 59v22" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle data-wire-anchor="L1" class="anchor" cx="150" cy="70" r="25"/>
+    <text class="term" x="150" y="145">L1</text>
+  </g><g data-terminal="L2" data-terminal-name="L2" data-wire-side="top">
+    <rect x="278" y="22" width="84" height="91" rx="10" fill="url(#terminalPlate)" stroke="#6d7880" stroke-width="2.5"/>
+    <path d="M291 21h58v13h-58z" fill="url(#copper)" stroke="#6d3510" stroke-width="2"/>
+    <circle cx="320" cy="70" r="26" fill="#11191e" stroke="#020405" stroke-width="3"/>
+    <circle cx="320" cy="70" r="19" fill="url(#screw)" stroke="#6f7a80" stroke-width="2"/>
+    <path d="M309 70h22M320 59v22" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle data-wire-anchor="L2" class="anchor" cx="320" cy="70" r="25"/>
+    <text class="term" x="320" y="145">L2</text>
+  </g><g data-terminal="L3" data-terminal-name="L3" data-wire-side="top">
+    <rect x="448" y="22" width="84" height="91" rx="10" fill="url(#terminalPlate)" stroke="#6d7880" stroke-width="2.5"/>
+    <path d="M461 21h58v13h-58z" fill="url(#copper)" stroke="#6d3510" stroke-width="2"/>
+    <circle cx="490" cy="70" r="26" fill="#11191e" stroke="#020405" stroke-width="3"/>
+    <circle cx="490" cy="70" r="19" fill="url(#screw)" stroke="#6f7a80" stroke-width="2"/>
+    <path d="M479 70h22M490 59v22" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle data-wire-anchor="L3" class="anchor" cx="490" cy="70" r="25"/>
+    <text class="term" x="490" y="145">L3</text>
+  </g>
+  <g data-terminal="U1" data-terminal-name="U1" data-wire-side="bottom">
+    <rect x="28" y="595" width="84" height="102" rx="10" fill="url(#terminalPlate)" stroke="#6d7880" stroke-width="2.5"/>
+    <path d="M41 684h58v13h-58z" fill="url(#copper)" stroke="#6d3510" stroke-width="2"/>
+    <circle cx="70" cy="665" r="26" fill="#11191e" stroke="#020405" stroke-width="3"/>
+    <circle cx="70" cy="665" r="19" fill="url(#screw)" stroke="#6f7a80" stroke-width="2"/>
+    <path d="M59 665h22M70 654v22" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle data-wire-anchor="U1" class="anchor" cx="70" cy="665" r="25"/>
+    <text class="term" x="70" y="626">U1</text>
+  </g><g data-terminal="V1" data-terminal-name="V1" data-wire-side="bottom">
+    <rect x="128" y="595" width="84" height="102" rx="10" fill="url(#terminalPlate)" stroke="#6d7880" stroke-width="2.5"/>
+    <path d="M141 684h58v13h-58z" fill="url(#copper)" stroke="#6d3510" stroke-width="2"/>
+    <circle cx="170" cy="665" r="26" fill="#11191e" stroke="#020405" stroke-width="3"/>
+    <circle cx="170" cy="665" r="19" fill="url(#screw)" stroke="#6f7a80" stroke-width="2"/>
+    <path d="M159 665h22M170 654v22" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle data-wire-anchor="V1" class="anchor" cx="170" cy="665" r="25"/>
+    <text class="term" x="170" y="626">V1</text>
+  </g><g data-terminal="W1" data-terminal-name="W1" data-wire-side="bottom">
+    <rect x="228" y="595" width="84" height="102" rx="10" fill="url(#terminalPlate)" stroke="#6d7880" stroke-width="2.5"/>
+    <path d="M241 684h58v13h-58z" fill="url(#copper)" stroke="#6d3510" stroke-width="2"/>
+    <circle cx="270" cy="665" r="26" fill="#11191e" stroke="#020405" stroke-width="3"/>
+    <circle cx="270" cy="665" r="19" fill="url(#screw)" stroke="#6f7a80" stroke-width="2"/>
+    <path d="M259 665h22M270 654v22" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle data-wire-anchor="W1" class="anchor" cx="270" cy="665" r="25"/>
+    <text class="term" x="270" y="626">W1</text>
+  </g>
+  <g data-terminal="U2" data-terminal-name="U2" data-wire-side="bottom">
+    <rect x="328" y="595" width="84" height="102" rx="10" fill="url(#terminalPlate)" stroke="#6d7880" stroke-width="2.5"/>
+    <path d="M341 684h58v13h-58z" fill="url(#copper)" stroke="#6d3510" stroke-width="2"/>
+    <circle cx="370" cy="665" r="26" fill="#11191e" stroke="#020405" stroke-width="3"/>
+    <circle cx="370" cy="665" r="19" fill="url(#screw)" stroke="#6f7a80" stroke-width="2"/>
+    <path d="M359 665h22M370 654v22" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle data-wire-anchor="U2" class="anchor" cx="370" cy="665" r="25"/>
+    <text class="term" x="370" y="626">U2</text>
+  </g><g data-terminal="V2" data-terminal-name="V2" data-wire-side="bottom">
+    <rect x="428" y="595" width="84" height="102" rx="10" fill="url(#terminalPlate)" stroke="#6d7880" stroke-width="2.5"/>
+    <path d="M441 684h58v13h-58z" fill="url(#copper)" stroke="#6d3510" stroke-width="2"/>
+    <circle cx="470" cy="665" r="26" fill="#11191e" stroke="#020405" stroke-width="3"/>
+    <circle cx="470" cy="665" r="19" fill="url(#screw)" stroke="#6f7a80" stroke-width="2"/>
+    <path d="M459 665h22M470 654v22" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle data-wire-anchor="V2" class="anchor" cx="470" cy="665" r="25"/>
+    <text class="term" x="470" y="626">V2</text>
+  </g><g data-terminal="W2" data-terminal-name="W2" data-wire-side="bottom">
+    <rect x="528" y="595" width="84" height="102" rx="10" fill="url(#terminalPlate)" stroke="#6d7880" stroke-width="2.5"/>
+    <path d="M541 684h58v13h-58z" fill="url(#copper)" stroke="#6d3510" stroke-width="2"/>
+    <circle cx="570" cy="665" r="26" fill="#11191e" stroke="#020405" stroke-width="3"/>
+    <circle cx="570" cy="665" r="19" fill="url(#screw)" stroke="#6f7a80" stroke-width="2"/>
+    <path d="M559 665h22M570 654v22" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle data-wire-anchor="W2" class="anchor" cx="570" cy="665" r="25"/>
+    <text class="term" x="570" y="626">W2</text>
+  </g>
+</g>
+</svg>

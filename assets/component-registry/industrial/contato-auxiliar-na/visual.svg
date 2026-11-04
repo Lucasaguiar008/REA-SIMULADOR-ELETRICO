@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 360" role="img" aria-label="Bloco de Contato Auxiliar NA TechRib">
+  <defs>
+    <linearGradient id="auxna_body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfcfd"/><stop offset=".46" stop-color="#e8edf1"/><stop offset="1" stop-color="#c7d0d6"/></linearGradient>
+    <linearGradient id="auxna_face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e7ecef"/></linearGradient>
+    <linearGradient id="auxna_side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5f6b73"/><stop offset="1" stop-color="#263139"/></linearGradient>
+    <linearGradient id="auxna_brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0f2d46"/><stop offset=".55" stop-color="#1783d1"/><stop offset="1" stop-color="#00b7d9"/></linearGradient>
+    <radialGradient id="auxna_screw" cx="34%" cy="28%" r="76%"><stop offset="0" stop-color="#ffffff"/><stop offset=".28" stop-color="#d6dde1"/><stop offset=".6" stop-color="#7d8991"/><stop offset="1" stop-color="#202a31"/></radialGradient>
+    <filter id="auxna_shadow" x="-20%" y="-10%" width="150%" height="125%"><feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#07111a" flood-opacity=".28"/></filter>
+  </defs>
+  <g filter="url(#auxna_shadow)">
+    <rect data-component-body="true" x="20" y="6" width="140" height="348" rx="12" fill="url(#auxna_body)" stroke="#7d8991" stroke-width="2"/>
+    <path d="M20 24Q20 6 38 6h12v348H36q-16 0-16-16z" fill="#f8fafb" opacity=".78"/>
+    <path d="M145 12h9q6 0 6 7v322q0 8-8 11h-7z" fill="url(#auxna_side)" opacity=".72"/>
+    <path d="M31 93h118l7 7v18H24v-18zM24 260h132v18l-7 7H31l-7-7z" fill="#d5dde2" stroke="#9ca8af" stroke-width="1.2"/>
+    <path d="M32 98h116M32 274h116" stroke="#fff" stroke-width="2" opacity=".58"/>
+    <rect x="31" y="103" width="118" height="154" rx="9" fill="url(#auxna_face)" stroke="#aeb8be" stroke-width="1.4"/>
+    <rect x="39" y="112" width="102" height="18" rx="3" fill="url(#auxna_brand)"/>
+    <text x="48" y="126" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700">LucasAguiar</text>
+    <text x="90" y="144" text-anchor="middle" fill="#26323a" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="700">BLOCO AUXILIAR</text>
+    <rect x="42" y="150" width="96" height="101" rx="7" fill="#f8fafb" stroke="#c2cbd0"/>
+    <g data-contact-actuator="true" style="cursor:pointer">
+      <rect x="45" y="153" width="90" height="95" rx="5" fill="#fff" fill-opacity=".001"/>
+      <text data-aux-pair-label="true" x="90" y="170" text-anchor="middle" fill="#0f2d46" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="900">NA • 13-14</text>
+      <g transform="translate(40 136) scale(1 .42)" fill="none" stroke="#1e2932" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 88v30"/><circle cx="50" cy="121" r="5" fill="#1e2932" stroke="none"/>
+        <path d="M50 169v31"/><circle cx="50" cy="169" r="5" fill="#1e2932" stroke="none"/>
+        <path data-contact-blade="true" d="M50 169L50 121" transform="rotate(-25 50 169)"/>
+      </g>
+      <rect x="56" y="223" width="68" height="21" rx="10.5" fill="#e8eef2" stroke="#9aa7af"/>
+      <text data-contact-state="true" x="90" y="237" text-anchor="middle" fill="#40525f" font-family="Arial,Helvetica,sans-serif" font-size="10" font-weight="800">ABERTO</text>
+    </g>
+    <path d="M65 337h50v9h-9l-6 7H80l-6-7h-9z" fill="#87949c" stroke="#46535c"/>
+  </g>
+  <g data-terminal="13" data-terminal-name="13" data-domain="control" data-function="aux-contact-no" data-voltage-class="dry-contact" data-direction="bidirectional">
+    <circle data-wire-anchor="13" cx="90" cy="8" r="18" fill="#000" fill-opacity=".001" pointer-events="all"/>
+    <rect x="49" y="18" width="82" height="68" rx="9" fill="#eef2f4" stroke="#9ca7ad" stroke-width="1.3"/>
+    <path d="M57 24h66" stroke="#fff" stroke-width="2" opacity=".75"/>
+    <circle cx="90" cy="48" r="23" fill="#d7dee2" stroke="#68757d" stroke-width="2"/>
+    <circle cx="90" cy="48" r="18" fill="url(#auxna_screw)" stroke="#263139" stroke-width="1.6"/>
+    <path d="M80 45h7v-9h7v9h9v7h-9v10h-7V52h-7z" fill="#182127" stroke="#edf2f4" stroke-width="1"/>
+    <text data-aux-number="first" x="90" y="83" text-anchor="middle" fill="#15212a" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="900">13</text>
+  </g>
+  <g data-terminal="14" data-terminal-name="14" data-domain="control" data-function="aux-contact-no" data-voltage-class="dry-contact" data-direction="bidirectional">
+    <circle data-wire-anchor="14" cx="90" cy="352" r="18" fill="#000" fill-opacity=".001" pointer-events="all"/>
+    <rect x="49" y="273" width="82" height="66" rx="9" fill="#eef2f4" stroke="#9ca7ad" stroke-width="1.3"/>
+    <circle cx="90" cy="310" r="23" fill="#d7dee2" stroke="#68757d" stroke-width="2"/>
+    <circle cx="90" cy="310" r="18" fill="url(#auxna_screw)" stroke="#263139" stroke-width="1.6"/>
+    <path d="M80 307h7v-9h7v9h9v7h-9v10h-7v-10h-7z" fill="#182127" stroke="#edf2f4" stroke-width="1"/>
+    <text data-aux-number="second" x="90" y="271" text-anchor="middle" fill="#15212a" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="900">14</text>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 150" role="img" aria-label="HC-SR04 funcional" data-techrib-preserve-text-style="true">
+<defs><linearGradient id="pcb" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2577b8"/><stop offset="1" stop-color="#0b4675"/></linearGradient><radialGradient id="sonic" cx="45%" cy="38%"><stop stop-color="#eef2f7"/><stop offset=".55" stop-color="#a8b0ba"/><stop offset="1" stop-color="#525b66"/></radialGradient></defs>
+<rect x="8" y="8" width="244" height="118" rx="12" fill="url(#pcb)" stroke="#083254" stroke-width="4"/>
+<text x="130" y="26" text-anchor="middle" font-size="13" font-family="Arial" font-weight="700" fill="#fff">HC-SR04 • ULTRASSÔNICO</text>
+<g><circle cx="70" cy="66" r="31" fill="#20262d" stroke="#d6dce3" stroke-width="5"/><circle cx="70" cy="66" r="24" fill="url(#sonic)"/><circle cx="190" cy="66" r="31" fill="#20262d" stroke="#d6dce3" stroke-width="5"/><circle cx="190" cy="66" r="24" fill="url(#sonic)"/></g>
+<g data-ultrasonic-wave="1" opacity="0"><path d="M216 48 q30 18 0 36" fill="none" stroke="#67e8f9" stroke-width="4" stroke-linecap="round"/></g>
+<g data-ultrasonic-wave="2" opacity="0"><path d="M224 38 q48 28 0 56" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/></g>
+<rect x="20" y="101" width="220" height="17" rx="6" fill="#062a45"/><text x="130" y="114" data-ultrasonic-distance="true" text-anchor="middle" font-size="12" font-family="monospace" font-weight="700" fill="#a7f3d0">DISTÂNCIA: -- cm</text>
+<g font-family="Arial" font-size="10" font-weight="700" text-anchor="middle">
+ <g data-terminal="VCC" data-wire-anchor="VCC" data-wire-side="bottom"><circle cx="40" cy="136" r="12" fill="#b91c1c" stroke="#fecaca" stroke-width="2"/><text x="40" y="149" fill="#111827">VCC</text></g>
+ <g data-terminal="TRIG" data-wire-anchor="TRIG" data-wire-side="bottom"><circle cx="100" cy="136" r="12" fill="#f59e0b" stroke="#fde68a" stroke-width="2"/><text x="100" y="149" fill="#111827">TRIG</text></g>
+ <g data-terminal="ECHO" data-wire-anchor="ECHO" data-wire-side="bottom"><circle cx="160" cy="136" r="12" fill="#22c55e" stroke="#bbf7d0" stroke-width="2"/><text x="160" y="149" fill="#111827">ECHO</text></g>
+ <g data-terminal="GND" data-wire-anchor="GND" data-wire-side="bottom"><circle cx="220" cy="136" r="12" fill="#111827" stroke="#d1d5db" stroke-width="2"/><text x="220" y="149" fill="#111827">GND</text></g>
+</g></svg>

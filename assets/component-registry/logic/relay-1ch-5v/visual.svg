@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 336" role="img" aria-label="Módulo relé azul 1 canal 5 V TechRib" data-techrib-preserve-text-style="true">
+<defs>
+  <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1175b7"/><stop offset=".48" stop-color="#0862a0"/><stop offset="1" stop-color="#034777"/></linearGradient>
+  <linearGradient id="pcbEdge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#073a62"/><stop offset="1" stop-color="#032a49"/></linearGradient>
+  <linearGradient id="relayCase" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2c91e8"/><stop offset=".16" stop-color="#187bd4"/><stop offset=".72" stop-color="#0a5cab"/><stop offset="1" stop-color="#06458a"/></linearGradient>
+  <linearGradient id="termBlue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1b8fd9"/><stop offset=".5" stop-color="#0a68ad"/><stop offset="1" stop-color="#034775"/></linearGradient>
+  <linearGradient id="black" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#394147"/><stop offset=".35" stop-color="#1b2226"/><stop offset="1" stop-color="#080b0d"/></linearGradient>
+  <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset=".28" stop-color="#d6dee3"/><stop offset=".68" stop-color="#8e9ba2"/><stop offset="1" stop-color="#536168"/></linearGradient>
+  <radialGradient id="screw"><stop offset="0" stop-color="#ffffff"/><stop offset=".46" stop-color="#dfe5e8"/><stop offset=".8" stop-color="#89969d"/><stop offset="1" stop-color="#4b5960"/></radialGradient>
+  <radialGradient id="mount"><stop offset="0" stop-color="#07131a"/><stop offset=".5" stop-color="#07131a"/><stop offset=".58" stop-color="#dfc264"/><stop offset=".78" stop-color="#947a38"/><stop offset="1" stop-color="#173c5b"/></radialGradient>
+  <filter id="ledGlow" x="-350%" y="-350%" width="800%" height="800%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>.silk{font-family:Arial,sans-serif;fill:#f6fbff}.tiny{font-size:8px;font-weight:800}.small{font-size:10px;font-weight:800}.label{font-size:11px;font-weight:900}.terminal-hit{fill:#000;fill-opacity:.001;pointer-events:all}</style>
+</defs>
+<path d="M22 10H230L242 22V314L230 326H22L10 314V22Z" fill="url(#pcbEdge)"/>
+<path d="M24 14H228L238 24V312L228 322H24L14 312V24Z" fill="url(#pcb)" stroke="#42a2dc" stroke-width="1.5"/>
+<path d="M78.0 90v12M174.0 90v12M126.0 92v10M84.0 230v24H106.0M146.0 230v24H168.0" fill="none" stroke="#8dc7e5" stroke-opacity=".24" stroke-width="2"/>
+<circle cx="28" cy="28" r="10" fill="url(#mount)"/><circle cx="28" cy="28" r="4.4" fill="#06131a"/>
+<circle cx="224" cy="28" r="10" fill="url(#mount)"/><circle cx="224" cy="28" r="4.4" fill="#06131a"/>
+<circle cx="28" cy="308" r="10" fill="url(#mount)"/><circle cx="28" cy="308" r="4.4" fill="#06131a"/>
+<circle cx="224" cy="308" r="10" fill="url(#mount)"/><circle cx="224" cy="308" r="4.4" fill="#06131a"/>
+<text x="126.0" y="32" text-anchor="middle" class="silk" font-size="10.5" font-weight="900">TechRib • RELÉ 1CH • 5VDC</text>
+<g><rect x="59.0" y="45" width="134" height="55" rx="5" fill="url(#termBlue)" stroke="#02395f" stroke-width="1.6"/><path d="M103.7 48v49M148.3 48v49" stroke="#034a7b" stroke-width="1.6"/></g>
+<g data-terminal="NC" data-wire-side="top">
+  <circle data-wire-anchor="NC" data-wire-side="top" class="terminal-hit" cx="81.4" cy="68" r="21"/>
+  <circle cx="81.4" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M74.4 68h14M81.4 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="81.4" y="95" text-anchor="middle" class="silk label">NC</text>
+</g>
+<g data-terminal="COM" data-wire-side="top">
+  <circle data-wire-anchor="COM" data-wire-side="top" class="terminal-hit" cx="126.0" cy="68" r="21"/>
+  <circle cx="126.0" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M119.0 68h14M126.0 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="126.0" y="95" text-anchor="middle" class="silk label">COM</text>
+</g>
+<g data-terminal="NO" data-wire-side="top">
+  <circle data-wire-anchor="NO" data-wire-side="top" class="terminal-hit" cx="170.6" cy="68" r="21"/>
+  <circle cx="170.6" cy="68" r="13.5" fill="url(#screw)" stroke="#4e5c63" stroke-width="2"/>
+  <path d="M163.6 68h14M170.6 61v14" stroke="#48565d" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="170.6" y="95" text-anchor="middle" class="silk label">NO</text>
+</g>
+<g data-relay-channel="1">
+  <rect x="58.0" y="112" width="136" height="122" rx="7" fill="url(#relayCase)" stroke="#82c9f8" stroke-width="1.7"/>
+  <path d="M65.0 121H186.0" stroke="#a8daf9" stroke-opacity=".58" stroke-width="2"/>
+  <path d="M66.0 224H186.0" stroke="#033e7a" stroke-opacity=".65" stroke-width="2"/>
+  <text x="126.0" y="143" text-anchor="middle" class="silk" font-size="13" font-weight="900" font-style="italic">SONGLE</text>
+  <text x="126.0" y="169" text-anchor="middle" class="silk" font-size="9.5" font-weight="800">SRD-05VDC-SL-C</text>
+  <text x="126.0" y="191" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 250VAC</text>
+  <text x="126.0" y="208" text-anchor="middle" class="silk" font-size="8.6" font-weight="700">10A 30VDC</text>
+  <text x="126.0" y="226" text-anchor="middle" class="silk" font-size="8" font-weight="900">5VDC COIL</text>
+</g>
+<g>
+  <rect x="78.0" y="249" width="28" height="24" rx="3" fill="url(#black)" stroke="#737f85"/>
+  <path d="M83.0 249v-5M99.0 249v-5M83.0 273v5M99.0 273v5" stroke="#cad2d6" stroke-width="1.2"/>
+  <rect x="114.0" y="253" width="19" height="16" rx="3" fill="#161b1e" stroke="#6a747a"/>
+  <circle cx="152.0" cy="261" r="8.5" fill="#4a1717" stroke="#250d0d" stroke-width="1.5"/>
+  <circle data-relay-led="1" cx="152.0" cy="261" r="5.4" fill="#284b39"/>
+  <text x="152.0" y="244" text-anchor="middle" class="silk tiny">CH1</text>
+  <rect x="168.0" y="256" width="17" height="10" rx="2" fill="#d8c18e" stroke="#8d7548"/><text x="176.5" y="264" text-anchor="middle" font-family="Arial" font-size="5.2" font-weight="700" fill="#493720">103</text>
+</g>
+<circle cx="42" cy="266" r="8" fill="#173121"/><circle cx="42" cy="266" r="5.2" fill="#61ff6b" filter="url(#ledGlow)"/><text x="55" y="270" class="silk tiny">PWR</text>
+<rect x="65.0" y="287" width="122" height="31" rx="5" fill="#0e1417" stroke="#4d5a61" stroke-width="1.5"/>
+<g data-terminal="VCC" data-wire-side="bottom">
+  <circle data-wire-anchor="VCC" data-wire-side="bottom" class="terminal-hit" cx="84.0" cy="302" r="17"/>
+  <rect x="72.0" y="290" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="84.0" cy="302" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="84.0" cy="302" r="2" fill="#5d4718"/>
+  <text x="84.0" y="279" text-anchor="middle" class="silk small">VCC</text>
+</g>
+<g data-terminal="GND" data-wire-side="bottom">
+  <circle data-wire-anchor="GND" data-wire-side="bottom" class="terminal-hit" cx="126.0" cy="302" r="17"/>
+  <rect x="114.0" y="290" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="126.0" cy="302" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="126.0" cy="302" r="2" fill="#5d4718"/>
+  <text x="126.0" y="279" text-anchor="middle" class="silk small">GND</text>
+</g>
+<g data-terminal="IN" data-wire-side="bottom">
+  <circle data-wire-anchor="IN" data-wire-side="bottom" class="terminal-hit" cx="168.0" cy="302" r="17"/>
+  <rect x="156.0" y="290" width="24" height="24" rx="3" fill="#111619" stroke="#4c5b62" stroke-width="1.4"/>
+  <circle cx="168.0" cy="302" r="6.5" fill="#dab84b" stroke="#f2d46c" stroke-width="1.2"/>
+  <circle cx="168.0" cy="302" r="2" fill="#5d4718"/>
+  <text x="168.0" y="279" text-anchor="middle" class="silk small">IN</text>
+</g>
+<text x="126.0" y="332" text-anchor="middle" class="silk tiny">OPTO ISOLADO • CONTATOS SPDT • LED INDIVIDUAL POR CANAL</text>
+<circle data-logic-led="relay" cx="152.0" cy="261" r="5.4" fill="#284b39" opacity=".001"/>
+<path data-relay-arm="true" d="M170.0 201l22-18" fill="none" stroke="#f8fafc" stroke-width="3" stroke-linecap="round" opacity=".001"/>
+</svg>

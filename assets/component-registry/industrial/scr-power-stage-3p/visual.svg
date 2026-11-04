@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 820" role="img" aria-label="Módulo de Potência SCR Trifásico TechRib">
+<defs>
+  <linearGradient id="scrBody" x2="1" y2="1"><stop stop-color="#314758"/><stop offset=".5" stop-color="#172b38"/><stop offset="1" stop-color="#0a1720"/></linearGradient>
+  <linearGradient id="scrPanel" x2="0" y2="1"><stop stop-color="#183748"/><stop offset="1" stop-color="#07151d"/></linearGradient>
+  <radialGradient id="scrScrew"><stop stop-color="#f8fafc"/><stop offset=".42" stop-color="#9caab3"/><stop offset=".75" stop-color="#334955"/><stop offset="1" stop-color="#101c24"/></radialGradient>
+  <filter id="scrShadow"><feDropShadow dy="7" stdDeviation="6" flood-opacity=".35"/></filter>
+</defs>
+<rect x="12" y="12" width="496" height="796" rx="26" fill="#07131b" stroke="#bd8c28" stroke-width="5" filter="url(#scrShadow)"/>
+<rect x="24" y="24" width="472" height="772" rx="20" fill="url(#scrBody)" stroke="#5d7685" stroke-width="3"/>
+<text x="260" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="#f4d675">TECHRIB • ESTÁGIO SCR 3Φ</text>
+<text x="260" y="79" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="800" fill="#d9eaf2">PONTE DE POTÊNCIA • CONTROLE EXTERNO 3,3 V</text>
+
+<g font-family="Arial,sans-serif" font-size="15" font-weight="900" fill="#fff" text-anchor="middle">
+  <text x="95" y="120">L1</text><text x="205" y="120">L2</text><text x="315" y="120">L3</text><text x="425" y="120">PE</text>
+</g>
+<g fill="#617481" stroke="#111d24" stroke-width="4">
+  <circle cx="95" cy="155" r="28"/><circle cx="205" cy="155" r="28"/><circle cx="315" cy="155" r="28"/><circle cx="425" cy="155" r="28" fill="#84d52c"/>
+</g>
+<g fill="url(#scrScrew)" stroke="#d6e1e7" stroke-width="2">
+  <circle cx="95" cy="155" r="19"/><circle cx="205" cy="155" r="19"/><circle cx="315" cy="155" r="19"/><circle cx="425" cy="155" r="19"/>
+</g>
+<g stroke="#263843" stroke-width="5" stroke-linecap="round"><path d="M84 155h22M95 144v22"/><path d="M194 155h22M205 144v22"/><path d="M304 155h22M315 144v22"/><path d="M414 155h22M425 144v22"/></g>
+
+<rect x="60" y="210" width="400" height="390" rx="18" fill="url(#scrPanel)" stroke="#748c99" stroke-width="3"/>
+<text x="260" y="244" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="900" fill="#d7edf6">6 × SCR • DISPARO POR ÂNGULO DE FASE</text>
+<g transform="translate(95 285)" stroke="#d9e7ed" stroke-width="4" fill="none">
+  <path d="M0 0h65m0-24v48m0-24 42-28v56zM107 0h45"/><path d="M30 78h65m0-24v48m0-24 42-28v56zM137 78h45"/>
+</g>
+<g transform="translate(95 415)" stroke="#d9e7ed" stroke-width="4" fill="none">
+  <path d="M0 0h65m0-24v48m0-24 42-28v56zM107 0h45"/><path d="M30 78h65m0-24v48m0-24 42-28v56zM137 78h45"/>
+</g>
+<g transform="translate(302 285)" stroke="#d9e7ed" stroke-width="4" fill="none">
+  <path d="M0 0h35m0-24v48m0-24 42-28v56zM77 0h35"/><path d="M0 130h35m0-24v48m0-24 42-28v56zM77 130h35"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="12" font-weight="900" fill="#7dd3fc"><text x="100" y="570">FASE A</text><text x="230" y="570">FASE B</text><text x="355" y="570">FASE C</text></g>
+<rect x="155" y="510" width="210" height="66" rx="10" fill="#171b1e" stroke="#59666b" stroke-width="3"/>
+<text data-scr-display="true" x="260" y="553" text-anchor="middle" font-family="monospace" font-size="31" font-weight="900" fill="#a7ff83">0%</text>
+<g font-family="Arial,sans-serif" font-size="11" font-weight="800" fill="#dcebf0"><circle data-scr-led-a="true" cx="190" cy="622" r="8" fill="#243b2a"/><text x="203" y="626">A</text><circle data-scr-led-b="true" cx="245" cy="622" r="8" fill="#243b2a"/><text x="258" y="626">B</text><circle data-scr-led-c="true" cx="300" cy="622" r="8" fill="#243b2a"/><text x="313" y="626">C</text><circle data-scr-led-enable="true" cx="365" cy="622" r="8" fill="#243b2a"/><text x="378" y="626">EN</text></g>
+<text data-scr-state="true" x="260" y="658" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#f4d675">BLOQUEADO</text>
+
+<g font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#fff" text-anchor="middle"><text x="95" y="704">U</text><text x="205" y="704">V</text><text x="315" y="704">W</text><text x="425" y="704">PE</text></g>
+<g fill="#617481" stroke="#111d24" stroke-width="4"><circle cx="95" cy="740" r="28"/><circle cx="205" cy="740" r="28"/><circle cx="315" cy="740" r="28"/><circle cx="425" cy="740" r="28" fill="#84d52c"/></g>
+<g fill="url(#scrScrew)" stroke="#d6e1e7" stroke-width="2"><circle cx="95" cy="740" r="19"/><circle cx="205" cy="740" r="19"/><circle cx="315" cy="740" r="19"/><circle cx="425" cy="740" r="19"/></g>
+<g stroke="#263843" stroke-width="5" stroke-linecap="round"><path d="M84 740h22M95 729v22"/><path d="M194 740h22M205 729v22"/><path d="M304 740h22M315 729v22"/><path d="M414 740h22M425 729v22"/></g>
+
+<text x="482" y="225" text-anchor="end" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#f4d675">CONTROLE</text>
+<g font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#fff" text-anchor="end">
+  <text x="452" y="270">ENABLE</text><text x="452" y="318">FIRE_A</text><text x="452" y="366">FIRE_B</text><text x="452" y="414">FIRE_C</text><text x="452" y="462">GND</text>
+</g>
+<g fill="#eef3f5" stroke="#728691" stroke-width="2"><circle cx="480" cy="266" r="11"/><circle cx="480" cy="314" r="11"/><circle cx="480" cy="362" r="11"/><circle cx="480" cy="410" r="11"/><circle cx="480" cy="458" r="11"/></g>
+<g fill="#d4a72c"><circle cx="480" cy="266" r="3"/><circle cx="480" cy="314" r="3"/><circle cx="480" cy="362" r="3"/><circle cx="480" cy="410" r="3"/><circle cx="480" cy="458" r="3"/></g>
+
+<!-- terminais -->
+<g data-terminal="L1" data-terminal-id="scr:L1" data-terminal-name="L1" data-domain="power" data-function="power-input" data-voltage-class="380vac" data-direction="input" data-electrical-type="phase"><circle cx="95" cy="155" r="30" fill="#000" fill-opacity=".001" data-wire-anchor="L1"/></g>
+<g data-terminal="L2" data-terminal-id="scr:L2" data-terminal-name="L2" data-domain="power" data-function="power-input" data-voltage-class="380vac" data-direction="input" data-electrical-type="phase"><circle cx="205" cy="155" r="30" fill="#000" fill-opacity=".001" data-wire-anchor="L2"/></g>
+<g data-terminal="L3" data-terminal-id="scr:L3" data-terminal-name="L3" data-domain="power" data-function="power-input" data-voltage-class="380vac" data-direction="input" data-electrical-type="phase"><circle cx="315" cy="155" r="30" fill="#000" fill-opacity=".001" data-wire-anchor="L3"/></g>
+<g data-terminal="PE-IN" data-terminal-id="scr:PE-IN" data-terminal-name="PE-IN" data-domain="protective-earth" data-function="protective-earth" data-voltage-class="pe" data-direction="passive" data-electrical-type="ground"><circle cx="425" cy="155" r="30" fill="#000" fill-opacity=".001" data-wire-anchor="PE-IN"/></g>
+<g data-terminal="U" data-terminal-id="scr:U" data-terminal-name="U" data-domain="power" data-function="power-output" data-voltage-class="380vac" data-direction="output" data-electrical-type="motor_output"><circle cx="95" cy="740" r="30" fill="#000" fill-opacity=".001" data-wire-anchor="U"/></g>
+<g data-terminal="V" data-terminal-id="scr:V" data-terminal-name="V" data-domain="power" data-function="power-output" data-voltage-class="380vac" data-direction="output" data-electrical-type="motor_output"><circle cx="205" cy="740" r="30" fill="#000" fill-opacity=".001" data-wire-anchor="V"/></g>
+<g data-terminal="W" data-terminal-id="scr:W" data-terminal-name="W" data-domain="power" data-function="power-output" data-voltage-class="380vac" data-direction="output" data-electrical-type="motor_output"><circle cx="315" cy="740" r="30" fill="#000" fill-opacity=".001" data-wire-anchor="W"/></g>
+<g data-terminal="PE-OUT" data-terminal-id="scr:PE-OUT" data-terminal-name="PE-OUT" data-domain="protective-earth" data-function="protective-earth" data-voltage-class="pe" data-direction="passive" data-electrical-type="ground"><circle cx="425" cy="740" r="30" fill="#000" fill-opacity=".001" data-wire-anchor="PE-OUT"/></g>
+<g data-terminal="ENABLE" data-terminal-id="scr:ENABLE" data-terminal-name="ENABLE" data-domain="logic" data-function="digital-input" data-voltage-class="3v3" data-direction="input" data-electrical-type="signal"><circle cx="480" cy="266" r="15" fill="#000" fill-opacity=".001" data-wire-anchor="ENABLE"/></g>
+<g data-terminal="FIRE_A" data-terminal-id="scr:FIRE_A" data-terminal-name="FIRE_A" data-domain="logic" data-function="digital-input" data-voltage-class="3v3" data-direction="input" data-electrical-type="signal"><circle cx="480" cy="314" r="15" fill="#000" fill-opacity=".001" data-wire-anchor="FIRE_A"/></g>
+<g data-terminal="FIRE_B" data-terminal-id="scr:FIRE_B" data-terminal-name="FIRE_B" data-domain="logic" data-function="digital-input" data-voltage-class="3v3" data-direction="input" data-electrical-type="signal"><circle cx="480" cy="362" r="15" fill="#000" fill-opacity=".001" data-wire-anchor="FIRE_B"/></g>
+<g data-terminal="FIRE_C" data-terminal-id="scr:FIRE_C" data-terminal-name="FIRE_C" data-domain="logic" data-function="digital-input" data-voltage-class="3v3" data-direction="input" data-electrical-type="signal"><circle cx="480" cy="410" r="15" fill="#000" fill-opacity=".001" data-wire-anchor="FIRE_C"/></g>
+<g data-terminal="GND" data-terminal-id="scr:GND" data-terminal-name="GND" data-domain="logic" data-function="logic-ground" data-voltage-class="3v3" data-direction="passive" data-electrical-type="ground"><circle cx="480" cy="458" r="15" fill="#000" fill-opacity=".001" data-wire-anchor="GND"/></g>
+</svg>

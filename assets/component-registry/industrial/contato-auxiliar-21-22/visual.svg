@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="180" height="500" viewBox="0 0 180 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bodyGrad_grey" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#efe6d2"/>
+      <stop offset="0.35" stop-color="#d8c8a8"/>
+      <stop offset="1" stop-color="#baa585"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="brandBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f2d46"/>
+      <stop offset="0.55" stop-color="#1783d1"/>
+      <stop offset="1" stop-color="#00b7d9"/>
+    </linearGradient>
+    <linearGradient id="gradient-4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#E0E0E0"/>
+      <stop offset="0.5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <linearGradient id="gradient-5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#E0E0E0"/>
+      <stop offset="0.5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <linearGradient id="gradient-6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#E0E0E0"/>
+      <stop offset="0.5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <linearGradient id="gradient-7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#E0E0E0"/>
+      <stop offset="0.5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <style>
+      .hotspot{fill:#18a0ff;fill-opacity:0;stroke:#18a0ff;stroke-width:2;stroke-opacity:0}
+      svg:hover .hotspot{fill-opacity:.06;stroke-opacity:.35}
+    </style>
+    <radialGradient id="screw">
+      <stop offset="0" stop-color="#f7fbff"/>
+      <stop offset="0.45" stop-color="#aebbc5"/>
+      <stop offset="0.7" stop-color="#3b4850"/>
+      <stop offset="0.78" stop-color="#b87918"/>
+      <stop offset="1" stop-color="#362206"/>
+    </radialGradient>
+  </defs>
+  <g id="terminal-block" filter="url(#softShadow)" transform="matrix(1, 0, 0, 1, 44.111843, 20)">
+    <path d="M 12.89 62.898 C 38.232 62.898 83.761 61.384 83.745 61.384 L 92.149 146.487 L 92.149 348.212 L 86.672 458.846 L 77.217 462.337 L 20.469 462.337 L 12.063 455.817 L 5.534 348.212 L 5.534 149.829 C 5.534 149.829 12.89 58.605 12.89 62.898 Z" stroke="#a4afb6" stroke-width="1.3" style="stroke-width: 1.31; fill: rgb(238, 238, 238); transform-origin: 48.842px 261.86px;" transform="matrix(-1, 0, 0, -1, 0.000004, 0.00005)"/>
+    <rect y="59.066" width="100" height="400.789" rx="6" fill="url(#bodyGrad_grey)" stroke="#555C63" stroke-width="1.5" style="" x="-2.926"/>
+    <path d="M 11.39 61.398 C 36.733 61.398 82.262 59.884 82.246 59.884 L 90.65 144.987 L 90.65 346.712 L 85.173 457.346 L 75.718 460.837 L 18.97 460.837 L 10.564 454.317 L 4.035 346.712 L 4.035 148.329 C 4.035 148.329 11.39 57.105 11.39 61.398 Z" stroke="#a4afb6" stroke-width="1.3" style="stroke-width: 1.31; fill: rgb(238, 238, 238); transform-origin: 47.343px 260.36px;" transform="matrix(-1, 0, 0, -1, 0.000008, 0.000039)"/>
+    <text x="50" y="157" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#111111" text-anchor="middle" style="white-space: pre;"> </text>
+    <path d="M 0 160 L 5 168 L 5 200 L 0 208 Z" fill="#a58d6f"/>
+    <path d="M 100 160 L 95 168 L 95 200 L 100 208 Z" fill="#e9dcc0"/>
+    <path d="M 0 310 L 5 318 L 5 350 L 0 358 Z" fill="#a58d6f"/>
+    <path d="M 100 310 L 95 318 L 95 350 L 100 358 Z" fill="#e9dcc0"/>
+    <rect x="248.247" y="227.332" width="78.479" height="16.355" rx="2" fill="url(#brandBar)" style="stroke-width: 1.021; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, -1, 1, 0, -266.866583, 14.992466)"/>
+    <text x="259.132" y="240.99" class="brand" style="white-space: pre; line-height: 24px; fill: rgb(255, 255, 255) !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 15px; font-weight: 700 !important; text-anchor: start !important; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, -1, 1, 0, -267.309329, 14.083439)">LucasAguiar</text>
+    <path d="M 20.262 57.894 L 80.659 57.894 L 80.659 82.894 L 70.246 82.894 L 70.246 92.894 L 30.676 92.894 L 30.676 82.894 L 20.262 82.894 L 20.262 57.894 Z" fill="#d7dde1" stroke="#a4afb6" stroke-width="1.3" style="stroke-width: 1.327;"/>
+    <rect x="25.461" y="74.03" width="50" height="8.487" rx="3" fill="#1A1A1A" style="stroke-width: 1;"/>
+    <rect x="29.284" y="75.386" width="44" height="5.776" rx="2" fill="url(#gradient-4)" style="stroke-width: 1;"/>
+    <rect x="27.928" y="63.339" width="45.066" height="7.665" rx="3" fill="#1A1A1A" style="stroke-width: 1;"/>
+    <rect x="29.285" y="64.695" width="44" height="5.776" rx="2" fill="url(#gradient-5)" style="stroke-width: 1;"/>
+    <path d="M 20.262 423.848 L 80.659 423.848 L 80.659 448.848 L 70.246 448.848 L 70.246 458.848 L 30.676 458.848 L 30.676 448.848 L 20.262 448.848 L 20.262 423.848 Z" fill="#d7dde1" stroke="#a4afb6" stroke-width="1.3" style="stroke-width: 1.327; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000009, 0.000009)"/>
+    <rect x="-72.993" y="-444.36" width="50" height="8.487" rx="3" fill="#1A1A1A" style="stroke-width: 1; transform-origin: -47.994px -440.116px;" transform="matrix(-1, 0, 0, -1, 95.987793, 880.232056)"/>
+    <rect x="-69.173" y="-443.01" width="44" height="5.776" rx="2" fill="url(#gradient-6)" style="stroke-width: 1; transform-origin: -47.171px -440.122px;" transform="matrix(-1, 0, 0, -1, 94.341789, 880.243835)"/>
+    <rect x="-70.533" y="-455.05" width="45.066" height="7.665" rx="3" fill="#1A1A1A" style="stroke-width: 1; transform-origin: -47.994px -451.217px;" transform="matrix(-1, 0, 0, -1, 95.987793, 902.434082)"/>
+    <rect x="-69.173" y="-453.7" width="44" height="5.776" rx="2" fill="url(#gradient-7)" style="stroke-width: 1; transform-origin: -47.17px -450.812px;" transform="matrix(-1, 0, 0, -1, 94.33979, 901.62384)"/>
+    <circle id="terminal-top" class="hotspot" cx="50.5" cy="72.5" r="12"/>
+    <circle id="terminal-bottom" class="hotspot" cx="50.5" cy="444.5" r="12"/>
+    <g id="auxiliary-nc" data-part="auxiliary-nc" transform="matrix(0.647235, 0, 0, 0.697615, -381.467316, -182.697632)" style="">
+      <g id="terminal-21" data-terminal="21">
+        <text x="666" y="426" style="white-space: pre; fill: rgb(16, 24, 32); font-family: Inter, Arial, sans-serif; font-size: 34px; font-weight: 800; line-height: normal; perspective-origin: 344.328px 218.5px; pointer-events: none; text-anchor: middle;">21</text>
+        <g transform="translate(666 470) scale(.72)">
+          <g>
+            <circle r="36" fill="url(#screw)"/>
+            <circle r="23" fill="#dbe4e9" stroke="#55646d" stroke-width="4"/>
+            <path d="M-15 0h30M0-15v30" stroke="#34434b" stroke-width="7" stroke-linecap="round"/>
+          </g>
+        </g>
+        <circle class="terminal-hotspot" cx="666" cy="470" r="34" style="cursor: crosshair; fill: rgb(30, 136, 229); fill-opacity: 0; stroke: rgb(49, 200, 255); stroke-opacity: 0; stroke-width: 7px; transition-duration: 0.12s;" data-wire-anchor="21"/>
+      </g>
+      <g id="symbol-nc" aria-label="Contato normalmente fechado">
+        <path d="M666 505v82h20M666 750v-72l20-91" fill="none" stroke="#111820" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="686" cy="587" r="7" fill="#111820"/>
+        <circle cx="686" cy="587" r="3" fill="#fff"/>
+      </g>
+      <g id="terminal-22" data-terminal="22">
+        <g transform="translate(666 800) scale(.72)">
+          <g>
+            <circle r="36" fill="url(#screw)"/>
+            <circle r="23" fill="#dbe4e9" stroke="#55646d" stroke-width="4"/>
+            <path d="M-15 0h30M0-15v30" stroke="#34434b" stroke-width="7" stroke-linecap="round"/>
+          </g>
+        </g>
+        <text x="666" y="854" style="white-space: pre; fill: rgb(16, 24, 32); font-family: Inter, Arial, sans-serif; font-size: 34px; font-weight: 800; line-height: normal; perspective-origin: 344.328px 432.5px; pointer-events: none; text-anchor: middle;">22</text>
+        <circle class="terminal-hotspot" cx="666" cy="800" r="34" style="cursor: crosshair; fill: rgb(30, 136, 229); fill-opacity: 0; stroke: rgb(49, 200, 255); stroke-opacity: 0; stroke-width: 7px; transition-duration: 0.12s;" data-wire-anchor="22"/>
+      </g>
+    </g>
+  </g>
+</svg>

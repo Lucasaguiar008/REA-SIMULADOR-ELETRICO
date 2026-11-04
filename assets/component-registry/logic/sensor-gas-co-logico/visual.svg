@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 330" role="img" aria-label="Sensor de Gás e CO com saída lógica">
+  <defs>
+    <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#176b46"/><stop offset="1" stop-color="#0b3f2d"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8fafc"/><stop offset=".45" stop-color="#b8c2ca"/><stop offset="1" stop-color="#68757f"/></linearGradient>
+    <radialGradient id="screw"><stop stop-color="#fff"/><stop offset=".48" stop-color="#bdc8d0"/><stop offset="1" stop-color="#4b5963"/></radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity=".32"/></filter>
+    <style>
+      .brand{font:900 17px Arial,sans-serif;fill:#effff6}.sub{font:800 11px Arial,sans-serif;fill:#b8f3d3}.tiny{font:800 10px Arial,sans-serif;fill:#d8ffe8}.term{font:900 12px Arial,sans-serif;fill:#10231b}.port{fill:#f8fafc;stroke:#45515b;stroke-width:3}.wire-anchor-hitbox{fill:transparent;stroke:transparent}.btn{fill:#173344;stroke:#8ec9dd;stroke-width:2;cursor:pointer}.btnDanger{fill:#6f1d1b;stroke:#fecaca;stroke-width:2;cursor:pointer}.btnText{font:900 10px Arial,sans-serif;fill:#fff;pointer-events:none}.ledOff{fill:#253341;stroke:#94a3b8;stroke-width:2}
+    </style>
+  </defs>
+  <rect x="25" y="18" width="310" height="292" rx="24" fill="url(#pcb)" stroke="#063d27" stroke-width="5" filter="url(#shadow)"/>
+  <text x="180" y="48" text-anchor="middle" class="brand">TechRib • GÁS / CO</text>
+  <text x="180" y="68" text-anchor="middle" class="sub">SAÍDA LÓGICA • DO ATIVO EM LOW</text>
+
+  <g transform="translate(105 88)" aria-label="elemento sensor">
+    <circle cx="75" cy="58" r="58" fill="url(#metal)" stroke="#52606a" stroke-width="5"/>
+    <circle cx="75" cy="58" r="44" fill="#87939c" stroke="#d8dee4" stroke-width="3"/>
+    <g fill="#dfe5e9">
+      <circle cx="55" cy="37" r="5"/><circle cx="75" cy="37" r="5"/><circle cx="95" cy="37" r="5"/>
+      <circle cx="45" cy="57" r="5"/><circle cx="65" cy="57" r="5"/><circle cx="85" cy="57" r="5"/><circle cx="105" cy="57" r="5"/>
+      <circle cx="55" cy="77" r="5"/><circle cx="75" cy="77" r="5"/><circle cx="95" cy="77" r="5"/>
+    </g>
+    <text x="75" y="126" text-anchor="middle" class="tiny">ELEMENTO GÁS / CO</text>
+  </g>
+
+  <g transform="translate(57 215)">
+    <circle cx="0" cy="0" r="10" class="ledOff" data-gas-power-led="true"/><text x="16" y="4" class="tiny">PWR</text>
+    <circle cx="103" cy="0" r="10" class="ledOff" data-gas-output-led="true"/><text x="119" y="4" class="tiny">DO</text>
+    <circle cx="205" cy="0" r="11" class="ledOff" data-gas-alarm-led="true"/><text x="222" y="4" class="tiny">ALARM</text>
+  </g>
+  <text x="180" y="241" text-anchor="middle" class="tiny" data-gas-state="true">AR NORMAL</text>
+
+  <rect x="45" y="250" width="150" height="32" rx="9" class="btnDanger" data-gas-test="true"/>
+  <text x="120" y="271" text-anchor="middle" class="btnText">DETECTAR GÁS / CO</text>
+  <rect x="205" y="250" width="110" height="32" rx="9" class="btn" data-gas-clear="true"/>
+  <text x="260" y="271" text-anchor="middle" class="btnText">LIMPAR</text>
+
+  <g data-terminal="VCC" data-wire-side="bottom" transform="translate(85 310)"><circle r="16" class="port"/><circle r="7" fill="url(#screw)"/><circle r="22" class="wire-anchor-hitbox" data-wire-anchor="VCC" data-wire-side="bottom"/><text x="0" y="-24" text-anchor="middle" class="term">VCC</text></g>
+  <g data-terminal="DO" data-wire-side="bottom" transform="translate(180 310)"><circle r="16" class="port"/><circle r="7" fill="url(#screw)"/><circle r="22" class="wire-anchor-hitbox" data-wire-anchor="DO" data-wire-side="bottom"/><text x="0" y="-24" text-anchor="middle" class="term">DO</text></g>
+  <g data-terminal="GND" data-wire-side="bottom" transform="translate(275 310)"><circle r="16" class="port"/><circle r="7" fill="url(#screw)"/><circle r="22" class="wire-anchor-hitbox" data-wire-anchor="GND" data-wire-side="bottom"/><text x="0" y="-24" text-anchor="middle" class="term">GND</text></g>
+</svg>

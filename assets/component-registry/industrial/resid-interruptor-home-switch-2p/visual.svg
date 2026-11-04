@@ -1,0 +1,136 @@
+<svg id="home-switch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 286.351 370" role="img" aria-label="Interruptor residencial Home Switch com dois bornes L e 1" class="library-source-svg">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 2.835px;
+        stroke: url(#Безымянный_градиент_4);
+      }
+
+      .cls-2 {
+        fill: #ecebf0;
+      }
+
+      .cls-3 {
+        fill: #e2e1e6;
+      }
+
+      .cls-4 {
+        fill: #eae9ee;
+      }
+
+      .cls-5 {
+        fill: #fafafc;
+      }
+
+      .cls-6 {
+        fill: #131314;
+      }
+
+      .cls-7 {
+        fill: url(#Безымянный_градиент_23);
+      }
+
+      .cls-8 {
+        fill: url(#Безымянный_градиент_17);
+      }
+
+      .cls-9 {
+        fill: url(#Безымянный_градиент_24);
+      }
+
+      .cls-10 {
+        fill: url(#Безымянный_градиент_18);
+      }
+    </style>
+    <linearGradient id="Безымянный_градиент_4" data-name="Безымянный градиент 4" x1="-27.072" y1="46.889" x2="313.423" y2="243.474" gradientTransform="matrix(0, 1, 1, 0, -2.006, 2.006)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#525252"/>
+    </linearGradient>
+    <linearGradient id="Безымянный_градиент_23" data-name="Безымянный градиент 23" x1="142.752" y1="233.374" x2="142.752" y2="51.574" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dadada"/>
+      <stop offset="0.192" stop-color="#e2e2e3"/>
+      <stop offset="0.654" stop-color="#f1f0f4"/>
+      <stop offset="1" stop-color="#f6f5fa"/>
+    </linearGradient>
+    <linearGradient id="Безымянный_градиент_17" data-name="Безымянный градиент 17" x1="142.752" y1="233.374" x2="142.752" y2="228.562" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b2b2b2"/>
+      <stop offset="0.447" stop-color="#b4b4b4"/>
+      <stop offset="0.624" stop-color="#bbb"/>
+      <stop offset="0.753" stop-color="#c7c7c7"/>
+      <stop offset="0.859" stop-color="#d8d8d8"/>
+      <stop offset="0.949" stop-color="#efefef"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Безымянный_градиент_24" data-name="Безымянный градиент 24" x1="142.752" y1="236.232" x2="142.752" y2="54.446" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6f5fa"/>
+      <stop offset="0.346" stop-color="#f1f0f4"/>
+      <stop offset="0.808" stop-color="#e2e2e3"/>
+      <stop offset="1" stop-color="#dadada"/>
+    </linearGradient>
+    <linearGradient id="Безымянный_градиент_18" data-name="Безымянный градиент 18" x1="142.752" y1="59.258" x2="142.752" y2="54.446" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.051" stop-color="#efefef"/>
+      <stop offset="0.141" stop-color="#d8d8d8"/>
+      <stop offset="0.247" stop-color="#c7c7c7"/>
+      <stop offset="0.376" stop-color="#bbb"/>
+      <stop offset="0.553" stop-color="#b4b4b4"/>
+      <stop offset="1" stop-color="#b2b2b2"/>
+    </linearGradient>
+
+    <linearGradient id="techrib-terminal-block" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f3"/>
+      <stop offset="1" stop-color="#b9c1c7"/>
+    </linearGradient>
+    <radialGradient id="techrib-brass" cx="35%" cy="30%">
+      <stop offset="0" stop-color="#fff0b8"/>
+      <stop offset="0.36" stop-color="#d5a84c"/>
+      <stop offset="0.72" stop-color="#a56b1b"/>
+      <stop offset="1" stop-color="#6f410d"/>
+    </radialGradient>
+  </defs>
+  <title>home-switch</title>
+  <g id="выключатель">
+    <rect class="cls-1" x="-0.589" y="3.423" width="287.529" height="283.517" transform="translate(288.357 2.006) rotate(90)"/>
+    <rect class="cls-2" x="-0.622" y="4.254" width="287.529" height="281.856" transform="translate(288.324 2.039) rotate(90)"/>
+    <g>
+      <polygon class="cls-3" points="235.398 51.922 50.286 51.85 34.086 35.794 251.814 35.794 235.398 51.922"/>
+      <polygon class="cls-4" points="50.502 235.09 235.398 236.458 251.814 253.522 34.086 253.522 50.502 235.09"/>
+      <polygon class="cls-5" points="50.214 51.778 50.214 235.09 34.086 253.522 34.086 35.794 50.214 51.778"/>
+      <polygon class="cls-3" points="235.398 51.922 235.398 236.458 251.814 253.522 251.814 35.794 235.398 51.922"/>
+    </g>
+    <g id="home-state-off" data-residential-state="off">
+      <rect class="cls-6" x="48.72" y="49.896" width="188.064" height="188.014"/>
+      <rect id="top" class="cls-7" x="50.52" y="51.574" width="184.464" height="181.8"/>
+      <rect id="g" class="cls-8" x="50.52" y="228.562" width="184.464" height="4.812"/>
+    </g>
+    <g id="home-state-on" data-residential-state="on" style="display:none">
+      <rect class="cls-6" x="48.72" y="49.896" width="188.064" height="188.064"/>
+      <rect id="top-2" data-name="top" class="cls-9" x="50.52" y="54.446" width="184.464" height="181.786"/>
+      <rect id="g-2" data-name="g" class="cls-10" x="50.52" y="54.446" width="184.464" height="4.812"/>
+    </g>
+
+    <rect data-residential-toggle="true" x="48.72" y="49.896" width="188.064" height="188.064" rx="3" fill="#000" fill-opacity="0.001" stroke="none" pointer-events="all"/>
+
+    <g id="techrib-terminal-block">
+      <rect x="39" y="300" width="208" height="58" rx="12" fill="url(#techrib-terminal-block)" stroke="#7b858c" stroke-width="2"/>
+      <rect x="47" y="307" width="192" height="43" rx="8" fill="#f8fafb" stroke="#d4dade"/>
+      <text x="143.1755" y="318" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="700" fill="#5b646a">BORNES DE LIGAÇÃO</text>
+      <g data-terminal="L" data-terminal-domain="control" data-terminal-function="dry-contact" data-terminal-voltage-class="mains-ac" data-terminal-direction="passive" data-wire-side="bottom">
+        <circle data-wire-anchor="L" data-wire-side="bottom" cx="91" cy="337" r="20" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+        <circle cx="91" cy="337" r="13" fill="url(#techrib-brass)" stroke="#6d430f" stroke-width="2"/>
+        <circle cx="91" cy="337" r="6" fill="#e7c66f" stroke="#8a5b17"/>
+        <path d="M84 337h14M91 330v14" stroke="#6b460f" stroke-width="2" stroke-linecap="round"/>
+        <text x="91" y="359" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="800" fill="#30373c">L</text>
+      </g>
+      <g data-terminal="1" data-terminal-domain="control" data-terminal-function="dry-contact" data-terminal-voltage-class="mains-ac" data-terminal-direction="passive" data-wire-side="bottom">
+        <circle data-wire-anchor="1" data-wire-side="bottom" cx="195" cy="337" r="20" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+        <circle cx="195" cy="337" r="13" fill="url(#techrib-brass)" stroke="#6d430f" stroke-width="2"/>
+        <circle cx="195" cy="337" r="6" fill="#e7c66f" stroke="#8a5b17"/>
+        <path d="M188 337h14M195 330v14" stroke="#6b460f" stroke-width="2" stroke-linecap="round"/>
+        <text x="195" y="359" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="800" fill="#30373c">1</text>
+      </g>
+    </g>
+  </g>
+</svg>

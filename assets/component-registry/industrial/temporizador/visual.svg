@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 280.8" data-techrib-preserve-text-style="true" aria-label="Relé temporizador TON TechRib realista" class="library-source-svg" aria-hidden="true" data-techrib-editor-managed="true" data-techrib-studio-import="true">
+  <defs>
+    <linearGradient id="timer_shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f9fa"/>
+      <stop offset="0.42" stop-color="#e8ecef"/>
+      <stop offset="1" stop-color="#bcc5cb"/>
+    </linearGradient>
+    <linearGradient id="timer_edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b666d"/>
+      <stop offset="1" stop-color="#202a30"/>
+    </linearGradient>
+    <linearGradient id="timer_face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfcfd"/>
+      <stop offset="1" stop-color="#d8dee2"/>
+    </linearGradient>
+    <linearGradient id="timer_dark_panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#25313a"/>
+      <stop offset="1" stop-color="#0f171c"/>
+    </linearGradient>
+    <radialGradient id="timer_knob" cx="34%" cy="28%" r="76%">
+      <stop offset="0" stop-color="#f9fafb"/>
+      <stop offset="0.42" stop-color="#c8d0d5"/>
+      <stop offset="0.76" stop-color="#6f7b83"/>
+      <stop offset="1" stop-color="#303b42"/>
+    </radialGradient>
+    <radialGradient id="timer_screw" cx="34%" cy="28%" r="72%">
+      <stop offset="0" stop-color="#fbfcfd"/>
+      <stop offset="0.28" stop-color="#d8dde0"/>
+      <stop offset="0.62" stop-color="#89939a"/>
+      <stop offset="1" stop-color="#353d42"/>
+    </radialGradient>
+    <linearGradient id="timer_terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2f4"/>
+      <stop offset="1" stop-color="#9fa9af"/>
+    </linearGradient>
+    <linearGradient id="timer_cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dceff6" stop-opacity=".58"/>
+      <stop offset="0.5" stop-color="#9bc4d5" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#6f9fb4" stop-opacity=".32"/>
+    </linearGradient>
+    <linearGradient id="timer_brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f2d46"/>
+      <stop offset="0.58" stop-color="#1783d1"/>
+      <stop offset="1" stop-color="#00b7d9"/>
+    </linearGradient>
+    <filter id="timer_shadow" x="-25%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3.2" stdDeviation="2.8" flood-color="#000" flood-opacity=".24"/>
+    </filter>
+    <filter id="timer_led_glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Corpo DIN com profundidade lateral -->
+  <g filter="url(#timer_shadow)">
+    <path d="M13 8.5H163L174 20v241.6l-11 11.1H13L6 264.5V18.2z" fill="url(#timer_edge)" stroke="#0b1216" stroke-width="2.2"/>
+    <path d="M18 12h139l11 11.5v233.8L158 268.5H18L11.5 261V19.7z" fill="url(#timer_shell)" stroke="#7c878e" stroke-width="1.35"/>
+    <path d="M20 14.7h9v250.6h-9z" fill="#ffffff" opacity=".43"/>
+    <path d="M153.5 18h10v241h-10z" fill="#7f8990" opacity=".24"/>
+    <path d="M16 52h148" stroke="#a9b2b8" stroke-width="1" opacity=".8"/>
+    <path d="M16 225h148" stroke="#9aa5ab" stroke-width="1" opacity=".85"/>
+
+    <!-- encaixe traseiro para trilho DIN -->
+    <path d="M64 12h52v8H105v7H75v-7H64z" fill="#c2c9cd" stroke="#818b91" stroke-width="1"/>
+    <path d="M64 268.5h52v-8h-11v-7H75v7H64z" fill="#b8c0c5" stroke="#7a858b" stroke-width="1"/>
+
+    <!-- Separadores dos bornes superiores -->
+    <path d="M18 54h144v20H18z" fill="#d1d8dc" stroke="#a2adb3" stroke-width="1"/>
+    <path d="M88 54v20" stroke="#939fa5" stroke-width="1.2"/>
+    <path d="M22 57h62M94 57h62" stroke="#fff" stroke-width="1.2" opacity=".72"/>
+
+    <!-- Face frontal -->
+    <rect x="28" y="76" width="124" height="143" rx="5.7" fill="url(#timer_face)" stroke="#a5afb5" stroke-width="1.25"/>
+    <rect x="33" y="81" width="114" height="21" rx="2.8" fill="url(#timer_brand)"/>
+    <text x="39" y="96" class="brand">LucasAguiar</text>
+    <text x="143" y="94" class="model">TR-TON</text>
+    <path d="M34 108h112" stroke="#9ca8ae" stroke-width=".9"/>
+    <text x="38" y="118" class="caption">RELÉ TEMPORIZADOR • RETARDO NA ENERGIZAÇÃO</text>
+
+    <!-- Mostrador realista -->
+    <g>
+      <circle cx="90" cy="158" r="36" fill="#cbd3d8" stroke="#748087" stroke-width="1.5"/>
+      <circle cx="90" cy="158" r="32" fill="#f7f9fa" stroke="#aab4ba" stroke-width="1"/>
+      <g class="ticks" stroke="#48545b" stroke-linecap="round">
+        <path d="M90 126v6"/><path d="M105.8 130.2l-2.8 5.2"/><path d="M117.5 141l-5.1 3"/><path d="M121.8 156.8h-6"/><path d="M118 172.5l-5.3-2.7"/><path d="M107 184l-3-5.2"/><path d="M90 190v-6"/><path d="M73 184l3-5.2"/><path d="M62 172.5l5.3-2.7"/><path d="M58.2 156.8h6"/><path d="M62.5 141l5.1 3"/><path d="M74.2 130.2l2.8 5.2"/>
+      </g>
+      <text x="89" y="137" class="scale">0</text><text x="113" y="150" class="scale">3</text><text x="111" y="178" class="scale">6</text><text x="67" y="178" class="scale">9</text><text x="65" y="150" class="scale">12</text>
+      <circle cx="90" cy="158" r="20.8" fill="url(#timer_knob)" stroke="#263139" stroke-width="1.8"/>
+      <path d="M90 141.5v17.2l11.5 7.4" fill="none" stroke="#17242c" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" data-timer-hand="true"/>
+      <circle cx="90" cy="158" r="4" fill="#f57c00" stroke="#9a4900" stroke-width="1"/>
+      <path d="M79 147c4.5-6.2 14.8-8.5 22-4" fill="none" stroke="#fff" stroke-width="1.7" opacity=".45"/>
+    </g>
+
+    <!-- Indicadores e ajuste -->
+    <rect x="38" y="196" width="104" height="17" rx="3.2" fill="url(#timer_dark_panel)" stroke="#26333a" stroke-width="1"/>
+    <circle cx="48" cy="204.5" r="3.5" fill="#36c66a" stroke="#175d34" stroke-width="1" filter="url(#timer_led_glow)"/>
+    <text x="56" y="207.4" class="ledLabel">PWR</text>
+    <circle cx="78" cy="204.5" r="3.5" fill="#f59e0b" stroke="#8a5400" stroke-width="1"/>
+    <text x="86" y="207.4" class="ledLabel">OUT</text>
+    <text x="137" y="207.5" data-timer-setting="true" class="setting">5.0 s</text>
+    <rect x="39" y="216" width="102" height="10" rx="2.2" fill="#143348"/>
+    <text x="90" y="223.4" data-timer-state="true" class="state">REPOUSO</text>
+
+    <!-- Tampa frontal translúcida -->
+    <path d="M31 78h118v139H31z" fill="url(#timer_cover)" stroke="#8daab7" stroke-width=".75" opacity=".42" pointer-events="none"/>
+    <path d="M34 81l48 0-35 132H34z" fill="#fff" opacity=".12" pointer-events="none"/>
+
+    <!-- Separadores dos bornes inferiores -->
+    <path d="M18 227h144v30H18z" fill="#d0d7db" stroke="#9da8ae" stroke-width="1"/>
+    <path d="M61 227v30M119 227v30" stroke="#939fa5" stroke-width="1.1"/>
+    <path d="M22 230h35M66 230h49M124 230h34" stroke="#fff" stroke-width="1.15" opacity=".7"/>
+    <path d="M29 260h122" stroke="#6f7b82" stroke-width=".9" opacity=".55"/>
+  </g>
+
+  <!-- Terminal superior A1 -->
+  <g data-terminal="A1" data-terminal-domain="control" data-terminal-function="coil" data-terminal-voltage-class="220vac" data-terminal-direction="input" data-wire-side="top">
+    <circle data-wire-anchor="A1" cx="52" cy="8.5" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="31" y="24" width="42" height="29" rx="5" fill="url(#timer_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <path d="M35 28h34" stroke="#fff" stroke-width="1" opacity=".7"/>
+    <rect x="36" y="29.5" width="32" height="18" rx="4" fill="#69757c" opacity=".32"/>
+    <circle cx="52" cy="38.5" r="10.7" fill="url(#timer_screw)" stroke="#3e494f" stroke-width="1.3"/>
+    <path d="M46 38.5h12M52 32.5v12" stroke="#283238" stroke-width="2.1" stroke-linecap="round"/>
+    <path d="M41 49.5h22" stroke="#4b565d" stroke-width="2" stroke-linecap="round"/>
+    <text x="52" y="21.2" class="terminalLabel">A1</text>
+  </g>
+
+  <!-- Terminal superior A2 -->
+  <g data-terminal="A2" data-terminal-domain="control" data-terminal-function="coil-return" data-terminal-voltage-class="220vac" data-terminal-direction="input" data-wire-side="top">
+    <circle data-wire-anchor="A2" cx="128" cy="8.5" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="107" y="24" width="42" height="29" rx="5" fill="url(#timer_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <path d="M111 28h34" stroke="#fff" stroke-width="1" opacity=".7"/>
+    <rect x="112" y="29.5" width="32" height="18" rx="4" fill="#69757c" opacity=".32"/>
+    <circle cx="128" cy="38.5" r="10.7" fill="url(#timer_screw)" stroke="#3e494f" stroke-width="1.3"/>
+    <path d="M122 38.5h12M128 32.5v12" stroke="#283238" stroke-width="2.1" stroke-linecap="round"/>
+    <path d="M117 49.5h22" stroke="#4b565d" stroke-width="2" stroke-linecap="round"/>
+    <text x="128" y="21.2" class="terminalLabel">A2</text>
+  </g>
+
+  <!-- Terminal inferior 15 -->
+  <g data-terminal="15" data-terminal-domain="control" data-terminal-function="relay-common" data-terminal-voltage-class="configurable-ac" data-terminal-direction="passive" data-wire-side="bottom">
+    <circle data-wire-anchor="15" cx="39" cy="272.3" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="22" y="232" width="34" height="26" rx="4.5" fill="url(#timer_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <rect x="26" y="235" width="26" height="16" rx="3.5" fill="#6b777e" opacity=".30"/>
+    <circle cx="39" cy="244" r="8.5" fill="url(#timer_screw)" stroke="#3e494f" stroke-width="1.15"/>
+    <path d="M34.3 244h9.4M39 239.3v9.4" stroke="#283238" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="39" y="266.1" class="terminalLabel">15 COM</text>
+  </g>
+
+  <!-- Terminal inferior 16 -->
+  <g data-terminal="16" data-terminal-domain="control" data-terminal-function="relay-nc" data-terminal-voltage-class="configurable-ac" data-terminal-direction="passive" data-wire-side="bottom">
+    <circle data-wire-anchor="16" cx="90" cy="272.3" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="73" y="232" width="34" height="26" rx="4.5" fill="url(#timer_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <rect x="77" y="235" width="26" height="16" rx="3.5" fill="#6b777e" opacity=".30"/>
+    <circle cx="90" cy="244" r="8.5" fill="url(#timer_screw)" stroke="#3e494f" stroke-width="1.15"/>
+    <path d="M85.3 244h9.4M90 239.3v9.4" stroke="#283238" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="90" y="266.1" class="terminalLabel">16 NF</text>
+  </g>
+
+  <!-- Terminal inferior 18 -->
+  <g data-terminal="18" data-terminal-domain="control" data-terminal-function="relay-no" data-terminal-voltage-class="configurable-ac" data-terminal-direction="passive" data-wire-side="bottom">
+    <circle data-wire-anchor="18" cx="141" cy="272.3" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="124" y="232" width="34" height="26" rx="4.5" fill="url(#timer_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <rect x="128" y="235" width="26" height="16" rx="3.5" fill="#6b777e" opacity=".30"/>
+    <circle cx="141" cy="244" r="8.5" fill="url(#timer_screw)" stroke="#3e494f" stroke-width="1.15"/>
+    <path d="M136.3 244h9.4M141 239.3v9.4" stroke="#283238" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="141" y="266.1" class="terminalLabel">18 NA</text>
+  </g>
+
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;text-rendering:geometricPrecision}
+    .brand{fill:#fff;font-size:12.2px;font-weight:800;text-anchor:start}
+    .model{fill:#d8f1ff;font-size:6.6px;font-weight:800;text-anchor:end;letter-spacing:.55px}
+    .caption{fill:#38464e;font-size:5.6px;font-weight:800;text-anchor:start;letter-spacing:.12px}
+    .scale{fill:#5c686f;font-size:5px;font-weight:700;text-anchor:middle}
+    .ticks{stroke-width:1.35}
+    .ledLabel{fill:#dbe8ee;font-size:5.2px;font-weight:800;text-anchor:start}
+    .setting{fill:#fff;font-size:6.7px;font-weight:900;text-anchor:end}
+    .state{fill:#fff;font-size:5.4px;font-weight:900;text-anchor:middle;letter-spacing:.55px}
+    .terminalLabel{fill:#26343c;font-size:6.6px;font-weight:900;text-anchor:middle}
+  </style>
+</svg>

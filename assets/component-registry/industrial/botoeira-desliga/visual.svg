@@ -1,0 +1,72 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" viewBox="0 0 200 300" role="img" aria-label="Botoeira industrial vermelha Desliga com contato normalmente fechado">
+  <ns0:defs>
+    <ns0:linearGradient id="a" x2="1" y2="1">
+      <ns0:stop stop-color="#555b60" />
+      <ns0:stop offset="0.45" stop-color="#1a1d20" />
+      <ns0:stop offset="1" stop-color="#07090b" />
+    </ns0:linearGradient>
+    <ns0:linearGradient id="b">
+      <ns0:stop stop-color="#fff" />
+      <ns0:stop offset="0.58" stop-color="#e9e7e2" />
+      <ns0:stop offset="1" stop-color="#aaa9a5" />
+    </ns0:linearGradient>
+    <ns0:linearGradient id="c">
+      <ns0:stop stop-color="#fff" />
+      <ns0:stop offset="0.25" stop-color="#89969e" />
+      <ns0:stop offset="0.52" stop-color="#fff" />
+      <ns0:stop offset="0.76" stop-color="#505c64" />
+      <ns0:stop offset="1" stop-color="#dbe2e7" />
+    </ns0:linearGradient>
+    <ns0:radialGradient id="d" cx="34%" cy="26%">
+      <ns0:stop stop-color="#ffb0aa" />
+      <ns0:stop offset="0.18" stop-color="#ff554b" />
+      <ns0:stop offset="0.62" stop-color="#dc2019" />
+      <ns0:stop offset="1" stop-color="#850b08" />
+    </ns0:radialGradient>
+    <ns0:radialGradient id="e">
+      <ns0:stop stop-color="#fff" />
+      <ns0:stop offset="0.35" stop-color="#aeb9c0" />
+      <ns0:stop offset="0.68" stop-color="#354149" />
+      <ns0:stop offset="1" stop-color="#11181d" />
+    </ns0:radialGradient>
+    <ns0:filter id="f">
+      <ns0:feDropShadow dx="1" dy="6" stdDeviation="5" flood-opacity=".42" />
+    </ns0:filter>
+  </ns0:defs>
+  <ns0:g filter="url(#f)">
+    <ns0:path d="M35 4h130l12 10 9 54-8 16v56l-14 14v125l-15 17H51l-15-17V154l-14-14V84l-8-16 9-54z" fill="url(#a)" stroke="#090b0d" stroke-width="4" />
+    <ns0:path d="M25 14h45l8 9v21H21zM130 14h45l4 30h-57V23z" fill="#292d31" stroke="#090b0d" stroke-width="3" />
+    <ns0:path d="M19 72h162v65H19z" fill="#111416" stroke="#050607" stroke-width="3" />
+    <ns0:rect x="28.747" y="5.219" width="65" height="67" rx="6" fill="url(#b)" stroke="#b7b7b2" stroke-width="2" />
+    <ns0:rect x="108.952" y="2.52" width="65" height="67" rx="6" fill="url(#b)" stroke="#b7b7b2" stroke-width="2" />
+    <ns0:rect x="87" y="44" width="26" height="65" fill="#1b1e21" />
+    <ns0:text x="54" y="61" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900" style="white-space: pre;">21</ns0:text>
+    <ns0:text x="146.9" y="57.852" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900" style="white-space: pre; font-size: 15px;">22</ns0:text>
+    <ns0:g data-terminal="21" transform="matrix(1, 0, 0, 1, 6.296852, -65.217392)">
+      <ns0:circle cx="54" cy="83" r="17" fill="#b67a18" data-wire-anchor="21" pointer-events="all" />
+      <ns0:circle cx="54" cy="83" r="13" fill="url(#e)" />
+      <ns0:path d="M45 83h18M54 74v18" stroke="#fff" stroke-width="4" />
+    </ns0:g>
+    <ns0:g data-terminal="22" transform="matrix(1, 0, 0, 1, -4.49775, -64.767616)">
+      <ns0:circle cx="146" cy="83" r="17" fill="#b67a18" data-wire-anchor="22" pointer-events="all" />
+      <ns0:circle cx="146" cy="83" r="13" fill="url(#e)" />
+      <ns0:path d="M137 83h18M146 74v18" stroke="#fff" stroke-width="4" />
+    </ns0:g>
+    <ns0:g fill="none" stroke="#fff" stroke-width="3">
+      <ns0:path d="M93 58v37M107 58v37M93 70h14" />
+    </ns0:g>
+    <ns0:text x="100" y="122" text-anchor="middle" font-family="Arial" font-size="9" font-weight="900" fill="#e5ebef" style="white-space: pre;">CONTATO NF • 21–22</ns0:text>
+    <ns0:path d="M47 132h106l13 18v28H34v-28z" fill="#30353a" stroke="#0a0d0f" stroke-width="4" />
+    <ns0:path d="M54 139h92l11 15v19H43v-19z" fill="url(#c)" stroke="#d8dee2" stroke-width="2" />
+    <ns0:circle cx="100" cy="211" r="75" fill="#0b0d0f" stroke="#353a3e" stroke-width="7" />
+    <ns0:circle cx="100" cy="211" r="66" fill="#24282c" stroke="#050607" stroke-width="5" />
+    <ns0:path d="M45 173l13-15 8 8 14-7 5-13h30l5 13 14 7 8-8 13 15-8 8 7 14 13 5v25l-13 5-7 14 8 8-13 15-8-8-14 7-5 13H85l-5-13-14-7-8 8-13-15 8-8-7-14-13-5v-25l13-5 7-14z" fill="#25292d" stroke="#4a5055" stroke-width="3" />
+    <ns0:circle cx="100" cy="211" r="53" fill="#100606" stroke="#111" stroke-width="5" />
+    <ns0:g data-push-cap="true">
+      <ns0:ellipse cx="100" cy="218" rx="48" ry="50" fill="#590b08" />
+      <ns0:circle cx="100" cy="207" r="48" fill="#a5130e" stroke="#3f0705" stroke-width="4" />
+      <ns0:circle cx="100" cy="202" r="43" fill="url(#d)" stroke="#ef3027" stroke-width="3" />
+      <ns0:ellipse cx="84" cy="184" rx="17" ry="9" fill="#fff" opacity=".23" />
+    </ns0:g>
+  </ns0:g>
+</ns0:svg>

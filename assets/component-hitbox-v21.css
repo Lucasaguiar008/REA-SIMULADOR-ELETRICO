@@ -1,0 +1,43 @@
+/* TechRib Etapa 3 — Hitbox Universal V21
+   O wrapper deixa de bloquear fios nas áreas transparentes. A seleção/movimento
+   ocorre por uma hitbox SVG apertada ao desenho realmente visível. */
+.placed-component[data-techrib-hitbox="universal-v1"]{pointer-events:none!important}
+.placed-component[data-techrib-hitbox="universal-v1"]>svg{pointer-events:none!important}
+.placed-component[data-techrib-hitbox="universal-v1"]>svg *{pointer-events:auto}
+/* V66 — visuais de borne aplicados pelo Editor SVG são apenas decorativos.
+   Eles ficam em uma camada global acima do borne funcional; portanto jamais
+   podem capturar o mouse na prancha. O clique deve atravessar o desenho e
+   alcançar o data-wire-anchor real que permanece no grupo data-terminal. */
+.placed-component[data-techrib-hitbox="universal-v1"]>svg [data-ce-terminal-visual-layer="true"],
+.placed-component[data-techrib-hitbox="universal-v1"]>svg [data-ce-terminal-visual-layer="true"] *,
+.placed-component[data-techrib-hitbox="universal-v1"]>svg [data-terminal-visual-for],
+.placed-component[data-techrib-hitbox="universal-v1"]>svg [data-terminal-visual-for] *{
+  pointer-events:none!important;
+}
+.placed-component[data-techrib-hitbox="universal-v1"]>svg>[data-component-selection-hitbox="true"]{
+  pointer-events:all!important;
+  fill:rgba(0,0,0,.001)!important;
+  stroke:none!important;
+  cursor:move;
+}
+/* UIs HTML visíveis do próprio componente continuam interativas. */
+.placed-component[data-techrib-hitbox="universal-v1"]>div,
+.placed-component[data-techrib-hitbox="universal-v1"]>button,
+.placed-component[data-techrib-hitbox="universal-v1"]>input,
+.placed-component[data-techrib-hitbox="universal-v1"]>select,
+.placed-component[data-techrib-hitbox="universal-v1"]>textarea,
+.placed-component[data-techrib-hitbox="universal-v1"] [data-component-ui],
+.placed-component[data-techrib-hitbox="universal-v1"] .techrib32-controller,
+.placed-component[data-techrib-hitbox="universal-v1"] .logic-gpio-test-panel,
+.placed-component[data-techrib-hitbox="universal-v1"] .pump-lab-panel,
+.placed-component[data-techrib-hitbox="universal-v1"] .pump-lab-toggle{pointer-events:auto!important}
+/* Etiquetas fora do corpo não criam uma nova área fantasma. */
+.placed-component[data-techrib-hitbox="universal-v1"]>small,
+.placed-component[data-techrib-hitbox="universal-v1"]>span{pointer-events:none!important}
+/* Diagnóstico opcional via node.dataset.techribHitboxDebug = "true". */
+.placed-component[data-techrib-hitbox-debug="true"]>svg>[data-component-selection-hitbox="true"]{
+  fill:rgba(255,0,0,.10)!important;
+  stroke:#ef4444!important;
+  stroke-width:1!important;
+  stroke-dasharray:5 4!important;
+}

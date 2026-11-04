@@ -1,0 +1,129 @@
+/*
+ * TechRib — Canvas Grid V2
+ * 2026-09-07
+ * Deve ser carregado por último. O studio-theme-v53.css usa a propriedade
+ * shorthand `background: ... !important` em .canvas-viewport; quando esse
+ * tema era carregado depois da V1 ele zerava background-image e escondia
+ * a grade fora da prancha. Esta folha restaura a grade no viewport inteiro.
+ */
+
+.canvas-viewport{
+  --techrib-canvas-bg:#21303a;
+  --techrib-canvas-grid-minor-size:10px;
+  --techrib-canvas-grid-major-size:50px;
+  --techrib-canvas-grid-minor-line:1px;
+  --techrib-canvas-grid-major-line:1.45px;
+  --techrib-canvas-grid-minor-color:rgba(203,213,225,.09);
+  --techrib-canvas-grid-major-color:rgba(226,232,240,.18);
+  --techrib-canvas-grid-origin-x:0px;
+  --techrib-canvas-grid-origin-y:0px;
+  --techrib-canvas-ambient-glow:radial-gradient(circle at 46% 14%,rgba(14,165,233,.17),transparent 42%);
+  --techrib-canvas-ambient-glow-2:radial-gradient(circle at 86% 80%,rgba(6,116,154,.11),transparent 36%);
+  --techrib-canvas-ambient-surface:linear-gradient(135deg,#061722 0%,#0a2536 50%,#06141e 100%);
+
+  /* Não usar shorthand aqui: cada camada é mantida explicitamente. */
+  background-color:var(--techrib-canvas-bg)!important;
+  background-image:
+    linear-gradient(var(--techrib-canvas-grid-major-color) var(--techrib-canvas-grid-major-line),transparent var(--techrib-canvas-grid-major-line)),
+    linear-gradient(90deg,var(--techrib-canvas-grid-major-color) var(--techrib-canvas-grid-major-line),transparent var(--techrib-canvas-grid-major-line)),
+    linear-gradient(var(--techrib-canvas-grid-minor-color) var(--techrib-canvas-grid-minor-line),transparent var(--techrib-canvas-grid-minor-line)),
+    linear-gradient(90deg,var(--techrib-canvas-grid-minor-color) var(--techrib-canvas-grid-minor-line),transparent var(--techrib-canvas-grid-minor-line)),
+    var(--techrib-canvas-ambient-glow),
+    var(--techrib-canvas-ambient-glow-2),
+    var(--techrib-canvas-ambient-surface)!important;
+  background-size:
+    var(--techrib-canvas-grid-major-size) var(--techrib-canvas-grid-major-size),
+    var(--techrib-canvas-grid-major-size) var(--techrib-canvas-grid-major-size),
+    var(--techrib-canvas-grid-minor-size) var(--techrib-canvas-grid-minor-size),
+    var(--techrib-canvas-grid-minor-size) var(--techrib-canvas-grid-minor-size),
+    100% 100%,100% 100%,100% 100%!important;
+  background-position:
+    var(--techrib-canvas-grid-origin-x) var(--techrib-canvas-grid-origin-y),
+    var(--techrib-canvas-grid-origin-x) var(--techrib-canvas-grid-origin-y),
+    var(--techrib-canvas-grid-origin-x) var(--techrib-canvas-grid-origin-y),
+    var(--techrib-canvas-grid-origin-x) var(--techrib-canvas-grid-origin-y),
+    center,center,center!important;
+  background-repeat:repeat,repeat,repeat,repeat,no-repeat,no-repeat,no-repeat!important;
+  background-attachment:local!important;
+  background-origin:border-box!important;
+  background-clip:border-box!important;
+}
+
+/* Paleta clara — o fundo externo fica igual à prancha clara, sem faixa cinza lisa. */
+.canvas-viewport[data-sheet-theme="light"]{
+  --techrib-canvas-bg:#f8fafc;
+  --techrib-canvas-ambient-glow:radial-gradient(circle at 46% 14%,rgba(14,165,233,.07),transparent 42%);
+  --techrib-canvas-ambient-glow-2:radial-gradient(circle at 86% 80%,rgba(6,116,154,.04),transparent 36%);
+  --techrib-canvas-ambient-surface:linear-gradient(135deg,#f7fbfd 0%,#edf5f9 54%,#e8f1f6 100%);
+}
+.canvas-viewport[data-sheet-theme="light"][data-grid-strength="soft"]{
+  --techrib-canvas-grid-minor-color:rgba(100,116,139,.10);
+  --techrib-canvas-grid-major-color:rgba(71,85,105,.20);
+}
+.canvas-viewport[data-sheet-theme="light"][data-grid-strength="normal"]{
+  --techrib-canvas-grid-minor-color:rgba(100,116,139,.18);
+  --techrib-canvas-grid-major-color:rgba(71,85,105,.32);
+}
+.canvas-viewport[data-sheet-theme="light"][data-grid-strength="strong"]{
+  --techrib-canvas-grid-minor-color:rgba(71,85,105,.28);
+  --techrib-canvas-grid-major-color:rgba(51,65,85,.48);
+}
+.canvas-viewport[data-sheet-theme="light"][data-grid-strength="xstrong"]{
+  --techrib-canvas-grid-minor-color:rgba(51,65,85,.40);
+  --techrib-canvas-grid-major-color:rgba(30,41,59,.66);
+}
+
+/* Paleta escura — acompanha visual atual do simulador. */
+.canvas-viewport[data-sheet-theme="dark"]{
+  --techrib-canvas-bg:#061722;
+  --techrib-canvas-ambient-glow:radial-gradient(circle at 46% 14%,rgba(14,165,233,.17),transparent 42%);
+  --techrib-canvas-ambient-glow-2:radial-gradient(circle at 86% 80%,rgba(6,116,154,.11),transparent 36%);
+  --techrib-canvas-ambient-surface:linear-gradient(135deg,#061722 0%,#0a2536 50%,#06141e 100%);
+}
+.canvas-viewport[data-sheet-theme="dark"][data-grid-strength="soft"]{
+  --techrib-canvas-grid-minor-color:rgba(203,213,225,.055);
+  --techrib-canvas-grid-major-color:rgba(226,232,240,.115);
+}
+.canvas-viewport[data-sheet-theme="dark"][data-grid-strength="normal"]{
+  --techrib-canvas-grid-minor-color:rgba(203,213,225,.09);
+  --techrib-canvas-grid-major-color:rgba(226,232,240,.18);
+}
+.canvas-viewport[data-sheet-theme="dark"][data-grid-strength="strong"]{
+  --techrib-canvas-grid-minor-color:rgba(226,232,240,.16);
+  --techrib-canvas-grid-major-color:rgba(248,250,252,.28);
+}
+.canvas-viewport[data-sheet-theme="dark"][data-grid-strength="xstrong"]{
+  --techrib-canvas-grid-minor-color:rgba(226,232,240,.24);
+  --techrib-canvas-grid-major-color:rgba(255,255,255,.42);
+}
+
+/* Ocultar grade deve remover somente as linhas, não trocar a cor de fundo. */
+.canvas-viewport.techrib-canvas-grid-hidden{
+  background-image:var(--techrib-canvas-ambient-glow),var(--techrib-canvas-ambient-glow-2),var(--techrib-canvas-ambient-surface)!important;
+  background-size:100% 100%,100% 100%,100% 100%!important;
+  background-position:center,center,center!important;
+  background-repeat:no-repeat!important;
+}
+
+/* A prancha continua sendo a área oficial do projeto. A borda precisa vencer
+   qualquer tema e continuar perceptível em zoom baixo. */
+.schematic-sheet .sheet-border{
+  border:var(--techrib-sheet-guide-line,2.7px) solid var(--techrib-sheet-guide-color,#087fae)!important;
+  box-shadow:
+    0 0 0 var(--techrib-sheet-guide-contrast,1.05px) var(--techrib-sheet-guide-contrast-color,rgba(255,255,255,.96)),
+    0 0 12px rgba(8,145,187,.28)!important;
+}
+.schematic-sheet[data-sheet-theme="dark"] .sheet-border{
+  border-color:var(--techrib-sheet-guide-color,#38d5f2)!important;
+}
+
+/* Em impressão, não imprimir a grade infinita do viewport. */
+@media print{
+  .canvas-viewport{
+    background:#fff!important;
+  }
+  .schematic-sheet .sheet-border{
+    border:2px solid #4b5963!important;
+    box-shadow:none!important;
+  }
+}

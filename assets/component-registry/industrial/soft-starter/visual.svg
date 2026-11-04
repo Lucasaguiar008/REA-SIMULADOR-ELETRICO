@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 1264" width="840" height="1264" role="img" aria-label="Soft starter vetorial para simulador elétrico" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#253544"/>
+      <stop offset="0.45" stop-color="#66798c"/>
+      <stop offset="1" stop-color="#263746"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22313f"/>
+      <stop offset="0.55" stop-color="#3f5366"/>
+      <stop offset="1" stop-color="#263746"/>
+    </linearGradient>
+    <linearGradient id="key" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#76889a"/>
+      <stop offset="1" stop-color="#4d6073"/>
+    </linearGradient>
+    <radialGradient id="screw">
+      <stop offset="0" stop-color="#dfe8ee"/>
+      <stop offset="0.45" stop-color="#9baab7"/>
+      <stop offset="0.75" stop-color="#32424f"/>
+      <stop offset="1" stop-color="#121c24"/>
+    </radialGradient>
+    <radialGradient id="ledG">
+      <stop offset="0" stop-color="#d8ffd8"/>
+      <stop offset="0.35" stop-color="#4eff69"/>
+      <stop offset="0.72" stop-color="#12a532"/>
+      <stop offset="1" stop-color="#075516"/>
+    </radialGradient>
+    <radialGradient id="ledY">
+      <stop offset="0" stop-color="#fff7c7"/>
+      <stop offset="0.35" stop-color="#ffd93b"/>
+      <stop offset="0.72" stop-color="#d89b00"/>
+      <stop offset="1" stop-color="#6d4d00"/>
+    </radialGradient>
+    <radialGradient id="ledR">
+      <stop offset="0" stop-color="#ffd8d8"/>
+      <stop offset="0.35" stop-color="#ff4747"/>
+      <stop offset="0.72" stop-color="#d11515"/>
+      <stop offset="1" stop-color="#650606"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+    <filter id="glowR" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="96" y="28" width="648" height="1188" rx="30" fill="#101923" stroke="#081018" stroke-width="6" filter="url(#shadow)"/>
+  <path d="M122 33h596l22 22v1132l-22 22H122l-22-22V55z" fill="url(#body)" stroke="#0f1821" stroke-width="5"/>
+  <g fill="#314353" stroke="#0f1720" stroke-width="5">
+    <path d="M103 31h82v62c0 30-20 47-48 47h-37V55z"/>
+    <path d="M737 31h-82v62c0 30 20 47 48 47h37V55z"/>
+    <path d="M103 1206h82v-55c0-28-20-44-48-44h-37v74z"/>
+    <path d="M737 1206h-82v-55c0-28 20-44 48-44h37v74z"/>
+  </g>
+  <g fill="#dfe6eb" stroke="#0c141b" stroke-width="6">
+    <circle cx="137" cy="68" r="20"/>
+    <circle cx="703" cy="68" r="20"/>
+    <circle cx="137" cy="1167" r="20"/>
+    <circle cx="703" cy="1167" r="20"/>
+  </g>
+  <g fill="#15212b">
+    <circle cx="137" cy="68" r="9"/>
+    <circle cx="703" cy="68" r="9"/>
+    <circle cx="137" cy="1167" r="9"/>
+    <circle cx="703" cy="1167" r="9"/>
+  </g>
+  <g fill="#0e1720">
+    <g transform="translate(104 158)">
+      <rect y="0" width="68" height="15" rx="7"/>
+      <rect y="31" width="68" height="15" rx="7"/>
+      <rect y="62" width="68" height="15" rx="7"/>
+      <rect y="190" width="68" height="15" rx="7"/>
+      <rect y="221" width="68" height="15" rx="7"/>
+      <rect y="252" width="68" height="15" rx="7"/>
+      <rect y="283" width="68" height="15" rx="7"/>
+      <rect y="314" width="68" height="15" rx="7"/>
+      <rect y="345" width="68" height="15" rx="7"/>
+      <rect y="376" width="68" height="15" rx="7"/>
+      <rect y="407" width="68" height="15" rx="7"/>
+      <rect y="438" width="68" height="15" rx="7"/>
+      <rect y="670" width="68" height="15" rx="7"/>
+      <rect y="701" width="68" height="15" rx="7"/>
+      <rect y="732" width="68" height="15" rx="7"/>
+      <rect y="763" width="68" height="15" rx="7"/>
+    </g>
+    <g transform="translate(668 158)">
+      <rect y="0" width="68" height="15" rx="7"/>
+      <rect y="31" width="68" height="15" rx="7"/>
+      <rect y="62" width="68" height="15" rx="7"/>
+      <rect y="190" width="68" height="15" rx="7"/>
+      <rect y="221" width="68" height="15" rx="7"/>
+      <rect y="252" width="68" height="15" rx="7"/>
+      <rect y="283" width="68" height="15" rx="7"/>
+      <rect y="314" width="68" height="15" rx="7"/>
+      <rect y="345" width="68" height="15" rx="7"/>
+      <rect y="376" width="68" height="15" rx="7"/>
+      <rect y="407" width="68" height="15" rx="7"/>
+      <rect y="438" width="68" height="15" rx="7"/>
+      <rect y="670" width="68" height="15" rx="7"/>
+      <rect y="701" width="68" height="15" rx="7"/>
+      <rect y="732" width="68" height="15" rx="7"/>
+      <rect y="763" width="68" height="15" rx="7"/>
+    </g>
+  </g>
+  <rect x="236" y="26" width="368" height="171" rx="24" fill="#263746" stroke="#101923" stroke-width="5"/>
+  <rect x="252" y="43" width="336" height="131" rx="12" fill="#192633" stroke="#718294" stroke-width="3"/>
+  <g font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" transform="matrix(1, 0, 0, 1, 11.370317, 62.536739)">
+    <text x="292" y="75" style="white-space: pre;">L1</text>
+    <text x="378" y="75" style="white-space: pre;">L2</text>
+    <text x="466" y="75" style="white-space: pre;">L3</text>
+    <text x="551" y="75" style="white-space: pre;">PE</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 11.370317, -51.166424)">
+    <rect x="255" y="82" width="75" height="78" fill="#dce4e8" opacity=".88"/>
+    <rect x="337" y="82" width="75" height="78" fill="#dce4e8" opacity=".88"/>
+    <rect x="419" y="82" width="75" height="78" fill="#dce4e8" opacity=".88"/>
+    <rect x="501" y="82" width="75" height="78" fill="#dce4e8" opacity=".88"/>
+  </g>
+  <g id="top-terminals" transform="matrix(1, 0, 0, 1, 7.580211, -54.956528)">
+    <g transform="translate(292 121)">
+      <circle r="30" fill="#657788" stroke="#15202a" stroke-width="4"/>
+      <circle r="23" fill="url(#screw)" stroke="#b7c5ce" stroke-width="2"/>
+      <path d="M-11 0h22M0-11v22" stroke="#273844" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(378 121)">
+      <circle r="30" fill="#657788" stroke="#15202a" stroke-width="4"/>
+      <circle r="23" fill="url(#screw)" stroke="#b7c5ce" stroke-width="2"/>
+      <path d="M-11 0h22M0-11v22" stroke="#273844" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(466 121)">
+      <circle r="30" fill="#657788" stroke="#15202a" stroke-width="4"/>
+      <circle r="23" fill="url(#screw)" stroke="#b7c5ce" stroke-width="2"/>
+      <path d="M-11 0h22M0-11v22" stroke="#273844" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(551 121)">
+      <circle r="31" fill="#85e52c" stroke="#1b2b18" stroke-width="4"/>
+      <circle r="22" fill="url(#screw)" stroke="#d7efb6" stroke-width="2"/>
+      <path d="M-11 0h22M0-11v22" stroke="#273844" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g fill="transparent" stroke="transparent" stroke-width="1" transform="matrix(1, 0, 0, 1, 13.26537, -56.851582)">
+    <circle id="anchor-L1" data-wire-anchor="L1" data-terminal="L1" cx="292" cy="121" r="28"/>
+    <circle id="anchor-L2" data-wire-anchor="L2" data-terminal="L2" cx="378" cy="121" r="28"/>
+    <circle id="anchor-L3" data-wire-anchor="L3" data-terminal="L3" cx="466" cy="121" r="28"/>
+    <circle id="anchor-PE-IN" data-wire-anchor="PE-IN" data-terminal="PE-IN" cx="551" cy="121" r="28"/>
+  </g>
+  <rect x="182" y="216" width="476" height="585" rx="34" fill="#283b4d" stroke="#12202b" stroke-width="5"/>
+  <rect x="201" y="252" width="438" height="516" rx="24" fill="url(#panel)" stroke="#0e1720" stroke-width="5"/>
+  <rect x="218" y="276" width="404" height="467" rx="14" fill="#243747" stroke="#8090a0" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" font-size="20" fill="#fff">
+    <g transform="translate(245 303)">
+      <circle id="soft-led-run" r="14" fill="#16321d" stroke="#17241b" stroke-width="3"/>
+      <text x="22" y="7" style="white-space: pre;">RUN</text>
+    </g>
+    <g transform="translate(245 334)">
+      <circle id="soft-led-ready" r="14" fill="#16321d" stroke="#17241b" stroke-width="3"/>
+      <text x="22" y="7" style="white-space: pre;">FWD</text>
+    </g>
+    <g transform="translate(245 365)">
+      <circle id="soft-led-accel" r="14" fill="#352f13" stroke="#2b240f" stroke-width="3"/>
+      <text x="22" y="7" style="white-space: pre;">ACCEL</text>
+    </g>
+    <g transform="translate(245 396)">
+      <circle id="soft-led-fault" r="14" fill="#3b1515" stroke="#2d1212" stroke-width="3"/>
+      <text x="22" y="7" style="white-space: pre;">FAULT</text>
+    </g>
+    <g transform="translate(245 427)">
+      <circle id="soft-led-decel" r="14" fill="#352f13" stroke="#2b240f" stroke-width="3"/>
+      <text x="22" y="7" style="white-space: pre;">DECEL</text>
+    </g>
+    <g transform="translate(245 458)">
+      <circle id="soft-led-power" r="14" fill="#16321d" stroke="#17241b" stroke-width="3"/>
+      <text x="22" y="7" style="white-space: pre;">STOP</text>
+    </g>
+  </g>
+  <rect x="326" y="291" width="296" height="170" rx="16" fill="#111c24" stroke="#071016" stroke-width="4"/>
+  <rect data-soft-display-bg="true" x="350.21" y="330.049" width="235" height="84" rx="10" fill="#a94f5a" stroke="#3a141a" stroke-width="4"/>
+  <text id="soft-display" x="471" y="395.155" fill="#baff91" font-family="monospace" font-size="62" font-weight="700" text-anchor="middle" style="white-space: pre; font-size: 62px;">OFF</text>
+  <g font-family="Arial, sans-serif" font-weight="700" font-size="22" text-anchor="middle" fill="#fff">
+    <g data-soft-prg-button="true">
+      <rect x="240" y="500" width="108" height="70" rx="12" fill="url(#key)" stroke="#101923" stroke-width="5"/>
+      <text x="294" y="543" style="white-space: pre;">PRG</text>
+    </g>
+    <g data-soft-up-button="true">
+      <rect x="363" y="500" width="95" height="70" rx="12" fill="url(#key)" stroke="#101923" stroke-width="5"/>
+      <path d="M410 518l18 31h-36z" fill="#fff"/>
+    </g>
+    <g data-soft-esc-button="true">
+      <rect x="240" y="579" width="108" height="70" rx="12" fill="url(#key)" stroke="#101923" stroke-width="5"/>
+      <text x="294" y="622" style="white-space: pre;">ESC</text>
+    </g>
+    <g data-soft-down-button="true">
+      <rect x="363" y="579" width="95" height="70" rx="12" fill="url(#key)" stroke="#101923" stroke-width="5"/>
+      <path d="M410 632l-18-31h36z" fill="#fff"/>
+    </g>
+    <g data-soft-start-button="true">
+      <rect x="237" y="660" width="113" height="71" rx="12" fill="#0fad42" stroke="#063f1a" stroke-width="5"/>
+      <text x="294" y="710" font-size="50" style="white-space: pre;">I</text>
+    </g>
+    <g data-soft-stop-button="true">
+      <rect x="363" y="660" width="113" height="71" rx="12" fill="#ed2525" stroke="#5d0c0c" stroke-width="5"/>
+      <circle cx="419" cy="695" r="18" fill="none" stroke="#fff" stroke-width="5"/>
+    </g>
+    <g data-soft-reset-button="true">
+      <rect x="491" y="660" width="119" height="71" rx="12" fill="url(#key)" stroke="#101923" stroke-width="5"/>
+      <text x="551" y="704" style="white-space: pre;">RESET</text>
+    </g>
+  </g>
+  <text x="551" y="505" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" style="white-space: pre;">15s</text>
+  <circle data-soft-pot="true" cx="551" cy="574" r="59" fill="#202f3b" stroke="#e7eef2" stroke-width="6"/>
+  <circle cx="551" cy="574" r="44" fill="#506477" stroke="#111b23" stroke-width="8"/>
+  <path d="M551 543v-13" stroke="#8fa3b5" stroke-width="5"/>
+  <text x="500" y="640" fill="#fff" font-size="16" font-family="Arial" style="white-space: pre;">0s</text>
+  <text x="588" y="640" fill="#fff" font-size="16" font-family="Arial" style="white-space: pre;">30s</text>
+  <rect x="181" y="819" width="478" height="196" rx="12" fill="#21313e" stroke="#0e1820" stroke-width="4"/>
+  <g transform="matrix(1, 0, 0, 1, 200.364319, 866.2099)">
+    <path d="M50 0l47 82H3z" fill="#f3cf2f" stroke="#1c1a08" stroke-width="4"/>
+    <path d="M48 18L31 49h18l-7 25 29-38H53l8-18z" fill="#151515"/>
+  </g>
+  <g fill="#fff" font-family="Arial, sans-serif" transform="matrix(1, 0, 0, 1, -26.530737, 1.895053)">
+    <text x="454" y="883" font-size="23" font-weight="700" style="white-space: pre;">SOFT STARTER</text>
+    <text x="454" y="908" font-size="18" font-weight="700" style="white-space: pre;">3Φ MONITORING RELAY</text>
+    <text x="454" y="931" font-size="18" style="white-space: pre;">380–480V~ 50/60Hz</text>
+    <text x="454" y="954" font-size="18" style="white-space: pre;">MODEL: SS-100</text>
+    <text x="454" y="977" font-size="18" style="white-space: pre;">RATED CURRENT: 100A</text>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="2" transform="matrix(1, 0, 0, 1, -22.740633, -5.685158)">
+    <path d="M343 871h75v61h-75z"/>
+    <path d="M348 922l15-38 27 0 20 37"/>
+    <path d="M343 947h75v43h-75z"/>
+    <path d="M347 983c18-33 34-33 68-4"/>
+  </g>
+  <rect x="160.426" y="1073.43" width="620" height="89.358" rx="12" fill="#15232d" stroke="#0a1218" stroke-width="4" style=""/>
+  <g id="bottom-terminal-labels" font-family="Arial, sans-serif" font-weight="700" fill="#fff" text-anchor="middle" transform="matrix(1, 0, 0, 1, 3.790105, 87.172424)">
+    <g font-size="22">
+      <text x="183" y="1043" style="white-space: pre;">U</text>
+      <text x="252" y="1043" style="white-space: pre;">V</text>
+      <text x="321" y="1043" style="white-space: pre;">W</text>
+      <text x="391" y="1043" style="white-space: pre;">PE</text>
+    </g>
+    <g font-size="16">
+      <text x="480" y="1043" style="white-space: pre;">START</text>
+      <text x="548" y="1043" style="white-space: pre;">STOP</text>
+      <text x="610" y="1043" style="white-space: pre;">COM</text>
+      <text x="674" y="1043" style="white-space: pre;">EXT FLT</text>
+      <text x="738" y="1043" style="white-space: pre;">RESET</text>
+    </g>
+  </g>
+  <g fill="#0d151c">
+    <rect x="242" y="1168" width="14" height="42" rx="7"/>
+    <rect x="266" y="1168" width="14" height="42" rx="7"/>
+    <rect x="290" y="1168" width="14" height="42" rx="7"/>
+    <rect x="314" y="1168" width="14" height="42" rx="7"/>
+    <rect x="338" y="1168" width="14" height="42" rx="7"/>
+    <rect x="362" y="1168" width="14" height="42" rx="7"/>
+    <rect x="386" y="1168" width="14" height="42" rx="7"/>
+    <rect x="410" y="1168" width="14" height="42" rx="7"/>
+    <rect x="434" y="1168" width="14" height="42" rx="7"/>
+    <rect x="458" y="1168" width="14" height="42" rx="7"/>
+    <rect x="482" y="1168" width="14" height="42" rx="7"/>
+    <rect x="506" y="1168" width="14" height="42" rx="7"/>
+    <rect x="530" y="1168" width="14" height="42" rx="7"/>
+    <rect x="554" y="1168" width="14" height="42" rx="7"/>
+    <rect x="578" y="1168" width="14" height="42" rx="7"/>
+  </g>
+  <g id="bottom-terminals" transform="matrix(1, 0, 0, 1, 3.790105, 89.067474)">
+    <rect x="150" y="1051" width="280" height="76" rx="5" fill="#eee8d8"/>
+    <g transform="translate(183 1088)">
+      <circle r="25" fill="#df2020" stroke="#7c0e0e" stroke-width="5"/>
+      <circle r="18" fill="url(#screw)"/>
+      <path d="M-9 0h18M0-9v18" stroke="#273844" stroke-width="5"/>
+    </g>
+    <g transform="translate(252 1088)">
+      <circle r="25" fill="#245fc4" stroke="#17366a" stroke-width="5"/>
+      <circle r="18" fill="url(#screw)"/>
+      <path d="M-9 0h18M0-9v18" stroke="#273844" stroke-width="5"/>
+    </g>
+    <g transform="translate(321 1088)">
+      <circle r="25" fill="#202933" stroke="#0c1117" stroke-width="5"/>
+      <circle r="18" fill="url(#screw)"/>
+      <path d="M-9 0h18M0-9v18" stroke="#273844" stroke-width="5"/>
+    </g>
+    <g transform="translate(391 1088)">
+      <circle r="25" fill="#84e62c" stroke="#2e6810" stroke-width="5"/>
+      <circle r="18" fill="url(#screw)"/>
+      <path d="M-9 0h18M0-9v18" stroke="#273844" stroke-width="5"/>
+    </g>
+    <rect x="451" y="1051" width="320" height="76" rx="5" fill="#eee8d8"/>
+    <g transform="translate(480 1088)">
+      <circle r="23" fill="#e69a33" stroke="#73450d" stroke-width="4"/>
+      <circle r="16" fill="url(#screw)"/>
+      <path d="M-8 0h16M0-8v16" stroke="#273844" stroke-width="4"/>
+    </g>
+    <g transform="translate(548 1088)">
+      <circle r="23" fill="#de4c4c" stroke="#7b1d1d" stroke-width="4"/>
+      <circle r="16" fill="url(#screw)"/>
+      <path d="M-8 0h16M0-8v16" stroke="#273844" stroke-width="4"/>
+    </g>
+    <g transform="translate(610 1088)">
+      <circle r="23" fill="#536c80" stroke="#243643" stroke-width="4"/>
+      <circle r="16" fill="url(#screw)"/>
+      <path d="M-8 0h16M0-8v16" stroke="#273844" stroke-width="4"/>
+    </g>
+    <g transform="translate(674 1088)">
+      <circle r="23" fill="#e69a33" stroke="#73450d" stroke-width="4"/>
+      <circle r="16" fill="url(#screw)"/>
+      <path d="M-8 0h16M0-8v16" stroke="#273844" stroke-width="4"/>
+    </g>
+    <g transform="translate(738 1088)">
+      <circle r="23" fill="#657788" stroke="#15202a" stroke-width="4"/>
+      <circle r="16" fill="url(#screw)" stroke="#b7c5ce" stroke-width="2"/>
+      <path d="M-8 0h16M0-8v16" stroke="#273844" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g id="bottom-terminal-anchors" fill="transparent" stroke="transparent">
+      <circle id="anchor-U" data-wire-anchor="U" data-terminal="U" data-wire-side="bottom" cx="183" cy="1088" r="25"/>
+      <circle id="anchor-V" data-wire-anchor="V" data-terminal="V" data-wire-side="bottom" cx="252" cy="1088" r="25"/>
+      <circle id="anchor-W" data-wire-anchor="W" data-terminal="W" data-wire-side="bottom" cx="321" cy="1088" r="25"/>
+      <circle id="anchor-PE-OUT" data-wire-anchor="PE-OUT" data-terminal="PE-OUT" data-wire-side="bottom" cx="391" cy="1088" r="25"/>
+      <circle id="anchor-START" data-wire-anchor="START" data-terminal="START" data-wire-side="bottom" cx="480" cy="1088" r="23"/>
+      <circle id="anchor-STOP" data-wire-anchor="STOP" data-terminal="STOP" data-wire-side="bottom" cx="548" cy="1088" r="23"/>
+      <circle id="anchor-COM" data-wire-anchor="COM" data-terminal="COM" data-wire-side="bottom" cx="610" cy="1088" r="23"/>
+      <circle id="anchor-EXT-FLT" data-wire-anchor="EXT-FLT" data-terminal="EXT-FLT" data-wire-side="bottom" cx="674" cy="1088" r="23"/>
+      <circle id="anchor-RESET" data-wire-anchor="RESET" data-terminal="RESET" data-wire-side="bottom" cx="738" cy="1088" r="23"/>
+    </g>
+  </g>
+  <text x="260" y="174" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="900" fill="#56d6f1" style="white-space: pre;" transform="matrix(1.962686, 0, 0, 2.142857, -87.985779, 675.513306)">TechRib Automação</text>
+</svg>

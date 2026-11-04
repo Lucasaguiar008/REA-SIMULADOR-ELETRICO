@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" role="img" aria-label="Chave seletora industrial de duas posições">
+  <defs>
+    <linearGradient id="s2b" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#454b50" />
+      <stop offset="0.48" stop-color="#171b1f" />
+      <stop offset="1" stop-color="#30363b" />
+    </linearGradient>
+    <linearGradient id="s2m" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff" />
+      <stop offset="0.45" stop-color="#8d99a1" />
+      <stop offset="0.7" stop-color="#eef2f4" />
+      <stop offset="1" stop-color="#59656d" />
+    </linearGradient>
+    <filter id="s2f" x="-30%" y="-20%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".4" />
+    </filter>
+  </defs>
+  <g filter="url(#s2f)">
+    <path d="M35 4h130l12 10 9 54-8 16v56l-14 14v125l-15 17H51l-15-17V154l-14-14V84l-8-16 9-54z" fill="url(#s2b)" stroke="#090b0d" stroke-width="4" />
+    <path d="M19 72h162v65H19z" fill="#111416" stroke="#050607" stroke-width="3" />
+    <rect x="35.656" y="2.033" width="65" height="67" rx="6" fill="#f3f4f3" stroke="#aaa" stroke-width="2" />
+    <rect x="107.452" y="4.166" width="65" height="67" rx="6" fill="#f3f4f3" stroke="#aaa" stroke-width="2" />
+    <rect x="87" y="44" width="26" height="65" fill="#1b1e21" />
+    <text x="54" y="62" text-anchor="middle" font-family="Arial" font-size="17" font-weight="900" style="white-space: pre;">13</text>
+    <text x="146" y="62" text-anchor="middle" font-family="Arial" font-size="17" font-weight="900" style="white-space: pre;">14</text>
+    <g data-terminal="13" transform="matrix(1, 0, 0, 1, 11.522049, -64.011383)">
+      <circle cx="54" cy="83" r="17" fill="#b67a18" data-wire-anchor="13" pointer-events="all" />
+      <circle cx="54" cy="83" r="13" fill="url(#s2m)" />
+      <path d="M45 83h18M54 74v18" stroke="#fff" stroke-width="4" />
+    </g>
+    <g data-terminal="14" transform="matrix(1, 0, 0, 1, 1.280228, -63.584641)">
+      <circle cx="146" cy="83" r="17" fill="#b67a18" data-wire-anchor="14" pointer-events="all" />
+      <circle cx="146" cy="83" r="13" fill="url(#s2m)" />
+      <path d="M137 83h18M146 74v18" stroke="#fff" stroke-width="4" />
+    </g>
+    <path d="M93 59v36M107 59v12M107 71L93 95" fill="none" stroke="#fff" stroke-width="3" />
+    <text x="100" y="122" text-anchor="middle" font-family="Arial" font-size="10" font-weight="900" fill="#fff" style="white-space: pre;">CONTATO NA • 13–14</text>
+    <path d="M47 132h106l13 18v28H34v-28z" fill="#30353a" stroke="#0a0d0f" stroke-width="4" />
+    <circle cx="100" cy="211" r="75" fill="#0b0d0f" stroke="#3b4248" stroke-width="7" />
+    <circle cx="100" cy="211" r="65" fill="#20252a" stroke="#050607" stroke-width="5" />
+    <text x="61" y="176" text-anchor="middle" font-family="Arial" font-size="18" font-weight="900" fill="#f8fafc" style="white-space: pre;">0</text>
+    <text x="139" y="176" text-anchor="middle" font-family="Arial" font-size="18" font-weight="900" fill="#22c55e" style="white-space: pre;">1</text>
+    <g data-selector-knob="true" transform="rotate(-42 100 211)">
+      <circle cx="100" cy="211" r="47" fill="#101316" stroke="#56616a" stroke-width="4" />
+      <rect x="88" y="161" width="24" height="92" rx="11" fill="#111820" stroke="#050607" stroke-width="4" />
+      <rect x="93" y="166" width="14" height="78" rx="7" fill="#33404a" />
+      <path d="M96 170h8v29h-8z" fill="#f57c00" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,97 @@
+.workbench{--top:68px;--side:294px;height:100vh;overflow:hidden;background:#e1e8ee;color:#10283e}.workbench-topbar{position:relative;z-index:30;height:var(--top);display:grid;grid-template-columns:var(--side) 1fr auto;align-items:center;background:#071e2d;color:#fff;border-bottom:1px solid #1d435d}.topbar-brand{height:100%;display:flex;align-items:center;gap:13px;padding:0 17px;border-right:1px solid #ffffff18}.workbench .brand span{font-size:23px}.workbench .brand small{font-size:7px}.icon-button{display:grid;place-items:center;width:36px;height:36px;border:1px solid #ffffff29;border-radius:9px;background:#ffffff0d;color:inherit;cursor:pointer}.project-title{min-width:0;padding:0 24px}.project-title>span{display:block;font-size:8px;letter-spacing:1.8px;font-weight:700;color:#71cadc}.project-title button{max-width:100%;padding:3px 0;border:0;background:none;color:#e7f1f7;font:600 13px Inter;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.top-actions{display:flex;align-items:center;gap:5px;height:100%;padding-right:15px}.top-action{min-width:58px;height:47px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:0;border-radius:8px;background:transparent;color:#bcd0dc;cursor:pointer}.top-action b{font-size:9px}.top-action:hover{background:#ffffff12;color:#fff}.top-action.simulate{min-width:79px;height:38px;flex-direction:row;gap:7px;margin:0 8px;background:#f57c00;color:#fff}.user-button{height:38px;display:flex;align-items:center;gap:8px;padding:0 10px;text-decoration:none;color:#d7e4ec;border-left:1px solid #ffffff1f}.user-button>span{display:grid;place-items:center;width:29px;height:29px;border-radius:8px;background:#f57c00;font-size:9px;font-weight:800}.user-button b{font-size:10px}.component-sidebar{position:absolute;z-index:20;left:0;top:var(--top);bottom:0;width:var(--side);display:flex;flex-direction:column;background:#fff;border-right:1px solid #ccd8e3;transition:transform .25s}.sidebar-hidden .component-sidebar{transform:translateX(-100%)}.sidebar-heading{display:flex;justify-content:space-between;align-items:center;padding:20px 18px 12px}.sidebar-heading span{font-size:8px;letter-spacing:1.7px;font-weight:800;color:#1689b2}.sidebar-heading h2{margin:3px 0 0;font-size:18px}.sidebar-heading .icon-button{display:none;color:#35566e;border-color:#d5e0e8}.component-search{height:40px;margin:0 15px 14px;display:flex;align-items:center;border:1px solid #d8e2ea;border-radius:9px;background:#f8fafc}.component-search span{width:38px;text-align:center}.component-search input{min-width:0;flex:1;border:0;outline:0;background:none;font:400 11px Inter}.library-tabs{display:grid;grid-template-columns:1fr 1fr;padding:0 15px;border-bottom:1px solid #e2e9ef}.library-tabs button{height:37px;border:0;border-bottom:2px solid transparent;background:none;color:#718496;font:600 10px Inter}.library-tabs .active{border-color:#168ed1;color:#0c6fa8}.library-scroll{flex:1;overflow:auto}.library-group{border-bottom:1px solid #e5ebf0}.group-title{width:100%;height:43px;display:grid;grid-template-columns:23px 1fr auto;align-items:center;padding:0 15px;border:0;background:#f8fafc;color:#29465d;text-align:left}.group-title b{font-size:10px}.component-grid{display:none;grid-template-columns:1fr 1fr;gap:7px;padding:9px 11px 13px}.library-group.open .component-grid{display:grid}.component-item{min-height:83px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:8px 4px;border:1px solid #dce5ec;border-radius:9px;background:#fff;color:#26435a;cursor:grab}.component-item:hover{border-color:#46aee3;background:#f0f9ff}.component-item svg{width:36px;height:36px;fill:none;stroke:#0b548f;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}.component-item svg text{fill:#0b548f;stroke:none;font:700 20px Inter}.component-item span{font:600 8px Inter;text-align:center}.component-item.filtered{display:none}.sidebar-footer{height:42px;display:flex;align-items:center;justify-content:space-between;padding:0 15px;border-top:1px solid #dde6ed;color:#718596;font-size:8px}.sidebar-footer button{border:1px solid #ccd8e1;border-radius:50%;background:#fff}.drawing-area{position:absolute;left:var(--side);right:0;top:var(--top);bottom:0;display:flex;flex-direction:column;transition:left .25s}.sidebar-hidden .drawing-area{left:0}.drawing-toolbar{position:absolute;z-index:12;top:14px;left:50%;transform:translateX(-50%);height:42px;display:flex;align-items:center;gap:3px;padding:4px;border:1px solid #cfd9e2;border-radius:11px;background:#fffffff2;box-shadow:0 8px 20px #1c374c1f}.drawing-toolbar button{width:33px;height:33px;border:0;border-radius:7px;background:transparent;color:#506b7f;font:600 15px Inter}.drawing-toolbar button:hover,.drawing-toolbar .active{background:#e7f3fb;color:#087ebc}.drawing-toolbar i{height:23px;border-left:1px solid #dce4ea}.canvas-viewport{flex:1;overflow:auto;padding:78px 70px 65px;background:#dfe6ec}.schematic-sheet{--zoom:.8;position:relative;width:1123px;height:794px;margin:auto;transform:scale(var(--zoom));transform-origin:top center;background-color:#fff;background-image:linear-gradient(#e4e9ed 1px,transparent 1px),linear-gradient(90deg,#e4e9ed 1px,transparent 1px),linear-gradient(#f2f4f6 1px,transparent 1px),linear-gradient(90deg,#f2f4f6 1px,transparent 1px);background-size:50px 50px,50px 50px,10px 10px,10px 10px;border:1px solid #c4cdd4;box-shadow:0 12px 34px #1930422e}.schematic-sheet:after{content:"";position:absolute;inset:22px;border:1px solid #aeb9c2;pointer-events:none}.sheet-empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#8093a1;pointer-events:none}.sheet-empty.hidden{display:none}.sheet-empty svg{width:90px;fill:none;stroke:#a8b8c4;stroke-width:2}.sheet-empty h2{font-size:17px;margin:14px 0 6px}.sheet-empty p{font-size:11px;margin:0}.sheet-reference{position:absolute;right:31px;bottom:30px;padding:5px 9px;border:1px solid #b5c0c9;font-size:8px}.placed-component{position:absolute;z-index:5;width:104px;min-height:100px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px;border:1px solid transparent;border-radius:7px;cursor:move;user-select:none}.placed-component:hover,.placed-component.selected{border-color:transparent!important;background:transparent!important;box-shadow:none!important;outline:none!important}.placed-component svg{width:58px;height:58px;overflow:visible}.placed-component span{font-size:9px;font-weight:700}.placed-component small{font-size:7px;color:#7890a1}.canvas-statusbar{height:34px;display:flex;align-items:center;justify-content:space-between;padding:0 13px;border-top:1px solid #cbd6de;background:#f9fbfc;color:#6f8493;font-size:8px}.canvas-statusbar>div{display:flex;align-items:center;gap:16px}.status-ready{display:flex;align-items:center;gap:7px}.status-ready i{width:6px;height:6px;border-radius:50%;background:#22c55e}.zoom-control{gap:3px!important}.zoom-control button{width:25px;height:23px;border:0;background:transparent}.zoom-control input{width:80px;accent-color:#168ed1}.zoom-control output{width:32px}.toast{position:fixed;z-index:60;right:22px;bottom:50px;transform:translateY(25px);padding:11px 16px;border-radius:9px;background:#0c2e48;color:#fff;font-size:10px;opacity:0;transition:.22s}.toast.show{opacity:1;transform:none}@media(max-width:850px){.workbench{--side:270px}.workbench-topbar{grid-template-columns:auto 1fr auto}.top-action:not(.simulate){display:none}.user-button b,.user-button small{display:none}.drawing-area{left:0}.sidebar-heading .close-sidebar{display:grid}.component-sidebar{box-shadow:12px 0 34px #04182738}.schematic-sheet{transform-origin:top left}}@media(max-width:560px){.workbench{--top:58px}.workbench-topbar .brand span{font-size:19px}.workbench-topbar .brand small,.project-title>span{display:none}.project-title{padding:0 8px}.project-title button{font-size:9px}.top-actions{padding-right:4px}.top-action.simulate{min-width:40px;width:40px}.top-action.simulate b,.top-actions>.icon-button{display:none}.component-sidebar{width:min(86vw,300px)}.drawing-toolbar{left:12px;transform:none}.canvas-viewport{padding:70px 24px}.canvas-statusbar>div:first-child span:not(:first-child),.zoom-control input{display:none}}
+
+
+/* v20260829 — escala física global proporcional ao Arduino/ESP32 */
+.placed-component[data-type="mcp23017-dip28"]{width:106px!important;min-height:160px!important;padding:6px!important}
+.placed-component[data-type="mcp23017-dip28"]>svg{width:88px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-type="elec-resistor-axial"],.placed-component[data-type="svg-basic-resistor"],.placed-component[data-type^="svg-resistor-"]{width:80px!important;min-height:52px!important;padding:3px!important}
+.placed-component[data-type="elec-resistor-axial"]>svg,.placed-component[data-type="svg-basic-resistor"]>svg,.placed-component[data-type^="svg-resistor-"]>svg{width:68px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-type="elec-pc817"]{width:78px!important;min-height:60px!important;padding:4px!important}
+.placed-component[data-type="elec-pc817"]>svg{width:64px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-type="elec-uln2003ag"]{width:96px!important;min-height:78px!important;padding:4px!important}
+.placed-component[data-type="elec-uln2003ag"]>svg{width:82px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-type="elec-relay-module-16ch"]{width:520px!important;min-height:280px!important;padding:6px!important}
+.placed-component[data-type="elec-relay-module-16ch"]>svg{width:500px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+
+
+
+/* v20260829: padronização fina harmoniosa de escala eletrônica */
+.placed-component[data-type="elec-resistor-axial"],
+.placed-component[data-type="svg-basic-resistor"],
+.placed-component[data-type^="svg-resistor-"]{width:82px!important;min-height:50px!important;padding:4px 3px!important}
+.placed-component[data-type="elec-resistor-axial"] svg,
+.placed-component[data-type="svg-basic-resistor"] svg,
+.placed-component[data-type^="svg-resistor-"] svg{width:72px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-type="elec-pc817"],.placed-component[data-type="opto-pc817"]{width:98px!important;min-height:82px!important;padding:5px 4px!important}
+.placed-component[data-type="elec-pc817"] svg,.placed-component[data-type="opto-pc817"] svg{width:86px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-type="elec-uln2003ag"]{width:136px!important;min-height:112px!important;padding:6px 5px!important}
+.placed-component[data-type="elec-uln2003ag"] svg{width:122px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-type="mcp23017-dip28"]{width:190px!important;min-height:360px!important;padding:8px 6px!important}
+.placed-component[data-type="mcp23017-dip28"] svg{width:165px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-registry-id^="elec-relay-module-1ch"]{width:92px!important;min-height:130px!important;padding:6px!important}
+.placed-component[data-registry-id^="elec-relay-module-1ch"]>svg{width:76px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-registry-id^="elec-relay-module-2ch"]{width:146px!important;min-height:130px!important;padding:6px!important}
+.placed-component[data-registry-id^="elec-relay-module-2ch"]>svg{width:130px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-registry-id^="elec-relay-module-4ch"]{width:243px!important;min-height:130px!important;padding:6px!important}
+.placed-component[data-registry-id^="elec-relay-module-4ch"]>svg{width:227px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-registry-id^="elec-relay-module-8ch"]{width:470px!important;min-height:145px!important;padding:6px 5px!important}
+.placed-component[data-registry-id^="elec-relay-module-8ch"]>svg{width:452px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-registry-id^="elec-relay-module-16ch"]{width:620px!important;min-height:330px!important;padding:8px 6px!important}
+.placed-component[data-registry-id^="elec-relay-module-16ch"]>svg{width:595px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+/* TechRib 32R: estilos dedicados movidos para /assets/techrib32-v24.css. */
+
+/* TechRib VULN2803 — escala proporcional ao MCP23017 (DIP-18 vs DIP-28) */
+.placed-component[data-type="elec-uln2803"]{width:106px!important;min-height:118px!important;padding:6px!important}
+.placed-component[data-type="elec-uln2803"]>svg{width:88px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+
+/* TechRib VULN2803-DIP10 — proporcional ao ULN2803A */
+.placed-component[data-type="uln2803"]{width:106px!important;min-height:92px!important;padding:6px!important;height:auto!important;max-height:none!important}
+.placed-component[data-type="uln2803"]>svg{width:88px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+
+/* TECHRIB ULN DRIVERS MCP23017 SIZE REF V1 START */
+/*
+ * Referência visual: MCP23017 DIP-28 na prancha (box 190px / SVG 165px).
+ * ULN2803A e ULN2003AG passam a usar a mesma largura física do encapsulamento,
+ * mantendo a altura natural de cada DIP pelo viewBox do próprio SVG.
+ */
+.placed-component[data-type="elec-uln2803"]{
+  width:190px!important;
+  min-height:250px!important;
+  padding:8px 6px!important;
+}
+.placed-component[data-type="elec-uln2803"]>svg{
+  width:165px!important;
+  height:auto!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+.placed-component[data-type="elec-uln2003ag"]{
+  width:190px!important;
+  min-height:176px!important;
+  padding:8px 6px!important;
+}
+.placed-component[data-type="elec-uln2003ag"]>svg{
+  width:165px!important;
+  height:auto!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+/* TECHRIB ULN DRIVERS MCP23017 SIZE REF V1 END */
+
+/* TECHRIB ULN2003AG PORTRAIT V2 START */
+/* Mantém a mesma largura de referência do MCP23017 e evita achatamento do DIP-16. */
+.placed-component[data-type="elec-uln2003ag"]{
+  width:190px!important;
+  min-height:205px!important;
+  padding:8px 6px!important;
+}
+.placed-component[data-type="elec-uln2003ag"]>svg{
+  width:165px!important;
+  height:auto!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+/* TECHRIB ULN2003AG PORTRAIT V2 END */

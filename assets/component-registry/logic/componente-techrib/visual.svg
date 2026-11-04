@@ -1,0 +1,44 @@
+<svg data-techrib-studio-import="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 130" role="img" aria-label="Alimentador trifásico 3F + N + PE" data-component="alimentador-3f-n-pe" data-techrib-library="power-v26" x="0" y="0" width="210" height="130" preserveAspectRatio="xMidYMid meet" pointer-events="all">
+<defs>
+  <linearGradient id="body" x2="0" y2="1"><stop stop-color="#263944"/><stop offset="1" stop-color="#101c23"/></linearGradient>
+  <linearGradient id="screen" x2="0" y2="1"><stop stop-color="#173a48"/><stop offset="1" stop-color="#07151b"/></linearGradient>
+  <radialGradient id="screw"><stop stop-color="#f8fafc"/><stop offset=".35" stop-color="#94a3b8"/><stop offset=".72" stop-color="#334155"/><stop offset="1" stop-color="#111827"/></radialGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-opacity=".28"/></filter>
+  <style>.brand{font:700 8px Arial,sans-serif;fill:#e2e8f0}.mark{font:700 18px Arial,sans-serif;fill:#7dd3fc}.sub{font:600 6.5px Arial,sans-serif;fill:#94a3b8}.pin{font:700 6.5px Arial,sans-serif;fill:#e5e7eb}</style>
+</defs>
+<g data-wire-obstacle="true" filter="url(#shadow)">
+ <path d="M18 12h174l8 8v67l-8 8H18l-8-8V20z" fill="url(#body)" stroke="#0b1117" stroke-width="3"/>
+ <rect x="24" y="22" width="162" height="43" rx="7" fill="url(#screen)" stroke="#536875" stroke-width="2"/>
+ <circle cx="37" cy="43" r="3.5" fill="#22c55e"/><circle cx="37" cy="43" r="7" fill="#22c55e" opacity=".10"/>
+ <text x="105" y="39" text-anchor="middle" class="mark">3~</text>
+ <text x="105" y="52" text-anchor="middle" class="brand" transform="translate(26 4) translate(16.84375 37) scale(0.7231034968006468 0.47368421052631576) translate(-16.84375 -37) translate(-1 1)">TechRib • AC SUPPLY</text>
+ <text x="105" y="61" text-anchor="middle" class="sub">REDE TRIFÁSICA • N • PROTEÇÃO</text>
+ <path d="M18 77h174" stroke="#3f5663" stroke-width="2"/>
+</g>
+<g data-terminal="L1">
+  <circle data-wire-anchor="L1" cx="30.0" cy="106" r="12" fill="#000" fill-opacity="0.001" pointer-events="all" class="wire-anchor" stroke="none" visibility="visible"/>
+  <circle cx="30.0" cy="106" r="8.2" fill="url(#screw)" stroke="#c58a2b" stroke-width="2.7"/>
+  <path d="M25.5 106h9M30.0 101.5v9" stroke="#f8fafc" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="30.0" y="126" text-anchor="middle" class="pin">L1</text>
+</g><g data-terminal="L2">
+  <circle data-wire-anchor="L2" cx="67.5" cy="106" r="12" fill="#000" fill-opacity="0.001" pointer-events="all" class="wire-anchor" stroke="none" visibility="visible"/>
+  <circle cx="67.5" cy="106" r="8.2" fill="url(#screw)" stroke="#c58a2b" stroke-width="2.7"/>
+  <path d="M63.0 106h9M67.5 101.5v9" stroke="#f8fafc" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="67.5" y="126" text-anchor="middle" class="pin">L2</text>
+</g><g data-terminal="L3">
+  <circle data-wire-anchor="L3" cx="105.0" cy="106" r="12" fill="#000" fill-opacity="0.001" pointer-events="all" class="wire-anchor" stroke="none" visibility="visible"/>
+  <circle cx="105.0" cy="106" r="8.2" fill="url(#screw)" stroke="#c58a2b" stroke-width="2.7"/>
+  <path d="M100.5 106h9M105.0 101.5v9" stroke="#f8fafc" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="105.0" y="126" text-anchor="middle" class="pin">L3</text>
+</g><g data-terminal="N">
+  <circle data-wire-anchor="N" cx="142.5" cy="106" r="12" fill="#000" fill-opacity="0.001" pointer-events="all" class="wire-anchor" stroke="none" visibility="visible"/>
+  <circle cx="142.5" cy="106" r="8.2" fill="url(#screw)" stroke="#c58a2b" stroke-width="2.7"/>
+  <path d="M138.0 106h9M142.5 101.5v9" stroke="#f8fafc" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="142.5" y="126" text-anchor="middle" class="pin">N</text>
+</g><g data-terminal="PE">
+  <circle data-wire-anchor="PE" cx="180.0" cy="106" r="12" fill="#000" fill-opacity="0.001" pointer-events="all" class="wire-anchor" stroke="none" visibility="visible"/>
+  <circle cx="180.0" cy="106" r="8.2" fill="url(#screw)" stroke="#c58a2b" stroke-width="2.7"/>
+  <path d="M175.5 106h9M180.0 101.5v9" stroke="#f8fafc" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="180.0" y="126" text-anchor="middle" class="pin">PE</text>
+</g>
+</svg>

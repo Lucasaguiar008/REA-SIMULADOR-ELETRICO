@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 430" role="img" aria-label="Sensor mmWave LD2410C">
+  <defs>
+    <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#173e55"/><stop offset="1" stop-color="#081d2a"/></linearGradient>
+    <radialGradient id="radar" cx="50%" cy="45%" r="62%"><stop offset="0" stop-color="#dff8ff"/><stop offset=".55" stop-color="#79d7ef"/><stop offset="1" stop-color="#125b73"/></radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-opacity=".35"/></filter>
+    <style>
+      .t1{font:900 19px Arial,sans-serif;fill:#effcff}.t2{font:800 12px Arial,sans-serif;fill:#a9e6f5}.tiny{font:800 10px Arial,sans-serif;fill:#d7f7ff}.state{font:900 12px Arial,sans-serif;fill:#effcff}.term{font:900 11px Arial,sans-serif;fill:#12222b}.wire-anchor-hitbox{fill:transparent;stroke:transparent}.port{fill:#f8fafc;stroke:#475569;stroke-width:3}.screw{fill:#d8e0e5;stroke:#5c6870;stroke-width:2}.ledOff{fill:#253341;stroke:#94a3b8;stroke-width:2}.btn{fill:#173344;stroke:#8ec9dd;stroke-width:2;cursor:pointer}.btnClear{fill:#3b1720;stroke:#ef8097;stroke-width:2;cursor:pointer}.btnText{font:900 10px Arial,sans-serif;fill:#e6f9ff;pointer-events:none}
+    </style>
+  </defs>
+  <rect x="24" y="22" width="472" height="384" rx="28" fill="url(#pcb)" stroke="#0a3548" stroke-width="5" filter="url(#shadow)"/>
+  <text x="260" y="54" text-anchor="middle" class="t1">TechRib • mmWave</text>
+  <text x="260" y="76" text-anchor="middle" class="t2">LD2410C • 24 GHz • PRESENÇA ESTÁTICA + MOVIMENTO</text>
+
+  <g transform="translate(260 170)">
+    <circle r="84" fill="#071821" stroke="#376779" stroke-width="4"/>
+    <circle r="67" fill="url(#radar)" stroke="#91e2f4" stroke-width="3" opacity=".96"/>
+    <circle r="45" fill="none" stroke="#d6f8ff" stroke-width="3" opacity=".7"/>
+    <circle r="24" fill="none" stroke="#e8fbff" stroke-width="3" opacity=".8"/>
+    <path d="M0 0 L61 -29 A67 67 0 0 1 61 29 Z" fill="#e6fbff" opacity=".24"/>
+    <circle r="8" fill="#e9fcff"/>
+  </g>
+
+  <g transform="translate(79 282)">
+    <circle cx="0" cy="0" r="10" class="ledOff" data-presence-power-led="true"/><text x="18" y="4" class="tiny">PWR</text>
+    <circle cx="88" cy="0" r="12" class="ledOff" data-presence-detect-led="true"/><text x="108" y="4" class="tiny">PRES</text>
+    <circle cx="206" cy="0" r="10" class="ledOff" data-presence-motion-led="true"/><text x="224" y="4" class="tiny">MOV</text>
+    <circle cx="324" cy="0" r="10" class="ledOff" data-presence-static-led="true"/><text x="342" y="4" class="tiny">EST</text>
+  </g>
+  <text x="260" y="314" text-anchor="middle" class="state" data-presence-state="true">SEM PRESENÇA</text>
+
+  <rect x="45" y="330" width="132" height="32" rx="9" class="btn" data-presence-test="moving"/><text x="111" y="351" text-anchor="middle" class="btnText">MOVIMENTO</text>
+  <rect x="194" y="330" width="132" height="32" rx="9" class="btn" data-presence-test="stationary"/><text x="260" y="351" text-anchor="middle" class="btnText">PRESENÇA PARADA</text>
+  <rect x="343" y="330" width="132" height="32" rx="9" class="btnClear" data-presence-clear="true"/><text x="409" y="351" text-anchor="middle" class="btnText">LIMPAR</text>
+
+  <g data-terminal="VCC" data-wire-side="bottom" transform="translate(70 402)"><circle r="16" class="port"/><circle r="7" class="screw"/><circle r="22" class="wire-anchor-hitbox" data-wire-anchor="VCC" data-wire-side="bottom"/><text x="0" y="-25" text-anchor="middle" class="term">VCC</text></g>
+  <g data-terminal="GND" data-wire-side="bottom" transform="translate(165 402)"><circle r="16" class="port"/><circle r="7" class="screw"/><circle r="22" class="wire-anchor-hitbox" data-wire-anchor="GND" data-wire-side="bottom"/><text x="0" y="-25" text-anchor="middle" class="term">GND</text></g>
+  <g data-terminal="OUT" data-wire-side="bottom" transform="translate(260 402)"><circle r="16" class="port"/><circle r="7" class="screw"/><circle r="22" class="wire-anchor-hitbox" data-wire-anchor="OUT" data-wire-side="bottom"/><text x="0" y="-25" text-anchor="middle" class="term">OUT</text></g>
+  <g data-terminal="TX" data-wire-side="bottom" transform="translate(355 402)"><circle r="16" class="port"/><circle r="7" class="screw"/><circle r="22" class="wire-anchor-hitbox" data-wire-anchor="TX" data-wire-side="bottom"/><text x="0" y="-25" text-anchor="middle" class="term">TX</text></g>
+  <g data-terminal="RX" data-wire-side="bottom" transform="translate(450 402)"><circle r="16" class="port"/><circle r="7" class="screw"/><circle r="22" class="wire-anchor-hitbox" data-wire-anchor="RX" data-wire-side="bottom"/><text x="0" y="-25" text-anchor="middle" class="term">RX</text></g>
+</svg>

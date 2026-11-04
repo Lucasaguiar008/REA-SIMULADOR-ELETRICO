@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160" data-panel-duct-svg="true" role="img" aria-label="Canaleta ranhurada de painel">
+<defs><linearGradient id="ductg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f5f6f4"/><stop offset="1" stop-color="#c8ceca"/></linearGradient><pattern id="slots" width="34" height="40" patternUnits="userSpaceOnUse"><rect x="8" y="0" width="14" height="40" rx="4" fill="#4b5557"/></pattern></defs>
+<rect data-duct-body="true" x="1" y="1" width="718" height="158" rx="6" fill="url(#ductg)" stroke="#747f7d" stroke-width="3"/>
+<rect data-duct-cavity="true" x="15" y="25" width="690" height="110" rx="4" fill="#454e4f" stroke="#1f2728" stroke-width="2"/>
+<rect data-duct-slots-a="true" x="4" y="4" width="712" height="28" fill="url(#slots)"/>
+<rect data-duct-slots-b="true" x="4" y="128" width="712" height="28" fill="url(#slots)"/>
+<text data-duct-label="true" x="360" y="86" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#d8e0df">CANALETA • TAMPA ABERTA</text>
+</svg>

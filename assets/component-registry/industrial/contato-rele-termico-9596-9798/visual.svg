@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 360" role="img" aria-label="Auxiliar Térmico 95-96 / 97-98 TechRib"><defs>
+  <linearGradient id="th2-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".34" stop-color="#edf1f3"/><stop offset=".72" stop-color="#d5dce0"/><stop offset="1" stop-color="#aeb8be"/></linearGradient>
+  <linearGradient id="th2-face" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".56" stop-color="#edf1f3"/><stop offset="1" stop-color="#c8d0d5"/></linearGradient>
+  <linearGradient id="th2-edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#141b20"/><stop offset=".52" stop-color="#53616a"/><stop offset="1" stop-color="#0c1115"/></linearGradient>
+  <linearGradient id="th2-blue" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#082f50"/><stop offset=".48" stop-color="#087abe"/><stop offset="1" stop-color="#00acd0"/></linearGradient>
+  <linearGradient id="th2-red" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ff554b"/><stop offset=".5" stop-color="#df2020"/><stop offset="1" stop-color="#8d1111"/></linearGradient>
+  <linearGradient id="th2-copper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7b3b12"/><stop offset=".28" stop-color="#ef9a42"/><stop offset=".55" stop-color="#ffd38d"/><stop offset="1" stop-color="#71320d"/></linearGradient>
+  <radialGradient id="th2-screw" cx="32%" cy="27%" r="76%"><stop stop-color="#f7fafb"/><stop offset=".2" stop-color="#cbd3d8"/><stop offset=".52" stop-color="#737e84"/><stop offset=".78" stop-color="#303a40"/><stop offset="1" stop-color="#10161a"/></radialGradient>
+  <filter id="th2-shadow" x="-15%" y="-12%" width="135%" height="140%"><feDropShadow dx="3" dy="6" stdDeviation="5" flood-color="#071018" flood-opacity=".38"/></filter>
+  <filter id="th2-inner" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0b1115" flood-opacity=".42"/></filter>
+  <style>
+    .anchor{fill:transparent;stroke:none}.brand{font:800 24px Arial;fill:#0878bd}.title{font:800 14px Arial;fill:#202d35;text-anchor:middle}.tiny{font:700 10px Arial;fill:#52616a;text-anchor:middle}.micro{font:700 8px Arial;fill:#64727a;text-anchor:middle}.term{font:800 14px Arial;fill:#16242d;text-anchor:middle}.state{font:800 11px Arial;fill:#28414f;text-anchor:middle}.seam{fill:none;stroke:#98a5ac;stroke-width:2}.shine{fill:none;stroke:#fff;stroke-width:3;opacity:.58}
+  </style>
+</defs><g filter="url(#th2-shadow)"><rect data-component-body="true" x="9" y="9" width="402" height="342" rx="17" fill="url(#th2-body)" stroke="#56646c" stroke-width="3"/><path d="M18 27v304M399 27v304" class="shine"/><path d="M394 17h9v326h-9z" fill="url(#th2-edge)" opacity=".82"/>
+  <path d="M28 91h364v41H28zM28 267h364v43H28z" fill="#cbd4d9" stroke="#78858c" stroke-width="2"/><path d="M43 104h334M43 295h334" class="shine"/>
+  <rect x="39" y="127" width="342" height="145" rx="12" fill="url(#th2-face)" stroke="#8f9da5" stroke-width="2"/>
+  <rect x="53" y="141" width="314" height="31" rx="5" fill="url(#th2-blue)"/><text x="67" y="164" fill="#fff" font-family="Arial" font-size="20" font-weight="800">LucasAguiar</text><text class="micro" x="343" y="160" fill="#dff8ff">IEC 60947-5-1</text>
+  <path d="M210 178v80" stroke="#a9b4ba" stroke-width="2"/><rect x="64" y="184" width="124" height="62" rx="8" fill="#f8fafb" stroke="#b1bdc3"/><rect x="232" y="184" width="124" height="62" rx="8" fill="#f8fafb" stroke="#b1bdc3"/>
+  <text class="title" x="126" y="202">NF • 95-96</text><text class="title" x="294" y="202">NA • 97-98</text>
+  <g data-contact-actuator="true"><circle cx="93" cy="228" r="5" fill="#24323a"/><circle cx="159" cy="228" r="5" fill="#24323a"/><path data-nc-blade="true" d="M93 228h66" stroke="#24323a" stroke-width="6" stroke-linecap="round"/><circle cx="261" cy="231" r="5" fill="#24323a"/><circle cx="327" cy="218" r="5" fill="#24323a"/><path data-no-blade="true" d="M261 231l66-13" stroke="#24323a" stroke-width="6" stroke-linecap="round"/></g>
+  <text data-device-state="" class="state" x="210" y="264">SEM ASSOC.</text>
+  <g data-terminal="95" data-terminal-name="95">
+    <circle data-wire-anchor="95" class="anchor" cx="105" cy="52" r="24"/>
+    <rect x="71" y="19" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M80 12h50v12h-50z" fill="url(#th2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="105" cy="52" r="21" fill="#182127"/><circle cx="105" cy="52" r="16" fill="url(#th2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="101" cy="47" r="3.52" fill="#fff" opacity=".36"/><path d="M96.2 52h17.6M105 43.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="105" y="92">95</text>
+  </g><g data-terminal="96" data-terminal-name="96">
+    <circle data-wire-anchor="96" class="anchor" cx="315" cy="52" r="24"/>
+    <rect x="281" y="19" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M290 12h50v12h-50z" fill="url(#th2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="315" cy="52" r="21" fill="#182127"/><circle cx="315" cy="52" r="16" fill="url(#th2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="311" cy="47" r="3.52" fill="#fff" opacity=".36"/><path d="M306.2 52h17.6M315 43.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="315" y="92">96</text>
+  </g><g data-terminal="97" data-terminal-name="97">
+    <circle data-wire-anchor="97" class="anchor" cx="105" cy="308" r="24"/>
+    <rect x="71" y="299" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M80 335h50v12h-50z" fill="url(#th2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="105" cy="308" r="21" fill="#182127"/><circle cx="105" cy="308" r="16" fill="url(#th2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="101" cy="303" r="3.52" fill="#fff" opacity=".36"/><path d="M96.2 308h17.6M105 299.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="105" y="289">97</text>
+  </g><g data-terminal="98" data-terminal-name="98">
+    <circle data-wire-anchor="98" class="anchor" cx="315" cy="308" r="24"/>
+    <rect x="281" y="299" width="68" height="55" rx="8" fill="#cbd3d8" stroke="#74828a" stroke-width="2"/>
+    <path d="M290 335h50v12h-50z" fill="url(#th2-copper)" stroke="#6a3513"/>
+    <g aria-hidden="true"><circle cx="315" cy="308" r="21" fill="#182127"/><circle cx="315" cy="308" r="16" fill="url(#th2-screw)" stroke="#080d10" stroke-width="2"/><circle cx="311" cy="303" r="3.52" fill="#fff" opacity=".36"/><path d="M306.2 308h17.6M315 299.2v17.6" stroke="#1c2429" stroke-width="3" stroke-linecap="round"/></g><text class="term" x="315" y="289">98</text>
+  </g></g></svg>

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-label="Sistema Premium de portões e portas automáticas" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="gs-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10232d"/><stop offset="1" stop-color="#07131a"/></linearGradient>
+    <linearGradient id="gs-panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a3240"/><stop offset="1" stop-color="#0f1f28"/></linearGradient>
+    <linearGradient id="gs-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf2f5"/><stop offset=".5" stop-color="#a8bac4"/><stop offset="1" stop-color="#50626d"/></linearGradient>
+    <linearGradient id="gs-gate" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d9e6eb"/><stop offset="1" stop-color="#7e949f"/></linearGradient>
+    <linearGradient id="gs-door" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f0f4f6"/><stop offset="1" stop-color="#90a7b2"/></linearGradient>
+    <filter id="gs-shadow"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-opacity=".35"/></filter>
+    <filter id="gs-glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g id="gs-terminal-port"><circle r="11" fill="#101a20" stroke="#f1c75b" stroke-width="3"/><circle r="5" fill="#dfe8ed"/><path d="M-4 0h8M0-4v8" stroke="#536873" stroke-width="2"/></g>
+    <style>
+      .gs-title{font:900 25px Arial,sans-serif;fill:#fff;letter-spacing:.5px}
+      .gs-sub{font:700 12px Arial,sans-serif;fill:#9fc3d4}
+      .gs-label{font:800 13px Arial,sans-serif;fill:#eaf7fb}
+      .gs-small{font:700 10px Arial,sans-serif;fill:#a9c2ce}
+      .gs-value{font:900 20px Arial,sans-serif;fill:#7dd3fc}
+      .gs-terminal-label{font:900 11px Arial,sans-serif;fill:#f5e7ad}
+      .gs-btn text{pointer-events:none}.gs-btn rect{fill:#173747;stroke:#6a8591;stroke-width:1.5}.gs-btn:hover rect{fill:#245369}.gs-btn{cursor:pointer}
+      .wire-anchor-hitbox{fill:transparent;stroke:transparent;stroke-width:1}
+    </style>
+  </defs>
+
+  <rect x="14" y="14" width="1072" height="732" rx="28" fill="url(#gs-bg)" stroke="#b78b25" stroke-width="4" filter="url(#gs-shadow)"/>
+  <rect x="30" y="30" width="1040" height="56" rx="14" fill="#0d2c3a" stroke="#365865"/>
+  <text x="52" y="64" class="gs-title">TECHRIB • SISTEMA DE PORTÕES AUTOMÁTICOS</text>
+  <text x="1044" y="55" text-anchor="end" class="gs-sub">PORTÃO DESLIZANTE + PORTA DE GARAGEM</text>
+  <text x="1044" y="73" text-anchor="end" class="gs-small">FOTOCÉLULA • FINS DE CURSO • COMANDO ABRIR / FECHAR</text>
+
+  <g filter="url(#gs-shadow)">
+    <rect x="54" y="118" width="466" height="356" rx="20" fill="#0b1b24" stroke="#4f6974" stroke-width="2"/>
+    <text x="72" y="145" class="gs-label">PORTÃO DESLIZANTE</text>
+    <text x="72" y="166" class="gs-small">motor deslizante com cremalheira e fotocélula</text>
+
+    <rect x="102" y="200" width="360" height="164" rx="12" fill="#162d39" stroke="#5a7683"/>
+    <rect x="126" y="226" width="210" height="126" rx="8" fill="url(#gs-gate)" stroke="#d7e2e7" stroke-width="3" data-gate-leaf="true"/>
+    <g stroke="#5d7480" stroke-width="6" opacity=".9" data-gate-bars="true">
+      <path d="M148 238v100M180 238v100M212 238v100M244 238v100M276 238v100M308 238v100"/>
+    </g>
+    <rect x="104" y="370" width="360" height="16" rx="8" fill="#7d8f98"/>
+    <rect x="356" y="332" width="44" height="42" rx="8" fill="#1b2931" stroke="#a0b5bf"/>
+    <circle cx="378" cy="353" r="12" fill="#0b1820" stroke="#5fd0ff"/>
+    <circle cx="378" cy="353" r="4" fill="#7dd3fc"/>
+    <rect x="110" y="196" width="10" height="194" fill="#ced9de"/>
+    <rect x="448" y="196" width="10" height="194" fill="#ced9de"/>
+
+    <circle cx="138" cy="310" r="10" fill="#22c55e" data-gate-photo-left="true"/>
+    <circle cx="432" cy="310" r="10" fill="#22c55e" data-gate-photo-right="true"/>
+    <line x1="148" y1="310" x2="422" y2="310" stroke="#67e8f9" stroke-width="5" stroke-dasharray="12 10" data-gate-beam="true" filter="url(#gs-glow)"/>
+    <text x="285" y="403" text-anchor="middle" class="gs-small">Abertura do portão</text>
+    <text x="285" y="432" text-anchor="middle" data-gate-position="true" class="gs-value">0%</text>
+  </g>
+
+  <g filter="url(#gs-shadow)">
+    <rect x="566" y="118" width="480" height="356" rx="20" fill="#0b1b24" stroke="#4f6974" stroke-width="2"/>
+    <text x="584" y="145" class="gs-label">PORTA DE GARAGEM AUTOMÁTICA</text>
+    <text x="584" y="166" class="gs-small">porta seccional sincronizada com o mesmo acionamento didático</text>
+    <rect x="652" y="188" width="272" height="226" rx="14" fill="#162d39" stroke="#5a7683"/>
+    <rect x="674" y="206" width="228" height="188" rx="6" fill="url(#gs-door)" stroke="#d7e2e7" stroke-width="3" data-garage-door="true"/>
+    <g stroke="#6a8190" stroke-width="3" opacity=".95" data-garage-door-lines="true">
+      <path d="M676 238h224M676 270h224M676 302h224M676 334h224M676 366h224"/>
+    </g>
+    <path d="M658 190v-18h258v18" fill="none" stroke="#94a8b2" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="926" cy="198" r="9" fill="#f59e0b" data-gate-lamp="true"/>
+    <text x="789" y="432" text-anchor="middle" class="gs-small">Abertura da porta</text>
+    <text x="789" y="456" text-anchor="middle" data-garage-position="true" class="gs-value">0%</text>
+  </g>
+
+  <g transform="translate(54 500)">
+    <rect width="992" height="176" rx="18" fill="#0a1d27" stroke="#42616d" stroke-width="2"/>
+    <text x="22" y="28" class="gs-label">CONTROLE LOCAL DIDÁTICO</text>
+    <text x="22" y="54" class="gs-small">Modo</text><text x="84" y="54" data-gate-mode="true" class="gs-label" fill="#f4d675">AUTO</text>
+    <text x="200" y="54" class="gs-small">Estado</text><text x="264" y="54" data-gate-status="true" class="gs-label">FECHADO</text>
+    <text x="22" y="78" class="gs-small">FCA</text><text x="53" y="78" data-gate-fca="true" class="gs-label">ON</text>
+    <text x="110" y="78" class="gs-small">FCC</text><text x="145" y="78" data-gate-fcc="true" class="gs-label">OFF</text>
+    <text x="220" y="78" class="gs-small">Fotocélula</text><text x="300" y="78" data-gate-photo="true" class="gs-label">LIVRE</text>
+    <text x="418" y="78" class="gs-small">Auto-fechamento</text><text x="532" y="78" data-gate-auto="true" class="gs-label">ATIVO</text>
+
+    <g class="gs-btn" data-gate-action="open" transform="translate(18 101)"><rect width="86" height="40" rx="8"/><text x="43" y="25" text-anchor="middle" class="gs-label">ABRIR</text></g>
+    <g class="gs-btn" data-gate-action="stop" transform="translate(114 101)"><rect width="86" height="40" rx="8"/><text x="43" y="25" text-anchor="middle" class="gs-label">PARAR</text></g>
+    <g class="gs-btn" data-gate-action="close" transform="translate(210 101)"><rect width="88" height="40" rx="8"/><text x="44" y="25" text-anchor="middle" class="gs-label">FECHAR</text></g>
+    <g class="gs-btn" data-gate-action="auto" transform="translate(308 101)"><rect width="86" height="40" rx="8"/><text x="43" y="25" text-anchor="middle" class="gs-label">AUTO</text></g>
+    <g class="gs-btn" data-gate-action="obstacle" transform="translate(404 101)"><rect width="114" height="40" rx="8"/><text x="57" y="25" text-anchor="middle" class="gs-label">FOTOCÉLULA</text></g>
+    <g class="gs-btn" data-gate-action="reset" transform="translate(528 101)"><rect width="86" height="40" rx="8"/><text x="43" y="25" text-anchor="middle" class="gs-label">RESET</text></g>
+
+    <circle cx="682" cy="60" r="9" data-gate-led-open="true" fill="#334155"/><text x="698" y="64" class="gs-small">FCA</text>
+    <circle cx="760" cy="60" r="9" data-gate-led-close="true" fill="#334155"/><text x="776" y="64" class="gs-small">FCC</text>
+    <circle cx="842" cy="60" r="9" data-gate-led-photo="true" fill="#22c55e"/><text x="858" y="64" class="gs-small">FOTO OK</text>
+    <circle cx="940" cy="60" r="9" data-gate-led-run="true" fill="#334155"/><text x="956" y="64" class="gs-small">MOV</text>
+
+    <text x="662" y="122" class="gs-small">Ciclo Premium: no modo AUTO o exemplo demonstra abertura, pausa, fechamento e reabertura por obstáculo.</text>
+    <text x="662" y="144" class="gs-small">No modo manual use ABRIR / PARAR / FECHAR. Duplo clique abre o painel de laboratório.</text>
+  </g>
+
+  <g id="terminals">
+    <text x="78" y="716" class="gs-small" fill="#f4d675">COMANDOS DE ENTRADA</text>
+    <g data-terminal="CMD_OPEN" data-wire-side="bottom" transform="translate(182 716)" data-terminal-id="gate-system-CMD-OPEN" data-terminal-name="CMD_OPEN" data-domain="control" data-function="open-command" data-voltage-class="5v" data-direction="input" data-electrical-type="logic-input"><use href="#gs-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="CMD_OPEN" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="gs-terminal-label">ABRIR</text></g>
+    <g data-terminal="CMD_STOP" data-wire-side="bottom" transform="translate(262 716)" data-terminal-id="gate-system-CMD-STOP" data-terminal-name="CMD_STOP" data-domain="control" data-function="stop-command" data-voltage-class="5v" data-direction="input" data-electrical-type="logic-input"><use href="#gs-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="CMD_STOP" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="gs-terminal-label">PARAR</text></g>
+    <g data-terminal="CMD_CLOSE" data-wire-side="bottom" transform="translate(342 716)" data-terminal-id="gate-system-CMD-CLOSE" data-terminal-name="CMD_CLOSE" data-domain="control" data-function="close-command" data-voltage-class="5v" data-direction="input" data-electrical-type="logic-input"><use href="#gs-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="CMD_CLOSE" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="gs-terminal-label">FECHAR</text></g>
+
+    <text x="536" y="716" class="gs-small" fill="#f4d675">FINS DE CURSO</text>
+    <g data-terminal="COM_LIM" data-wire-side="bottom" transform="translate(620 716)" data-terminal-id="gate-system-COM-LIM" data-terminal-name="COM_LIM" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="passive" data-electrical-type="dry-contact"><use href="#gs-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="COM_LIM" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="gs-terminal-label">COM</text></g>
+    <g data-terminal="FC_OPEN" data-wire-side="bottom" transform="translate(690 716)" data-terminal-id="gate-system-FC-OPEN" data-terminal-name="FC_OPEN" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#gs-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="FC_OPEN" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="gs-terminal-label">FCA</text></g>
+    <g data-terminal="FC_CLOSE" data-wire-side="bottom" transform="translate(760 716)" data-terminal-id="gate-system-FC-CLOSE" data-terminal-name="FC_CLOSE" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#gs-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="FC_CLOSE" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="gs-terminal-label">FCC</text></g>
+
+    <text x="884" y="676" class="gs-small" fill="#f4d675">FOTOCÉLULA</text>
+    <g data-terminal="COM_PH" data-wire-side="right" transform="translate(1064 642)" data-terminal-id="gate-system-COM-PH" data-terminal-name="COM_PH" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="passive" data-electrical-type="dry-contact"><use href="#gs-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="COM_PH" data-wire-side="right" r="14"/><text x="-21" y="4" text-anchor="end" class="gs-terminal-label">COM</text></g>
+    <g data-terminal="PHOTO_OK" data-wire-side="right" transform="translate(1064 682)" data-terminal-id="gate-system-PHOTO-OK" data-terminal-name="PHOTO_OK" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#gs-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="PHOTO_OK" data-wire-side="right" r="14"/><text x="-21" y="4" text-anchor="end" class="gs-terminal-label">LIVRE</text></g>
+  </g>
+</svg>

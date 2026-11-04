@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 280.8" data-techrib-preserve-text-style="true" aria-label="Chave boia de nível TechRib realista" class="library-source-svg" aria-hidden="true" data-techrib-editor-managed="true" data-techrib-studio-import="true">
+  <defs>
+    <linearGradient id="float_shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f9fa"/>
+      <stop offset="0.42" stop-color="#e8ecef"/>
+      <stop offset="1" stop-color="#bcc5cb"/>
+    </linearGradient>
+    <linearGradient id="float_edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b666d"/>
+      <stop offset="1" stop-color="#202a30"/>
+    </linearGradient>
+    <linearGradient id="float_face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfcfd"/>
+      <stop offset="1" stop-color="#d8dee2"/>
+    </linearGradient>
+    <linearGradient id="float_terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2f4"/>
+      <stop offset="1" stop-color="#9fa9af"/>
+    </linearGradient>
+    <radialGradient id="float_screw" cx="34%" cy="28%" r="72%">
+      <stop offset="0" stop-color="#fbfcfd"/>
+      <stop offset="0.28" stop-color="#d8dde0"/>
+      <stop offset="0.62" stop-color="#89939a"/>
+      <stop offset="1" stop-color="#353d42"/>
+    </radialGradient>
+    <linearGradient id="float_brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f2d46"/>
+      <stop offset="0.58" stop-color="#1783d1"/>
+      <stop offset="1" stop-color="#00b7d9"/>
+    </linearGradient>
+    <linearGradient id="float_window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#213a48"/>
+      <stop offset="1" stop-color="#0b1c25"/>
+    </linearGradient>
+    <linearGradient id="float_water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#52c8e8" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#087ea4" stop-opacity=".96"/>
+    </linearGradient>
+    <radialGradient id="float_ball" cx="34%" cy="28%" r="76%">
+      <stop offset="0" stop-color="#ffd48a"/>
+      <stop offset="0.45" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#9a4d00"/>
+    </radialGradient>
+    <linearGradient id="float_cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dceff6" stop-opacity=".56"/>
+      <stop offset="0.5" stop-color="#9bc4d5" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#6f9fb4" stop-opacity=".30"/>
+    </linearGradient>
+    <filter id="float_shadow" x="-25%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3.2" stdDeviation="2.8" flood-color="#000" flood-opacity=".24"/>
+    </filter>
+    <filter id="float_led_glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Corpo DIN no mesmo padrão dimensional do temporizador -->
+  <g filter="url(#float_shadow)">
+    <path d="M13 8.5H163L174 20v241.6l-11 11.1H13L6 264.5V18.2z" fill="url(#float_edge)" stroke="#0b1216" stroke-width="2.2"/>
+    <path d="M18 12h139l11 11.5v233.8L158 268.5H18L11.5 261V19.7z" fill="url(#float_shell)" stroke="#7c878e" stroke-width="1.35"/>
+    <path d="M20 14.7h9v250.6h-9z" fill="#fff" opacity=".43"/>
+    <path d="M153.5 18h10v241h-10z" fill="#7f8990" opacity=".24"/>
+    <path d="M16 52h148" stroke="#a9b2b8" stroke-width="1" opacity=".8"/>
+    <path d="M16 225h148" stroke="#9aa5ab" stroke-width="1" opacity=".85"/>
+
+    <!-- Encaixes de trilho DIN -->
+    <path d="M64 12h52v8H105v7H75v-7H64z" fill="#c2c9cd" stroke="#818b91" stroke-width="1"/>
+    <path d="M64 268.5h52v-8h-11v-7H75v7H64z" fill="#b8c0c5" stroke="#7a858b" stroke-width="1"/>
+
+    <!-- Região do borne superior -->
+    <path d="M18 54h144v20H18z" fill="#d1d8dc" stroke="#a2adb3" stroke-width="1"/>
+    <path d="M22 57h136" stroke="#fff" stroke-width="1.2" opacity=".72"/>
+
+    <!-- Face frontal -->
+    <rect x="28" y="76" width="124" height="143" rx="5.7" fill="url(#float_face)" stroke="#a5afb5" stroke-width="1.25"/>
+    <rect x="33" y="81" width="114" height="21" rx="2.8" fill="url(#float_brand)"/>
+    <text x="39" y="96" class="brand">LucasAguiar</text>
+    <text x="143" y="94" class="model">TR-FS</text>
+    <path d="M34 108h112" stroke="#9ca8ae" stroke-width=".9"/>
+    <text x="38" y="118" class="caption">CHAVE BOIA DE NÍVEL • CONTATO SPDT</text>
+
+    <!-- Janela frontal com representação da boia -->
+    <g data-generic-actuator="true" opacity=".72">
+      <rect x="42" y="126" width="96" height="61" rx="6" fill="url(#float_window)" stroke="#4b616d" stroke-width="1.4"/>
+      <path d="M45 160c10-5 19 4 29 0 10-5 20 4 30 0 10-5 20 4 31 0v24H45z" fill="url(#float_water)"/>
+      <path d="M45 160c10-5 19 4 29 0 10-5 20 4 30 0 10-5 20 4 31 0" fill="none" stroke="#92e8ff" stroke-width="1.4" opacity=".9"/>
+      <path d="M86 137v17" stroke="#aebbc2" stroke-width="3" stroke-linecap="round"/>
+      <path d="M86 154l17 11" stroke="#d0d8dc" stroke-width="3.2" stroke-linecap="round"/>
+      <circle cx="105" cy="166.5" r="10.5" fill="url(#float_ball)" stroke="#6d3a00" stroke-width="1.3"/>
+      <path d="M99.5 161.5c2-2.8 7.1-3.7 10.5-1.7" fill="none" stroke="#fff" stroke-width="1.4" opacity=".48"/>
+      <path d="M63 143h13M63 151h9M118 143h8M118 151h12" stroke="#5e8799" stroke-width="1.2" stroke-linecap="round"/>
+      <text x="53" y="177" class="windowLabel">NÍVEL</text>
+    </g>
+
+    <!-- Indicador de estado e diagrama do contato -->
+    <rect x="38" y="194" width="104" height="19" rx="3.2" fill="#172a34" stroke="#26333a" stroke-width="1"/>
+    <circle data-generic-led="true" cx="49" cy="203.5" r="3.8" fill="#64748b" stroke="#33434c" stroke-width="1" filter="url(#float_led_glow)"/>
+    <text x="57" y="206.4" class="ledLabel">NÍVEL</text>
+    <path d="M94 204h10M104 204l10-5M104 204l10 5" fill="none" stroke="#dbe8ee" stroke-width="1.3" stroke-linecap="round"/>
+    <circle cx="92" cy="204" r="1.8" fill="#dbe8ee"/><circle cx="116" cy="199" r="1.8" fill="#dbe8ee"/><circle cx="116" cy="209" r="1.8" fill="#dbe8ee"/>
+    <text x="121" y="201.4" class="contactMini">NF</text><text x="121" y="211.4" class="contactMini">NA</text>
+
+    <!-- Tampa frontal translúcida -->
+    <path d="M31 78h118v139H31z" fill="url(#float_cover)" stroke="#8daab7" stroke-width=".75" opacity=".42" pointer-events="none"/>
+    <path d="M34 81h48L47 213H34z" fill="#fff" opacity=".12" pointer-events="none"/>
+
+    <!-- Região dos bornes inferiores -->
+    <path d="M18 227h144v30H18z" fill="#d0d7db" stroke="#9da8ae" stroke-width="1"/>
+    <path d="M90 227v30" stroke="#939fa5" stroke-width="1.1"/>
+    <path d="M22 230h64M94 230h64" stroke="#fff" stroke-width="1.15" opacity=".7"/>
+    <path d="M29 260h122" stroke="#6f7b82" stroke-width=".9" opacity=".55"/>
+  </g>
+
+  <!-- Borne superior C / comum -->
+  <g data-terminal="C" data-terminal-domain="control" data-terminal-function="relay-common" data-terminal-voltage-class="dry-contact" data-terminal-direction="passive" data-wire-side="top">
+    <circle data-wire-anchor="C" cx="90" cy="8.5" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="69" y="24" width="42" height="29" rx="5" fill="url(#float_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <path d="M73 28h34" stroke="#fff" stroke-width="1" opacity=".7"/>
+    <rect x="74" y="29.5" width="32" height="18" rx="4" fill="#69757c" opacity=".32"/>
+    <circle cx="90" cy="38.5" r="10.7" fill="url(#float_screw)" stroke="#3e494f" stroke-width="1.3"/>
+    <path d="M84 38.5h12M90 32.5v12" stroke="#283238" stroke-width="2.1" stroke-linecap="round"/>
+    <path d="M79 49.5h22" stroke="#4b565d" stroke-width="2" stroke-linecap="round"/>
+    <text x="90" y="21.2" class="terminalLabel">C COM</text>
+  </g>
+
+  <!-- Borne inferior NA -->
+  <g data-terminal="NA" data-terminal-domain="control" data-terminal-function="relay-no" data-terminal-voltage-class="dry-contact" data-terminal-direction="bidirectional" data-wire-side="bottom">
+    <circle data-wire-anchor="NA" cx="60" cy="272.3" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="39" y="232" width="42" height="26" rx="4.5" fill="url(#float_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <rect x="44" y="235" width="32" height="16" rx="3.5" fill="#6b777e" opacity=".30"/>
+    <circle cx="60" cy="244" r="8.5" fill="url(#float_screw)" stroke="#3e494f" stroke-width="1.15"/>
+    <path d="M55.3 244h9.4M60 239.3v9.4" stroke="#283238" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="60" y="266.1" class="terminalLabel">NA</text>
+  </g>
+
+  <!-- Borne inferior NF -->
+  <g data-terminal="NF" data-terminal-domain="control" data-terminal-function="relay-nc" data-terminal-voltage-class="dry-contact" data-terminal-direction="bidirectional" data-wire-side="bottom">
+    <circle data-wire-anchor="NF" cx="120" cy="272.3" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="99" y="232" width="42" height="26" rx="4.5" fill="url(#float_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <rect x="104" y="235" width="32" height="16" rx="3.5" fill="#6b777e" opacity=".30"/>
+    <circle cx="120" cy="244" r="8.5" fill="url(#float_screw)" stroke="#3e494f" stroke-width="1.15"/>
+    <path d="M115.3 244h9.4M120 239.3v9.4" stroke="#283238" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="120" y="266.1" class="terminalLabel">NF</text>
+  </g>
+
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;text-rendering:geometricPrecision}
+    .brand{fill:#fff;font-size:12.2px;font-weight:800;text-anchor:start}
+    .model{fill:#d8f1ff;font-size:6.6px;font-weight:800;text-anchor:end;letter-spacing:.55px}
+    .caption{fill:#38464e;font-size:5.55px;font-weight:800;text-anchor:start;letter-spacing:.08px}
+    .windowLabel{fill:#d9f5ff;font-size:5.4px;font-weight:900;text-anchor:start;letter-spacing:.5px}
+    .ledLabel{fill:#dbe8ee;font-size:5.3px;font-weight:800;text-anchor:start}
+    .contactMini{fill:#dbe8ee;font-size:4.5px;font-weight:800;text-anchor:start}
+    .terminalLabel{fill:#26343c;font-size:6.6px;font-weight:900;text-anchor:middle}
+  </style>
+</svg>

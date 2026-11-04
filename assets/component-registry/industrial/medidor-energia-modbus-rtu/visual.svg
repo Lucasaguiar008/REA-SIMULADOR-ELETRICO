@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 560" role="img" aria-label="Medidor de energia Modbus RTU monofásico DIN">
+ <defs>
+  <linearGradient id="body" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".58" stop-color="#e7ecef"/><stop offset="1" stop-color="#bcc7cd"/></linearGradient>
+  <linearGradient id="lcd" y2="1"><stop stop-color="#d6f2e5"/><stop offset="1" stop-color="#7da998"/></linearGradient>
+  <radialGradient id="screw"><stop stop-color="#fff"/><stop offset=".45" stop-color="#a7b1b7"/><stop offset="1" stop-color="#25343d"/></radialGradient>
+  <filter id="shadow"><feDropShadow dy="7" stdDeviation="6" flood-opacity=".32"/></filter>
+  <style>.lab{font:900 12px Arial,sans-serif;fill:#17212a}.tiny{font:800 10px Arial,sans-serif;fill:#52616a}.ledOff{fill:#334155;stroke:#64748b;stroke-width:2}.hit{fill:transparent;stroke:transparent;stroke-width:1}</style>
+ </defs>
+ <path d="M45 12h270l24 24v480l-24 24H45l-24-24V36z" fill="#18252d" filter="url(#shadow)"/>
+ <rect x="28" y="20" width="304" height="512" rx="16" fill="url(#body)" stroke="#82919a" stroke-width="3"/>
+
+ <!-- Bornes superiores -->
+ <g data-terminal="L-IN" data-wire-side="top" transform="translate(72 39)"><circle r="20" fill="#161c20" stroke="#d39a37" stroke-width="5"/><circle r="12" fill="url(#screw)"/><path d="M-8 0h16M0-8v16" stroke="#665a49" stroke-width="3"/><circle r="25" class="hit" data-wire-anchor="L-IN" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="lab">L IN</text></g>
+ <g data-terminal="N-IN" data-wire-side="top" transform="translate(288 39)"><circle r="20" fill="#161c20" stroke="#d39a37" stroke-width="5"/><circle r="12" fill="url(#screw)"/><path d="M-8 0h16M0-8v16" stroke="#665a49" stroke-width="3"/><circle r="25" class="hit" data-wire-anchor="N-IN" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="lab">N IN</text></g>
+ <g data-terminal="A" data-wire-side="top" transform="translate(145 42)"><circle r="14" fill="#eef4f7" stroke="#465a66" stroke-width="3"/><circle r="6" fill="#9aa8af"/><circle r="19" class="hit" data-wire-anchor="A" data-wire-side="top"/><text x="0" y="38" text-anchor="middle" class="lab">A</text></g>
+ <g data-terminal="B" data-wire-side="top" transform="translate(215 42)"><circle r="14" fill="#eef4f7" stroke="#465a66" stroke-width="3"/><circle r="6" fill="#9aa8af"/><circle r="19" class="hit" data-wire-anchor="B" data-wire-side="top"/><text x="0" y="38" text-anchor="middle" class="lab">B</text></g>
+
+ <rect x="48" y="92" width="264" height="348" rx="12" fill="#f8fafb" stroke="#9ca9b0" stroke-width="2"/>
+ <rect x="62" y="108" width="236" height="44" rx="5" fill="#0b2a5b"/>
+ <text x="78" y="136" font-family="Arial" font-size="18" font-weight="900" fill="#fff">LucasAguiar</text><text x="282" y="136" text-anchor="end" font-family="Arial" font-size="11" font-weight="900" fill="#ff8b2a">TR-EM485</text>
+ <rect x="64" y="168" width="232" height="126" rx="9" fill="#152027" stroke="#58666e" stroke-width="4"/>
+ <rect x="76" y="180" width="208" height="100" rx="5" fill="url(#lcd)" stroke="#58766d" stroke-width="2"/>
+ <text data-energy-meter-display="" x="180" y="226" text-anchor="middle" font-family="Consolas,monospace" font-size="40" font-weight="900" fill="#163329">---</text>
+ <text data-energy-meter-unit="" x="270" y="264" text-anchor="end" font-family="Arial" font-size="14" font-weight="900" fill="#163329">W</text>
+ <text data-energy-meter-secondary="" x="86" y="197" font-family="Arial" font-size="10" font-weight="800" fill="#21473a">MODBUS RTU</text>
+ <text data-energy-meter-tertiary="" x="86" y="265" font-family="Arial" font-size="10" font-weight="800" fill="#21473a"></text>
+
+ <g transform="translate(82 320)"><circle cx="0" cy="0" r="11" class="ledOff" data-energy-meter-power-led=""/><text x="18" y="5" class="tiny">PWR</text><circle cx="84" cy="0" r="11" class="ledOff" data-energy-meter-bus-led=""/><text x="102" y="5" class="tiny">BUS</text><circle cx="164" cy="0" r="11" class="ledOff" data-energy-meter-pulse-led=""/><text x="182" y="5" class="tiny">IMP</text></g>
+ <rect x="78" y="352" width="204" height="46" rx="10" fill="#e7ecef" stroke="#5f6c73" stroke-width="2" data-energy-meter-page-button=""/>
+ <text x="180" y="381" text-anchor="middle" font-family="Arial" font-size="12" font-weight="900" fill="#26343c" pointer-events="none">SEL / PRÓXIMA TELA</text>
+ <text data-energy-meter-status="" x="180" y="420" text-anchor="middle" font-family="Arial" font-size="11" font-weight="900" fill="#168346">SIMULAÇÃO PARADA</text>
+ <text x="180" y="438" text-anchor="middle" class="tiny">90–265 Vca • RS485 • 9600 8N1</text>
+
+ <!-- Bornes inferiores -->
+ <g data-terminal="L-OUT" data-wire-side="bottom" transform="translate(90 510)"><circle r="20" fill="#161c20" stroke="#d39a37" stroke-width="5"/><circle r="12" fill="url(#screw)"/><path d="M-8 0h16M0-8v16" stroke="#665a49" stroke-width="3"/><circle r="25" class="hit" data-wire-anchor="L-OUT" data-wire-side="bottom"/><text x="0" y="-31" text-anchor="middle" class="lab">L OUT</text></g>
+ <g data-terminal="N-OUT" data-wire-side="bottom" transform="translate(270 510)"><circle r="20" fill="#161c20" stroke="#d39a37" stroke-width="5"/><circle r="12" fill="url(#screw)"/><path d="M-8 0h16M0-8v16" stroke="#665a49" stroke-width="3"/><circle r="25" class="hit" data-wire-anchor="N-OUT" data-wire-side="bottom"/><text x="0" y="-31" text-anchor="middle" class="lab">N OUT</text></g>
+ <path d="M125 500h110v20H125" fill="#d2d9dd" stroke="#8c9aa2"/><text x="180" y="514" text-anchor="middle" font-family="Arial" font-size="9" font-weight="800" fill="#38464f">TRILHO DIN</text>
+</svg>

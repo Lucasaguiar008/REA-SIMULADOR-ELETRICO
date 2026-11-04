@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="--signal-dark:#0b3182;--signal-off:#1557b8;--signal-on:#18b8ff;--signal-edge:#2589ff;--signal-ring:#75d8ff;--signal-glow:#1e88e5" viewBox="0 0 200 300" role="img" aria-label="Sinalizador azul">
+  <defs>
+    <linearGradient id="pl-body" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#464c51"/>
+      <stop offset="0.48" stop-color="#171b1f"/>
+      <stop offset="1" stop-color="#30363b"/>
+    </linearGradient>
+    <linearGradient id="pl-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f8fafc"/>
+      <stop offset="0.45" stop-color="#89969f"/>
+      <stop offset="0.7" stop-color="#eef2f4"/>
+      <stop offset="1" stop-color="#59656d"/>
+    </linearGradient>
+    <filter id="pl-shadow" x="-30%" y="-20%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-opacity=".42"/>
+    </filter>
+  </defs>
+  <g filter="url(#pl-shadow)">
+    <path d="M35 4h130l12 10 9 54-8 16v56l-14 14v125l-15 17H51l-15-17V154l-14-14V84l-8-16 9-54z" fill="url(#pl-body)" stroke="#090b0d" stroke-width="4"/>
+    <path d="M25 14h45l8 9v21H21zM130 14h45l4 30h-57V23z" fill="#292d31" stroke="#090b0d" stroke-width="3"/>
+    <path d="M19 72h162v65H19z" fill="#111416" stroke="#050607" stroke-width="3"/>
+    <rect x="32.242" y="3.313" width="65" height="67" rx="6" fill="#f2f3f2" stroke="#b7b7b2" stroke-width="2"/>
+    <rect x="102.758" y="4.593" width="65" height="67" rx="6" fill="#f2f3f2" stroke="#b7b7b2" stroke-width="2"/>
+    <rect x="87" y="44" width="26" height="65" fill="#1b1e21"/>
+    <text x="54" y="62" text-anchor="middle" font-family="Arial" font-size="17" font-weight="900" fill="#111827" style="white-space: pre;">X1</text>
+    <text x="146" y="62" text-anchor="middle" font-family="Arial" font-size="17" font-weight="900" fill="#111827" style="white-space: pre;">X2</text>
+    <g data-terminal="X1" transform="matrix(1, 0, 0, 1, 10.241821, -62.304413)">
+      <circle cx="54" cy="83" r="17" fill="#b67a18" data-wire-anchor="X1"/>
+      <circle cx="54" cy="83" r="13" fill="url(#pl-metal)"/>
+      <path d="M45 83h18M54 74v18" stroke="#fff" stroke-width="4"/>
+    </g>
+    <g data-terminal="X2" transform="matrix(1, 0, 0, 1, -8.534851, -60.597443)">
+      <circle cx="146" cy="83" r="17" fill="#b67a18" data-wire-anchor="X2"/>
+      <circle cx="146" cy="83" r="13" fill="url(#pl-metal)"/>
+      <path d="M137 83h18M146 74v18" stroke="#fff" stroke-width="4"/>
+    </g>
+    <g transform="translate(100 79)" stroke="#f8fafc" stroke-width="3" fill="none">
+      <circle r="9"/>
+      <path d="M-7-7L7 7M7-7L-7 7"/>
+    </g>
+    <text x="100" y="123" text-anchor="middle" font-family="Arial" font-size="11" font-weight="900" fill="#ffffff" style="white-space: pre;">SINALIZADOR • X1–X2</text>
+    <path d="M47 132h106l13 18v28H34v-28z" fill="#30353a" stroke="#0a0d0f" stroke-width="4"/>
+    <path d="M54 139h92l11 15v19H43v-19z" fill="#7b858c" stroke="#d8dee2" stroke-width="2"/>
+    <circle cx="100" cy="211" r="75" fill="#0b0d0f" stroke="#353a3e" stroke-width="7"/>
+    <circle cx="100" cy="211" r="66" fill="#24282c" stroke="#050607" stroke-width="5"/>
+    <circle cx="100" cy="211" r="68" fill="#050607" stroke="#3f474d" stroke-width="3"/>
+    <g data-signal-lens="true">
+      <ellipse cx="100" cy="214" rx="65" ry="66" fill="var(--signal-dark,#064e3b)"/>
+      <circle data-signal-glow="true" cx="100" cy="207" r="65" fill="var(--signal-off,#08724f)" stroke="var(--signal-edge,#19c77b)" stroke-width="2"/>
+      <circle cx="100" cy="207" r="54" fill="none" stroke="var(--signal-ring,#73ffae)" stroke-width="2.2" opacity=".58"/>
+      <circle cx="100" cy="207" r="42" fill="none" stroke="var(--signal-ring,#73ffae)" stroke-width="2.2" opacity=".48"/>
+      <circle cx="100" cy="207" r="29" fill="none" stroke="var(--signal-ring,#73ffae)" stroke-width="2.2" opacity=".4"/>
+      <ellipse cx="79" cy="180" rx="20" ry="10" fill="#fff" opacity=".28"/>
+    </g>
+  </g>
+</svg>

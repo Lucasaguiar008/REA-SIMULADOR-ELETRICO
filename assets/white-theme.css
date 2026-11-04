@@ -1,0 +1,819 @@
+/* ==========================================================================
+   TechRib Simulator — Tema de Fundo Branco (White Theme Override)
+   Mantém 100% de fidelidade estrutural, ícones e SVGs de componentes,
+   convertendo todas as superfícies da interface e da folha para fundo branco.
+   ========================================================================== */
+
+:root {
+  color-scheme: light !important;
+  --bg-page: #ffffff !important;
+  --bg-surface: #ffffff !important;
+  --bg-panel: #f8fafc !important;
+  --bg-muted: #f1f5f9 !important;
+  --line-soft: #cbd5e1 !important;
+  --line-strong: #94a3b8 !important;
+  --text-main: #0f172a !important;
+  --text-soft: #475569 !important;
+  --accent-blue: #0284c7 !important;
+  --accent-orange: #f57c00 !important;
+  --sheet-border: #0284c7 !important;
+  --tr-bg: #ffffff !important;
+  --tr-panel: #ffffff !important;
+  --tr-panel-2: #f8fafc !important;
+  --tr-panel-3: #f1f5f9 !important;
+  --tr-line: #cbd5e1 !important;
+  --tr-text: #0f172a !important;
+  --tr-muted: #475569 !important;
+}
+
+html,
+body,
+html body .workbench {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* --- Topbar --- */
+html body .workbench-topbar {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05) !important;
+}
+
+html body .topbar-brand {
+  border-right: 1px solid #e2e8f0 !important;
+}
+
+html body .brand-title,
+html body .brand-name,
+html body .workbench .brand span {
+  color: #0f172a !important;
+}
+
+html body .brand-subtitle,
+html body .brand-tag,
+html body .workbench .brand small {
+  color: #0284c7 !important;
+}
+
+html body .brand-badge {
+  background: linear-gradient(145deg, #f57c00, #d96b00) !important;
+  color: #ffffff !important;
+}
+
+html body .project-title {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html body .project-title > span {
+  color: #0284c7 !important;
+}
+
+html body .project-title button,
+html body .project-title strong,
+html body .project-title input {
+  color: #0f172a !important;
+}
+
+html body .project-title small {
+  color: #64748b !important;
+}
+
+html body .top-action,
+html body .user-button,
+html body .techrib-plan-chip {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+}
+
+html body .top-action:hover,
+html body .user-button:hover {
+  background: #f1f5f9 !important;
+  border-color: #0284c7 !important;
+  color: #0f172a !important;
+}
+
+html body .top-action.simulate {
+  background: linear-gradient(180deg, #f59b23, #ff7a00) !important;
+  border-color: #d96b00 !important;
+  color: #ffffff !important;
+}
+
+html body .top-action.accent {
+  background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%) !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+}
+
+html body .simulation-mode-badge {
+  background: #f0f9ff !important;
+  border: 1px solid #bae6fd !important;
+  color: #0369a1 !important;
+}
+
+html body .user-avatar {
+  background: #e0f2fe !important;
+  color: #0369a1 !important;
+}
+
+/* --- CAD Ribbon & Menus --- */
+html body .cad-ribbon {
+  background: #ffffff !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04) !important;
+}
+
+html body .cad-menu {
+  background: #f8fafc !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+html body .cad-menu-item,
+html body .cad-menu button {
+  background: transparent !important;
+  color: #334155 !important;
+}
+
+html body .cad-menu-item:hover,
+html body .cad-menu-item.active,
+html body .cad-menu button:hover,
+html body .cad-menu button.active {
+  background: #e0f2fe !important;
+  border-color: #bae6fd !important;
+  color: #0369a1 !important;
+}
+
+html body .cad-tools {
+  background: #ffffff !important;
+}
+
+html body .tool-group {
+  background: #f8fafc !important;
+  border-right-color: #cbd5e1 !important;
+}
+
+html body .tool-group-title {
+  color: #475569 !important;
+  border-bottom-color: #e2e8f0 !important;
+}
+
+html body .tool-button,
+html body .ribbon-btn,
+html body .cad-tools button,
+html body .tool-group button {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+html body .tool-button:hover,
+html body .ribbon-btn:hover,
+html body .cad-tools button:hover,
+html body .tool-group button:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+  color: #0f172a !important;
+}
+
+html body .tool-button.is-active,
+html body .tool-button.active,
+html body .cad-tools button.is-active,
+html body .cad-tools button.active,
+html body .tool-group button.active {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+  color: #0369a1 !important;
+  box-shadow: inset 0 0 0 1px rgba(2, 132, 199, 0.25) !important;
+}
+
+html body .simulation-group button:first-child {
+  color: #15803d !important;
+}
+
+html body .simulation-group button:last-child {
+  color: #dc2626 !important;
+}
+
+html body .tool-group select,
+html body .tool-group input,
+html body .sheet-controls select,
+html body .sheet-controls input {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html body .wire-workflow-group {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}
+
+html body .wire-palette-dropdown,
+html body .cad-menu-popover,
+html body .library-component-menu {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12) !important;
+}
+
+html body .wire-palette-option,
+html body .cad-menu-popover button,
+html body .library-component-menu button {
+  background: #ffffff !important;
+  color: #1e293b !important;
+  border-color: #e2e8f0 !important;
+}
+
+html body .wire-palette-option:hover,
+html body .cad-menu-popover button:hover,
+html body .library-component-menu button:hover {
+  background: #f0f9ff !important;
+  color: #0284c7 !important;
+}
+
+/* --- Left Component Sidebar & Library --- */
+html body .component-sidebar {
+  background: #ffffff !important;
+  border-right: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 4px 0 16px rgba(15, 23, 42, 0.04) !important;
+}
+
+html body .sidebar-heading {
+  background: #f8fafc !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html body .sidebar-heading h2 {
+  color: #0f172a !important;
+}
+
+html body .sidebar-heading p,
+html body .sidebar-heading span {
+  color: #0284c7 !important;
+}
+
+html body .component-search {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+html body .component-search span {
+  color: #64748b !important;
+}
+
+html body .component-search input {
+  background: transparent !important;
+  border: 0 !important;
+  color: #0f172a !important;
+}
+
+html body .component-search input::placeholder {
+  color: #64748b !important;
+}
+
+html body .library-tabs {
+  background: #f8fafc !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+}
+
+html body .library-tabs button,
+html body .library-tab {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #334155 !important;
+}
+
+html body .library-tabs button:hover,
+html body .library-tab:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+  color: #0f172a !important;
+}
+
+html body .library-tabs .active,
+html body .library-tab.is-active,
+html body .library-tab.active {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+}
+
+html body .library-scroll {
+  background: #ffffff !important;
+  scrollbar-color: #cbd5e1 #f8fafc !important;
+}
+
+html body .library-group,
+html body .library-domain {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html body .group-title,
+html body .techrib-registry-group > .group-title,
+html body .library-domain-title,
+html body .library-group-header {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html body .group-title:hover,
+html body .techrib-registry-group > .group-title:hover,
+html body .library-domain-title:hover,
+html body .library-group-header:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+}
+
+html body .group-title b,
+html body .techrib-registry-group > .group-title b,
+html body .library-domain-name,
+html body .library-domain-title strong {
+  color: #0f172a !important;
+}
+
+html body .library-domain-meta,
+html body .library-domain-count {
+  background: #e2e8f0 !important;
+  color: #334155 !important;
+}
+
+html body .library-families {
+  background: #ffffff !important;
+  border-left-color: #cbd5e1 !important;
+}
+
+html body .library-family {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+html body .library-family-title {
+  background: #f1f5f9 !important;
+  color: #1e293b !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+html body .library-family-title:hover {
+  background: #e0f2fe !important;
+  color: #0369a1 !important;
+}
+
+html body .component-grid,
+html body .library-items {
+  background: #ffffff !important;
+}
+
+html body .component-item {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+}
+
+html body .component-item:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.12) !important;
+}
+
+html body .component-item.is-selected,
+html body .component-item.active {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+}
+
+html body .component-item.logic-thumb:after {
+  background: #e0f2fe !important;
+  color: #0369a1 !important;
+}
+
+html body .component-thumb,
+html body .component-preview,
+html body .component-icon {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+html body .component-name,
+html body .component-item strong,
+html body .component-item span {
+  color: #0f172a !important;
+}
+
+html body .component-meta,
+html body .component-item small {
+  color: #475569 !important;
+}
+
+html body .sidebar-footer {
+  background: #f8fafc !important;
+  border-top: 1px solid #cbd5e1 !important;
+  color: #475569 !important;
+}
+
+html body .sidebar-footer button {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+/* --- Examples Sidebar & Cards --- */
+html body .examples-group {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html body .examples-group-header h3 {
+  color: #0f172a !important;
+}
+
+html body .examples-group-header p {
+  color: #475569 !important;
+}
+
+html body .example-tools input,
+html body .example-tools select,
+html body .example-filter-row button {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+html body .example-filter-row button.is-active {
+  background: #0284c7 !important;
+  border-color: #0284c7 !important;
+  color: #ffffff !important;
+}
+
+html body .example-category {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+html body .example-category-toggle {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+html body .example-card,
+html body .managed-standard-card,
+html body .user-example-card {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05) !important;
+}
+
+html body .example-card:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+}
+
+html body .example-card strong,
+html body .example-card h4 {
+  color: #0f172a !important;
+}
+
+html body .example-card span,
+html body .example-card p,
+html body .example-card small {
+  color: #475569 !important;
+}
+
+/* --- Main Drawing Area, Canvas Viewport & Schematic Sheet (FUNDO BRANCO) --- */
+html body .drawing-area {
+  background: #f8fafc !important;
+}
+
+html body .drawing-toolbar {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08) !important;
+}
+
+html body .drawing-toolbar button,
+html body .drawing-toolbar select,
+html body .drawing-toolbar .toolbar-chip {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+html body .drawing-toolbar button:hover,
+html body .drawing-toolbar .active {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+  color: #0369a1 !important;
+}
+
+/* Força fundo branco tanto em data-sheet-theme="light" quanto "dark" */
+html body .canvas-viewport,
+html body .canvas-viewport[data-sheet-theme="light"],
+html body .canvas-viewport[data-sheet-theme="dark"] {
+  background-color: #f1f5f9 !important;
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.20) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.20) 1px, transparent 1px),
+    linear-gradient(to right, rgba(100, 116, 139, 0.30) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(100, 116, 139, 0.30) 1px, transparent 1px) !important;
+}
+
+html body .schematic-sheet,
+html body .schematic-sheet[data-sheet-theme="light"],
+html body .schematic-sheet[data-sheet-theme="dark"] {
+  background-color: #ffffff !important;
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.18) 1px, transparent 1px),
+    linear-gradient(to right, rgba(100, 116, 139, 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(100, 116, 139, 0.28) 1px, transparent 1px) !important;
+  border: 2px solid #0284c7 !important;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08) !important;
+  color: #0f172a !important;
+}
+
+html body .schematic-sheet::before {
+  border-color: rgba(2, 132, 199, 0.45) !important;
+}
+
+html body .sheet-frame,
+html body .sheet-grid {
+  background: transparent !important;
+}
+
+html body .title-block,
+html body .schematic-sheet[data-sheet-theme="dark"] .title-block {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-color: #0284c7 !important;
+  color: #0f172a !important;
+}
+
+html body .title-brand b {
+  font-size: 16px !important;
+  letter-spacing: -0.5px !important;
+  white-space: nowrap !important;
+  color: #0284c7 !important;
+}
+
+html body .title-brand b i {
+  color: #f57c00 !important;
+}
+
+/* Oculta qualquer elemento residual de login, conta ou paywall */
+html body .techrib-plan-chip,
+html body .user-button,
+html body .saas-upgrade-modal,
+html body .saas-clone-example {
+  display: none !important;
+}
+
+html body .title-block div,
+html body .title-block span,
+html body .title-block strong,
+html body .title-block input {
+  border-color: rgba(2, 132, 199, 0.35) !important;
+  color: #0f172a !important;
+}
+
+html body .sheet-empty,
+html body .schematic-sheet[data-sheet-theme="dark"] .sheet-empty {
+  background: rgba(248, 250, 252, 0.92) !important;
+  border: 1px dashed #94a3b8 !important;
+  color: #334155 !important;
+}
+
+html body .sheet-empty h3,
+html body .sheet-empty strong {
+  color: #0f172a !important;
+}
+
+html body .sheet-empty p,
+html body .sheet-empty span {
+  color: #475569 !important;
+}
+
+/* Labels de componentes posicionados na folha */
+html body .placed-component .component-label,
+html body .placed-component .component-tag,
+html body .schematic-node-label {
+  color: #0f172a !important;
+  background: rgba(255, 255, 255, 0.88) !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* --- Statusbar --- */
+html body .canvas-statusbar {
+  background: #ffffff !important;
+  border-top: 1px solid #cbd5e1 !important;
+  color: #334155 !important;
+}
+
+html body .canvas-statusbar span,
+html body .canvas-statusbar strong,
+html body .status-ready,
+html body .zoom-control output,
+html body .zoom-control button {
+  color: #0f172a !important;
+}
+
+html body .sheet-format-label select {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+/* --- Modals: Primeiro Acesso (First Access) --- */
+html body .techrib-first-access {
+  background: rgba(15, 23, 42, 0.35) !important;
+}
+
+html body .techrib-first-access-card {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16) !important;
+}
+
+html body .techrib-first-access-brand {
+  color: #0284c7 !important;
+}
+
+html body .techrib-first-access-kicker {
+  color: #0284c7 !important;
+}
+
+html body .techrib-first-access h1,
+html body .techrib-first-access h2,
+html body .techrib-first-access-card h1,
+html body .techrib-first-access-card h2,
+html body .techrib-first-access-card h3,
+html body .techrib-first-access-card strong,
+html body .techrib-first-access-options b {
+  color: #0f172a !important;
+}
+
+html body .techrib-first-access-lead,
+html body .techrib-first-access-card p,
+html body .techrib-first-access-options small {
+  color: #475569 !important;
+}
+
+html body .techrib-first-access-options button {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html body .techrib-first-access-options button:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+}
+
+html body .techrib-first-access-options .choice-icon {
+  background: #e0f2fe !important;
+  color: #0284c7 !important;
+  border: 1px solid #bae6fd !important;
+}
+
+html body .techrib-first-access-options i {
+  color: #0284c7 !important;
+}
+
+html body .techrib-first-access-explore,
+html body .techrib-first-access-back {
+  background: #f8fafc !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0284c7 !important;
+}
+
+html body .techrib-first-access-explore:hover,
+html body .techrib-first-access-back:hover {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+}
+
+html body .techrib-first-access-close {
+  background: #f1f5f9 !important;
+  color: #334155 !important;
+}
+
+html body .techrib-first-access-close:hover {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html body .techrib-first-access-skip {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #475569 !important;
+}
+
+/* --- Central de Exemplos (Examples Center) --- */
+html body .techrib-examples-center-overlay {
+  background: rgba(15, 23, 42, 0.35) !important;
+}
+
+html body .techrib-examples-center-shell {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.18) !important;
+}
+
+html body .techrib-examples-center-top {
+  background: #f8fafc !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+}
+
+html body .techrib-examples-center-title strong {
+  color: #0f172a !important;
+}
+
+html body .techrib-examples-center-title span {
+  color: #475569 !important;
+}
+
+html body .techrib-examples-center-side {
+  background: #f8fafc !important;
+  border-right: 1px solid #cbd5e1 !important;
+}
+
+html body .techrib-examples-center-main {
+  background: #ffffff !important;
+}
+
+html body .techrib-examples-center-hero,
+html body .techrib-examples-center-card,
+html body .techrib-examples-center-stat,
+html body .techrib-examples-center-cat,
+html body .techrib-examples-center-filter,
+html body .techrib-examples-center-search input,
+html body .techrib-examples-center-search select {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html body .techrib-examples-center-card:hover,
+html body .techrib-examples-center-cat:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+}
+
+html body .techrib-examples-center-card h4,
+html body .techrib-examples-center-hero h3 {
+  color: #0f172a !important;
+}
+
+html body .techrib-examples-center-card p,
+html body .techrib-examples-center-hero p {
+  color: #475569 !important;
+}
+
+/* --- Painéis de Diagnóstico, Codegen e Diálogos --- */
+html body #techrib-diagnostic-panel,
+html body .codegen-dialog,
+html body .component-import-dialog,
+html body .server-project-dialog,
+html body .svg-editor-dialog,
+html body .techrib-learn-coach {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.15) !important;
+}
+
+html body #techrib-diagnostic-panel header,
+html body .component-import-dialog > header,
+html body .component-import-dialog > footer,
+html body .techrib-learn-head {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html body #techrib-diagnostic-panel header strong,
+html body .techrib-learn-title b,
+html body .techrib-learn-question {
+  color: #0f172a !important;
+}
+
+html body .diag-card,
+html body .diag-actions button,
+html body .techrib-learn-actions button {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}

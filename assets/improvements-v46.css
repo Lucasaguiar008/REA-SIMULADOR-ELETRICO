@@ -1,0 +1,416 @@
+
+/* TechRib v46 - melhorias de produtividade, propriedades e diagnóstico */
+.properties-panel{position:fixed;right:18px;top:82px;z-index:9500;width:300px;max-height:calc(100vh - 120px);overflow:auto;background:#fff;border:1px solid #cbd5e1;border-radius:12px;box-shadow:0 18px 50px #0f172a33;transform:translateX(calc(100% + 40px));transition:transform .2s ease;padding-bottom:12px}.properties-panel.open{transform:none}.properties-panel>header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:13px 14px;background:#0a2a3a;color:#fff}.properties-panel header small{display:block;font:700 8px Inter;letter-spacing:.14em;color:#6ee7f9}.properties-panel h3{margin:2px 0 0;font:800 16px Inter}.properties-panel header button{width:30px;height:30px;border:0;border-radius:8px;background:#ffffff14;color:#fff;font-size:20px;cursor:pointer}.properties-panel [data-prop-general],.properties-panel section{padding:12px 14px;border-bottom:1px solid #e2e8f0}.properties-panel h4{margin:0 0 9px;color:#173b55;font:800 10px Inter;text-transform:uppercase;letter-spacing:.08em}.properties-panel label{display:grid;gap:5px;margin:8px 0;color:#475569;font:700 9px Inter}.properties-panel input,.properties-panel select{height:34px;border:1px solid #cbd5e1;border-radius:7px;padding:0 9px;background:#fff;color:#0f172a;font:600 11px Inter}.properties-panel .check{display:flex;grid-template-columns:auto 1fr;align-items:center}.properties-panel .check input{width:16px;height:16px}.properties-panel .prop-type{padding:7px 9px;margin-bottom:8px;border-radius:7px;background:#f1f5f9;color:#173b55;font:700 10px Inter}.properties-panel footer{padding:12px 14px}.properties-panel footer button{width:100%;height:36px;border:0;border-radius:8px;background:#f57c00;color:#fff;font:800 10px Inter;cursor:pointer}.properties-empty{padding:22px 14px;color:#64748b;font:600 10px/1.5 Inter}.report-modal{position:fixed;inset:0;z-index:10000;background:#0f172a66;display:grid;place-items:center;padding:20px}.report-modal[hidden]{display:none}.report-dialog{width:min(620px,94vw);max-height:80vh;overflow:hidden;background:#fff;border-radius:14px;box-shadow:0 24px 70px #0f172a55;display:grid;grid-template-rows:auto 1fr auto}.report-dialog header,.report-dialog footer{display:flex;align-items:center;justify-content:space-between;padding:12px 15px;border-bottom:1px solid #e2e8f0}.report-dialog footer{border:0;border-top:1px solid #e2e8f0;justify-content:flex-end;gap:8px}.report-dialog h3{margin:0;color:#173b55;font:800 15px Inter}.report-dialog button{height:32px;border:1px solid #cbd5e1;border-radius:7px;background:#fff;color:#173b55;font:700 10px Inter;cursor:pointer;padding:0 12px}.report-body{overflow:auto;padding:10px 15px}.report-line{padding:9px 10px;border-bottom:1px solid #eef2f7;color:#334155;font:600 10px/1.4 Inter}.dev-anchors [data-wire-anchor],.dev-anchors .wire-anchor-hitbox{fill:#ffd54f!important;fill-opacity:.75!important;stroke:#f57c00!important;stroke-width:2!important}.dev-anchors [data-terminal]{filter:drop-shadow(0 0 3px #ffd54faa)}[data-action="toggle-anchors"].active{background:#fff3e0!important;color:#ea580c!important}.canvas-statusbar [data-autosave-status]{color:#0f766e;font-weight:700}@media(max-width:767px){.properties-panel{right:8px;top:68px;width:min(92vw,320px);max-height:calc(100vh - 140px)}}
+
+
+/* Menu de contexto v46.1: Editar / Propriedades / Excluir */
+.component-context-menu{min-width:170px!important;padding:6px!important}
+.component-context-menu button{display:block!important;width:100%!important;padding:9px 11px!important;border:0!important;border-radius:6px!important;background:transparent!important;color:#173b55!important;font:700 11px Inter,Arial,sans-serif!important;text-align:left!important;cursor:pointer!important}
+.component-context-menu button:hover{background:#eff6ff!important;color:#0b2a5b!important}
+.component-context-menu [data-context-delete]{margin-top:4px!important;border-top:1px solid #e2e8f0!important;border-radius:0 0 6px 6px!important;color:#b91c1c!important}
+.component-context-menu [data-context-delete]:hover{background:#fef2f2!important;color:#991b1b!important}
+
+
+/* Editor de texto avançado v46.2 */
+.text-editor-modal{position:fixed;inset:0;z-index:11000;display:grid;place-items:center;padding:18px;background:#0f172a66}.text-editor-modal[hidden]{display:none}.text-editor-dialog{width:min(610px,95vw);max-height:90vh;overflow:auto;background:#fff;border:1px solid #cbd5e1;border-radius:14px;box-shadow:0 24px 70px #0f172a55}.text-editor-dialog>header{display:flex;align-items:center;justify-content:space-between;padding:13px 15px;background:#0a2a3a;color:#fff}.text-editor-dialog header small{display:block;color:#67e8f9;font:800 8px Inter;letter-spacing:.14em}.text-editor-dialog h3{margin:2px 0 0;font:800 16px Inter}.text-editor-dialog header button{width:30px;height:30px;border:0;border-radius:8px;background:#ffffff18;color:#fff;font-size:20px;cursor:pointer}.text-editor-body{padding:14px 16px}.text-editor-body label{display:grid;gap:5px;color:#475569;font:700 9px Inter}.text-editor-main textarea{min-height:92px;resize:vertical;border:1px solid #cbd5e1;border-radius:8px;padding:9px 10px;font:600 12px/1.45 Inter;color:#0f172a;outline:none}.text-editor-main textarea:focus,.text-editor-grid input:focus,.text-editor-grid select:focus{border-color:#38a8df;box-shadow:0 0 0 2px #38a8df22}.text-editor-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:9px;margin-top:12px}.text-editor-grid input,.text-editor-grid select{height:35px;min-width:0;border:1px solid #cbd5e1;border-radius:7px;padding:0 8px;background:#fff;color:#0f172a;font:600 10px Inter}.text-editor-grid input[type="color"]{padding:3px;width:100%}.text-editor-options{display:flex;gap:16px;margin:12px 0}.text-editor-options label{display:flex;align-items:center;gap:6px}.text-editor-options input{width:16px;height:16px}.text-editor-preview-wrap{padding:10px;border:1px dashed #cbd5e1;border-radius:9px;background:#f8fafc;overflow:auto}.text-editor-preview-wrap>small{display:block;margin-bottom:7px;color:#64748b;font:800 7px Inter;letter-spacing:.12em}.text-editor-preview-wrap>[data-text-editor-preview]{min-height:56px;padding:7px;background:#fff;border-radius:6px;white-space:pre-wrap;overflow-wrap:anywhere}.text-editor-dialog>footer{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 15px;border-top:1px solid #e2e8f0}.text-editor-dialog>footer span{color:#64748b;font:600 8px/1.4 Inter}.text-editor-dialog>footer button{flex:0 0 auto;height:36px;padding:0 14px;border:0;border-radius:8px;background:#f57c00;color:#fff;font:800 10px Inter;cursor:pointer}.placed-component.text-object{overflow:visible!important}.placed-component.text-object .text-resize-handle{display:none;position:absolute;right:-7px;bottom:-7px;width:15px;height:15px;padding:0;border:2px solid #fff;border-radius:50%;background:#168ed1;box-shadow:0 0 0 1px #0c6fa8;cursor:nwse-resize;z-index:20}.placed-component.text-object.selected .text-resize-handle,.placed-component.text-object.multi-selected .text-resize-handle{display:block}.placed-component.text-object>svg{max-width:none!important;overflow:visible!important}.placed-component.text-object text{user-select:none}.text-editor-modal+.report-modal{}@media(max-width:650px){.text-editor-grid{grid-template-columns:1fr 1fr}.text-editor-dialog>footer{align-items:stretch;flex-direction:column}.text-editor-dialog>footer button{width:100%}}@media print{.text-editor-modal,.text-resize-handle{display:none!important}}
+
+/* V46 - roteamento automático e microponte discreta em cruzamentos sem conexão */
+.schematic-sheet{--techrib-wire-crossing-cut:#fff}
+.schematic-sheet[data-sheet-theme="dark"]{--techrib-wire-crossing-cut:#29343d}
+.wire-layer .wire-crossing-bridge{pointer-events:none}
+.wire-layer .wire-crossing-gap{fill:none;stroke:var(--techrib-wire-crossing-cut,#fff);stroke-linecap:round;stroke-linejoin:round}
+.wire-layer .wire-crossing-arc{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.wire-layer .wire-crossing-pe-stripe{fill:none;stroke:#facc15;stroke-dasharray:4 4;stroke-linecap:butt}
+.wire-context-menu [data-wire-organize]{font-weight:700}
+
+
+/* V46 - plaquetas amarelas de identificação */
+.plaque-editor-modal{position:fixed;inset:0;z-index:11100;display:grid;place-items:center;padding:18px;background:#0f172a66}.plaque-editor-modal[hidden]{display:none}.plaque-editor-dialog{width:min(520px,95vw);background:#fff;border:1px solid #cbd5e1;border-radius:14px;box-shadow:0 24px 70px #0f172a55;overflow:hidden}.plaque-editor-dialog>header{display:flex;align-items:center;justify-content:space-between;padding:13px 15px;background:#0a2a3a;color:#fff}.plaque-editor-dialog header small{display:block;color:#fde047;font:800 8px Inter;letter-spacing:.13em}.plaque-editor-dialog h3{margin:2px 0 0;font:800 16px Inter}.plaque-editor-dialog header button{width:30px;height:30px;border:0;border-radius:8px;background:#ffffff18;color:#fff;font-size:20px;cursor:pointer}.plaque-editor-body{padding:15px}.plaque-editor-body label{display:grid;gap:6px;color:#475569;font:700 9px Inter}.plaque-editor-body input{height:37px;border:1px solid #cbd5e1;border-radius:8px;padding:0 10px;color:#0f172a;font:700 11px Inter;outline:none}.plaque-editor-body input:focus{border-color:#eab308;box-shadow:0 0 0 2px #facc1533}.plaque-editor-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-top:12px}.plaque-editor-preview-wrap{margin-top:14px;padding:10px;border:1px dashed #cbd5e1;border-radius:9px;background:#f8fafc;overflow:auto}.plaque-editor-preview-wrap>small{display:block;margin-bottom:8px;color:#64748b;font:800 7px Inter;letter-spacing:.12em}.plaque-editor-preview-wrap>[data-plaque-editor-preview]{display:flex;align-items:center;justify-content:center;box-sizing:border-box;max-width:100%;padding:7px 12px;border:3px solid #8a6500;border-radius:8px;background:#ffd400;color:#111827;font-family:Arial,Inter,sans-serif;font-weight:900;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:inset 0 2px 0 #fff7a8}.plaque-editor-dialog>footer{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 15px;border-top:1px solid #e2e8f0}.plaque-editor-dialog>footer span{color:#64748b;font:600 8px/1.4 Inter}.plaque-editor-dialog>footer button{height:36px;padding:0 14px;border:0;border-radius:8px;background:#f57c00;color:#fff;font:800 10px Inter;cursor:pointer}.placed-component.plaque-object{overflow:visible!important}.placed-component.plaque-object>svg{max-width:none!important;overflow:visible!important;filter:drop-shadow(0 2px 2px #0002)}.placed-component.plaque-object>small{display:none!important}.placed-component.plaque-object .plaque-resize-handle{display:none;position:absolute;right:-7px;bottom:-7px;width:15px;height:15px;padding:0;border:2px solid #fff;border-radius:50%;background:#eab308;box-shadow:0 0 0 1px #8a6500;cursor:nwse-resize;z-index:20}.placed-component.plaque-object.selected .plaque-resize-handle,.placed-component.plaque-object.multi-selected .plaque-resize-handle{display:block}.component-context-menu:not(.text-menu) [data-text-size]{display:none!important}@media(max-width:560px){.plaque-editor-grid{grid-template-columns:1fr 1fr}.plaque-editor-dialog>footer{align-items:stretch;flex-direction:column}.plaque-editor-dialog>footer button{width:100%}}@media print{.plaque-editor-modal,.plaque-resize-handle{display:none!important}}
+
+/* Etapa 1 - comandos industriais adicionais */
+.placed-component[data-type="contator-reversor"].device-active [data-device-state],
+.placed-component[data-type="contator-4p"].energized [data-device-state],
+.placed-component[data-type="rele-estrela-triangulo"].device-active [data-device-state],
+.placed-component[data-type="temporizador-estrela-triangulo"].device-active [data-device-state]{font-weight:900}
+.placed-component[data-type="motor-trifasico-6t"].running [data-motor-state]{fill:#bbf7d0}
+
+
+/* TechRib v47 Etapa 4 - diagrama unifilar automático */
+.unifilar-modal{position:fixed;inset:0;z-index:11200;display:grid;place-items:center;padding:18px;background:#0f172a70}.unifilar-modal[hidden]{display:none}.unifilar-dialog{width:min(1120px,96vw);height:min(760px,90vh);overflow:hidden;background:#fff;border:1px solid #cbd5e1;border-radius:15px;box-shadow:0 28px 80px #0f172a66;display:grid;grid-template-rows:auto auto 1fr auto}.unifilar-dialog>header{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;background:#0a2a3a;color:#fff}.unifilar-dialog header small{display:block;color:#67e8f9;font:800 8px Inter;letter-spacing:.14em}.unifilar-dialog h3{margin:2px 0 0;font:800 17px Inter}.unifilar-dialog header button{width:32px;height:32px;border:0;border-radius:8px;background:#ffffff18;color:#fff;font-size:20px;cursor:pointer}.unifilar-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#475569;font:700 9px Inter}.unifilar-toolbar>div{display:flex;gap:7px}.unifilar-toolbar button,.unifilar-dialog>footer button{height:33px;padding:0 12px;border:1px solid #cbd5e1;border-radius:7px;background:#fff;color:#173b55;font:800 9px Inter;cursor:pointer}.unifilar-toolbar [data-unifilar-download-png]{background:#f57c00;border-color:#f57c00;color:#fff}.unifilar-toolbar [data-unifilar-download-pdf]{background:#173b55;border-color:#173b55;color:#fff}.unifilar-canvas{min-height:0;overflow:auto;background:#eef2f6;padding:16px}.unifilar-canvas svg{display:block;min-width:760px;width:100%;height:auto;background:#fff;border:1px solid #94a3b8;box-shadow:0 5px 18px #0f172a14}.unifilar-dialog>footer{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 14px;border-top:1px solid #e2e8f0;color:#64748b;font:600 8px/1.4 Inter}.unifilar-symbol-label{font-family:Arial,Inter,sans-serif;fill:#0f172a;font-size:15px;font-weight:800;text-anchor:middle}.unifilar-symbol-desc{font-family:Arial,Inter,sans-serif;fill:#64748b;font-size:10px;font-weight:600;text-anchor:middle}.unifilar-wire{stroke:#111827;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.unifilar-node{stroke:#0f2d46;stroke-width:2;fill:#fff}.unifilar-bus{stroke:#0f2d46;stroke-width:4;fill:none}.unifilar-title{font-family:Arial,Inter,sans-serif;fill:#0f2d46;font-size:22px;font-weight:800}.unifilar-subtitle{font-family:Arial,Inter,sans-serif;fill:#64748b;font-size:11px;font-weight:600}.unifilar-note{font-family:Arial,Inter,sans-serif;fill:#64748b;font-size:9px;font-weight:600}@media(max-width:700px){.unifilar-dialog{width:98vw;height:88vh}.unifilar-toolbar,.unifilar-dialog>footer{align-items:stretch;flex-direction:column}.unifilar-toolbar>div{width:100%}.unifilar-toolbar button{flex:1}.unifilar-canvas{padding:8px}}@media print{.unifilar-modal{display:none!important}}
+
+/* Etapa 4 multifilar */
+.multifilar-conductor{stroke:#111827;stroke-width:2.1;fill:none;stroke-linecap:round;stroke-linejoin:round}.multifilar-junction{fill:#111827;stroke:#fff;stroke-width:1}.unifilar-thin{stroke:#111827;stroke-width:1.8;fill:none;stroke-linecap:round}.unifilar-terminal-label{font-family:Arial,Inter,sans-serif;fill:#334155;font-size:8px;font-weight:700}.unifilar-wire-number{font-family:Arial,Inter,sans-serif;fill:#b45309;font-size:8px;font-weight:800;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}.unifilar-canvas svg{min-width:900px}.unifilar-dialog{width:min(1240px,97vw);height:min(820px,92vh)}
+
+
+/* TechRib v47.1 - biblioteca de símbolos multifilares IEC-style */
+.mf-symbol{stroke:#111827;stroke-width:1.65;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.mf-symbol-thin{stroke:#111827;stroke-width:1.25;fill:none;stroke-linecap:round}
+.mf-symbol-box{stroke:#111827;stroke-width:1.55;fill:#fff}
+.mf-symbol-dot{fill:#111827;stroke:none}
+.mf-trip-box{stroke:#111827;stroke-width:1.2;fill:#fff}
+.mf-mechanical{stroke:#475569;stroke-width:1.1;stroke-dasharray:4 3;fill:none}
+.mf-actuator{stroke:#111827;stroke-width:1.4;fill:#fff}
+.mf-terminal-circle{stroke:#111827;stroke-width:1.4;fill:#fff}
+.mf-terminal{font-family:Arial,Inter,sans-serif;fill:#111827;font-size:8px;font-weight:700}
+.mf-tag{font-family:Arial,Inter,sans-serif;fill:#0f172a;font-size:13px;font-weight:800}
+.mf-symbol-letter{font-family:Arial,Inter,sans-serif;fill:#111827;font-size:15px;font-weight:800}
+.mf-symbol-small{font-family:Arial,Inter,sans-serif;fill:#111827;font-size:9px;font-weight:700}
+
+/* Multifilar técnico V48 */
+.v48-section-title{font:800 18px Arial,sans-serif;fill:#0f2d46}.v48-label{font:700 11px Arial,sans-serif;fill:#0f172a}.v48-tag{font:800 12px Arial,sans-serif;fill:#0f172a}.v48-desc{font:600 9px Arial,sans-serif;fill:#64748b}.v48-terminal{font:700 10px Arial,sans-serif;fill:#334155}.v48-muted,.v48-empty{font:700 14px Arial,sans-serif;fill:#64748b}.v48-wire,.v48-control-wire,.v48-power-drop{stroke:#111827;stroke-width:3;fill:none}.v48-phase{stroke:#8b1a1a;stroke-width:3}.v48-pe{stroke:#129437;stroke-width:3}.v48-dot{fill:#111827}.v48-net-guide{stroke:#cbd5e1;stroke-width:1.5;stroke-dasharray:4 5}.v48-net-label{font:700 8px Arial,sans-serif;fill:#94a3b8}.v48-separator{stroke:#94a3b8;stroke-width:1.5;stroke-dasharray:8 8}
+
+/* V48.4.1 - correção visual do bloco de comando da Soft Starter */
+.v48-device-box{fill:#fff!important;stroke:#0f172a!important;stroke-width:2!important}
+
+
+/* V48.4.2 - multifilar dentro da mesma prancha do projeto */
+.multifilar-sheet-layer{position:absolute;z-index:6;left:30px;top:30px;right:30px;bottom:118px;width:calc(100% - 60px);height:calc(100% - 148px);display:none;background:#fff;pointer-events:none;overflow:visible}
+.schematic-sheet.multifilar-mode .multifilar-sheet-layer{display:block}
+.schematic-sheet.multifilar-mode .wire-layer,.schematic-sheet.multifilar-mode .placed-component,.schematic-sheet.multifilar-mode .sheet-empty{visibility:hidden!important}
+.schematic-sheet.multifilar-mode .title-block,.schematic-sheet.multifilar-mode .sheet-border{visibility:visible!important;z-index:9}
+.schematic-sheet.multifilar-mode{background-image:none!important;background-color:#fff!important}
+[data-action="multi-line"].active{background:#e7f3fb!important;color:#087ebc!important}
+@media print{.schematic-sheet.multifilar-mode .multifilar-sheet-layer{display:block!important}.schematic-sheet.multifilar-mode .wire-layer,.schematic-sheet.multifilar-mode .placed-component,.schematic-sheet.multifilar-mode .sheet-empty{display:none!important}}
+
+/* V48.4.3 - na visualização multifilar dentro da prancha, o rodapé técnico interno é ocultado porque o carimbo original já contém os dados do projeto. */
+.multifilar-sheet-layer .v48-standalone-note{display:none!important}
+
+
+/* TechRib 2026-09-04 — submenu Texto + bloco de texto técnico */
+.text-tool-menu{position:relative!important;display:flex!important;flex:0 0 28px!important;width:28px!important;height:28px!important}
+.tool-group .text-tool-trigger{display:flex!important;align-items:center!important;justify-content:center!important;gap:2px!important}
+.text-tool-trigger>span{font-size:8px!important;color:#7dd3fc!important;line-height:1!important}
+.text-tool-trigger[aria-expanded="true"]{background:#16425d!important;color:#fff!important;box-shadow:inset 0 -2px 0 #38bdf8!important}
+.text-tool-dropdown{position:absolute!important;z-index:22000!important;top:32px!important;left:-24px!important;width:220px!important;padding:6px!important;border:1px solid #3a6078!important;border-radius:8px!important;background:#0b1d2a!important;box-shadow:0 14px 32px #02061799!important}
+.text-tool-dropdown[hidden]{display:none!important}
+.tool-group .text-tool-dropdown .text-tool-option{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:9px!important;width:100%!important;min-width:0!important;height:36px!important;padding:0 9px!important;border:1px solid transparent!important;border-radius:6px!important;background:transparent!important;color:#d8e8f2!important;font:700 10px Inter,Arial,sans-serif!important;text-align:left!important}
+.tool-group .text-tool-dropdown .text-tool-option:hover,.tool-group .text-tool-dropdown .text-tool-option:focus-visible{background:#173e55!important;border-color:#38bdf8!important;outline:none!important}
+.text-tool-option>b{display:grid!important;place-items:center!important;width:24px!important;height:24px!important;border:1px solid #456579!important;border-radius:5px!important;background:#102a3b!important;color:#fff!important;font:900 13px Inter,Arial,sans-serif!important}
+.text-tool-option>span{white-space:nowrap!important}
+.text-block-editor-grid{grid-template-columns:1fr 1fr 1fr 1fr!important;padding-top:2px!important}
+.placed-component.text-block-object{overflow:visible!important}
+.placed-component.text-block-object>svg{max-width:none!important;overflow:hidden!important;filter:drop-shadow(0 2px 2px #0002)}
+.placed-component.text-block-object>small{display:none!important}
+.placed-component.text-block-object .text-block-resize-handle{display:none;position:absolute;right:-7px;bottom:-7px;width:16px!important;min-width:16px!important;height:16px!important;padding:0!important;border:2px solid #fff!important;border-radius:3px!important;background:#168ed1!important;box-shadow:0 0 0 1px #0c6fa8!important;cursor:nwse-resize!important;z-index:20}
+.placed-component.text-block-object.selected .text-block-resize-handle,.placed-component.text-block-object.multi-selected .text-block-resize-handle{display:block}
+.placed-component.text-block-object [data-text-block-text]{user-select:none;pointer-events:none}
+@media(max-width:850px){.text-tool-dropdown{position:fixed!important;left:8px!important;right:8px!important;bottom:70px!important;top:auto!important;width:auto!important}.text-block-editor-grid{grid-template-columns:1fr 1fr!important}}
+@media print{.text-tool-dropdown,.text-block-resize-handle{display:none!important}}
+
+/* TechRib 2026-09-04 — bloco de texto v2 + grade configurável + prancha clara/escura */
+.placed-component.text-block-object{box-sizing:border-box!important;padding:0!important;min-height:0!important;align-items:stretch!important;justify-content:flex-start!important}
+.placed-component.text-block-object>svg{display:block!important;max-width:none!important;overflow:hidden!important;flex:none!important}
+.placed-component.text-block-object [data-text-block-text]{dominant-baseline:auto}
+.sheet-view-label{display:flex;align-items:center;gap:5px;white-space:nowrap;color:#4f687a;font:600 8px Inter,Arial,sans-serif}
+.sheet-view-label select{height:24px;padding:0 20px 0 7px;border:1px solid #d3dee6;border-radius:5px;background:#fff;color:#4f687a;font:600 8px Inter,Arial,sans-serif}
+.sheet-view-label [data-grid-size]{min-width:68px}.sheet-view-label [data-grid-strength]{min-width:88px}.sheet-view-label [data-sheet-theme]{min-width:74px}
+.canvas-statusbar>div:first-child{gap:10px!important;min-width:0;flex-wrap:wrap}
+
+.schematic-sheet{
+  --techrib-grid-minor-size:10px;
+  --techrib-grid-major-size:50px;
+  --techrib-grid-minor-line:1px;
+  --techrib-grid-major-line:1.45px;
+  --techrib-grid-minor-color:rgba(148,163,184,.18);
+  --techrib-grid-major-color:rgba(100,116,139,.32);
+  background-color:#fff!important;
+  background-image:linear-gradient(var(--techrib-grid-major-color) var(--techrib-grid-major-line),transparent var(--techrib-grid-major-line)),linear-gradient(90deg,var(--techrib-grid-major-color) var(--techrib-grid-major-line),transparent var(--techrib-grid-major-line)),linear-gradient(var(--techrib-grid-minor-color) var(--techrib-grid-minor-line),transparent var(--techrib-grid-minor-line)),linear-gradient(90deg,var(--techrib-grid-minor-color) var(--techrib-grid-minor-line),transparent var(--techrib-grid-minor-line))!important;
+  background-size:var(--techrib-grid-major-size) var(--techrib-grid-major-size),var(--techrib-grid-major-size) var(--techrib-grid-major-size),var(--techrib-grid-minor-size) var(--techrib-grid-minor-size),var(--techrib-grid-minor-size) var(--techrib-grid-minor-size)!important;
+  background-position:0 0,0 0,0 0,0 0!important;
+  background-repeat:repeat!important;
+}
+.schematic-sheet[data-sheet-theme="light"][data-grid-strength="soft"]{--techrib-grid-minor-color:rgba(148,163,184,.10);--techrib-grid-major-color:rgba(100,116,139,.20)}
+.schematic-sheet[data-sheet-theme="light"][data-grid-strength="normal"]{--techrib-grid-minor-color:rgba(148,163,184,.18);--techrib-grid-major-color:rgba(100,116,139,.32)}
+.schematic-sheet[data-sheet-theme="light"][data-grid-strength="strong"]{--techrib-grid-minor-color:rgba(100,116,139,.28);--techrib-grid-major-color:rgba(71,85,105,.48)}
+.schematic-sheet[data-sheet-theme="light"][data-grid-strength="xstrong"]{--techrib-grid-minor-color:rgba(71,85,105,.40);--techrib-grid-major-color:rgba(51,65,85,.66)}
+.schematic-sheet[data-sheet-theme="dark"]{background-color:#29343d!important;border-color:#111827!important;color:#e8eef3}
+.schematic-sheet[data-sheet-theme="dark"][data-grid-strength="soft"]{--techrib-grid-minor-color:rgba(203,213,225,.10);--techrib-grid-major-color:rgba(226,232,240,.18)}
+.schematic-sheet[data-sheet-theme="dark"][data-grid-strength="normal"]{--techrib-grid-minor-color:rgba(203,213,225,.18);--techrib-grid-major-color:rgba(226,232,240,.30)}
+.schematic-sheet[data-sheet-theme="dark"][data-grid-strength="strong"]{--techrib-grid-minor-color:rgba(226,232,240,.28);--techrib-grid-major-color:rgba(248,250,252,.46)}
+.schematic-sheet[data-sheet-theme="dark"][data-grid-strength="xstrong"]{--techrib-grid-minor-color:rgba(226,232,240,.40);--techrib-grid-major-color:rgba(255,255,255,.64)}
+.schematic-sheet.grid-hidden{background-image:none!important}
+.schematic-sheet[data-sheet-theme="dark"] .sheet-border{border-color:#aab6c0!important}
+.schematic-sheet[data-sheet-theme="dark"] .title-block{background:#202a33!important;border-color:#cbd5e1!important;color:#f1f5f9!important}
+.schematic-sheet[data-sheet-theme="dark"] .title-block label,.schematic-sheet[data-sheet-theme="dark"] .title-brand,.schematic-sheet[data-sheet-theme="dark"] .title-meta,.schematic-sheet[data-sheet-theme="dark"] .title-project{border-color:#94a3b8!important}
+.schematic-sheet[data-sheet-theme="dark"] .title-block input{color:#f8fafc!important}
+.schematic-sheet[data-sheet-theme="dark"] .title-block label>span{color:#cbd5e1!important}
+.schematic-sheet[data-sheet-theme="dark"] .title-brand span{color:#dbe6ee!important}
+.schematic-sheet[data-sheet-theme="dark"] .sheet-empty{color:#d1dbe3!important}
+.schematic-sheet[data-sheet-theme="dark"] .sheet-empty svg{stroke:#b8c6cf!important}
+
+.schematic-sheet[data-sheet-theme="dark"] .text-object text,.schematic-sheet[data-sheet-theme="dark"] .text-block-object [data-text-block-text]{paint-order:stroke;stroke:rgba(255,255,255,.78);stroke-width:.45px;stroke-linejoin:round}
+
+@media(max-width:900px){.sheet-grid-strength-label,.sheet-theme-label{display:none}}
+@media(max-width:560px){.sheet-view-label{display:none!important}}
+@media print{
+  .schematic-sheet{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;box-shadow:none!important}
+  .schematic-sheet[data-sheet-theme="dark"]{background-color:#29343d!important}
+  .schematic-sheet[data-sheet-theme="dark"] .title-block{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;background:#202a33!important}
+}
+
+/* TechRib 2026-09-04 — zoom fluido + tela cheia sem redimensionar menus */
+.workbench:fullscreen,.workbench:-webkit-full-screen{width:100vw!important;height:100vh!important;max-width:none!important;max-height:none!important;background:#e1e8ee}
+.workbench.techrib-fullscreen .workbench-topbar,.workbench.techrib-fullscreen .cad-ribbon{font-size:inherit;transform:none!important;zoom:1!important}
+.workbench.techrib-fullscreen .drawing-area{min-width:0;min-height:0}
+.zoom-control input[type="range"]{touch-action:none;cursor:ew-resize;will-change:auto}
+.zoom-control input[type="range"]:active{cursor:grabbing}
+
+/* TechRib 2026-09-04 — bloco de texto v3: conteúdo sempre confinado ao retângulo */
+.placed-component.text-block-object>svg [data-text-block-text]{overflow:hidden!important}
+
+/* TechRib 2026-09-04 — bloco de texto v4: anotação gráfica, não obstáculo elétrico */
+.placed-component.text-block-object{
+  z-index:6!important;
+  padding:0!important;
+  min-height:0!important;
+  overflow:visible!important;
+  background:transparent!important;
+  border-color:transparent!important;
+  box-shadow:none!important;
+}
+.placed-component.text-block-object>svg{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+  pointer-events:none!important;
+  z-index:1!important;
+  filter:drop-shadow(0 2px 2px #0002);
+}
+.placed-component.text-block-object>svg *{pointer-events:none!important}
+.placed-component.text-block-object>[data-text-block-content]{
+  display:block!important;
+  pointer-events:auto!important;
+  cursor:move!important;
+  box-sizing:border-box!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:none!important;
+  white-space:pre-wrap!important;
+  overflow-wrap:break-word!important;
+  word-break:normal!important;
+  user-select:none!important;
+}
+.placed-component.text-block-object.selected>[data-text-block-content],
+.placed-component.text-block-object.multi-selected>[data-text-block-content]{cursor:move!important}
+.schematic-sheet[data-sheet-theme="dark"] .text-block-object>[data-text-block-content]{text-shadow:0 0 1px rgba(255,255,255,.72)}
+@media print{
+  .placed-component.text-block-object>[data-text-block-content]{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+
+
+/* TechRib V1 — junções somente por comando explícito. */
+.wire-context-menu{min-width:205px}
+.wire-context-menu button{display:block;width:100%;margin:0 0 5px;text-align:left}
+.wire-context-menu button:last-child{margin-bottom:0}
+.wire-context-menu [data-wire-create-junction]{background:#0f8fb8;color:#fff}
+.wire-context-menu [data-wire-create-junction]:hover{background:#0b7699}
+.wire-context-menu [data-wire-organize]{background:#173b55;color:#fff}
+.wire-context-menu [data-wire-organize]:hover{background:#0f2d42}
+
+/* TechRib 2026-09-07 — grade contínua em toda a área de trabalho + limite de prancha destacado */
+.canvas-viewport{
+  --techrib-canvas-bg:#fff;
+  --techrib-canvas-grid-minor-size:10px;
+  --techrib-canvas-grid-major-size:50px;
+  --techrib-canvas-grid-minor-line:1px;
+  --techrib-canvas-grid-major-line:1.45px;
+  --techrib-canvas-grid-minor-color:rgba(148,163,184,.18);
+  --techrib-canvas-grid-major-color:rgba(100,116,139,.32);
+  --techrib-canvas-grid-origin-x:0px;
+  --techrib-canvas-grid-origin-y:0px;
+  background-color:var(--techrib-canvas-bg)!important;
+  background-image:linear-gradient(var(--techrib-canvas-grid-major-color) var(--techrib-canvas-grid-major-line),transparent var(--techrib-canvas-grid-major-line)),linear-gradient(90deg,var(--techrib-canvas-grid-major-color) var(--techrib-canvas-grid-major-line),transparent var(--techrib-canvas-grid-major-line)),linear-gradient(var(--techrib-canvas-grid-minor-color) var(--techrib-canvas-grid-minor-line),transparent var(--techrib-canvas-grid-minor-line)),linear-gradient(90deg,var(--techrib-canvas-grid-minor-color) var(--techrib-canvas-grid-minor-line),transparent var(--techrib-canvas-grid-minor-line))!important;
+  background-size:var(--techrib-canvas-grid-major-size) var(--techrib-canvas-grid-major-size),var(--techrib-canvas-grid-major-size) var(--techrib-canvas-grid-major-size),var(--techrib-canvas-grid-minor-size) var(--techrib-canvas-grid-minor-size),var(--techrib-canvas-grid-minor-size) var(--techrib-canvas-grid-minor-size)!important;
+  background-position:var(--techrib-canvas-grid-origin-x) var(--techrib-canvas-grid-origin-y),var(--techrib-canvas-grid-origin-x) var(--techrib-canvas-grid-origin-y),var(--techrib-canvas-grid-origin-x) var(--techrib-canvas-grid-origin-y),var(--techrib-canvas-grid-origin-x) var(--techrib-canvas-grid-origin-y)!important;
+  background-repeat:repeat!important;
+}
+.canvas-viewport[data-sheet-theme="light"][data-grid-strength="soft"]{--techrib-canvas-bg:#fff;--techrib-canvas-grid-minor-color:rgba(148,163,184,.10);--techrib-canvas-grid-major-color:rgba(100,116,139,.20)}
+.canvas-viewport[data-sheet-theme="light"][data-grid-strength="normal"]{--techrib-canvas-bg:#fff;--techrib-canvas-grid-minor-color:rgba(148,163,184,.18);--techrib-canvas-grid-major-color:rgba(100,116,139,.32)}
+.canvas-viewport[data-sheet-theme="light"][data-grid-strength="strong"]{--techrib-canvas-bg:#fff;--techrib-canvas-grid-minor-color:rgba(100,116,139,.28);--techrib-canvas-grid-major-color:rgba(71,85,105,.48)}
+.canvas-viewport[data-sheet-theme="light"][data-grid-strength="xstrong"]{--techrib-canvas-bg:#fff;--techrib-canvas-grid-minor-color:rgba(71,85,105,.40);--techrib-canvas-grid-major-color:rgba(51,65,85,.66)}
+.canvas-viewport[data-sheet-theme="dark"][data-grid-strength="soft"]{--techrib-canvas-bg:#29343d;--techrib-canvas-grid-minor-color:rgba(203,213,225,.10);--techrib-canvas-grid-major-color:rgba(226,232,240,.18)}
+.canvas-viewport[data-sheet-theme="dark"][data-grid-strength="normal"]{--techrib-canvas-bg:#29343d;--techrib-canvas-grid-minor-color:rgba(203,213,225,.18);--techrib-canvas-grid-major-color:rgba(226,232,240,.30)}
+.canvas-viewport[data-sheet-theme="dark"][data-grid-strength="strong"]{--techrib-canvas-bg:#29343d;--techrib-canvas-grid-minor-color:rgba(226,232,240,.28);--techrib-canvas-grid-major-color:rgba(248,250,252,.46)}
+.canvas-viewport[data-sheet-theme="dark"][data-grid-strength="xstrong"]{--techrib-canvas-bg:#29343d;--techrib-canvas-grid-minor-color:rgba(226,232,240,.40);--techrib-canvas-grid-major-color:rgba(255,255,255,.64)}
+.canvas-viewport.techrib-canvas-grid-hidden{background-image:none!important}
+
+.schematic-sheet{
+  --techrib-sheet-guide-line:2.7px;
+  --techrib-sheet-guide-contrast:1.05px;
+  --techrib-sheet-guide-color:#087fae;
+  --techrib-sheet-guide-contrast-color:rgba(255,255,255,.96);
+}
+.schematic-sheet[data-sheet-theme="dark"]{--techrib-sheet-guide-color:#38d5f2;--techrib-sheet-guide-contrast-color:rgba(2,10,18,.96)}
+.schematic-sheet .sheet-border{
+  border:var(--techrib-sheet-guide-line) solid var(--techrib-sheet-guide-color)!important;
+  box-shadow:0 0 0 var(--techrib-sheet-guide-contrast) var(--techrib-sheet-guide-contrast-color),0 0 12px rgba(8,145,187,.24)!important;
+}
+.schematic-sheet[data-sheet-theme="dark"] .sheet-border{border-color:var(--techrib-sheet-guide-color)!important}
+
+@media print{
+  .schematic-sheet .sheet-border{border:2px solid #4b5963!important;box-shadow:none!important}
+  .schematic-sheet[data-sheet-theme="dark"] .sheet-border{border-color:#aab6c0!important}
+}
+
+
+/* TechRib 2026-09-08 — trava de geometria durante a simulação. */
+.simulation-running .placed-component{cursor:default!important}
+.simulation-running .placed-component.text-block-object>[data-text-block-content]{cursor:default!important}
+.simulation-running .text-resize-handle,
+.simulation-running .text-block-resize-handle,
+.simulation-running .plaque-resize-handle,
+.simulation-running .resize-handle{display:none!important;pointer-events:none!important}
+
+
+/* TechRib V19 — polish visual da prancha. */
+
+.canvas-viewport{
+  overscroll-behavior:contain;
+}
+
+.sheet-stage{
+  padding:18px 22px 30px;
+}
+
+.schematic-sheet{
+  isolation:isolate;
+  border-radius:6px;
+  backface-visibility:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:geometricPrecision;
+}
+
+.schematic-sheet,
+.schematic-sheet .title-block,
+.schematic-sheet .sheet-empty,
+.schematic-sheet .wire-layer,
+.schematic-sheet .placed-component>svg{
+  transform:translateZ(0);
+}
+
+.schematic-sheet[data-sheet-theme="dark"]{
+  background-color:#22303a!important;
+  box-shadow:0 24px 68px rgba(2,12,20,.42),0 0 0 1px rgba(255,255,255,.045)!important;
+}
+
+.schematic-sheet[data-sheet-theme="dark"] .sheet-border{
+  box-shadow:0 0 0 var(--techrib-sheet-guide-contrast) var(--techrib-sheet-guide-contrast-color),0 0 16px rgba(56,213,242,.24),inset 0 0 0 1px rgba(255,255,255,.03)!important;
+}
+
+.schematic-sheet[data-sheet-theme="dark"] .title-block{
+  box-shadow:0 10px 24px rgba(2,8,14,.24);
+}
+
+.sheet-empty{
+  gap:8px;
+  max-width:360px;
+  margin:auto;
+  padding:30px 28px;
+  border:1px solid rgba(148,163,184,.18);
+  border-radius:18px;
+  background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.08));
+  box-shadow:0 16px 36px rgba(15,23,42,.08);
+}
+
+.schematic-sheet[data-sheet-theme="dark"] .sheet-empty{
+  background:linear-gradient(180deg,rgba(10,23,31,.56),rgba(19,36,48,.28));
+  border-color:rgba(148,163,184,.16);
+  box-shadow:0 18px 42px rgba(0,0,0,.18);
+}
+
+.sheet-empty svg{
+  width:102px;
+  stroke-width:2.15;
+  filter:drop-shadow(0 8px 16px rgba(15,23,42,.14));
+}
+
+.schematic-sheet[data-sheet-theme="dark"] .sheet-empty svg{
+  filter:drop-shadow(0 8px 18px rgba(0,0,0,.22));
+}
+
+.sheet-empty h2{
+  margin:10px 0 2px;
+  font-size:20px;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+
+.sheet-empty p{
+  margin:0;
+  max-width:260px;
+  font-size:12px;
+  line-height:1.55;
+  text-align:center;
+  opacity:.84;
+}
+
+.schematic-sheet[data-sheet-theme="dark"] .placed-component:not(.text-block-object):not(.plaque-object)>svg{
+  filter:drop-shadow(0 6px 14px rgba(2,8,14,.18))!important;
+}
+
+.schematic-sheet[data-sheet-theme="dark"] .placed-component>span{
+  color:#eef6fb;
+  text-shadow:0 1px 1px rgba(0,0,0,.22);
+}
+
+.schematic-sheet[data-sheet-theme="dark"] .placed-component>small{
+  color:#b9cad6;
+  text-shadow:0 1px 1px rgba(0,0,0,.18);
+}
+
+.wire-layer polyline{
+  shape-rendering:geometricPrecision;
+}
+
+.schematic-sheet[data-sheet-theme="dark"] .wire-layer polyline{
+  stroke-width:4.35;
+  filter:drop-shadow(0 0 .85px rgba(3,8,12,.55));
+}
+
+/* TechRib V20 — ambientação azul da prancha inspirada na Home. */
+.schematic-sheet{
+  --techrib-sheet-ambient-glow:radial-gradient(circle at 42% 18%,rgba(56,189,248,.065),transparent 42%);
+  --techrib-sheet-ambient-glow-2:radial-gradient(circle at 82% 72%,rgba(14,116,144,.045),transparent 34%);
+  --techrib-sheet-ambient-surface:linear-gradient(135deg,#f8fbfd 0%,#f2f7fa 52%,#edf4f8 100%);
+  background-image:
+    linear-gradient(var(--techrib-grid-major-color) var(--techrib-grid-major-line),transparent var(--techrib-grid-major-line)),
+    linear-gradient(90deg,var(--techrib-grid-major-color) var(--techrib-grid-major-line),transparent var(--techrib-grid-major-line)),
+    linear-gradient(var(--techrib-grid-minor-color) var(--techrib-grid-minor-line),transparent var(--techrib-grid-minor-line)),
+    linear-gradient(90deg,var(--techrib-grid-minor-color) var(--techrib-grid-minor-line),transparent var(--techrib-grid-minor-line)),
+    var(--techrib-sheet-ambient-glow),
+    var(--techrib-sheet-ambient-glow-2),
+    var(--techrib-sheet-ambient-surface)!important;
+  background-size:
+    var(--techrib-grid-major-size) var(--techrib-grid-major-size),
+    var(--techrib-grid-major-size) var(--techrib-grid-major-size),
+    var(--techrib-grid-minor-size) var(--techrib-grid-minor-size),
+    var(--techrib-grid-minor-size) var(--techrib-grid-minor-size),
+    100% 100%,100% 100%,100% 100%!important;
+  background-position:0 0,0 0,0 0,0 0,center,center,center!important;
+  background-repeat:repeat,repeat,repeat,repeat,no-repeat,no-repeat,no-repeat!important;
+}
+.schematic-sheet[data-sheet-theme="dark"]{
+  --techrib-sheet-ambient-glow:radial-gradient(circle at 38% 16%,rgba(19,176,233,.20),transparent 43%);
+  --techrib-sheet-ambient-glow-2:radial-gradient(circle at 84% 72%,rgba(6,116,154,.15),transparent 38%);
+  --techrib-sheet-ambient-surface:linear-gradient(135deg,#071a27 0%,#0b2638 48%,#071722 100%);
+  background-color:#071a27!important;
+  box-shadow:0 28px 78px rgba(1,8,15,.50),0 0 0 1px rgba(77,211,255,.10),0 0 36px rgba(8,145,187,.08)!important;
+}
+.schematic-sheet.grid-hidden{
+  background-image:var(--techrib-sheet-ambient-glow),var(--techrib-sheet-ambient-glow-2),var(--techrib-sheet-ambient-surface)!important;
+  background-size:100% 100%,100% 100%,100% 100%!important;
+  background-position:center,center,center!important;
+  background-repeat:no-repeat!important;
+}
+.schematic-sheet[data-sheet-theme="dark"] .sheet-border{
+  border-color:#39d6f4!important;
+  box-shadow:0 0 0 var(--techrib-sheet-guide-contrast) rgba(2,12,20,.92),0 0 20px rgba(57,214,244,.30),inset 0 0 26px rgba(14,165,233,.045)!important;
+}
+.schematic-sheet[data-sheet-theme="dark"] .placed-component:not(.text-block-object):not(.plaque-object)>svg{
+  filter:saturate(1.07) contrast(1.035) drop-shadow(0 7px 15px rgba(0,0,0,.20))!important;
+}

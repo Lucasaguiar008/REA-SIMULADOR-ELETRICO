@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-label="Sistema Premium de pontes rolantes" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="cr-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10242f"/><stop offset="1" stop-color="#07131a"/></linearGradient>
+    <linearGradient id="cr-panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1c3341"/><stop offset="1" stop-color="#0f2028"/></linearGradient>
+    <linearGradient id="cr-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eff4f7"/><stop offset=".5" stop-color="#b3c2cb"/><stop offset="1" stop-color="#60717b"/></linearGradient>
+    <linearGradient id="cr-bridge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f6d36b"/><stop offset="1" stop-color="#c88b19"/></linearGradient>
+    <linearGradient id="cr-load" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffca8a"/><stop offset="1" stop-color="#be5a1a"/></linearGradient>
+    <filter id="cr-shadow"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-opacity=".35"/></filter>
+    <filter id="cr-glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g id="cr-terminal-port"><circle r="11" fill="#101a20" stroke="#f1c75b" stroke-width="3"/><circle r="5" fill="#dfe8ed"/><path d="M-4 0h8M0-4v8" stroke="#536873" stroke-width="2"/></g>
+    <style>
+      .cr-title{font:900 25px Arial,sans-serif;fill:#fff;letter-spacing:.5px}
+      .cr-sub{font:700 12px Arial,sans-serif;fill:#9fc3d4}
+      .cr-label{font:800 13px Arial,sans-serif;fill:#eaf7fb}
+      .cr-small{font:700 10px Arial,sans-serif;fill:#a9c2ce}
+      .cr-value{font:900 20px Arial,sans-serif;fill:#7dd3fc}
+      .cr-terminal-label{font:900 11px Arial,sans-serif;fill:#f5e7ad}
+      .cr-btn text{pointer-events:none}.cr-btn rect{fill:#173747;stroke:#6a8591;stroke-width:1.5}.cr-btn:hover rect{fill:#245369}.cr-btn{cursor:pointer}
+      .wire-anchor-hitbox{fill:transparent;stroke:transparent;stroke-width:1}
+    </style>
+  </defs>
+  <rect x="14" y="14" width="1072" height="732" rx="28" fill="url(#cr-bg)" stroke="#b78b25" stroke-width="4" filter="url(#cr-shadow)"/>
+  <rect x="30" y="30" width="1040" height="56" rx="14" fill="#0d2c3a" stroke="#365865"/>
+  <text x="52" y="64" class="cr-title">TECHRIB • SISTEMA DE PONTES ROLANTES</text>
+  <text x="1044" y="55" text-anchor="end" class="cr-sub">TRANSLAÇÃO HORIZONTAL • IÇAMENTO • FINS DE CURSO • CARGA SUSPENSA</text>
+  <text x="1044" y="73" text-anchor="end" class="cr-small">QUALIDADE PREMIUM • ANIMAÇÃO DIDÁTICA • CONTROLE LOCAL E EXTERNO</text>
+
+  <g filter="url(#cr-shadow)">
+    <rect x="56" y="116" width="742" height="326" rx="20" fill="#0b1b24" stroke="#4f6974" stroke-width="2"/>
+    <text x="78" y="144" class="cr-label">PONTE ROLANTE DIDÁTICA</text>
+    <text x="78" y="164" class="cr-small">estrutura com trilhos laterais, viga principal, carro e gancho com carga simulada</text>
+
+    <rect x="104" y="188" width="30" height="190" rx="10" fill="#28414c" stroke="#87a4b1" stroke-width="2"/>
+    <rect x="722" y="188" width="30" height="190" rx="10" fill="#28414c" stroke="#87a4b1" stroke-width="2"/>
+    <rect x="126" y="202" width="604" height="20" rx="10" fill="#8097a3"/>
+    <rect x="126" y="214" width="604" height="12" rx="6" fill="#4d6672"/>
+    <text x="127" y="194" class="cr-small">LIMITE ESQ.</text>
+    <text x="710" y="194" text-anchor="end" class="cr-small">LIMITE DIR.</text>
+
+    <g data-crane-bridge="true" transform="translate(170 0)">
+      <rect x="0" y="226" width="320" height="34" rx="12" fill="url(#cr-bridge)" stroke="#fff0b3" stroke-width="2"/>
+      <rect x="18" y="218" width="38" height="50" rx="10" fill="#283943" stroke="#8aa0ac" stroke-width="2"/>
+      <rect x="264" y="218" width="38" height="50" rx="10" fill="#283943" stroke="#8aa0ac" stroke-width="2"/>
+      <circle cx="36" cy="258" r="10" fill="#0f1d24" stroke="#b5c6cf"/><circle cx="284" cy="258" r="10" fill="#0f1d24" stroke="#b5c6cf"/>
+      <g data-crane-hoist="true" transform="translate(148 0)">
+        <rect x="0" y="214" width="64" height="52" rx="10" fill="#1b2f3a" stroke="#93aab6" stroke-width="2"/>
+        <circle cx="32" cy="238" r="12" fill="#7dd3fc" data-crane-motor-core="true"/>
+        <path d="M32 266v90" stroke="#d9e5ea" stroke-width="4" stroke-dasharray="5 5" data-crane-cable="true" filter="url(#cr-glow)"/>
+        <g data-crane-hook="true" transform="translate(32 356)">
+          <circle cx="0" cy="0" r="11" fill="#f8b25e"/>
+          <path d="M0 10v18c0 10-8 18-18 18h-6" fill="none" stroke="#f8b25e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <g data-crane-load="true" transform="translate(-34 40)">
+            <rect width="68" height="44" rx="8" fill="url(#cr-load)" stroke="#ffe0ba" stroke-width="2"/>
+            <path d="M10 18h48M10 28h48" stroke="#8a4719" stroke-width="3" opacity=".75"/>
+          </g>
+        </g>
+      </g>
+      <text x="160" y="210" text-anchor="middle" class="cr-small">CARRO + TALHA</text>
+    </g>
+
+    <g>
+      <rect x="260" y="406" width="342" height="12" rx="6" fill="#1a2e38" stroke="#566d79"/>
+      <text x="270" y="399" class="cr-small">ÁREA DE MOVIMENTAÇÃO DA CARGA</text>
+    </g>
+  </g>
+
+  <g transform="translate(824 118)" filter="url(#cr-shadow)">
+    <rect width="224" height="322" rx="18" fill="#0b1b24" stroke="#4f6974" stroke-width="2"/>
+    <text x="20" y="28" class="cr-label">PAINEL LOCAL</text>
+    <text x="20" y="50" class="cr-small">comandos rápidos e supervisão</text>
+    <text x="20" y="84" class="cr-small">Estado</text><text x="92" y="84" data-cr-status="true" class="cr-label">PRONTO</text>
+    <text x="20" y="110" class="cr-small">Posição X</text><text x="128" y="110" data-cr-x="true" class="cr-value">0%</text>
+    <text x="20" y="136" class="cr-small">Altura</text><text x="128" y="136" data-cr-z="true" class="cr-value">0%</text>
+    <text x="20" y="162" class="cr-small">Modo</text><text x="92" y="162" data-cr-mode="true" class="cr-label">AUTO</text>
+    <text x="20" y="188" class="cr-small">Carga</text><text x="92" y="188" data-cr-load="true" class="cr-label">PRESENTE</text>
+    <circle cx="188" cy="82" r="9" data-cr-green="true" fill="#22c55e"/><circle cx="188" cy="108" r="9" data-cr-amber="true" fill="#f59e0b" opacity=".5"/><circle cx="188" cy="134" r="9" data-cr-red="true" fill="#ef4444" opacity=".2"/>
+    <g class="cr-btn" data-crane-action="auto" transform="translate(16 210)"><rect width="84" height="36" rx="8"/><text x="42" y="23" text-anchor="middle" class="cr-label">AUTO</text></g>
+    <g class="cr-btn" data-crane-action="left" transform="translate(114 210)"><rect width="94" height="36" rx="8"/><text x="47" y="23" text-anchor="middle" class="cr-label">ESQ</text></g>
+    <g class="cr-btn" data-crane-action="right" transform="translate(16 256)"><rect width="84" height="36" rx="8"/><text x="42" y="23" text-anchor="middle" class="cr-label">DIR</text></g>
+    <g class="cr-btn" data-crane-action="up" transform="translate(114 256)"><rect width="94" height="36" rx="8"/><text x="47" y="23" text-anchor="middle" class="cr-label">SUBIR</text></g>
+    <g class="cr-btn" data-crane-action="down" transform="translate(16 302)"><rect width="84" height="36" rx="8"/><text x="42" y="23" text-anchor="middle" class="cr-label">DESCER</text></g>
+    <g class="cr-btn" data-crane-action="stop" transform="translate(114 302)"><rect width="94" height="36" rx="8"/><text x="47" y="23" text-anchor="middle" class="cr-label">STOP</text></g>
+    <g class="cr-btn" data-crane-action="load" transform="translate(16 348)"><rect width="192" height="34" rx="8"/><text x="96" y="22" text-anchor="middle" class="cr-small">SIMULAR CARGA / DESCARGA</text></g>
+  </g>
+
+  <g transform="translate(58 456)">
+    <rect width="990" height="162" rx="18" fill="#0a1d27" stroke="#42616d" stroke-width="2"/>
+    <text x="20" y="28" class="cr-label">STATUS DA PONTE ROLANTE</text>
+    <text x="20" y="52" class="cr-small">Entradas CMD_LEFT/CMD_RIGHT/CMD_UP/CMD_DOWN/CMD_STOP em 5 Vcc. Saídas em contatos secos de fim de curso e presença de carga.</text>
+    <text x="20" y="84" class="cr-small">Fim de curso esquerdo</text><text x="184" y="84" data-cr-l-left="true" class="cr-label">ATIVO</text>
+    <text x="20" y="110" class="cr-small">Fim de curso direito</text><text x="184" y="110" data-cr-l-right="true" class="cr-label">LIVRE</text>
+    <text x="20" y="136" class="cr-small">Fim de curso superior</text><text x="184" y="136" data-cr-l-up="true" class="cr-label">ATIVO</text>
+    <text x="390" y="84" class="cr-small">Fim de curso inferior</text><text x="560" y="84" data-cr-l-down="true" class="cr-label">LIVRE</text>
+    <text x="390" y="110" class="cr-small">Carga presente</text><text x="560" y="110" data-cr-l-load="true" class="cr-label">SIM</text>
+    <text x="390" y="136" class="cr-small">Movimento</text><text x="560" y="136" data-cr-motion="true" class="cr-label">PARADO</text>
+    <text x="740" y="92" class="cr-small">Dica</text><text x="804" y="92" class="cr-small">duplo clique abre o laboratório para ajustes</text>
+    <text x="740" y="122" class="cr-small">Ciclo demo</text><text x="832" y="122" data-cr-cycle="true" class="cr-label">AUTOMÁTICO</text>
+  </g>
+
+  <g id="terminals">
+    <text x="70" y="704" class="cr-small" fill="#f4d675">COMANDOS DE ENTRADA</text>
+    <g data-terminal="CMD_LEFT" data-wire-side="bottom" transform="translate(152 708)" data-terminal-id="crane-system-CMD-LEFT" data-terminal-name="CMD_LEFT" data-domain="control" data-function="move-left-command" data-voltage-class="5v" data-direction="input" data-electrical-type="logic-input"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="CMD_LEFT" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">ESQ</text></g>
+    <g data-terminal="CMD_RIGHT" data-wire-side="bottom" transform="translate(236 708)" data-terminal-id="crane-system-CMD-RIGHT" data-terminal-name="CMD_RIGHT" data-domain="control" data-function="move-right-command" data-voltage-class="5v" data-direction="input" data-electrical-type="logic-input"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="CMD_RIGHT" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">DIR</text></g>
+    <g data-terminal="CMD_UP" data-wire-side="bottom" transform="translate(320 708)" data-terminal-id="crane-system-CMD-UP" data-terminal-name="CMD_UP" data-domain="control" data-function="move-up-command" data-voltage-class="5v" data-direction="input" data-electrical-type="logic-input"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="CMD_UP" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">SUBIR</text></g>
+    <g data-terminal="CMD_DOWN" data-wire-side="bottom" transform="translate(404 708)" data-terminal-id="crane-system-CMD-DOWN" data-terminal-name="CMD_DOWN" data-domain="control" data-function="move-down-command" data-voltage-class="5v" data-direction="input" data-electrical-type="logic-input"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="CMD_DOWN" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">DESCER</text></g>
+    <g data-terminal="CMD_STOP" data-wire-side="bottom" transform="translate(488 708)" data-terminal-id="crane-system-CMD-STOP" data-terminal-name="CMD_STOP" data-domain="control" data-function="stop-command" data-voltage-class="5v" data-direction="input" data-electrical-type="logic-input"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="CMD_STOP" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">STOP</text></g>
+    <text x="602" y="704" class="cr-small" fill="#f4d675">FINS DE CURSO / SINAIS</text>
+    <g data-terminal="COM_H" data-wire-side="bottom" transform="translate(650 708)" data-terminal-id="crane-system-COM-H" data-terminal-name="COM_H" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="passive" data-electrical-type="dry-contact"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="COM_H" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">COM H</text></g>
+    <g data-terminal="LIM_LEFT" data-wire-side="bottom" transform="translate(734 708)" data-terminal-id="crane-system-LIM-LEFT" data-terminal-name="LIM_LEFT" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="LIM_LEFT" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">FC ESQ</text></g>
+    <g data-terminal="LIM_RIGHT" data-wire-side="bottom" transform="translate(822 708)" data-terminal-id="crane-system-LIM-RIGHT" data-terminal-name="LIM_RIGHT" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="LIM_RIGHT" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">FC DIR</text></g>
+    <g data-terminal="COM_V" data-wire-side="bottom" transform="translate(910 708)" data-terminal-id="crane-system-COM-V" data-terminal-name="COM_V" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="passive" data-electrical-type="dry-contact"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="COM_V" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">COM V</text></g>
+    <g data-terminal="LIM_UP" data-wire-side="bottom" transform="translate(992 708)" data-terminal-id="crane-system-LIM-UP" data-terminal-name="LIM_UP" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="LIM_UP" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="cr-terminal-label">FC SUP</text></g>
+    <g data-terminal="LIM_DOWN" data-wire-side="right" transform="translate(1058 650)" data-terminal-id="crane-system-LIM-DOWN" data-terminal-name="LIM_DOWN" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="LIM_DOWN" data-wire-side="right" r="14"/><text x="-20" y="4" text-anchor="end" class="cr-terminal-label">FC INF</text></g>
+    <g data-terminal="COM_LOAD" data-wire-side="right" transform="translate(1058 602)" data-terminal-id="crane-system-COM-LOAD" data-terminal-name="COM_LOAD" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="passive" data-electrical-type="dry-contact"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="COM_LOAD" data-wire-side="right" r="14"/><text x="-20" y="4" text-anchor="end" class="cr-terminal-label">COM LD</text></g>
+    <g data-terminal="LOAD_OK" data-wire-side="right" transform="translate(1058 554)" data-terminal-id="crane-system-LOAD-OK" data-terminal-name="LOAD_OK" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#cr-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="LOAD_OK" data-wire-side="right" r="14"/><text x="-20" y="4" text-anchor="end" class="cr-terminal-label">CARGA</text></g>
+  </g>
+</svg>

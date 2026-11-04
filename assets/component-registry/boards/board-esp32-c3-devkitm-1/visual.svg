@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.4mm" height="42.91mm" viewBox="0 0 25.4 42.91" preserveAspectRatio="xMidYMid meet" role="img" aria-label="ESP32 C3- DevKitM-1" data-techrib-board-package="true" data-board-source="esp32-c3-devkitm-1" data-techrib-editor-managed="true" data-techrib-studio-import="true" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#24292d"/><stop offset=".42" stop-color="#101316"/><stop offset="1" stop-color="#030506"/></linearGradient>
+    <linearGradient id="pcb-edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#596168"/><stop offset=".18" stop-color="#171b1e"/><stop offset=".82" stop-color="#050607"/><stop offset="1" stop-color="#555d62"/></linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2f4f4"/><stop offset=".16" stop-color="#c8cccf"/><stop offset=".48" stop-color="#8f969b"/><stop offset=".78" stop-color="#d5d8da"/><stop offset="1" stop-color="#72797e"/></linearGradient>
+    <linearGradient id="shield-edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset=".24" stop-color="#6f777c"/><stop offset=".7" stop-color="#343a3e"/><stop offset="1" stop-color="#e2e5e6"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0a1"/><stop offset=".22" stop-color="#ffc83d"/><stop offset=".55" stop-color="#c68008"/><stop offset=".8" stop-color="#f5bd32"/><stop offset="1" stop-color="#7b4700"/></linearGradient>
+    <radialGradient id="pad-gold" cx="34%" cy="28%" r="72%"><stop stop-color="#fff4a9"/><stop offset=".24" stop-color="#ffd44e"/><stop offset=".57" stop-color="#d5910b"/><stop offset=".84" stop-color="#a56202"/><stop offset="1" stop-color="#5f3600"/></radialGradient>
+    <radialGradient id="hole" cx="38%" cy="32%" r="66%"><stop stop-color="#3e4448"/><stop offset=".2" stop-color="#111416"/><stop offset=".72" stop-color="#030404"/><stop offset="1" stop-color="#000"/></radialGradient>
+    <linearGradient id="usb-shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f7f7"/><stop offset=".16" stop-color="#9da4a8"/><stop offset=".43" stop-color="#e8ebec"/><stop offset=".72" stop-color="#777f84"/><stop offset="1" stop-color="#c8ccce"/></linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#34393d"/><stop offset=".2" stop-color="#171a1c"/><stop offset=".72" stop-color="#050607"/><stop offset="1" stop-color="#252a2d"/></linearGradient>
+    <linearGradient id="button" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7c858a"/><stop offset=".22" stop-color="#34393c"/><stop offset=".75" stop-color="#111416"/><stop offset="1" stop-color="#687176"/></linearGradient>
+    <radialGradient id="button-cap"><stop stop-color="#e5e7e8"/><stop offset=".34" stop-color="#9ca3a7"/><stop offset=".42" stop-color="#33383b"/><stop offset="1" stop-color="#0b0d0e"/></radialGradient>
+    <linearGradient id="ceramic" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#6e5b2a"/><stop offset=".18" stop-color="#d2b874"/><stop offset=".5" stop-color="#856f3d"/><stop offset=".82" stop-color="#d8c181"/><stop offset="1" stop-color="#51421e"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4a5054"/><stop offset=".18" stop-color="#d8dcde"/><stop offset=".5" stop-color="#72797d"/><stop offset=".82" stop-color="#eceeef"/><stop offset="1" stop-color="#4c5357"/></linearGradient>
+    <radialGradient id="led-red"><stop stop-color="#fff4e3"/><stop offset=".18" stop-color="#ff8b60"/><stop offset=".54" stop-color="#e12619"/><stop offset="1" stop-color="#5b0704"/></radialGradient>
+    <filter id="board-shadow" x="-20%" y="-15%" width="150%" height="145%"><feDropShadow dx=".3" dy=".45" stdDeviation=".42" flood-color="#000" flood-opacity=".75"/></filter>
+    <filter id="part-shadow" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx=".12" dy=".18" stdDeviation=".14" flood-color="#000" flood-opacity=".8"/></filter>
+    <filter id="gold-glow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy=".05" stdDeviation=".09" flood-color="#ffd84e" flood-opacity=".75"/></filter>
+    <g id="header-pad">
+      <circle r=".84" fill="#392100" stroke="#090a0b" stroke-width=".15"/>
+      <circle r=".72" fill="url(#pad-gold)" stroke="#ffe783" stroke-width=".09" filter="url(#gold-glow)"/>
+      <circle r=".34" fill="url(#hole)" stroke="#6e4709" stroke-width=".08"/>
+      <ellipse cx="-.18" cy="-.2" rx=".17" ry=".11" fill="#fff3b0" opacity=".82"/>
+    </g>
+    <g id="smd-r">
+      <rect x="-.54" y="-.21" width="1.08" height=".42" rx=".08" fill="url(#metal)" stroke="#08090a" stroke-width=".05"/>
+      <rect x="-.3" y="-.19" width=".6" height=".38" rx=".05" fill="#25292c"/>
+      <path d="M-.21-.1H.2" stroke="#92999d" stroke-width=".045"/>
+    </g>
+    <g id="smd-c">
+      <rect x="-.48" y="-.2" width=".96" height=".4" rx=".07" fill="url(#metal)" stroke="#08090a" stroke-width=".045"/>
+      <rect x="-.27" y="-.18" width=".54" height=".36" rx=".04" fill="url(#ceramic)"/>
+    </g>
+    <g id="qfn16">
+      <rect x="-1.45" y="-1.45" width="2.9" height="2.9" rx=".18" fill="url(#chip)" stroke="#5f666a" stroke-width=".1" filter="url(#part-shadow)"/>
+      <circle cx="-.95" cy="-.95" r=".16" fill="#9ba1a4"/>
+      <g fill="#adb3b6"><rect x="-1.63" y="-1.05" width=".25" height=".38"/><rect x="-1.63" y="-.43" width=".25" height=".38"/><rect x="-1.63" y=".19" width=".25" height=".38"/><rect x="-1.63" y=".81" width=".25" height=".38"/><rect x="1.38" y="-1.05" width=".25" height=".38"/><rect x="1.38" y="-.43" width=".25" height=".38"/><rect x="1.38" y=".19" width=".25" height=".38"/><rect x="1.38" y=".81" width=".25" height=".38"/></g>
+    </g>
+    <g id="tact">
+      <rect x="-1.45" y="-1.25" width="2.9" height="2.5" rx=".28" fill="url(#button)" stroke="#020303" stroke-width=".12" filter="url(#part-shadow)"/>
+      <circle r=".62" fill="url(#button-cap)" stroke="#afb5b8" stroke-width=".08"/>
+      <path d="M-.32 0H.32M0-.32V.32" stroke="#d9dcde" stroke-width=".08" opacity=".8"/>
+    </g>
+    <style>
+      .pin-label{font-family:Arial,Inter,sans-serif;font-size:.63px;font-weight:800;fill:#f6f7f8;paint-order:stroke;stroke:#050607;stroke-width:.08px}
+      .silk{fill:none;stroke:#c9ced1;stroke-width:.1;opacity:.82}
+      .silk-text{font-family:Arial,Inter,sans-serif;font-weight:700;fill:#cfd4d6}
+    </style>
+  </defs>
+
+  <g data-wire-obstacle="true">
+    <rect x=".34" y=".35" width="24.72" height="42.22" rx="1.05" fill="#020304" opacity=".74" transform="translate(.28 .35)"/>
+    <rect x=".34" y=".35" width="24.72" height="42.22" rx="1.05" fill="url(#pcb-edge)" stroke="#020303" stroke-width=".22" filter="url(#board-shadow)"/>
+    <rect x=".62" y=".63" width="24.16" height="41.66" rx=".78" fill="url(#pcb)" stroke="#4c5459" stroke-width=".12"/>
+    <path d="M1.05 1.25h23.3M1.05 41.7h23.3" stroke="#6c7479" stroke-width=".08" opacity=".6"/>
+
+    <!-- ESP32-C3-MINI-1 module and antenna -->
+    <rect x="4.2" y=".95" width="17" height="15.4" rx=".48" fill="#171b1e" stroke="#555d62" stroke-width=".16" filter="url(#part-shadow)"/>
+    <path d="M6.1 1.24h13.2v.88h-1.02v.86h-1.04v-.86H16.2v.86h-1.04v-.86h-1.04v.86h-1.04v-.86h-1.04v.86H11v-.86H9.96v.86H8.92v-.86H7.88v.86H6.84v-.86H6.1z" fill="#3f464a" stroke="#9ca3a7" stroke-width=".08"/>
+    <path d="M6.5 3.27h12.4" stroke="#666e73" stroke-width=".12"/>
+    <g fill="url(#gold)" opacity=".9"><rect x="4.05" y="4.05" width=".48" height=".65" rx=".08"/><rect x="4.05" y="5.22" width=".48" height=".65" rx=".08"/><rect x="4.05" y="6.39" width=".48" height=".65" rx=".08"/><rect x="4.05" y="7.56" width=".48" height=".65" rx=".08"/><rect x="4.05" y="8.73" width=".48" height=".65" rx=".08"/><rect x="4.05" y="9.9" width=".48" height=".65" rx=".08"/><rect x="4.05" y="11.07" width=".48" height=".65" rx=".08"/><rect x="20.87" y="4.05" width=".48" height=".65" rx=".08"/><rect x="20.87" y="5.22" width=".48" height=".65" rx=".08"/><rect x="20.87" y="6.39" width=".48" height=".65" rx=".08"/><rect x="20.87" y="7.56" width=".48" height=".65" rx=".08"/><rect x="20.87" y="8.73" width=".48" height=".65" rx=".08"/><rect x="20.87" y="9.9" width=".48" height=".65" rx=".08"/><rect x="20.87" y="11.07" width=".48" height=".65" rx=".08"/></g>
+    <path d="M5.15 3.55h15.1v11.73l-.45.45H5.6l-.45-.45z" fill="url(#shield-edge)" stroke="#343a3e" stroke-width=".18"/>
+    <path d="M5.5 3.88h14.4v11.02l-.3.3H5.8l-.3-.3z" fill="url(#shield)" stroke="#f2f4f4" stroke-width=".1"/>
+    <path d="M5.82 4.2h13.76M5.82 14.78h13.76" stroke="#ffffff" stroke-width=".08" opacity=".52"/>
+    <text x="12.7" y="7.05" text-anchor="middle" font-family="Arial,Inter,sans-serif" font-size="1.32" font-weight="900" fill="#565d61">ESPRESSIF</text>
+    <text x="12.7" y="8.64" text-anchor="middle" font-family="Arial,Inter,sans-serif" font-size="1.18" font-weight="900" fill="#4e5559">ESP32-C3</text>
+    <text x="12.7" y="10.03" text-anchor="middle" font-family="Arial,Inter,sans-serif" font-size=".75" font-weight="800" fill="#596064">MINI-1</text>
+    <path d="M10.4 12.12c1.27-1.16 3.33-1.16 4.6 0m-3.92.72c.9-.82 2.34-.82 3.24 0m-2.5.75c.49-.43 1.27-.43 1.76 0" fill="none" stroke="#656c70" stroke-width=".28" stroke-linecap="round"/>
+
+    <!-- Detailed SMD population -->
+    <g opacity=".98">
+      <use xlink:href="#smd-c" transform="translate(4.35 17.15) rotate(90)"/><use xlink:href="#smd-r" transform="translate(5.2 17.15) rotate(90)"/><use xlink:href="#smd-c" transform="translate(6.05 17.15) rotate(90)"/>
+      <use xlink:href="#smd-r" transform="translate(19.25 17.15) rotate(90)"/><use xlink:href="#smd-c" transform="translate(20.1 17.15) rotate(90)"/><use xlink:href="#smd-r" transform="translate(20.95 17.15) rotate(90)"/>
+      <use xlink:href="#smd-r" transform="translate(3.9 20.1)"/><use xlink:href="#smd-c" transform="translate(5.25 20.1)"/><use xlink:href="#smd-r" transform="translate(6.6 20.1)"/>
+      <use xlink:href="#smd-c" transform="translate(18.65 20.1)"/><use xlink:href="#smd-r" transform="translate(20 20.1)"/><use xlink:href="#smd-c" transform="translate(21.35 20.1)"/>
+      <use xlink:href="#smd-c" transform="translate(5.1 25.55) rotate(90)"/><use xlink:href="#smd-r" transform="translate(5.95 25.55) rotate(90)"/><use xlink:href="#smd-c" transform="translate(19.45 25.55) rotate(90)"/><use xlink:href="#smd-r" transform="translate(20.3 25.55) rotate(90)"/>
+      <use xlink:href="#smd-r" transform="translate(3.9 29.82)"/><use xlink:href="#smd-c" transform="translate(5.25 29.82)"/><use xlink:href="#smd-r" transform="translate(20.15 29.82)"/><use xlink:href="#smd-c" transform="translate(21.5 29.82)"/>
+      <use xlink:href="#smd-c" transform="translate(6.1 32.8)"/><use xlink:href="#smd-r" transform="translate(7.45 32.8)"/><use xlink:href="#smd-r" transform="translate(17.95 32.8)"/><use xlink:href="#smd-c" transform="translate(19.3 32.8)"/>
+    </g>
+    <use xlink:href="#tact" transform="translate(7.35 22.7)"/><use xlink:href="#tact" transform="translate(18.05 22.7)"/>
+    <text x="7.35" y="24.55" text-anchor="middle" class="silk-text" font-size=".53">BOOT</text><text x="18.05" y="24.55" text-anchor="middle" class="silk-text" font-size=".53">RST</text>
+
+    <use xlink:href="#qfn16" transform="translate(12.68 28.18)"/>
+    <text x="12.68" y="28.05" text-anchor="middle" font-family="Arial,sans-serif" font-size=".43" fill="#81888c">CP2102N</text>
+    <rect x="8.05" y="26.45" width="2.55" height="1.75" rx=".18" fill="url(#chip)" stroke="#656c70" stroke-width=".08" filter="url(#part-shadow)"/>
+    <circle cx="8.45" cy="26.85" r=".1" fill="#aab0b3"/>
+    <rect x="15.2" y="25.95" width="2.85" height="1.25" rx=".14" fill="url(#metal)" stroke="#25292c" stroke-width=".08"/>
+    <path d="M15.55 26.58h2.16" stroke="#777e82" stroke-width=".12"/>
+    <g fill="url(#gold)"><rect x="8.1" y="30.55" width=".55" height="1.25"/><rect x="9.02" y="30.55" width=".55" height="1.25"/><rect x="9.94" y="30.55" width=".55" height="1.25"/><rect x="14.9" y="30.55" width=".55" height="1.25"/><rect x="15.82" y="30.55" width=".55" height="1.25"/><rect x="16.74" y="30.55" width=".55" height="1.25"/></g>
+    <rect x="4.15" y="31.02" width="1.12" height="1.02" rx=".16" fill="#dedfe0" stroke="#444a4e" stroke-width=".08"/><circle cx="4.71" cy="31.53" r=".33" fill="url(#led-red)"/>
+    <rect x="19.95" y="30.75" width="1.35" height="1.35" rx=".18" fill="#e8e8e4" stroke="#60676b" stroke-width=".08"/><circle cx="20.63" cy="31.43" r=".4" fill="#f3f4f4" stroke="#92989b" stroke-width=".07"/>
+    <path d="M3.35 16.05h18.7M3.35 34.18h18.7" class="silk"/>
+    <text x="12.7" y="33.78" text-anchor="middle" class="silk-text" font-size=".62">TechRib  •  ESP32-C3-DevKitM-1</text>
+
+    <!-- Micro USB connector -->
+    <g filter="url(#part-shadow)">
+      <path d="M7.72 35.15h9.96l.55.62v6.72H7.17v-6.72z" fill="url(#usb-shell)" stroke="#32383b" stroke-width=".18"/>
+      <path d="M8.35 35.68h8.7l.42.46v4.1H7.93v-4.1z" fill="#252a2d" stroke="#060708" stroke-width=".14"/>
+      <path d="M9.05 36.35h7.3l.28.28v2.42H8.77v-2.42z" fill="#0a0c0d" stroke="#777e82" stroke-width=".1"/>
+      <rect x="9.45" y="36.78" width="6.5" height=".46" rx=".12" fill="#c5952d"/>
+      <path d="M7.47 35.82h.55v5.9h-.55m10.45-5.9h-.55v5.9h.55" fill="none" stroke="#f5f6f6" stroke-width=".11" opacity=".8"/>
+      <path d="M8 41.88h9.42" stroke="#535b5f" stroke-width=".2"/>
+    </g>
+
+    <!-- Gold plated through-hole headers -->
+    <g>
+      <use xlink:href="#header-pad" transform="translate(1 5.16)"/><use xlink:href="#header-pad" transform="translate(1 7.7)"/><use xlink:href="#header-pad" transform="translate(1 10.24)"/><use xlink:href="#header-pad" transform="translate(1 12.78)"/><use xlink:href="#header-pad" transform="translate(1 15.32)"/><use xlink:href="#header-pad" transform="translate(1 17.86)"/><use xlink:href="#header-pad" transform="translate(1 20.4)"/><use xlink:href="#header-pad" transform="translate(1 22.94)"/><use xlink:href="#header-pad" transform="translate(1 25.48)"/><use xlink:href="#header-pad" transform="translate(1 28.02)"/><use xlink:href="#header-pad" transform="translate(1 30.56)"/><use xlink:href="#header-pad" transform="translate(1 33.1)"/><use xlink:href="#header-pad" transform="translate(1 35.64)"/><use xlink:href="#header-pad" transform="translate(1 38.18)"/><use xlink:href="#header-pad" transform="translate(1 40.72)"/>
+      <use xlink:href="#header-pad" transform="translate(24.2 5.16)"/><use xlink:href="#header-pad" transform="translate(24.2 7.7)"/><use xlink:href="#header-pad" transform="translate(24.2 10.24)"/><use xlink:href="#header-pad" transform="translate(24.2 12.78)"/><use xlink:href="#header-pad" transform="translate(24.2 15.32)"/><use xlink:href="#header-pad" transform="translate(24.2 17.86)"/><use xlink:href="#header-pad" transform="translate(24.2 20.4)"/><use xlink:href="#header-pad" transform="translate(24.2 22.94)"/><use xlink:href="#header-pad" transform="translate(24.2 25.48)"/><use xlink:href="#header-pad" transform="translate(24.2 28.02)"/><use xlink:href="#header-pad" transform="translate(24.2 30.56)"/><use xlink:href="#header-pad" transform="translate(24.2 33.1)"/><use xlink:href="#header-pad" transform="translate(24.2 35.64)"/><use xlink:href="#header-pad" transform="translate(24.2 38.18)"/><use xlink:href="#header-pad" transform="translate(24.2 40.72)"/>
+    </g>
+    <g class="pin-label" text-anchor="start"><text x="2.05" y="5.36">GND</text><text x="2.05" y="7.9">3V3</text><text x="2.05" y="10.44">3V3</text><text x="2.05" y="12.98">2</text><text x="2.05" y="15.52">3</text><text x="2.05" y="18.06">GND</text><text x="2.05" y="20.6">RST</text><text x="2.05" y="23.14">GND</text><text x="2.05" y="25.68">0</text><text x="2.05" y="28.22">1</text><text x="2.05" y="30.76">10</text><text x="2.05" y="33.3">GND</text><text x="2.05" y="35.84">5V</text><text x="2.05" y="38.38">5V</text><text x="2.05" y="40.92">GND</text></g>
+    <g class="pin-label" text-anchor="end"><text x="23.15" y="5.36">GND</text><text x="23.15" y="7.9">TX</text><text x="23.15" y="10.44">RX</text><text x="23.15" y="12.98">GND</text><text x="23.15" y="15.52">9</text><text x="23.15" y="18.06">8</text><text x="23.15" y="20.6">GND</text><text x="23.15" y="23.14">7</text><text x="23.15" y="25.68">6</text><text x="23.15" y="28.22">5</text><text x="23.15" y="30.76">4</text><text x="23.15" y="33.3">GND</text><text x="23.15" y="35.84">18</text><text x="23.15" y="38.38">19</text><text x="23.15" y="40.92">GND</text></g>
+  </g>
+
+  <g data-techrib-board-terminals="true">
+    <g data-terminal="GND"><circle cx="1" cy="5.16" r=".635" data-wire-anchor="GND" fill="#000" fill-opacity=".001"/></g><g data-terminal="3V3_1"><circle cx="1" cy="7.7" r=".635" data-wire-anchor="3V3_1" fill="#000" fill-opacity=".001"/></g><g data-terminal="3V3_2"><circle cx="1" cy="10.24" r=".635" data-wire-anchor="3V3_2" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO2"><circle cx="1" cy="12.78" r=".635" data-wire-anchor="GPIO2" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO3"><circle cx="1" cy="15.32" r=".635" data-wire-anchor="GPIO3" fill="#000" fill-opacity=".001"/></g><g data-terminal="GND_2"><circle cx="1" cy="17.86" r=".635" data-wire-anchor="GND_2" fill="#000" fill-opacity=".001"/></g><g data-terminal="RST"><circle cx="1" cy="20.4" r=".635" data-wire-anchor="RST" fill="#000" fill-opacity=".001"/></g><g data-terminal="GND_3"><circle cx="1" cy="22.94" r=".635" data-wire-anchor="GND_3" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO0"><circle cx="1" cy="25.48" r=".635" data-wire-anchor="GPIO0" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO1"><circle cx="1" cy="28.02" r=".635" data-wire-anchor="GPIO1" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO10"><circle cx="1" cy="30.56" r=".635" data-wire-anchor="GPIO10" fill="#000" fill-opacity=".001"/></g><g data-terminal="GND_4"><circle cx="1" cy="33.1" r=".635" data-wire-anchor="GND_4" fill="#000" fill-opacity=".001"/></g><g data-terminal="5V_1"><circle cx="1" cy="35.64" r=".635" data-wire-anchor="5V_1" fill="#000" fill-opacity=".001"/></g><g data-terminal="5V_2"><circle cx="1" cy="38.18" r=".635" data-wire-anchor="5V_2" fill="#000" fill-opacity=".001"/></g><g data-terminal="GND_5"><circle cx="1" cy="40.72" r=".635" data-wire-anchor="GND_5" fill="#000" fill-opacity=".001"/></g>
+    <g data-terminal="GND_10"><circle cx="24.2" cy="5.16" r=".635" data-wire-anchor="GND_10" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO21"><circle cx="24.2" cy="7.7" r=".635" data-wire-anchor="GPIO21" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO20"><circle cx="24.2" cy="10.24" r=".635" data-wire-anchor="GPIO20" fill="#000" fill-opacity=".001"/></g><g data-terminal="GND_9"><circle cx="24.2" cy="12.78" r=".635" data-wire-anchor="GND_9" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO9"><circle cx="24.2" cy="15.32" r=".635" data-wire-anchor="GPIO9" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO8"><circle cx="24.2" cy="17.86" r=".635" data-wire-anchor="GPIO8" fill="#000" fill-opacity=".001"/></g><g data-terminal="GND_8"><circle cx="24.2" cy="20.4" r=".635" data-wire-anchor="GND_8" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO7"><circle cx="24.2" cy="22.94" r=".635" data-wire-anchor="GPIO7" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO6"><circle cx="24.2" cy="25.48" r=".635" data-wire-anchor="GPIO6" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO5"><circle cx="24.2" cy="28.02" r=".635" data-wire-anchor="GPIO5" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO4"><circle cx="24.2" cy="30.56" r=".635" data-wire-anchor="GPIO4" fill="#000" fill-opacity=".001"/></g><g data-terminal="GND_7"><circle cx="24.2" cy="33.1" r=".635" data-wire-anchor="GND_7" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO18"><circle cx="24.2" cy="35.64" r=".635" data-wire-anchor="GPIO18" fill="#000" fill-opacity=".001"/></g><g data-terminal="GPIO19"><circle cx="24.2" cy="38.18" r=".635" data-wire-anchor="GPIO19" fill="#000" fill-opacity=".001"/></g><g data-terminal="GND_6"><circle cx="24.2" cy="40.72" r=".635" data-wire-anchor="GND_6" fill="#000" fill-opacity=".001"/></g>
+  </g>
+</svg>

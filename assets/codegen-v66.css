@@ -1,0 +1,58 @@
+.codegen-modal[hidden]{display:none!important}.codegen-modal{position:fixed;z-index:15000;inset:0;background:#020b11cc;display:grid;place-items:center;padding:16px}.codegen-dialog{width:min(1180px,96vw);height:min(820px,92vh);display:flex;flex-direction:column;overflow:hidden;border:1px solid #31515f;border-radius:12px;background:#0b171e;color:#dce9ee;box-shadow:0 24px 80px #0009}.codegen-dialog>header{flex:0 0 auto;display:flex;justify-content:space-between;gap:18px;padding:14px 16px;border-bottom:1px solid #28434f;background:#0d1b23}.codegen-dialog>header small{color:#55c8f4;font:800 8px Inter;letter-spacing:1.4px}.codegen-dialog>header h3{margin:3px 0 2px;font-size:18px}.codegen-dialog>header p{margin:0;color:#8da7b3;font-size:9px}.codegen-dialog>header button{width:34px;height:34px;border:1px solid #365564;border-radius:8px;background:#122630;color:#fff;font-size:20px}.codegen-toolbar{flex:0 0 auto;display:flex;align-items:end;gap:8px;padding:10px 14px;border-bottom:1px solid #223b46;background:#0e1d25}.codegen-toolbar label{display:grid;gap:4px;color:#91aab5;font:700 8px Inter}.codegen-toolbar select,.codegen-toolbar button{height:34px;border:1px solid #31515f;border-radius:7px;background:#10242e;color:#e8f1f5;padding:0 10px;font:700 9px Inter}.codegen-toolbar button{cursor:pointer}.codegen-toolbar .primary{background:#f57c00;border-color:#f57c00;color:#fff}.codegen-content{min-height:0;flex:1;display:grid;grid-template-columns:minmax(340px,42%) 1fr;overflow:hidden}.codegen-topology{overflow:auto;padding:12px;border-right:1px solid #28434f}.codegen-output{min-width:0;display:flex;flex-direction:column;overflow:hidden}.codegen-output-head{height:42px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;border-bottom:1px solid #28434f;color:#b9ced7;font-size:9px}.codegen-output pre{flex:1;margin:0;overflow:auto;padding:15px;background:#071219;color:#d9edf6;font:12px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre}.codegen-status{display:grid;gap:4px;padding:10px;border:1px solid #31515f;border-radius:8px;background:#10232c}.codegen-status b{font-size:10px}.codegen-status span{color:#91aab5;font-size:9px}.codegen-status.ok{border-color:#256b55}.codegen-status.error{border-color:#8d3434}.codegen-warnings{display:grid;gap:6px;margin:9px 0}.codegen-warnings>div{display:grid;grid-template-columns:52px 1fr;gap:7px;padding:8px;border-radius:7px;background:#10232c;border:1px solid #28434f;font-size:8px}.codegen-warnings .error{border-color:#7b3030}.codegen-warnings .error b{color:#ff8b8b}.codegen-warnings .warning b{color:#ffc765}.codegen-warnings .info b{color:#55c8f4}.codegen-warnings .ok b{color:#66deb0}.codegen-nets{display:grid;gap:7px}.codegen-nets article{border:1px solid #294754;border-radius:8px;background:#0e2028;overflow:hidden}.codegen-nets article header{display:flex;justify-content:space-between;padding:8px 9px;background:#132933;font-size:9px}.codegen-nets article header span.ok{color:#6be0b4}.codegen-nets article header span.warn{color:#ffc765}.codegen-nets article p{margin:0;padding:7px 9px;color:#9db3bd;font-size:8px}.codegen-nets article>div{display:grid;gap:4px;padding:0 9px 9px}.codegen-nets article>div span{padding:5px 6px;border-radius:5px;background:#0a171d;font-size:8px}.codegen-nets article small{color:#6f929f}@media(max-width:900px){.codegen-modal{padding:0}.codegen-dialog{width:100vw;height:100dvh;max-height:none;border-radius:0}.codegen-toolbar{overflow-x:auto;align-items:end}.codegen-toolbar label{min-width:150px}.codegen-toolbar button{flex:0 0 auto}.codegen-content{grid-template-columns:1fr;grid-template-rows:minmax(220px,45%) 1fr}.codegen-topology{border-right:0;border-bottom:1px solid #28434f}.codegen-output pre{font-size:11px}}@media(max-width:560px){.codegen-dialog>header p{display:none}.codegen-toolbar{padding:8px}.codegen-toolbar label{min-width:135px}.codegen-content{grid-template-rows:minmax(190px,42%) 1fr}.codegen-nets article>div span{font-size:7.5px}}
+
+/* TechRib Code Generator V3 / 20D */
+.codegen-rainmaker-option{min-width:240px;display:flex!important;flex-direction:column;gap:4px}.codegen-rainmaker-option[hidden]{display:none!important}.codegen-check{display:flex;align-items:center;gap:7px;font-size:11px;color:#b8d8e5}.codegen-check input{accent-color:#f97316;width:16px;height:16px}.codegen-rainmaker-option.active{border-color:#f97316;background:rgba(249,115,22,.08)}
+
+/* TechRib Generation Engine V27A */
+.codegen-status.warning{border-color:#9a6a24}.codegen-toolbar select:disabled{opacity:.62;cursor:not-allowed}.codegen-toolbar option:disabled{color:#71838b}.codegen-toolbar optgroup{font-weight:800;color:#9fc2d0}
+
+/* TechRib Generation Engine V27B — aliases KNX/DALI */
+.codegen-naming-btn{border-color:#2d7e6a!important;background:#12362f!important;color:#b9f5de!important}.codegen-naming-btn[hidden]{display:none!important}.codegen-naming-overlay[hidden]{display:none!important}.codegen-naming-overlay{position:absolute;inset:0;z-index:8;display:grid;place-items:center;padding:22px;background:#020b11e8}.codegen-naming-dialog{width:min(860px,94%);max-height:88%;display:flex;flex-direction:column;overflow:hidden;border:1px solid #356a65;border-radius:12px;background:#0b1a20;box-shadow:0 28px 80px #000b}.codegen-naming-dialog>header{display:flex;justify-content:space-between;gap:16px;padding:14px 16px;border-bottom:1px solid #294a4a;background:#0e2529}.codegen-naming-dialog>header small{color:#69ddbd;font:800 8px Inter;letter-spacing:1.2px}.codegen-naming-dialog>header h4{margin:3px 0 4px;font-size:16px}.codegen-naming-dialog>header p{margin:0;color:#91adb2;font-size:9px;line-height:1.45}.codegen-naming-dialog>header button{width:34px;height:34px;border:1px solid #3b6467;border-radius:8px;background:#153037;color:#fff;font-size:20px;cursor:pointer}.codegen-naming-actions{display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid #28464a;background:#0d2026}.codegen-naming-actions button,.codegen-naming-dialog>footer button{height:32px;border:1px solid #355c61;border-radius:7px;background:#123039;color:#dcecef;padding:0 10px;font:700 9px Inter;cursor:pointer}.codegen-naming-actions span{margin-left:auto;color:#8fb1b7;font:700 9px Inter}.codegen-naming-list{min-height:0;overflow:auto;display:grid;gap:10px;padding:12px}.codegen-naming-group{border:1px solid #2d4c50;border-radius:9px;overflow:hidden;background:#0d2026}.codegen-naming-group>header{display:flex;justify-content:space-between;gap:12px;padding:9px 11px;background:#123039;border-bottom:1px solid #2b4a4e;font-size:9px}.codegen-naming-group>header span{color:#8aa8ae}.codegen-naming-group>div{display:grid}.codegen-naming-row{display:grid;grid-template-columns:105px minmax(220px,1fr) minmax(160px,.8fr);align-items:center;gap:9px;padding:8px 10px;border-bottom:1px solid #203a3f}.codegen-naming-row:last-child{border-bottom:0}.codegen-naming-row .technical{color:#69ddbd;font:800 8px ui-monospace,SFMono-Regular,Consolas,monospace}.codegen-naming-row input{width:100%;box-sizing:border-box;height:31px;border:1px solid #36585d;border-radius:6px;background:#08171c;color:#eff8fa;padding:0 9px;font:600 10px Inter}.codegen-naming-row input:focus{outline:1px solid #4dc4a6;border-color:#4dc4a6}.codegen-naming-row small{color:#78979d;font:600 8px/1.35 Inter;overflow-wrap:anywhere}.codegen-naming-empty{display:grid;gap:5px;padding:24px;border:1px dashed #35545a;border-radius:9px;color:#a8c0c5}.codegen-naming-dialog>footer{display:flex;justify-content:flex-end;gap:8px;padding:11px 12px;border-top:1px solid #28464a;background:#0d2026}.codegen-naming-dialog>footer .primary{background:#f57c00;border-color:#f57c00;color:#fff}@media(max-width:700px){.codegen-naming-overlay{padding:8px}.codegen-naming-dialog{width:100%;max-height:96%}.codegen-naming-row{grid-template-columns:82px 1fr}.codegen-naming-row small{grid-column:2}.codegen-naming-actions{overflow-x:auto}.codegen-naming-actions span{white-space:nowrap}}
+
+/* TechRib Generation Engine V27B.1 — rolagem visível no editor KNX/DALI */
+.codegen-naming-list{
+  flex:1 1 auto;
+  min-height:0;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  scrollbar-gutter:stable;
+  scrollbar-width:auto;
+  scrollbar-color:#4dc4a6 #08171c;
+  overscroll-behavior:contain;
+}
+.codegen-naming-list::-webkit-scrollbar{width:13px}
+.codegen-naming-list::-webkit-scrollbar-track{background:#08171c;border-left:1px solid #203a3f}
+.codegen-naming-list::-webkit-scrollbar-thumb{background:#3f8f7c;border:3px solid #08171c;border-radius:10px}
+.codegen-naming-list::-webkit-scrollbar-thumb:hover{background:#59bda4}
+
+/* TechRib Generation Engine V27B.2 — rolagem funcional KNX/DALI */
+.codegen-naming-dialog{
+  height:min(720px,88%);
+  max-height:88%;
+}
+.codegen-naming-list{
+  flex:1 1 0;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:10px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-gutter:stable;
+  overscroll-behavior:contain;
+  touch-action:pan-y;
+}
+.codegen-naming-list>.codegen-naming-group,
+.codegen-naming-list>.codegen-naming-empty{
+  flex:0 0 auto;
+}
+.codegen-naming-group{
+  min-height:max-content;
+}
+@media(max-width:700px){
+  .codegen-naming-dialog{
+    height:96%;
+    max-height:96%;
+  }
+}

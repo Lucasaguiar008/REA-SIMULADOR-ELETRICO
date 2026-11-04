@@ -1,0 +1,50 @@
+/* TechRib Biblioteca V57 — organização, miniaturas isoladas e menu seguro. */
+.library-source-stash{display:none!important}
+.library-domain{border-bottom:1px solid #213743;background:#0d171e}
+.library-domain>.library-domain-title{height:42px;padding:0 12px;background:#101e27;color:#d8e6ec;border:0;border-left:3px solid transparent}
+.library-domain[data-library-domain="electrical"]>.library-domain-title{border-left-color:#f57c00}
+.library-domain[data-library-domain="automation"]>.library-domain-title{border-left-color:#0ea5e9}
+.library-domain[data-library-domain="electronics"]>.library-domain-title{border-left-color:#7c3aed}
+.library-domain[data-library-domain="premium"]>.library-domain-title{border-left-color:#d4a72c;background:linear-gradient(90deg,#2a2414,#101e27 72%)}
+.library-domain[data-library-domain="premium"]>.library-domain-title span,.library-domain[data-library-domain="premium"]>.library-domain-title b{color:#f4d675!important}
+.library-domain>.library-families{display:none;padding:5px 7px 9px;background:#0d171e}
+.library-domain.open>.library-families{display:block}
+.library-family{margin:5px 0;border:1px solid #2b4654;border-radius:8px;background:#101e27;overflow:hidden}
+.library-family[hidden],.library-family.search-empty,.library-domain.search-empty{display:none!important}
+.library-family-title{width:100%;height:34px;padding:0 10px;border:0;background:#101e27;color:#d8e6ec;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font:700 9px Inter,Arial,sans-serif;text-align:left}
+.library-family-title:hover{background:#162a35}
+.library-family>.component-grid{display:none;padding:7px;gap:7px}
+.library-family.open>.component-grid{display:grid!important}
+.library-domain[data-library-domain="premium"] .library-family.open>.component-grid:empty{display:block!important;padding:10px!important;color:#8da3ad;font:600 9px Inter,Arial,sans-serif;text-align:center}
+.library-domain[data-library-domain="premium"] .library-family.open>.component-grid:empty:after{content:"Estrutura preparada"}
+/* V58: o estado da subcategoria deve prevalecer sobre a regra legada .library-group.open .component-grid. */
+.library-domain.open .library-family:not(.open)>.component-grid{display:none!important}
+.library-domain.open .library-family.open>.component-grid{display:grid!important}
+.library-domain .component-item{position:relative;min-height:104px!important;padding:7px 6px 6px!important;overflow:hidden!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important}
+.library-domain .component-item>.library-source-svg{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important;overflow:hidden!important;left:-9999px!important;top:-9999px!important}
+.library-domain .component-item>.library-svg-preview{display:block!important;width:100%!important;height:72px!important;max-width:100%!important;max-height:72px!important;object-fit:contain!important;object-position:center!important;margin:0 auto 5px!important;padding:2px!important;box-sizing:border-box!important;pointer-events:none!important}
+.library-domain .component-item>span{display:block!important;width:100%;margin-top:auto!important;min-height:20px;text-align:center;line-height:1.15!important;overflow-wrap:anywhere;color:#ffffff!important;font:700 9px Inter,Arial,sans-serif!important}
+.library-domain .component-item.filtered{display:none!important}
+.library-domain .component-item[data-premium="true"]{border-color:#7a6425!important;background:linear-gradient(160deg,#182934,#211d12)!important;padding-top:18px!important}
+.library-domain .component-item[data-premium="true"]:before{content:"PREMIUM";position:absolute;z-index:2;top:5px;right:5px;padding:2px 5px;border:1px solid #b8922b;border-radius:999px;background:#2a2414;color:#f4d675;font:800 7px Inter,Arial,sans-serif;letter-spacing:.45px;line-height:1;pointer-events:none}
+.library-domain .component-item[data-premium="true"]:hover{border-color:#d4a72c!important;background:linear-gradient(160deg,#1c303d,#2b2514)!important}
+.library-domain .component-item.premium-elevator-thumb>.library-svg-preview{height:76px!important;max-height:76px!important;padding:0 10px!important}
+.placed-component[data-type="elevador-4-andares"]{width:360px!important;min-height:439px!important;padding:4px!important}
+.placed-component[data-type="elevador-4-andares"]>svg{width:352px!important;height:auto!important;aspect-ratio:820/1000;overflow:visible!important;filter:none!important}
+.placed-component[data-type="elevador-4-andares"]>small{font-size:8px!important;margin-top:3px!important}
+.placed-component[data-type="elevador-4-andares"] [data-terminal]{cursor:crosshair}
+.library-component-menu{position:fixed;z-index:14000;display:none;min-width:190px;padding:5px;border:1px solid #29414e;border-radius:8px;background:#0f1b22;box-shadow:0 16px 42px #0f172a60}
+.library-component-menu.open{display:grid;gap:3px}
+.library-component-menu button{height:34px;border:0;border-radius:6px;background:#0f1b22;color:#d8e6ec;text-align:left;padding:0 10px;font:700 9px Inter,Arial,sans-serif;cursor:pointer}
+.library-component-menu button:hover{background:#162a35;color:#ffffff}
+.library-component-menu [data-library-delete]{color:#b42318}
+.library-component-menu [data-library-delete]:hover{background:#3a1616;color:#fecaca}
+/* A biblioteca nunca estiliza elementos internos do SVG. A miniatura visível é um <img> SVG isolado. */
+@media(max-width:767px){.library-domain .component-item>.library-svg-preview{height:78px!important;max-height:78px!important}.library-domain .component-item{min-height:112px!important}}
+
+.library-domain>.library-domain-title b,.library-family-title b{color:#d8e6ec!important}
+.library-domain>.library-domain-title small,.library-family-title small{color:#bad0da!important}
+
+/* V80: tamanho especial do elevador no exemplo de ligações; esta folha carrega depois de components-v44 */
+.placed-component[data-type="elevador-4-andares"][data-example-size="elevator-main-xl"]{width:620px!important;min-height:790px!important;padding:10px!important}
+.placed-component[data-type="elevador-4-andares"][data-example-size="elevator-main-xl"]>svg{width:600px!important;height:auto!important;max-width:none!important;aspect-ratio:820/1000!important;overflow:visible!important;filter:none!important}

@@ -1,0 +1,72 @@
+/* TechRib Regression V61.2 — resultados completos + rolagem robusta */
+.regression-modal[hidden]{display:none!important}
+.regression-modal{
+  position:fixed;inset:0;z-index:15000;background:#06131ac7;
+  display:block!important;overflow-y:auto!important;overflow-x:hidden!important;
+  padding:18px 22px 34px;box-sizing:border-box;overscroll-behavior:contain;
+}
+.regression-dialog{
+  width:min(1180px,96vw);height:auto!important;min-height:0!important;max-height:none!important;
+  margin:0 auto 28px;background:#0d171e;color:#e5eef2;border:1px solid #34505e;
+  border-radius:14px;box-shadow:0 28px 90px #0008;display:block!important;overflow:visible!important;
+}
+.regression-dialog>header{
+  position:sticky;top:0;z-index:6;height:62px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 18px;border-bottom:1px solid #29414e;background:#0b151c;border-radius:14px 14px 0 0;
+}
+.regression-dialog>header small{display:block;color:#50bce9;font:800 8px Inter;letter-spacing:1.4px}
+.regression-dialog>header h3{margin:3px 0 0;font-size:18px}
+.regression-dialog>header button{width:34px;height:34px;border:1px solid #34505e;border-radius:8px;background:#162a35;color:#fff;font-size:20px}
+.regression-toolbar{
+  position:sticky;top:62px;z-index:5;display:flex;align-items:center;gap:9px;padding:10px 14px;
+  border-bottom:1px solid #29414e;background:#101e27;
+}
+.regression-toolbar button{height:34px;padding:0 12px;border:1px solid #3b5b69;border-radius:7px;background:#17303c;color:#e5eef2;font:700 9px Inter;cursor:pointer}
+.regression-toolbar button.primary{background:#f57c00;border-color:#f57c00;color:#fff}
+.regression-toolbar button:disabled{opacity:.45;cursor:not-allowed}
+.regression-toolbar span{margin-left:auto;color:#8ea7b2;font-size:9px}
+.regression-summary{
+  margin:12px 14px 0;padding:12px 14px;border-radius:9px;display:flex;align-items:center;justify-content:space-between;
+}
+.regression-summary.ok{background:#0f2f25;border:1px solid #1e7a58}
+.regression-summary.error{background:#351b1b;border:1px solid #a64242}
+.regression-summary b{font-size:12px}.regression-summary span{font-size:9px;color:#c8d7de}
+
+/* O corpo não possui mais rolagem interna nem altura limitada. */
+.regression-body{
+  padding:12px 14px 20px!important;display:block!important;overflow:visible!important;
+  min-height:0!important;height:auto!important;max-height:none!important;
+}
+.regression-regressions{margin-bottom:10px;padding:10px 12px;background:#421d1d;border:1px solid #c64d4d;border-radius:8px}
+.regression-regressions b{display:block;color:#fecaca;font-size:10px}.regression-regressions span{font-size:9px;color:#f3bcbc}
+
+/* Um circuito por linha para mostrar todos os 10 checks sem corte. */
+.regression-card{
+  width:100%;height:auto!important;max-height:none!important;margin:0 0 10px;
+  border:1px solid #314c59;border-radius:9px;background:#101f28;overflow:visible!important;
+  box-sizing:border-box;
+}
+.regression-card>header{height:40px;padding:0 11px;display:flex;align-items:center;justify-content:space-between;background:#142631;border-radius:9px 9px 0 0}
+.regression-card>header b{font-size:10px}.regression-card>header span{font:800 8px Inter}.regression-card.pass>header span{color:#6ee7b7}.regression-card.fail>header span{color:#fca5a5}
+.regression-card ul{
+  list-style:none;margin:0;padding:9px;display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:6px!important;
+  height:auto!important;max-height:none!important;overflow:visible!important;
+}
+.regression-card li{min-height:52px!important;height:auto!important;padding:7px 8px;border-radius:6px;background:#0c1920;border:1px solid #243c47;box-sizing:border-box;overflow:visible!important}
+.regression-card li b{display:block;font-size:8px}.regression-card li small{display:block;margin-top:4px;color:#8ea7b2;font-size:7.5px;line-height:1.35;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+.regression-card li.pass b{color:#6ee7b7}.regression-card li.fail b{color:#fca5a5}
+
+.regression-modal::-webkit-scrollbar{width:12px}
+.regression-modal::-webkit-scrollbar-track{background:#071219}
+.regression-modal::-webkit-scrollbar-thumb{background:#486877;border:2px solid #071219;border-radius:8px}
+.regression-modal::-webkit-scrollbar-thumb:hover{background:#5c8090}
+
+@media(max-width:1050px){.regression-card ul{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:780px){
+  .regression-modal{padding:8px 6px 24px}.regression-dialog{width:98vw}
+  .regression-summary{align-items:flex-start;gap:5px;flex-direction:column}
+  .regression-card ul{grid-template-columns:1fr!important}
+  .regression-toolbar{flex-wrap:wrap}.regression-toolbar span{width:100%;margin-left:0}
+}
+.regression-card.skip{border-color:#8a6a2b}.regression-card.skip>header span{color:#fbbf24}.regression-example-source{padding:7px 10px;border-bottom:1px solid #27414e;background:#0c1b23;color:#8eabb8;font-size:9px}.regression-example-source b{color:#eaf4f7}.regression-missing-example{display:grid;gap:5px;padding:13px;color:#fbbf24}.regression-missing-example small{color:#a9bec7;line-height:1.45}.regression-regressions small{display:block;margin-top:6px;color:#a9bec7;line-height:1.4}

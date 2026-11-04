@@ -1,0 +1,63 @@
+/* TechRib — Relay Modules Proportion V5
+   Valores restaurados da correção LOCAL V2 confirmada pelo usuário.
+   Esta folha é carregada por último para neutralizar regras antigas. */
+.placed-component[data-type="relay-1ch-5v"],
+.placed-component[data-type="elec-relay-module-1ch"]{
+  width:92px!important;
+  height:auto!important;
+  min-height:130px!important;
+  max-height:none!important;
+  padding:6px!important;
+}
+.placed-component[data-type="relay-1ch-5v"]>svg,
+.placed-component[data-type="elec-relay-module-1ch"]>svg{
+  width:76px!important;
+  height:auto!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+.placed-component[data-type="elec-relay-module-2ch"]{
+  width:146px!important;
+  height:auto!important;
+  min-height:130px!important;
+  max-height:none!important;
+  padding:6px!important;
+}
+.placed-component[data-type="elec-relay-module-2ch"]>svg{
+  width:130px!important;
+  height:auto!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+.placed-component[data-type="elec-relay-module-4ch"]{
+  width:243px!important;
+  height:auto!important;
+  min-height:130px!important;
+  max-height:none!important;
+  padding:6px!important;
+}
+.placed-component[data-type="elec-relay-module-4ch"]>svg{
+  width:227px!important;
+  height:auto!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+.placed-component[data-type="elec-relay-module-8ch"]{
+  width:430px!important;
+  height:auto!important;
+  min-height:130px!important;
+  max-height:none!important;
+  padding:6px!important;
+}
+.placed-component[data-type="elec-relay-module-8ch"]>svg{
+  width:415px!important;
+  height:auto!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+/* O legado fica disponível para projetos antigos, mas não deve ser oferecido para novos projetos. */
+.component-item[data-component="relay-1ch-5v"]{display:none!important}

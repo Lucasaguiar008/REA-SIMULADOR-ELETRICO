@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 280.8" data-techrib-preserve-text-style="true" aria-label="Relé biestável de impulso TechRib realista" class="library-source-svg" aria-hidden="true" data-techrib-editor-managed="true" data-techrib-studio-import="true">
+  <defs>
+    <linearGradient id="imp_shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f9fa"/>
+      <stop offset="0.42" stop-color="#e8ecef"/>
+      <stop offset="1" stop-color="#bcc5cb"/>
+    </linearGradient>
+    <linearGradient id="imp_edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b666d"/>
+      <stop offset="1" stop-color="#202a30"/>
+    </linearGradient>
+    <linearGradient id="imp_face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfcfd"/>
+      <stop offset="1" stop-color="#d8dee2"/>
+    </linearGradient>
+    <linearGradient id="imp_terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2f4"/>
+      <stop offset="1" stop-color="#9fa9af"/>
+    </linearGradient>
+    <linearGradient id="imp_brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f2d46"/>
+      <stop offset="0.58" stop-color="#1783d1"/>
+      <stop offset="1" stop-color="#00b7d9"/>
+    </linearGradient>
+    <linearGradient id="imp_button" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#45b8ef"/>
+      <stop offset="0.55" stop-color="#1783d1"/>
+      <stop offset="1" stop-color="#0b5c9d"/>
+    </linearGradient>
+    <linearGradient id="imp_window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#233846"/>
+      <stop offset="1" stop-color="#0f1e27"/>
+    </linearGradient>
+    <radialGradient id="imp_screw" cx="34%" cy="28%" r="72%">
+      <stop offset="0" stop-color="#fbfcfd"/>
+      <stop offset="0.28" stop-color="#d8dde0"/>
+      <stop offset="0.62" stop-color="#89939a"/>
+      <stop offset="1" stop-color="#353d42"/>
+    </radialGradient>
+    <filter id="imp_shadow" x="-25%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="3.2" stdDeviation="2.8" flood-color="#000" flood-opacity=".24"/>
+    </filter>
+    <filter id="imp_led_glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#imp_shadow)">
+    <path data-component-body="true" d="M13 8.5H163L174 20v241.6l-11 11.1H13L6 264.5V18.2z" fill="url(#imp_edge)" stroke="#0b1216" stroke-width="2.2"/>
+    <path d="M18 12h139l11 11.5v233.8L158 268.5H18L11.5 261V19.7z" fill="url(#imp_shell)" stroke="#7c878e" stroke-width="1.35"/>
+    <path d="M20 14.7h9v250.6h-9z" fill="#fff" opacity=".43"/>
+    <path d="M153.5 18h10v241h-10z" fill="#7f8990" opacity=".24"/>
+    <path d="M16 56h148" stroke="#a9b2b8" stroke-width="1" opacity=".8"/>
+    <path d="M16 224h148" stroke="#9aa5ab" stroke-width="1" opacity=".85"/>
+
+    <!-- encaixes DIN -->
+    <path d="M64 12h52v8H105v7H75v-7H64z" fill="#c2c9cd" stroke="#818b91" stroke-width="1"/>
+    <path d="M64 268.5h52v-8h-11v-7H75v7H64z" fill="#b8c0c5" stroke="#7a858b" stroke-width="1"/>
+
+    <!-- região dos bornes superiores -->
+    <path d="M18 30h144v29H18z" fill="#d1d8dc" stroke="#a2adb3" stroke-width="1"/>
+    <path d="M22 33h136" stroke="#fff" stroke-width="1.2" opacity=".72"/>
+    <path d="M90 30v29" stroke="#939fa5" stroke-width="1.1"/>
+
+    <!-- face frontal -->
+    <rect x="28" y="66" width="124" height="151" rx="5.7" fill="url(#imp_face)" stroke="#a5afb5" stroke-width="1.25"/>
+    <rect x="33" y="72" width="114" height="22" rx="2.8" fill="url(#imp_brand)"/>
+    <text x="39" y="87" class="brand">LucasAguiar</text>
+    <text x="143" y="85" class="model">TR-IR1</text>
+    <path d="M34 101h112" stroke="#9ca8ae" stroke-width=".9"/>
+    <text x="38" y="112" class="caption">RELÉ BIESTÁVEL DE IMPULSO • 220 V~</text>
+
+    <!-- janela de estado -->
+    <rect x="39" y="120" width="102" height="70" rx="5" fill="url(#imp_window)" stroke="#526773" stroke-width="1.2"/>
+    <text x="45" y="133" class="windowTitle">MEMÓRIA MECÂNICA</text>
+    <circle cx="129" cy="131" r="4.2" fill="#64748b" stroke="#354954" stroke-width="1" data-generic-led="true" filter="url(#imp_led_glow)"/>
+
+    <!-- diagrama de contato; pivot preservado em 85,150 para o runtime -->
+    <circle cx="85" cy="150" r="3" fill="#e8f4f8"/>
+    <circle cx="119" cy="139" r="3" fill="#e8f4f8"/>
+    <path data-bistable-blade="true" d="M85 150L115 132" stroke="#eaf4f8" stroke-width="3.1" stroke-linecap="round"/>
+    <path d="M72 150H85M119 139h10" stroke="#eaf4f8" stroke-width="2" stroke-linecap="round"/>
+    <text x="56" y="154" class="contactLabel">11</text>
+    <text x="131" y="142" class="contactLabel">14</text>
+
+    <rect x="44" y="163" width="92" height="18" rx="3.5" fill="#152832" stroke="#314650" stroke-width=".8"/>
+    <text data-device-state="" x="90" y="176.2" class="state">ABERTO</text>
+
+    <!-- botão de teste/impulso -->
+    <g data-generic-actuator="true">
+      <rect x="53" y="196" width="74" height="14" rx="4" fill="url(#imp_button)" stroke="#07528f" stroke-width="1"/>
+      <path d="M57 198h66" stroke="#a9e4ff" stroke-width="1" opacity=".55"/>
+      <text x="90" y="205.8" class="buttonLabel">TESTE / IMPULSO</text>
+    </g>
+
+    <!-- região dos bornes inferiores -->
+    <path d="M18 226h144v31H18z" fill="#d0d7db" stroke="#9da8ae" stroke-width="1"/>
+    <path d="M90 226v31" stroke="#939fa5" stroke-width="1.1"/>
+    <path d="M22 229h64M94 229h64" stroke="#fff" stroke-width="1.15" opacity=".7"/>
+  </g>
+
+  <!-- A1 -->
+  <g data-terminal="A1" data-terminal-domain="control" data-terminal-function="coil" data-terminal-voltage-class="220vac" data-terminal-direction="input" data-wire-side="top">
+    <circle data-wire-anchor="A1" cx="60" cy="8.5" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="39" y="34" width="42" height="23" rx="4.5" fill="url(#imp_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <rect x="44" y="37" width="32" height="15" rx="3.5" fill="#6b777e" opacity=".30"/>
+    <circle cx="60" cy="44.5" r="8.5" fill="url(#imp_screw)" stroke="#3e494f" stroke-width="1.15"/>
+    <path d="M55.3 44.5h9.4M60 39.8v9.4" stroke="#283238" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="60" y="27" class="terminalLabel">A1</text>
+  </g>
+
+  <!-- A2 -->
+  <g data-terminal="A2" data-terminal-domain="control" data-terminal-function="coil" data-terminal-voltage-class="220vac" data-terminal-direction="input" data-wire-side="top">
+    <circle data-wire-anchor="A2" cx="120" cy="8.5" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="99" y="34" width="42" height="23" rx="4.5" fill="url(#imp_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <rect x="104" y="37" width="32" height="15" rx="3.5" fill="#6b777e" opacity=".30"/>
+    <circle cx="120" cy="44.5" r="8.5" fill="url(#imp_screw)" stroke="#3e494f" stroke-width="1.15"/>
+    <path d="M115.3 44.5h9.4M120 39.8v9.4" stroke="#283238" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="120" y="27" class="terminalLabel">A2</text>
+  </g>
+
+  <!-- 11 COM -->
+  <g data-terminal="11" data-terminal-domain="control" data-terminal-function="relay-common" data-terminal-voltage-class="dry-contact" data-terminal-direction="passive" data-wire-side="bottom">
+    <circle data-wire-anchor="11" cx="60" cy="272.3" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="39" y="231" width="42" height="26" rx="4.5" fill="url(#imp_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <rect x="44" y="234" width="32" height="16" rx="3.5" fill="#6b777e" opacity=".30"/>
+    <circle cx="60" cy="243" r="8.5" fill="url(#imp_screw)" stroke="#3e494f" stroke-width="1.15"/>
+    <path d="M55.3 243h9.4M60 238.3v9.4" stroke="#283238" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="60" y="266" class="terminalLabel">11 COM</text>
+  </g>
+
+  <!-- 14 NO -->
+  <g data-terminal="14" data-terminal-domain="control" data-terminal-function="relay-no" data-terminal-voltage-class="dry-contact" data-terminal-direction="bidirectional" data-wire-side="bottom">
+    <circle data-wire-anchor="14" cx="120" cy="272.3" r="8.5" fill="#000" fill-opacity="0.001" pointer-events="all"/>
+    <rect x="99" y="231" width="42" height="26" rx="4.5" fill="url(#imp_terminal)" stroke="#7d888f" stroke-width="1"/>
+    <rect x="104" y="234" width="32" height="16" rx="3.5" fill="#6b777e" opacity=".30"/>
+    <circle cx="120" cy="243" r="8.5" fill="url(#imp_screw)" stroke="#3e494f" stroke-width="1.15"/>
+    <path d="M115.3 243h9.4M120 238.3v9.4" stroke="#283238" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="120" y="266" class="terminalLabel">14 NA</text>
+  </g>
+
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif;text-rendering:geometricPrecision}
+    .brand{fill:#fff;font-size:12.2px;font-weight:800;text-anchor:start}
+    .model{fill:#d8f1ff;font-size:6.6px;font-weight:800;text-anchor:end;letter-spacing:.55px}
+    .caption{fill:#38464e;font-size:5.45px;font-weight:800;text-anchor:start;letter-spacing:.04px}
+    .windowTitle{fill:#b9d4df;font-size:5px;font-weight:800;text-anchor:start;letter-spacing:.45px}
+    .state{fill:#7dfc78;font-size:8px;font-weight:900;text-anchor:middle;letter-spacing:.5px}
+    .contactLabel{fill:#dbe8ee;font-size:5.3px;font-weight:800;text-anchor:middle}
+    .buttonLabel{fill:#fff;font-size:5.7px;font-weight:900;text-anchor:middle;letter-spacing:.35px}
+    .terminalLabel{fill:#26343c;font-size:6.2px;font-weight:900;text-anchor:middle}
+  </style>
+</svg>

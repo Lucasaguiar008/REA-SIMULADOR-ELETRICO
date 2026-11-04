@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 760" role="img" aria-label="Raspberry Pi Pico RP2040" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="picoPcb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#36b87e"/><stop offset=".55" stop-color="#15945f"/><stop offset="1" stop-color="#0b6d45"/></linearGradient>
+    <linearGradient id="picoChip" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2e3439"/><stop offset="1" stop-color="#080a0c"/></linearGradient>
+    <radialGradient id="picoPad"><stop stop-color="#f7dc78"/><stop offset=".55" stop-color="#d7a62f"/><stop offset="1" stop-color="#79530d"/></radialGradient>
+    <filter id="picoShadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-opacity=".35"/></filter>
+    <filter id="picoLed"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .pt{font:800 13px Arial,sans-serif;fill:#fff}.ps{font:700 10px Arial,sans-serif;fill:#d8fff0}.pin{font:800 10px Arial,sans-serif;fill:#f7fff9}.pwr{fill:#ffe38b}.anchor{fill:#000;fill-opacity:.001;pointer-events:all}
+    </style>
+  </defs>
+  <rect x="72" y="18" width="276" height="724" rx="34" fill="url(#picoPcb)" stroke="#82e2b8" stroke-width="4"/>
+  <rect x="111" y="42" width="198" height="58" rx="18" fill="#d7dde1" stroke="#fafafa" stroke-width="2"/>
+  <rect x="138" y="51" width="144" height="40" rx="11" fill="#343d43"/><rect x="167" y="57" width="86" height="28" rx="7" fill="#11161a"/>
+  <text x="210" y="128" text-anchor="middle" class="pt">RASPBERRY PI PICO</text><text x="210" y="149" text-anchor="middle" class="ps">RP2040 • DUAL CORE • 3.3 V GPIO</text>
+  <rect x="139" y="194" width="142" height="142" rx="16" fill="url(#picoChip)" stroke="#5e6a71" stroke-width="3"/>
+  <text x="210" y="255" text-anchor="middle" class="pt">RP2040</text><text x="210" y="278" text-anchor="middle" class="ps">ARM Cortex-M0+</text><text x="210" y="299" text-anchor="middle" class="ps">133 MHz</text>
+  <circle cx="310" cy="176" r="10" fill="#153528"/><circle data-logic-led="power" cx="310" cy="176" r="6" fill="#4d6b5d"/>
+  <circle cx="310" cy="205" r="10" fill="#153528"/><circle data-logic-led="gpio" cx="310" cy="205" r="6" fill="#4d6b5d"/>
+  <text x="287" y="179" text-anchor="end" class="ps">PWR</text><text x="287" y="208" text-anchor="end" class="ps">GPIO</text>
+  <rect x="130" y="380" width="160" height="74" rx="12" fill="#0e6846" stroke="#58c997"/><text x="210" y="405" text-anchor="middle" class="ps">SWD / FLASH</text><rect x="152" y="417" width="116" height="20" rx="5" fill="#1d292f"/>
+  <rect x="145" y="498" width="130" height="84" rx="13" fill="#0b5f3f" stroke="#5ac796"/><text x="210" y="524" text-anchor="middle" class="ps">POWER</text><text x="210" y="548" text-anchor="middle" class="pin">VSYS • 3V3 • GND</text>
+
+  <!-- left pins -->
+  <g>
+    <g data-terminal="GP0" transform="translate(72 180)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP0" r="17"/><text x="20" y="4" class="pin">GP0</text></g>
+    <g data-terminal="GP1" transform="translate(72 220)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP1" r="17"/><text x="20" y="4" class="pin">GP1</text></g>
+    <g data-terminal="GP2" transform="translate(72 260)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP2" r="17"/><text x="20" y="4" class="pin">GP2</text></g>
+    <g data-terminal="GP3" transform="translate(72 300)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP3" r="17"/><text x="20" y="4" class="pin">GP3</text></g>
+    <g data-terminal="GP4" transform="translate(72 340)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP4" r="17"/><text x="20" y="4" class="pin">GP4</text></g>
+    <g data-terminal="GP5" transform="translate(72 380)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP5" r="17"/><text x="20" y="4" class="pin">GP5</text></g>
+    <g data-terminal="GP6" transform="translate(72 420)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP6" r="17"/><text x="20" y="4" class="pin">GP6</text></g>
+    <g data-terminal="GP7" transform="translate(72 460)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP7" r="17"/><text x="20" y="4" class="pin">GP7</text></g>
+    <g data-terminal="GP8" transform="translate(72 500)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP8" r="17"/><text x="20" y="4" class="pin">GP8</text></g>
+    <g data-terminal="GP9" transform="translate(72 540)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP9" r="17"/><text x="20" y="4" class="pin">GP9</text></g>
+    <g data-terminal="GND" transform="translate(72 600)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GND" r="17"/><text x="20" y="4" class="pin pwr">GND</text></g>
+    <g data-terminal="VSYS" transform="translate(72 648)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="VSYS" r="17"/><text x="20" y="4" class="pin pwr">VSYS</text></g>
+  </g>
+
+  <!-- right pins -->
+  <g>
+    <g data-terminal="GP10" transform="translate(348 180)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP10" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP10</text></g>
+    <g data-terminal="GP11" transform="translate(348 220)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP11" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP11</text></g>
+    <g data-terminal="GP12" transform="translate(348 260)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP12" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP12</text></g>
+    <g data-terminal="GP13" transform="translate(348 300)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP13" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP13</text></g>
+    <g data-terminal="GP14" transform="translate(348 340)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP14" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP14</text></g>
+    <g data-terminal="GP15" transform="translate(348 380)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP15" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP15</text></g>
+    <g data-terminal="GP16" transform="translate(348 420)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP16" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP16</text></g>
+    <g data-terminal="GP17" transform="translate(348 460)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP17" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP17</text></g>
+    <g data-terminal="GP18" transform="translate(348 500)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP18" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP18</text></g>
+    <g data-terminal="GP19" transform="translate(348 540)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP19" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP19</text></g>
+    <g data-terminal="GP20" transform="translate(348 580)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP20" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP20</text></g>
+    <g data-terminal="GP21" transform="translate(348 620)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP21" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP21</text></g>
+    <g data-terminal="GP22" transform="translate(348 660)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP22" r="17"/><text x="-20" y="4" text-anchor="end" class="pin">GP22</text></g>
+  </g>
+  <g>
+    <g data-terminal="GP26" transform="translate(126 704)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP26" r="17"/><text x="0" y="-20" text-anchor="middle" class="pin">GP26/ADC0</text></g>
+    <g data-terminal="GP27" transform="translate(210 704)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP27" r="17"/><text x="0" y="-20" text-anchor="middle" class="pin">GP27/ADC1</text></g>
+    <g data-terminal="GP28" transform="translate(294 704)"><circle r="11" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GP28" r="17"/><text x="0" y="-20" text-anchor="middle" class="pin">GP28/ADC2</text></g>
+  </g>
+  <g data-terminal="3V3" transform="translate(126 128)"><circle r="10" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="3V3" r="16"/><text x="0" y="-17" text-anchor="middle" class="pin pwr">3V3</text></g>
+  <g data-terminal="GND2" transform="translate(294 128)"><circle r="10" fill="url(#picoPad)"/><circle class="anchor" data-wire-anchor="GND2" r="16"/><text x="0" y="-17" text-anchor="middle" class="pin pwr">GND</text></g>
+</svg>

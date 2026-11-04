@@ -1,0 +1,42 @@
+<svg viewBox="0 0 220 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="INTERRUPTOR DIFERENCIAL RESIDUAL">
+  <defs>
+    <linearGradient id="bodyRcd" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
+    <radialGradient id="screwRcd"><stop stop-color="#f8fafc"/><stop offset=".55" stop-color="#607382"/><stop offset="1" stop-color="#172936"/></radialGradient>
+  </defs>
+  <path data-component-body="true" d="M24 18h172l13 15v234l-13 15H24L11 267V33z" fill="#102b3a" stroke="#071923" stroke-width="5"/>
+  <rect x="19" y="27" width="182" height="246" rx="13" fill="url(#bodyRcd)" stroke="#78909c" stroke-width="3"/>
+
+  <g data-terminal="1">
+    <rect x="53.5" y="49" width="38" height="32" rx="7" fill="#f8fafc" stroke="#91a4b2" stroke-width="2"/>
+    <circle data-wire-anchor="1" cx="72.5" cy="65" r="13" fill="url(#screwRcd)" stroke="#b97918" stroke-width="3"/>
+    <path d="M66.5 65h12M72.5 59v12" stroke="#fff" stroke-width="2.4"/>
+    <text x="72.5" y="48" text-anchor="middle" font-size="12" font-weight="900" fill="#0f172a">1</text>
+  </g>
+  <g data-terminal="N_IN" data-terminal-label="N">
+    <rect x="128.5" y="49" width="38" height="32" rx="7" fill="#f8fafc" stroke="#91a4b2" stroke-width="2"/>
+    <circle data-wire-anchor="N_IN" cx="147.5" cy="65" r="13" fill="url(#screwRcd)" stroke="#b97918" stroke-width="3"/>
+    <path d="M141.5 65h12M147.5 59v12" stroke="#fff" stroke-width="2.4"/>
+    <text x="147.5" y="48" text-anchor="middle" font-size="12" font-weight="900" fill="#0f172a">N</text>
+  </g>
+  <g data-terminal="2">
+    <rect x="53.5" y="223" width="38" height="32" rx="7" fill="#f8fafc" stroke="#91a4b2" stroke-width="2"/>
+    <circle data-wire-anchor="2" cx="72.5" cy="239" r="13" fill="url(#screwRcd)" stroke="#b97918" stroke-width="3"/>
+    <path d="M66.5 239h12M72.5 233v12" stroke="#fff" stroke-width="2.4"/>
+    <text x="72.5" y="266" text-anchor="middle" font-size="12" font-weight="900" fill="#0f172a">2</text>
+  </g>
+  <g data-terminal="N_OUT" data-terminal-label="N">
+    <rect x="128.5" y="223" width="38" height="32" rx="7" fill="#f8fafc" stroke="#91a4b2" stroke-width="2"/>
+    <circle data-wire-anchor="N_OUT" cx="147.5" cy="239" r="13" fill="url(#screwRcd)" stroke="#b97918" stroke-width="3"/>
+    <path d="M141.5 239h12M147.5 233v12" stroke="#fff" stroke-width="2.4"/>
+    <text x="147.5" y="266" text-anchor="middle" font-size="12" font-weight="900" fill="#0f172a">N</text>
+  </g>
+
+  <rect x="34" y="92" width="152" height="118" rx="13" fill="#fff" stroke="#9eb0bc" stroke-width="3"/>
+  <text x="110" y="113" text-anchor="middle" font-size="11" font-weight="800" fill="#0b2a5b">LucasAguiar</text>
+  <text x="110" y="132" text-anchor="middle" font-size="12" font-weight="900" fill="#102a43">INTERRUPTOR DR</text>
+  <g data-generic-actuator="true">
+    <rect x="55" y="146" width="110" height="43" rx="9" fill="#1e88e5" stroke="#0b2333" stroke-width="4"/>
+    <text x="110" y="174" text-anchor="middle" font-size="20" font-weight="900" fill="#fff">ΔI</text>
+  </g>
+  <circle data-generic-led="true" cx="174" cy="111" r="6" fill="#64748b"/>
+</svg>

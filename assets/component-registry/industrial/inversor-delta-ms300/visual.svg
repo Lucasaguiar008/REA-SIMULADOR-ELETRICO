@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 900" role="img" aria-label="Delta MS300 - inversor de frequência" data-techrib-preserve-text-style="true">
+<defs>
+  <linearGradient id="ms-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#33383e"/><stop offset=".55" stop-color="#20252a"/><stop offset="1" stop-color="#14191d"/></linearGradient>
+  <linearGradient id="ms-front" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1d2227"/><stop offset="1" stop-color="#0d1115"/></linearGradient>
+  <linearGradient id="ms-key" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f5f6"/><stop offset="1" stop-color="#aeb7bd"/></linearGradient>
+  <linearGradient id="ms-term" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#efe4bf"/><stop offset="1" stop-color="#c5b27e"/></linearGradient>
+  <radialGradient id="ms-screw"><stop stop-color="#fff"/><stop offset=".5" stop-color="#cfd7dc"/><stop offset="1" stop-color="#5b6870"/></radialGradient>
+  <filter id="ms-shadow"><feDropShadow dx="2" dy="5" stdDeviation="5" flood-opacity=".4"/></filter>
+  <filter id="ms-glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>
+    .lbl{font:800 12px Arial,sans-serif;fill:#f4f7f8;text-anchor:middle}.small{font:700 9px Arial,sans-serif;fill:#bac5ca}.term{font:900 11px Arial,sans-serif;fill:#f3f7f8;text-anchor:middle}.key{font:900 12px Arial,sans-serif;fill:#243038;text-anchor:middle}.wire-anchor-hitbox{fill:transparent;stroke:transparent}.btn{cursor:pointer}
+  </style>
+</defs>
+<g filter="url(#ms-shadow)">
+  <rect x="70" y="28" width="420" height="842" rx="24" fill="url(#ms-body)" stroke="#090c0f" stroke-width="4"/>
+  <path d="M92 44h376l12 12v74H80V56z" fill="#262c32"/>
+  <g fill="#0d1115" opacity=".9">
+    <rect x="112" y="50" width="34" height="8" rx="2"/><rect x="152" y="50" width="34" height="8" rx="2"/><rect x="192" y="50" width="34" height="8" rx="2"/><rect x="232" y="50" width="34" height="8" rx="2"/><rect x="272" y="50" width="34" height="8" rx="2"/><rect x="312" y="50" width="34" height="8" rx="2"/><rect x="352" y="50" width="34" height="8" rx="2"/><rect x="392" y="50" width="34" height="8" rx="2"/>
+  </g>
+  <rect x="94" y="102" width="372" height="292" rx="13" fill="url(#ms-front)" stroke="#59656d" stroke-width="2"/>
+  <text x="118" y="128" class="small" font-size="11">▲ DELTA</text>
+  <text x="118" y="150" class="small">RUN</text><text x="118" y="168" class="small">FWD</text><text x="118" y="186" class="small">REV</text>
+  <circle cx="150" cy="146" r="6" data-vfd-led="run" fill="#263238"/><circle cx="150" cy="164" r="6" data-vfd-led="fwd" fill="#263238"/><circle cx="150" cy="182" r="6" data-vfd-led="rev" fill="#263238"/>
+  <rect x="180" y="128" width="206" height="52" rx="4" fill="#06090b" stroke="#333d42"/>
+  <text x="365" y="165" data-vfd-display="true" text-anchor="end" font-family="Consolas,monospace" font-size="32" font-weight="900" fill="#e83535" filter="url(#ms-glow)">00.00</text>
+  <text x="398" y="164" class="small">Hz</text>
+  <circle cx="421" cy="220" r="38" fill="#151a1f" stroke="#6c767d" stroke-width="3"/>
+  <circle cx="421" cy="220" r="28" fill="#2e343a" stroke="#0a0d10"/>
+  <line x1="421" y1="220" x2="438" y2="202" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <text x="421" y="270" class="small" text-anchor="middle">FREQ</text>
+  <g class="btn" data-vfd-action="run"><rect x="116" y="214" width="88" height="50" rx="5" fill="#35b779"/><text x="160" y="246" class="lbl" font-size="17">RUN</text></g>
+  <g class="btn" data-vfd-action="stop"><rect x="116" y="276" width="88" height="50" rx="5" fill="#d84545"/><text x="160" y="298" class="lbl" font-size="12">STOP</text><text x="160" y="315" class="lbl" font-size="10">RESET</text></g>
+  <g class="btn" data-vfd-action="freq-up"><rect x="220" y="214" width="68" height="50" rx="5" fill="url(#ms-key)"/><text x="254" y="246" class="key" font-size="20">▲</text></g>
+  <g class="btn" data-vfd-action="freq-down"><rect x="220" y="276" width="68" height="50" rx="5" fill="url(#ms-key)"/><text x="254" y="307" class="key" font-size="20">▼</text></g>
+  <g class="btn" data-vfd-action="mode"><rect x="300" y="214" width="84" height="50" rx="5" fill="url(#ms-key)"/><text x="342" y="246" class="key">MODE</text></g>
+  <g class="btn" data-vfd-action="reverse"><rect x="300" y="276" width="84" height="50" rx="5" fill="url(#ms-key)"/><text x="342" y="307" class="key">REV</text></g>
+  <g class="btn" data-vfd-action="enter"><rect x="396" y="276" width="54" height="50" rx="5" fill="#40bde0"/><text x="423" y="307" class="key" font-size="10">ENTER</text></g>
+
+  <text x="280" y="456" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="900" fill="#e8ecef">▲ DELTA</text>
+  <text x="280" y="498" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="900" fill="#f0f2f4">MS300</text>
+  <rect x="126" y="532" width="308" height="104" rx="8" fill="#11171b" stroke="#46545d"/>
+  <polygon points="150,554 166,580 134,580" fill="#f2c94c"/><text x="184" y="566" class="small" text-anchor="start">STANDARD COMPACT DRIVE</text>
+  <text x="184" y="586" class="small" text-anchor="start">V/F • SVC • FOC • STO • USB • MODBUS</text>
+  <text x="184" y="606" class="small" text-anchor="start">IM / PM MOTOR CONTROL</text>
+
+  <rect x="102" y="652" width="356" height="72" rx="8" fill="#12181c" stroke="#56636b"/>
+  <rect x="114" y="674" width="332" height="34" rx="5" fill="url(#ms-term)"/>
+  <text x="144" y="670" class="term">R/L1</text><text x="207" y="670" class="term">S/L2</text><text x="270" y="670" class="term">T/L3</text><text x="333" y="670" class="term">PE</text><text x="396" y="670" class="term">BR</text>
+  <g stroke="#4c565d" stroke-width="2"><circle cx="144" cy="691" r="13" fill="url(#ms-screw)"/><path d="M137 691h14M144 684v14"/><circle cx="207" cy="691" r="13" fill="url(#ms-screw)"/><path d="M200 691h14M207 684v14"/><circle cx="270" cy="691" r="13" fill="url(#ms-screw)"/><path d="M263 691h14M270 684v14"/><circle cx="333" cy="691" r="13" fill="url(#ms-screw)"/><path d="M326 691h14M333 684v14"/><circle cx="396" cy="691" r="13" fill="url(#ms-screw)"/><path d="M389 691h14M396 684v14"/></g>
+
+  <rect x="90" y="742" width="380" height="94" rx="8" fill="#10161a" stroke="#56636b"/>
+  <rect x="104" y="770" width="192" height="34" rx="5" fill="url(#ms-term)"/>
+  <text x="130" y="766" class="term">U/T1</text><text x="182" y="766" class="term">V/T2</text><text x="234" y="766" class="term">W/T3</text><text x="278" y="766" class="term">PE</text>
+  <g stroke="#4c565d" stroke-width="2"><circle cx="130" cy="787" r="13" fill="url(#ms-screw)"/><path d="M123 787h14M130 780v14"/><circle cx="182" cy="787" r="13" fill="url(#ms-screw)"/><path d="M175 787h14M182 780v14"/><circle cx="234" cy="787" r="13" fill="url(#ms-screw)"/><path d="M227 787h14M234 780v14"/><circle cx="278" cy="787" r="13" fill="url(#ms-screw)"/><path d="M271 787h14M278 780v14"/></g>
+  <rect x="310" y="754" width="142" height="66" rx="5" fill="#252c31" stroke="#69757c"/>
+  <text x="326" y="771" class="small">CTRL</text>
+  <text x="328" y="790" class="small">MI1 MI2 MI3 DCM</text><text x="328" y="808" class="small">+24 +10 AVI ACM</text>
+</g>
+<!-- anchors / terminals -->
+<g fill="transparent" stroke="transparent" pointer-events="all">
+ <circle data-terminal="R/L1" data-wire-anchor="R/L1" cx="144" cy="691" r="20"/><circle data-terminal="S/L2" data-wire-anchor="S/L2" cx="207" cy="691" r="20"/><circle data-terminal="T/L3" data-wire-anchor="T/L3" cx="270" cy="691" r="20"/><circle data-terminal="PE" data-wire-anchor="PE" cx="333" cy="691" r="20"/>
+ <circle data-terminal="U/T1" data-wire-anchor="U/T1" cx="130" cy="787" r="20"/><circle data-terminal="V/T2" data-wire-anchor="V/T2" cx="182" cy="787" r="20"/><circle data-terminal="W/T3" data-wire-anchor="W/T3" cx="234" cy="787" r="20"/><circle data-terminal="PE-OUT" data-wire-anchor="PE-OUT" cx="278" cy="787" r="20"/>
+ <circle data-terminal="MI1" data-wire-anchor="MI1" cx="328" cy="831" r="16"/><circle data-terminal="MI2" data-wire-anchor="MI2" cx="354" cy="831" r="16"/><circle data-terminal="MI3" data-wire-anchor="MI3" cx="380" cy="831" r="16"/><circle data-terminal="DCM" data-wire-anchor="DCM" cx="406" cy="831" r="16"/>
+ <circle data-terminal="+24V" data-wire-anchor="+24V" cx="328" cy="850" r="16"/><circle data-terminal="+10V" data-wire-anchor="+10V" cx="354" cy="850" r="16"/><circle data-terminal="AVI" data-wire-anchor="AVI" cx="380" cy="850" r="16"/><circle data-terminal="ACM" data-wire-anchor="ACM" cx="406" cy="850" r="16"/>
+ <circle data-terminal="RA" data-wire-anchor="RA" cx="438" cy="831" r="16"/><circle data-terminal="RB" data-wire-anchor="RB" cx="458" cy="831" r="16"/><circle data-terminal="RC" data-wire-anchor="RC" cx="478" cy="831" r="16"/>
+</g>
+</svg>

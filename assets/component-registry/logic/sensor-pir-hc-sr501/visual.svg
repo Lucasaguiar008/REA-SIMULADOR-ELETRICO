@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 430" role="img" aria-label="Sensor PIR HC-SR501">
+  <defs>
+    <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18784b"/><stop offset="1" stop-color="#0b4d31"/></linearGradient>
+    <radialGradient id="lens" cx="50%" cy="38%" r="65%"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#eef2f7"/><stop offset="1" stop-color="#aeb8c4"/></radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-opacity=".35"/></filter>
+    <filter id="lensShadow"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity=".28"/></filter>
+    <style>
+      .t1{font:900 18px Arial,sans-serif;fill:#f0fdf4}.t2{font:800 12px Arial,sans-serif;fill:#b7f7d2}.tiny{font:800 10px Arial,sans-serif;fill:#d8ffe7}.term{font:900 12px Arial,sans-serif;fill:#10231b}.wire-anchor-hitbox{fill:transparent;stroke:transparent}.port{fill:#f8fafc;stroke:#45515b;stroke-width:3}.screw{fill:#d8e0e5;stroke:#5c6870;stroke-width:2}.ledOff{fill:#253341;stroke:#94a3b8;stroke-width:2}.btn{fill:#173344;stroke:#8ec9dd;stroke-width:2;cursor:pointer}.btnText{font:900 11px Arial,sans-serif;fill:#dff7ff;pointer-events:none}
+    </style>
+  </defs>
+  <rect x="28" y="22" width="304" height="384" rx="28" fill="url(#pcb)" stroke="#063d27" stroke-width="5" filter="url(#shadow)"/>
+  <text x="180" y="54" text-anchor="middle" class="t1">TechRib • PIR</text>
+  <text x="180" y="75" text-anchor="middle" class="t2">HC-SR501 • PRESENÇA</text>
+
+  <g data-presence-test="true" style="cursor:pointer">
+    <circle cx="180" cy="181" r="91" fill="url(#lens)" stroke="#8e9aa6" stroke-width="5" filter="url(#lensShadow)"/>
+    <path d="M113 161 Q180 113 247 161 M102 190 Q180 138 258 190 M112 219 Q180 171 248 219" fill="none" stroke="#c5ced8" stroke-width="4" opacity=".9"/>
+    <path d="M134 111 Q180 151 226 111 M124 242 Q180 202 236 242" fill="none" stroke="#d8dee6" stroke-width="3" opacity=".8"/>
+  </g>
+
+  <g transform="translate(72 301)">
+    <circle cx="0" cy="0" r="10" class="ledOff" data-presence-power-led="true"/><text x="17" y="4" class="tiny">PWR</text>
+    <circle cx="103" cy="0" r="12" class="ledOff" data-presence-detect-led="true"/><text x="123" y="4" class="tiny">MOV</text>
+  </g>
+  <rect x="86" y="328" width="188" height="34" rx="10" class="btn" data-presence-test="true"/>
+  <text x="180" y="350" text-anchor="middle" class="btnText">TESTAR MOVIMENTO</text>
+  <text x="180" y="320" text-anchor="middle" class="tiny" data-presence-state="true">SEM MOVIMENTO</text>
+
+  <g data-terminal="VCC" data-wire-side="bottom" transform="translate(92 402)"><circle r="17" class="port"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="VCC" data-wire-side="bottom"/><text x="0" y="-27" text-anchor="middle" class="term">VCC</text></g>
+  <g data-terminal="OUT" data-wire-side="bottom" transform="translate(180 402)"><circle r="17" class="port"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="OUT" data-wire-side="bottom"/><text x="0" y="-27" text-anchor="middle" class="term">OUT</text></g>
+  <g data-terminal="GND" data-wire-side="bottom" transform="translate(268 402)"><circle r="17" class="port"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="GND" data-wire-side="bottom"/><text x="0" y="-27" text-anchor="middle" class="term">GND</text></g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 260" role="img" aria-label="Interruptor intermediário Four Way">
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f7f9fa"/><stop offset=".5" stop-color="#e7ebee"/><stop offset="1" stop-color="#cbd2d8"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b9c2c9"/><stop offset="1" stop-color="#7d8790"/></linearGradient>
+    <linearGradient id="key" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset=".52" stop-color="#edf1f3"/><stop offset="1" stop-color="#c5cdd3"/></linearGradient>
+    <radialGradient id="brass" cx="35%" cy="30%"><stop stop-color="#f4c970"/><stop offset=".55" stop-color="#c98522"/><stop offset="1" stop-color="#9d5b12"/></radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#27343c" flood-opacity=".28"/></filter>
+    <style>.model{font-family:Arial,sans-serif;font-weight:700;letter-spacing:.25px;fill:#4d5962}.terminal-label{font:800 9px Arial,sans-serif;fill:#26323a}</style>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="23" y="8" width="134" height="184" rx="19" fill="url(#rim)" stroke="#6f7a83" stroke-width="2.5"/>
+    <rect x="30" y="15" width="120" height="170" rx="15" fill="url(#plate)" stroke="#f9fbfc" stroke-width="2"/>
+  </g>
+  <circle cx="90" cy="31" r="4.2" fill="#8b969f"/><path d="M87.5 31h5" stroke="#d9dfe3" stroke-width="1"/>
+  <rect data-residential-toggle="true" x="51" y="44" width="78" height="111" rx="15" fill="#f8fafc" stroke="#68747d" stroke-width="3"/>
+  <path data-residential-key="true" d="M59 53h62v93H59z" fill="url(#key)" stroke="#9ca7af" stroke-width="2.2"/>
+  <path d="M64 60h52M64 137h52" stroke="#fff" stroke-width="1.5" stroke-opacity=".9" pointer-events="none"/>
+  <path d="M64 98h52" stroke="#bac3c9" stroke-width="1" stroke-opacity=".65" pointer-events="none"/>
+  <rect x="39" y="163" width="102" height="20" rx="6" fill="#e7ebee" stroke="#adb7bf"/>
+  <text x="90" y="176.5" text-anchor="middle" class="model" font-size="5.9">INTERMEDIÁRIO • 4 BORNES</text>
+  <rect x="17" y="201" width="146" height="56" rx="10" fill="#c9d0d5" stroke="#87939c" stroke-width="1.5"/>
+  <rect x="23" y="207" width="134" height="44" rx="7" fill="#e5eaed" stroke="#f8fafb"/>
+  <g data-terminal="A1" data-terminal-domain="control" data-terminal-function="dry-contact" data-terminal-direction="passive" data-wire-side="bottom">
+    <circle data-wire-anchor="A1" data-wire-side="bottom" cx="30" cy="225" r="17" fill="#000" fill-opacity=".001" pointer-events="all"/>
+    <circle cx="30" cy="225" r="10" fill="url(#brass)" stroke="#70430e" stroke-width="2"/>
+    <circle cx="30" cy="225" r="4" fill="#f9d98e"/>
+    <path d="M25 225h10M30 220v10" stroke="#825113" stroke-width="1.5"/>
+    <text x="30" y="250" text-anchor="middle" class="terminal-label">A1</text>
+  </g>
+  <g data-terminal="A2" data-terminal-domain="control" data-terminal-function="dry-contact" data-terminal-direction="passive" data-wire-side="bottom">
+    <circle data-wire-anchor="A2" data-wire-side="bottom" cx="70" cy="225" r="17" fill="#000" fill-opacity=".001" pointer-events="all"/>
+    <circle cx="70" cy="225" r="10" fill="url(#brass)" stroke="#70430e" stroke-width="2"/>
+    <circle cx="70" cy="225" r="4" fill="#f9d98e"/>
+    <path d="M65 225h10M70 220v10" stroke="#825113" stroke-width="1.5"/>
+    <text x="70" y="250" text-anchor="middle" class="terminal-label">A2</text>
+  </g>
+  <g data-terminal="B2" data-terminal-domain="control" data-terminal-function="dry-contact" data-terminal-direction="passive" data-wire-side="bottom">
+    <circle data-wire-anchor="B2" data-wire-side="bottom" cx="110" cy="225" r="17" fill="#000" fill-opacity=".001" pointer-events="all"/>
+    <circle cx="110" cy="225" r="10" fill="url(#brass)" stroke="#70430e" stroke-width="2"/>
+    <circle cx="110" cy="225" r="4" fill="#f9d98e"/>
+    <path d="M105 225h10M110 220v10" stroke="#825113" stroke-width="1.5"/>
+    <text x="110" y="250" text-anchor="middle" class="terminal-label">B2</text>
+  </g>
+  <g data-terminal="B1" data-terminal-domain="control" data-terminal-function="dry-contact" data-terminal-direction="passive" data-wire-side="bottom">
+    <circle data-wire-anchor="B1" data-wire-side="bottom" cx="150" cy="225" r="17" fill="#000" fill-opacity=".001" pointer-events="all"/>
+    <circle cx="150" cy="225" r="10" fill="url(#brass)" stroke="#70430e" stroke-width="2"/>
+    <circle cx="150" cy="225" r="4" fill="#f9d98e"/>
+    <path d="M145 225h10M150 220v10" stroke="#825113" stroke-width="1.5"/>
+    <text x="150" y="250" text-anchor="middle" class="terminal-label">B1</text>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-label="Braço Robótico SCARA ESP32" data-techrib-preserve-text-style="true">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#172554"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2e8f0"/><stop offset=".48" stop-color="#94a3b8"/><stop offset="1" stop-color="#475569"/></linearGradient>
+ <linearGradient id="arm" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f59e0b"/><stop offset="1" stop-color="#d97706"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-opacity=".38"/></filter>
+</defs>
+<rect x="5" y="5" width="990" height="690" rx="24" fill="#0f172a" stroke="#334155" stroke-width="6"/>
+<rect x="24" y="22" width="952" height="82" rx="16" fill="url(#bg)"/>
+<text x="52" y="58" font-family="Arial" font-weight="800" font-size="26" fill="#fff">BRAÇO ROBÓTICO SCARA • 3 SERVOS</text>
+<text x="52" y="86" font-family="Arial" font-size="15" fill="#93c5fd">ESP32 • 3× POTENCIÔMETROS ADC • PICK &amp; PLACE • SOM + ANIMAÇÃO</text>
+<rect x="725" y="38" width="225" height="51" rx="11" fill="#020617" stroke="#38bdf8" stroke-width="2"/>
+<text x="837" y="59" text-anchor="middle" font-family="monospace" font-size="12" fill="#7dd3fc">ESTADO</text>
+<text x="837" y="79" data-arm-mini-status="true" text-anchor="middle" font-family="monospace" font-size="15" font-weight="800" fill="#86efac">PRONTO</text>
+
+<!-- workspace -->
+<rect x="28" y="122" width="650" height="430" rx="20" fill="#111827" stroke="#475569" stroke-width="3"/>
+<circle cx="355" cy="332" r="285" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="8 10"/>
+<circle cx="355" cy="332" r="210" fill="none" stroke="#1e3a5f" stroke-width="2" stroke-dasharray="7 11"/>
+<text x="54" y="153" font-family="Arial" font-size="13" fill="#94a3b8">ÁREA DE TRABALHO • VISTA SUPERIOR</text>
+
+<!-- pick / place stations -->
+<g data-arm-station="pick"><rect x="117" y="411" width="132" height="92" rx="16" fill="#082f49" stroke="#22d3ee" stroke-width="3" stroke-dasharray="9 6"/><text x="183" y="438" text-anchor="middle" font-family="Arial" font-size="13" font-weight="800" fill="#67e8f9">PEGA</text></g>
+<g data-arm-station="place"><rect x="462" y="411" width="132" height="92" rx="16" fill="#052e16" stroke="#4ade80" stroke-width="3" stroke-dasharray="9 6"/><text x="528" y="438" text-anchor="middle" font-family="Arial" font-size="13" font-weight="800" fill="#86efac">COLOCA</text></g>
+<g data-arm-object="true" transform="translate(183 468)"><rect x="-24" y="-20" width="48" height="40" rx="7" fill="#ef4444" stroke="#fecaca" stroke-width="3"/><path d="M-13 -8h26M-13 4h26" stroke="#7f1d1d" stroke-width="3"/><text x="0" y="34" text-anchor="middle" font-family="Arial" font-size="10" fill="#fecaca">PEÇA</text></g>
+
+<!-- robot base -->
+<g filter="url(#shadow)"><ellipse cx="355" cy="348" rx="72" ry="28" fill="#334155"/><rect x="296" y="297" width="118" height="52" rx="18" fill="url(#metal)" stroke="#cbd5e1" stroke-width="3"/><circle cx="355" cy="320" r="39" fill="#1e293b" stroke="#f8fafc" stroke-width="4"/><circle cx="355" cy="320" r="13" fill="#f59e0b"/></g>
+
+<!-- arm links; runtime changes endpoints -->
+<g data-arm-links="true" stroke-linecap="round" filter="url(#shadow)">
+ <line data-arm-link1="true" x1="355" y1="320" x2="510" y2="320" stroke="url(#arm)" stroke-width="36"/>
+ <line data-arm-link1-highlight="true" x1="355" y1="312" x2="510" y2="312" stroke="#fde68a" stroke-width="5" opacity=".55"/>
+ <circle data-arm-joint2="true" cx="510" cy="320" r="26" fill="#334155" stroke="#f8fafc" stroke-width="4"/>
+ <line data-arm-link2="true" x1="510" y1="320" x2="645" y2="320" stroke="#2563eb" stroke-width="30"/>
+ <line data-arm-link2-highlight="true" x1="510" y1="313" x2="645" y2="313" stroke="#93c5fd" stroke-width="4" opacity=".7"/>
+</g>
+<g data-arm-gripper="true" transform="translate(645 320)">
+ <circle cx="0" cy="0" r="23" fill="#0f172a" stroke="#e2e8f0" stroke-width="4"/>
+ <path data-arm-jaw-left="true" d="M-10 8 L-36 28 L-27 38" fill="none" stroke="#e2e8f0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+ <path data-arm-jaw-right="true" d="M10 8 L36 28 L27 38" fill="none" stroke="#e2e8f0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- telemetry panel -->
+<rect x="700" y="122" width="276" height="430" rx="20" fill="#0b1724" stroke="#334155" stroke-width="3"/>
+<text x="724" y="156" font-family="Arial" font-size="15" font-weight="800" fill="#e2e8f0">TELEMETRIA DOS EIXOS</text>
+<g font-family="monospace">
+ <text x="724" y="199" font-size="13" fill="#93c5fd">SERVO 1 • BASE</text><text x="938" y="199" text-anchor="end" data-arm-a1="true" font-size="23" font-weight="800" fill="#fff">90°</text>
+ <rect x="724" y="213" width="220" height="10" rx="5" fill="#1e293b"/><rect data-arm-bar1="true" x="724" y="213" width="110" height="10" rx="5" fill="#f59e0b"/>
+ <text x="724" y="265" font-size="13" fill="#93c5fd">SERVO 2 • ARTICULAÇÃO</text><text x="938" y="265" text-anchor="end" data-arm-a2="true" font-size="23" font-weight="800" fill="#fff">20°</text>
+ <rect x="724" y="279" width="220" height="10" rx="5" fill="#1e293b"/><rect data-arm-bar2="true" x="724" y="279" width="24.4" height="10" rx="5" fill="#2563eb"/>
+ <text x="724" y="331" font-size="13" fill="#93c5fd">SERVO 3 • GARRA</text><text x="938" y="331" text-anchor="end" data-arm-a3="true" font-size="23" font-weight="800" fill="#fff">70°</text>
+ <rect x="724" y="345" width="220" height="10" rx="5" fill="#1e293b"/><rect data-arm-bar3="true" x="724" y="345" width="86" height="10" rx="5" fill="#22c55e"/>
+</g>
+<text x="724" y="399" font-family="Arial" font-size="12" fill="#94a3b8">CONTROLE MANUAL</text>
+<text x="724" y="421" font-family="Arial" font-size="12" fill="#cbd5e1">P1 → GPIO34 → BASE</text>
+<text x="724" y="442" font-family="Arial" font-size="12" fill="#cbd5e1">P2 → GPIO35 → ARTICULAÇÃO</text>
+<text x="724" y="463" font-family="Arial" font-size="12" fill="#cbd5e1">P3 → GPIO36 → GARRA</text>
+<text x="724" y="500" font-family="Arial" font-size="11" fill="#64748b">Abra ⚙ TEST nos potenciômetros para</text><text x="724" y="518" font-family="Arial" font-size="11" fill="#64748b">movimentar cada eixo manualmente.</text>
+
+<rect x="48" y="570" width="904" height="48" rx="12" fill="#0b1724" stroke="#334155" stroke-width="2"/>
+<text x="68" y="600" data-arm-status="true" font-family="monospace" font-size="15" font-weight="700" fill="#a7f3d0">PRONTO • CLIQUE EM ▶ EXECUTAR E DEPOIS EM AUTO</text>
+
+<!-- action buttons -->
+<g font-family="Arial" font-weight="800" font-size="14" text-anchor="middle">
+ <g data-arm-action="home" style="cursor:pointer"><rect x="48" y="633" width="150" height="45" rx="11" fill="#334155" stroke="#94a3b8" stroke-width="2"/><text x="123" y="661" fill="#fff">⌂ HOME</text></g>
+ <g data-arm-action="pick" style="cursor:pointer"><rect x="214" y="633" width="150" height="45" rx="11" fill="#075985" stroke="#38bdf8" stroke-width="2"/><text x="289" y="661" fill="#fff">↓ PEGAR</text></g>
+ <g data-arm-action="place" style="cursor:pointer"><rect x="380" y="633" width="175" height="45" rx="11" fill="#166534" stroke="#4ade80" stroke-width="2"/><text x="468" y="661" fill="#fff">→ TRANSFERIR</text></g>
+ <g data-arm-action="release" style="cursor:pointer"><rect x="571" y="633" width="150" height="45" rx="11" fill="#9a3412" stroke="#fb923c" stroke-width="2"/><text x="646" y="661" fill="#fff">↔ SOLTAR</text></g>
+ <g data-arm-action="auto" style="cursor:pointer"><rect x="737" y="633" width="215" height="45" rx="11" fill="#6d28d9" stroke="#c4b5fd" stroke-width="2"/><text x="844" y="661" fill="#fff">▶ CICLO AUTOMÁTICO</text></g>
+</g>
+</svg>

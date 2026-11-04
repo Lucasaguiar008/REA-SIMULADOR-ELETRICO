@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 360" role="img" aria-label="Haste de aterramento PE">
+  <defs><linearGradient id="rodCu" x2="1"><stop stop-color="#7c2d12"/><stop offset=".42" stop-color="#f59e0b"/><stop offset=".7" stop-color="#b45309"/><stop offset="1" stop-color="#78350f"/></linearGradient><filter id="rodShadow"><feDropShadow dx="3" dy="4" stdDeviation="3" flood-opacity=".25"/></filter></defs>
+  <rect x="24" y="12" width="152" height="58" rx="13" fill="#eef2f4" stroke="#64748b" stroke-width="3"/>
+  <g data-terminal="PE"><circle data-wire-anchor="PE" cx="100" cy="32" r="18" fill="#000" fill-opacity=".001" pointer-events="all"/><circle cx="100" cy="32" r="10" fill="#d0a24d" stroke="#334155" stroke-width="3"/><path d="M94 32h12M100 26v12" stroke="#fff" stroke-width="2.5"/></g>
+  <text x="100" y="61" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="900" fill="#14532d" data-earth-network-label="true">PE-1</text>
+  <path d="M100 48v64" stroke="#166534" stroke-width="8"/>
+  <g filter="url(#rodShadow)"><rect x="84" y="94" width="32" height="32" rx="7" fill="#c8a35d" stroke="#6b4f1d" stroke-width="3"/><circle cx="100" cy="110" r="7" fill="#64748b"/><rect x="95" y="118" width="10" height="215" rx="5" fill="url(#rodCu)" stroke="#7c2d12" stroke-width="2"/></g>
+  <path d="M20 174H180" stroke="#8b5e34" stroke-width="5"/><path d="M20 188c20-10 40 10 60 0s40 10 60 0 28 6 40 0" fill="none" stroke="#c08457" stroke-width="3"/>
+  <path d="M100 333l-12-22h24z" fill="#7c2d12"/>
+  <text x="24" y="162" font-family="Arial,sans-serif" font-size="10" font-weight="800" fill="#6b4423">NÍVEL DO SOLO</text>
+  <text x="134" y="270" font-family="Arial,sans-serif" font-size="10" font-weight="800" fill="#78350f" transform="rotate(90 134 270)">HASTE COBREADA</text>
+</svg>

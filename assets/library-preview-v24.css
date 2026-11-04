@@ -1,0 +1,41 @@
+/* TechRib Library Preview V24 — camada canônica de miniaturas.
+   Mantém o box visual dos previews IMG alinhado aos SVGs da biblioteca. */
+.component-item{overflow:hidden!important;min-width:0!important}
+.component-item>img.library-svg-preview{
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:96px!important;
+  max-height:132px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  flex:0 0 auto!important;
+  margin:0 auto!important;
+  pointer-events:none!important;
+}
+.component-item.logic-thumb>img.library-svg-preview,
+.component-item.realistic-thumb>img.library-svg-preview,
+.component-item.signal-thumb>img.library-svg-preview,
+.component-item.selector-thumb>img.library-svg-preview,
+.component-item.toggle-thumb>img.library-svg-preview,
+.component-item.aux-contact-thumb>img.library-svg-preview,
+.component-item.device-thumb>img.library-svg-preview,
+.component-item.sensor-thumb>img.library-svg-preview,
+.component-item.industrial-thumb>img.library-svg-preview,
+.component-item.compact-module-thumb>img.library-svg-preview,
+.component-item.load-thumb>img.library-svg-preview,
+.component-item.residential-thumb>img.library-svg-preview{
+  max-width:72px!important;
+  max-height:70px!important;
+}
+.component-item.board-package-thumb>img.library-svg-preview{
+  width:auto!important;
+  height:78px!important;
+  max-width:92px!important;
+  max-height:78px!important;
+}
+.component-item.board-display-thumb>img.library-svg-preview{max-width:100px!important}
+.component-item.board-sensor-thumb>img.library-svg-preview{height:66px!important;max-height:66px!important}
+.component-item.board-io-thumb>img.library-svg-preview,
+.component-item.board-comm-thumb>img.library-svg-preview{max-width:96px!important}
+.component-item.premium-component>img.library-svg-preview{max-width:100px!important;max-height:128px!important}

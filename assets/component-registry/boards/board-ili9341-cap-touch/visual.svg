@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46.5 77.6" role="img" aria-label="ILI9341 LCD with Capacitive Touch" data-techrib-board-package="true" data-board-source="ili9341-cap-touch"><g data-wire-obstacle="true"><svg xmlns="http://www.w3.org/2000/svg" width="46.5" height="77.6" version="1.1" viewBox="0 0 46.5 77.6" x="0" y="0" preserveAspectRatio="none" data-techrib-source-svg="true">
+  <!-- Board -->
+  <path d="M 0,0 V 77.6 H 46.5 V 0 Z M 43.1,1.78 c 1,0 1.8,0.81 1.8,1.8 0,1 -0.81,1.8 -1.8,1.8 -1,0 -1.8,-0.81 -1.8,-1.8 0,-1 0.81,-1.8 1.8,-1.8 z m -39.40,0.1 c 1,0 1.8,0.81 1.8,1.8 0,1 -0.81,1.8 -1.8,1.8 -1,0 -1.8,-0.81 -1.8,-1.8 0,-1 0.81,-1.8 1.8,-1.8 z m 0,70.7 c 1,0 1.8,0.81 1.8,1.8 0,1 -0.81,1.8 -1.8,1.8 -1,0 -1.8,-0.81 -1.8,-1.8 0,-1 0.81,-1.8 1.8,-1.8 z m 39.40,0.0946 c 1,0 1.8,0.81 1.8,1.8 0,1 -0.81,1.8 -1.8,1.8 -1,0 -1.8,-0.81 -1.8,-1.8 0,-1 0.81,-1.8 1.8,-1.8 z" fill="#931917" stroke-width="0"/>
+
+  <!-- LCD Panel -->
+  <path d="m0.17 5.65v64.6h46.1v-64.6zm6.46 62.9h34.7v1.7h-34.7z" fill="#f6e1f1"/>
+  <rect x="11.2" y="66.7" width="24.2" height="6.24" rx="1" ry="1" fill="#bdab16" opacity=".4"/>
+  <rect x="1.62" y="6.79" width="43.3" height="61.9"/>
+
+  <!-- Pins -->
+  <rect x="8.26" y="74.6" width="29.28" height="2.83" fill="none" stroke="#fff" stroke-width=".27"/>
+  <g fill="#ccc">
+    <rect x="9.26" y="75" height="2" width="2"/>
+    <circle id="round-pin" cx="10.26" cy="76" r="0.75" fill="#fff" stroke-width="0.4" stroke="#ccc"/>
+    <use href="#round-pin" x="2.54"/>
+    <use href="#round-pin" x="5.08"/>
+    <use href="#round-pin" x="7.62"/>
+    <use href="#round-pin" x="10.16"/>
+    <use href="#round-pin" x="12.7"/>
+    <use href="#round-pin" x="15.24"/>
+    <use href="#round-pin" x="17.78"/>
+    <use href="#round-pin" x="20.32"/>
+    <use href="#round-pin" x="22.86"/>
+    <use href="#round-pin" x="25.4"/>
+  </g>
+  <text font-family="monospace" font-size="3.5px" fill="#fff">
+    <tspan x="6" y="76.9">1</tspan>
+    <tspan x="9.5" y="4.3" font-size="3px">ILI9341 Cap Touch</tspan>
+  </text>
+</svg></g><g data-techrib-board-terminals="true"><g data-terminal="VCC" data-terminal-id="board-ili9341-cap-touch:VCC" data-terminal-name="VCC" data-terminal-role="power-input" class="wire-terminal"><title>VCC</title><circle cx="10.26" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="GND" data-terminal-id="board-ili9341-cap-touch:GND" data-terminal-name="GND" data-terminal-role="ground" class="wire-terminal"><title>GND</title><circle cx="12.8" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="CS" data-terminal-id="board-ili9341-cap-touch:CS" data-terminal-name="CS" data-terminal-role="logic-io" class="wire-terminal"><title>CS</title><circle cx="15.34" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="RST" data-terminal-id="board-ili9341-cap-touch:RST" data-terminal-name="RST" data-terminal-role="logic-input" class="wire-terminal"><title>RST</title><circle cx="17.88" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="D_C" data-terminal-id="board-ili9341-cap-touch:D_C" data-terminal-name="D/C" data-terminal-role="logic-io" class="wire-terminal"><title>D/C</title><circle cx="20.42" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="MOSI" data-terminal-id="board-ili9341-cap-touch:MOSI" data-terminal-name="MOSI" data-terminal-role="logic-io" class="wire-terminal"><title>MOSI</title><circle cx="22.96" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="SCK" data-terminal-id="board-ili9341-cap-touch:SCK" data-terminal-name="SCK" data-terminal-role="logic-io" class="wire-terminal"><title>SCK</title><circle cx="25.5" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="LED" data-terminal-id="board-ili9341-cap-touch:LED" data-terminal-name="LED" data-terminal-role="logic-io" class="wire-terminal"><title>LED</title><circle cx="28.04" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="MISO" data-terminal-id="board-ili9341-cap-touch:MISO" data-terminal-name="MISO" data-terminal-role="logic-io" class="wire-terminal"><title>MISO</title><circle cx="30.58" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="SCL" data-terminal-id="board-ili9341-cap-touch:SCL" data-terminal-name="SCL" data-terminal-role="logic-io" class="wire-terminal"><title>SCL</title><circle cx="33.12" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="SDA" data-terminal-id="board-ili9341-cap-touch:SDA" data-terminal-name="SDA" data-terminal-role="logic-io" class="wire-terminal"><title>SDA</title><circle cx="35.66" cy="76" r="1.15" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g></g></svg>

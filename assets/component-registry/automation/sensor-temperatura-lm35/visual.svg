@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" role="img" aria-label="Sensor de Temperatura LM35" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="lmBody" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3b454b"/><stop offset="1" stop-color="#0a0d0f"/></linearGradient>
+    <linearGradient id="lmPcb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#287aa9"/><stop offset="1" stop-color="#0e4165"/></linearGradient>
+    <radialGradient id="lmPad"><stop stop-color="#f7dc78"/><stop offset=".55" stop-color="#d7a62f"/><stop offset="1" stop-color="#79530d"/></radialGradient>
+    <filter id="lmShadow"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-opacity=".35"/></filter>
+    <filter id="lmGlow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.t{font:900 17px Arial;fill:#fff}.s{font:700 11px Arial;fill:#ccecff}.v{font:900 29px Arial;fill:#7dd3fc}.p{font:900 11px Arial;fill:#fff4b0}.a{fill:#000;fill-opacity:.001;pointer-events:all}</style>
+  </defs>
+  <rect x="16" y="16" width="328" height="228" rx="24" fill="url(#lmPcb)" stroke="#73c8f1" stroke-width="3"/>
+  <text x="180" y="45" text-anchor="middle" class="t">LM35 • SENSOR DE TEMPERATURA</text>
+  <path d="M120 138v-42c0-27 19-46 60-46s60 19 60 46v42z" fill="url(#lmBody)" stroke="#76838a" stroke-width="3"/>
+  <rect x="128" y="138" width="104" height="36" rx="5" fill="#151c20"/>
+  <text x="180" y="116" text-anchor="middle" class="t">LM35</text>
+  <text x="180" y="198" text-anchor="middle" data-temp-value="true" class="v">28.0 °C</text>
+  <circle cx="302" cy="54" r="9" fill="#153528"/><circle data-temp-led="true" cx="302" cy="54" r="5" fill="#22c55e" filter="url(#lmGlow)"/>
+  <g data-terminal="VCC" transform="translate(85 220)"><circle r="12" fill="url(#lmPad)"/><circle class="a" data-wire-anchor="VCC" r="18"/><text x="0" y="-20" text-anchor="middle" class="p">VCC</text></g>
+  <g data-terminal="OUT" transform="translate(180 220)"><circle r="12" fill="url(#lmPad)"/><circle class="a" data-wire-anchor="OUT" r="18"/><text x="0" y="-20" text-anchor="middle" class="p">OUT</text></g>
+  <g data-terminal="GND" transform="translate(275 220)"><circle r="12" fill="url(#lmPad)"/><circle class="a" data-wire-anchor="GND" r="18"/><text x="0" y="-20" text-anchor="middle" class="p">GND</text></g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 700" role="img" aria-label="KNX IP Interface DIN realista">
+<defs>
+  <linearGradient id="case" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset=".55" stop-color="#f2f4f5"/><stop offset="1" stop-color="#d7dadd"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#c7ccd1"/></linearGradient>
+  <radialGradient id="greenLed"><stop offset="0" stop-color="#eaffde"/><stop offset=".35" stop-color="#4cff22"/><stop offset="1" stop-color="#129400"/></radialGradient>
+  <radialGradient id="amberLed"><stop offset="0" stop-color="#fffbd1"/><stop offset=".35" stop-color="#ffe500"/><stop offset="1" stop-color="#a98000"/></radialGradient>
+  <radialGradient id="redLed"><stop offset="0" stop-color="#ffd7d7"/><stop offset=".35" stop-color="#ff2c2c"/><stop offset="1" stop-color="#9f0909"/></radialGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8fafc"/><stop offset=".4" stop-color="#7d858c"/><stop offset=".7" stop-color="#e9edf0"/><stop offset="1" stop-color="#636b73"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-opacity=".22"/></filter>
+</defs>
+<style>
+ .title{font:700 25px Arial,sans-serif;fill:#30373d}.sub{font:600 16px Arial,sans-serif;fill:#4b535a}.lbl{font:600 15px Arial,sans-serif;fill:#444b51}.tiny{font:600 10px Arial,sans-serif;fill:#58616a}.anchor{fill:transparent;stroke:transparent}.ledOff{fill:#697077;stroke:#343a40;stroke-width:2}.progBtn{cursor:pointer}.termText{font:700 15px Arial,sans-serif;fill:#32383d}
+</style>
+<!-- rear DIN body -->
+<path d="M77 18h146l12 13v33h12v574h-13v31l-18 13H84l-18-13v-31H53V64h12V31z" fill="url(#edge)" stroke="#b7bdc3" stroke-width="2" filter="url(#shadow)"/>
+<rect x="65" y="61" width="170" height="570" rx="8" fill="url(#case)" stroke="#c7ccd1" stroke-width="2"/>
+<!-- top terminal recess -->
+<path d="M83 66h134v99H83z" fill="#eef0f1" stroke="#d0d4d7"/>
+<rect x="98" y="80" width="104" height="64" rx="6" fill="#1d5f2c" stroke="#203d25" stroke-width="2"/>
+<rect x="104" y="86" width="45" height="50" rx="5" fill="#3d974e"/><rect x="151" y="86" width="45" height="50" rx="5" fill="#3d974e"/>
+<g data-terminal="KNX+" data-wire-side="top"><circle cx="126" cy="111" r="15" fill="url(#metal)" stroke="#202427" stroke-width="2"/><path d="M116 111h20M126 101v20" stroke="#343a40" stroke-width="3" stroke-linecap="round"/><circle cx="126" cy="111" r="28" class="anchor" data-wire-anchor="KNX+" data-wire-side="top"/></g>
+<g data-terminal="KNX-" data-wire-side="top"><circle cx="174" cy="111" r="15" fill="url(#metal)" stroke="#202427" stroke-width="2"/><path d="M164 111h20M174 101v20" stroke="#343a40" stroke-width="3" stroke-linecap="round"/><circle cx="174" cy="111" r="28" class="anchor" data-wire-anchor="KNX-" data-wire-side="top"/></g>
+<text x="126" y="159" text-anchor="middle" class="termText">KNX+</text><text x="174" y="159" text-anchor="middle" class="termText">KNX−</text>
+<!-- front face -->
+<path d="M76 176h148l8 10v397l-8 10H76l-8-10V186z" fill="#f7f7f6" stroke="#c7c9ca" stroke-width="2"/>
+<text x="150" y="226" text-anchor="middle" style="font:700 18px Arial,sans-serif;fill:#30373d">KNX/IP Interface</text><line x1="86" y1="236" x2="214" y2="236" stroke="#666" stroke-width="1.5"/><text x="150" y="259" text-anchor="middle" class="sub">IP-100 • Tunneling</text>
+<!-- LEDs -->
+<g transform="translate(104 310)"><circle r="13" fill="url(#greenLed)" stroke="#285828" stroke-width="2" data-knx-ip-power-led="true"/><text x="26" y="6" class="lbl">Power</text></g>
+<g transform="translate(104 355)"><circle r="13" fill="url(#greenLed)" stroke="#285828" stroke-width="2" data-knx-ip-lan-led="true"/><text x="26" y="6" class="lbl">LAN</text></g>
+<g transform="translate(104 400)"><circle r="13" fill="url(#amberLed)" stroke="#675b16" stroke-width="2" data-knx-ip-bus-led="true"/><text x="26" y="6" class="lbl">KNX</text></g>
+<g transform="translate(104 445)"><circle r="13" fill="url(#redLed)" stroke="#641919" stroke-width="2" data-knx-ip-prog-led="true"/><text x="26" y="6" class="lbl">Prog</text></g>
+<g data-knx-ip-prog="true" class="progBtn"><circle cx="111" cy="494" r="24" fill="#2c3033" stroke="#111" stroke-width="3"/><circle cx="111" cy="494" r="18" fill="#454a4f"/><text x="111" y="532" text-anchor="middle" class="lbl">Prog</text></g>
+<!-- realistic RJ45 -->
+<g data-terminal="ETH" data-wire-side="right"><rect x="88" y="548" width="124" height="92" rx="5" fill="#4c5257" stroke="#202326" stroke-width="3"/><rect x="96" y="557" width="108" height="73" rx="3" fill="#101315" stroke="#a9afb4" stroke-width="3"/><path d="M108 573h84v43h-84z" fill="#050607"/><g fill="#c49b37"><rect x="119" y="591" width="5" height="21"/><rect x="128" y="591" width="5" height="21"/><rect x="137" y="591" width="5" height="21"/><rect x="146" y="591" width="5" height="21"/><rect x="155" y="591" width="5" height="21"/><rect x="164" y="591" width="5" height="21"/><rect x="173" y="591" width="5" height="21"/><rect x="182" y="591" width="5" height="21"/></g><rect x="103" y="562" width="17" height="10" fill="#d0b329"/><rect x="180" y="562" width="17" height="10" fill="#35c74b"/><circle cx="214" cy="594" r="36" class="anchor" data-wire-anchor="ETH" data-wire-side="right"/></g>
+<text x="150" y="663" text-anchor="middle" style="font:600 12px Arial,sans-serif;fill:#444b51">LAN (PoE) • 10/100 Mbps</text>
+<text x="150" y="682" text-anchor="middle" style="font:600 9px Arial,sans-serif;fill:#58616a" data-knx-ip-status="true">KNX BUS • aguardando rede</text>
+</svg>

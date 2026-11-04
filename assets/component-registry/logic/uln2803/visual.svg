@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 246" role="img" aria-label="Driver ULN2803 DIP-10 proporcional ao ULN2803A">
+<defs>
+  <linearGradient id="pkg" x2="0" y2="1"><stop stop-color="#3f454b"/><stop offset=".45" stop-color="#171a1d"/><stop offset="1" stop-color="#080a0c"/></linearGradient>
+  <linearGradient id="metal" x2="1"><stop stop-color="#e9eef2"/><stop offset=".5" stop-color="#9aa5ad"/><stop offset="1" stop-color="#55616a"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="2" dy="3" stdDeviation="2" flood-opacity=".35"/></filter>
+</defs>
+<rect x="115" y="28" width="130" height="188" rx="10" fill="url(#pkg)" stroke="#050607" stroke-width="3" filter="url(#sh)"/>
+<path d="M155 28a25 14 0 0 0 50 0" fill="#4a5056" stroke="#050607" stroke-width="2"/>
+<circle cx="138" cy="50" r="5" fill="#9aa3aa"/>
+<text x="164" y="122" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="800" fill="#f1f5f9" transform="rotate(90 164 122)">ULN2803</text>
+<text x="196" y="122" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9" font-weight="700" fill="#94a3b8" transform="rotate(90 196 122)">4× DARLINGTON • DRIVER</text>
+<path d="M85 50H115" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="IN1">
+  <circle cx="72" cy="50" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="IN1" cx="72" cy="50" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="55" y="54" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">IN1</text>
+</g>
+<text x="99" y="53" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">1</text>
+<path d="M85 86H115" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="IN2">
+  <circle cx="72" cy="86" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="IN2" cx="72" cy="86" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="55" y="90" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">IN2</text>
+</g>
+<text x="99" y="89" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">2</text>
+<path d="M85 122H115" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="IN3">
+  <circle cx="72" cy="122" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="IN3" cx="72" cy="122" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="55" y="126" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">IN3</text>
+</g>
+<text x="99" y="125" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">3</text>
+<path d="M85 158H115" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="IN4">
+  <circle cx="72" cy="158" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="IN4" cx="72" cy="158" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="55" y="162" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">IN4</text>
+</g>
+<text x="99" y="161" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">4</text>
+<path d="M85 194H115" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="GND">
+  <circle cx="72" cy="194" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="GND" cx="72" cy="194" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="55" y="198" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">GND</text>
+</g>
+<text x="99" y="197" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">5</text>
+<path d="M245 50H275" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="COM">
+  <circle cx="288" cy="50" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="COM" cx="288" cy="50" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="305" y="54" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">COM</text>
+</g>
+<text x="261" y="53" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">10</text>
+<path d="M245 86H275" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="OUT1">
+  <circle cx="288" cy="86" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="OUT1" cx="288" cy="86" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="305" y="90" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">OUT1</text>
+</g>
+<text x="261" y="89" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">9</text>
+<path d="M245 122H275" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="OUT2">
+  <circle cx="288" cy="122" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="OUT2" cx="288" cy="122" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="305" y="126" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">OUT2</text>
+</g>
+<text x="261" y="125" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">8</text>
+<path d="M245 158H275" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="OUT3">
+  <circle cx="288" cy="158" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="OUT3" cx="288" cy="158" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="305" y="162" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">OUT3</text>
+</g>
+<text x="261" y="161" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">7</text>
+<path d="M245 194H275" stroke="url(#metal)" stroke-width="8"/>
+<g data-terminal="OUT4">
+  <circle cx="288" cy="194" r="5" fill="#d7b866" stroke="#6b511e" stroke-width="1.5"/>
+  <circle data-wire-anchor="OUT4" cx="288" cy="194" r="14" fill="#000" fill-opacity=".001" pointer-events="all"/>
+  <text x="305" y="198" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800" fill="#e8f0f5">OUT4</text>
+</g>
+<text x="261" y="197" text-anchor="middle" font-family="Arial" font-size="7" fill="#64748b">6</text>
+</svg>

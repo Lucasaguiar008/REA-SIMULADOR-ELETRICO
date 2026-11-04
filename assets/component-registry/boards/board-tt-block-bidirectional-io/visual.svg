@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 9" role="img" aria-label="Tiny Tapeout Bidirectional I/O Block" data-techrib-board-package="true" data-board-source="tt-block-bidirectional-io"><g data-wire-obstacle="true"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="9" version="1.1" viewBox="0 0 28 9" x="0" y="0" preserveAspectRatio="none" data-techrib-source-svg="true">
+ <defs>
+  <g id="a">
+   <circle cy="1.27" r=".7" fill="#ffe680"/>
+   <circle cy="1.27" r=".45" fill="#fff"/>
+  </g>
+ </defs>
+ <rect width="28" height="9" rx=".93333" fill="#087f45" stroke-width=".36526"/>
+ <g fill="none" stroke="#fff">
+  <path d="m26.711 4.8391-7.5337-9.23e-5v-2.5035h-2.3411" stroke-width=".26458"/>
+  <path d="m14.39 4.8481-2.4561 1.418v-2.8361z" stroke-linecap="round" stroke-width=".21299"/>
+  <path transform="scale(-1)" d="m-14.382-2.3353-2.4561 1.418v-2.8361z" stroke-linecap="round" stroke-width=".21299"/>
+  <g stroke-width=".26458">
+   <path d="m14.555 2.3355-13.301-1.278e-4"/>
+   <path d="m12.008 4.839h-10.593"/>
+   <path d="m13.24 5.528 0.0072 1.8225-11.932 0.039864"/>
+   <path d="m21.83 4.839h-7.5321"/>
+  </g>
+ </g>
+ <g fill="#ffffff" font-family="sans-serif" font-size="1.8397px">
+  <text x="2.394923" y="1.9229573">IN</text>
+  <text x="2.2276986" y="4.4313245">OUT</text>
+  <text x="2.2695048" y="6.9814973">OE</text>
+ </g>
+ <use transform="translate(-2.06)" x="28.73" y="3.54" width="100%" height="100%" xlink:href="#a"/>
+ <use x="1.27" y="1" width="100%" height="100%" xlink:href="#a"/>
+ <use x="1.27" y="6.0799999" width="100%" height="100%" xlink:href="#a"/>
+ <use x="1.27" y="3.54" width="100%" height="100%" xlink:href="#a"/>
+</svg></g><g data-techrib-board-terminals="true"><g data-terminal="IN" data-terminal-id="board-tt-block-bidirectional-io:IN" data-terminal-name="IN" data-terminal-role="logic-io" class="wire-terminal"><title>IN</title><circle cx="1.27" cy="2.27" r="0.55" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="OUT" data-terminal-id="board-tt-block-bidirectional-io:OUT" data-terminal-name="OUT" data-terminal-role="logic-io" class="wire-terminal"><title>OUT</title><circle cx="1.27" cy="4.81" r="0.55" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="OE" data-terminal-id="board-tt-block-bidirectional-io:OE" data-terminal-name="OE" data-terminal-role="logic-io" class="wire-terminal"><title>OE</title><circle cx="1.27" cy="7.35" r="0.55" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g><g data-terminal="UIO" data-terminal-id="board-tt-block-bidirectional-io:UIO" data-terminal-name="UIO" data-terminal-role="logic-io" class="wire-terminal"><title>UIO</title><circle cx="26.67" cy="4.81" r="0.55" data-wire-anchor="1" fill="#000" fill-opacity="0.001" stroke="none" class="wire-anchor-hitbox" pointer-events="all"/></g></g></svg>

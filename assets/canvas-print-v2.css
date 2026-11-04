@@ -1,0 +1,148 @@
+/*
+ * TechRib — Impressão da moldura da prancha + ajuste ao papel V2.1
+ * 2026-09-07
+ * Tela: nenhuma alteração.
+ * Impressão: isola a moldura técnica da prancha, remove grade/UI e ajusta
+ * proporcionalmente ao papel de saída escolhido no diálogo TechRib.
+ */
+
+.techrib-print-dialog-overlay{
+  position:fixed;inset:0;z-index:25000;display:grid;place-items:center;padding:18px;
+  background:rgba(4,18,28,.78);backdrop-filter:blur(3px)
+}
+.techrib-print-dialog-overlay[hidden]{display:none!important}
+.techrib-print-dialog{
+  width:min(500px,calc(100vw - 30px));overflow:hidden;border:1px solid #2a5568;
+  border-radius:15px;background:#0d2633;color:#e9f5f8;box-shadow:0 26px 80px #0009;
+  font-family:Inter,Arial,sans-serif
+}
+.techrib-print-dialog header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:18px 20px 14px;border-bottom:1px solid #294957;background:#0a202b}
+.techrib-print-dialog header small{display:block;color:#61dff4;font-size:9px;font-weight:800;letter-spacing:.13em}
+.techrib-print-dialog h2{margin:4px 0 0;font-size:18px;line-height:1.2}
+.techrib-print-dialog .close{width:32px;height:32px;border:1px solid #38596a;border-radius:8px;background:#153442;color:#eaf6f9;font-size:20px;cursor:pointer}
+.techrib-print-dialog .body{padding:18px 20px 8px}
+.techrib-print-dialog .description{margin:0 0 15px;color:#a9c3cf;font-size:11px;line-height:1.55}
+.techrib-print-dialog .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.techrib-print-dialog label{display:grid;gap:6px;color:#bcd0d8;font-size:10px;font-weight:800;letter-spacing:.03em}
+.techrib-print-dialog select{width:100%;height:40px;padding:0 34px 0 11px;border:1px solid #3a6172;border-radius:8px;background:#102f3d;color:#f3fafc;font:700 12px Inter,Arial,sans-serif}
+.techrib-print-dialog .hint{margin:14px 0 0;padding:11px 12px;border:1px solid #24536a;border-radius:9px;background:#0b3142;color:#bdebf4;font-size:10px;line-height:1.5}
+.techrib-print-dialog footer{display:flex;justify-content:flex-end;gap:9px;padding:14px 20px 18px}
+.techrib-print-dialog footer button{height:38px;padding:0 15px;border:1px solid #3a6172;border-radius:8px;background:#163848;color:#eef8fa;font:800 11px Inter,Arial,sans-serif;cursor:pointer}
+.techrib-print-dialog footer .primary{border-color:#11a8cb;background:linear-gradient(135deg,#19b9d5,#08779b);color:#fff}
+@media(max-width:560px){.techrib-print-dialog .grid{grid-template-columns:1fr}}
+
+@media print {
+  @page { margin:7mm; }
+
+  /* Nada da interface do simulador participa da paginação. */
+  html,body{
+    margin:0!important;padding:0!important;width:100%!important;height:100%!important;
+    min-width:0!important;min-height:0!important;background:#fff!important;overflow:visible!important
+  }
+  body.techrib-print-fit-active > *:not(.workbench){display:none!important}
+  body.techrib-print-fit-active .workbench > *:not(.drawing-area){display:none!important}
+  body.techrib-print-fit-active .drawing-area > *:not(.canvas-viewport){display:none!important}
+  body.techrib-print-fit-active .canvas-viewport > *:not(.sheet-stage){display:none!important}
+  body.techrib-print-fit-active .sheet-stage > *:not(.schematic-sheet){display:none!important}
+
+  body.techrib-print-fit-active .workbench,
+  body.techrib-print-fit-active .drawing-area{
+    position:static!important;display:block!important;width:100%!important;height:100%!important;
+    min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;
+    overflow:visible!important;background:#fff!important
+  }
+  body.techrib-print-fit-active .canvas-viewport{
+    position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;
+    width:100%!important;height:100vh!important;min-width:0!important;min-height:0!important;
+    margin:0!important;padding:0!important;overflow:visible!important;
+    background:#fff!important;background-image:none!important;box-shadow:none!important
+  }
+  body.techrib-print-fit-active .canvas-viewport::before,
+  body.techrib-print-fit-active .canvas-viewport::after,
+  body.techrib-print-fit-active .sheet-stage::before,
+  body.techrib-print-fit-active .sheet-stage::after,
+  body.techrib-print-fit-active .schematic-sheet::before,
+  body.techrib-print-fit-active .schematic-sheet::after{display:none!important;background:none!important;background-image:none!important}
+
+
+  body.techrib-print-fit-active .workbench,
+  body.techrib-print-fit-active .drawing-area,
+  body.techrib-print-fit-active .canvas-viewport,
+  body.techrib-print-fit-active .sheet-stage{
+    scrollbar-width:none!important;
+    -ms-overflow-style:none!important
+  }
+  body.techrib-print-fit-active .workbench::-webkit-scrollbar,
+  body.techrib-print-fit-active .drawing-area::-webkit-scrollbar,
+  body.techrib-print-fit-active .canvas-viewport::-webkit-scrollbar,
+  body.techrib-print-fit-active .sheet-stage::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}
+
+  /* O stage vira a janela de recorte exata da moldura da prancha. */
+  body.techrib-print-fit-active .sheet-stage{
+    position:relative!important;display:block!important;
+    width:var(--techrib-print-stage-width,100px)!important;
+    height:var(--techrib-print-stage-height,100px)!important;
+    min-width:0!important;min-height:0!important;max-width:none!important;max-height:none!important;
+    margin:0!important;padding:0!important;overflow:hidden!important;
+    background:#fff!important;background-image:none!important;
+    page-break-inside:avoid!important;break-inside:avoid!important;
+    page-break-after:avoid!important;break-after:avoid-page!important
+  }
+
+  body.techrib-print-fit-active .schematic-sheet{
+    position:absolute!important;
+    left:var(--techrib-print-sheet-left,0px)!important;
+    top:var(--techrib-print-sheet-top,0px)!important;
+    margin:0!important;padding:0!important;
+    transform-origin:top left!important;
+    transform:scale(var(--techrib-print-scale,1))!important;
+    box-shadow:none!important;overflow:visible!important;
+    background:#fff!important;background-color:#fff!important;background-image:none!important;
+    color:#0f172a!important;
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important
+  }
+
+  /* Grade e elementos que existem somente para edição não são impressos. */
+  body.techrib-print-fit-active .schematic-sheet.grid-hidden,
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="light"],
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"]{
+    background:#fff!important;background-color:#fff!important;background-image:none!important
+  }
+  body.techrib-print-fit-active .sheet-empty,
+  body.techrib-print-fit-active .wire-handle,
+  body.techrib-print-fit-active .text-resize-handle,
+  body.techrib-print-fit-active .text-block-resize-handle,
+  body.techrib-print-fit-active .plaque-resize-handle,
+  body.techrib-print-fit-active .resize-handle,
+  body.techrib-print-fit-active .component-selection-box,
+  body.techrib-print-fit-active .multi-selection-box,
+  body.techrib-print-fit-active .selection-marquee,
+  body.techrib-print-fit-active .wire-context-menu,
+  body.techrib-print-fit-active .component-context-menu{display:none!important}
+
+  /* A linha de moldura é a borda real do conteúdo impresso. */
+  body.techrib-print-fit-active .schematic-sheet .sheet-border,
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .sheet-border{
+    border:1.6px solid #344b5b!important;box-shadow:none!important
+  }
+
+  /* Tema escuro é convertido para folha branca, mantendo os elementos. */
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .title-block{
+    background:#fff!important;color:#0f172a!important;border-color:#64748b!important
+  }
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .title-block label,
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .title-brand,
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .title-meta,
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .title-project{border-color:#94a3b8!important}
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .title-block input{color:#0f172a!important}
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .title-block label>span,
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .title-brand span{color:#475569!important}
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .wire-layer .wire-path:not(.energized):not(.is-selected){filter:none!important}
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .text-object text,
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .text-block-object [data-text-block-text]{stroke:none!important;paint-order:normal!important;text-shadow:none!important}
+  body.techrib-print-fit-active .schematic-sheet[data-sheet-theme="dark"] .text-block-object>[data-text-block-content]{text-shadow:none!important}
+
+  /* Não deixar bordas de seleção passarem para o PDF. */
+  body.techrib-print-fit-active .placed-component.selected,
+  body.techrib-print-fit-active .placed-component.multi-selected{outline:none!important;box-shadow:none!important}
+}

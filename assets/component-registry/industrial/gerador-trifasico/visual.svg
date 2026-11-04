@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 590" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="genBg" x2="1" y2="1"><stop stop-color="#102731"/><stop offset="1" stop-color="#071117"/></linearGradient>
+    <linearGradient id="genBody" x2="1" y2="1"><stop stop-color="#f4f7f8"/><stop offset=".55" stop-color="#9badb6"/><stop offset="1" stop-color="#425864"/></linearGradient>
+    <linearGradient id="genEngine" x2="1" y2="1"><stop stop-color="#355866"/><stop offset="1" stop-color="#172b35"/></linearGradient>
+    <filter id="genShadow" x="-15%" y="-15%" width="130%" height="145%"><feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/><feOffset in="blur" dy="6" result="offset"/><feComponentTransfer in="offset" result="shadow"><feFuncA type="linear" slope=".35"/></feComponentTransfer><feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="genGlow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <g id="genTerm"><circle r="11" fill="#101a20" stroke="#f1c75b" stroke-width="3"/><circle r="5" fill="#dfe8ed"/></g>
+    <style>
+      .t{font:900 25px Arial;fill:#fff}.s{font:700 11px Arial;fill:#a9c2ce}.l{font:800 13px Arial;fill:#eaf7fb}.v{font:900 18px Arial;fill:#7dd3fc}.wire-anchor-hitbox{fill:transparent;stroke:transparent}
+    </style>
+  </defs>
+  <rect x="14" y="14" width="872" height="562" rx="26" fill="url(#genBg)" stroke="#c89b2b" stroke-width="4"/>
+  <text x="40" y="52" class="t">TECHRIB • GRUPO GERADOR TRIFÁSICO</text>
+  <text x="40" y="77" class="s">380/220 V • 60 Hz • partida e estabilização automáticas para ATS</text>
+
+  <g filter="url(#genShadow)">
+    <rect x="78" y="155" width="585" height="290" rx="28" fill="url(#genBody)" stroke="#617983" stroke-width="5"/>
+    <rect x="120" y="205" width="250" height="170" rx="24" fill="url(#genEngine)" stroke="#8fa6b0" stroke-width="4"/>
+    <rect x="390" y="205" width="215" height="170" rx="24" fill="#d7e1e5" stroke="#6e838c" stroke-width="4"/>
+    <circle cx="497" cy="290" r="64" fill="#18313d" stroke="#d7e4e9" stroke-width="5"/>
+    <g data-generator-rotor="1">
+      <circle cx="497" cy="290" r="18" fill="#f59e0b"/>
+      <path d="M497 238v104M445 290h104M460 253l74 74M534 253l-74 74" stroke="#9fb8c2" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <rect x="152" y="235" width="185" height="80" rx="12" fill="#0b1b23" stroke="#49616d" stroke-width="3"/>
+    <text x="244" y="267" text-anchor="middle" class="l">MOTOR DIESEL</text>
+    <text x="244" y="292" text-anchor="middle" class="s">PARTIDA • ROTAÇÃO • ARREFECIMENTO</text>
+  </g>
+
+  <g>
+    <circle cx="738" cy="205" r="13" fill="#334155" data-generator-led="engine"/>
+    <text x="765" y="210" class="l">MOTOR</text>
+    <circle cx="738" cy="250" r="13" fill="#334155" data-generator-led="voltage"/>
+    <text x="765" y="255" class="l">TENSÃO</text>
+    <circle cx="738" cy="295" r="13" fill="#334155" data-generator-led="ready"/>
+    <text x="765" y="300" class="l">PRONTO ATS</text>
+    <text x="707" y="355" class="s">Estado</text>
+    <text x="707" y="381" class="v" data-generator-status="1">PARADO</text>
+    <text x="707" y="418" class="s">Saída</text>
+    <text x="707" y="444" class="l" data-generator-output="1">0 V</text>
+  </g>
+
+  <g data-terminal="L1" data-wire-side="bottom" transform="translate(80 530)"><use href="#genTerm"/><circle class="wire-anchor-hitbox" data-wire-anchor="L1" r="15"/><text x="0" y="-19" text-anchor="middle" class="s" fill="#f5df8e">L1</text></g>
+  <g data-terminal="L2" data-wire-side="bottom" transform="translate(175 530)"><use href="#genTerm"/><circle class="wire-anchor-hitbox" data-wire-anchor="L2" r="15"/><text x="0" y="-19" text-anchor="middle" class="s" fill="#f5df8e">L2</text></g>
+  <g data-terminal="L3" data-wire-side="bottom" transform="translate(270 530)"><use href="#genTerm"/><circle class="wire-anchor-hitbox" data-wire-anchor="L3" r="15"/><text x="0" y="-19" text-anchor="middle" class="s" fill="#f5df8e">L3</text></g>
+  <g data-terminal="N" data-wire-side="bottom" transform="translate(365 530)"><use href="#genTerm"/><circle class="wire-anchor-hitbox" data-wire-anchor="N" r="15"/><text x="0" y="-19" text-anchor="middle" class="s" fill="#f5df8e">N</text></g>
+  <g data-terminal="PE" data-wire-side="bottom" transform="translate(460 530)"><use href="#genTerm"/><circle class="wire-anchor-hitbox" data-wire-anchor="PE" r="15"/><text x="0" y="-19" text-anchor="middle" class="s" fill="#f5df8e">PE</text></g>
+  <g data-terminal="START" data-wire-side="bottom" transform="translate(585 530)"><use href="#genTerm"/><circle class="wire-anchor-hitbox" data-wire-anchor="START" r="15"/><text x="0" y="-19" text-anchor="middle" class="s" fill="#f5df8e">START</text></g>
+  <g data-terminal="START_N" data-wire-side="bottom" transform="translate(700 530)"><use href="#genTerm"/><circle class="wire-anchor-hitbox" data-wire-anchor="START_N" r="15"/><text x="0" y="-19" text-anchor="middle" class="s" fill="#f5df8e">START N</text></g>
+  <g data-terminal="READY" data-wire-side="bottom" transform="translate(825 530)"><use href="#genTerm"/><circle class="wire-anchor-hitbox" data-wire-anchor="READY" r="15"/><text x="0" y="-19" text-anchor="middle" class="s" fill="#f5df8e">READY</text></g>
+</svg>

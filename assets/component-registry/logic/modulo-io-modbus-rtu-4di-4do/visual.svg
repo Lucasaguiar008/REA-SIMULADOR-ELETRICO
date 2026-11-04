@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" role="img" aria-label="Módulo I/O Modbus RTU 4 entradas digitais e 4 saídas a relé">
+  <defs>
+    <linearGradient id="case" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8fafc"/><stop offset=".5" stop-color="#dbe4ea"/><stop offset="1" stop-color="#a9bac5"/></linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#183544"/><stop offset="1" stop-color="#0a1821"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity=".35"/></filter>
+    <style>
+      .title{font:900 24px Arial,sans-serif;fill:#ecfeff}.sub{font:800 14px Arial,sans-serif;fill:#9bd8e8}.tiny{font:800 11px Arial,sans-serif;fill:#b8d6df}.term{font:900 12px Arial,sans-serif;fill:#13232c}.termDark{font:900 12px Arial,sans-serif;fill:#d5eef7}.ch{font:900 13px Arial,sans-serif;fill:#dff7ff}.addr{font:900 18px Consolas,monospace;fill:#7dd3fc}.wire-anchor-hitbox{fill:transparent;stroke:transparent;stroke-width:1}.tport{fill:#f8fafc;stroke:#475569;stroke-width:3}.screw{fill:#d8e0e5;stroke:#566671;stroke-width:2}.ledOff{fill:#253341;stroke:#94a3b8;stroke-width:2}.legend{font:900 12px Arial,sans-serif;fill:#d8edf4}
+    </style>
+  </defs>
+  <rect x="38" y="28" width="904" height="464" rx="30" fill="url(#case)" stroke="#536772" stroke-width="5" filter="url(#shadow)"/>
+  <rect x="74" y="70" width="832" height="366" rx="24" fill="url(#face)" stroke="#597786" stroke-width="3"/>
+  <rect x="92" y="88" width="796" height="70" rx="14" fill="#0c2733" stroke="#3f6575"/>
+  <text x="112" y="118" class="title">TechRib • REMOTE I/O</text>
+  <text x="112" y="144" class="sub">MODBUS RTU • RS485 • 24 Vcc</text>
+  <rect x="762" y="102" width="104" height="43" rx="8" fill="#041116" stroke="#365b68"/>
+  <text x="774" y="119" class="tiny">ENDEREÇO</text><text x="840" y="137" text-anchor="middle" class="addr">01</text>
+
+  <g transform="translate(124 188)">
+    <text x="0" y="0" class="sub">ENTRADAS DIGITAIS 24 Vcc</text>
+    <g transform="translate(0 26)"><circle cx="16" cy="0" r="12" class="ledOff" data-modbus-di-led="1"/><text x="42" y="5" class="ch">DI1 • 10001</text></g>
+    <g transform="translate(0 64)"><circle cx="16" cy="0" r="12" class="ledOff" data-modbus-di-led="2"/><text x="42" y="5" class="ch">DI2 • 10002</text></g>
+    <g transform="translate(0 102)"><circle cx="16" cy="0" r="12" class="ledOff" data-modbus-di-led="3"/><text x="42" y="5" class="ch">DI3 • 10003</text></g>
+    <g transform="translate(0 140)"><circle cx="16" cy="0" r="12" class="ledOff" data-modbus-di-led="4"/><text x="42" y="5" class="ch">DI4 • 10004</text></g>
+  </g>
+  <g transform="translate(522 188)">
+    <text x="0" y="0" class="sub">SAÍDAS A RELÉ</text>
+    <g transform="translate(0 26)"><circle cx="16" cy="0" r="12" class="ledOff" data-modbus-do-led="1"/><text x="42" y="5" class="ch">DO1 • COIL 00001</text></g>
+    <g transform="translate(0 64)"><circle cx="16" cy="0" r="12" class="ledOff" data-modbus-do-led="2"/><text x="42" y="5" class="ch">DO2 • COIL 00002</text></g>
+    <g transform="translate(0 102)"><circle cx="16" cy="0" r="12" class="ledOff" data-modbus-do-led="3"/><text x="42" y="5" class="ch">DO3 • COIL 00003</text></g>
+    <g transform="translate(0 140)"><circle cx="16" cy="0" r="12" class="ledOff" data-modbus-do-led="4"/><text x="42" y="5" class="ch">DO4 • COIL 00004</text></g>
+  </g>
+  <g transform="translate(398 386)">
+    <circle cx="0" cy="0" r="11" class="ledOff" data-modbus-power-led="true"/><text x="20" y="5" class="tiny">PWR</text>
+    <circle cx="92" cy="0" r="11" class="ledOff" data-modbus-bus-led="true"/><text x="112" y="5" class="tiny">BUS</text>
+    <circle cx="184" cy="0" r="11" class="ledOff" data-modbus-fault-led="true"/><text x="204" y="5" class="tiny">ERR</text>
+  </g>
+
+  <text x="490" y="72" text-anchor="middle" class="legend">ALIMENTAÇÃO • ENTRADAS • RS485</text>
+  <!-- Bornes superiores uniformes -->
+  <g data-terminal="+24V" data-wire-side="top" transform="translate(115 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="+24V" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">+24V</text></g>
+  <g data-terminal="0V" data-wire-side="top" transform="translate(220 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="0V" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">0V</text></g>
+  <g data-terminal="DI1" data-wire-side="top" transform="translate(325 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="DI1" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">DI1</text></g>
+  <g data-terminal="DI2" data-wire-side="top" transform="translate(430 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="DI2" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">DI2</text></g>
+  <g data-terminal="DI3" data-wire-side="top" transform="translate(535 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="DI3" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">DI3</text></g>
+  <g data-terminal="DI4" data-wire-side="top" transform="translate(640 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="DI4" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">DI4</text></g>
+  <g data-terminal="A" data-wire-side="top" transform="translate(760 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="A" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">A</text></g>
+  <g data-terminal="B" data-wire-side="top" transform="translate(865 38)"><circle r="18" class="tport"/><circle r="8" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="B" data-wire-side="top"/><text x="0" y="43" text-anchor="middle" class="term">B</text></g>
+
+  <text x="490" y="468" text-anchor="middle" class="legend">CONTATOS DE SAÍDA A RELÉ</text>
+  <!-- Bornes inferiores uniformes -->
+  <g data-terminal="COM1" data-wire-side="bottom" transform="translate(105 482)"><circle r="17" class="tport"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="COM1" data-wire-side="bottom"/><text x="0" y="-29" text-anchor="middle" class="termDark">COM1</text></g>
+  <g data-terminal="NO1" data-wire-side="bottom" transform="translate(215 482)"><circle r="17" class="tport"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="NO1" data-wire-side="bottom"/><text x="0" y="-29" text-anchor="middle" class="termDark">NO1</text></g>
+  <g data-terminal="COM2" data-wire-side="bottom" transform="translate(325 482)"><circle r="17" class="tport"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="COM2" data-wire-side="bottom"/><text x="0" y="-29" text-anchor="middle" class="termDark">COM2</text></g>
+  <g data-terminal="NO2" data-wire-side="bottom" transform="translate(435 482)"><circle r="17" class="tport"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="NO2" data-wire-side="bottom"/><text x="0" y="-29" text-anchor="middle" class="termDark">NO2</text></g>
+  <g data-terminal="COM3" data-wire-side="bottom" transform="translate(545 482)"><circle r="17" class="tport"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="COM3" data-wire-side="bottom"/><text x="0" y="-29" text-anchor="middle" class="termDark">COM3</text></g>
+  <g data-terminal="NO3" data-wire-side="bottom" transform="translate(655 482)"><circle r="17" class="tport"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="NO3" data-wire-side="bottom"/><text x="0" y="-29" text-anchor="middle" class="termDark">NO3</text></g>
+  <g data-terminal="COM4" data-wire-side="bottom" transform="translate(765 482)"><circle r="17" class="tport"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="COM4" data-wire-side="bottom"/><text x="0" y="-29" text-anchor="middle" class="termDark">COM4</text></g>
+  <g data-terminal="NO4" data-wire-side="bottom" transform="translate(875 482)"><circle r="17" class="tport"/><circle r="7" class="screw"/><circle r="23" class="wire-anchor-hitbox" data-wire-anchor="NO4" data-wire-side="bottom"/><text x="0" y="-29" text-anchor="middle" class="termDark">NO4</text></g>
+</svg>

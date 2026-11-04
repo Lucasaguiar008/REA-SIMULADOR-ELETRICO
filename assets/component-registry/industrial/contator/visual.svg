@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1250" role="img" aria-labelledby="title description" class="library-source-svg" aria-hidden="true" data-techrib-editor-managed="true" data-techrib-studio-import="true" data-techrib-preserve-text-style="true">
+  <title id="title">Contator tripolar TechRib</title>
+  <desc id="description">Contator tripolar com bornes L1, L2, L3, T1, T2, T3, A1, A2, contato auxiliar NA 13 e 14 e contato auxiliar NF 11 e 12.</desc>
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#3f454a"/>
+      <stop offset=".38" stop-color="#161a1e"/>
+      <stop offset="1" stop-color="#090b0d"/>
+    </linearGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#faf7f0"/>
+      <stop offset=".58" stop-color="#ece8df"/>
+      <stop offset="1" stop-color="#d3ccc1"/>
+    </linearGradient>
+    <linearGradient id="shell-side" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#cdc3b4"/>
+      <stop offset=".5" stop-color="#f3ede2"/>
+      <stop offset="1" stop-color="#c4b8a5"/>
+    </linearGradient>
+    <linearGradient id="shell-blueplate" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#f7f5ef"/>
+      <stop offset="1" stop-color="#d7d1c7"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1e8dfb"/>
+      <stop offset=".5" stop-color="#0f66d8"/>
+      <stop offset="1" stop-color="#0b4eab"/>
+    </linearGradient>
+    <linearGradient id="blue-dark" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#0d71de"/>
+      <stop offset="1" stop-color="#08489f"/>
+    </linearGradient>
+    <linearGradient id="blackLever" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#272d32"/>
+      <stop offset=".6" stop-color="#12171b"/>
+      <stop offset="1" stop-color="#06090b"/>
+    </linearGradient>
+    <linearGradient id="labelWhite" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8edf1"/>
+    </linearGradient>
+    <radialGradient id="screwMetal">
+      <stop offset="0" stop-color="#f9fbfd"/>
+      <stop offset=".4" stop-color="#b9c3cb"/>
+      <stop offset=".72" stop-color="#4b575f"/>
+      <stop offset=".82" stop-color="#c48722"/>
+      <stop offset="1" stop-color="#44300e"/>
+    </radialGradient>
+    <filter id="shadow" x="-15%" y="-10%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#07121a" flood-opacity=".42"/>
+    </filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="17"/></filter>
+    <g id="screw-shape">
+      <circle r="36" fill="url(#screwMetal)"/>
+      <circle r="23" fill="#dfe7ed" stroke="#5d6a71" stroke-width="4"/>
+      <path d="M-15 0h30M0-15v30" stroke="#36444c" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <g id="body" data-part="body" filter="url(#shadow)">
+    <path d="M90 58h115l28 45h334l28-45h115l28 28v1078l-28 28H590l-22-42H232l-22 42H90l-28-28V86z" fill="url(#frame)" stroke="#0a0d10" stroke-width="8"/>
+    <path d="M105 75h84l30 48h362l30-48h84v94H105zM105 1081h590v89h-84l-31-46H220l-31 46h-84z" fill="#2c3136"/>
+    <circle cx="132" cy="105" r="27" fill="#090b0d" stroke="#707981" stroke-width="7"/>
+    <circle cx="668" cy="105" r="27" fill="#090b0d" stroke="#707981" stroke-width="7"/>
+    <circle cx="132" cy="1144" r="27" fill="#090b0d" stroke="#707981" stroke-width="7"/>
+    <circle cx="668" cy="1144" r="27" fill="#090b0d" stroke="#707981" stroke-width="7"/>
+    <rect x="105" y="155" width="590" height="940" rx="20" fill="#161b1f" stroke="#424c54" stroke-width="8" class=""/>
+    <rect x="205" y="344" width="390" height="570" rx="24" fill="#0c0f13" stroke="#343e46" stroke-width="8"/>
+    <rect x="256" y="410" width="288" height="438" rx="16" fill="#20272c" stroke="#080b0d" stroke-width="7"/>
+    <rect x="302" y="535" width="196" height="190" rx="12" fill="#09131b" stroke="#56636d" stroke-width="7"/>
+    <rect x="306" y="250" width="190" height="18" rx="3" fill="#f3efe8" opacity=".95"/>
+    <rect x="351" y="790" width="98" height="18" rx="3" fill="#f3efe8" opacity=".88"/>
+    <rect x="304" y="822" width="120" height="15" rx="3" fill="#2f86ef" opacity=".95"/>
+  </g>
+
+  <g id="moving-piece" data-part="moving-piece" style="transition:transform .16s ease">
+    <path d="M245 580h70v-54h54v-25h62v25h54v54h70v94h-70v59h-54v25h-62v-25h-54v-59h-70z" fill="url(#blue)" stroke="#0a4a9b" stroke-width="7"/>
+    <rect x="346" y="586" width="108" height="77" rx="9" fill="url(#blue-dark)" stroke="#0b4b9c" stroke-width="6"/>
+    <rect id="indicator" data-part="indicator" x="365" y="600" width="70" height="25" rx="5" fill="#67d6ff" opacity=".35"/>
+    <rect x="229" y="571" width="32" height="112" rx="6" fill="url(#blackLever)"/>
+    <rect x="539" y="571" width="32" height="112" rx="6" fill="url(#blackLever)"/>
+  </g>
+  <circle id="coil-active" data-part="coil-active" cx="400" cy="625" r="125" fill="#20b8ff" opacity="0" filter="url(#glow)"/>
+
+  <g id="terminal-plates" fill="url(#shell)" stroke="#b7b9ba" stroke-width="3">
+    <rect x="128" y="150" width="132" height="170" rx="13"/>
+    <rect x="268" y="150" width="132" height="170" rx="13"/>
+    <rect x="408" y="150" width="132" height="170" rx="13"/>
+    <rect x="548" y="150" width="118" height="170" rx="13" fill="url(#shell-blueplate)" stroke="#bcc3cb"/>
+    <rect x="128" y="930" width="132" height="170" rx="13"/>
+    <rect x="268" y="930" width="132" height="170" rx="13"/>
+    <rect x="408" y="930" width="132" height="170" rx="13"/>
+    <rect x="548" y="930" width="118" height="170" rx="13" fill="url(#shell-blueplate)" stroke="#bcc3cb"/>
+    <rect x="93" y="380" width="82" height="490" rx="12" fill="url(#shell-side)"/>
+    <rect x="625" y="380" width="82" height="490" rx="12" fill="url(#shell-side)"/>
+  </g>
+
+  <g id="top-guides" opacity=".65">
+    <path d="M132 146h124l-16 22h-92z" fill="#f5f1e8"/>
+    <path d="M272 146h124l-16 22h-92z" fill="#f5f1e8"/>
+    <path d="M412 146h124l-16 22h-92z" fill="#f5f1e8"/>
+    <path d="M548 146h108l-15 22h-78z" fill="#f5f1e8"/>
+  </g>
+
+  <g id="terminals-power-in" data-part="terminals-power-in">
+    <g id="terminal-L1" data-terminal="L1"><text x="194" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="900" fill="#111212" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1" font-style="normal" style="font-size: 62px; fill: rgb(17, 18, 18); font-family: Arial, sans-serif; font-weight: 900; font-style: normal; text-anchor: middle;">L1</text><g transform="translate(194 252)" class=""><use href="#screw-shape"/></g><circle class="terminal-hotspot" cx="194" cy="170" r="42"/></g>
+    <g id="terminal-L2" data-terminal="L2"><text x="334" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">L2</text><g transform="translate(334 252)"><use href="#screw-shape"/></g><circle class="terminal-hotspot" cx="334" cy="170" r="42"/></g>
+    <g id="terminal-L3" data-terminal="L3"><text x="474" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">L3</text><g transform="translate(474 252)"><use href="#screw-shape"/></g><circle class="terminal-hotspot" cx="474" cy="170" r="42"/></g>
+  </g>
+  <g id="terminals-coil" data-part="terminals-coil">
+    <g id="terminal-A1" data-terminal="A1"><text x="607" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">A1</text><g transform="translate(607 252)"><use href="#screw-shape"/></g><circle class="terminal-hotspot" data-wire-anchor="A1" cx="607" cy="252" r="46" fill="#000" fill-opacity=".001" pointer-events="all"/></g>
+    <g id="terminal-A2" data-terminal="A2"><text x="607" y="995" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">A2</text><g transform="translate(607 1032)"><use href="#screw-shape"/></g><circle class="terminal-hotspot" data-wire-anchor="A2" cx="607" cy="1032" r="46" fill="#000" fill-opacity=".001" pointer-events="all"/></g>
+  </g>
+  <g id="terminals-power-out" data-part="terminals-power-out">
+    <g id="terminal-T1" data-terminal="T1"><text x="194" y="995" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">T1</text><g transform="translate(194 1032)"><use href="#screw-shape"/></g><circle class="terminal-hotspot" cx="194" cy="1072" r="42"/></g>
+    <g id="terminal-T2" data-terminal="T2"><text x="334" y="995" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">T2</text><g transform="translate(334 1032)"><use href="#screw-shape"/></g><circle class="terminal-hotspot" cx="334" cy="1072" r="42"/></g>
+    <g id="terminal-T3" data-terminal="T3"><text x="474" y="995" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">T3</text><g transform="translate(474 1032)"><use href="#screw-shape"/></g><circle class="terminal-hotspot" cx="474" cy="1072" r="42"/></g>
+  </g>
+
+  <g id="auxiliary-no" data-part="auxiliary-no">
+    <g id="terminal-13" data-terminal="13"><text x="134" y="434" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">13</text><g transform="translate(134 470) scale(.72)"><use href="#screw-shape"/></g><circle class="terminal-hotspot" cx="134" cy="470" r="34"/></g>
+    <g id="symbol-no" aria-label="Contato normalmente aberto"><path d="M134 505v82M134 750v-72l26-68" fill="none" stroke="#111820" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="134" cy="587" r="7" fill="#111820"/><circle cx="160" cy="610" r="7" fill="#111820"/></g>
+    <g id="terminal-14" data-terminal="14"><g transform="translate(134 800) scale(.72)"><use href="#screw-shape"/></g><text x="134" y="864" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">14</text><circle class="terminal-hotspot" cx="134" cy="800" r="34"/></g>
+  </g>
+  <g id="auxiliary-nc" data-part="auxiliary-nc">
+    <g id="terminal-11" data-terminal="11"><text x="666" y="434" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">11</text><g transform="translate(666 470) scale(.72)"><use href="#screw-shape"/></g><circle class="terminal-hotspot" cx="666" cy="470" r="34"/></g>
+    <g id="symbol-nc" aria-label="Contato normalmente fechado"><path d="M666 505v82h20M666 750v-72l20-91" fill="none" stroke="#111820" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="686" cy="587" r="7" fill="#111820"/><circle cx="686" cy="587" r="3" fill="#fff"/></g>
+    <g id="terminal-12" data-terminal="12"><g transform="translate(666 800) scale(.72)"><use href="#screw-shape"/></g><text x="666" y="864" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="900" fill="#101820" stroke="#fbf8f1" stroke-width="10" paint-order="stroke fill" letter-spacing="-1">12</text><circle class="terminal-hotspot" cx="666" cy="800" r="34"/></g>
+  </g>
+
+  <g id="labels" pointer-events="none">
+    <rect x="258" y="820" width="284" height="72" rx="10" fill="url(#labelWhite)" stroke="#c7d0d7" stroke-width="3"/>
+    <text class="brand" x="400" y="852">LUCASAGUIAR</text>
+    <text class="model" x="400" y="878">CONTACTORA TRIPOLAR</text>
+    <rect x="337" y="290" width="126" height="16" rx="3" fill="#2f86ef" opacity=".9"/>
+    <text class="voltage" x="400" y="320">220V 50/60Hz</text>
+  </g>
+  <style>
+    [data-terminal] text{pointer-events:none;stroke-linejoin:round}
+    .brand{font:800 28px Inter,Arial,sans-serif;text-anchor:middle;fill:#0b2a5b}
+    .model{font:700 14px Inter,Arial,sans-serif;text-anchor:middle;fill:#64748b;letter-spacing:1.4px}
+    .voltage{font:700 18px Inter,Arial,sans-serif;text-anchor:middle;fill:#f5f7fa}
+    .terminal-hotspot{fill:#1e88e5;fill-opacity:0;stroke:#31c8ff;stroke-width:7;stroke-opacity:0;cursor:crosshair;transition:.12s}
+    svg:hover .terminal-hotspot{fill-opacity:.08;stroke-opacity:.45}
+    svg[data-energized="true"] #moving-piece{transform:translateY(13px)}
+    svg[data-energized="true"] #indicator{opacity:1}
+    svg[data-energized="true"] #coil-active{opacity:.18}
+  </style>
+</svg>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="180" height="500" viewBox="0 0 180 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bodyGrad_grey" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#4ca53f"/>
+      <stop offset="0.49" stop-color="#7ccb53"/>
+      <stop offset="0.49" stop-color="#f1de4b"/>
+      <stop offset="1" stop-color="#d2b925"/>
+    </linearGradient>
+    <linearGradient id="screwGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.4" stop-color="#D0D0D0"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#E0E0E0"/>
+      <stop offset="0.5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="brandBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f2d46"/>
+      <stop offset="0.55" stop-color="#1783d1"/>
+      <stop offset="1" stop-color="#00b7d9"/>
+    </linearGradient>
+    <linearGradient id="gradient-4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#E0E0E0"/>
+      <stop offset="0.5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <linearGradient id="gradient-5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#E0E0E0"/>
+      <stop offset="0.5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <linearGradient id="gradient-6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#E0E0E0"/>
+      <stop offset="0.5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <linearGradient id="gradient-7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#E0E0E0"/>
+      <stop offset="0.5" stop-color="#999999"/>
+      <stop offset="1" stop-color="#555555"/>
+    </linearGradient>
+    <style>
+      .hotspot{fill:#18a0ff;fill-opacity:0;stroke:#18a0ff;stroke-width:2;stroke-opacity:0}
+      svg:hover .hotspot{fill-opacity:.06;stroke-opacity:.35}
+    </style>
+  </defs>
+  <g id="terminal-block" filter="url(#softShadow)" transform="matrix(1, 0, 0, 1, 44.111843, 20)">
+    <rect y="57.567" width="100" height="400.789" rx="6" fill="url(#bodyGrad_grey)" stroke="#555C63" stroke-width="1.5" style="" x="0.822"/>
+    <circle cx="54.112" cy="129.342" r="20" fill="#555C63"/>
+    <circle cx="54.112" cy="129.342" r="16" fill="url(#screwGrad)"/>
+    <rect x="36" y="78" width="28" height="4" fill="#222" transform="matrix(0.819152, 0.573576, -0.573576, 0.819152, 59.040356, 35.131123)"/>
+    <rect x="48" y="66" width="4" height="28" fill="#222" transform="matrix(0.819152, 0.573576, -0.573576, 0.819152, 59.040356, 35.131123)"/>
+    <rect x="11.645" y="156.382" width="80" height="32" rx="2" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="1"/>
+    <text x="50" y="157" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#111111" text-anchor="middle" style="white-space: pre;"> </text>
+    <rect x="25.822" y="231.382" width="50" height="35" rx="4" fill="#555C63"/>
+    <circle cx="49.178" cy="248.382" r="9" fill="#111"/>
+    <circle cx="50" cy="249.204" r="6" fill="url(#metalGrad)"/>
+    <rect x="10" y="302.27" width="80" height="32" rx="2" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="1"/>
+    <circle cx="47.533" cy="360.132" r="20" fill="#555C63"/>
+    <circle cx="47.533" cy="358.487" r="16" fill="url(#screwGrad)"/>
+    <rect x="36" y="368" width="28" height="4" fill="#222" transform="matrix(0.866025, -0.5, 0.5, 0.866025, -180.768372, 63.057446)"/>
+    <rect x="48" y="356" width="4" height="28" fill="#222" transform="matrix(0.866025, -0.5, 0.5, 0.866025, -180.768372, 63.057446)"/>
+    <path d="M 0 160 L 5 168 L 5 200 L 0 208 Z" fill="#3c9a36"/>
+    <path d="M 100 160 L 95 168 L 95 200 L 100 208 Z" fill="#e1d438"/>
+    <path d="M 0 310 L 5 318 L 5 350 L 0 358 Z" fill="#3c9a36"/>
+    <path d="M 100 310 L 95 318 L 95 350 L 100 358 Z" fill="#e1d438"/>
+    <rect x="12.865" y="207.842" width="78.479" height="16.355" rx="2" fill="url(#brandBar)" style="stroke-width: 1.021;"/>
+    <text x="23" y="220" class="brand" style="white-space: pre; fill: rgb(255, 255, 255) !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 15px !important; font-weight: 700 !important; line-height: 24px; transform: none !important; text-anchor: start !important;">LucasAguiar</text>
+    <path d="M 20.262 57.894 L 80.659 57.894 L 80.659 82.894 L 70.246 82.894 L 70.246 92.894 L 30.676 92.894 L 30.676 82.894 L 20.262 82.894 L 20.262 57.894 Z" fill="#d7dde1" stroke="#a4afb6" stroke-width="1.3" style="stroke-width: 1.327;"/>
+    <rect x="25.461" y="74.03" width="50" height="8.487" rx="3" fill="#1A1A1A" style="stroke-width: 1;"/>
+    <rect x="29.284" y="75.386" width="44" height="5.776" rx="2" fill="url(#gradient-4)" style="stroke-width: 1;"/>
+    <rect x="27.928" y="63.339" width="45.066" height="7.665" rx="3" fill="#1A1A1A" style="stroke-width: 1;"/>
+    <rect x="29.285" y="64.695" width="44" height="5.776" rx="2" fill="url(#gradient-5)" style="stroke-width: 1;"/>
+    <path d="M 20.262 423.848 L 80.659 423.848 L 80.659 448.848 L 70.246 448.848 L 70.246 458.848 L 30.676 458.848 L 30.676 448.848 L 20.262 448.848 L 20.262 423.848 Z" fill="#d7dde1" stroke="#a4afb6" stroke-width="1.3" style="stroke-width: 1.327; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, -0.000009, 0.000009)"/>
+    <rect x="-72.993" y="-444.36" width="50" height="8.487" rx="3" fill="#1A1A1A" style="stroke-width: 1; transform-origin: -47.994px -440.116px;" transform="matrix(-1, 0, 0, -1, 95.987793, 880.232056)"/>
+    <rect x="-69.173" y="-443.01" width="44" height="5.776" rx="2" fill="url(#gradient-6)" style="stroke-width: 1; transform-origin: -47.171px -440.122px;" transform="matrix(-1, 0, 0, -1, 94.341789, 880.243835)"/>
+    <rect x="-70.533" y="-455.05" width="45.066" height="7.665" rx="3" fill="#1A1A1A" style="stroke-width: 1; transform-origin: -47.994px -451.217px;" transform="matrix(-1, 0, 0, -1, 95.987793, 902.434082)"/>
+    <rect x="-69.173" y="-453.7" width="44" height="5.776" rx="2" fill="url(#gradient-7)" style="stroke-width: 1; transform-origin: -47.17px -450.812px;" transform="matrix(-1, 0, 0, -1, 94.33979, 901.62384)"/>
+    <text x="51" y="182" text-anchor="middle" style="fill: rgb(51, 51, 51) !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 28px !important; font-weight: 700 !important; white-space: pre; transform: none !important;">PE</text>
+    <text x="50" y="331" text-anchor="middle" style="fill: rgb(51, 51, 51) !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 28px !important; font-weight: 700 !important; white-space: pre; transform: none !important;">PE</text>
+    <circle id="terminal-top" data-terminal="1" class="hotspot" cx="50.5" cy="72.5" r="12" data-wire-anchor="1"/>
+    <circle id="terminal-bottom" data-terminal="2" class="hotspot" cx="50.5" cy="444.5" r="12" data-wire-anchor="2"/>
+  </g>
+</svg>

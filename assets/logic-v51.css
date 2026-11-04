@@ -1,0 +1,267 @@
+/* TechRib Simulador V51 - Component Registry + Logic Engine */
+.techrib-registry-group{border-top:1px solid #dbe4ec;border-bottom:1px solid #dbe4ec;background:linear-gradient(180deg,#f8fbff,#f3f8fc)}
+.techrib-registry-group>.group-title{background:linear-gradient(90deg,#e8f3ff,#f8fbff)}
+.techrib-registry-group>.group-title b{color:#0b2a5b}
+.component-item.logic-thumb{min-height:88px;position:relative}
+.component-item.logic-thumb:after{content:"LOGIC";position:absolute;right:5px;top:5px;padding:2px 4px;border-radius:4px;background:#dbeafe;color:#1d4ed8;font:800 6px Inter,Arial,sans-serif;letter-spacing:.4px}
+.component-item.logic-thumb svg{width:66px!important;height:68px!important;max-width:76px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}
+.component-item.logic-thumb.microcontroller-thumb svg{width:48px!important;height:72px!important}
+.component-item.logic-thumb.arduino-thumb svg{width:78px!important;height:58px!important}
+.component-item.logic-thumb.relay-module-thumb svg{width:78px!important;height:58px!important}
+.component-item.logic-thumb.source-logic-thumb svg{width:50px!important;height:70px!important}
+.component-item.logic-thumb.driver-thumb svg{width:50px!important;height:68px!important}
+
+.placed-component[data-techrib-category="logic"]{padding:8px!important;border:1px solid #93c5fd;background:#eff6ffcc;box-shadow:0 0 0 2px #60a5fa1f}
+.placed-component[data-techrib-category="logic"]>span,.placed-component[data-techrib-category="logic"]>small{font-family:Inter,Arial,sans-serif}
+.placed-component[data-type="fonte-5v"]{width:150px!important;min-height:228px!important}
+.placed-component[data-type="fonte-5v"]>svg{width:128px!important;height:auto!important;overflow:visible!important}
+.placed-component[data-type="arduino-uno"]{width:276px!important;min-height:222px!important}
+.placed-component[data-type="arduino-uno"]>svg{width:252px!important;height:auto!important;overflow:visible!important}
+.placed-component[data-type="relay-1ch-5v"]{width:92px!important;min-height:130px!important;padding:6px!important}
+.placed-component[data-type="relay-1ch-5v"]>svg{width:76px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-type="mosfet-n-logico"]{width:156px!important;min-height:230px!important}
+.placed-component[data-type="mosfet-n-logico"]>svg{width:132px!important;height:auto!important;overflow:visible!important}
+
+.placed-component.logic-powered{border-color:#22c55e;background:#f0fdf4d9;box-shadow:0 0 0 3px #22c55e26}
+.placed-component.logic-fault{border-color:#ef4444!important;background:#fef2f2e6!important;box-shadow:0 0 0 3px #ef44442f!important}
+.placed-component[data-type="relay-1ch-5v"].relay-energized{border-color:#f59e0b;background:#fffbebdf;box-shadow:0 0 0 3px #f59e0b2b}
+.placed-component[data-type="mosfet-n-logico"].mosfet-on{border-color:#22c55e;background:#f0fdf4df;box-shadow:0 0 0 3px #22c55e2b}
+.placed-component[data-techrib-category="logic"]:after{position:absolute;right:7px;top:7px;padding:3px 5px;border-radius:4px;background:#e2e8f0;color:#475569;font:800 6px Inter,Arial,sans-serif;letter-spacing:.4px;z-index:3}
+.placed-component[data-type="esp32-devkit"]:after,.placed-component[data-type="arduino-uno"]:after{content:"SEM ALIMENTAÇÃO"}
+.placed-component[data-type="esp32-devkit"].logic-powered:after,.placed-component[data-type="arduino-uno"].logic-powered:after{content:"ATIVO";background:#dcfce7;color:#15803d}
+.placed-component[data-type="esp32-devkit"].logic-fault:after,.placed-component[data-type="arduino-uno"].logic-fault:after{content:"FALHA LÓGICA";background:#fee2e2;color:#b91c1c}
+.placed-component[data-type="relay-1ch-5v"]:after{content:"RELÉ OFF"}
+.placed-component[data-type="relay-1ch-5v"].relay-energized:after{content:"RELÉ ON";background:#fef3c7;color:#b45309}
+.placed-component[data-type="mosfet-n-logico"]:after{content:"MOSFET OFF"}
+.placed-component[data-type="mosfet-n-logico"].mosfet-on:after{content:"MOSFET ON";background:#dcfce7;color:#15803d}
+
+.placed-component [data-gpio-control]{pointer-events:all}
+.placed-component [data-gpio-control]:hover rect{filter:brightness(1.17)}
+.placed-component[data-techrib-category="logic"] [data-terminal]{cursor:crosshair}
+.placed-component[data-techrib-category="logic"] [data-wire-anchor]{pointer-events:all}
+.wire-layer .wire-path.logic-energized{filter:drop-shadow(0 0 3px #22c55e)}
+
+
+/* V51.6 - biblioteca Automação separada + ESP32 Wokwi Boards */
+.library-tabs{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.workbench:not(.automation-view) .automation-group{display:none!important}
+.automation-view .library-scroll>.library-group:not(.automation-group){display:none!important}
+.automation-view .automation-group{display:block!important}
+.component-item.logic-thumb.wokwi-board-thumb svg{width:50px!important;height:76px!important;max-width:58px!important}
+.placed-component[data-type="esp32-devkit"]:before{content:attr(data-logic-test-state);position:absolute;left:7px;top:7px;padding:3px 5px;border-radius:4px;background:#071d35;color:#dbeafe;font:800 6px Inter,Arial,sans-serif;letter-spacing:.25px;z-index:4;pointer-events:none}
+.placed-component[data-type="esp32-devkit"] [data-gpio-control]{cursor:pointer!important}
+.placed-component[data-type="esp32-devkit"] [data-gpio-control]:hover{fill:#60a5fa!important;fill-opacity:.22!important;stroke:#2563eb!important;stroke-width:1.1!important}
+
+.placed-component[data-behavior-type="microcontroller"]:after{content:"SEM ALIMENTAÇÃO"}
+.placed-component[data-behavior-type="microcontroller"].logic-powered:after{content:"ATIVO";background:#dcfce7;color:#15803d}
+.placed-component[data-behavior-type="microcontroller"].logic-fault:after{content:"FALHA LÓGICA";background:#fee2e2;color:#b91c1c}
+
+
+/* V51.7 - biblioteca Wokwi organizada + pinagem legível + botão de teste */
+.automation-group .component-grid{align-items:stretch!important;grid-auto-rows:132px!important;gap:8px!important;padding:9px 10px 14px!important}
+.automation-group .component-item.logic-thumb{height:132px!important;min-height:132px!important;box-sizing:border-box!important;overflow:hidden!important;justify-content:flex-start!important;gap:5px!important;padding:10px 5px 7px!important;position:relative!important}
+.automation-group .component-item.logic-thumb svg{display:block!important;flex:0 0 auto!important;width:66px!important;height:88px!important;max-width:76px!important;max-height:88px!important;overflow:hidden!important}
+.automation-group .component-item.logic-thumb.wokwi-board-thumb svg{width:62px!important;height:90px!important;max-width:68px!important;max-height:90px!important;overflow:hidden!important}
+.automation-group .component-item.logic-thumb [data-techrib-wokwi-terminals],
+.automation-group .component-item.logic-thumb [data-techrib-pin-labels]{display:none!important}
+.automation-group .component-item.logic-thumb span{display:-webkit-box!important;width:100%!important;min-height:21px!important;overflow:hidden!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;line-height:1.25!important;text-align:center!important;word-break:normal!important}
+.automation-group .component-item.logic-thumb:after{top:4px!important;right:4px!important}
+
+/* A placa Wokwi permanece intacta; o TechRib sobrepõe somente labels funcionais. */
+.placed-component[data-behavior-type="microcontroller"]{width:238px!important;min-height:428px!important;padding:8px 12px 54px!important;overflow:visible!important}
+.placed-component[data-behavior-type="microcontroller"]>svg{width:204px!important;height:auto!important;max-height:350px!important;overflow:visible!important}
+.placed-component[data-behavior-type="microcontroller"] [data-techrib-pin-labels] text{pointer-events:none!important}
+.placed-component[data-behavior-type="microcontroller"] [data-techrib-wokwi-terminals] [data-terminal]:hover [data-wire-anchor]{fill:#38bdf8!important;fill-opacity:.28!important;stroke:#0284c7!important;stroke-width:1.1!important}
+
+.logic-gpio-test-panel{position:absolute;left:12px;right:12px;bottom:13px;z-index:8;height:34px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px;padding:4px 5px 4px 7px;border:1px solid #93c5fd;border-radius:8px;background:#eff6ff;box-shadow:0 2px 7px #0f172a18;cursor:default}
+.logic-gpio-test-button{height:25px;border:0;border-radius:6px;padding:0 10px;background:#0b548f;color:#fff;font:800 8px Inter,Arial,sans-serif;letter-spacing:.25px;cursor:pointer;white-space:nowrap}
+.logic-gpio-test-button:hover{background:#087ebc}
+.logic-gpio-test-button:active{transform:translateY(1px)}
+.logic-gpio-test-value{min-width:54px;padding:5px 7px;border-radius:5px;background:#fee2e2;color:#b91c1c;font:900 8px Inter,Arial,sans-serif;text-align:center;white-space:nowrap}
+.logic-gpio-test-panel[data-state="HIGH"]{border-color:#86efac;background:#f0fdf4}
+.logic-gpio-test-panel[data-state="HIGH"] .logic-gpio-test-button{background:#15803d}
+.logic-gpio-test-panel[data-state="HIGH"] .logic-gpio-test-value{background:#dcfce7;color:#15803d}
+
+/* ESP32 Wokwi recebe um pouco mais de largura para a legenda dos GPIOs. */
+/* V151 — ESP32 DevKit em escala proporcional ao Arduino UNO R3.
+   SVGs da base: ESP32 28,2 x 53 mm; UNO 74,9 x 53,439 mm.
+   Mantemos praticamente a mesma altura física do UNO e reduzimos a largura da ESP32. */
+.placed-component[data-type="esp32-devkit"]{width:150px!important;min-height:285px!important;padding:8px 14px 48px!important}
+.placed-component[data-type="esp32-devkit"]>svg{width:120px!important;height:auto!important;max-height:232px!important;overflow:visible!important}
+
+/* ESP32-S3 DevKitC-1 na mesma escala física do ESP32 DevKit V1.
+   A S3 real é mais estreita (25,527 mm) e mais longa (70,057 mm). */
+.placed-component:is([data-type="board-esp32-s3-devkitc-1"],[data-registry-id="board-esp32-s3-devkitc-1"]){width:139px!important;min-height:359px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-s3-devkitc-1"],[data-registry-id="board-esp32-s3-devkitc-1"])>svg{width:109px!important;height:auto!important;max-height:299px!important;overflow:visible!important}
+
+/* ESP32 DevKit C V4 na escala física do ESP32 DevKit V1 (27,9 x 56,628 mm). */
+.placed-component:is([data-type="board-esp32-devkit-c-v4"],[data-registry-id="board-esp32-devkit-c-v4"]){width:149px!important;min-height:301px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-devkit-c-v4"],[data-registry-id="board-esp32-devkit-c-v4"])>svg{width:119px!important;height:auto!important;max-height:241px!important;overflow:visible!important}
+.placed-component:is([data-type="board-esp32-devkit-c-v4"],[data-registry-id="board-esp32-devkit-c-v4"])>svg text{font-size:.75px!important}
+.placed-component:is([data-type="board-esp32-devkit-c-v4"],[data-registry-id="board-esp32-devkit-c-v4"])>svg #text392{font-size:2px!important}
+.placed-component:is([data-type="board-esp32-devkit-c-v4"],[data-registry-id="board-esp32-devkit-c-v4"])>svg :is(#text393,#text394){font-size:.65px!important}
+
+/* Arduino Nano ESP32: antena para cima e escala fisica do ESP32 DevKit C V4. */
+.placed-component:is([data-type="board-arduino-nano-esp32"],[data-registry-id="board-arduino-nano-esp32"]){width:107px!important;min-height:245px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-arduino-nano-esp32"],[data-registry-id="board-arduino-nano-esp32"])>svg{width:77px!important;height:auto!important;max-height:185px!important;overflow:visible!important}
+
+/* Franzininho WiFi: antena para cima e escala fisica do ESP32 DevKit C V4. */
+.placed-component:is([data-type="board-franzininho-wifi"],[data-registry-id="board-franzininho-wifi"]){width:138px!important;min-height:334px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-franzininho-wifi"],[data-registry-id="board-franzininho-wifi"])>svg{width:108px!important;height:auto!important;max-height:274px!important;overflow:visible!important}
+
+/* ESP32-C3 DevKitM-1 na escala e acabamento visual do ESP32 DevKit C V4. */
+.placed-component:is([data-type="board-esp32-c3-devkitm-1"],[data-registry-id="board-esp32-c3-devkitm-1"]){width:138px!important;min-height:243px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-c3-devkitm-1"],[data-registry-id="board-esp32-c3-devkitm-1"])>svg{width:108px!important;height:auto!important;max-height:183px!important;overflow:visible!important}
+
+/* ESP32-C5-DevKit-C-1 na mesma escala física do ESP32 DevKit C V4.
+   A C5 real é um pouco mais estreita e ligeiramente mais alta. */
+.placed-component:is([data-type="board-esp32-c5-devkitc-1"],[data-registry-id="board-esp32-c5-devkitc-1"]){width:142px!important;min-height:307px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-c5-devkitc-1"],[data-registry-id="board-esp32-c5-devkitc-1"])>svg{width:112px!important;height:auto!important;max-height:247px!important;overflow:visible!important}
+
+/* Wemos S2 Mini: mesma escala horizontal do ESP32 C5, preservando a proporcao compacta real. */
+.placed-component:is([data-type="board-wemos-s2-mini"],[data-registry-id="board-wemos-s2-mini"]){width:142px!important;min-height:206px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-wemos-s2-mini"],[data-registry-id="board-wemos-s2-mini"])>svg{width:112px!important;height:auto!important;max-height:146px!important;overflow:visible!important}
+
+/* ESP32 C6 DevKit c1: mesma escala física do ESP32 C5 DevKit C1. */
+.placed-component:is([data-type="board-esp32-c6-devkitc-1"],[data-registry-id="board-esp32-c6-devkitc-1"]){width:142px!important;min-height:307px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-c6-devkitc-1"],[data-registry-id="board-esp32-c6-devkitc-1"])>svg{width:112px!important;height:auto!important;max-height:247px!important;overflow:visible!important}
+
+/* ESP32 C61 DevKit C1: mesma escala física do ESP32 C5 DevKit C1. */
+.placed-component:is([data-type="board-esp32-c61-devkitc-1"],[data-registry-id="board-esp32-c61-devkitc-1"]){width:142px!important;min-height:307px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-c61-devkitc-1"],[data-registry-id="board-esp32-c61-devkitc-1"])>svg{width:112px!important;height:auto!important;max-height:247px!important;overflow:visible!important}
+
+/* ESP32 H2 DevKit M1: mesma escala física do ESP32 C5 DevKit C1. */
+.placed-component:is([data-type="board-esp32-h2-devkitm-1"],[data-registry-id="board-esp32-h2-devkitm-1"]){width:142px!important;min-height:297px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-h2-devkitm-1"],[data-registry-id="board-esp32-h2-devkitm-1"])>svg{width:112px!important;height:auto!important;max-height:237px!important;overflow:visible!important}
+
+/* Wemos Lolin32 Lite na mesma escala física do ESP32 C5 DevKit C1. */
+.placed-component:is([data-type="board-wemos-lolin32-lite"],[data-registry-id="board-wemos-lolin32-lite"]){width:139px!important;min-height:274px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-wemos-lolin32-lite"],[data-registry-id="board-wemos-lolin32-lite"])>svg{width:109px!important;height:auto!important;max-height:214px!important;overflow:visible!important}
+
+/* ESP32 S31 Function CoreBoard 1 na mesma escala física do ESP32 C5 DevKit C1. */
+.placed-component:is([data-type="board-esp32-s31-function-coreboard-1"],[data-registry-id="board-esp32-s31-function-coreboard-1"]){width:333px!important;min-height:295px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-s31-function-coreboard-1"],[data-registry-id="board-esp32-s31-function-coreboard-1"])>svg{width:303px!important;height:auto!important;max-height:235px!important;overflow:visible!important}
+
+/* ESP32 S2 DevKit M1 na mesma escala física do ESP32 C5 DevKit C1. */
+.placed-component:is([data-type="board-esp32-s2-devkitm-1"],[data-registry-id="board-esp32-s2-devkitm-1"]){width:139px!important;min-height:313px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-s2-devkitm-1"],[data-registry-id="board-esp32-s2-devkitm-1"])>svg{width:109px!important;height:auto!important;max-height:253px!important;overflow:visible!important}
+
+/* ESP32 C3 (Rust Board) na mesma escala física do ESP32-C5-DevKit-C-1.
+   A placa real é mais estreita (22,86 mm) e mais longa (63,67 mm). */
+.placed-component:is([data-type="board-esp32-c3-rust-1"],[data-registry-id="board-esp32-c3-rust-1"]){width:142px!important;min-height:372px!important;padding:8px 14px 48px!important}
+.placed-component:is([data-type="board-esp32-c3-rust-1"],[data-registry-id="board-esp32-c3-rust-1"])>svg{width:112px!important;height:auto!important;max-height:312px!important;overflow:visible!important}
+
+
+/* V51.8 - correções visuais: miniaturas, GPIOs e botão de teste */
+.automation-group .component-item.logic-thumb [data-wire-anchor]{opacity:0!important;fill-opacity:0!important;stroke-opacity:0!important;pointer-events:none!important}
+.automation-group .component-item.logic-thumb.wokwi-board-thumb{overflow:hidden!important}
+.automation-group .component-item.logic-thumb.wokwi-board-thumb>.wokwi-source-svg{display:none!important}
+.automation-group .component-item.logic-thumb.wokwi-board-thumb>.wokwi-board-preview{display:block!important;width:72px!important;height:91px!important;max-width:72px!important;max-height:91px!important;object-fit:contain!important;object-position:center!important;flex:0 0 91px!important;margin:0 auto!important}
+.automation-group .component-item.logic-thumb:not(.wokwi-board-thumb)>svg{width:76px!important;height:84px!important;max-width:76px!important;max-height:84px!important;overflow:hidden!important}
+.automation-group .component-item.logic-thumb.driver-thumb>svg{width:70px!important;height:78px!important}
+.automation-group .component-item.logic-thumb span{position:relative!important;z-index:3!important;background:#fff!important}
+.placed-component[data-behavior-type="microcontroller"] [data-techrib-pin-labels] text{fill:#fff!important;stroke:#020617!important;stroke-width:.28!important;paint-order:stroke fill!important;font-family:Arial,Inter,sans-serif!important;font-weight:800!important}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel,.placed-component[data-type="esp32-devkit"] .logic-gpio-test-panel{left:50%!important;right:auto!important;top:142px!important;bottom:auto!important;transform:translateX(-50%)!important;z-index:40!important;width:142px!important;height:32px!important;box-sizing:border-box!important;display:grid!important;grid-template-columns:1fr 55px!important;align-items:center!important;gap:5px!important;padding:3px 4px!important;border:1px solid #7dd3fc!important;border-radius:7px!important;background:#071e2df2!important;box-shadow:0 2px 7px #02061766!important;pointer-events:auto!important}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-button{display:block!important;height:24px!important;min-width:0!important;padding:0 6px!important;border:0!important;border-radius:5px!important;background:#0ea5e9!important;color:#fff!important;font:900 7px Inter,Arial,sans-serif!important;letter-spacing:.1px!important;cursor:pointer!important}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-value{display:block!important;min-width:0!important;padding:5px 3px!important;border-radius:4px!important;background:#7f1d1d!important;color:#fff!important;font:900 7px Inter,Arial,sans-serif!important;text-align:center!important;white-space:nowrap!important}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel[data-state="HIGH"]{border-color:#86efac!important;background:#052e16f2!important}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel[data-state="HIGH"] .logic-gpio-test-button{background:#16a34a!important}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel[data-state="HIGH"] .logic-gpio-test-value{background:#166534!important;color:#fff!important}
+
+/* V52 - Motor de lógica JSON + testes automáticos dos GPIOs usados */
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel.logic-gpio-auto-panel{left:calc(50% + var(--logic-panel-offset-x,0px))!important;top:calc(132px + var(--logic-panel-offset-y,0px))!important;width:174px!important;height:auto!important;min-height:48px!important;max-height:146px!important;display:block!important;padding:5px!important;overflow:auto!important;background:#071e2df2!important}
+.logic-gpio-panel-head{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-bottom:4px;color:#dbeafe;font:800 7px Inter,Arial,sans-serif;letter-spacing:.2px;cursor:grab;user-select:none;touch-action:none}
+.logic-gpio-test-panel.is-dragging .logic-gpio-panel-head{cursor:grabbing}
+.logic-gpio-panel-actions{display:flex;align-items:center;gap:3px}
+.logic-gpio-panel-actions button{border:1px solid #38bdf8;border-radius:5px;background:#0c4a6e;color:#fff;padding:3px 5px;font:900 6.5px Inter,Arial,sans-serif;line-height:1;cursor:pointer}
+.logic-gpio-panel-actions button:hover{background:#0369a1}
+.logic-gpio-panel-head [data-logic-panel-reset]{min-width:19px;padding-inline:4px;font-size:9px}
+.logic-gpio-panel-head [data-logic-json-open]{padding:3px 6px}
+.logic-gpio-test-list{display:grid;gap:3px}
+.logic-gpio-row{display:grid;grid-template-columns:40px 1fr;gap:4px;align-items:center;min-height:23px;padding:2px 3px;border-radius:5px;background:#0f2d46;border:1px solid #164e63}
+.logic-gpio-row-name{color:#fff;font:900 7px Inter,Arial,sans-serif;white-space:nowrap}
+.logic-gpio-row .logic-gpio-test-button{height:20px!important;padding:0 5px!important;font-size:6.5px!important;background:#7f1d1d!important}
+.logic-gpio-row[data-state="HIGH"] .logic-gpio-test-button{background:#15803d!important}
+.logic-gpio-input-value{display:block;padding:4px 4px;border-radius:4px;background:#1e3a5f;color:#bfdbfe;font:900 6.5px Inter,Arial,sans-serif;text-align:center;white-space:nowrap}
+.logic-gpio-row[data-mode="input"][data-state="HIGH"] .logic-gpio-input-value{background:#14532d;color:#dcfce7}
+.logic-gpio-empty{display:block;padding:5px;color:#bae6fd;font:700 6.5px Inter,Arial,sans-serif;line-height:1.25;text-align:center}
+.logic-gpio-test-panel[data-programmed="true"] .logic-gpio-panel-head:before{content:"JSON";margin-right:auto;padding:2px 4px;border-radius:4px;background:#14532d;color:#dcfce7;font:900 5.5px Inter,Arial,sans-serif}
+
+/* MCP23017 V3 — 16 comandos no controlador; 4 linhas visíveis + rolagem vertical até H16. */
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel[data-i2c-controls="true"]{max-height:none!important;overflow:hidden!important}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel[data-i2c-controls="true"] .logic-gpio-test-list{height:116px!important;max-height:116px!important;overflow-y:auto!important;overflow-x:hidden!important;scrollbar-gutter:stable!important;padding-right:1px}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel[data-i2c-controls="true"] .logic-i2c-rule-row{min-height:25px!important;grid-template-columns:67px 1fr!important}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel[data-i2c-controls="true"] .logic-i2c-rule-row .logic-gpio-row-name{font-size:6.4px!important;overflow:hidden;text-overflow:ellipsis}
+.placed-component[data-behavior-type="microcontroller"] .logic-gpio-test-panel[data-i2c-controls="true"] .logic-i2c-rule-row .logic-gpio-test-button{min-width:68px!important}
+
+.logic-program-modal[hidden]{display:none!important}
+.logic-program-modal{position:fixed;inset:0;z-index:10050;display:grid;place-items:center;padding:24px;background:#020617a8;backdrop-filter:blur(3px)}
+.logic-program-card{width:min(760px,94vw);max-height:92vh;overflow:auto;border:1px solid #94a3b8;border-radius:14px;background:#f8fafc;box-shadow:0 24px 80px #02061766;color:#0f172a}
+.logic-program-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;background:#08263a;color:#fff;border-radius:13px 13px 0 0}
+.logic-program-head>div{display:grid;gap:2px}.logic-program-head b{font:900 16px Inter,Arial,sans-serif}.logic-program-head span{font:600 11px Inter,Arial,sans-serif;color:#bae6fd}.logic-program-head button{border:0;background:#ffffff18;color:#fff;width:30px;height:30px;border-radius:8px;font-size:22px;cursor:pointer}
+.logic-program-form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:14px 16px 8px}
+.logic-program-form label{display:grid;gap:5px;color:#334155;font:800 10px Inter,Arial,sans-serif}.logic-program-form select{width:100%;height:34px;border:1px solid #cbd5e1;border-radius:7px;background:#fff;padding:0 8px;color:#0f172a;font:700 11px Inter,Arial,sans-serif}
+.logic-program-actions{display:flex;gap:8px;padding:4px 16px 10px}.logic-program-actions button,.logic-program-footer button{border:0;border-radius:7px;padding:9px 12px;background:#e2e8f0;color:#0f172a;font:900 10px Inter,Arial,sans-serif;cursor:pointer}.logic-program-actions [data-logic-generate],.logic-program-footer [data-logic-apply]{background:#0284c7;color:#fff}.logic-program-actions [data-logic-clear]{background:#fee2e2;color:#991b1b}
+.logic-program-card textarea{display:block;width:calc(100% - 32px);height:260px;margin:0 16px;resize:vertical;box-sizing:border-box;border:1px solid #94a3b8;border-radius:9px;background:#07111f;color:#dbeafe;padding:12px;font:12px/1.5 Consolas,"Courier New",monospace;tab-size:2}
+.logic-program-status{min-height:24px;padding:8px 16px 2px;color:#475569;font:700 10px Inter,Arial,sans-serif}
+.logic-program-footer{display:flex;justify-content:flex-end;gap:8px;padding:10px 16px 16px}
+@media(max-width:760px){.logic-program-form{grid-template-columns:1fr 1fr}.logic-program-card textarea{height:220px}} 
+
+/* V53.3 — placas importadas do TechRib SVG Studio: textos dos pinos e título ESP32 */
+.placed-component[data-behavior-type="microcontroller"] [data-techrib-pin-labels="studio"] text{fill:#fff!important;color:#fff!important;stroke:#111827!important;paint-order:stroke fill!important;font-family:Arial,Inter,sans-serif!important;font-weight:800!important}
+.placed-component[data-behavior-type="microcontroller"] text[data-techrib-esp32-title="true"]{fill:#fff!important;color:#fff!important}
+
+
+/* V54.1 - diagnostico detalhado de falha logica / sobretensao */
+.placed-component[data-behavior-type="microcontroller"].logic-fault:after{
+  content:attr(data-logic-fault-label)!important;
+  background:#fee2e2!important;color:#b91c1c!important;
+  max-width:120px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+/* ESP32-2432S028R: escala física proporcional (86 x 50 mm) e tela interativa. */
+.placed-component:is([data-type="board-esp32-2432s028r"], [data-registry-id="board-esp32-2432s028r"]) {
+  width: 397px !important;
+  min-height: 273px !important;
+  padding: 8px 14px 48px !important;
+}
+
+.placed-component:is([data-type="board-esp32-2432s028r"], [data-registry-id="board-esp32-2432s028r"]) > svg {
+  width: 367px !important;
+  height: auto !important;
+  max-height: 213px !important;
+  overflow: visible !important;
+}
+
+.placed-component:is([data-type="board-esp32-2432s028r"], [data-registry-id="board-esp32-2432s028r"]) [data-techrib-tft-hitbox="true"] {
+  cursor: pointer;
+}
+.logic-gpio-fault-detail{
+  grid-column:1/-1;display:flex;flex-direction:column;gap:2px;
+  padding:6px 7px;margin:1px 0 4px;border:1px solid #ef4444;border-radius:7px;
+  background:#450a0ae8;color:#fee2e2;font:700 7px Inter,Arial,sans-serif;line-height:1.25;
+}
+.logic-gpio-fault-detail b{font-size:7.5px;color:#fecaca;letter-spacing:.2px}
+.logic-gpio-fault-detail span{color:#fff7f7;font-weight:700}
+.logic-gpio-fault-detail small{color:#fecaca;font-size:6.5px}
+
+/* TECHRIB PICO RP2040 — ESCALA FISICA ESP32 REF V1 */
+/* ESP32 DevKit V1: 28,2 x 53 mm e SVG 120 px.
+   Raspberry Pi Pico: 20,9 x 52,75 mm -> SVG ~89 px e praticamente a mesma altura. */
+.placed-component[data-type="raspberry-pi-pico"]{width:118px!important;min-height:285px!important;padding:8px 14px 48px!important;overflow:visible!important}
+.placed-component[data-type="raspberry-pi-pico"]>svg{width:89px!important;height:auto!important;max-height:232px!important;max-width:none!important;overflow:visible!important}
+
+/* TECHRIB LCD16X2 TEXT FIT V4 START */
+.placed-component[data-type="svg-lcd-screen"] [data-lcd-line1="true"],
+.placed-component[data-type="svg-lcd-screen"] [data-lcd-line2="true"],
+.placed-component[data-registry-id="svg-lcd-screen"] [data-lcd-line1="true"],
+.placed-component[data-registry-id="svg-lcd-screen"] [data-lcd-line2="true"]{
+  text-anchor:start!important;
+  font-family:"DejaVu Sans Mono",Consolas,monospace!important;
+  font-size:8.1px!important;
+  font-weight:700!important;
+  letter-spacing:.12px!important;
+  transform:none!important;
+  dominant-baseline:auto!important;
+}
+/* TECHRIB LCD16X2 TEXT FIT V4 END */

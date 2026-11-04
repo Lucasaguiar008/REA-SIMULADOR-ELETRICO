@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-label="Sistema Premium de bombeamento entre reservatórios" data-techrib-preserve-text-style="true">
+  <defs>
+    <linearGradient id="ps-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10232d"/><stop offset="1" stop-color="#07131a"/></linearGradient>
+    <linearGradient id="ps-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9eef1"/><stop offset=".45" stop-color="#8fa2ad"/><stop offset="1" stop-color="#42545f"/></linearGradient>
+    <linearGradient id="ps-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#55d6ff"/><stop offset=".45" stop-color="#159bd3"/><stop offset="1" stop-color="#07699a"/></linearGradient>
+    <radialGradient id="ps-pump" cx="35%" cy="30%"><stop stop-color="#5f7c8a"/><stop offset=".55" stop-color="#263d48"/><stop offset="1" stop-color="#0b1820"/></radialGradient>
+    <filter id="ps-shadow"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-opacity=".38"/></filter>
+    <filter id="ps-glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="upper-tank-clip"><rect x="565" y="130" width="280" height="236" rx="12"/></clipPath>
+    <clipPath id="lower-tank-clip"><rect x="105" y="490" width="340" height="158" rx="10"/></clipPath>
+    <g id="ps-terminal-port"><circle r="11" fill="#101a20" stroke="#f1c75b" stroke-width="3"/><circle r="5" fill="#dfe8ed"/><path d="M-4 0h8M0-4v8" stroke="#536873" stroke-width="2"/></g>
+    <style>
+      .ps-title{font:900 25px Arial,sans-serif;fill:#fff;letter-spacing:.6px}.ps-sub{font:700 12px Arial,sans-serif;fill:#9fc3d4}.ps-label{font:800 13px Arial,sans-serif;fill:#eaf7fb}.ps-small{font:700 10px Arial,sans-serif;fill:#a9c2ce}.ps-value{font:900 20px Arial,sans-serif;fill:#7dd3fc}.ps-terminal-label{font:900 11px Arial,sans-serif;fill:#f5e7ad}.ps-btn text{pointer-events:none}.ps-btn rect{fill:#173747;stroke:#6a8591;stroke-width:1.5}.ps-btn:hover rect{fill:#245369}.ps-btn{cursor:pointer}.ps-float-label{font:900 10px Arial,sans-serif;fill:#f3f7f9}.wire-anchor-hitbox{fill:transparent;stroke:transparent;stroke-width:1}
+    </style>
+  </defs>
+
+  <rect x="14" y="14" width="972" height="732" rx="28" fill="url(#ps-bg)" stroke="#b78b25" stroke-width="4" filter="url(#ps-shadow)"/>
+  <rect x="30" y="30" width="940" height="56" rx="14" fill="#0d2c3a" stroke="#365865"/>
+  <text x="52" y="64" class="ps-title">TECHRIB • SISTEMA DE BOMBEAMENTO</text>
+  <text x="944" y="55" text-anchor="end" class="ps-sub">RESERVATÓRIO INFERIOR → BOMBA → CAIXA SUPERIOR</text>
+  <text x="944" y="73" text-anchor="end" class="ps-small">AUTOMÁTICO POR BOIA MÍNIMA / MÁXIMA</text>
+
+  <!-- Caixa superior -->
+  <g id="upper-tank" filter="url(#ps-shadow)">
+    <path d="M545 112h320l18 18v260l-18 18H545l-18-18V130z" fill="#162c37" stroke="#d3dde2" stroke-width="4"/>
+    <rect x="558" y="123" width="294" height="254" rx="16" fill="#071b25" stroke="#5c7480" stroke-width="2"/>
+    <g clip-path="url(#upper-tank-clip)">
+      <rect id="upper-water" data-pump-upper-water="true" x="565" y="304" width="280" height="62" fill="url(#ps-water)" opacity=".93"/>
+      <path id="upper-wave" data-pump-upper-wave="true" d="M560 305 Q595 296 630 305T700 305T770 305T850 305" fill="none" stroke="#c6f3ff" stroke-width="5" opacity=".8"/>
+      <g opacity=".55" fill="#d8f7ff"><circle cx="620" cy="332" r="5"/><circle cx="700" cy="344" r="4"/><circle cx="785" cy="325" r="6"/></g>
+    </g>
+    <text x="705" y="105" text-anchor="middle" class="ps-label">CAIXA D'ÁGUA SUPERIOR</text>
+    <text x="705" y="220" text-anchor="middle" data-pump-upper-value="true" class="ps-value">28%</text>
+    <rect x="873" y="145" width="72" height="88" rx="9" fill="#07151c" stroke="#476571"/>
+    <text x="909" y="166" text-anchor="middle" class="ps-small">NÍVEL</text>
+    <text x="909" y="199" text-anchor="middle" data-pump-upper-mini="true" class="ps-value">28%</text>
+    <circle cx="909" cy="216" r="6" data-pump-upper-led="true" fill="#f59e0b"/>
+  </g>
+
+  <!-- Boias -->
+  <g id="float-max" data-pump-float-max="true">
+    <line x1="815" y1="167" x2="776" y2="184" stroke="#f5d44c" stroke-width="4"/>
+    <circle cx="768" cy="188" r="14" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+    <rect x="640" y="157" width="113" height="27" rx="8" fill="#7f1d1d" stroke="#ef7777"/>
+    <text x="696" y="175" text-anchor="middle" class="ps-float-label">BOIA MÁXIMA</text>
+  </g>
+  <g id="float-min" data-pump-float-min="true">
+    <line x1="815" y1="310" x2="776" y2="326" stroke="#f5d44c" stroke-width="4"/>
+    <circle cx="768" cy="331" r="14" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+    <rect x="640" y="298" width="113" height="27" rx="8" fill="#14532d" stroke="#5ee88d"/>
+    <text x="696" y="316" text-anchor="middle" class="ps-float-label">BOIA MÍNIMA</text>
+  </g>
+
+  <!-- Reservatório inferior -->
+  <g id="lower-tank" filter="url(#ps-shadow)">
+    <path d="M78 462h394v202l-20 20H98l-20-20z" fill="#172c37" stroke="#d3dde2" stroke-width="4"/>
+    <rect x="98" y="482" width="354" height="174" rx="12" fill="#071b25" stroke="#5c7480" stroke-width="2"/>
+    <g clip-path="url(#lower-tank-clip)">
+      <rect id="lower-water" data-pump-lower-water="true" x="105" y="509" width="340" height="139" fill="url(#ps-water)" opacity=".9"/>
+      <path id="lower-wave" data-pump-lower-wave="true" d="M100 510 Q145 501 190 510T280 510T370 510T455 510" fill="none" stroke="#c6f3ff" stroke-width="5" opacity=".8"/>
+    </g>
+    <text x="275" y="451" text-anchor="middle" class="ps-label">RESERVATÓRIO INFERIOR / CISTERNA</text>
+    <text x="275" y="560" text-anchor="middle" data-pump-lower-value="true" class="ps-value">88%</text>
+    <text x="275" y="585" text-anchor="middle" class="ps-small">proteção contra trabalho a seco</text>
+    <path d="M80 535h-38v-54" fill="none" stroke="#48bce9" stroke-width="15" stroke-linecap="round"/>
+    <path d="M42 481v-30" stroke="#48bce9" stroke-width="5"/>
+    <text x="42" y="438" text-anchor="middle" class="ps-small">ENTRADA</text>
+  </g>
+
+  <!-- Tubulação + bomba -->
+  <path d="M444 584H493V215H552" fill="none" stroke="#6f858f" stroke-width="34" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M444 584H493V215H552" fill="none" stroke="#b9c9d0" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
+  <path id="pump-flow-path" data-pump-flow="true" d="M444 584H493V215H552" fill="none" stroke="#31c8ff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="24 18" stroke-dashoffset="0" opacity="0" filter="url(#ps-glow)"/>
+  <path d="M852 320h48v110h55" fill="none" stroke="#6f858f" stroke-width="26" stroke-linejoin="round"/>
+  <path d="M852 320h48v110h55" fill="none" stroke="#b9c9d0" stroke-width="14" stroke-linejoin="round"/>
+  <text x="924" y="454" text-anchor="middle" class="ps-small">CONSUMO</text>
+
+  <g id="pump" transform="translate(423 505)" filter="url(#ps-shadow)">
+    <rect x="0" y="50" width="92" height="72" rx="12" fill="url(#ps-metal)" stroke="#d8e1e5" stroke-width="3"/>
+    <circle cx="45" cy="50" r="45" fill="url(#ps-pump)" stroke="#b9c9d0" stroke-width="4"/>
+    <circle cx="45" cy="50" r="27" fill="#0e2028" stroke="#77a0b2" stroke-width="3"/>
+    <g id="pump-impeller" data-pump-impeller="true">
+      <path d="M45 27c8 6 13 13 14 21-6-4-13-5-20-2 2-8 4-14 6-19z" fill="#55d6ff"/>
+      <path d="M66 57c-6 8-13 13-21 14 4-6 5-13 2-20 8 2 14 4 19 6z" fill="#55d6ff"/>
+      <path d="M37 72c-8-6-13-13-14-21 6 4 13 5 20 2-2 8-4 14-6 19z" fill="#55d6ff"/>
+      <path d="M22 43c6-8 13-13 21-14-4 6-5 13-2 20-8-2-14-4-19-6z" fill="#55d6ff"/>
+    </g>
+    <circle cx="45" cy="50" r="7" fill="#e8f1f4"/>
+    <rect x="18" y="118" width="54" height="12" rx="4" fill="#101820"/>
+    <text x="46" y="148" text-anchor="middle" class="ps-label">BOMBA</text>
+  </g>
+
+  <!-- Painel de estado -->
+  <g transform="translate(535 433)">
+    <rect width="416" height="201" rx="16" fill="#0a1d27" stroke="#42616d" stroke-width="2"/>
+    <text x="22" y="29" class="ps-label">CONTROLE LOCAL DIDÁTICO</text>
+    <text x="22" y="54" class="ps-small">Modo</text><text x="93" y="54" data-pump-mode="true" class="ps-label" fill="#f4d675">AUTO</text>
+    <text x="215" y="54" class="ps-small">Bomba</text><text x="287" y="54" data-pump-state="true" class="ps-label">PARADA</text>
+    <text x="22" y="78" class="ps-small">Status</text><text x="93" y="78" data-pump-status="true" class="ps-label">AGUARDANDO NÍVEL MÍNIMO</text>
+    <g class="ps-btn" data-pump-action="auto" transform="translate(20 102)"><rect width="82" height="40" rx="8"/><text x="41" y="25" text-anchor="middle" class="ps-label">AUTO</text></g>
+    <g class="ps-btn" data-pump-action="manual" transform="translate(112 102)"><rect width="82" height="40" rx="8"/><text x="41" y="25" text-anchor="middle" class="ps-label">BOMBA</text></g>
+    <g class="ps-btn" data-pump-action="consume" transform="translate(204 102)"><rect width="88" height="40" rx="8"/><text x="44" y="25" text-anchor="middle" class="ps-label">CONSUMO</text></g>
+    <g class="ps-btn" data-pump-action="reset" transform="translate(302 102)"><rect width="92" height="40" rx="8"/><text x="46" y="25" text-anchor="middle" class="ps-label">RESET</text></g>
+    <circle cx="35" cy="169" r="8" data-pump-led-min="true" fill="#334155"/><text x="50" y="173" class="ps-small">MIN</text>
+    <circle cx="112" cy="169" r="8" data-pump-led-max="true" fill="#334155"/><text x="127" y="173" class="ps-small">MAX</text>
+    <circle cx="197" cy="169" r="8" data-pump-led-dry="true" fill="#22c55e"/><text x="212" y="173" class="ps-small">CISTERNA OK</text>
+    <circle cx="332" cy="169" r="8" data-pump-led-run="true" fill="#334155"/><text x="347" y="173" class="ps-small">RUN</text>
+  </g>
+
+  <!-- Bornes de potência -->
+  <g id="terminals">
+    <text x="78" y="718" class="ps-small" fill="#f4d675">POTÊNCIA DA BOMBA</text>
+    <g data-terminal="U" data-wire-side="bottom" transform="translate(195 716)" data-terminal-id="pump-system-U" data-terminal-name="U — bomba" data-domain="power" data-function="motor-power-input" data-voltage-class="configurable-ac" data-direction="input" data-electrical-type="power-input"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="U" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="ps-terminal-label">U</text></g>
+    <g data-terminal="V" data-wire-side="bottom" transform="translate(240 716)" data-terminal-id="pump-system-V" data-terminal-name="V — bomba" data-domain="power" data-function="motor-power-input" data-voltage-class="configurable-ac" data-direction="input" data-electrical-type="power-input"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="V" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="ps-terminal-label">V</text></g>
+    <g data-terminal="W" data-wire-side="bottom" transform="translate(285 716)" data-terminal-id="pump-system-W" data-terminal-name="W — bomba" data-domain="power" data-function="motor-power-input" data-voltage-class="configurable-ac" data-direction="input" data-electrical-type="power-input"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="W" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="ps-terminal-label">W</text></g>
+    <g data-terminal="PE" data-wire-side="bottom" transform="translate(330 716)" data-terminal-id="pump-system-PE" data-terminal-name="PE — proteção" data-domain="protective-earth" data-function="protective-earth" data-voltage-class="earth" data-direction="passive" data-electrical-type="protective-earth"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="PE" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="ps-terminal-label">PE</text></g>
+
+    <text x="535" y="676" class="ps-small" fill="#f4d675">BOIAS / CONTATOS SECOS</text>
+    <g data-terminal="COM_MIN" data-wire-side="bottom" transform="translate(560 716)" data-terminal-id="pump-system-COM-MIN" data-terminal-name="COM_MIN" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="passive" data-electrical-type="dry-contact"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="COM_MIN" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="ps-terminal-label">C.MIN</text></g>
+    <g data-terminal="MIN_NO" data-wire-side="bottom" transform="translate(625 716)" data-terminal-id="pump-system-MIN-NO" data-terminal-name="MIN_NO" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="MIN_NO" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="ps-terminal-label">MIN NA</text></g>
+    <g data-terminal="COM_MAX" data-wire-side="bottom" transform="translate(690 716)" data-terminal-id="pump-system-COM-MAX" data-terminal-name="COM_MAX" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="passive" data-electrical-type="dry-contact"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="COM_MAX" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="ps-terminal-label">C.MAX</text></g>
+    <g data-terminal="MAX_NC" data-wire-side="bottom" transform="translate(755 716)" data-terminal-id="pump-system-MAX-NC" data-terminal-name="MAX_NC" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-nc"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="MAX_NC" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="ps-terminal-label">MAX NF</text></g>
+    <g data-terminal="MAX_NO" data-wire-side="bottom" transform="translate(820 716)" data-terminal-id="pump-system-MAX-NO" data-terminal-name="MAX_NO" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="MAX_NO" data-wire-side="bottom" r="14"/><text x="0" y="-19" text-anchor="middle" class="ps-terminal-label">MAX NA</text></g>
+    <g data-terminal="COM_DRY" data-wire-side="right" transform="translate(964 586)" data-terminal-id="pump-system-COM-DRY" data-terminal-name="COM_DRY" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="passive" data-electrical-type="dry-contact"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="COM_DRY" data-wire-side="right" r="14"/><text x="-21" y="4" text-anchor="end" class="ps-terminal-label">C.CIST</text></g>
+    <g data-terminal="LOWER_OK" data-wire-side="right" transform="translate(964 626)" data-terminal-id="pump-system-LOWER-OK" data-terminal-name="LOWER_OK" data-domain="control" data-function="dry-contact" data-voltage-class="dry-contact" data-direction="output" data-electrical-type="dry-contact-no"><use href="#ps-terminal-port"/><circle class="wire-anchor-hitbox" data-wire-anchor="LOWER_OK" data-wire-side="right" r="14"/><text x="-21" y="4" text-anchor="end" class="ps-terminal-label">CIST OK</text></g>
+  </g>
+</svg>

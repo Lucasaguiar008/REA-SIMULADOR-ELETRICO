@@ -1,0 +1,851 @@
+.placed-component[data-type="contator"]{width:206px;min-height:340px;padding:8px}
+.placed-component[data-type="contator"]>svg{width:182px;height:auto;aspect-ratio:800/1250;overflow:visible;filter:none}
+.placed-component[data-type="contator"]>span{margin-top:3px;font-size:10px}
+.placed-component[data-type="contator"]>small{font-size:8px}
+.placed-component[data-type="contator"].energized{border-color:#f57c00;background:#fff6ebc9;box-shadow:0 0 0 3px #f57c0024}
+.placed-component[data-type="contator"]:after{content:"DESLIGADA";position:absolute;top:7px;right:7px;padding:3px 5px;border-radius:4px;background:#e8eef2;color:#526a7a;font:700 6px Inter;letter-spacing:.5px}
+.placed-component[data-type="contator"].energized:after{content:"ACIONADA";background:#fff0df;color:#c55d00}
+.placed-component:is([data-type="fonte-trifasica"],[data-type="fonte-bifasica"],[data-type="fonte-monofasica"]){width:184px;min-height:140px;padding:10px}
+.placed-component:is([data-type="fonte-trifasica"],[data-type="fonte-bifasica"],[data-type="fonte-monofasica"])>svg{width:160px;height:106px;overflow:visible;filter:none}
+.placed-component:is([data-type="fonte-trifasica"],[data-type="fonte-bifasica"],[data-type="fonte-monofasica"]) [data-terminal]{cursor:crosshair}
+
+.placed-component[data-type^="disjuntor-"]{min-height:295px;padding:8px}
+.placed-component[data-type="disjuntor-1p"]{width:119px}
+.placed-component[data-type="disjuntor-2p"]{width:191px}
+.placed-component[data-type="disjuntor-3p"]{width:263px}
+/* V141 — Disjuntor-motor MPCB no mesmo porte do disjuntor tripolar */
+.placed-component[data-type="disjuntor-motor-mpcb"]{width:263px!important;min-height:295px!important;padding:8px!important}
+.placed-component[data-type="disjuntor-motor-mpcb"]>svg{height:234px!important;width:auto!important;max-width:100%!important;max-height:none!important;overflow:visible!important;filter:none!important}
+
+.placed-component[data-type="disjuntor-dr-2p"]{width:191px}
+.placed-component[data-type="disjuntor-dr-3p"]{width:263px}
+.placed-component[data-type="disjuntor-dr-4p"]{width:335px}
+.placed-component[data-type^="disjuntor-"]>svg{height:234px;width:auto;max-width:100%;overflow:visible;filter:none}
+.placed-component[data-type^="disjuntor-"]>span{margin-top:3px;font-size:11px}
+.placed-component[data-type^="disjuntor-"]>small{font-size:8px}
+.placed-component[data-type^="disjuntor-"]:after{content:"DESLIGADO";position:absolute;top:7px;right:7px;padding:3px 5px;border-radius:4px;background:#e8eef2;color:#526a7a;font:700 6px Inter;letter-spacing:.5px}
+.placed-component[data-type^="disjuntor-"].closed{border-color:#22c55e;background:#f0fdf4c9;box-shadow:0 0 0 3px #22c55e24}
+.placed-component[data-type^="disjuntor-"].closed:after{content:"LIGADO";background:#dcfce7;color:#15803d}
+.placed-component[data-type^="disjuntor-"] [data-terminal]{cursor:crosshair}
+
+.placed-component[data-type^="disjuntor-"] [data-breaker-state]{fill:#fff!important;transition:fill .18s ease}
+.placed-component[data-type^="disjuntor-"].closed [data-breaker-state]{fill:#22c55e!important}
+.placed-component[data-type^="disjuntor-"] [data-breaker-toggle]{cursor:pointer;transform-box:fill-box;transform-origin:center;transition:filter .12s ease,transform .12s ease}
+.placed-component[data-type^="disjuntor-"] [data-breaker-toggle]:hover{filter:brightness(1.13) drop-shadow(0 2px 2px #0b2a5b55);transform:scale(1.025)}
+.placed-component[data-type^="disjuntor-"] svg path[fill="#f57c00"]{cursor:pointer}
+
+.placed-component[data-type="rele-falta-fase"]{width:142px;min-height:295px;padding:8px}
+.placed-component[data-type="rele-falta-fase"]>svg{height:234px;width:auto;overflow:visible;filter:none}
+
+.placed-component[data-type="rele-falta-fase"]>span{margin-top:3px;font-size:10px}
+.placed-component[data-type="rele-falta-fase"]>small{font-size:8px}
+.placed-component[data-type="rele-falta-fase"]:after{content:"FALTA DE FASE";position:absolute;top:7px;right:7px;padding:3px 5px;border-radius:4px;background:#fee2e2;color:#b91c1c;font:700 6px Inter;letter-spacing:.4px}
+.placed-component[data-type="rele-falta-fase"].phase-ok{border-color:#22c55e;background:#f0fdf4c9;box-shadow:0 0 0 3px #22c55e24}
+.placed-component[data-type="rele-falta-fase"].phase-ok:after{content:"REDE NORMAL";background:#dcfce7;color:#15803d}
+.placed-component[data-type="rele-falta-fase"] [data-terminal]{cursor:crosshair}
+
+.placed-component[data-type="rele-falta-fase"].phase-ok [data-phase-led] circle:first-child,.placed-component[data-type="rele-falta-fase"].phase-ok [data-output-led] circle:first-child{fill:#22c55e;stroke:#15803d}
+.placed-component[data-type^="botoeira-"]{width:104px!important;min-height:158px!important;padding:5px!important}
+.placed-component[data-type^="botoeira-"]>svg{width:86px!important;height:auto!important;overflow:visible;filter:none}
+
+.placed-component[data-type^="botoeira-"]>span{margin-top:3px;font-size:11px}
+.placed-component[data-type^="botoeira-"]>small{font-size:8px}
+.placed-component[data-type^="botoeira-"] [data-terminal]{cursor:crosshair}
+.placed-component[data-type^="botoeira-"] [data-push-cap]{cursor:pointer;transform-box:fill-box;transform-origin:center;transition:transform .09s ease,filter .09s ease}
+.placed-component[data-type^="botoeira-"].pressed [data-push-cap]{transform:translateY(12px) scale(.94,.78);filter:brightness(.7)}
+.placed-component[data-type="botoeira-liga"].pressed{border-color:#22c55e;background:#f0fdf4c9;box-shadow:0 0 0 3px #22c55e24}
+.placed-component[data-type="botoeira-desliga"].pressed{border-color:#ef4444;background:#fef2f2c9;box-shadow:0 0 0 3px #ef444424}
+
+.placed-component[data-type^="sinaleiro-"]{width:104px!important;min-height:170px!important;padding:5px!important}
+.placed-component[data-type^="sinaleiro-"]>svg{width:86px!important;height:auto!important;overflow:visible;filter:none}
+
+.placed-component[data-type^="sinaleiro-"] [data-signal-lens]{cursor:pointer;transform-box:fill-box;transform-origin:center;transition:filter .16s ease,transform .16s ease}
+.placed-component[data-type^="sinaleiro-"] [data-signal-lens]:hover{filter:brightness(1.12);transform:scale(1.02)}
+.placed-component[data-type^="sinaleiro-"] [data-signal-glow]{transition:fill .18s ease,filter .18s ease}
+.placed-component[data-type^="sinaleiro-"].illuminated{--signal-off:var(--signal-on)}
+.placed-component[data-type^="sinaleiro-"].illuminated [data-signal-glow]{filter:drop-shadow(0 0 12px var(--signal-glow)) brightness(1.28) saturate(1.18)}
+.placed-component[data-type^="sinaleiro-"].illuminated{border-color:var(--signal-edge);box-shadow:0 0 0 3px color-mix(in srgb,var(--signal-glow) 22%,transparent)}
+.placed-component[data-signal-mode="blink"].illuminated [data-signal-lens]{animation:signal-intermittent 1s steps(1,end) infinite}
+.placed-component[data-signal-mode="blink"].illuminated{animation:signal-intermittent-frame 1s steps(1,end) infinite}
+@keyframes signal-intermittent{0%,49%{opacity:1;filter:drop-shadow(0 0 13px var(--signal-glow)) brightness(1.3) saturate(1.2)}50%,100%{opacity:.72;filter:brightness(.55) saturate(.82)}}
+@keyframes signal-intermittent-frame{0%,49%{border-color:var(--signal-edge);box-shadow:0 0 0 3px color-mix(in srgb,var(--signal-glow) 22%,transparent)}50%,100%{border-color:#93a4b2;box-shadow:none}}
+.placed-component[data-type^="sinaleiro-"]>span{margin-top:3px;font-size:12px;font-weight:800;line-height:1.12}
+.placed-component[data-type^="sinaleiro-"]>small{font-size:9px;font-weight:700;line-height:1.1}
+.placed-component[data-type^="sinaleiro-"] [data-terminal]{cursor:crosshair}
+.component-item.signal-thumb svg{width:40px!important;height:60px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}
+.placed-component[data-type^="chave-seletora-"]{width:108px!important;min-height:174px!important;padding:5px!important}
+.placed-component[data-type="chave-seletora-3p"]{width:116px!important}
+.placed-component[data-type^="chave-seletora-"]>svg{width:88px!important;height:auto!important;overflow:visible;filter:none}
+
+.placed-component[data-type^="chave-seletora-"] [data-selector-knob]{cursor:pointer;transform-box:view-box;transition:transform .18s ease,filter .15s ease}
+.placed-component[data-type^="chave-seletora-"] [data-selector-knob]:hover{filter:brightness(1.2) drop-shadow(0 0 4px #f57c00)}
+.placed-component[data-type^="chave-seletora-"].selector-active{border-color:#f57c00;background:#fff7edc9;box-shadow:0 0 0 3px #f57c0024}
+.placed-component[data-type^="chave-seletora-"]>span{font-size:12px;font-weight:800;line-height:1.12}
+.placed-component[data-type^="chave-seletora-"]>small{font-size:9px;font-weight:700}
+.placed-component[data-type^="chave-seletora-"] [data-terminal]{cursor:crosshair}
+.component-item.selector-thumb svg{width:40px!important;height:60px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}
+.placed-component[data-type="chave-alavanca-onoff"]{width:112px!important;min-height:182px!important;padding:5px!important}
+.placed-component[data-type="chave-alavanca-onoff"]>svg{width:91px!important;height:auto!important;overflow:visible;filter:none}
+
+.placed-component[data-type="chave-alavanca-onoff"] [data-toggle-lever]{cursor:pointer;transform-box:view-box;transform-origin:90px 185px;transition:transform .2s ease,filter .15s ease}
+.placed-component[data-type="chave-alavanca-onoff"] [data-toggle-lever]:hover{filter:brightness(1.18) drop-shadow(0 0 4px #f57c00)}
+.placed-component[data-type="chave-alavanca-onoff"].toggle-on{border-color:#22c55e;background:#f0fdf4d9;box-shadow:0 0 0 3px #22c55e26}
+.placed-component[data-type="chave-alavanca-onoff"]>span{font-size:12px;font-weight:800;line-height:1.12}
+.placed-component[data-type="chave-alavanca-onoff"]>small{font-size:9px;font-weight:700}
+.component-item.toggle-thumb svg{width:38px!important;height:59px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}
+.component-item.realistic-thumb svg{width:58px!important;height:60px!important;max-width:64px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}
+.component-item.realistic-thumb[data-component="contator"] svg{width:43px!important;height:67px!important}
+.component-item.realistic-thumb[data-component="disjuntor-1p"] svg{width:29px!important;height:59px!important}
+.component-item.realistic-thumb[data-component="disjuntor-2p"] svg{width:47px!important;height:59px!important}
+.component-item.realistic-thumb[data-component="disjuntor-3p"] svg{width:61px!important;height:59px!important}
+.component-item.realistic-thumb[data-component="disjuntor-dr-2p"] svg{width:47px!important;height:59px!important}
+.component-item.realistic-thumb[data-component="disjuntor-dr-3p"] svg{width:61px!important;height:59px!important}
+.component-item.realistic-thumb[data-component="disjuntor-dr-4p"] svg{width:72px!important;height:59px!important}
+.component-item.realistic-thumb[data-component="rele-falta-fase"] svg{width:36px!important;height:59px!important}
+.placed-component[data-type="botao-emergencia"]{width:116px!important;min-height:178px!important;padding:5px!important}
+.placed-component[data-type="botao-emergencia"]>svg{width:92px!important;height:auto!important;overflow:visible;filter:none}
+
+.placed-component[data-type="botao-emergencia"] [data-emergency-cap]{cursor:pointer;transform-box:fill-box;transform-origin:center;transition:transform .13s ease,filter .13s ease}
+.placed-component[data-type="botao-emergencia"] [data-emergency-cap]:hover{filter:brightness(1.1);transform:scale(1.02)}
+.placed-component[data-type="botao-emergencia"].emergency-latched [data-emergency-cap]{transform:translateY(13px) scale(.96,.82);filter:brightness(.78)}
+.placed-component[data-type="botao-emergencia"].emergency-latched{border-color:#ef4444;background:#fef2f2c9;box-shadow:0 0 0 3px #ef444432}
+.placed-component[data-type="botao-emergencia"]>span{font-size:12px;font-weight:800;line-height:1.12}
+.placed-component[data-type="botao-emergencia"]>small{font-size:9px;font-weight:700}
+.placed-component[data-type="botao-emergencia"] [data-terminal]{cursor:crosshair}
+.component-item.emergency-thumb svg{width:42px!important;height:60px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}
+.placed-component[data-type="motor-trifasico"],.placed-component[data-type="motor-trifasico-6t"],.placed-component[data-type="motor-bifasico"]{width:216px!important;min-height:190px!important;padding:7px!important}
+.placed-component[data-type="bomba-trifasica"],.placed-component[data-type="bomba-trifasica-polia"]{width:246px!important;min-height:190px!important;padding:7px!important}
+.placed-component[data-type="motor-trifasico"]>svg,.placed-component[data-type="motor-trifasico-6t"]>svg,.placed-component[data-type="motor-bifasico"]>svg{width:196px!important;height:auto!important;overflow:visible;filter:none}
+.placed-component[data-type="bomba-trifasica"]>svg,.placed-component[data-type="bomba-trifasica-polia"]>svg{width:224px!important;height:auto!important;overflow:visible;filter:none}
+
+.placed-component[data-type="motor-trifasico"]>span,.placed-component[data-type="motor-trifasico-6t"]>span,.placed-component[data-type="motor-bifasico"]>span,.placed-component[data-type="bomba-trifasica"]>span,.placed-component[data-type="bomba-trifasica-polia"]>span{font-size:12px;font-weight:800;line-height:1.12}
+.placed-component[data-type="motor-trifasico"]>small,.placed-component[data-type="motor-trifasico-6t"]>small,.placed-component[data-type="motor-bifasico"]>small,.placed-component[data-type="bomba-trifasica"]>small,.placed-component[data-type="bomba-trifasica-polia"]>small{font-size:9px;font-weight:700}
+.placed-component[data-type="motor-trifasico"] [data-terminal],.placed-component[data-type="motor-trifasico-6t"] [data-terminal],.placed-component[data-type="motor-bifasico"] [data-terminal],.placed-component[data-type="bomba-trifasica"] [data-terminal],.placed-component[data-type="bomba-trifasica-polia"] [data-terminal]{cursor:crosshair}
+.placed-component[data-type="motor-trifasico"]:after,.placed-component[data-type="motor-trifasico-6t"]:after,.placed-component[data-type="motor-bifasico"]:after,.placed-component[data-type="bomba-trifasica"]:after,.placed-component[data-type="bomba-trifasica-polia"]:after{content:"PARADO";position:absolute;top:-15px;right:7px;padding:3px 6px;border-radius:4px;background:#e8eef2;color:#526a7a;font:700 7px Inter;letter-spacing:.5px}
+.placed-component[data-type="motor-trifasico"].running,.placed-component[data-type="motor-trifasico-6t"].running,.placed-component[data-type="motor-bifasico"].running,.placed-component[data-type="bomba-trifasica"].running,.placed-component[data-type="bomba-trifasica-polia"].running{border-color:#22c55e;background:#f0fdf4c9;box-shadow:0 0 0 3px #22c55e24}
+.placed-component[data-type="motor-trifasico"].running:after,.placed-component[data-type="motor-trifasico-6t"].running:after,.placed-component[data-type="motor-bifasico"].running:after,.placed-component[data-type="bomba-trifasica"].running:after,.placed-component[data-type="bomba-trifasica-polia"].running:after{content:"EM FUNCIONAMENTO";background:#dcfce7;color:#15803d}
+.placed-component.running [data-motor-shaft]{animation:motorPulse .35s linear infinite alternate}
+.placed-component.running [data-pump-impeller]{transform-box:fill-box;transform-origin:center;animation:motorSpin .5s linear infinite}
+.placed-component.running [data-pump-pulley]{transform-box:fill-box;transform-origin:center;animation:motorSpin .42s linear infinite}
+.placed-component.running [data-pump-belt]{stroke-dasharray:18 10;animation:pumpBelt .32s linear infinite}
+@keyframes motorPulse{to{filter:brightness(1.5);transform:translateX(3px)}}
+@keyframes motorSpin{to{transform:rotate(360deg)}}
+@keyframes pumpBelt{to{stroke-dashoffset:-28}}
+.component-item.load-thumb svg{width:62px!important;height:58px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}
+.component-item.load-thumb[data-component="bomba-trifasica"] svg{width:70px!important}
+.wire-choice i{display:block;width:50px;height:6px;border-radius:4px;background:var(--wire);box-shadow:0 0 0 1px #0f172a33}
+.wire-choice.active-wire{border-color:#f57c00;background:#fff7ed}
+.wire-layer{position:absolute;z-index:4;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+/* Terminal Entry Overlay V1: pequeno trecho final do fio acima do corpo visual, opt-in por borne. */
+.wire-terminal-entry-layer{position:absolute;z-index:6;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.wire-terminal-entry-layer .wire-terminal-entry{fill:none;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.wire-terminal-entry-layer .wire-terminal-entry-pe-stripe{stroke-dasharray:6 5;stroke-linecap:butt}
+.wire-terminal-front-accessory-layer{position:absolute;z-index:8;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+
+.wire-layer polyline{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:4;pointer-events:stroke;cursor:crosshair}
+.wire-layer .wire-handle{pointer-events:none;cursor:move;fill:#fff;stroke:#f57c00;stroke-width:4;opacity:0;visibility:hidden;transition:opacity .15s ease}
+.wire-layer .wire-handle.is-editing{pointer-events:all;opacity:.9;visibility:visible}
+.wire-layer .wire-handle:hover{r:12;fill:#fff3e0}
+.wire-origin{filter:drop-shadow(0 0 5px #f57c00)}
+.placed-component[data-type^="contato-auxiliar-"]{width:112px!important;min-height:190px!important;padding:6px!important}
+.placed-component[data-type^="contato-auxiliar-"]>svg{width:90px!important;height:auto!important;overflow:visible;filter:none}
+
+.placed-component[data-type^="contato-auxiliar-"] [data-terminal]{cursor:crosshair}
+.placed-component[data-type^="contato-auxiliar-"] [data-contact-actuator]{cursor:pointer}
+.placed-component[data-type^="contato-auxiliar-"] [data-contact-actuator]:hover{filter:brightness(1.18) drop-shadow(0 0 3px #f57c00)}
+.placed-component[data-type^="contato-auxiliar-"] [data-contact-blade]{transition:transform .16s ease}
+.placed-component[data-type^="contato-auxiliar-"].contact-switched{border-color:#f57c00;background:#fff7edcf;box-shadow:0 0 0 3px #f57c0024}
+.placed-component[data-type^="contato-auxiliar-"]>span{font-size:11px;font-weight:800;line-height:1.12}
+.placed-component[data-type^="contato-auxiliar-"]>small{font-size:8px;font-weight:700}
+.component-item.aux-contact-thumb svg{width:39px!important;height:60px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}
+.placed-component[data-type="fusivel"]{width:105px!important;min-height:225px!important}.placed-component[data-type="fusivel"]>svg{width:82px!important;height:auto!important}
+.placed-component[data-type="rele-termico"]{width:190px!important;min-height:225px!important}.placed-component[data-type="rele-termico"]>svg{width:168px!important;height:auto!important}
+.placed-component[data-type="rele-auxiliar"],.placed-component[data-type="temporizador"]{width:142px!important;min-height:225px!important}.placed-component[data-type="rele-auxiliar"]>svg,.placed-component[data-type="temporizador"]>svg{width:120px!important;height:auto!important}
+.placed-component[data-type="fim-curso"],.placed-component[data-type="sensor-indutivo"]{width:210px!important;min-height:165px!important}.placed-component[data-type="fim-curso"]>svg,.placed-component[data-type="sensor-indutivo"]>svg{width:185px!important;height:auto!important}
+
+.placed-component.device-active{border-color:#22c55e;background:#f0fdf4cf;box-shadow:0 0 0 3px #22c55e24}.placed-component.device-tripped{border-color:#ef4444;background:#fef2f2cf;box-shadow:0 0 0 3px #ef444424}
+.placed-component [data-thermal-reset],.placed-component [data-sensor-actuator]{cursor:pointer}.placed-component [data-thermal-reset]:hover,.placed-component [data-sensor-actuator]:hover{filter:brightness(1.12) drop-shadow(0 0 4px #f57c00)}
+.placed-component [data-relay-arm],.placed-component [data-timer-hand],.placed-component [data-sensor-actuator]{transform-box:view-box;transition:transform .25s ease}
+.component-item.device-thumb svg{width:43px!important;height:60px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}.component-item.sensor-thumb svg{width:65px!important;height:52px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}
+.component-item.industrial-thumb svg{width:48px!important;height:64px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}.component-item.industrial-thumb.wide-thumb svg{width:54px!important}
+.placed-component[data-device-mode]{width:148px!important;min-height:228px!important;padding:7px!important}.placed-component[data-device-mode]>svg{width:126px!important;height:auto!important;overflow:visible!important;filter:none}.placed-component[data-type="soft-starter"],.placed-component[data-type="inversor-frequencia"]{width:178px!important}.placed-component[data-type="soft-starter"]>svg,.placed-component[data-type="inversor-frequencia"]>svg{width:154px!important}.placed-component[data-device-mode] [data-terminal]{cursor:crosshair}.placed-component[data-device-mode] [data-generic-actuator]{cursor:pointer}.placed-component[data-device-mode] [data-generic-actuator]:hover{filter:brightness(1.14) drop-shadow(0 0 4px #f57c00)}.placed-component[data-device-mode]>span{font-size:11px;font-weight:800;line-height:1.12}.placed-component[data-device-mode]>small{font-size:8px;font-weight:700}.placed-component[data-device-mode].device-active{border-color:#22c55e;background:#f0fdf4cf;box-shadow:0 0 0 3px #22c55e24}
+.placed-component[data-type="borne-passagem"]{width:119px!important}.placed-component[data-type="borne-passagem"]>svg{width:97px!important}
+.placed-component:is([data-type="transformador-comando"],[data-type="fonte-24v"],[data-type="borne-passagem"],[data-type="barramento-neutro"]){width:143px!important;min-height:295px!important;padding:8px!important}.placed-component:is([data-type="transformador-comando"],[data-type="fonte-24v"],[data-type="borne-passagem"],[data-type="barramento-neutro"])>svg{width:118px!important;height:234px!important;max-width:100%!important;overflow:visible!important;filter:none}.placed-component:is([data-type="transformador-comando"],[data-type="fonte-24v"],[data-type="borne-passagem"],[data-type="barramento-neutro"])>span{margin-top:3px;font-size:11px;line-height:1.08}.component-item.compact-module-thumb svg{width:29px!important;height:59px!important}
+.placed-component[data-type="borne-passagem"]{width:119px!important;min-height:295px!important}.placed-component[data-type="borne-passagem"]>svg{width:94px!important;height:234px!important}
+.placed-component[data-type="dps"]{width:119px!important;min-height:295px!important;padding:8px!important}.placed-component[data-type="dps"]>svg{width:auto!important;height:234px!important;max-width:100%;overflow:visible;filter:none}.placed-component[data-type="dps"]>span{margin-top:3px;font-size:11px}.placed-component[data-type="dps"]>small{font-size:8px}.component-item.realistic-thumb[data-component="dps"] svg{width:29px!important;height:59px!important}
+.placed-component[data-type="fonte-24v"]{width:142px!important;min-height:295px!important;padding:8px!important}.placed-component[data-type="fonte-24v"]>svg{width:auto!important;height:234px!important;max-width:100%!important;overflow:visible!important;filter:none}.placed-component[data-type="fonte-24v"]>span{margin-top:3px;font-size:10px;line-height:1.08}.placed-component[data-type="fonte-24v"]>small{font-size:8px}
+
+
+
+
+
+
+
+/* Build v3: SVG interno preserva sua propria geometria/estilo. */
+.placed-component[data-type^="disjuntor-"] svg text{position:static!important;display:inline!important;width:auto!important;height:auto!important;flex:none!important;text-decoration:none!important}
+/* Bornes individuais TechRib - tamanho 50% do disjuntor monopolar */
+.component-item.realistic-thumb[data-component="borne-cinza"] svg,
+.component-item.realistic-thumb[data-component="borne-bege"] svg,
+.component-item.realistic-thumb[data-component="borne-neutro"] svg,
+.component-item.realistic-thumb[data-component="borne-pe"] svg{
+  height:40px!important;
+  width:auto!important;
+  max-width:20px!important;
+}
+
+.placed-component[data-type="borne-cinza"],
+.placed-component[data-type="borne-bege"],
+.placed-component[data-type="borne-neutro"],
+.placed-component[data-type="borne-pe"]{
+  width:62px!important;
+  min-height:148px!important;
+  padding:4px!important;
+}
+
+.placed-component[data-type="borne-cinza"]>svg,
+.placed-component[data-type="borne-bege"]>svg,
+.placed-component[data-type="borne-neutro"]>svg,
+.placed-component[data-type="borne-pe"]>svg{
+  height:117px!important;
+  width:auto!important;
+  max-width:43px!important;
+  max-height:none!important;
+  overflow:visible!important;
+  filter:none!important;
+  flex:none!important;
+}
+
+.placed-component[data-type="borne-cinza"]>span,
+.placed-component[data-type="borne-bege"]>span,
+.placed-component[data-type="borne-neutro"]>span,
+.placed-component[data-type="borne-pe"]>span{
+  margin-top:2px!important;
+  font-size:9px!important;
+  line-height:1.05!important;
+}
+
+.placed-component[data-type="borne-cinza"]>small,
+.placed-component[data-type="borne-bege"]>small,
+.placed-component[data-type="borne-neutro"]>small,
+.placed-component[data-type="borne-pe"]>small{
+  font-size:7px!important;
+  line-height:1!important;
+}
+
+
+
+/* V2 DEFINITIVO - bornes individuais pequenos */
+.component-item[data-component="borne-cinza"] svg,
+.component-item[data-component="borne-bege"] svg,
+.component-item[data-component="borne-neutro"] svg,
+.component-item[data-component="borne-pe"] svg{
+  width:auto!important;
+  height:44px!important;
+  max-width:22px!important;
+}
+
+.placed-component[data-type="borne-cinza"],
+.placed-component[data-type="borne-bege"],
+.placed-component[data-type="borne-neutro"],
+.placed-component[data-type="borne-pe"]{
+  width:58px!important;
+  min-width:58px!important;
+  max-width:58px!important;
+  min-height:150px!important;
+  height:auto!important;
+  padding:4px!important;
+}
+
+.placed-component[data-type="borne-cinza"]>svg,
+.placed-component[data-type="borne-bege"]>svg,
+.placed-component[data-type="borne-neutro"]>svg,
+.placed-component[data-type="borne-pe"]>svg{
+  width:auto!important;
+  height:117px!important;
+  max-width:44px!important;
+  max-height:117px!important;
+  flex:none!important;
+  overflow:visible!important;
+  filter:none!important;
+}
+
+.placed-component[data-type="borne-cinza"]>span,
+.placed-component[data-type="borne-bege"]>span,
+.placed-component[data-type="borne-neutro"]>span,
+.placed-component[data-type="borne-pe"]>span{
+  margin-top:2px!important;
+  font-size:8px!important;
+  line-height:1!important;
+}
+
+.placed-component[data-type="borne-cinza"]>small,
+.placed-component[data-type="borne-bege"]>small,
+.placed-component[data-type="borne-neutro"]>small,
+.placed-component[data-type="borne-pe"]>small{
+  font-size:6px!important;
+  line-height:1!important;
+}
+
+
+/* Contatos auxiliares do mesmo tamanho dos bornes */
+.component-item.realistic-thumb[data-component="contato-auxiliar-nf"] svg,
+.component-item.realistic-thumb[data-component="contato-auxiliar-na"] svg{
+  width:19px!important;
+  height:58px!important;
+  max-width:22px!important;
+}
+
+.placed-component[data-type="contato-auxiliar-nf"],
+.placed-component[data-type="contato-auxiliar-na"]{
+  width:58px!important;
+  min-width:58px!important;
+  max-width:58px!important;
+  min-height:150px!important;
+  height:auto!important;
+  padding:4px!important;
+}
+
+.placed-component[data-type="contato-auxiliar-nf"]>svg,
+.placed-component[data-type="contato-auxiliar-na"]>svg{
+  width:auto!important;
+  height:117px!important;
+  max-width:44px!important;
+  max-height:117px!important;
+  flex:none!important;
+  overflow:visible!important;
+  filter:none!important;
+}
+
+.placed-component[data-type="contato-auxiliar-nf"]>span,
+.placed-component[data-type="contato-auxiliar-na"]>span{
+  margin-top:2px!important;
+  font-size:8px!important;
+  line-height:1!important;
+}
+
+.placed-component[data-type="contato-auxiliar-nf"]>small,
+.placed-component[data-type="contato-auxiliar-na"]>small{
+  font-size:6px!important;
+  line-height:1!important;
+}
+
+
+/* Contatos auxiliares canônicos: porte compacto de bloco auxiliar DIN, próximo aos bornes SAK. */
+.component-item[data-component="contato-auxiliar-nf"] svg,
+.component-item[data-component="contato-auxiliar-na"] svg{
+  width:auto!important;
+  height:50px!important;
+  max-width:28px!important;
+  max-height:50px!important;
+}
+
+.placed-component[data-type="contato-auxiliar-nf"],
+.placed-component[data-type="contato-auxiliar-na"]{
+  width:72px!important;
+  min-width:72px!important;
+  max-width:72px!important;
+  height:165px!important;
+  min-height:165px!important;
+  max-height:165px!important;
+  padding:4px!important;
+}
+
+.placed-component[data-type="contato-auxiliar-nf"]>svg,
+.placed-component[data-type="contato-auxiliar-na"]>svg{
+  width:auto!important;
+  height:132px!important;
+  min-height:132px!important;
+  max-height:132px!important;
+  max-width:64px!important;
+  min-width:0!important;
+  flex:none!important;
+  overflow:visible!important;
+  filter:none!important;
+}
+
+.placed-component[data-type="contato-auxiliar-nf"]>span,
+.placed-component[data-type="contato-auxiliar-na"]>span{
+  margin-top:2px!important;
+  font-size:8px!important;
+  line-height:1!important;
+}
+
+.placed-component[data-type="contato-auxiliar-nf"]>small,
+.placed-component[data-type="contato-auxiliar-na"]>small{
+  font-size:6px!important;
+  line-height:1!important;
+}
+
+
+/* Contator 2 - mesmo tamanho do Contator principal */
+.placed-component[data-type="contator-2"]{width:206px!important;min-height:340px!important;padding:8px!important}
+.placed-component[data-type="contator-2"]>svg{width:182px!important;height:auto!important;aspect-ratio:600/800;overflow:visible!important;filter:none!important}
+.placed-component[data-type="contator-2"]>span{margin-top:3px!important;font-size:10px!important}
+.placed-component[data-type="contator-2"]>small{font-size:8px!important}
+.component-item.realistic-thumb[data-component="contator-2"] svg{width:43px!important;height:57px!important;overflow:visible!important}
+.placed-component[data-type="contator-2"] [data-terminal]{cursor:crosshair}
+
+/* updated contator-2 */
+
+.placed-component[data-type="contator-2"]{width:206px;min-height:340px;padding:8px}
+.placed-component[data-type="contator-2"]>svg{width:182px;height:auto;aspect-ratio:600/800;overflow:visible;filter:none}
+.placed-component[data-type="contator-2"]>span{margin-top:3px;font-size:10px}
+.placed-component[data-type="contator-2"]>small{font-size:8px}
+.placed-component[data-type="contator-2"]{--ctr2-offset:10px}
+.placed-component[data-type="contator-2"].energized{border-color:#f57c00;background:#fff6ebc9;box-shadow:0 0 0 3px #f57c0024}
+.placed-component[data-type="contator-2"]:after{content:"DESLIGADA";position:absolute;top:7px;right:7px;padding:3px 5px;border-radius:4px;background:#e8eef2;color:#526a7a;font:700 6px Inter;letter-spacing:.5px}
+.placed-component[data-type="contator-2"].energized:after{content:"ACIONADA";background:#fff0df;color:#c55d00}
+.placed-component[data-type="contator-2"] [data-terminal]{cursor:crosshair}
+.placed-component[data-type="contator-2"] [data-contactor-core]{transition:transform .14s ease, filter .14s ease}
+.placed-component[data-type="contator-2"].energized [data-contactor-core]{transform:translateY(10px);filter:brightness(.92)}
+
+/* Cabeamento v5: cabos mais visíveis, hitbox ampla, ponteiras e anilhas realistas */
+.wire-layer .wire-path{
+  fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:7;
+  pointer-events:none;transition:stroke-width .12s ease,filter .12s ease,opacity .12s ease;
+}
+.wire-layer .wire-path.is-hovered,.wire-layer .wire-path.is-selected{
+  stroke-width:9;filter:drop-shadow(0 0 2px #f57c0099);
+}
+.wire-layer .wire-hit-path{
+  fill:none;stroke:rgba(0,0,0,.001);stroke-width:28;stroke-linecap:round;stroke-linejoin:round;
+  pointer-events:stroke;cursor:grab;
+}
+.wire-layer .wire-junction{pointer-events:all;cursor:crosshair;fill:#111827;stroke:#fff;stroke-width:2.5;filter:drop-shadow(0 1px 1px #0005)}
+.wire-layer .wire-junction:hover{r:10;stroke:#f57c00}
+.wire-layer .wire-junction.wire-origin{fill:#f57c00;stroke:#fff}
+.wire-layer .wire-junction.is-selected{r:10;fill:#f57c00;stroke:#0f172a;stroke-width:3.5}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-end-assembly{pointer-events:none;filter:drop-shadow(0 1px 1px #0004)}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-ferrule-metal{fill:#c9d1d9;stroke:#475569;stroke-width:1.2}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-ferrule-highlight{fill:none;stroke:#fff;stroke-width:1.2;stroke-linecap:round;opacity:.9}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-ferrule-collar{stroke:#1f2937;stroke-width:1.2}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-ferrule-band{fill:#94a3b8;stroke:#475569;stroke-width:.8}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-id-sleeve-body{fill:#F57C00;stroke:#c45f00;stroke-width:1.25}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-id-sleeve-highlight{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;opacity:.95}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-id-sleeve-edge{fill:none;stroke:#ffb05c;stroke-width:1}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-id-sleeve-text{font:600 8px Inter,Arial,sans-serif;fill:#0f172a;letter-spacing:.15px}
+
+.component-context-menu{position:fixed;z-index:10000;display:none;min-width:120px;padding:5px;background:#fff;border:1px solid #cbd5e1;border-radius:7px;box-shadow:0 10px 28px #0f172a33}.component-context-menu.open{display:block}.component-context-menu button{width:100%;padding:8px 12px;border:0;border-radius:5px;background:transparent;color:#b91c1c;font:700 13px Inter,Arial,sans-serif;text-align:left;cursor:pointer}.component-context-menu button:hover{background:#fef2f2}
+.component-context-menu [data-text-size]{display:none;color:#173b55}.component-context-menu.text-menu [data-text-size]{display:block}.component-context-menu.text-menu [data-text-size]:hover{background:#eff6ff}
+
+.svg-editor[hidden]{display:none}.svg-editor{position:fixed;inset:0;z-index:20000;display:grid;place-items:center;padding:24px;background:#071827aa}.svg-editor-dialog{width:min(1180px,96vw);height:min(780px,92vh);display:flex;flex-direction:column;background:#fff;border-radius:14px;box-shadow:0 24px 80px #0008;overflow:hidden}.svg-editor header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:#0b2a5b;color:#fff}.svg-editor h2{margin:0;font-size:18px}.svg-editor header button{border:0;background:transparent;color:#fff;font-size:26px;cursor:pointer}.svg-editor-toolbar{display:flex;align-items:end;gap:10px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #dbe5ef}.svg-editor-toolbar label{display:grid;gap:4px;font-size:11px;font-weight:800}.svg-editor-toolbar select,.svg-editor-toolbar input{height:36px;min-width:210px;border:1px solid #cbd5e1;border-radius:7px;padding:0 9px}.svg-editor-toolbar button{height:36px;border:1px solid #cbd5e1;border-radius:7px;background:#fff;padding:0 13px;font-weight:700;cursor:pointer}.svg-editor-toolbar button.primary{background:#f57c00;border-color:#f57c00;color:#fff}.svg-editor-workspace{min-height:0;flex:1;display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:14px}.svg-editor-workspace>label,.svg-editor-workspace>div{min-width:0;display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:800}.svg-editor textarea{flex:1;resize:none;border:1px solid #94a3b8;border-radius:8px;padding:12px;background:#0f172a;color:#e2e8f0;font:12px/1.5 Consolas,monospace}.svg-editor-preview{flex:1;display:grid;place-items:center;overflow:auto;border:1px solid #94a3b8;border-radius:8px;background:#f8fafc;background-image:linear-gradient(#e2e8f0 1px,transparent 1px),linear-gradient(90deg,#e2e8f0 1px,transparent 1px);background-size:20px 20px}.svg-editor-preview svg{max-width:90%;max-height:90%}.svg-editor-dialog>p{margin:0;padding:0 16px 14px;color:#64748b;font-size:11px}.custom-svg-thumb svg{max-width:100%;max-height:110px}@media(max-width:760px){.svg-editor-workspace{grid-template-columns:1fr}.svg-editor-dialog{height:96vh}.svg-editor-toolbar select,.svg-editor-toolbar input{min-width:150px}}
+
+@media print{html,body{width:100%!important;height:auto!important;margin:0!important;padding:0!important;background:#fff!important}.workbench-topbar,.component-sidebar,.cad-ribbon,.canvas-statusbar,.toast,.component-context-menu,.svg-editor{display:none!important}.workbench,.drawing-area,.canvas-viewport,.sheet-stage{position:static!important;display:block!important;width:auto!important;height:auto!important;min-width:0!important;min-height:0!important;margin:0!important;padding:0!important;overflow:visible!important;background:#fff!important}.schematic-sheet{position:relative!important;transform:none!important;transform-origin:top left!important;margin:0 auto!important;box-shadow:none!important;page-break-inside:avoid!important;break-inside:avoid!important}.placed-component.selected{outline:none!important}.wire-handle{display:none!important}}
+
+.svg-preview-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:28px}.svg-preview-zoom{display:flex;align-items:center;gap:6px}.svg-preview-zoom button{height:27px;border:1px solid #cbd5e1;border-radius:5px;background:#fff;padding:0 9px;font-weight:800;cursor:pointer}.svg-preview-zoom input{width:120px}.svg-preview-zoom output{min-width:42px;text-align:center;font-size:11px}.svg-editor-preview{display:flex;align-items:flex-start;justify-content:flex-start;padding:20px}.svg-editor-preview svg{display:block;flex:0 0 auto;width:100%;height:auto;max-width:none;max-height:none;margin:auto}@media(max-width:760px){.svg-preview-zoom input{width:75px}}
+
+.placed-component .wire-anchor-hitbox{opacity:0!important;visibility:visible!important;fill-opacity:0!important;stroke-opacity:0!important;pointer-events:all!important;cursor:crosshair}.placed-component .wire-anchor-indicator{display:none!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+
+.wire-layer .wire-path.energized{filter:drop-shadow(0 0 3px currentColor) drop-shadow(0 0 6px #fbbf24);stroke-dasharray:16 7;animation:wire-energy-flow .8s linear infinite}.simulation-running .placed-component.energized{box-shadow:0 0 0 3px #22c55e30,0 0 12px #22c55e55}@keyframes wire-energy-flow{to{stroke-dashoffset:-23}}
+
+.component-item.residential-thumb svg{width:54px!important;height:70px!important;overflow:visible!important;fill:initial!important;stroke:initial!important;stroke-width:initial!important}.placed-component[data-type^="resid-"]{width:132px!important;min-height:210px!important;padding:6px!important}.placed-component[data-type^="resid-"]>svg{width:112px!important;height:auto!important;overflow:visible!important}.placed-component[data-type="resid-four-way"]{width:142px!important}.placed-component[data-type="resid-lampada"]{width:150px!important}.placed-component[data-type="resid-lampada"].lamp-on [data-lamp-glow]{fill:url(#lampOn);filter:drop-shadow(0 0 13px #facc15) drop-shadow(0 0 26px #fde68a)}.placed-component[data-type^="resid-"] [data-residential-key]{transition:transform .15s ease}.examples-group .example-grid{display:none;padding:9px}.examples-group.open .example-grid{display:grid;gap:8px}.example-card{padding:11px;border:1px solid #d7e3eb;border-radius:9px;background:#fff}.example-card b{display:block;color:#173b55;font-size:10px}.example-card p{margin:5px 0 9px;color:#64748b;font-size:8px;line-height:1.4}.example-card button{width:100%;height:28px;border:0;border-radius:6px;background:#0b2a5b;color:#fff;font:700 8px Inter;cursor:pointer}.example-card button:hover{background:#f57c00}
+.wire-layer .wire-handle{pointer-events:none;cursor:move;fill:#fff;stroke:#f57c00;stroke-width:3;opacity:0;visibility:hidden;transition:opacity .15s ease}
+.wire-layer .wire-handle.is-editing{pointer-events:all;opacity:.98;visibility:visible}
+.wire-layer .wire-handle:hover{r:12;fill:#fff3e0}
+
+/* Cabeamento v6: arraste direto do cabo */
+.wire-layer .wire-hit-path{touch-action:none}
+.wire-layer .wire-hit-path:active{cursor:grabbing}
+.wire-layer .wire-path.is-selected{filter:drop-shadow(0 0 3px #f57c00aa)}
+
+/* Cabeamento v10: captura robusta do mouse e vínculo permanente aos bornes */
+.wire-layer .wire-path{pointer-events:stroke;cursor:grab;touch-action:none}
+.wire-layer .wire-hit-path{pointer-events:stroke;stroke-width:34;cursor:grab;touch-action:none}
+.wire-layer .wire-path:active,.wire-layer .wire-hit-path:active{cursor:grabbing}
+
+/* Cabeamento v11: hit-test geométrico pela prancha; o SVG não intercepta o mouse. */
+.wire-layer{pointer-events:none!important}
+.wire-layer .wire-path,.wire-layer .wire-hit-path{pointer-events:none!important}
+.wire-layer .wire-hit-path{stroke-width:34}
+.wire-layer .wire-handle.is-editing,.wire-layer .wire-junction{pointer-events:all!important}
+
+/* Exemplos v24: lista compacta, categorias e separação da biblioteca. */
+.workbench:not(.examples-view) .examples-group{display:none!important}.examples-view .library-scroll>.library-group:not(.examples-group){display:none!important}.examples-group .example-grid{padding:8px 10px 12px!important;gap:8px!important}.example-category{border:1px solid #dbe5ec;border-radius:8px;overflow:hidden;background:#fff}.example-category-title{width:100%;height:38px;padding:0 11px;border:0;background:#f5f8fa;color:#173b55;display:flex;align-items:center;justify-content:space-between;font:800 10px Inter;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}.example-category-title small{font-size:11px;transition:transform .15s}.example-category:not(.open) .example-category-title small{transform:rotate(180deg)}.example-items{display:none;padding:5px}.example-category.open .example-items{display:grid;gap:4px}.examples-group .example-card{width:100%;height:46px;padding:0 10px;border:1px solid transparent;border-radius:7px;background:#fff;color:#26465d;display:grid;grid-template-columns:23px 1fr 14px;align-items:center;text-align:left;cursor:pointer;touch-action:manipulation;transition:background .15s,border-color .15s,transform .15s}.examples-group .example-card:hover{background:#fff7ed;border-color:#fdba74;transform:translateX(2px)}.examples-group .example-card.selected{background:#fff3e0;border-color:#f57c00;color:#9a3412}.examples-group .example-card b{display:block;font:700 10px Inter;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.examples-group .example-card span{font-size:15px}.examples-group .example-card i{font:700 18px Inter;color:#94a3b8}.examples-group .example-card.filtered{display:none}
+
+/* Cabeamento V12: faixa de captura direta do mouse sobre o cabo */
+.wire-layer{pointer-events:none}
+.wire-layer .wire-path{fill:none;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;pointer-events:stroke!important;cursor:grab}
+.wire-layer .wire-path.is-selected{stroke-width:9}
+.wire-layer .wire-hit-path{fill:none;stroke-width:34;stroke-linecap:round;stroke-linejoin:round;pointer-events:stroke!important;cursor:grab}
+.wire-layer .wire-hit-path:active,.wire-layer .wire-path:active{cursor:grabbing}
+:is(.wire-layer,.wire-terminal-front-accessory-layer) .wire-end-assembly{pointer-events:none}
+
+
+/* TechRib Wiring Engine V13 - regras finais únicas */
+.wire-layer{pointer-events:none!important}
+.wire-layer .wire-path{fill:none!important;stroke-width:7!important;stroke-linecap:round!important;stroke-linejoin:round!important;pointer-events:stroke!important;cursor:grab!important;touch-action:none!important}
+.wire-layer .wire-hit-path{fill:none!important;stroke:rgba(0,0,0,.001)!important;stroke-width:34!important;stroke-linecap:round!important;stroke-linejoin:round!important;pointer-events:stroke!important;cursor:grab!important;touch-action:none!important}
+.wire-layer .wire-path.is-selected{stroke-width:9!important;filter:drop-shadow(0 0 3px #f57c00aa)}
+.wire-layer .wire-handle{cursor:move!important}
+.wire-layer .wire-pe-stripe{stroke-width:7!important;stroke-dasharray:18 18!important;stroke-linecap:butt!important;pointer-events:none!important}
+.wire-selection-bar{position:fixed;z-index:12000;left:50%;bottom:54px;display:none;align-items:center;gap:12px;transform:translateX(-50%);padding:7px 8px 7px 13px;border:1px solid #fdba74;border-radius:10px;background:#fff;color:#173b55;box-shadow:0 10px 30px #0f172a35;font:700 11px Inter}.wire-selection-bar.open{display:flex}.wire-selection-bar button,.wire-context-menu button{min-height:36px;border:0;border-radius:7px;background:#dc2626;color:#fff;padding:0 14px;font:700 11px Inter;cursor:pointer}.wire-context-menu{position:fixed;z-index:13000;display:none;padding:6px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;box-shadow:0 12px 30px #0f172a35}.wire-context-menu.open{display:block}@media(max-width:767px){.wire-selection-bar{left:10px;right:10px;bottom:72px;transform:none;justify-content:space-between}.wire-selection-bar button{min-height:44px;font-size:12px}}
+.wire-properties-bar{width:min(1180px,calc(100vw - 24px));flex-wrap:wrap;justify-content:center;gap:7px 9px;padding:9px 11px}.wire-properties-bar>span{min-width:95px}.wire-properties-bar label{display:grid;gap:2px;color:#64748b;font:700 8px Inter;text-transform:uppercase;letter-spacing:.25px}.wire-properties-bar input,.wire-properties-bar select{height:30px;min-width:92px;max-width:145px;border:1px solid #cbd5e1;border-radius:6px;background:#fff;color:#0f2d46;padding:0 7px;font:600 10px Inter;text-transform:none}.wire-properties-bar [data-wire-prop="identification"]{min-width:120px}.wire-properties-bar [data-wire-prop="crossSectionMode"]{min-width:112px}@media(max-width:900px){.wire-properties-bar{max-height:42vh;overflow:auto;justify-content:flex-start}.wire-properties-bar label{flex:1 1 120px}.wire-properties-bar input,.wire-properties-bar select{width:100%;max-width:none}}
+.placed-component.orphan-contact{outline:2px dashed #dc2626!important}.placed-component[data-coil-energized="true"]{box-shadow:0 0 0 3px #22c55e35,0 0 14px #22c55e45}
+.simulation-running .placed-component[data-type="contator"].selected:after,.simulation-running .placed-component[data-type="contator-2"].selected:after{content:attr(data-coil-status);position:absolute;left:50%;bottom:-26px;transform:translateX(-50%);z-index:4;white-space:nowrap;padding:4px 8px;border-radius:6px;background:#0f172a;color:#fff;font:700 9px Inter}
+.save-project-menu{position:fixed;z-index:15000;display:none;width:240px;padding:6px;background:#fff;border:1px solid #cbd5e1;border-radius:10px;box-shadow:0 14px 38px #0f172a40}.save-project-menu.open{display:grid;gap:4px}.save-project-menu button{display:grid;gap:3px;width:100%;padding:10px;border:0;border-radius:7px;background:#fff;color:#173b55;text-align:left;cursor:pointer}.save-project-menu button:hover{background:#fff3e0}.save-project-menu b{font:700 12px Inter}.save-project-menu small{font:500 9px Inter;color:#64748b}@media(max-width:767px){.save-project-menu{left:12px!important;right:12px!important;bottom:72px!important;top:auto!important;width:auto}}
+.user-example-card{padding:0!important;display:grid!important;grid-template-columns:1fr 34px!important}.user-example-card>[data-open-example]{min-width:0;height:44px;padding:0 8px;border:0;background:transparent;display:grid;grid-template-columns:23px 1fr 14px;align-items:center;text-align:left;color:inherit;cursor:pointer}.user-example-card>[data-remove-example]{height:32px;width:30px;align-self:center;border:0;border-radius:6px;background:transparent;color:#94a3b8;font-size:18px;cursor:pointer}.user-example-card>[data-remove-example]:hover{background:#fee2e2;color:#b91c1c}
+
+/* Interface responsiva e ferramentas v25 */
+.placed-component.multi-selected{outline:2px dashed #1e88e5!important;outline-offset:4px}.placed-component.text-object{width:auto!important;min-width:140px!important;min-height:48px!important;padding:2px 7px!important;background:transparent!important;border-color:transparent!important;box-shadow:none!important;transform-origin:center center}.placed-component.text-object>svg{width:240px!important;height:auto!important;overflow:visible!important}.placed-component.text-object>small{display:none!important}.cad-tools button:disabled{opacity:.35;cursor:not-allowed}.placed-component{transform-origin:center center;touch-action:none}
+@media(max-width:1199px){.component-sidebar{width:250px}.cad-tools{overflow-x:auto;overscroll-behavior-x:contain}.cad-tools .tool-group{flex:0 0 auto}}
+@media(max-width:767px){.workbench{grid-template-columns:1fr!important}.workbench-topbar{height:58px!important;padding:0 9px!important}.topbar-brand .brand small,.project-title>span,.top-actions .top-action:not(.simulate),.top-actions .sound,.user-button b,.user-button small{display:none!important}.project-title{min-width:0;flex:1}.project-title button{max-width:135px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.top-actions{gap:5px}.top-action.simulate{height:38px!important;padding:0 10px!important}.component-sidebar{position:fixed!important;z-index:9000!important;left:0!important;top:58px!important;bottom:0!important;width:min(88vw,340px)!important;transform:translateX(-105%);transition:transform .2s ease;box-shadow:12px 0 35px #0f172a44}.workbench:not(.sidebar-hidden) .component-sidebar{transform:translateX(0)}.drawing-area{grid-column:1!important}.cad-ribbon{position:fixed!important;z-index:8000!important;left:0!important;right:0!important;bottom:0!important;top:auto!important;background:#fff;border-top:1px solid #cbd5e1}.cad-menu{display:none!important}.cad-tools{height:61px!important;padding:3px 5px!important;overflow-x:auto!important}.cad-tools .tool-group{display:none!important}.cad-tools .tool-group:nth-child(3),.cad-tools .simulation-group{display:flex!important}.mobile-tools-open .cad-tools{height:auto!important;max-height:45vh!important;flex-wrap:wrap!important;overflow-y:auto!important}.mobile-tools-open .cad-tools .tool-group{display:flex!important}.canvas-statusbar{bottom:62px!important}.canvas-viewport{padding-bottom:62px!important;touch-action:none}.sidebar-toggle{display:grid!important}.library-scroll{overscroll-behavior:contain}.component-item{min-height:96px}.wire-anchor-hitbox{pointer-events:all!important}.svg-editor{padding:4px!important}}
+.wire-path.electrical-conflict,.electrical-conflict.wire-path{stroke:#dc2626!important;stroke-dasharray:10 6!important;filter:drop-shadow(0 0 4px #dc2626)}
+.placed-component.electrical-conflict{outline:3px solid #dc2626!important;outline-offset:4px}
+.component-item.multimeter-thumb svg{width:34px!important;height:62px!important}.placed-component[data-type="multimetro-digital"]{width:190px!important;min-height:350px!important;padding:6px!important}.placed-component[data-type="multimetro-digital"]>svg{width:174px!important;height:auto!important;overflow:visible!important}.placed-component[data-type="multimetro-digital"]>small{font-size:8px!important}
+.placed-component[data-type="multimetro-digital"] [data-multimeter-display]{font-family:monospace!important;font-size:72px!important;font-weight:900!important;letter-spacing:-4px!important;text-anchor:start!important;fill:#172113!important}.placed-component[data-type="multimetro-digital"] [data-multimeter-unit]{font-size:20px!important;font-weight:900!important;fill:#172113!important}
+
+/* TechRib: remove visual container masks around components; keep state/classes functional */
+.placed-component,
+.placed-component:hover,
+.placed-component.selected,
+.placed-component.multi-selected,
+.placed-component.closed,
+.placed-component.energized,
+.placed-component.phase-ok,
+.placed-component.pressed,
+.placed-component.illuminated,
+.placed-component.selector-active,
+.placed-component.toggle-on,
+.placed-component.emergency-latched,
+.placed-component.running,
+.placed-component.contact-switched,
+.placed-component.device-active,
+.placed-component.device-tripped,
+.placed-component.orphan-contact,
+.placed-component[data-coil-energized="true"],
+.simulation-running .placed-component.energized {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+/* TechRib: não desenhar etiqueta/painel de estado sobre contatores durante a simulação.
+   O estado continua disponível no SVG, title e painel Propriedades. */
+.simulation-running .placed-component[data-type="contator"]:after,
+.simulation-running .placed-component[data-type="contator-2"]:after,
+.simulation-running .placed-component[data-type="contator"].selected:after,
+.simulation-running .placed-component[data-type="contator-2"].selected:after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+
+/* TechRib v46.2: etiqueta pequena da contatora, sem máscara sobre o desenho */
+.simulation-running .placed-component[data-type="contator"]:after,
+.simulation-running .placed-component[data-type="contator-2"]:after{content:none!important;display:none!important}
+.simulation-running .placed-component[data-type="contator"].energized:after,
+.simulation-running .placed-component[data-type="contator-2"].energized:after,
+.simulation-running .placed-component[data-type="contator"][data-coil-energized="true"]:after,
+.simulation-running .placed-component[data-type="contator-2"][data-coil-energized="true"]:after{content:"ARMADA"!important;display:block!important;position:absolute!important;top:5px!important;right:5px!important;width:auto!important;height:auto!important;padding:2px 5px!important;border:0!important;border-radius:4px!important;background:#dcfce7!important;color:#15803d!important;box-shadow:none!important;font:800 6px Inter,Arial,sans-serif!important;letter-spacing:.45px!important;line-height:1.2!important;pointer-events:none!important;z-index:8!important}
+
+
+/* V78 — tamanho especial para o exemplo Premium do elevador */
+.placed-component[data-example-size="elevator-softstarter-xl"]{width:420px!important;min-height:600px!important;padding:10px!important}
+.placed-component[data-example-size="elevator-softstarter-xl"]>svg{width:392px!important;height:auto!important;overflow:visible!important;filter:none}
+.placed-component[data-example-size="elevator-softstarter-xl"]>span{font-size:14px!important;font-weight:900!important;line-height:1.1!important}
+.placed-component[data-example-size="elevator-softstarter-xl"]>small{font-size:10px!important;font-weight:800!important}
+
+/* V79 — elevador ampliado no exemplo de ligações */
+.placed-component[data-example-size="elevator-main-xl"]{width:620px!important;min-height:790px!important;padding:10px!important}
+.placed-component[data-example-size="elevator-main-xl"]>svg{width:600px!important;height:auto!important;max-width:none!important;overflow:visible!important;filter:none}
+.placed-component[data-example-size="elevator-main-xl"]>span{font-size:15px!important;font-weight:900!important;line-height:1.1!important}
+.placed-component[data-example-size="elevator-main-xl"]>small{font-size:10px!important;font-weight:800!important}
+
+/* V140 — contatores NR-12 usam exatamente o envelope canônico de 230 px. */
+.placed-component[data-type="contator-12vac"],.placed-component[data-type="contator-24vac"]{width:230px!important;min-height:100px!important;padding:8px!important}
+.placed-component[data-type="contator-12vac"]>svg,.placed-component[data-type="contator-24vac"]>svg{width:214px!important;height:auto!important;aspect-ratio:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important;filter:none!important}
+.placed-component[data-type="contator-12vac"]>span,.placed-component[data-type="contator-24vac"]>span{margin:0;font-size:9px;font-weight:700}
+.placed-component[data-type="contator-12vac"]>small,.placed-component[data-type="contator-24vac"]>small{font-size:7px}
+.placed-component:is([data-type="transformador-comando-220-12vac"],[data-type="transformador-comando-220-24vac"]){width:182px!important;min-height:300px!important;padding:8px!important}
+.placed-component:is([data-type="transformador-comando-220-12vac"],[data-type="transformador-comando-220-24vac"])>svg{width:156px!important;height:auto!important;max-width:100%!important;overflow:visible!important;filter:none!important}
+.placed-component:is([data-type="transformador-comando-220-12vac"],[data-type="transformador-comando-220-24vac"])>span{margin-top:3px;font-size:10px;line-height:1.08}
+.placed-component:is([data-type="transformador-comando-220-12vac"],[data-type="transformador-comando-220-24vac"])>small{font-size:8px}
+.component-item.realistic-thumb[data-component="contator-12vac"] svg,.component-item.realistic-thumb[data-component="contator-24vac"] svg{width:58px!important;height:60px!important;max-width:64px!important;overflow:visible!important}
+.component-item.compact-module-thumb[data-component="transformador-comando-220-12vac"] svg,.component-item.compact-module-thumb[data-component="transformador-comando-220-24vac"] svg{width:34px!important;height:59px!important;overflow:visible!important}
+
+/* V142 — MPCB: chave rotativa sem salto no hover e com posicao ON/OFF */
+.placed-component[data-type="disjuntor-motor-mpcb"] [data-breaker-toggle]{
+  cursor:pointer;
+  transform:none!important;
+  transform-box:fill-box;
+  transform-origin:center;
+  transition:filter .12s ease!important;
+}
+.placed-component[data-type="disjuntor-motor-mpcb"] [data-breaker-toggle]:hover{
+  transform:none!important;
+  filter:none!important;
+}
+.placed-component[data-type="disjuntor-motor-mpcb"] [data-mpcb-open]{display:inline!important}
+.placed-component[data-type="disjuntor-motor-mpcb"] [data-mpcb-closed]{display:none!important}
+.placed-component[data-type="disjuntor-motor-mpcb"].closed [data-mpcb-open]{display:none!important}
+.placed-component[data-type="disjuntor-motor-mpcb"].closed [data-mpcb-closed]{display:inline!important}
+
+/* ==============================================================
+   V143 — QUADROS DE COMANDO COM PORTA / COMPONENTES DE PORTA
+   ============================================================= */
+.placed-component[data-command-cabinet="true"]{
+  z-index:1!important;
+  min-height:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  align-items:flex-start!important;
+  justify-content:flex-start!important;
+}
+.placed-component[data-command-cabinet="true"]>svg{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+  filter:none!important;
+}
+.placed-component[data-command-cabinet="true"]>small{display:none!important}
+.placed-component[data-type="quadro-comando-p"]{width:1450px!important}
+.placed-component[data-type="quadro-comando-m"]{width:1750px!important}
+.placed-component[data-type="quadro-comando-g"]{width:2150px!important}
+.placed-component[data-type="quadro-comando-gg"]{width:2600px!important}
+
+/* Componentes criados exclusivamente para montagem frontal na porta. */
+.placed-component[data-door-mount="true"]{
+  z-index:7!important;
+  background:transparent!important;
+  border-color:transparent!important;
+  box-shadow:none!important;
+}
+.placed-component[data-door-mount="true"]>small{display:none!important}
+.placed-component[data-door-mount="true"]>svg{max-width:none!important;max-height:none!important;overflow:visible!important;filter:none!important}
+.placed-component[data-type="botao-emergencia-porta"]{width:122px!important;min-height:186px!important;padding:5px!important}
+.placed-component[data-type="botao-emergencia-porta"]>svg{width:98px!important;height:auto!important}
+.placed-component[data-type="botao-emergencia-porta"] [data-emergency-cap]{cursor:pointer;transform-box:fill-box;transform-origin:center;transition:transform .13s ease,filter .13s ease}
+.placed-component[data-type="botao-emergencia-porta"] [data-emergency-cap]:hover{filter:brightness(1.1);transform:scale(1.02)}
+.placed-component[data-type="botao-emergencia-porta"].emergency-latched [data-emergency-cap]{transform:translateY(13px) scale(.96,.82);filter:brightness(.78)}
+.placed-component[data-type="plaqueta-porta"]{width:205px!important;min-height:86px!important;padding:3px!important}
+.placed-component[data-type="plaqueta-porta"]>svg{width:190px!important;height:auto!important}
+.placed-component[data-type="placa-perigo-eletrico-porta"]{width:235px!important;min-height:128px!important;padding:3px!important}
+.placed-component[data-type="placa-perigo-eletrico-porta"]>svg{width:220px!important;height:auto!important}
+.placed-component[data-type="protetor-cabos-porta"]{width:270px!important;min-height:115px!important;padding:2px!important}
+.placed-component[data-type="protetor-cabos-porta"]>svg{width:260px!important;height:auto!important}
+
+/* Sinaleiros de porta: estado visual independente dos sinaleiros existentes. */
+.placed-component[data-type="sinaleiro-verde-porta"].illuminated [data-signal-lens]{fill:#22e875!important;filter:drop-shadow(0 0 13px #22e875) brightness(1.22)!important}
+.placed-component[data-type="sinaleiro-vermelho-porta"].illuminated [data-signal-lens]{fill:#ff4242!important;filter:drop-shadow(0 0 13px #ff4242) brightness(1.22)!important}
+.placed-component[data-type="sinaleiro-amarelo-porta"].illuminated [data-signal-lens]{fill:#ffba23!important;filter:drop-shadow(0 0 13px #ffba23) brightness(1.22)!important}
+.placed-component[data-type="sinaleiro-azul-porta"].illuminated [data-signal-lens]{fill:#289cff!important;filter:drop-shadow(0 0 13px #289cff) brightness(1.22)!important}
+
+/* A camada do quadro é somente cenário físico; o roteador não a trata como obstáculo.
+   Os fios continuam acima do fundo alaranjado e abaixo dos dispositivos. */
+.placed-component[data-command-cabinet="true"] [data-door-cable-entry]{pointer-events:none!important}
+/* V143.1 — escala frontal dos dispositivos de porta para leitura das plaquetas. */
+.placed-component[data-type^="botoeira-"][data-door-mount="true"]{width:128px!important;min-height:192px!important;padding:4px!important}
+.placed-component[data-type^="botoeira-"][data-door-mount="true"]>svg{width:112px!important;height:auto!important}
+.placed-component[data-type^="sinaleiro-"][data-door-mount="true"]{width:128px!important;min-height:192px!important;padding:4px!important}
+.placed-component[data-type^="sinaleiro-"][data-door-mount="true"]>svg{width:112px!important;height:auto!important}
+.placed-component[data-type^="chave-seletora-"][data-door-mount="true"]{width:135px!important;min-height:208px!important;padding:4px!important}
+.placed-component[data-type^="chave-seletora-"][data-door-mount="true"]>svg{width:116px!important;height:auto!important}
+
+/* V1435 — Temporizador estrela-triangulo no porte vertical de um disjuntor.
+   Regra global: vale para exemplos e para novos componentes arrastados da biblioteca. */
+.placed-component[data-type="temporizador-estrela-triangulo"]{width:142px!important;min-height:295px!important;padding:8px!important}
+.placed-component[data-type="temporizador-estrela-triangulo"]>svg{height:234px!important;width:auto!important;max-width:100%!important;max-height:none!important;overflow:visible!important;filter:none!important}
+.placed-component[data-type="temporizador-estrela-triangulo"]>span{margin-top:3px;font-size:10px!important;line-height:1.08}
+.placed-component[data-type="temporizador-estrela-triangulo"]>small{font-size:8px!important}
+.component-item[data-component="temporizador-estrela-triangulo"] svg{width:32px!important;height:59px!important;max-width:38px!important;overflow:visible!important}
+
+/* TECHRIB 17A1 — tamanho funcional da barra PE */
+
+.placed-component[data-type="barra-terra-pe"]{width:176px!important;min-height:98px!important;padding:4px!important;}
+.placed-component[data-type="barra-terra-pe"]>svg{width:160px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important;filter:none!important;}
+.placed-component[data-type="barra-terra-pe"]>small{margin-top:2px!important;font-size:8px!important;}
+
+
+/* ==============================================================
+   V63 — TRILHO DIN 35 mm PERFURADO / INFRAESTRUTURA MECÂNICA
+   Fica acima do fundo/quadro e abaixo de fios e componentes elétricos.
+   ============================================================== */
+.component-item[data-component="trilho-din-perfurado"] svg{
+  width:108px!important;
+  height:24px!important;
+  max-width:108px!important;
+  overflow:visible!important;
+  stroke:none!important;
+}
+.component-item.din-rail-thumb>img.library-svg-preview{
+  width:112px!important;
+  height:28px!important;
+  max-width:112px!important;
+  max-height:28px!important;
+  object-fit:fill!important;
+  padding:0!important;
+}
+.placed-component[data-type="trilho-din-perfurado"]{
+  z-index:2!important;
+  min-height:96px!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  align-items:flex-start!important;
+  justify-content:flex-start!important;
+}
+.placed-component[data-type="trilho-din-perfurado"]>svg{
+  display:block!important;
+  height:96px!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+  filter:none!important;
+  pointer-events:none;
+}
+.placed-component[data-type="trilho-din-perfurado"]>small{display:none!important}
+.placed-component[data-type="trilho-din-perfurado"]:hover,
+.placed-component[data-type="trilho-din-perfurado"].selected{
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+
+/* TechRib residential switches V1: identical compact envelope for 1/3/4-way. */
+.placed-component[data-type="resid-interruptor-simples"],
+.placed-component[data-type="resid-three-way"],
+.placed-component[data-type="resid-four-way"]{
+  width:132px!important;
+  min-height:210px!important;
+}
+.placed-component[data-type="resid-interruptor-simples"]>svg,
+.placed-component[data-type="resid-three-way"]>svg,
+.placed-component[data-type="resid-four-way"]>svg{
+  width:112px!important;
+  height:auto!important;
+}
+
+
+/* ==============================================================
+   V144 — PANEL BUILDER PROFISSIONAL
+   Ordem física: quadro 1 < trilho 2 < canaleta aberta 3 < fios 4
+   < componentes 5 < tampa da canaleta 6 < dispositivos de porta 7.
+   ============================================================= */
+.placed-component[data-type="canaleta-ranhurada-painel"]{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;align-items:flex-start!important;justify-content:flex-start!important}
+.placed-component[data-type="canaleta-ranhurada-painel"]>small{display:none!important}
+.placed-component[data-type="canaleta-ranhurada-painel"]>svg{display:block!important;max-width:none!important;max-height:none!important;filter:none!important}
+.placed-component[data-type="canaleta-ranhurada-painel"][data-panel-duct-cover="closed"]{z-index:6!important}
+.placed-component[data-type="canaleta-ranhurada-painel"][data-panel-duct-cover="open"]{z-index:3!important}
+.placed-component[data-type^="pente-ligacao-"]{background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:hidden!important}
+.placed-component[data-type^="pente-ligacao-"]>small{display:none!important}
+.placed-component[data-type^="pente-ligacao-"]>svg{display:block!important;max-width:none!important;max-height:none!important;overflow:hidden!important;filter:none!important}
+.placed-component[data-type^="pente-ligacao-"] [data-terminal]{cursor:crosshair!important}
+.placed-component[data-din-mounted-on]:not([data-din-mounted-on=""]){outline:1px dashed rgba(37,99,235,.25);outline-offset:2px}
+.properties-panel [data-prop-panel-builder-group] .panel-builder-action{width:100%;margin-top:9px;padding:8px 10px;border:1px solid #2563eb;border-radius:7px;background:#eff6ff;color:#1d4ed8;font-weight:800;cursor:pointer}
+.properties-panel [data-prop-panel-builder-group] .panel-builder-action:hover{background:#dbeafe}
+
+/* TechRib VTATIL-HALF-V2 — Push Button tátil em 50% da escala anterior */
+.placed-component[data-type="botoeira-liga-tatil-2p"]{width:52px!important;min-height:79px!important;padding:2.5px!important}
+.placed-component[data-type="botoeira-liga-tatil-2p"]>svg{width:43px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important;filter:none!important}
+.placed-component[data-type="botoeira-liga-tatil-2p"]>span{margin-top:1px!important;font-size:7px!important;line-height:1.05!important}
+.placed-component[data-type="botoeira-liga-tatil-2p"]>small{font-size:6px!important}
+
+/* MOTOR_PUMP_FAMILY_LOCAL_V1 */
+.placed-component[data-type="bomba-trifasica"],
+.placed-component[data-type="bomba-trifasica-polia"],
+.placed-component[data-type="bomba-monofasica"],
+.placed-component[data-type="bomba-bifasica-220v"],
+.placed-component[data-type="bomba-trifasica-6t"]{width:492px!important;min-height:380px!important;padding:14px!important}
+.placed-component[data-type="bomba-trifasica"]>svg,
+.placed-component[data-type="bomba-trifasica-polia"]>svg,
+.placed-component[data-type="bomba-monofasica"]>svg,
+.placed-component[data-type="bomba-bifasica-220v"]>svg,
+.placed-component[data-type="bomba-trifasica-6t"]>svg{width:448px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important}
+.placed-component[data-type="bomba-monofasica"] [data-terminal],.placed-component[data-type="bomba-bifasica-220v"] [data-terminal],.placed-component[data-type="bomba-trifasica-6t"] [data-terminal],.placed-component[data-type="motor-trifasico-reversivel"] [data-terminal]{cursor:crosshair}
+.placed-component[data-type="bomba-monofasica"]:after,.placed-component[data-type="bomba-bifasica-220v"]:after,.placed-component[data-type="bomba-trifasica-6t"]:after,.placed-component[data-type="motor-trifasico-reversivel"]:after{content:"PARADO";position:absolute;top:-15px;right:7px;padding:3px 6px;border-radius:4px;background:#e8eef2;color:#526a7a;font:700 7px Inter;letter-spacing:.5px}
+.placed-component[data-type="bomba-monofasica"].running,.placed-component[data-type="bomba-bifasica-220v"].running,.placed-component[data-type="bomba-trifasica-6t"].running,.placed-component[data-type="motor-trifasico-reversivel"].running{border-color:#22c55e;background:#f0fdf4c9;box-shadow:0 0 0 3px #22c55e24}
+.placed-component[data-type="bomba-monofasica"].running:after,.placed-component[data-type="bomba-bifasica-220v"].running:after,.placed-component[data-type="bomba-trifasica-6t"].running:after{content:"EM FUNCIONAMENTO";background:#dcfce7;color:#15803d}
+.placed-component[data-type="motor-trifasico-reversivel"].running[data-motor-direction="cw"]:after{content:"GIRANDO ↻ HORÁRIO";background:#dcfce7;color:#15803d}
+.placed-component[data-type="motor-trifasico-reversivel"].running[data-motor-direction="ccw"]:after{content:"GIRANDO ↺ ANTI-HORÁRIO";background:#dbeafe;color:#1d4ed8}
+@keyframes techribMotorDirectionSpin{to{transform:rotate(360deg)}}
+.placed-component[data-type="motor-trifasico-reversivel"].running [data-motor-direction-ring]{transform-box:fill-box;transform-origin:center;animation:techribMotorDirectionSpin .75s linear infinite}
+.placed-component[data-type="motor-trifasico-reversivel"].running[data-motor-direction="ccw"] [data-motor-direction-ring]{animation-direction:reverse}
+
+/* Passo DIN dos bornes superiores 2P/3P, sem redimensionar outros componentes. */
+.placed-component[data-type="fonte-monofasica"],.placed-component[data-type="fonte-monofasica"][data-registry-id][data-behavior-type="ac-source"]{width:160.89673261648747px!important}
+.placed-component[data-type="fonte-monofasica"]>svg,.placed-component[data-type="fonte-monofasica"][data-registry-id][data-behavior-type="ac-source"]>svg{width:136.89673261648747px!important;height:106.66666666666667px!important;max-width:none!important}
+
+/* Passo DIN dos bornes superiores 2P/3P, sem redimensionar outros componentes. */
+.placed-component[data-type="fonte-bifasica"],.placed-component[data-type="fonte-bifasica"][data-registry-id][data-behavior-type="ac-source"]{width:204.4562100358423px!important}
+.placed-component[data-type="fonte-bifasica"]>svg,.placed-component[data-type="fonte-bifasica"][data-registry-id][data-behavior-type="ac-source"]>svg{width:180.4562100358423px!important;height:106.66666666666667px!important;max-width:none!important}
+
+/* Passo DIN dos bornes superiores 2P/3P, sem redimensionar outros componentes. */
+.placed-component[data-type="fonte-trifasica"],.placed-component[data-type="fonte-trifasica"][data-registry-id][data-behavior-type="ac-source"]{width:248.01568745519717px!important}
+.placed-component[data-type="fonte-trifasica"]>svg,.placed-component[data-type="fonte-trifasica"][data-registry-id][data-behavior-type="ac-source"]>svg{width:224.01568745519717px!important;height:106.66666666666667px!important;max-width:none!important}
+
+.placed-component[data-type="alimentacao-ac-configuravel"]>svg{overflow:visible;filter:none}
+.placed-component[data-type="alimentacao-ac-configuravel"] [data-terminal]{cursor:crosshair}
+/* KT-RET / Relé temporizador realista V1 — mesma altura técnica do disjuntor */
+.placed-component[data-type="temporizador"]{min-height:295px!important}
+/* Chave boia de nível realista V1 — mesma caixa/altura técnica do temporizador */
+.placed-component[data-type="boia-nivel"]{width:166px!important;min-height:295px!important;padding:8px!important}
+.placed-component[data-type="boia-nivel"]>svg{width:150px!important;height:auto!important;max-width:none!important;max-height:none!important;overflow:visible!important;filter:none!important}
+
+/* TechRib industrial V2 — escala final comparada ao disjuntor DIN (234 px). */
+.placed-component[data-type="contato-rele-termico-9596-9798"]{
+  width:178px!important;min-height:165px!important;padding:4px!important;
+}
+.placed-component[data-type="contato-rele-termico-9596-9798"]>svg{
+  width:auto!important;height:132px!important;max-width:166px!important;max-height:none!important;overflow:visible!important;filter:none!important;
+}
+.placed-component[data-type="chave-seccionadora"]{
+  width:220px!important;min-height:307px!important;padding:8px!important;
+}
+.placed-component[data-type="chave-seccionadora"]>svg{
+  width:auto!important;height:246px!important;max-width:204px!important;max-height:none!important;overflow:visible!important;filter:none!important;
+}
+.placed-component[data-type="chave-seccionadora-fusivel"]{
+  width:278px!important;min-height:320px!important;padding:8px!important;
+}
+.placed-component[data-type="chave-seccionadora-fusivel"]>svg{
+  width:auto!important;height:258px!important;max-width:262px!important;max-height:none!important;overflow:visible!important;filter:none!important;
+}
+.placed-component[data-type="contator-reversor"]{
+  width:390px!important;min-height:309px!important;padding:8px!important;
+}
+.placed-component[data-type="contator-reversor"]>svg{
+  width:auto!important;height:246px!important;max-width:374px!important;max-height:none!important;overflow:visible!important;filter:none!important;
+}
+.placed-component[data-type="temporizador-estrela-triangulo"],
+.placed-component[data-type="rele-estrela-triangulo"]{
+  width:142px!important;min-height:295px!important;padding:8px!important;
+}
+.placed-component[data-type="temporizador-estrela-triangulo"]>svg,
+.placed-component[data-type="rele-estrela-triangulo"]>svg{
+  width:auto!important;height:234px!important;max-width:126px!important;max-height:none!important;overflow:visible!important;filter:none!important;
+}
+.component-item[data-component="contato-rele-termico-9596-9798"] svg{width:auto!important;height:50px!important;max-width:60px!important}
+.component-item[data-component="chave-seccionadora"] svg{width:auto!important;height:59px!important;max-width:48px!important}
+.component-item[data-component="chave-seccionadora-fusivel"] svg{width:auto!important;height:59px!important;max-width:58px!important}
+.component-item[data-component="contator-reversor"] svg{width:auto!important;height:53px!important;max-width:82px!important}
+.component-item[data-component="temporizador-estrela-triangulo"] svg,
+.component-item[data-component="rele-estrela-triangulo"] svg{width:auto!important;height:59px!important;max-width:38px!important}
+
+
+/* TECHRIB_DPS_FAMILY_V4_CORRIGIDO — família DPS com altura idêntica ao DPS legado e módulos encostados. */
+.placed-component[data-type="dps-tipo-1"],
+.placed-component[data-type="dps-tipo-3"]{width:119px!important;min-height:295px!important;padding:8px!important}
+.placed-component[data-type="dps-tipo-1"]>svg,
+.placed-component[data-type="dps-tipo-3"]>svg{width:auto!important;height:234px!important;max-width:100%;overflow:visible;filter:none}
+.placed-component[data-type="dps-1p-n"]{width:146px!important;min-height:295px!important;padding:8px!important}
+.placed-component[data-type="dps-1p-n"]>svg{width:auto!important;height:234px!important;max-width:none!important;overflow:visible;filter:none}
+.placed-component[data-type="dps-3p-n"]{width:276px!important;min-height:295px!important;padding:8px!important}
+.placed-component[data-type="dps-3p-n"]>svg{width:auto!important;height:234px!important;max-width:none!important;overflow:visible;filter:none}
+.placed-component[data-type^="dps-"]>span{margin-top:3px;font-size:11px}
+.placed-component[data-type^="dps-"]>small{font-size:8px}
+.component-item.realistic-thumb[data-component="dps-tipo-1"] svg,
+.component-item.realistic-thumb[data-component="dps-tipo-3"] svg{width:29px!important;height:59px!important}
+.component-item.realistic-thumb[data-component="dps-1p-n"] svg{width:33px!important;height:59px!important;overflow:visible!important}
+.component-item.realistic-thumb[data-component="dps-3p-n"] svg{width:66px!important;height:59px!important;overflow:visible!important}

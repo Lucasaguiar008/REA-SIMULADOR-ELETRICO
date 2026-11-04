@@ -1,0 +1,165 @@
+/* TechRib V65 — responsividade para celular e tablet. Desktop permanece inalterado. */
+:root{--tr-safe-top:env(safe-area-inset-top,0px);--tr-safe-bottom:env(safe-area-inset-bottom,0px);--tr-touch:44px}
+
+@media (max-width:1180px){
+  html,body{overscroll-behavior:none}
+  .workbench{--side:280px!important}
+  .workbench-topbar{grid-template-columns:auto minmax(0,1fr) auto!important}
+  .topbar-brand{padding:0 10px!important;border-right:0!important}
+  .project-title{padding:0 12px!important;min-width:0!important}
+  .project-title button{max-width:38vw!important}
+  .top-actions{min-width:0;max-width:52vw;overflow-x:auto;overflow-y:hidden;padding-right:8px!important;scrollbar-width:none}
+  .top-actions::-webkit-scrollbar{display:none}
+  .top-action{flex:0 0 auto}
+  .component-sidebar{width:min(340px,82vw)!important;box-shadow:14px 0 38px #0005}
+  .cad-tools{overflow-x:auto!important;overflow-y:hidden;scrollbar-width:none;overscroll-behavior-x:contain}
+  .cad-tools::-webkit-scrollbar{display:none}
+  .cad-tools .tool-group{flex:0 0 auto}
+  .canvas-viewport{padding-left:28px!important;padding-right:28px!important}
+  .library-domain .component-item,.component-item{min-height:100px!important}
+  .group-title,.library-domain-title,.library-family-title{min-height:42px}
+}
+
+@media (max-width:1024px){
+  .workbench{--top:60px!important}
+  .workbench-topbar{height:60px!important;padding-top:var(--tr-safe-top)}
+  .sidebar-toggle{display:grid!important;min-width:var(--tr-touch);min-height:var(--tr-touch)}
+  .component-sidebar{position:fixed!important;z-index:9000!important;left:0!important;top:calc(60px + var(--tr-safe-top))!important;bottom:0!important;transform:translateX(-105%);transition:transform .2s ease!important}
+  .workbench:not(.sidebar-hidden) .component-sidebar{transform:translateX(0)!important}
+  .drawing-area{left:0!important;top:calc(60px + var(--tr-safe-top))!important}
+  .topbar-brand .brand small{display:none!important}
+  .project-title>span{font-size:7px!important}
+  .project-title button{max-width:30vw!important}
+  .top-actions{max-width:55vw}
+  .top-action{min-width:52px!important;height:44px!important}
+  .top-action b{font-size:8px!important}
+  .cad-ribbon{left:0!important;right:0!important}
+  .canvas-viewport{padding:52px 24px 76px!important;touch-action:pan-x pan-y!important;-webkit-overflow-scrolling:touch}
+  .schematic-sheet{transform-origin:top left!important;margin:0!important}
+  .canvas-statusbar{position:relative;z-index:20}
+  .library-scroll{-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  .component-item{touch-action:manipulation}
+  .component-context-menu,.wire-context-menu{min-width:190px!important}
+  .component-context-menu button,.wire-context-menu button{min-height:var(--tr-touch)!important;font-size:12px!important}
+  .plaque-editor-dialog{max-height:calc(100dvh - 24px);overflow:auto}
+}
+
+@media (max-width:767px){
+  html,body{width:100%;height:100%;overflow:hidden}
+  .workbench{height:100dvh!important;min-height:100dvh!important;--top:58px!important}
+  .workbench-topbar{height:calc(58px + var(--tr-safe-top))!important;padding:var(--tr-safe-top) 6px 0!important;display:flex!important;gap:4px!important}
+  .topbar-brand{height:58px!important;gap:4px!important;padding:0 3px!important}
+  .topbar-brand .brand{display:none!important}
+  .sidebar-toggle{width:44px!important;height:44px!important;font-size:20px!important}
+  .project-title{flex:1!important;padding:0 5px!important;min-width:0!important}
+  .project-title>span{display:none!important}
+  .project-title button{max-width:100%!important;width:100%;font-size:10px!important;text-align:left}
+  .top-actions{flex:0 0 auto;max-width:58vw!important;gap:2px!important;padding:0!important}
+  .top-actions .top-action:not(.simulate),.top-actions .sound{display:none!important}
+  .top-action.simulate{min-width:82px!important;height:40px!important;margin:0!important;padding:0 8px!important}
+  .top-action.simulate b{display:block!important;font-size:9px!important}
+  .user-button{width:42px!important;padding:0!important;justify-content:center;border:0!important}
+  .user-button b,.user-button small{display:none!important}
+  .user-button>span{width:34px!important;height:34px!important}
+
+  .component-sidebar{top:calc(58px + var(--tr-safe-top))!important;width:min(90vw,360px)!important;bottom:calc(64px + var(--tr-safe-bottom))!important;border-radius:0 12px 0 0;overflow:hidden}
+  .sidebar-heading{padding:12px 12px 8px!important}
+  .sidebar-heading h2{font-size:18px!important}
+  .component-search{height:44px!important;margin:0 10px 8px!important}
+  .library-tabs{padding:0 8px!important}
+  .library-tabs button{min-height:44px!important}
+  .library-domain>.library-domain-title,.group-title{height:46px!important}
+  .library-family-title{height:42px!important;font-size:10px!important}
+  .component-grid{grid-template-columns:1fr 1fr!important;gap:8px!important;padding:8px!important}
+  .library-domain .component-item,.component-item{min-height:106px!important;border-radius:10px!important}
+  .library-domain .component-item>.library-svg-preview{height:70px!important;max-height:70px!important}
+  .library-domain .component-item>span,.component-item span{font-size:9px!important;color:#fff!important}
+  .sidebar-footer{height:44px!important;padding-bottom:var(--tr-safe-bottom)}
+
+  .drawing-area{top:calc(58px + var(--tr-safe-top))!important;bottom:0!important}
+  .cad-ribbon{position:fixed!important;z-index:8000!important;left:0!important;right:0!important;bottom:0!important;top:auto!important;padding-bottom:var(--tr-safe-bottom);background:#0b1820!important;border-top:1px solid #2a4552!important}
+  .cad-menu{display:none!important}
+  .cad-tools{height:64px!important;display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;padding:4px 5px!important;gap:4px!important;scroll-snap-type:x proximity}
+  .cad-tools .tool-group{display:flex!important;flex:0 0 auto!important;scroll-snap-align:start}
+  .cad-tools button{min-width:42px!important;min-height:42px!important}
+  .canvas-viewport{position:absolute!important;inset:0!important;padding:18px 14px calc(108px + var(--tr-safe-bottom))!important;overflow:auto!important;touch-action:pan-x pan-y!important;-webkit-overflow-scrolling:touch!important}
+  .sheet-stage{min-width:max-content!important;min-height:max-content!important}
+  .schematic-sheet{margin:0!important;transform-origin:top left!important}
+  .canvas-statusbar{position:fixed!important;z-index:7900!important;left:0!important;right:0!important;bottom:calc(64px + var(--tr-safe-bottom))!important;height:36px!important;padding:0 8px!important;background:#0b1820!important;color:#9bb2bd!important;border-color:#29414e!important}
+  .canvas-statusbar>div{gap:8px!important}
+  .canvas-statusbar .status-ready+span,.canvas-statusbar>div:first-child span:nth-child(n+3){display:none!important}
+  .zoom-control input{width:62px!important}
+  .zoom-control output{font-size:8px!important}
+  .wire-selection-bar{left:7px!important;right:7px!important;bottom:calc(106px + var(--tr-safe-bottom))!important;transform:none!important;max-width:none!important}
+  .wire-selection-bar span{font-size:9px!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .wire-selection-bar button{min-height:42px!important}
+
+  /* Diagnóstico */
+  #techrib-diagnostic-panel{left:0!important;right:0!important;top:calc(58px + var(--tr-safe-top))!important;bottom:calc(64px + var(--tr-safe-bottom))!important;width:100%!important;border-radius:0!important;border-left:0!important;border-right:0!important}
+  .diag-actions button{min-height:44px!important;font-size:10px!important}
+  .diag-results{-webkit-overflow-scrolling:touch}
+
+  /* Regressão */
+  .regression-modal{padding:0!important;place-items:stretch!important}
+  .regression-dialog{width:100vw!important;height:100dvh!important;max-width:none!important;max-height:none!important;border:0!important;border-radius:0!important}
+  .regression-dialog>header{min-height:58px!important;padding:0 10px!important}
+  .regression-dialog>header h3{font-size:15px!important}
+  .regression-toolbar{padding:7px 8px!important;gap:6px!important;overflow-x:auto!important;flex-wrap:nowrap!important}
+  .regression-toolbar button{min-height:42px!important;flex:0 0 auto}
+  .regression-toolbar span{min-width:145px;font-size:7px!important}
+  .regression-summary{margin:8px 8px 0!important;padding:9px 10px!important}
+  .regression-body{padding:8px!important;display:block!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch}
+  .regression-card{margin-bottom:8px!important}
+  .regression-card ul{grid-template-columns:1fr!important}
+  .regression-card li{min-height:48px!important}
+  .regression-card li b{font-size:9px!important}.regression-card li small{font-size:8px!important;line-height:1.35!important}
+
+  /* Editor de componentes */
+  .svg-editor{padding:0!important}
+  .svg-editor-dialog{width:100vw!important;height:100dvh!important;border:0!important;border-radius:0!important}
+  .svg-editor header{height:50px!important;min-height:50px!important;padding:0 9px!important}
+  .svg-editor header h2{font-size:13px!important}
+  .ce-topbar{padding:6px!important;gap:5px!important;align-items:center!important;overflow-x:auto!important;flex-wrap:nowrap!important}
+  .ce-topbar label{min-width:110px!important}.ce-topbar input,.ce-topbar select,.ce-btn{height:38px!important}
+  .ce-main{grid-template-columns:46px minmax(0,1fr)!important;position:relative!important}
+  .ce-tools{padding:4px!important}.ce-tool{height:44px!important}
+  .ce-center{grid-column:2!important;grid-template-rows:42px 1fr 128px!important;min-width:0!important}
+  .ce-canvasbar{overflow-x:auto!important;white-space:nowrap!important}
+  .ce-canvaswrap{-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y!important}
+  .ce-canvas{min-width:620px!important;min-height:480px!important}
+  .ce-bottom{grid-template-columns:1fr!important}.ce-bottom section{padding:5px!important}.ce-terminal-table{font-size:7px!important}
+  .ce-right{top:96px!important;bottom:0!important;width:min(94vw,360px)!important;box-shadow:-12px 0 35px #0008}
+  .ce-tabs button{height:42px!important;padding:0 10px!important}
+  .ce-props{padding:8px!important}.ce-grid2{grid-template-columns:1fr!important}
+
+  .plaque-editor-modal{padding:0!important;align-items:end!important}
+  .plaque-editor-dialog{width:100%!important;max-height:88dvh!important;border-radius:14px 14px 0 0!important}
+  .plaque-editor-body{overflow:auto!important}.plaque-editor-grid{grid-template-columns:1fr 1fr!important}
+  .plaque-editor-dialog>footer{padding-bottom:calc(11px + var(--tr-safe-bottom))!important}
+
+  .toast{left:8px!important;right:8px!important;bottom:calc(110px + var(--tr-safe-bottom))!important;text-align:center!important;font-size:10px!important}
+}
+
+@media (max-width:430px){
+  .component-grid{grid-template-columns:1fr 1fr!important}
+  .library-domain .component-item,.component-item{min-height:98px!important;padding:6px 3px!important}
+  .library-domain .component-item>.library-svg-preview{height:62px!important;max-height:62px!important}
+  .project-title button{font-size:9px!important}
+  .canvas-statusbar>div:first-child span:not(.status-ready){display:none!important}
+  .zoom-control input{width:52px!important}
+  .regression-toolbar span{display:none!important}
+}
+
+@media (orientation:landscape) and (max-height:600px) and (max-width:1024px){
+  .workbench{--top:52px!important}.workbench-topbar{height:calc(52px + var(--tr-safe-top))!important}
+  .component-sidebar,.drawing-area{top:calc(52px + var(--tr-safe-top))!important}
+  .cad-tools{height:56px!important}.canvas-statusbar{bottom:calc(56px + var(--tr-safe-bottom))!important}
+  .canvas-viewport{padding-bottom:calc(94px + var(--tr-safe-bottom))!important}
+  #techrib-diagnostic-panel{top:calc(52px + var(--tr-safe-top))!important;bottom:calc(56px + var(--tr-safe-bottom))!important}
+}
+
+@media (pointer:coarse){
+  button,.component-item,.group-title,.library-domain-title,.library-family-title{touch-action:manipulation}
+  [data-terminal],[data-wire-anchor],.wire-anchor-hitbox{touch-action:none}
+  .wire-handle{r:10}
+}

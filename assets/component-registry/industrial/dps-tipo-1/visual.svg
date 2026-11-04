@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 620" role="img" aria-label="DPS Tipo 1 • estilo DPS TechRib existente">
+  <defs>
+    <style>
+      :root{
+        --dps-red:#d92d2f;
+        --dps-red2:#f04b48;
+        --dps-red-dark:#9c1719;
+        --dps-gray:#d8dde1;
+        --dps-gray2:#f4f6f8;
+        --dps-text:#283136;
+        --tr-dark:#0f2d46;
+        --tr-blue:#1783d1;
+        --tr-cyan:#00b7d9;
+      }
+      .hidden{display:none!important}
+      .dps-text{fill:var(--dps-text);font-family:Arial,Helvetica,sans-serif}
+      .dps-small{font-size:13px;font-weight:600}
+      .dps-brand{fill:#fff;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700}
+      .dps-title{fill:#d92d2f;font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:800}
+      .dps-spec{fill:#283136;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700}
+      .dps-specv{fill:#283136;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:600}
+    </style>
+    <linearGradient id="dps_bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff6762" />
+      <stop offset="0.28" stop-color="#ef4744" />
+      <stop offset="0.7" stop-color="#d72b2e" />
+      <stop offset="1" stop-color="#b51d1f" />
+    </linearGradient>
+    <linearGradient id="dps_faceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fefefe" />
+      <stop offset="1" stop-color="#e6eaee" />
+    </linearGradient>
+    <linearGradient id="dps_terminalBlock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f9fa" />
+      <stop offset="1" stop-color="#d8dfe4" />
+    </linearGradient>
+    <linearGradient id="dps_brandBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--tr-dark)" />
+      <stop offset="0.55" stop-color="var(--tr-blue)" />
+      <stop offset="1" stop-color="var(--tr-cyan)" />
+    </linearGradient>
+    <linearGradient id="dps_windowGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ed36f" />
+      <stop offset="1" stop-color="#366d2f" />
+    </linearGradient>
+    <linearGradient id="dps_windowRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff9494" />
+      <stop offset="1" stop-color="#9f1d1d" />
+    </linearGradient>
+    <linearGradient id="dps_ringStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6b16a" />
+      <stop offset="1" stop-color="#b67217" />
+    </linearGradient>
+    <radialGradient id="dps_ringGrad" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="0.25" stop-color="#dfe4e8" />
+      <stop offset="0.58" stop-color="#919ba3" />
+      <stop offset="1" stop-color="#2a3137" />
+    </radialGradient>
+    <radialGradient id="dps_screwGrad" cx="35%" cy="28%" r="76%">
+      <stop offset="0" stop-color="#f8fafb" />
+      <stop offset="0.25" stop-color="#bcc4ca" />
+      <stop offset="0.58" stop-color="#6c767d" />
+      <stop offset="1" stop-color="#1b2328" />
+    </radialGradient>
+    <filter id="dps_shadow" x="-25%" y="-25%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000" flood-opacity=".18" />
+    </filter>
+  </defs>
+
+  <g id="dps" filter="url(#dps_shadow)">
+    <rect x="39" y="12" width="182" height="574" rx="14" fill="none" stroke="#8e989f" stroke-width="1.2" />
+    <rect x="44" y="16" width="172" height="566" rx="11" fill="url(#dps_bodyGrad)" stroke="#9d2021" stroke-width="1.2" />
+    <path d="M53 24V573" stroke="#ffb0ae" stroke-width="1.8" opacity=".48" />
+    <path d="M207 24V573" stroke="#8d1517" stroke-width="1.9" opacity=".45" />
+
+    
+    <path d="M101 18.04 L159 18.04 L159 43.04 L149 43.04 L149 53.04 L111 53.04 L111 43.04 L101 43.04 Z" fill="#d7dde1" stroke="#a4afb6" stroke-width="1.3" />
+    <path d="M114 27h31" stroke="#ffffff" stroke-width="2" opacity=".55" />
+
+    
+    <path d="M55 138h150l4 7v19H51v-19z" fill="#d54b48" stroke="#a72224" />
+    <path d="M56 143h148" stroke="#ffb8b6" stroke-width="2" opacity=".55" />
+
+    
+    <rect x="54" y="158" width="152" height="300" rx="8" fill="url(#dps_faceGrad)" stroke="#c1c9ce" stroke-width="1.3" />
+    <rect x="62" y="170" width="88" height="18" rx="2" fill="url(#dps_brandBar)" />
+    <text x="71" y="183" style="fill:#ffffff!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:15px!important;font-weight:700!important;transform:none!important;text-anchor:start!important">LucasAguiar</text>
+    <path d="M64 202H196" stroke="#6f777d" stroke-width="1.4" />
+    <path d="M64 204H196" stroke="#ffffff" stroke-width="1" opacity=".45" />
+
+    <text x="68" y="235" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;font-weight:600!important;transform:none!important;text-anchor:start!important">275V~</text>
+    <rect x="144" y="216" width="44" height="22" rx="6" fill="#e6eaed" stroke="#b8c1c7" />
+    <g id="indicator-ok">
+      <rect x="148" y="220" width="36" height="14" rx="7" fill="#cfd6da" stroke="#6f777d" stroke-width="0.8" />
+      <rect x="151" y="223" width="30" height="8" rx="4" fill="url(#dps_windowGreen)" />
+      <path d="M154 224h24" stroke="#c2efb4" stroke-width="1" opacity=".45" />
+    </g>
+    <g id="indicator-fault" class="hidden">
+      <rect x="148" y="220" width="36" height="14" rx="7" fill="#cfd6da" stroke="#6f777d" stroke-width="0.8" />
+      <rect x="151" y="223" width="30" height="8" rx="4" fill="url(#dps_windowRed)" />
+      <path d="M154 224h24" stroke="#ffd0d0" stroke-width="1" opacity=".45" />
+    </g>
+
+    <rect x="80" y="252" width="100" height="42" rx="7" fill="#d92d2f" stroke="#b41d20" stroke-width="1.2" />
+    <path d="M86 258h88" stroke="#ff8b8b" stroke-width="1.5" opacity=".45" />
+    <text x="130" y="282" text-anchor="middle" style="fill:#ffffff!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:24px!important;font-weight:800!important;transform:none!important">DPS</text>
+    <text x="130" y="320" text-anchor="middle" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:14px!important;font-weight:700!important;transform:none!important">Dispositivo de</text>
+    <text x="130" y="340" text-anchor="middle" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:14px!important;font-weight:700!important;transform:none!important">Proteção contra Surtos</text>
+    <path d="M84 352H176" stroke="#d92d2f" stroke-width="1.6" />
+
+    <text x="74" y="378" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;font-weight:700!important;transform:none!important;text-anchor:start!important">Uc</text>
+    <text x="142" y="378" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;font-weight:600!important;transform:none!important;text-anchor:start!important">275 V~</text>
+
+    <text x="74" y="402" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;font-weight:700!important;transform:none!important;text-anchor:start!important">In</text>
+    <text x="142" y="402" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;font-weight:600!important;transform:none!important;text-anchor:start!important">25 kA</text>
+
+    <text x="74" y="426" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;font-weight:700!important;transform:none!important;text-anchor:start!important">Iimp</text>
+    <text x="142" y="426" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;font-weight:600!important;transform:none!important;text-anchor:start!important">12.5 kA</text>
+
+    <text x="74" y="450" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;font-weight:700!important;transform:none!important;text-anchor:start!important">Up</text>
+    <text x="142" y="450" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;font-weight:600!important;transform:none!important;text-anchor:start!important">≤ 1.5 kV</text>
+
+    <rect x="74" y="468" width="30" height="24" rx="3" fill="#eceff2" stroke="#8a949a" stroke-width="1.1" />
+    <text x="89" y="485" text-anchor="middle" style="fill:#283136!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:12px!important;font-weight:800!important;transform:none!important">T1</text>
+
+    
+    <path d="M54 458h152v26l-8 7H62l-8-7z" fill="#d54b48" stroke="#a72224" stroke-width="1.2" />
+    <path d="M63 471h134" stroke="#ffb8b6" stroke-width="1.3" opacity=".52" />
+    <text x="130" y="514" text-anchor="middle" style="fill:#f7f7f7!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:22px!important;font-weight:700!important;transform:none!important">PE</text>
+    <path d="M130 523v16" stroke="#f0f2f4" stroke-width="3" stroke-linecap="round" />
+    <path d="M115 531h30M119 538h22M123 545h14" stroke="#f0f2f4" stroke-width="3" stroke-linecap="round" />
+
+    <path d="M103.565 546.414 L 161.565 546.414 L 161.565 571.414 L 151.565 571.414 L 151.565 581.414 L 113.565 581.414 L 113.565 571.414 L 103.565 571.414 Z" fill="#d7dde1" stroke="#a4afb6" stroke-width="1.3" />
+    <path d="M114 554h31" stroke="#ffffff" stroke-width="1.7" opacity=".45" />
+  </g>
+
+  
+  <g data-terminal="L">
+    <circle data-wire-anchor="L" cx="130" cy="40" r="18" fill="transparent" fill-opacity="0" stroke="none" pointer-events="all" />
+    <rect x="77" y="54" width="106" height="76" rx="10" fill="url(#dps_terminalBlock)" stroke="#aab3b9" stroke-width="1.2" />
+    <path d="M84 62H176" stroke="#ffffff" stroke-width="1.3" opacity=".6" />
+    <circle cx="130" cy="91" r="31" fill="url(#dps_ringGrad)" stroke="url(#dps_ringStroke)" stroke-width="2.1" style="stroke-width:2.1!important" />
+    <circle cx="130" cy="91" r="24" fill="url(#dps_screwGrad)" stroke="#20282d" stroke-width="1.7" style="stroke:#20282d!important;stroke-width:1.7!important" />
+    <path d="M117 87h8V75h10v12h12v9h-12v13h-10V96h-8z" fill="#151a1d" stroke="#edf1f3" stroke-width="1" />
+    <circle cx="130" cy="91" r="8" fill="#374046" opacity=".58" />
+    <path d="M115 77c8-7 22-11 34-4" fill="none" stroke="#fff" stroke-width="2" opacity=".5" />
+    <text x="130" y="48" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900" fill="#f8f8f8" style="fill:#f8f8f8!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:15px!important;font-weight:900!important;transform:none!important;text-anchor:middle!important">L</text>
+  </g>
+
+  <g data-terminal="PE">
+    <circle data-wire-anchor="PE" cx="130" cy="565" r="18" fill="transparent" fill-opacity="0" stroke="none" pointer-events="all" />
+    <g transform="translate(0,0)">
+      <rect x="77" y="502" width="106" height="76" rx="10" fill="url(#dps_terminalBlock)" stroke="#aab3b9" stroke-width="1.2" />
+      <path d="M84 570H176" stroke="#ffffff" stroke-width="1.3" opacity=".6" />
+      <circle cx="130" cy="539" r="31" fill="url(#dps_ringGrad)" stroke="url(#dps_ringStroke)" stroke-width="2.1" style="stroke-width:2.1!important" />
+      <circle cx="130" cy="539" r="24" fill="url(#dps_screwGrad)" stroke="#20282d" stroke-width="1.7" style="stroke:#20282d!important;stroke-width:1.7!important" />
+      <path d="M117 535h8v-12h10v12h12v9h-12v13h-10v-13h-8z" fill="#151a1d" stroke="#edf1f3" stroke-width="1" />
+      <circle cx="130" cy="539" r="8" fill="#374046" opacity=".58" />
+      <path d="M115 525c8-7 22-11 34-4" fill="none" stroke="#fff" stroke-width="2" opacity=".5" />
+      <text x="130" y="595" text-anchor="middle" font-family="Arial" font-size="15" font-weight="900" fill="#f8f8f8" style="fill:#f8f8f8!important;stroke:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:15px!important;font-weight:900!important;transform:none!important;text-anchor:middle!important">PE</text>
+    </g>
+  </g>
+</svg>

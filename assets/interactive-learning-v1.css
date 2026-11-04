@@ -1,0 +1,86 @@
+/* TechRib — Aprenda na Prática V1 */
+.techrib-learn-coach{
+  position:fixed;right:18px;top:112px;z-index:1250;width:min(390px,calc(100vw - 36px));
+  border:1px solid #315365;border-radius:14px;background:rgba(10,27,37,.97);color:#eaf3f7;
+  box-shadow:0 18px 55px rgba(0,0,0,.36);overflow:hidden;font-family:Inter,Arial,sans-serif;
+  backdrop-filter:blur(10px)
+}
+.techrib-learn-coach[hidden]{display:none!important}
+.techrib-learn-head{display:flex;align-items:flex-start;gap:10px;padding:13px 14px 10px;border-bottom:1px solid #213e4c;background:#102734}
+.techrib-learn-icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:#173b4c;border:1px solid #2e6076;font-size:18px;flex:0 0 auto}
+.techrib-learn-title{min-width:0;flex:1}.techrib-learn-title small{display:block;color:#77b8d1;font:800 9px/1.2 Inter;text-transform:uppercase;letter-spacing:.09em;margin-bottom:3px}.techrib-learn-title b{display:block;color:#fff;font:800 13px/1.3 Inter}
+.techrib-learn-close{width:29px;height:29px;border:0;border-radius:8px;background:transparent;color:#89a8b6;font-size:20px;cursor:pointer}.techrib-learn-close:hover{background:#1c3a48;color:#fff}
+.techrib-learn-body{padding:13px 14px 14px}.techrib-learn-status{display:flex;gap:8px;align-items:center;margin-bottom:9px}.techrib-learn-step{display:inline-flex;align-items:center;min-height:22px;padding:3px 8px;border-radius:999px;background:#173b4c;border:1px solid #2e6076;color:#9cd6ec;font:800 8px/1 Inter;text-transform:uppercase;letter-spacing:.07em}.techrib-learn-state{color:#91aebb;font:700 9px/1.2 Inter}
+.techrib-learn-question{margin:0 0 7px;color:#fff;font:800 15px/1.35 Inter}.techrib-learn-copy{margin:0;color:#b8cbd4;font:600 11px/1.55 Inter}.techrib-learn-copy strong{color:#f8d971}.techrib-learn-copy code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#9de0f7;background:#10222c;border:1px solid #294652;border-radius:4px;padding:1px 4px}
+.techrib-learn-progress{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin:12px 0 10px}.techrib-learn-progress span{height:4px;border-radius:999px;background:#29414d}.techrib-learn-progress span.on{background:#4fb6dd}.techrib-learn-progress span.done{background:#61c89b}
+.techrib-learn-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.techrib-learn-actions button{min-height:31px;padding:6px 10px;border-radius:8px;border:1px solid #315365;background:#142f3c;color:#dcebf1;font:800 9px Inter;cursor:pointer}.techrib-learn-actions button:hover{background:#1b4050;border-color:#4e91ad;color:#fff}.techrib-learn-actions button.primary{background:#1f6f8c;border-color:#2c91b6;color:#fff}.techrib-learn-actions button.success{background:#176847;border-color:#2b9f72;color:#fff}.techrib-learn-actions button[disabled]{opacity:.42;cursor:not-allowed}
+.techrib-learn-mini{margin-top:10px;padding:8px 9px;border:1px dashed #385968;border-radius:8px;color:#8daab6;font:600 9px/1.45 Inter;background:#0d202a}.techrib-learn-mini b{color:#cfe4ed}
+.placed-component.techrib-learn-highlight{z-index:8!important;filter:drop-shadow(0 0 7px rgba(56,189,248,.88)) drop-shadow(0 0 16px rgba(56,189,248,.45))!important;animation:techribLearnPulse 1.05s ease-in-out infinite alternate}
+.placed-component .techrib-learn-terminal{filter:drop-shadow(0 0 4px #fff) drop-shadow(0 0 9px #22d3ee)!important;animation:techribLearnTerminal .8s ease-in-out infinite alternate}
+.wire-path.techrib-learn-auto-wire,.techrib-learn-auto-wire{stroke-dasharray:15 10!important;animation:techribLearnWire 1s linear infinite,techribLearnWireGlow .8s ease-in-out infinite alternate!important;filter:drop-shadow(0 0 4px rgba(239,68,68,.95))!important}
+.examples-group .example-card[data-example-primary-category="interactive-learning"]{border-color:#3b687b!important;box-shadow:inset 3px 0 0 #38bdf8!important}.examples-group .example-card[data-example-primary-category="interactive-learning"] .example-card-icon{color:#67d2f5!important}
+@keyframes techribLearnPulse{from{filter:drop-shadow(0 0 4px rgba(56,189,248,.45))}to{filter:drop-shadow(0 0 10px rgba(56,189,248,1)) drop-shadow(0 0 20px rgba(56,189,248,.55))}}
+@keyframes techribLearnTerminal{from{opacity:.72}to{opacity:1}}
+@keyframes techribLearnWire{to{stroke-dashoffset:-25}}
+@keyframes techribLearnWireGlow{from{opacity:.65}to{opacity:1}}
+@media(max-width:900px){.techrib-learn-coach{top:auto;right:10px;left:10px;bottom:12px;width:auto;max-height:46vh;overflow:auto}.techrib-learn-head{position:sticky;top:0;z-index:2}}
+
+.techrib-learn-toolbar-highlight{position:relative!important;z-index:20!important;box-shadow:0 0 0 2px #38bdf8,0 0 18px rgba(56,189,248,.85)!important;animation:techribLearnButton 1s ease-in-out infinite alternate!important}
+.techrib-learn-reopen{position:fixed;right:18px;top:112px;z-index:1249;min-height:34px;padding:6px 11px;border:1px solid #3c7187;border-radius:999px;background:#102c39;color:#dff5ff;font:800 9px Inter,Arial,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.28);cursor:pointer}.techrib-learn-reopen:hover{background:#173e4e}.techrib-learn-reopen[hidden]{display:none!important}
+@keyframes techribLearnButton{from{transform:translateY(0)}to{transform:translateY(-1px)}}
+@media(max-width:900px){.techrib-learn-reopen{top:auto;right:12px;bottom:12px}}
+
+/* V1.1 — foco do desafio: sem bloco de instruções duplicado na prancha e destaque do fio recém-corrigido. */
+.techrib-learn-hidden-note{display:none!important}
+.wire-path.techrib-learn-solution-wire,.techrib-learn-solution-wire{
+  filter:drop-shadow(0 0 4px rgba(250,204,21,.95)) drop-shadow(0 0 10px rgba(250,204,21,.7))!important;
+  animation:techribLearnSolutionWire .72s ease-in-out infinite alternate!important;
+}
+@keyframes techribLearnSolutionWire{from{opacity:.76;stroke-width:3.8px}to{opacity:1;stroke-width:6px}}
+
+/* V1.2 — orientação explícita para novos usuários encontrarem a ferramenta Condutor. */
+.techrib-learn-toolbar-highlight[data-tool="wire"]{
+  box-shadow:0 0 0 2px #facc15,0 0 12px rgba(250,204,21,.95),0 0 26px rgba(56,189,248,.75)!important;
+  animation:techribLearnConductor .68s ease-in-out infinite alternate!important;
+}
+@keyframes techribLearnConductor{
+  from{transform:translateY(0) scale(1);filter:brightness(1)}
+  to{transform:translateY(-1px) scale(1.08);filter:brightness(1.4)}
+}
+
+/* V1.5 — Desafio 04: balões grandes + destaque real do RESET do relé térmico. */
+.techrib-learn-control-target{
+  filter:drop-shadow(0 0 5px #fff) drop-shadow(0 0 12px #facc15)!important;
+  animation:techribLearnControlTarget .62s ease-in-out infinite alternate!important;
+}
+.techrib-learn-callout{overflow:visible!important}
+.techrib-learn-callout:not(.placed-component){position:relative!important}
+.techrib-learn-callout::after{
+  content:attr(data-techrib-learn-label);
+  position:absolute;left:50%;bottom:calc(100% + 9px);transform:translateX(-50%);
+  z-index:90;min-width:max-content;max-width:430px;padding:10px 14px;border:3px solid #facc15;border-radius:10px;
+  background:#071923;color:#fff;font:900 16px/1.35 Inter,Arial,sans-serif;letter-spacing:.01em;
+  box-shadow:0 4px 18px rgba(0,0,0,.45),0 0 16px rgba(250,204,21,.65);pointer-events:none;
+  animation:techribLearnCallout .7s ease-in-out infinite alternate
+}
+.techrib-learn-callout::before{
+  content:"";position:absolute;left:50%;bottom:calc(100% + 2px);z-index:91;width:10px;height:10px;
+  border-right:2px solid #facc15;border-bottom:2px solid #facc15;background:#071923;transform:translateX(-50%) rotate(45deg);pointer-events:none
+}
+.lote1-machine-panel .techrib-learn-callout::after{font-size:14px}
+@keyframes techribLearnControlTarget{from{opacity:.72}to{opacity:1}}
+@keyframes techribLearnCallout{from{transform:translateX(-50%) translateY(0)}to{transform:translateX(-50%) translateY(-3px)}}
+
+
+/* O RESET do relé térmico deve ser o próprio alvo clicável, não apenas o componente inteiro. */
+.placed-component[data-type="rele-termico"] [data-thermal-reset-button].techrib-learn-control-target{
+  cursor:pointer!important;
+  stroke:#facc15!important;
+  stroke-width:14px!important;
+  filter:drop-shadow(0 0 7px #fff) drop-shadow(0 0 16px #facc15) drop-shadow(0 0 26px rgba(250,204,21,.95))!important;
+  animation:techribLearnThermalReset .48s ease-in-out infinite alternate!important;
+}
+@keyframes techribLearnThermalReset{
+  from{opacity:.70}
+  to{opacity:1}
+}
