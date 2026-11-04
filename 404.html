@@ -5851,8 +5851,6 @@ window.TECHRIB_PERSONAL_COMPONENTS=[];
           if (icon && icon.textContent !== nextIcon) icon.textContent = nextIcon;
           if (label && label.textContent !== nextLabel) label.textContent = nextLabel;
         });
-
-        ensureStylesheetLast();
       }
 
       function syncGridUI() {
@@ -5880,6 +5878,7 @@ window.TECHRIB_PERSONAL_COMPONENTS=[];
         });
       }
 
+      ensureStylesheetLast();
       syncThemeUI(currentTheme);
       syncGridUI();
 

@@ -221,8 +221,15 @@ html:not([data-ui-theme="dark"]) body .tool-group button {
 }
 
 html:not([data-ui-theme="dark"]) body .cad-tools button small,
-html:not([data-ui-theme="dark"]) body .tool-group button small {
-  color: #1e293b !important;
+html:not([data-ui-theme="dark"]) body .tool-group button small,
+html:not([data-ui-theme="dark"]) body .cad-tools button:hover small,
+html:not([data-ui-theme="dark"]) body .tool-group button:hover small,
+html:not([data-ui-theme="dark"]) body .cad-tools button:focus-visible small,
+html:not([data-ui-theme="dark"]) body .tool-group button:focus-visible small {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1.5px solid #0284c7 !important;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.22) !important;
 }
 
 html:not([data-ui-theme="dark"]) body .cad-tools button svg,
@@ -366,13 +373,25 @@ html:not([data-ui-theme="dark"]) body .component-grid {
   background: #ffffff !important;
 }
 
-html:not([data-ui-theme="dark"]) body .component-item {
+html:not([data-ui-theme="dark"]) body .component-item,
+html:not([data-ui-theme="dark"]) body .library-domain .component-item,
+html:not([data-ui-theme="dark"]) body .component-item.premium-system-thumb {
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   color: #0f172a !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05) !important;
 }
 
-html:not([data-ui-theme="dark"]) body .component-item span {
+html:not([data-ui-theme="dark"]) body .component-item .symbol,
+html:not([data-ui-theme="dark"]) body .library-domain .component-item .symbol,
+html:not([data-ui-theme="dark"]) body .component-item.premium-system-thumb .symbol {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .component-item span,
+html:not([data-ui-theme="dark"]) body .library-domain .component-item > span,
+html:not([data-ui-theme="dark"]) body .component-item.premium-system-thumb > span {
   color: #0f172a !important;
 }
 
@@ -645,8 +664,15 @@ html[data-ui-theme="dark"] body .tool-group button {
 }
 
 html[data-ui-theme="dark"] body .cad-tools button small,
-html[data-ui-theme="dark"] body .tool-group button small {
-  color: #e2e8f0 !important;
+html[data-ui-theme="dark"] body .tool-group button small,
+html[data-ui-theme="dark"] body .cad-tools button:hover small,
+html[data-ui-theme="dark"] body .tool-group button:hover small,
+html[data-ui-theme="dark"] body .cad-tools button:focus-visible small,
+html[data-ui-theme="dark"] body .tool-group button:focus-visible small {
+  background: #0f2942 !important;
+  color: #f8fafc !important;
+  border: 1.5px solid #38bdf8 !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.7) !important;
 }
 
 html[data-ui-theme="dark"] body .cad-tools button svg,
@@ -937,3 +963,471 @@ html[data-ui-theme="dark"] body .canvas-viewport[data-sheet-theme="light"].techr
 html[data-ui-theme="dark"] body .canvas-viewport[data-sheet-theme="dark"].techrib-canvas-grid-hidden {
   background-image: none !important;
 }
+
+/* ==========================================================================
+   7. ESCALA 1.5x PARA ÍCONES E FONTES DA INTERFACE (Claro e Escuro)
+   ========================================================================== */
+:root,
+html body {
+  --top: 78px !important;
+  --ribbon: 86px !important;
+  --side: 360px !important;
+}
+
+/* --- Topbar (1.5x) --- */
+html body .workbench-topbar {
+  height: var(--top) !important;
+  padding: 0 14px !important;
+}
+
+html body .topbar-brand {
+  gap: 12px !important;
+  padding-right: 16px !important;
+}
+
+html body .sidebar-toggle,
+html body .icon-button {
+  width: 48px !important;
+  height: 48px !important;
+  font-size: 24px !important;
+  border-radius: 9px !important;
+}
+
+html body .workbench .brand > i {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+html body .workbench .brand span {
+  font-size: 30px !important;
+  line-height: 1 !important;
+}
+
+html body .workbench .brand small {
+  font-size: 10.5px !important;
+  margin-top: 4px !important;
+}
+
+html body .project-title {
+  padding: 6px 14px !important;
+  max-width: 390px !important;
+}
+
+html body .project-title > span {
+  font-size: 12px !important;
+}
+
+html body .project-title button {
+  font-size: 19.5px !important;
+  gap: 9px !important;
+}
+
+html body .project-title small {
+  font-size: 15px !important;
+}
+
+html body .topbar-actions,
+html body .top-actions {
+  gap: 6px !important;
+}
+
+html body .top-action {
+  min-width: 82px !important;
+  height: 62px !important;
+  padding: 4px 10px !important;
+  gap: 3px !important;
+  border-radius: 8px !important;
+}
+
+html body .top-action > span {
+  font-size: 22px !important;
+  line-height: 1.1 !important;
+}
+
+html body .top-action > b {
+  font-size: 13.5px !important;
+  line-height: 1.15 !important;
+}
+
+html body .top-action.simulate {
+  min-width: 124px !important;
+  height: 56px !important;
+  padding: 0 16px !important;
+  gap: 8px !important;
+}
+
+/* --- CAD Ribbon, Barra de Menus e Ícones de Ferramentas (1.5x) --- */
+html body .cad-ribbon {
+  top: var(--top) !important;
+  height: 86px !important;
+  grid-template-rows: 36px 50px !important;
+  overflow: visible !important;
+  z-index: 95 !important;
+}
+
+html body .component-sidebar,
+html body .drawing-area {
+  top: calc(var(--top) + 86px) !important;
+}
+
+html body .cad-menu {
+  height: 36px !important;
+  padding: 0 12px !important;
+  gap: 4px !important;
+}
+
+html body .cad-menu button {
+  height: 32px !important;
+  padding: 0 13px !important;
+  font-size: 13.5px !important;
+  border-radius: 6px !important;
+}
+
+html body .cad-tools {
+  height: 50px !important;
+  padding: 4px 6px !important;
+  gap: 3px !important;
+  overflow: visible !important;
+}
+
+html body .tool-group {
+  height: 42px !important;
+  padding: 0 3px !important;
+  gap: 2px !important;
+  overflow: visible !important;
+}
+
+html body .tool-group button {
+  flex: 0 0 36px !important;
+  width: 36px !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  font-size: 22px !important;
+  border-radius: 7px !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+html body .tool-group button svg,
+html body .tool-group button .materials-icon {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+/* Label flutuante (tooltip) ao passar o mouse nos ícones (1.5x + alto contraste) */
+html body .tool-group button small,
+html body .cad-tools button small {
+  top: 42px !important;
+  left: 50% !important;
+  margin: 0 !important;
+  font: 700 13.5px Inter, Arial, sans-serif !important;
+  padding: 7px 12px !important;
+  border-radius: 7px !important;
+  letter-spacing: 0.02em !important;
+  z-index: 9999 !important;
+  white-space: nowrap !important;
+}
+
+html body .wire-tool-menu,
+html body .text-tool-menu {
+  flex: 0 0 36px !important;
+  width: 36px !important;
+  height: 36px !important;
+  overflow: visible !important;
+}
+
+html body .wire-tool-menu > .wire-palette-trigger,
+html body .text-tool-menu > .text-tool-trigger {
+  width: 36px !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  font-size: 20px !important;
+}
+
+html body .wire-palette-trigger > i {
+  width: 20px !important;
+  height: 8px !important;
+}
+
+html body .wire-palette-trigger > span,
+html body .text-tool-trigger > span {
+  font-size: 11px !important;
+}
+
+/* Popover de Menus CAD (1.5x) */
+html body .cad-menu-popover {
+  top: calc(var(--top) + 36px) !important;
+  width: 280px !important;
+  padding: 8px !important;
+}
+
+html body .cad-menu-popover button {
+  height: 42px !important;
+  padding: 0 12px !important;
+  font: 600 15px Inter, Arial, sans-serif !important;
+}
+
+html body .cad-menu-popover button kbd {
+  font: 700 13.5px Consolas, monospace !important;
+}
+
+html:not([data-ui-theme="dark"]) body .cad-menu-popover {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.16) !important;
+}
+
+html:not([data-ui-theme="dark"]) body .cad-menu-popover button {
+  color: #0f172a !important;
+}
+
+html:not([data-ui-theme="dark"]) body .cad-menu-popover button kbd {
+  color: #0284c7 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .cad-menu-popover button:hover {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+  color: #0369a1 !important;
+}
+
+/* --- Biblioteca Lateral de Componentes (1.5x) --- */
+html body .component-sidebar {
+  width: var(--side) !important;
+}
+
+html body .sidebar-heading {
+  padding: 14px 16px 10px !important;
+}
+
+html body .sidebar-heading span {
+  font-size: 13.5px !important;
+}
+
+html body .sidebar-heading h2 {
+  font-size: 27px !important;
+}
+
+html body .component-search {
+  margin: 10px 12px 8px !important;
+  height: 50px !important;
+  padding: 0 14px !important;
+  gap: 10px !important;
+}
+
+html body .component-search span {
+  font-size: 21px !important;
+}
+
+html body .component-search input {
+  font-size: 16.5px !important;
+}
+
+html body .library-tabs {
+  padding: 0 10px 10px !important;
+  gap: 6px !important;
+}
+
+html body .library-tabs button {
+  height: 46px !important;
+  padding: 0 6px !important;
+  font-size: 13.5px !important;
+}
+
+html body .group-title,
+html body .library-domain > .library-domain-title {
+  height: 56px !important;
+  padding: 0 14px !important;
+  grid-template-columns: 32px 1fr auto !important;
+  gap: 10px !important;
+}
+
+html body .group-title > span,
+html body .library-domain-title > span {
+  font-size: 22px !important;
+}
+
+html body .group-title b,
+html body .library-domain-title b {
+  font-size: 15px !important;
+}
+
+html body .group-title small,
+html body .library-domain-title small {
+  font-size: 16px !important;
+}
+
+html body .library-family-title {
+  height: 46px !important;
+  padding: 0 12px !important;
+  font: 700 13.5px Inter, Arial, sans-serif !important;
+}
+
+html body .library-family-title b {
+  font-size: 13.5px !important;
+}
+
+html body .library-family-title small {
+  font-size: 15px !important;
+}
+
+html body .library-domain .component-item {
+  min-height: 118px !important;
+  padding: 10px 8px 9px !important;
+  gap: 8px !important;
+}
+
+html body .library-domain .component-item .symbol {
+  height: 64px !important;
+  min-height: 64px !important;
+}
+
+html body .library-domain .component-item > span,
+html body .component-item span {
+  font-size: 13.5px !important;
+  line-height: 1.25 !important;
+}
+
+html body .component-item:hover span,
+html:not([data-ui-theme="dark"]) body .component-item:hover span {
+  color: #0369a1 !important;
+}
+
+html[data-ui-theme="dark"] body .component-item:hover span {
+  color: #ffffff !important;
+}
+
+html body .sidebar-footer {
+  height: 48px !important;
+  font-size: 12px !important;
+}
+
+/* --- Statusbar / Rodapé (1.5x) --- */
+html body .canvas-statusbar {
+  min-height: 48px !important;
+  padding: 6px 16px !important;
+  font-size: 13.5px !important;
+}
+
+html body .status-ready,
+html body .sheet-format-label {
+  font-size: 13.5px !important;
+}
+
+html body .sheet-format-label select {
+  height: 36px !important;
+  font-size: 13.5px !important;
+  padding: 0 10px !important;
+}
+
+html body .zoom-control button {
+  width: 36px !important;
+  height: 34px !important;
+  font-size: 20px !important;
+}
+
+html body .zoom-control output {
+  width: 52px !important;
+  font-size: 13.5px !important;
+}
+
+/* ==========================================================================
+   8. ADAPTAÇÃO AUTOMÁTICA DAS LINHAS DOS CONDUTORES (FIOS) POR TEMA
+   Garante visibilidade máxima tanto no Tema Escuro quanto no Tema Claro.
+   ========================================================================== */
+
+/* --- Condutores no TEMA ESCURO (Alta Visibilidade sobre fundo escuro #0a1929) --- */
+html[data-ui-theme="dark"] body .wire-layer .wire-path:not(.wire-pe-stripe),
+html[data-ui-theme="dark"] body .wire-layer .wire-crossing-arc,
+html[data-ui-theme="dark"] body .wire-layer .wire-terminal-entry {
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.22));
+}
+
+/* Condutores pretos / escuros (retorno, comando, fase preta) -> Prata/Branco brilhante no Tema Escuro */
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#111827" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#0f172a" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#1e293b" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#1f2937" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#000000" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#000" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#222" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#222222" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#333" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#333333" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="black" i] {
+  stroke: #e2e8f0 !important;
+}
+
+/* Condutores azuis (Neutro / Comando 24Vcc) -> Azul Ciano Brilhante no Tema Escuro */
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#2563eb" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#1d4ed8" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#1e40af" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#0284c7" i] {
+  stroke: #38bdf8 !important;
+}
+
+/* Condutores vermelhos (Fase / Comando CA) -> Vermelho Coral Luminoso no Tema Escuro */
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#ef3340" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#ef4444" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#dc2626" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#b91c1c" i] {
+  stroke: #ff5c6a !important;
+}
+
+/* Condutores marrons -> Âmbar Cobre Luminoso no Tema Escuro */
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#8b4513" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#78350f" i] {
+  stroke: #f59e0b !important;
+}
+
+/* Condutores cinzas -> Cinza Claro Metálico no Tema Escuro */
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#6b7280" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#4b5563" i] {
+  stroke: #cbd5e1 !important;
+}
+
+/* Condutores verdes (Terra / PE) -> Verde Esmeralda Brilhante no Tema Escuro */
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#16a05d" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#16a34a" i],
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#15803d" i] {
+  stroke: #4ade80 !important;
+}
+
+/* Condutores violeta, laranja e amarelo -> Tons vibrantes no Tema Escuro */
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#8b5cf6" i] {
+  stroke: #c084fc !important;
+}
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#f97316" i] {
+  stroke: #fb923c !important;
+}
+html[data-ui-theme="dark"] body .wire-layer path:not(.wire-crossing-gap)[stroke="#f4c430" i] {
+  stroke: #facc15 !important;
+}
+
+/* Gap de cruzamento de condutores e nós de derivação no Tema Escuro */
+html[data-ui-theme="dark"] body .wire-layer .wire-crossing-gap {
+  stroke: #0a1929 !important;
+}
+
+html[data-ui-theme="dark"] body .wire-layer .wire-junction {
+  fill: #38bdf8 !important;
+  stroke: #0a1929 !important;
+}
+
+/* --- Condutores no TEMA CLARO (Alta Visibilidade sobre fundo branco #ffffff) --- */
+/* Condutores brancos -> Cinza Ardósia Escuro no Tema Claro para não sumirem no fundo branco */
+html:not([data-ui-theme="dark"]) body .wire-layer path:not(.wire-crossing-gap)[stroke="#ffffff" i],
+html:not([data-ui-theme="dark"]) body .wire-layer path:not(.wire-crossing-gap)[stroke="#fff" i],
+html:not([data-ui-theme="dark"]) body .wire-layer path:not(.wire-crossing-gap)[stroke="white" i] {
+  stroke: #475569 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .wire-layer .wire-crossing-gap {
+  stroke: #ffffff !important;
+}
+
+html:not([data-ui-theme="dark"]) body .wire-layer .wire-junction {
+  fill: #0f172a !important;
+  stroke: #ffffff !important;
+}
+
