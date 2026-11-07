@@ -218,6 +218,9 @@ html:not([data-ui-theme="dark"]) body .tool-group button {
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   color: #0284c7 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05) !important;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease !important;
 }
 
 html:not([data-ui-theme="dark"]) body .cad-tools button small,
@@ -232,8 +235,8 @@ html:not([data-ui-theme="dark"]) body .tool-group button:focus-visible small {
   box-shadow: 0 8px 22px rgba(15, 23, 42, 0.22) !important;
 }
 
-html:not([data-ui-theme="dark"]) body .cad-tools button svg,
-html:not([data-ui-theme="dark"]) body .tool-group button svg {
+html:not([data-ui-theme="dark"]) body .cad-tools button svg:not([fill="currentColor"]):not(.sim-play-icon):not(.sim-pause-icon):not(.sim-stop-icon),
+html:not([data-ui-theme="dark"]) body .tool-group button svg:not([fill="currentColor"]):not(.sim-play-icon):not(.sim-pause-icon):not(.sim-stop-icon) {
   color: #0284c7 !important;
   stroke: #0284c7 !important;
 }
@@ -243,6 +246,8 @@ html:not([data-ui-theme="dark"]) body .tool-group button:hover {
   background: #f0f9ff !important;
   border-color: #0284c7 !important;
   color: #0369a1 !important;
+  box-shadow: 0 3px 8px rgba(2, 132, 199, 0.18) !important;
+  transform: translateY(-1px) !important;
 }
 
 html:not([data-ui-theme="dark"]) body .cad-tools button.active,
@@ -250,14 +255,50 @@ html:not([data-ui-theme="dark"]) body .tool-group button.active {
   background: #e0f2fe !important;
   border-color: #0284c7 !important;
   color: #0369a1 !important;
-  box-shadow: inset 0 0 0 1px rgba(2, 132, 199, 0.25) !important;
+  box-shadow: inset 0 1px 3px rgba(2, 132, 199, 0.3) !important;
 }
 
-html:not([data-ui-theme="dark"]) body .simulation-group button:first-child {
-  color: #15803d !important;
+/* Simulação - Cores no Tema Claro */
+html:not([data-ui-theme="dark"]) body .simulation-group button[data-action="simulate"] {
+  color: #16a34a !important;
+  border-color: #86efac !important;
 }
-html:not([data-ui-theme="dark"]) body .simulation-group button:last-child {
+html:not([data-ui-theme="dark"]) body .simulation-group button[data-action="simulate"]:hover {
+  background: #f0fdf4 !important;
+  border-color: #16a34a !important;
+  box-shadow: 0 3px 8px rgba(22, 163, 74, 0.2) !important;
+}
+html:not([data-ui-theme="dark"]) body .simulation-group button[data-action="simulate"] svg {
+  fill: #16a34a !important;
+  stroke: none !important;
+}
+
+html:not([data-ui-theme="dark"]) body .simulation-group button[data-action="pause-simulation"] {
+  color: #d97706 !important;
+  border-color: #fde68a !important;
+}
+html:not([data-ui-theme="dark"]) body .simulation-group button[data-action="pause-simulation"]:hover {
+  background: #fffbeb !important;
+  border-color: #d97706 !important;
+  box-shadow: 0 3px 8px rgba(217, 119, 6, 0.2) !important;
+}
+html:not([data-ui-theme="dark"]) body .simulation-group button[data-action="pause-simulation"] svg {
+  fill: #d97706 !important;
+  stroke: none !important;
+}
+
+html:not([data-ui-theme="dark"]) body .simulation-group button[data-action="stop-simulation"] {
   color: #dc2626 !important;
+  border-color: #fca5a5 !important;
+}
+html:not([data-ui-theme="dark"]) body .simulation-group button[data-action="stop-simulation"]:hover {
+  background: #fef2f2 !important;
+  border-color: #dc2626 !important;
+  box-shadow: 0 3px 8px rgba(220, 38, 38, 0.2) !important;
+}
+html:not([data-ui-theme="dark"]) body .simulation-group button[data-action="stop-simulation"] svg {
+  fill: #dc2626 !important;
+  stroke: none !important;
 }
 
 /* --- Biblioteca Lateral (Claro) --- */
@@ -661,6 +702,9 @@ html[data-ui-theme="dark"] body .tool-group button {
   background: #12263c !important;
   border: 1px solid #244466 !important;
   color: #38bdf8 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease !important;
 }
 
 html[data-ui-theme="dark"] body .cad-tools button small,
@@ -675,8 +719,8 @@ html[data-ui-theme="dark"] body .tool-group button:focus-visible small {
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.7) !important;
 }
 
-html[data-ui-theme="dark"] body .cad-tools button svg,
-html[data-ui-theme="dark"] body .tool-group button svg {
+html[data-ui-theme="dark"] body .cad-tools button svg:not([fill="currentColor"]):not(.sim-play-icon):not(.sim-pause-icon):not(.sim-stop-icon),
+html[data-ui-theme="dark"] body .tool-group button svg:not([fill="currentColor"]):not(.sim-play-icon):not(.sim-pause-icon):not(.sim-stop-icon) {
   color: #38bdf8 !important;
   stroke: #38bdf8 !important;
 }
@@ -686,6 +730,8 @@ html[data-ui-theme="dark"] body .tool-group button:hover {
   background: #1b3958 !important;
   border-color: #38bdf8 !important;
   color: #7dd3fc !important;
+  box-shadow: 0 3px 10px rgba(56, 189, 248, 0.25) !important;
+  transform: translateY(-1px) !important;
 }
 
 html[data-ui-theme="dark"] body .cad-tools button.active,
@@ -701,11 +747,47 @@ html[data-ui-theme="dark"] body .tool-group button.active small {
   color: #ffffff !important;
 }
 
-html[data-ui-theme="dark"] body .simulation-group button:first-child {
+/* Simulação - Cores no Tema Escuro */
+html[data-ui-theme="dark"] body .simulation-group button[data-action="simulate"] {
   color: #4ade80 !important;
+  border-color: rgba(74, 222, 128, 0.45) !important;
 }
-html[data-ui-theme="dark"] body .simulation-group button:last-child {
+html[data-ui-theme="dark"] body .simulation-group button[data-action="simulate"]:hover {
+  background: rgba(74, 222, 128, 0.18) !important;
+  border-color: #4ade80 !important;
+  box-shadow: 0 3px 10px rgba(74, 222, 128, 0.3) !important;
+}
+html[data-ui-theme="dark"] body .simulation-group button[data-action="simulate"] svg {
+  fill: #4ade80 !important;
+  stroke: none !important;
+}
+
+html[data-ui-theme="dark"] body .simulation-group button[data-action="pause-simulation"] {
+  color: #facc15 !important;
+  border-color: rgba(250, 204, 21, 0.45) !important;
+}
+html[data-ui-theme="dark"] body .simulation-group button[data-action="pause-simulation"]:hover {
+  background: rgba(250, 204, 21, 0.18) !important;
+  border-color: #facc15 !important;
+  box-shadow: 0 3px 10px rgba(250, 204, 21, 0.3) !important;
+}
+html[data-ui-theme="dark"] body .simulation-group button[data-action="pause-simulation"] svg {
+  fill: #facc15 !important;
+  stroke: none !important;
+}
+
+html[data-ui-theme="dark"] body .simulation-group button[data-action="stop-simulation"] {
   color: #fb7185 !important;
+  border-color: rgba(251, 113, 133, 0.45) !important;
+}
+html[data-ui-theme="dark"] body .simulation-group button[data-action="stop-simulation"]:hover {
+  background: rgba(251, 113, 133, 0.18) !important;
+  border-color: #fb7185 !important;
+  box-shadow: 0 3px 10px rgba(251, 113, 133, 0.3) !important;
+}
+html[data-ui-theme="dark"] body .simulation-group button[data-action="stop-simulation"] svg {
+  fill: #fb7185 !important;
+  stroke: none !important;
 }
 
 /* --- Biblioteca Lateral (Escuro) --- */
@@ -1085,43 +1167,69 @@ html body .cad-menu button {
 
 html body .cad-tools {
   height: 50px !important;
-  padding: 4px 6px !important;
-  gap: 3px !important;
-  overflow: visible !important;
+  padding: 4px 8px !important;
+  gap: 4px !important;
+  overflow-x: auto !important;
+  overflow-y: visible !important;
 }
 
 html body .tool-group {
-  height: 42px !important;
+  height: 40px !important;
   padding: 0 3px !important;
   gap: 2px !important;
   overflow: visible !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
 }
 
 html body .tool-group button {
-  flex: 0 0 36px !important;
-  width: 36px !important;
-  min-width: 36px !important;
-  height: 36px !important;
-  font-size: 22px !important;
+  flex: 0 0 32px !important;
+  width: 32px !important;
+  min-width: 32px !important;
+  height: 32px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
   border-radius: 7px !important;
   position: relative !important;
   overflow: visible !important;
 }
 
+html body .cad-tool-icon,
 html body .tool-group button svg,
 html body .tool-group button .materials-icon {
-  width: 26px !important;
-  height: 26px !important;
+  width: 18px !important;
+  height: 18px !important;
+  display: block !important;
+  margin: auto !important;
+  flex-shrink: 0 !important;
+  pointer-events: none !important;
+  transition: transform 0.15s ease, stroke 0.15s ease, fill 0.15s ease !important;
+}
+
+html body .tool-group button:hover .cad-tool-icon {
+  transform: scale(1.12) !important;
+}
+
+html body .tool-group button:disabled,
+html body .cad-tools button:disabled {
+  opacity: 0.35 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 /* Label flutuante (tooltip) ao passar o mouse nos ícones (1.5x + alto contraste) */
 html body .tool-group button small,
 html body .cad-tools button small {
-  top: 42px !important;
+  top: 38px !important;
   left: 50% !important;
   margin: 0 !important;
-  font: 700 13.5px Inter, Arial, sans-serif !important;
-  padding: 7px 12px !important;
+  font: 700 13px Inter, Arial, sans-serif !important;
+  padding: 6px 11px !important;
   border-radius: 7px !important;
   letter-spacing: 0.02em !important;
   z-index: 9999 !important;
@@ -1129,23 +1237,24 @@ html body .cad-tools button small {
 }
 
 html body .wire-tool-menu,
-html body .text-tool-menu {
-  flex: 0 0 36px !important;
-  width: 36px !important;
-  height: 36px !important;
+html body .text-tool-menu,
+html body .functional-area-tool {
+  flex: 0 0 32px !important;
+  width: 32px !important;
+  height: 32px !important;
   overflow: visible !important;
 }
 
 html body .wire-tool-menu > .wire-palette-trigger,
-html body .text-tool-menu > .text-tool-trigger {
-  width: 36px !important;
-  min-width: 36px !important;
-  height: 36px !important;
-  font-size: 20px !important;
+html body .text-tool-menu > .text-tool-trigger,
+html body .functional-area-trigger {
+  width: 32px !important;
+  min-width: 32px !important;
+  height: 32px !important;
 }
 
 html body .wire-palette-trigger > i {
-  width: 20px !important;
+  width: 16px !important;
   height: 8px !important;
 }
 
