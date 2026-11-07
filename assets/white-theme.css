@@ -145,16 +145,41 @@ html:not([data-ui-theme="dark"]) body .top-action {
 }
 
 /* Ícones e Fontes da Topbar no Tema Claro */
-html:not([data-ui-theme="dark"]) body .top-action > span {
+html:not([data-ui-theme="dark"]) body .top-action > span,
+html:not([data-ui-theme="dark"]) body .top-action > svg.top-action-svg {
   color: #0284c7 !important;
+  stroke: #0284c7 !important;
+}
+html:not([data-ui-theme="dark"]) body .top-action > span svg.top-action-svg {
+  stroke: #0284c7 !important;
 }
 
 html:not([data-ui-theme="dark"]) body .top-action > b {
   color: #0f172a !important;
 }
 
-html:not([data-ui-theme="dark"]) body .top-action.theme-toggle-btn > span {
-  color: #ea580c !important;
+/* Diagnóstico no Tema Claro */
+html:not([data-ui-theme="dark"]) body .top-action.diagnostic-action {
+  background: #fffbeb !important;
+  border-color: #fde68a !important;
+}
+html:not([data-ui-theme="dark"]) body .top-action.diagnostic-action > svg.top-action-svg {
+  stroke: #d97706 !important;
+}
+html:not([data-ui-theme="dark"]) body .top-action.diagnostic-action > b {
+  color: #92400e !important;
+}
+
+/* Tema Claro alternador */
+html:not([data-ui-theme="dark"]) body .top-action.theme-toggle-btn {
+  background: #fff7ed !important;
+  border-color: #fed7aa !important;
+}
+html:not([data-ui-theme="dark"]) body .top-action.theme-toggle-btn > span svg.top-action-svg {
+  stroke: #ea580c !important;
+}
+html:not([data-ui-theme="dark"]) body .top-action.theme-toggle-btn > b {
+  color: #c2410c !important;
 }
 
 html:not([data-ui-theme="dark"]) body .top-action.grid-toggle-btn.active {
@@ -167,6 +192,11 @@ html:not([data-ui-theme="dark"]) body .top-action:hover {
   background: #f0f9ff !important;
   border-color: #0284c7 !important;
   color: #0f172a !important;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12) !important;
+  transform: translateY(-1px) !important;
+}
+html:not([data-ui-theme="dark"]) body .top-action:hover svg.top-action-svg {
+  transform: scale(1.1) !important;
 }
 
 html:not([data-ui-theme="dark"]) body .top-action.simulate {
@@ -174,9 +204,24 @@ html:not([data-ui-theme="dark"]) body .top-action.simulate {
   border-color: #d96b00 !important;
   color: #ffffff !important;
 }
+html:not([data-ui-theme="dark"]) body .top-action.simulate > svg.top-action-svg {
+  stroke: #ffffff !important;
+}
 html:not([data-ui-theme="dark"]) body .top-action.simulate > span,
 html:not([data-ui-theme="dark"]) body .top-action.simulate > b {
   color: #ffffff !important;
+}
+
+/* Mais opções (mobile-more) no Tema Claro */
+html:not([data-ui-theme="dark"]) body .icon-button.mobile-more {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #475569 !important;
+}
+html:not([data-ui-theme="dark"]) body .icon-button.mobile-more:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+  color: #0284c7 !important;
 }
 
 /* --- CAD Ribbon & Ferramentas (Claro) --- */
@@ -618,13 +663,31 @@ html[data-ui-theme="dark"] body .top-action {
 }
 
 /* Ícones e Fontes da Topbar no Tema Escuro */
-html[data-ui-theme="dark"] body .top-action > span {
+html[data-ui-theme="dark"] body .top-action > span,
+html[data-ui-theme="dark"] body .top-action > svg.top-action-svg {
   color: #38bdf8 !important;
+  stroke: #38bdf8 !important;
   filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.45));
+}
+html[data-ui-theme="dark"] body .top-action > span svg.top-action-svg {
+  stroke: #38bdf8 !important;
 }
 
 html[data-ui-theme="dark"] body .top-action > b {
   color: #f8fafc !important;
+}
+
+/* Diagnóstico no Tema Escuro */
+html[data-ui-theme="dark"] body .top-action.diagnostic-action {
+  background: rgba(245, 158, 11, 0.15) !important;
+  border-color: #f59e0b !important;
+}
+html[data-ui-theme="dark"] body .top-action.diagnostic-action > svg.top-action-svg {
+  stroke: #fbbf24 !important;
+  filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.65));
+}
+html[data-ui-theme="dark"] body .top-action.diagnostic-action > b {
+  color: #fde68a !important;
 }
 
 html[data-ui-theme="dark"] body .top-action.theme-toggle-btn {
@@ -632,8 +695,8 @@ html[data-ui-theme="dark"] body .top-action.theme-toggle-btn {
   border-color: #fbbf24 !important;
 }
 
-html[data-ui-theme="dark"] body .top-action.theme-toggle-btn > span {
-  color: #fbbf24 !important;
+html[data-ui-theme="dark"] body .top-action.theme-toggle-btn > span svg.top-action-svg {
+  stroke: #fbbf24 !important;
   filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.65));
 }
 
@@ -651,6 +714,11 @@ html[data-ui-theme="dark"] body .top-action:hover {
   background: #1a3654 !important;
   border-color: #38bdf8 !important;
   color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.22) !important;
+  transform: translateY(-1px) !important;
+}
+html[data-ui-theme="dark"] body .top-action:hover svg.top-action-svg {
+  transform: scale(1.1) !important;
 }
 
 html[data-ui-theme="dark"] body .top-action.simulate {
@@ -658,9 +726,24 @@ html[data-ui-theme="dark"] body .top-action.simulate {
   border-color: #fb923c !important;
   color: #ffffff !important;
 }
+html[data-ui-theme="dark"] body .top-action.simulate > svg.top-action-svg {
+  stroke: #ffffff !important;
+}
 html[data-ui-theme="dark"] body .top-action.simulate > span,
 html[data-ui-theme="dark"] body .top-action.simulate > b {
   color: #ffffff !important;
+}
+
+/* Mais opções (mobile-more) no Tema Escuro */
+html[data-ui-theme="dark"] body .icon-button.mobile-more {
+  background: #112438 !important;
+  border: 1px solid #26486b !important;
+  color: #94a3b8 !important;
+}
+html[data-ui-theme="dark"] body .icon-button.mobile-more:hover {
+  background: #1a3654 !important;
+  border-color: #38bdf8 !important;
+  color: #38bdf8 !important;
 }
 
 /* --- CAD Ribbon & Ferramentas (Escuro) --- */
@@ -1117,25 +1200,55 @@ html body .top-action {
   min-width: 82px !important;
   height: 62px !important;
   padding: 4px 10px !important;
-  gap: 3px !important;
+  gap: 4px !important;
   border-radius: 8px !important;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+html body .top-action svg.top-action-svg {
+  width: 22px !important;
+  height: 22px !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.15s ease-in-out !important;
 }
 
 html body .top-action > span {
-  font-size: 22px !important;
-  line-height: 1.1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
 }
 
 html body .top-action > b {
   font-size: 13.5px !important;
   line-height: 1.15 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.2px !important;
 }
 
 html body .top-action.simulate {
-  min-width: 124px !important;
-  height: 56px !important;
+  min-width: 130px !important;
+  height: 58px !important;
   padding: 0 16px !important;
   gap: 8px !important;
+  flex-direction: row !important;
+}
+
+html body .top-action.sound.muted svg {
+  opacity: 0.65 !important;
+  stroke: #ef4444 !important;
+}
+html:not([data-ui-theme="dark"]) body .top-action.sound.muted b {
+  color: #dc2626 !important;
+}
+html[data-ui-theme="dark"] body .top-action.sound.muted b {
+  color: #f87171 !important;
 }
 
 /* --- CAD Ribbon, Barra de Menus e Ícones de Ferramentas (1.5x) --- */

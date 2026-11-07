@@ -34,13 +34,29 @@
         <button type="button" data-action="rename" data-project-title-display title="Renomear projeto">Comando elétrico sem título <small>✎</small></button>
       </div>
       <nav class="top-actions" aria-label="Ações do projeto">
-        <button class="top-action" type="button" data-action="welcome" title="Abrir tela de boas-vindas"><span>⌂</span><b>Início</b></button>
-        <button class="top-action" type="button" data-action="new" title="Novo projeto"><span>＋</span><b>Novo</b></button>
-        <button class="top-action" type="button" data-action="rename" title="Editar nome do projeto"><span>✎</span><b>Renomear</b></button>
-        <button class="top-action" type="button" data-action="save" title="Salvar projeto"><span>▣</span><b>Salvar</b></button>
-        <button class="top-action grid-toggle-btn active" type="button" data-action="toggle-grid" title="Mostrar ou ocultar o GRID da folha"><span data-grid-icon>⊞</span><b data-grid-label>Grade: ON</b></button><button class="top-action theme-toggle-btn" type="button" data-action="toggle-ui-theme" title="Alternar entre Tema Claro e Tema Escuro"><span data-theme-icon>☀️</span><b data-theme-label>Tema Claro</b></button><button class="top-action sound" type="button" data-action="sound" title="Ativar ou desativar sons"><span data-sound-icon>🔊</span><b>Som</b></button><button class="top-action simulate" type="button" data-action="wiring-steps" title="Gerar passo a passo automático da ligação"><span>☷</span><b>Passo a passo</b></button>
-        <button class="icon-button mobile-more" type="button" data-action="mobile-more" title="Mais opções">•••</button>
-                        </nav>
+        <button type="button" data-action="diagnostic" class="top-action diagnostic-action" title="Explicar tecnicamente falhas elétricas">
+          <svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <b>Diagnóstico</b>
+        </button>
+        <button class="top-action" type="button" data-action="welcome" title="Abrir tela de boas-vindas">
+          <svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <b>Início</b>
+        </button>
+        <button class="top-action" type="button" data-action="new" title="Novo projeto">
+          <svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          <b>Novo</b>
+        </button>
+        <button class="top-action" type="button" data-action="rename" title="Editar nome do projeto">
+          <svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          <b>Renomear</b>
+        </button>
+        <button class="top-action" type="button" data-action="save" title="Salvar projeto">
+          <svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          <b>Salvar</b>
+        </button>
+        <button class="top-action grid-toggle-btn active" type="button" data-action="toggle-grid" title="Mostrar ou ocultar o GRID da folha" aria-pressed="true"><span data-grid-icon><svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg></span><b data-grid-label>Grade: ON</b></button><button class="top-action theme-toggle-btn" type="button" data-action="toggle-ui-theme" title="Alternar entre Tema Claro e Tema Escuro" aria-pressed="false"><span data-theme-icon><svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span><b data-theme-label>Tema Claro</b></button><button class="top-action sound" type="button" data-action="sound" title="Ativar ou desativar sons"><span data-sound-icon><svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></span><b>Som</b></button><button class="top-action simulate" type="button" data-action="wiring-steps" title="Gerar passo a passo automático da ligação"><svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" y1="6" x2="21" y2="6"/><line x1="10" y1="12" x2="21" y2="12"/><line x1="10" y1="18" x2="21" y2="18"/><path d="M4 6h1v4"/><path d="M4 10h2"/><path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg><b>Passo a passo</b></button>
+        <button class="icon-button mobile-more" type="button" data-action="mobile-more" title="Mais opções"><svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><circle cx="12" cy="12" r="2.2"/><circle cx="19" cy="12" r="2.2"/><circle cx="5" cy="12" r="2.2"/></svg></button>
+      </nav>
     </header>
 
     <div class="cad-ribbon" aria-label="Menu e ferramentas do simulador">
@@ -5889,6 +5905,9 @@ window.TECHRIB_PERSONAL_COMPONENTS=[];
           if (sel.value !== currentTheme) sel.value = currentTheme;
         });
 
+        const THEME_SUN_SVG = '<svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';
+        const THEME_MOON_SVG = '<svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+
         document.querySelectorAll('[data-action="toggle-ui-theme"]').forEach(btn => {
           const icon = btn.querySelector('[data-theme-icon]');
           const label = btn.querySelector('[data-theme-label]');
@@ -5899,9 +5918,8 @@ window.TECHRIB_PERSONAL_COMPONENTS=[];
           if (btn.getAttribute('aria-pressed') !== String(isDark)) {
             btn.setAttribute('aria-pressed', String(isDark));
           }
-          const nextIcon = isDark ? '🌙' : '☀️';
           const nextLabel = isDark ? 'Tema Escuro' : 'Tema Claro';
-          if (icon && icon.textContent !== nextIcon) icon.textContent = nextIcon;
+          if (icon) icon.innerHTML = isDark ? THEME_MOON_SVG : THEME_SUN_SVG;
           if (label && label.textContent !== nextLabel) label.textContent = nextLabel;
         });
       }
@@ -5914,6 +5932,9 @@ window.TECHRIB_PERSONAL_COMPONENTS=[];
         if (viewport && viewport.classList.contains('techrib-canvas-grid-hidden') !== hidden) {
           viewport.classList.toggle('techrib-canvas-grid-hidden', hidden);
         }
+        const GRID_ON_SVG = '<svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>';
+        const GRID_OFF_SVG = '<svg class="top-action-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="2" y1="2" x2="22" y2="22"/></svg>';
+
         document.querySelectorAll('.top-action[data-action="toggle-grid"]').forEach(btn => {
           const icon = btn.querySelector('[data-grid-icon]');
           const label = btn.querySelector('[data-grid-label]');
@@ -5924,9 +5945,8 @@ window.TECHRIB_PERSONAL_COMPONENTS=[];
           if (btn.getAttribute('aria-pressed') !== String(isOn)) {
             btn.setAttribute('aria-pressed', String(isOn));
           }
-          const nextIcon = hidden ? '⊟' : '⊞';
           const nextLabel = hidden ? 'Sem Grade' : 'Grade: ON';
-          if (icon && icon.textContent !== nextIcon) icon.textContent = nextIcon;
+          if (icon) icon.innerHTML = hidden ? GRID_OFF_SVG : GRID_ON_SVG;
           if (label && label.textContent !== nextLabel) label.textContent = nextLabel;
         });
       }
