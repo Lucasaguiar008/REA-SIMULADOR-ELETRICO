@@ -572,20 +572,72 @@ html:not([data-ui-theme="dark"]) body .canvas-statusbar {
   background: #ffffff !important;
   border-top: 1px solid #cbd5e1 !important;
   color: #334155 !important;
+  box-shadow: 0 -2px 8px rgba(15, 23, 42, 0.04) !important;
 }
 
-html:not([data-ui-theme="dark"]) body .canvas-statusbar span,
-html:not([data-ui-theme="dark"]) body .canvas-statusbar strong,
-html:not([data-ui-theme="dark"]) body .status-ready,
-html:not([data-ui-theme="dark"]) body .zoom-control output,
-html:not([data-ui-theme="dark"]) body .zoom-control button {
-  color: #0f172a !important;
+html:not([data-ui-theme="dark"]) body .sheet-format-label,
+html:not([data-ui-theme="dark"]) body .technical-scale-label,
+html:not([data-ui-theme="dark"]) body .sheet-view-label,
+html:not([data-ui-theme="dark"]) body .status-autosave {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #334155 !important;
+}
+html:not([data-ui-theme="dark"]) body .sheet-format-label:hover,
+html:not([data-ui-theme="dark"]) body .technical-scale-label:hover,
+html:not([data-ui-theme="dark"]) body .sheet-view-label:hover,
+html:not([data-ui-theme="dark"]) body .status-autosave:hover {
+  background: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
 }
 
-html:not([data-ui-theme="dark"]) body .sheet-format-label select {
+html:not([data-ui-theme="dark"]) body .canvas-statusbar .statusbar-icon {
+  stroke: #0284c7 !important;
+  color: #0284c7 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .canvas-statusbar select {
   background: #ffffff !important;
-  color: #0f172a !important;
   border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+html:not([data-ui-theme="dark"]) body .canvas-statusbar select:hover {
+  border-color: #0284c7 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .status-ready {
+  background: #ecfdf5 !important;
+  border: 1px solid #a7f3d0 !important;
+  color: #047857 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .status-snap {
+  background: #f0f9ff !important;
+  border: 1px solid #bae6fd !important;
+  color: #0369a1 !important;
+}
+html:not([data-ui-theme="dark"]) body .status-snap .statusbar-icon {
+  stroke: #0284c7 !important;
+}
+
+html:not([data-ui-theme="dark"]) body .canvas-statusbar .zoom-control {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+}
+html:not([data-ui-theme="dark"]) body .zoom-control button {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0284c7 !important;
+}
+html:not([data-ui-theme="dark"]) body .zoom-control button .statusbar-icon {
+  stroke: #0284c7 !important;
+}
+html:not([data-ui-theme="dark"]) body .zoom-control button:hover {
+  background: #f0f9ff !important;
+  border-color: #0284c7 !important;
+}
+html:not([data-ui-theme="dark"]) body .zoom-control output {
+  color: #0f172a !important;
 }
 
 
@@ -1090,20 +1142,73 @@ html[data-ui-theme="dark"] body .canvas-statusbar {
   background: #09131f !important;
   border-top: 1px solid #1e3a5f !important;
   color: #cbd5e1 !important;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.45) !important;
 }
 
-html[data-ui-theme="dark"] body .canvas-statusbar span,
-html[data-ui-theme="dark"] body .canvas-statusbar strong,
-html[data-ui-theme="dark"] body .status-ready,
-html[data-ui-theme="dark"] body .zoom-control output,
-html[data-ui-theme="dark"] body .zoom-control button {
-  color: #f8fafc !important;
+html[data-ui-theme="dark"] body .sheet-format-label,
+html[data-ui-theme="dark"] body .technical-scale-label,
+html[data-ui-theme="dark"] body .sheet-view-label,
+html[data-ui-theme="dark"] body .status-autosave {
+  background: #0f2034 !important;
+  border: 1px solid #1e3a5f !important;
+  color: #cbd5e1 !important;
+}
+html[data-ui-theme="dark"] body .sheet-format-label:hover,
+html[data-ui-theme="dark"] body .technical-scale-label:hover,
+html[data-ui-theme="dark"] body .sheet-view-label:hover,
+html[data-ui-theme="dark"] body .status-autosave:hover {
+  background: #152b45 !important;
+  border-color: #38bdf8 !important;
 }
 
-html[data-ui-theme="dark"] body .sheet-format-label select {
-  background: #12263c !important;
-  color: #f8fafc !important;
+html[data-ui-theme="dark"] body .canvas-statusbar .statusbar-icon {
+  stroke: #38bdf8 !important;
+  color: #38bdf8 !important;
+  filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.45));
+}
+
+html[data-ui-theme="dark"] body .canvas-statusbar select {
+  background: #11253c !important;
   border: 1px solid #26486b !important;
+  color: #f8fafc !important;
+}
+html[data-ui-theme="dark"] body .canvas-statusbar select:hover {
+  border-color: #38bdf8 !important;
+}
+
+html[data-ui-theme="dark"] body .status-ready {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border: 1px solid rgba(16, 185, 129, 0.35) !important;
+  color: #34d399 !important;
+}
+
+html[data-ui-theme="dark"] body .status-snap {
+  background: rgba(56, 189, 248, 0.14) !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  color: #7dd3fc !important;
+}
+html[data-ui-theme="dark"] body .status-snap .statusbar-icon {
+  stroke: #38bdf8 !important;
+}
+
+html[data-ui-theme="dark"] body .canvas-statusbar .zoom-control {
+  background: #0f2034 !important;
+  border: 1px solid #1e3a5f !important;
+}
+html[data-ui-theme="dark"] body .zoom-control button {
+  background: #11253c !important;
+  border: 1px solid #26486b !important;
+  color: #38bdf8 !important;
+}
+html[data-ui-theme="dark"] body .zoom-control button .statusbar-icon {
+  stroke: #38bdf8 !important;
+}
+html[data-ui-theme="dark"] body .zoom-control button:hover {
+  background: #1a3654 !important;
+  border-color: #38bdf8 !important;
+}
+html[data-ui-theme="dark"] body .zoom-control output {
+  color: #f8fafc !important;
 }
 
 /* --------------------------------------------------------------------------
@@ -1527,30 +1632,141 @@ html body .sidebar-footer {
 /* --- Statusbar / Rodapé (1.5x) --- */
 html body .canvas-statusbar {
   min-height: 48px !important;
-  padding: 6px 16px !important;
-  font-size: 13.5px !important;
+  height: 48px !important;
+  padding: 0 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-size: 12px !important;
+  box-sizing: border-box !important;
+  z-index: 90 !important;
 }
 
+html body .canvas-statusbar .statusbar-items,
+html body .canvas-statusbar > div:first-child {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  scrollbar-width: none !important;
+}
+html body .canvas-statusbar .statusbar-items::-webkit-scrollbar,
+html body .canvas-statusbar > div:first-child::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Statusbar Pill Base */
 html body .status-ready,
-html body .sheet-format-label {
-  font-size: 13.5px !important;
+html body .sheet-format-label,
+html body .technical-scale-label,
+html body .sheet-view-label,
+html body .status-snap,
+html body .status-autosave {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  height: 32px !important;
+  padding: 0 8px !important;
+  border-radius: 7px !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+  cursor: default !important;
+  transition: all 0.15s ease-in-out !important;
+  user-select: none !important;
+  box-sizing: border-box !important;
 }
 
+/* Ícones nos Pills */
+html body .statusbar-icon {
+  width: 15px !important;
+  height: 15px !important;
+  flex-shrink: 0 !important;
+  display: block !important;
+  transition: transform 0.15s ease-in-out !important;
+}
+html body .sheet-format-label:hover .statusbar-icon,
+html body .technical-scale-label:hover .statusbar-icon,
+html body .sheet-view-label:hover .statusbar-icon,
+html body .status-snap:hover .statusbar-icon,
+html body .status-autosave:hover .statusbar-icon {
+  transform: scale(1.1) !important;
+}
+
+/* Selects dentro dos pills */
+html body .canvas-statusbar select {
+  height: 26px !important;
+  min-width: 0 !important;
+  padding: 0 6px !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  outline: none !important;
+  transition: border-color 0.15s ease, background 0.15s ease !important;
+}
 html body .sheet-format-label select {
-  height: 36px !important;
-  font-size: 13.5px !important;
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: 145px !important;
+}
+
+/* Status Ready Dot Pulse */
+html body .status-ready {
   padding: 0 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2px !important;
+}
+html body .status-ready i.status-dot,
+html body .status-ready i {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background: #10b981 !important;
+  display: inline-block !important;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7) !important;
+  animation: status-pulse 2s infinite !important;
+}
+@keyframes status-pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
+/* Zoom Control */
+html body .canvas-statusbar .zoom-control {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  height: 32px !important;
+  padding: 0 5px !important;
+  border-radius: 7px !important;
+  flex-shrink: 0 !important;
+}
 html body .zoom-control button {
-  width: 36px !important;
-  height: 34px !important;
-  font-size: 20px !important;
+  width: 28px !important;
+  height: 28px !important;
+  padding: 0 !important;
+  border-radius: 5px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease-in-out !important;
 }
-
+html body .zoom-control button:hover {
+  transform: scale(1.08) !important;
+}
 html body .zoom-control output {
-  width: 52px !important;
-  font-size: 13.5px !important;
+  width: 44px !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+html body .zoom-control input[type="range"] {
+  width: 70px !important;
+  cursor: pointer !important;
 }
 
 /* ==========================================================================
