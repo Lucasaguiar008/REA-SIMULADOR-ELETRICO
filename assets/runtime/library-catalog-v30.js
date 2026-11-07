@@ -6,7 +6,7 @@
     [
       'electrical',
       'ELÉTRICA',
-      '⚡',
+      '<svg class="domain-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
       [
         'Fontes',
         'Proteção',
@@ -27,7 +27,7 @@
     [
       'automation',
       'AUTOMAÇÃO',
-      '⚙',
+      '<svg class="domain-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>',
       [
         'Microcontroladores',
         'Módulos relé',
@@ -41,7 +41,7 @@
     [
       'electronics',
       'ELETRÔNICA',
-      '⌁',
+      '<svg class="domain-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>',
       [
         'Resistores',
         'Capacitores',
@@ -55,7 +55,7 @@
     [
       'premium',
       'EXTRAS',
-      '◆',
+      '<svg class="domain-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
       [
         'Elevadores',
         'Sistemas de bombeamento',
@@ -443,7 +443,7 @@
         rootTitle.className = 'group-title library-domain-title';
         rootTitle.type = 'button';
         rootTitle.setAttribute('aria-expanded', 'false');
-        rootTitle.innerHTML = `<span>${icon}</span><b>${title}</b><small>⌄</small>`;
+        rootTitle.innerHTML = `<span>${icon}</span><b>${title}</b><small><svg class="chevron-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></small>`;
         const familiesWrap = doc.createElement('div');
         familiesWrap.className = 'library-families';
         families.forEach((family) => {
@@ -454,7 +454,7 @@
           titleButton.type = 'button';
           titleButton.className = 'library-family-title';
           titleButton.setAttribute('aria-expanded', 'false');
-          titleButton.innerHTML = `<b>${family}</b><small>⌄</small>`;
+          titleButton.innerHTML = `<b>${family}</b><small><svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></small>`;
           const grid = doc.createElement('div');
           grid.className = 'component-grid';
           familySection.append(titleButton, grid);
@@ -480,8 +480,6 @@
         ':scope > .group-title, :scope > .library-family-title'
       );
       button?.setAttribute('aria-expanded', open ? 'true' : 'false');
-      const mark = button?.querySelector('small');
-      if (mark) mark.textContent = open ? '⌃' : '⌄';
     };
     const bind = () => {
       if (bound) return;

@@ -128,11 +128,43 @@
 
     <aside class="component-sidebar" aria-label="Biblioteca de componentes">
       <div class="sidebar-heading">
-        <div><span>BIBLIOTECA</span><h2>Componentes</h2></div>
-        <button class="icon-button close-sidebar" type="button" aria-label="Fechar biblioteca">×</button>
+        <div class="sidebar-heading-title">
+          <svg class="sidebar-heading-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+            <line x1="6" y1="6" x2="6.01" y2="6"/>
+            <line x1="6" y1="18" x2="6.01" y2="18"/>
+          </svg>
+          <div><span>BIBLIOTECA</span><h2>Componentes</h2></div>
+        </div>
+        <button class="icon-button close-sidebar" type="button" aria-label="Fechar biblioteca" title="Fechar biblioteca">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
       </div>
-      <label class="component-search"><span>⌕</span><input type="search" placeholder="Buscar componente" aria-label="Buscar componente"></label>
-            <div class="library-tabs" role="tablist"><button class="active" type="button" data-library-tab="components">LucasAguiar</button><button type="button" data-library-tab="personal">Minha Biblioteca</button><button type="button" data-library-tab="examples">Exemplos</button></div>
+      <label class="component-search">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" placeholder="Buscar componente" aria-label="Buscar componente">
+      </label>
+      <div class="library-tabs" role="tablist">
+        <button class="active" type="button" data-library-tab="components">
+          <svg class="tab-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>LucasAguiar</span>
+        </button>
+        <button type="button" data-library-tab="personal">
+          <svg class="tab-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Minha Biblioteca</span>
+        </button>
+        <button type="button" data-library-tab="examples">
+          <svg class="tab-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Exemplos</span>
+        </button>
+      </div>
       <div class="library-scroll">
                         <section class="library-group open techrib-registry-group automation-group" data-registry-group="logic" data-registry-subgroup="Lógica &amp; Automação">
           <button class="group-title" type="button"><span>🧠</span><b>Lógica &amp; Automação</b><small>⌃</small></button>
@@ -5524,7 +5556,15 @@
                         <p class="personal-library-empty">Crie um componente novo ou use um componente LucasAguiar como base.</p>          </div>
         </section>
       </div>
-      <div class="sidebar-footer"><span>Arraste um componente para a folha</span><button type="button" title="Ajuda">?</button></div>
+      <div class="sidebar-footer">
+        <span>
+          <svg class="footer-hint-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          Arraste um componente para a folha
+        </span>
+        <button type="button" title="Ajuda sobre a biblioteca">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </button>
+      </div>
     </aside>
 
     <section class="drawing-area" aria-label="Área de desenho esquemático">

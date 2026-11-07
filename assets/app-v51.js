@@ -901,6 +901,29 @@ if(workbench){
     const action=button.dataset.zoom;
     if(action==='fit')fitSheet();else setZoom(Number(zoomInput.value)+(action==='in'?10:-10));
   }));
+  const handleAltWheelZoom = event => {
+    if (!event.altKey) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const current = Number(zoomInput?.value || zoomPending || 80);
+    const delta = event.deltaY < 0 ? 10 : -10;
+    const next = Math.max(5, Math.min(400, Math.round((current + delta) / 5) * 5));
+    if (next === current) return;
+    const rect = viewport.getBoundingClientRect();
+    const mouseX = event.clientX - rect.left;
+    const mouseY = event.clientY - rect.top;
+    const prevScale = current / 100;
+    const nextScale = next / 100;
+    const scrollX = viewport.scrollLeft;
+    const scrollY = viewport.scrollTop;
+    const canvasX = (scrollX + mouseX) / prevScale;
+    const canvasY = (scrollY + mouseY) / prevScale;
+    setZoom(next);
+    viewport.scrollLeft = canvasX * nextScale - mouseX;
+    viewport.scrollTop = canvasY * nextScale - mouseY;
+  };
+  viewport.addEventListener('wheel', handleAltWheelZoom, { passive: false });
+  document.querySelector('.drawing-area')?.addEventListener('wheel', handleAltWheelZoom, { passive: false });
   const fullscreenButtons=[...document.querySelectorAll('[data-action="fullscreen"]')];
   const currentFullscreenElement=()=>document.fullscreenElement||document.webkitFullscreenElement||null;
 
